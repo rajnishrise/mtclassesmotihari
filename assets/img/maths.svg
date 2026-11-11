@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16347a"/><stop offset="1" stop-color="#071538"/></linearGradient></defs>
+<rect width="400" height="220" rx="18" fill="url(#a)"/>
+<g stroke="#ffffff" stroke-opacity=".08">
+<path d="M40 0v220M80 0v220M120 0v220M160 0v220M200 0v220M240 0v220M280 0v220M320 0v220M360 0v220M0 40h400M0 80h400M0 120h400M0 160h400M0 200h400"/></g>
+<path d="M40 180h330M60 30v170" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 170 Q150 170 190 110 T350 40" fill="none" stroke="#f5b301" stroke-width="4" stroke-linecap="round"/>
+<circle cx="190" cy="110" r="6" fill="#f5b301"/><circle cx="350" cy="40" r="6" fill="#f5b301"/>
+<path d="M230 180 L330 180 L330 110 Z" fill="#ffffff" fill-opacity=".12" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M316 180v-14h14" fill="none" stroke="#fff" stroke-width="2"/>
+<circle cx="120" cy="80" r="34" fill="none" stroke="#ffd766" stroke-width="2.5" stroke-dasharray="6 6"/>
+<path d="M120 80h34" stroke="#ffd766" stroke-width="2.5"/>
+<g fill="#fff" font-family="Poppins,Arial,sans-serif" font-weight="700"><text x="250" y="80" font-size="20">a² + b² = c²</text><text x="104" y="132" font-size="16" fill="#ffd766">πr²</text><text x="352" y="200" font-size="14">x</text><text x="44" y="38" font-size="14">y</text></g></svg>

@@ -1,0 +1,10 @@
+{
+  "name": "MT Classes Motihari",
+  "short_name": "MT Classes",
+  "description": "Maths & Science coaching for Classes 8, 9 and 10",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0b1f4b",
+  "theme_color": "#0b1f4b",
+  "icons": [{ "src": "assets/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

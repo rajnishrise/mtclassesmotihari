@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact & Admission | MT Classes Motihari</title>
+<meta name="description" content="Admission enquiry, address, phone and map for MT Classes, S.K. Nagar, Motihari.">
+<meta property="og:title" content="Contact & Admission | MT Classes Motihari">
+<meta property="og:description" content="Admission enquiry, address, phone and map for MT Classes, S.K. Nagar, Motihari.">
+<meta name="theme-color" content="#0b1f4b">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem("mt_theme"))||"light"}catch(e){}</script>
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main id="main">
+<div class="page-head"><div class="wrap"><h1 style="font-size:clamp(1.7rem,5vw,2.4rem)">Contact &amp; admission</h1><p>Send an enquiry — we reply on WhatsApp</p></div></div>
+<section><div class="wrap grid2">
+  <div class="card"><h3>Admission enquiry</h3><form id="enquiry">
+    <label for="f-name">Student name</label><input id="f-name" name="name" required maxlength="60" autocomplete="name">
+    <div class="row"><div><label for="f-class">Class</label><select id="f-class" name="cls"><option>8</option><option>9</option><option selected>10</option></select></div>
+    <div><label for="f-sub">Subject</label><select id="f-sub" name="subject"><option>Maths &amp; Science</option><option>Maths</option><option>Science</option></select></div></div>
+    <label for="f-phone">Parent's mobile number</label><input id="f-phone" name="phone" required inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel-national">
+    <label for="f-school">School (optional)</label><input id="f-school" name="school" maxlength="80">
+    <label for="f-msg">Message or doubt (optional)</label><textarea id="f-msg" name="message" rows="3" maxlength="400"></textarea>
+    <button class="btn gold block">Continue</button></form><div id="sent" style="margin-top:14px"></div></div>
+  <div><div class="card" id="info"></div><div class="card hide" id="pay-sec" style="margin-top:18px"><h3>Pay fees</h3><div id="pay"></div></div><div class="card" id="map" style="margin-top:18px"></div></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="data/config.js"></script>
+<script src="data/content.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages/contact.js"></script>
+</body>
+</html>

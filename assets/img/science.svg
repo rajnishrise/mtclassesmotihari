@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220"><defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a7a3c"/><stop offset="1" stop-color="#063b29"/></linearGradient></defs>
+<rect width="400" height="220" rx="18" fill="url(#b)"/>
+<g fill="none" stroke="#fff" stroke-width="2.5"><ellipse cx="290" cy="105" rx="78" ry="28"/><ellipse cx="290" cy="105" rx="78" ry="28" transform="rotate(60 290 105)"/><ellipse cx="290" cy="105" rx="78" ry="28" transform="rotate(120 290 105)"/></g>
+<circle cx="290" cy="105" r="12" fill="#f5b301"/><circle cx="368" cy="105" r="6" fill="#ffd766"/><circle cx="251" cy="37" r="6" fill="#ffd766"/><circle cx="251" cy="173" r="6" fill="#ffd766"/>
+<path d="M92 40h46M102 40v52L62 168a14 14 0 0 0 12 22h82a14 14 0 0 0 12-22L128 92V40" fill="#ffffff" fill-opacity=".12" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M80 140h70l20 34a8 8 0 0 1-7 12H67a8 8 0 0 1-7-12z" fill="#f5b301"/>
+<circle cx="104" cy="160" r="6" fill="#fff" fill-opacity=".7"/><circle cx="128" cy="170" r="4" fill="#fff" fill-opacity=".7"/><circle cx="118" cy="120" r="5" fill="#ffd766"/><circle cx="108" cy="100" r="3.5" fill="#ffd766"/>
+<g fill="#fff" font-family="Poppins,Arial,sans-serif" font-weight="700"><text x="170" y="42" font-size="18">H₂O</text><text x="176" y="200" font-size="18" fill="#ffd766">V = IR</text></g></svg>
