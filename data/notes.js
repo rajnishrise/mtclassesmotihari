@@ -12,14 +12,16 @@ window.MT_NOTES = {
       "Some Applications of Trigonometry", "Circles", "Areas Related to Circles", "Surface Areas and Volumes",
       "Statistics", "Probability" ] },
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
-      "Chemical Reactions and Equations", "Acids, Bases and Salts", "Metals and Non-metals", "Carbon and its Compounds",
+      "Chemical Reactions and Equations", "Acids, Bases and Salts", "Metals and Non-metals",
+      { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf" },
       "Life Processes", "Control and Coordination", "How do Organisms Reproduce?", "Heredity",
       "Light – Reflection and Refraction", "The Human Eye and the Colourful World", "Electricity",
       "Magnetic Effects of Electric Current", "Our Environment" ] },
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
     // Only topic names are listed here — replace with your chapter list.
     { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems" ] },
-    { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion" ] },
+    { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
+      { title: "Simple Machines", file: "notes/class9-science-simple-machines.pdf" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",
