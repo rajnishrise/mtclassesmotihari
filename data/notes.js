@@ -24,7 +24,8 @@ window.MT_NOTES = {
       "Our Environment" ] },
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
     // Only topic names are listed here — replace with your chapter list.
-    { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems" ] },
+    { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems",
+      { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf" } ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
       { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
