@@ -1,6 +1,6 @@
 /* Lets the site be installed as an app and keeps visited pages available offline.
    Network first: visitors always get the newest version when they are online. */
-const CACHE = "mt-classes-v1";
+const CACHE = "mt-classes-v2";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener("fetch", (e) => {

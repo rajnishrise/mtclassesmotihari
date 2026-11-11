@@ -49,7 +49,7 @@
   if (head) head.innerHTML =
     (D.announcement ? `<div class="topbar">📢 ${MT.esc(D.announcement)} · <a href="contact.html">Enquire</a></div>` : "") +
     `<header class="site"><div class="wrap nav">
-      <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span>${MT.esc(C.name)}<small>${MT.esc(C.city)} · Classes 8–10</small></span></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="MT Classes logo" width="52" height="52"><span>${MT.esc(C.name)}<small>${MT.esc(C.city)} · Classes 8–10</small></span></a>
       <nav class="links" id="links" aria-label="Main">${nav.map((n) => `<a href="${n[0]}" class="${n[2] === page ? "on" : ""}">${n[1]}</a>`).join("")}</nav>
       <a class="btn gold sm" href="contact.html">Enroll</a>
       <button class="icon-btn" id="theme-btn" aria-label="Switch light or dark mode">🌙</button>
