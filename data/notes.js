@@ -2,6 +2,8 @@
    chapters: list of chapter names. To attach a PDF, write an object instead of a name:
      { title: "Real Numbers", file: "notes/class10-maths-real-numbers.pdf" }   (file in /notes folder)
      { title: "Real Numbers", file: "https://drive.google.com/..." }           (Google Drive link)
+   Optional label: a line under the title, e.g. which part of the chapter the PDF covers.
+   PDFs in /notes open in the site's own reader (viewer.html); Drive links open in a new tab.
    quick: short revision notes that open on the site itself (key = exact chapter title).
    test:  links a chapter to an online test id from data/questions.js. */
 window.MT_NOTES = {
@@ -12,16 +14,19 @@ window.MT_NOTES = {
       "Some Applications of Trigonometry", "Circles", "Areas Related to Circles", "Surface Areas and Volumes",
       "Statistics", "Probability" ] },
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
-      "Chemical Reactions and Equations", "Acids, Bases and Salts", "Metals and Non-metals",
+      "Chemical Reactions and Equations", "Acids, Bases and Salts",
+      { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf" },
       { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf" },
-      "Life Processes", "Control and Coordination", "How do Organisms Reproduce?", "Heredity",
+      "Life Processes", "Control and Coordination",
+      { title: "How do Organisms Reproduce?", file: "notes/class10-science-how-do-organisms-reproduce.pdf" }, "Heredity",
       "Light – Reflection and Refraction", "The Human Eye and the Colourful World", "Electricity",
-      "Magnetic Effects of Electric Current", "Our Environment" ] },
+      { title: "Magnetic Effects of Electric Current", label: "AC & DC Current and Household Circuits", file: "notes/class10-science-ac-dc-household-circuits.pdf" },
+      "Our Environment" ] },
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
     // Only topic names are listed here — replace with your chapter list.
     { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems" ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
-      { title: "Simple Machines", file: "notes/class9-science-simple-machines.pdf" } ] },
+      { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",

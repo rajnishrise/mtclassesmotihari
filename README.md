@@ -6,7 +6,8 @@ Website for **MT Classes** (Maths & Science, Classes 8–10, CBSE). Plain HTML, 
 |---|---|
 | `index.html` | Home: courses, board-exam countdown, notice board, FAQ |
 | `classes.html` | Batch timings, weekly schedule, live-class link |
-| `notes.html` | Chapter-wise notes (PDF links) and quick-revision notes that open on the site |
+| `notes.html` | Chapter-wise notes (PDFs) and quick-revision notes that open on the site |
+| `viewer.html` | Reads a notes PDF inside the site (PDF.js in `assets/vendor/pdfjs`) |
 | `videos.html` | YouTube lessons (loads the player only when tapped) |
 | `exam.html` | Timed MCQ tests, instant score, solutions, WhatsApp share |
 | `attendance.html` | Teacher marks attendance; parents check with roll number + code |
