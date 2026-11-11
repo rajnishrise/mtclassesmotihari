@@ -20,8 +20,11 @@
 <body data-page="videos">
 <div id="site-header"></div>
 <main id="main">
-<div class="page-head"><div class="wrap"><h1 style="font-size:clamp(1.7rem,5vw,2.4rem)">Video lessons</h1><p>Watch the chapter again at home</p></div></div>
-<section><div class="wrap"><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start"><div class="filters" id="f-class"></div><div id="channel"></div></div>
+<div class="page-head"><div class="wrap"><h1 style="font-size:clamp(1.7rem,5vw,2.4rem)">Video lessons</h1><p>Watch any chapter again at home, right here on the website</p></div></div>
+<section><div class="wrap">
+  <div class="vtools"><div class="filters" id="f-class"></div><input id="v-search" class="vsearch" type="search" placeholder="Search lessons, e.g. refraction" aria-label="Search video lessons"></div>
+  <div class="filters" id="f-chap"></div>
+  <p class="muted small" id="v-count" aria-live="polite"></p>
   <div class="grid3" id="videos"></div></div></section>
 </main>
 <div id="site-footer"></div>
