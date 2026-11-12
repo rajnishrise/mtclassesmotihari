@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perimeter and Area: Class 9 Maths Chapter 6 Notes | MT Classes Motihari</title>
+<meta name="description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 6, Measuring Space: Perimeter and Area. Easy notes with textbook diagrams on pi, arc length, area of triangles, Heron's and Brahmagupta's formulas, area of a circle and sectors, solutions to every exercise and a quiz.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+
+/* chapter 6 extras */
+.sci .ini{font-size:15px}
+.lab{display:grid;grid-template-columns:210px 1fr;gap:18px;align-items:center}
+.lab-svg{width:100%;max-width:220px;display:block;margin:0 auto}
+.lab-ctrl label{display:block;font-weight:600;margin:2px 0 8px}
+.lab-ctrl input[type=range]{display:block;width:100%;accent-color:#0E2148;margin-top:4px}
+.lab-ctrl p{margin:4px 0;font-size:16.5px}
+.heron-in{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 10px}
+.heron-in label{font-weight:700;color:var(--navy)}
+.heron-in input{width:66px;font:500 17px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:8px;margin-left:4px}
+#hout{font-size:18px}
+.ans .cards2{margin:4px 0 10px}
+.ans p{margin:0 0 10px}
+.duo .box,.duo .formula{align-self:center}
+.idsvg svg.dg{max-width:300px;margin:0 auto}
+@media print{.fig img{max-height:200px!important}.fig.narrow img{max-height:250px!important}.ans .fig img{max-height:180px!important}.fig{padding:6px;margin:8px 0}.figrow{grid-template-columns:repeat(3,1fr)}.cards2.idsvg svg.dg{max-height:180px}.fig svg.dg{max-height:220px}section{margin-bottom:14px}}
+@media (max-width:760px){.cards2.idsvg{grid-template-columns:1fr}.lab{grid-template-columns:1fr}.lab-svg{max-width:190px}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>Perimeter and Area</h1>
+<p class="sub">Class 9 Maths, Chapter 6: Measuring Space (NCERT Ganita Manjari, Part I)</p>
+<p class="pitch">The story of π, arcs and sectors, Heron's and Brahmagupta's formulas, and the area of a circle, with 54 textbook diagrams, every exercise solved step by step, and a quick quiz.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="A wheel of diameter d rolls one full turn and covers a distance of pi times d" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".35"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs>
+<circle cx="200" cy="215" r="180" fill="url(#hglow)"/>
+<text x="200" y="118" font-size="46" font-weight="800" fill="#fff" text-anchor="middle" font-family="Baloo 2,sans-serif">C = <tspan fill="#E3B23C">π</tspan>d</text>
+<line x1="30" y1="300" x2="372" y2="300" stroke="#CBD6EE" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+<line x1="55" y1="300" x2="55" y2="300" stroke="#E3B23C" stroke-width="7" stroke-linecap="round"><animate attributeName="x2" values="55;337.7;337.7" keyTimes="0;.7;1" dur="7s" repeatCount="indefinite"/></line>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;282.7 0;282.7 0" keyTimes="0;.7;1" dur="7s" repeatCount="indefinite"/>
+<g><animateTransform attributeName="transform" type="rotate" values="0 55 255;360 55 255;360 55 255" keyTimes="0;.7;1" dur="7s" repeatCount="indefinite"/>
+<circle cx="55" cy="255" r="45" fill="#1D3D7A" stroke="#8FB4FF" stroke-width="5"/>
+<line x1="55" y1="214" x2="55" y2="296" stroke="#8FB4FF" stroke-width="2" opacity=".6"/><line x1="14" y1="255" x2="96" y2="255" stroke="#8FB4FF" stroke-width="2" opacity=".6"/>
+<circle cx="55" cy="300" r="8" fill="#D9534F" stroke="#FFF2C6" stroke-width="2"/></g>
+<line x1="55" y1="214" x2="55" y2="296" stroke="#F4CF6B" stroke-width="3" stroke-dasharray="6 5"/><text x="66" y="250" font-size="22" font-weight="700" fill="#F4CF6B" font-family="Baloo 2,sans-serif">d</text>
+<circle cx="55" cy="255" r="5" fill="#E3B23C"/></g>
+<text x="196" y="340" font-size="22" font-weight="700" fill="#CBD6EE" text-anchor="middle" font-family="Baloo 2,sans-serif">one turn = π × d ≈ 3.14 d</text>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a href="#start"><span>Start</span>The relay-race puzzle</a></li>
+<li><a href="#perimeter"><span>6.1</span>Perimeter of a shape</a></li>
+<li><a href="#cd"><span>6.2</span>The C/D ratio and the story of π</a></li>
+<li><a href="#irrational"><span>6.3</span>π is irrational</a></li>
+<li><a href="#arc"><span>6.4</span>Length of an arc + track staggers</a></li>
+<li><a href="#puzzles"><span>6.5</span>Puzzles and paradoxes</a></li>
+<li><a href="#ex1"><span>Ex 6.1</span>Solutions</a></li>
+<li><a href="#rect"><span>6.6–6.7</span>Rectangle and parallelogram</a></li>
+<li><a href="#triangle"><span>6.8</span>Area of a triangle, medians</a></li>
+<li><a href="#heron"><span>6.8.1</span>Heron's formula</a></li>
+<li><a href="#brahmagupta"><span>Cyclic</span>Brahmagupta's formula</a></li>
+<li><a href="#squaring"><span>6.9</span>Squaring a rectangle</a></li>
+<li><a href="#ex2"><span>Ex 6.2</span>Solutions</a></li>
+<li><a href="#circle"><span>6.10</span>Area of a circle</a></li>
+<li><a href="#sector"><span>6.10.1</span>Sector and segment</a></li>
+<li><a href="#ex3"><span>Ex 6.3</span>Solutions</a></li>
+<li><a href="#end"><span>End</span>End-of-chapter solutions</a></li>
+<li><a href="#recap"><span>Recap</span>Formula sheet</a></li>
+<li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
+</ol>
+</nav>
+
+<section id="start">
+<div class="sec-head"><span class="sec-num word">Start</span><h2>The relay-race puzzle</h2></div>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-1.webp" alt="Athletes at staggered starting positions on a curved running track" width="846" height="573" loading="lazy" decoding="async"><figcaption><b>Fig. 6.1</b> Athletes at the start of a 4 × 100 m relay race. Why are they not on the same starting line?</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p class="lead">In a relay race the runners in the <b>outer lanes start ahead</b> of those in the inner lanes, yet everyone finishes at the same line. The gap between the starting points of neighbouring lanes is called the <span class="term">stagger</span>.</p>
+<div class="box key"><h4>The big idea</h4><p>On the curved part of the track, an outer lane is a <b>bigger circle</b> than an inner lane, so it is longer. The stagger makes up for this extra length so that <b>every runner covers exactly the same distance</b>. To work out the stagger we must know how to find the length around a circle. That is where this chapter begins.</p></div>
+<details class="qa"><summary><span>Does the stagger give anyone an unfair advantage?</span></summary><div class="ans">No. The stagger is chosen so that each runner runs exactly the same distance (for example 400 m). Without it, runners in outer lanes would run more. It only <i>looks</i> like they start ahead.</div></details>
+<details class="qa"><summary><span>Think and Reflect: My school has a 200 m track instead of a 400 m track. Do we need a smaller stagger for the same 4 × 100 m relay?</span></summary><div class="ans">Surprisingly, <b>no, you need a bigger one</b>. On a bend, the extra distance run by the outer lane is (angle turned) × (difference in radius). It does <b>not</b> depend on how big the track is. A 400 m race on a 400 m track turns through 360° once (one lap), but on a 200 m track the same 400 m means <b>two laps</b>, so you turn through 720°. With the same lane width, the stagger has to be <b>twice as large</b>. (You will be able to check this after Section 6.4.)</div></details>
+</section>
+
+<section id="perimeter">
+<div class="sec-head"><span class="sec-num">6.1</span><h2>Perimeter of a shape</h2></div>
+<p>The <span class="term">perimeter</span> of a shape is the total length around its border. Imagine a tiny insect walking once around the edge, never turning back, until it returns to where it started: the distance it walks is the perimeter.</p>
+<div class="cards2">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-2.webp" alt="A square and an equilateral triangle each with side a units" width="705" height="321" loading="lazy" decoding="async"><figcaption><b>Fig. 6.2</b> Square: perimeter 4<i>a</i> · Equilateral triangle: perimeter 3<i>a</i></figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-3.webp" alt="A circle with radius r" width="321" height="312" loading="lazy" decoding="async"><figcaption><b>Fig. 6.3</b> A circle of radius <i>r</i>. What is its perimeter?</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<div class="tbl-wrap"><table>
+<tr><th>Shape</th><th>Perimeter</th></tr>
+<tr><td>Square of side <i>a</i></td><td>4<i>a</i></td></tr>
+<tr><td>Equilateral triangle of side <i>a</i></td><td>3<i>a</i></td></tr>
+<tr><td>Rectangle, length <i>a</i>, width <i>b</i></td><td>2(<i>a</i> + <i>b</i>)</td></tr>
+</table></div>
+<div class="box trick"><h4>📝 Special case</h4><p>A square is a rectangle with <i>a</i> = <i>b</i>. Put <i>b</i> = <i>a</i> in 2(<i>a</i> + <i>b</i>) and you get 4<i>a</i>. The square formula is a <b>special case</b> of the rectangle formula.</p></div>
+<h3>Ratio of perimeter to side stays fixed</h3>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-4.webp" alt="Two squares on graph paper with sides 2 and 4 units and perimeters 8 and 16 units" width="804" height="546" loading="lazy" decoding="async"><figcaption><b>Fig. 6.4</b> Double the side and the perimeter doubles too: the ratio of perimeter to side is always 4 : 1.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<ul>
+<li>For <b>every square</b>, perimeter : side = <b>4 : 1</b>, whatever its size.</li>
+<li>For <b>every equilateral triangle</b>, perimeter : side = <b>3 : 1</b>.</li>
+<li>Is there a fixed ratio for <b>circles</b> too? That is the question of the next section.</li>
+</ul>
+<details class="qa"><summary><span>Think and Reflect: What is the connection between the perimeter of a circle and the 400 m athletics track?</span></summary><div class="ans">The curved parts of the track are semicircles. To know how much farther an outer lane is, we need the perimeter (circumference) of circles of different radii.</div></details>
+</section>
+
+<section id="cd">
+<div class="sec-head"><span class="sec-num">6.2</span><h2>The C/D ratio and the story of π</h2></div>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-5.webp" alt="Three circles of different sizes each marked with circumference C and diameter D" width="801" height="372" loading="lazy" decoding="async"><figcaption><b>Fig. 6.5</b> Is circumference ÷ diameter the same for all circles?</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>The perimeter of a circle is called its <span class="term">circumference</span> (<i>C</i>). People realised long ago that <b><i>C</i> ÷ <i>D</i> is the same for every circle</b>, big or small. This fixed number is called <b>π</b> (pi, said like "pie").</p>
+<div class="formula"><div>C ÷ D = π &nbsp;⟹&nbsp; C = πD = 2πr</div><small>π ≈ 22/7 ≈ 3.14 (π = 3.14159265…). D is the diameter, r the radius, and D = 2r.</small></div>
+<div class="box think"><h4>🏠 Home measurement</h4><p>Measure the diameter <i>D</i> of a cotton reel. Wrap thin thread tightly around it <b>20 times</b>, unwrap it and measure its length <i>L</i>. Then <b>L ÷ (20 × D)</b> gives π. Winding 20 times makes the small errors in measuring much less important. You should get a value between 3.1 and 3.2.</p></div>
+
+<h3>π's adventurous journey</h3>
+<div class="cards2">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-6.webp" alt="A regular hexagon inscribed in a circle of radius 1" width="462" height="432" loading="lazy" decoding="async"><figcaption><b>Fig. 6.6</b> Mesopotamia: the hexagon inside the circle shows π &gt; 3.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-7.webp" alt="Inscribed and circumscribed hexagons around a circle of radius 1" width="477" height="393" loading="lazy" decoding="async"><figcaption><b>Fig. 6.7</b> Archimedes trapped π between inscribed and circumscribed polygons.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<details class="qa"><summary><span>Why does Fig. 6.6 show that π &gt; 3?</span></summary><div class="ans">The radius is 1. The hexagon is made of 6 equilateral triangles, so each side is 1 and its perimeter is <b>6</b>. The circle goes around the outside of the hexagon, so its circumference 2π × 1 = 2π is <b>more than 6</b>. So 2π &gt; 6, i.e. <b>π &gt; 3</b>.</div></details>
+<details class="qa"><summary><span>Why does Fig. 6.7 show that π is between 3 and 2√3?</span></summary><div class="ans">The inner hexagon gives π &gt; 3 (as above). For the outer hexagon, the radius 1 is the <b>height</b> of each of its 6 equilateral triangles of side <i>a</i>. By Baudhāyana–Pythagoras, 1² + (<i>a</i>/2)² = <i>a</i>², so 3<i>a</i>²/4 = 1 and <i>a</i> = 2/√3. Its perimeter is 6<i>a</i> = 12/√3 = <b>4√3</b>. The circle lies inside it, so 2π &lt; 4√3, i.e. <b>π &lt; 2√3 ≈ 3.46</b>.</div></details>
+<div class="sci-grid">
+<div class="sci"><div class="ini">3⅛</div><div><h4>Mesopotamia <span class="yr">c. 1900 BCE</span></h4><p>Hexagon inside a circle ⟹ π &gt; 3. Used π = 3 + 1/8 = <b>3.125</b>.</p></div></div>
+<div class="sci"><div class="ini">96</div><div><h4>Archimedes <span class="yr">250 BCE</span></h4><p>Polygons up to <b>96 sides</b>: 3<sup>10</sup>⁄<sub>71</sub> &lt; π &lt; 3<sup>1</sup>⁄<sub>7</sub>.</p></div></div>
+<div class="sci"><div class="ini">Pt</div><div><h4>Ptolemy <span class="yr">150 CE</span></h4><p>377/120 ≈ <b>3.14167</b>, for astronomy tables.</p></div></div>
+<div class="sci"><div class="ini">Zu</div><div><h4>Liu Hui, Zu Chongzhi <span class="yr">263, 480 CE</span></h4><p>Polygon with 24,576 sides! Gave <b>22/7</b> and <b>355/113</b> ≈ 3.1415929, the best value in the world for 800 years.</p></div></div>
+<div class="sci"><div class="ini">Ā</div><div><h4>Āryabhaṭa <span class="yr">499 CE</span></h4><p>62832/20000 = <b>3.1416</b>, and called it <i>āsanna</i> (approximate): π cannot be an exact fraction.</p></div></div>
+<div class="sci"><div class="ini">Br</div><div><h4>Brahmagupta <span class="yr">628 CE</span></h4><p>Used <b>√10</b> ≈ 3.1622: less accurate but easy to use in calculations.</p></div></div>
+<div class="sci"><div class="ini">M</div><div><h4>Mādhava of Sangamagrāma <span class="yr">c. 1400</span></h4><p>The <b>first exact formula</b> for π, as an infinite series. Got π to 11 decimal places. The beginning of calculus!</p></div></div>
+<div class="sci"><div class="ini">π</div><div><h4>William Jones, Euler <span class="yr">1706</span></h4><p>The symbol π comes from the Greek word <i>perimetros</i> (perimeter). Euler made it popular.</p></div></div>
+</div>
+<div class="formula"><div>π/4 = 1 − 1/3 + 1/5 − 1/7 + …</div><small>Mādhava's series. Later breakthroughs: Nīlakaṇṭha (c. 1500), Machin (1706), Ramanujan (1914), Chudnovsky brothers (1988). Today π is known to hundreds of trillions of digits.</small></div>
+</section>
+
+<section id="irrational">
+<div class="sec-head"><span class="sec-num">6.3</span><h2>π is irrational</h2></div>
+<p>A <b>rational</b> number can be written as a fraction <i>a</i>/<i>b</i> (<i>a</i>, <i>b</i> integers, <i>b</i> ≠ 0). Its decimal either ends or repeats in a pattern: 1/3 = 0.333…, 1/11 = 0.0909…, 1/7 = 0.142857 142857…</p>
+<p>The digits of π go on forever with <b>no repeating pattern</b>. π cannot be written as a ratio of two integers, so it is <span class="term">irrational</span> (proved by Lambert in 1761). √2 is another irrational number.</p>
+<div class="box alert"><h4>Common mistake</h4><p>π is <b>not equal</b> to 22/7. We write <b>π ≈ 22/7</b> and <b>π ≠ 22/7</b>. In the same way √2 ≈ 1.414 but √2 ≠ 1.414. Since π is irrational there is no "best" fraction for it: for any fraction close to π there is another one that is closer. 355/113 is much better than 22/7.</p></div>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-pi.webp" alt="Cartoon train carrying the digits 3.14159265358979 with two people watching" width="1000" height="639" loading="lazy" decoding="async"><figcaption>The digits of π go on forever, like an endless train.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="box wow"><h4>✨ Fun fact</h4><p>"<b>How I wish I could recollect pi</b>": count the letters in each word: 3, 1, 4, 1, 5, 9, 2. So π ≈ 3.141592… <b>Pi Day</b> is 14 March (3-14) and <b>Pi Approximation Day</b> in India is 22 July (22/7).</p></div>
+</section>
+
+<section id="arc">
+<div class="sec-head"><span class="sec-num">6.4</span><h2>Length of an arc</h2></div>
+<div class="cards2">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-8.webp" alt="Circle with diameter AB splitting it into a red and a blue semicircle" width="522" height="447" loading="lazy" decoding="async"><figcaption><b>Fig. 6.8</b> Two equal semicircles: each is 2πr ÷ 2 = <b>πr</b>.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-9.webp" alt="Circle divided into four coloured quarter circles by two perpendicular diameters" width="537" height="528" loading="lazy" decoding="async"><figcaption><b>Fig. 6.9</b> Four equal quarter circles: each is 2πr ÷ 4 = <b>πr/2</b>.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<p>Why are the two semicircles equal? <b>Reflect</b> the circle in the diameter AB (or turn it through 180°): the red and blue halves swap places exactly. Turning through 90° moves each quarter circle onto the next one, so all four quarters are equal.</p>
+<ul>
+<li>Semicircle = 2πr × <b>180°/360°</b></li>
+<li>Quarter circle = 2πr × <b>90°/360°</b></li>
+</ul>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-10.webp" alt="Arc AB of a circle subtending angle theta at the centre O" width="447" height="402" loading="lazy" decoding="async"><figcaption><b>Fig. 6.10</b> Arc AB subtends angle θ° at the centre O.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula"><div>Arc length l = 2πr × θ/360</div><small>θ = angle the arc subtends at the centre (in degrees). The arc is the fraction θ/360 of the whole circumference.</small></div>
+</div>
+
+<div class="box calc no-print" id="sector-lab"><h4>🎛️ Try it: arc and sector explorer</h4>
+<p class="muted">Move the sliders. Uses π = 22/7, like the book.</p>
+<div class="lab">
+<svg viewBox="0 0 220 220" class="lab-svg" aria-label="Circle with a shaded sector"><circle cx="110" cy="110" r="90" fill="#EAF0FA" stroke="#B9CBEA" stroke-width="2"/><path id="lab-sector" fill="#F6C9C7" stroke="#D9534F" stroke-width="2"/><path id="lab-arc" fill="none" stroke="#9E2F2C" stroke-width="5" stroke-linecap="round"/><circle cx="110" cy="110" r="4" fill="#0E2148"/><text id="lab-theta" x="110" y="104" font-size="15" font-weight="700" fill="#0E2148">θ</text></svg>
+<div class="lab-ctrl">
+<label>Radius r = <b id="lab-r-out">7</b> cm<input id="lab-r" type="range" min="1" max="28" value="7"></label>
+<label>Angle θ = <b id="lab-t-out">90</b>°<input id="lab-t" type="range" min="1" max="360" value="90"></label>
+<p>Arc length = 2 × <sup>22</sup>⁄<sub>7</sub> × <span class="lr">7</span> × <span class="lt">90</span>/360 = <b id="lab-l">11</b> cm</p>
+<p>Sector area = <sup>22</sup>⁄<sub>7</sub> × <span class="lr">7</span>² × <span class="lt">90</span>/360 = <b id="lab-a">38.5</b> cm²</p>
+<p>Perimeter of sector = arc + 2r = <b id="lab-p">25</b> cm</p>
+</div></div></div>
+
+<h3>A closer look at a 400 m athletics track</h3>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-11.webp" alt="Schematic of a 400 m running track with two straights and two semicircular ends centred at A and B" width="1000" height="771" loading="lazy" decoding="async"><figcaption><b>Fig. 6.11</b> Two straights of 84.39 m and two semicircular bends; innermost radius 36.5 m, each lane 1.22 m wide.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="box calc"><h4>Distance run in lane 1</h4>
+<p>The athlete runs 0.3 m from the inner border, so the bends have radius 36.5 + 0.3 = <b>36.8 m</b>.</p>
+<p>Two straights: 2 × 84.39 = 168.78 m. Two semicircles = one full circle: 2 × 3.1416 × 36.8 = 231.22 m.</p>
+<p class="big">Total = 168.78 + 231.22 = 400 m</p></div>
+<details class="qa"><summary><span>Think and Reflect: What is the difference in radius between lanes 1 and 2? What stagger does lane 2 need? Is the stagger between lanes 3 and 2 the same?</span></summary><div class="ans">The radius goes up by one lane width, <b>1.22 m</b>. In one full lap the two bends make a full circle, so lane 2 runs 2π(r + 1.22) − 2πr = 2π × 1.22 ≈ 2 × 3.1416 × 1.22 ≈ <b>7.67 m</b> more. So the lane-2 runner must start about <b>7.67 m ahead</b> (for one lap). The extra length depends only on the <b>difference</b> in radius (1.22 m), not on the radius itself, so lanes 3 and 2 need the <b>same</b> stagger, and so on outwards. (For a 4 × 100 m relay the stagger is shared among the legs run on the bends.)</div></details>
+</section>
+
+<section id="puzzles">
+<div class="sec-head"><span class="sec-num">6.5</span><h2>Puzzles and paradoxes on perimeter</h2></div>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-12.webp" alt="Two equal circles centred at A and B, each passing through the other's centre, meeting at C and D" width="762" height="558" loading="lazy" decoding="async"><figcaption><b>Fig. 6.12</b> Each circle passes through the other's centre.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="box calc" style="margin:0"><h4>Example 1</h4><p>AB = AC = BC = <i>r</i>, so △ABC is equilateral and ∠CAB = 60°. Likewise ∠BAD = 60°, so <b>∠CAD = 120°</b>.</p><p>The hidden (dotted) arc of each circle is 120/360 = 1/3 of it, so the outside (red) arc is <b>2/3</b> of it.</p><p class="big">Perimeter = 2 × <sup>2</sup>⁄<sub>3</sub> × 2πr = <sup>8</sup>⁄<sub>3</sub>πr</p></div>
+</div>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-13.webp" alt="A big semicircle a from P to Q and a wavy path made of three smaller semicircles b, c and d" width="678" height="522" loading="lazy" decoding="async"><figcaption><b>Fig. 6.13</b> Which path from P to Q is longer?</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="box calc" style="margin:0"><h4>Example 2: the surprise</h4><p>Let the radii be a′, b′, c′, d′. A semicircle of radius x has length πx.</p><p>Path 1 = πa′. Path 2 = π(b′ + c′ + d′).</p><p>But PQ = 2a′ = 2b′ + 2c′ + 2d′, so a′ = b′ + c′ + d′.</p><p class="big">Both paths are equal!</p></div>
+</div>
+<div class="box trick"><h4>📝 Remember</h4><p>The length of a semicircle is π × radius = (π/2) × diameter. It grows in <b>proportion</b> to the diameter, so if you split a diameter into pieces and put a semicircle on each piece, the total length stays the same.</p></div>
+</section>
+
+<section id="ex1">
+<div class="sec-head"><span class="sec-num word">Ex 6.1</span><h2>Exercise Set 6.1: solutions</h2></div>
+<p class="muted">Use π = 22/7 unless told otherwise. Tap a question to see the solution.</p>
+<details class="qa"><summary><span class="qnum">1</span><span>The perimeter of a circle is 44 cm. What is its radius?</span></summary><div class="ans">2πr = 44 ⟹ 2 × <sup>22</sup>⁄<sub>7</sub> × r = 44 ⟹ r = 44 × 7 ÷ 44 = <b>7 cm</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Circumference, correct to 3 significant figures, for radius (i) 7 cm (ii) 10 cm (iii) 12 cm.</span></summary><div class="ans">(i) 2 × <sup>22</sup>⁄<sub>7</sub> × 7 = <b>44.0 cm</b><br>(ii) 2 × <sup>22</sup>⁄<sub>7</sub> × 10 = 440/7 = 62.857… ≈ <b>62.9 cm</b><br>(iii) 2 × <sup>22</sup>⁄<sub>7</sub> × 12 = 528/7 = 75.428… ≈ <b>75.4 cm</b></div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Arc length: (i) r = 3.5 cm, angle 60° (ii) r = 6.3 m, angle 120°.</span></summary><div class="ans">(i) l = 2 × <sup>22</sup>⁄<sub>7</sub> × 3.5 × <sup>60</sup>⁄<sub>360</sub> = 22 × <sup>1</sup>⁄<sub>6</sub> = 11/3 ≈ <b>3.67 cm</b><br>(ii) l = 2 × <sup>22</sup>⁄<sub>7</sub> × 6.3 × <sup>120</sup>⁄<sub>360</sub> = 39.6 × <sup>1</sup>⁄<sub>3</sub> = <b>13.2 m</b></div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Perimeter of a sector of radius 14 cm and angle 75°.</span></summary><div class="ans">Arc = 2 × <sup>22</sup>⁄<sub>7</sub> × 14 × <sup>75</sup>⁄<sub>360</sub> = 88 × <sup>5</sup>⁄<sub>24</sub> = 55/3 ≈ 18.33 cm.<br>Perimeter = arc + 2 radii = 18.33 + 28 = <b>46.33 cm</b> (exactly 139/3 cm).</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Find the perimeters of the shapes in Fig. 6.14 (i) to (ix).</span></summary><div class="ans">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-14.webp" alt="Nine shapes made of straight lines and arcs labelled i to ix" width="1000" height="692" loading="lazy" decoding="async"><figcaption><b>Fig. 6.14</b> Tap to zoom and follow each part.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p><b>(i)</b> Rectangle 80 m × 60 m with a semicircle (diameter 60 m) on each short side. Two semicircles = one circle of diameter 60.<br>Perimeter = 2 × 80 + <sup>22</sup>⁄<sub>7</sub> × 60 = 160 + 188.57 = <b>348.57 m</b></p>
+<p><b>(ii)</b> Half-ring: outer diameter 12 cm, inner diameter 8 cm, flat ends each (12 − 8) ÷ 2 = 2 cm.<br>Perimeter = π × 6 + π × 4 + 2 + 2 = 10π + 4 = 220/7 + 4 = <b>35.43 cm</b></p>
+<p><b>(iii)</b> Square of side 10 cm with a semicircle on each side (only the arcs are on the border).<br>Perimeter = 4 × π × 5 = 20π = 440/7 = <b>62.86 cm</b></p>
+<p><b>(iv)</b> Equilateral triangle of side 12 cm with a semicircle (diameter 12) on each side.<br>Perimeter = 3 × π × 6 = 18π = 396/7 = <b>56.57 cm</b></p>
+<p><b>(v)</b> All the dashed squares have side 14 cm. The border has 4 quarter circles of radius 14 cm (at the corners) and 4 semicircles of diameter 14 cm (at the ends).<br>4 quarter circles = one full circle = 2 × <sup>22</sup>⁄<sub>7</sub> × 14 = 88 cm. 4 semicircles = 4 × <sup>22</sup>⁄<sub>7</sub> × 7 = 88 cm.<br>Perimeter = 88 + 88 = <b>176 cm</b></p>
+<p><b>(vi)</b> A semicircle on 28 cm, and the base split into 4 equal parts of 7 cm each with a small semicircle on each.<br>Big arc = <sup>22</sup>⁄<sub>7</sub> × 14 = 44 cm. Small arcs = 4 × <sup>22</sup>⁄<sub>7</sub> × 3.5 = 44 cm.<br>Perimeter = <b>88 cm</b></p>
+<p><b>(vii)</b> Right triangle with legs 8 cm and 6 cm, so the hypotenuse is √(64 + 36) = 10 cm. A semicircle stands on each side.<br>Perimeter = π(10 + 8 + 6)/2 = 12π = 264/7 = <b>37.71 cm</b></p>
+<p><b>(viii)</b> A semicircle on 12 cm and three semicircles on 4 cm.<br>Perimeter = π × 6 + 3 × π × 2 = 12π = <b>37.71 cm</b></p>
+<p><b>(ix)</b> A semicircle on 20 cm (radius 10), and two semicircles of radius 5 (one up, one down).<br>Perimeter = π × 10 + π × 5 + π × 5 = 20π = <b>62.86 cm</b></p>
+<div class="box trick" style="margin-bottom:0"><h4>📝 Shortcut</h4><p>In (vi), (viii) and (ix) the small semicircles have the same total length as a semicircle on the whole line, just like Example 2.</p></div>
+</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>A car tyre has diameter 56 cm. (i) Distance for one revolution? (ii) Revolutions in 10 km?</span></summary><div class="ans">(i) One revolution = circumference = <sup>22</sup>⁄<sub>7</sub> × 56 = <b>176 cm</b>.<br>(ii) 10 km = 10 × 1000 × 100 = 1,000,000 cm. Revolutions = 1,000,000 ÷ 176 = 5681.8…, so about <b>5682 revolutions</b> (5681 complete ones).</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Total perimeter of all the petals in each flower (Fig. 6.15).</span></summary><div class="ans">
+<div class="cards2"><figure class="fig zoomable "><img src="img/perimeter-area/f6-15a.webp" alt="Four-petal flower inside a 14 cm square" width="762" height="537" loading="lazy" decoding="async"><figcaption><b>Fig. 6.15A</b> Arcs centred at midpoints of the sides.</figcaption><span class="zoom-hint">Tap to zoom</span></figure><figure class="fig zoomable "><img src="img/perimeter-area/f6-15b.webp" alt="Six-petal flower inside a regular hexagon of side 42 cm" width="717" height="537" loading="lazy" decoding="async"><figcaption><b>Fig. 6.15B</b> Arcs centred at the vertices.</figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p><b>(i)</b> Each arc is centred at the midpoint of a side, so its radius is 7 cm, and it passes through the two corners and the centre of the square: it is a <b>semicircle</b>. The 4 petals are made of 4 such semicircles.<br>Total = 4 × <sup>22</sup>⁄<sub>7</sub> × 7 = <b>88 cm</b></p>
+<p><b>(ii)</b> The centre O and two neighbouring vertices form an <b>equilateral triangle</b> of side 42 cm. Each petal edge is an arc of radius 42 cm centred at a vertex, turning through 60°.<br>One arc = 2 × <sup>22</sup>⁄<sub>7</sub> × 42 × <sup>60</sup>⁄<sub>360</sub> = 44 cm. Each petal has 2 arcs and there are 6 petals: 12 arcs.<br>Total = 12 × 44 = <b>528 cm</b></p></div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>The perimeters of two circles are in the ratio 5 : 4. Ratio of their radii?</span></summary><div class="ans">2πr₁ : 2πr₂ = 5 : 4 ⟹ r₁ : r₂ = <b>5 : 4</b>. (Perimeter is proportional to radius.)</div></details>
+</section>
+
+<section id="rect">
+<div class="sec-head"><span class="sec-num word">6.6–6.7</span><h2>Rectangle and parallelogram</h2></div>
+<p><span class="term">Area</span> is the amount of space a flat region takes up. The unit is a 1 × 1 square, of area <b>1 sq. unit</b> (1 unit²).</p>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-16.webp" alt="Unit square, rectangle 1 by b, square a by a and rectangle a by b with their areas" width="1000" height="171" loading="lazy" decoding="async"><figcaption><b>Fig. 6.16</b> Area of a square and a rectangle.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula"><div>Rectangle: A = ab &nbsp;·&nbsp; Square: A = a²</div></div>
+<h3>Area of a parallelogram</h3>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-17.webp" alt="Parallelogram ABCD and a copy A'B'C'D' with a triangle cut from one end and moved to form rectangle EB'C'F" width="1000" height="338" loading="lazy" decoding="async"><figcaption><b>Fig. 6.17</b> Cut the green triangle off one end and slide it to the other end: the parallelogram becomes a rectangle with the same base and height.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula"><div>Parallelogram: A = base × height = bh</div><small>The height is the perpendicular distance between the parallel sides, not the slanting side.</small></div>
+<div class="cards2">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-18.webp" alt="A thin slanted parallelogram ABCD" width="702" height="306" loading="lazy" decoding="async"><figcaption><b>Fig. 6.18</b> A "thin" parallelogram: the perpendicular from C does not land on AD.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-19.webp" alt="Thin parallelogram with a new point D' and A' showing how it is made less slanted" width="762" height="327" loading="lazy" decoding="async"><figcaption><b>Fig. 6.19</b> Fix: shift the top side step by step.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<details class="qa"><summary><span>Think and Reflect: How do we fix the "gap" for a thin parallelogram?</span></summary><div class="ans">Pick D′ on DA close to D, and A′ on DA extended with A′A = D′D. △CDD′ ≅ △BAA′, so cutting one off and adding the other keeps the area the same while making the parallelogram A′BCD′ less slanted. Repeat until the foot of the perpendicular lands on the top side; then the cut-and-slide method of Fig. 6.17 works. The base and height never change, so the area is still <b>bh</b>.</div></details>
+<details class="qa"><summary><span>Think and Reflect: Can we find the area of a parallelogram from its side lengths alone?</span></summary><div class="ans"><b>No.</b> Keep the sides fixed and change the angle between them: the parallelogram leans over, its height drops and so does its area (it is largest when the angle is 90°, a rectangle, and gets close to 0 as it flattens). Fig. 6.27 shows three rhombuses with sides 3, 3, 3, 3 but areas 9, 8.01 and 5.41.</div></details>
+</section>
+
+<section id="triangle">
+<div class="sec-head"><span class="sec-num">6.8</span><h2>Area of a triangle</h2></div>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-20.webp" alt="A right triangle inside a rectangle, a general triangle inside a rectangle, and an obtuse triangle EFG" width="1000" height="300" loading="lazy" decoding="async"><figcaption><b>Fig. 6.20A, B</b> Each triangle is exactly half of the rectangle around it.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>Enclose the triangle in a rectangle with the same base and height. Each part of the rectangle is cut in half by a side of the triangle, so the triangle is <b>half the rectangle</b>.</p>
+<h3>A nicer way: two copies make a parallelogram</h3>
+<figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-21.webp" alt="Two congruent triangles ABC and A'B'C' fitted together to form parallelogram ABCD" width="1000" height="386" loading="lazy" decoding="async"><figcaption><b>Fig. 6.21</b> Two congruent triangles fit together to make a parallelogram.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula"><div>Triangle: A = ½ × base × height = ½bh</div></div>
+<details class="qa"><summary><span>Why do the two copies make a parallelogram?</span></summary><div class="ans">When the copy is turned upside down and placed along BC, the angle ∠B′C′A′ sits next to ∠BCA as alternate angles. Equal alternate angles mean the opposite sides are <b>parallel</b>, so both pairs of opposite sides are parallel: a parallelogram.</div></details>
+<details class="qa"><summary><span>For an obtuse triangle (Fig. 6.20B) the rectangle trick seems to fail. What do we do?</span></summary><div class="ans">Draw the height from E to the line FG extended, meeting it at H outside the triangle. Then △EFG = △EHG − △EHF = ½ × HG × h − ½ × HF × h = ½ × (HG − HF) × h = ½ × FG × h. The formula still works.</div></details>
+
+<h3>A property of the median</h3>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-22.webp" alt="Triangle ABC with median AD to the midpoint D of BC and height h" width="687" height="567" loading="lazy" decoding="async"><figcaption><b>Fig. 6.22</b> AD is a median: D is the midpoint of BC.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div><p>A <span class="term">median</span> joins a vertex to the midpoint of the opposite side.</p><p>△ABD and △ACD have equal bases (BD = DC = <i>a</i>) and the <b>same height</b> <i>h</i>, so each has area <b>½ah</b>.</p></div>
+</div>
+<div class="box key"><h4>Theorem</h4><p>A median of a triangle divides it into two triangles of <b>equal area</b>, even though the two triangles usually have different shapes.</p></div>
+<details class="qa"><summary><span>Think and Reflect: Can △ABD be cut into pieces that rearrange to cover △ACD exactly?</span></summary><div class="ans">Yes, it is always possible. In fact any two polygons with equal area can be cut into finitely many pieces and rearranged into each other (the <b>Wallace–Bolyai–Gerwien theorem</b>). The book leaves the least number of pieces as a challenge.</div></details>
+<details class="qa"><summary><span>Think and Reflect: Rectangles with perimeter 40 units. How many? Largest area? Smallest area?</span></summary><div class="ans">If the sides are <i>x</i> and 20 − <i>x</i> (0 &lt; <i>x</i> &lt; 20), there are <b>infinitely many</b> such rectangles. Area = <i>x</i>(20 − <i>x</i>) = 100 − (<i>x</i> − 10)², which is <b>largest (100 sq. units) when <i>x</i> = 10</b>: the 10 × 10 square. There is <b>no smallest</b>: a very thin rectangle (like 19.99 × 0.01) has area as close to 0 as you like, but never 0.</div></details>
+</section>
+
+<section id="heron">
+<div class="sec-head"><span class="sec-num">6.8.1</span><h2>Heron's formula</h2></div>
+<p>If you know only the three sides <i>a</i>, <i>b</i>, <i>c</i> of a triangle, you can still find its area. First find the <span class="term">semi-perimeter</span> <i>s</i>.</p>
+<div class="formula"><div>s = ½(a + b + c)</div><div>Area = √[ s(s − a)(s − b)(s − c) ]</div><small>Heron of Alexandria. Proved in Grade 10 using Baudhāyana–Pythagoras and a² − b² = (a − b)(a + b).</small></div>
+<div class="box calc no-print" id="heron-lab"><h4>🎛️ Try it: Heron calculator</h4>
+<div class="heron-in"><label>a <input type="number" id="ha" value="3" min="0" step="any"></label><label>b <input type="number" id="hb" value="4" min="0" step="any"></label><label>c <input type="number" id="hc" value="5" min="0" step="any"></label></div>
+<p id="hout" class="big" aria-live="polite"></p></div>
+<h3>Checking it on known triangles</h3>
+<div class="figrow">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-23.webp" alt="Equilateral triangle ABC with side a and height h" width="642" height="642" loading="lazy" decoding="async"><figcaption><b>Fig. 6.23</b> Equilateral, side a</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-24.webp" alt="Isosceles triangle with equal sides a and base 2b" width="618" height="513" loading="lazy" decoding="async"><figcaption><b>Fig. 6.24</b> Isosceles, sides a, a, 2b</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-25.webp" alt="Right triangle with sides 3, 4 and 5" width="417" height="507" loading="lazy" decoding="async"><figcaption><b>Fig. 6.25</b> Sides 3, 4, 5</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<div class="tbl-wrap"><table class="compact">
+<tr><th>Triangle</th><th>Heron's formula</th><th>½ × base × height</th></tr>
+<tr><td>Equilateral, side <i>a</i> (Ex. 3)</td><td>s = 3a/2; √(3a/2 · a/2 · a/2 · a/2) = <b>(√3/4)a²</b></td><td>h = (√3/2)a; ½ × a × (√3/2)a = <b>(√3/4)a²</b></td></tr>
+<tr><td>Isosceles a, a, 2b (Ex. 4)</td><td>s = a + b; √((a+b)·b·b·(a−b)) = <b>b√(a² − b²)</b></td><td>h = √(a² − b²); ½ × 2b × h = <b>b√(a² − b²)</b></td></tr>
+<tr><td>3, 4, 5 (Ex. 5)</td><td>s = 6; √(6 × 3 × 2 × 1) = <b>6</b></td><td>3² + 4² = 5², right angle at B; ½ × 3 × 4 = <b>6</b></td></tr>
+</table></div>
+<div class="box trick"><h4>📝 The symbol ∴</h4><p>∴ means "therefore". You will see it often in maths solutions.</p></div>
+<h3>Two more formulas, with circles</h3>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-26.webp" alt="Triangle ABC with its circumcircle of radius R and incircle of radius r" width="582" height="468" loading="lazy" decoding="async"><figcaption><b>Fig. 6.26</b> Circumcircle (through the vertices) and incircle (touching the sides).</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula" style="margin:0"><div>Area = abc / 4R</div><small>R = radius of the <b>circumcircle</b>, the one circle through all three vertices.</small><div>Area = r(a + b + c) / 2</div><small>r = radius of the <b>incircle</b>, the one circle touching all three sides.</small></div>
+</div>
+</section>
+
+<section id="brahmagupta">
+<div class="sec-head"><span class="sec-num word">Cyclic</span><h2>Brahmagupta's formula</h2></div>
+<p>Can we find the area of a 4-gon (quadrilateral) from its four sides alone? <b>No.</b> All three shapes below have sides 3, 3, 3, 3, but different areas.</p>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-27.webp" alt="Three rhombuses with sides 3 having areas 9, 8.01 and 5.41" width="1000" height="263" loading="lazy" decoding="async"><figcaption><b>Fig. 6.27</b> Same sides, different areas. We need extra information, such as an angle, a diagonal, or a special property.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>One such special property: the 4-gon is <span class="term">cyclic</span>, meaning all four vertices lie on one circle. In 628 CE <b>Brahmagupta</b> found a beautiful formula for it.</p>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-28.webp" alt="Cyclic quadrilateral ABCD with sides a, b, c, d inside a circle" width="597" height="612" loading="lazy" decoding="async"><figcaption><b>Fig. 6.28</b> A cyclic 4-gon.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula" style="margin:0"><div>s = ½(a + b + c + d)</div><div>Area = √[(s − a)(s − b)(s − c)(s − d)]</div><small>Works only for cyclic 4-gons.</small></div>
+</div>
+<div class="box calc"><h4>Example 6: rectangle (every rectangle is cyclic)</h4><p>Sides a, b, a, b. s = a + b. Area = √(b · a · b · a) = √(ab · ab) = <b>ab</b> ✓</p></div>
+<div class="box calc"><h4>Example 7: isosceles trapezium (always cyclic)</h4>
+<figure class="fig zoomable small"><img src="img/perimeter-area/f6-29.webp" alt="Isosceles trapezium ABCD with parallel sides 2a and 2b and equal legs c" width="702" height="378" loading="lazy" decoding="async"><figcaption><b>Fig. 6.29</b> Isosceles trapezium.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>Sides 2a, c, 2b, c. s = a + b + c. Then s − 2a = c + b − a, s − 2b = c + a − b, s − c = a + b.</p>
+<p>Area = (a + b)√[(c + b − a)(c + a − b)] = (a + b)√[c² − (b − a)²].</p>
+<p>The height from B is h = √[c² − (b − a)²], so Area = (a + b)h = ½(2a + 2b)h, the usual trapezium formula ✓</p></div>
+<div class="box wow"><h4>✨ Heron is a special case of Brahmagupta</h4><p>A triangle is a 4-gon with the fourth side <b>d = 0</b> (vertices A and D meet), and every triangle is cyclic. Put d = 0: s = ½(a + b + c) and Area = √[(s − a)(s − b)(s − c)(s − 0)] = √[s(s − a)(s − b)(s − c)], which is <b>Heron's formula</b>. Brahmagupta's formula is a <b>generalisation</b> of Heron's.</p></div>
+<div class="box key"><h4>Special case and generalisation</h4><ul>
+<li>A square is a special case of a rectangle: A = a² comes from A = ab with b = a.</li>
+<li>Isosceles right triangle from a² + b² = c² with a = b: c = a√2.</li>
+<li>(a + b)² = a² + b² + 2ab is (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca with c = 0.</li></ul></div>
+</section>
+
+<section id="squaring">
+<div class="sec-head"><span class="sec-num">6.9</span><h2>Squaring a rectangle</h2></div>
+<p>To <b>square</b> a shape means to construct a square with the same area. Here is how <b>Baudhāyana</b> (Śulbasūtra, 800 BCE) squared a rectangle ABCD with AD = a, AB = b, a &gt; b.</p>
+<div class="duo">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-30.webp" alt="Baudhayana's construction: rectangle ABCD, square AFGH, arc from A to G centred at H meeting BC at K, and square HPQS" width="762" height="567" loading="lazy" decoding="async"><figcaption><b>Fig. 6.30</b> Square HPQS has the same area as rectangle ABCD.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<ol class="steps">
+<li>Mark E on AD with AE = AB = b.</li>
+<li>Mark F, the midpoint of ED.</li>
+<li>Draw square AFGH on AF, with H on AB produced.</li>
+<li>With centre H, draw arc AG. It cuts BC at K.</li>
+<li>Through K draw a line parallel to AH, cutting GH at P.</li>
+<li>Square HPQS on HP has the <b>same area</b> as ABCD.</li>
+</ol>
+</div>
+<div class="proof"><h4>Why it works</h4>
+<p>AF = (AE + AD)/2 = <b>(a + b)/2</b>, so HG = HK = (a + b)/2 (HK is a radius of the arc).</p>
+<p>BH = AH − AB = (a + b)/2 − b = <b>(a − b)/2</b>.</p>
+<p>In right △HKP (KP = BH): HP² = HK² − BH² = ((a + b)/2)² − ((a − b)/2)² = (a² + 2ab + b² − a² + 2ab − b²)/4 = <b>ab</b>.</p>
+<p>So area of square HPQS = HP² = ab = area of rectangle ABCD. It is the identity <b>((a + b)/2)² − ((a − b)/2)² = ab</b> drawn as a picture.</p></div>
+<details class="qa"><summary><span>Think and Reflect: How would you square a triangle?</span></summary><div class="ans">First turn the triangle into a rectangle of the same area: a triangle of base b and height h has area ½bh, which is a rectangle of base b and height h/2 (cut the triangle at half its height and fold the top pieces down). Then square that rectangle with Baudhāyana's construction.</div></details>
+</section>
+
+<section id="ex2">
+<div class="sec-head"><span class="sec-num word">Ex 6.2</span><h2>Exercise Set 6.2: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>Find the area of △ADE in Fig. 6.31.</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-31.webp" alt="Rectangle ABCD 10 cm by 8 cm with triangle ADE shaded, E on side BC" width="942" height="387" loading="lazy" decoding="async"><figcaption><b>Fig. 6.31</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Base AD = 8 cm. E lies on BC, so the height from E to AD is the width of the rectangle, 10 cm.<br>Area = ½ × 8 × 10 = <b>40 cm²</b> (half the rectangle).</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Trapezium: parallel sides 40 cm and 20 cm, non-parallel sides 26 cm each. Area?</span></summary><div class="ans">Drop perpendiculars from the ends of the 20 cm side. They cut off (40 − 20) ÷ 2 = 10 cm on each side of the 40 cm side.<br>Height h = √(26² − 10²) = √(676 − 100) = √576 = 24 cm.<br>Area = ½ × (40 + 20) × 24 = <b>720 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Sides 8 cm and 11 cm, perimeter 32 cm. Area?</span></summary><div class="ans">Third side = 32 − 8 − 11 = 13 cm. s = 16.<br>Area = √(16 × 8 × 5 × 3) = √1920 = <b>8√30 ≈ 43.82 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Sides in the ratio 3 : 5 : 7, perimeter 300 m. Area?</span></summary><div class="ans">Sides 3k + 5k + 7k = 15k = 300, k = 20: sides 60 m, 100 m, 140 m. s = 150.<br>Area = √(150 × 90 × 50 × 10) = √6,750,000 = <b>1500√3 ≈ 2598 m²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Rhombus with one diagonal twice the other, area 128 cm². Shorter diagonal?</span></summary><div class="ans">Area of a rhombus = ½ × d₁ × d₂. With d and 2d: ½ × d × 2d = d² = 128.<br>d = √128 = <b>8√2 ≈ 11.31 cm</b>.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>ABCD is a parallelogram; P and Q are on AB. Ratio area(△PCD) : area(△QCD)?</span></summary><div class="ans">Both triangles have the same base CD, and P, Q lie on AB, which is parallel to CD. So both have the same height (the distance between AB and CD). Ratio = <b>1 : 1</b>. Each is half the parallelogram.</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>O is any point on diagonal PR of parallelogram PQRS. Prove area(△PSO) = area(△PQO).</span></summary><div class="ans">Let the diagonals meet at M. Diagonals of a parallelogram bisect each other, so M is the midpoint of QS.<br>In △PQS, PM is a median, so area(△PQM) = area(△PSM). In △OQS, OM is a median, so area(△OQM) = area(△OSM).<br>Subtract (or add, if O is beyond M): area(△PQO) = area(△PSO). ∎<br><span class="muted">Another way: △PSO and △PQO share the base PO, and S and Q are at equal distances from the line PR (as QM = MS).</span></div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>Joining the midpoints of the sides of a 4-gon in order gives a parallelogram of half the area. Prove it.</span></summary><div class="ans">Let ABCD have midpoints P (AB), Q (BC), R (CD), S (DA).<br>In △ABD, BS is a median, so area(ABS) = ½ area(ABD). In △ABS, SP is a median, so area(APS) = ½ area(ABS) = <b>¼ area(ABD)</b>. Similarly area(CQR) = ¼ area(CBD).<br>Adding: area(APS) + area(CQR) = ¼ area(ABCD). In the same way area(BPQ) + area(DRS) = ¼ area(ABCD).<br>The four corner triangles take ½ of ABCD, so PQRS = <b>½ area(ABCD)</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">9</span><span>In △ABC, D is the midpoint of BC and P is any point on median AD. Show area(△ABP) = area(△ACP).</span></summary><div class="ans"><div class="cards2"><figure class="fig zoomable "><img src="img/perimeter-area/f6-32.webp" alt="Triangle ABC with median AD and a point P on it" width="462" height="471" loading="lazy" decoding="async"><figcaption><b>Fig. 6.32</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><figure class="fig zoomable "><img src="img/perimeter-area/f6-33.webp" alt="Square ABCD with a point P joined to all four vertices, red and green triangles" width="447" height="462" loading="lazy" decoding="async"><figcaption><b>Fig. 6.33</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>AD is a median of △ABC: area(ABD) = area(ACD).<br>PD is a median of △PBC: area(PBD) = area(PCD).<br>Subtract: area(ABD) − area(PBD) = area(ACD) − area(PCD), i.e. <b>area(△ABP) = area(△ACP)</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">10</span><span>Square ABCD with P inside. Ratio of red (△PAB + △PCD) to green (△PBC + △PDA)?</span></summary><div class="ans">Let the side be s. △PAB and △PCD have bases AB = CD = s, and their heights add up to the distance between AB and CD, which is s. So red = ½s × (h₁ + h₂) = ½s². Green is the rest, also ½s². Ratio = <b>1 : 1</b>, wherever P is.</div></details>
+<details class="qa"><summary><span class="qnum">11</span><span>D is the midpoint of AB, P is on BC, Q is on AB with CQ ∥ PD. Prove area(△BPQ) = ½ area(△ABC).</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-34.webp" alt="Triangle ABC with D the midpoint of AB, P on BC, Q on AB, and CQ parallel to PD" width="822" height="582" loading="lazy" decoding="async"><figcaption><b>Fig. 6.34</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>△PDQ and △PDC have the same base PD and lie between the same parallels PD and CQ, so they have <b>equal area</b>.<br>area(BPQ) = area(BPD) + area(PDQ) = area(BPD) + area(PDC) = area(BDC).<br>CD is a median of △ABC, so area(BDC) = ½ area(ABC). Hence <b>area(△BPQ) = ½ area(△ABC)</b>. ∎</div></details>
+</section>
+
+<section id="circle">
+<div class="sec-head"><span class="sec-num">6.10</span><h2>Area of a circle</h2></div>
+<p>For every square, perimeter² : area = (4a)² : a² = <b>16 : 1</b>. For every equilateral triangle it is 9a² : (√3/4)a² = <b>36 : √3</b>. For any shape this ratio depends only on the <b>shape</b>, not its size. So for circles too, <b>C² : A</b> is a fixed number, and so is <b>A : r²</b>.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Who</th><th>Formula for the area of a circle</th></tr>
+<tr><td>Babylonians (before 1500 BCE)</td><td>A ≈ C²/12</td></tr>
+<tr><td>Egyptians (1500 BCE), Baudhāyana Śulbasūtra (800 BCE)</td><td>A ≈ (8d/9)² = (256/81)r² ≈ 3.16r²</td></tr>
+<tr><td>Archimedes (c. 250 BCE)</td><td><b>A = πr²</b> exactly, the same π as in C = 2πr</td></tr>
+</table></div>
+<p>Archimedes: "The area of a circle equals the area of a right triangle whose two legs are the radius and the circumference."</p>
+<div class="formula"><div>Area of circle = ½ × circumference × radius = ½ × 2πr × r = πr²</div></div>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-36.webp" alt="Regular triangle, pentagon and heptagon each with an inscribed circle of radius r" width="1000" height="251" loading="lazy" decoding="async"><figcaption><b>Fig. 6.36</b> Area of a regular polygon = ½ × perimeter × radius of its incircle. With more and more sides, the polygon becomes the circle.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<h3>Nīlakaṇṭha's picture proof (c. 1500)</h3>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-37.webp" alt="A circle cut into many thin slices, rearranged alternately into a shape like a parallelogram" width="1000" height="449" loading="lazy" decoding="async"><figcaption><b>Fig. 6.37</b> Cut the circle into thin slices and arrange them top-to-tail.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>As the slices get thinner, the shape becomes a <b>parallelogram</b> with</p>
+<ul><li>base = half the circumference = <b>πr</b> (half the slices' arcs are on top, half on the bottom),</li><li>height = <b>r</b>.</li></ul>
+<div class="formula"><div>Area of circle = πr × r = πr²</div></div>
+<details class="qa"><summary><span>Think and Reflect: Why do people love circular shapes?</span></summary><div class="ans">Practical reasons: wheels roll smoothly; a circle encloses the most area for a given length of boundary (wall, fence or rope); round pots and towers are strong and easy to make with a peg and rope. Other reasons: circles look beautiful and balanced and have been symbols of the sun, time and unity in many cultures.</div></details>
+</section>
+
+<section id="sector">
+<div class="sec-head"><span class="sec-num">6.10.1</span><h2>Sector and segment</h2></div>
+<p>A <span class="term">sector</span> is the region between an arc and the two radii to its ends (a slice of pizza). A <span class="term">segment</span> is the region between an arc and its chord.</p>
+<div class="figrow">
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-38.webp" alt="Sector OAB with angle theta at O" width="492" height="327" loading="lazy" decoding="async"><figcaption><b>Fig. 6.38</b> Sector, angle θ°</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-39.webp" alt="Circle split into two semicircular discs by diameter AB" width="507" height="432" loading="lazy" decoding="async"><figcaption><b>Fig. 6.39</b> Semicircular disc = ½πr²</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/perimeter-area/f6-40.webp" alt="Circle split into four quarter discs" width="537" height="543" loading="lazy" decoding="async"><figcaption><b>Fig. 6.40</b> Quarter disc = ¼πr²</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<div class="formula"><div>Area of sector = πr² × θ/360</div><small>Compare: arc length = 2πr × θ/360. Both use the same fraction θ/360 of the whole circle.</small><div>Area of segment = area of sector − area of triangle</div></div>
+<div class="box trick"><h4>📝 Minor and major</h4><p>The smaller sector/segment is the <b>minor</b> one, the larger is the <b>major</b> one. Major = whole circle − minor.</p></div>
+</section>
+
+<section id="ex3">
+<div class="sec-head"><span class="sec-num word">Ex 6.3</span><h2>Exercise Set 6.3: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>Area of a sector of radius 7 cm, angle 60°.</span></summary><div class="ans"><sup>22</sup>⁄<sub>7</sub> × 7 × 7 × <sup>60</sup>⁄<sub>360</sub> = 154 × <sup>1</sup>⁄<sub>6</sub> = 77/3 ≈ <b>25.67 cm²</b></div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Area of a quadrant of a circle with circumference 44 cm.</span></summary><div class="ans">2πr = 44 ⟹ r = 7 cm. Circle area = <sup>22</sup>⁄<sub>7</sub> × 49 = 154 cm². Quadrant = 154 ÷ 4 = <b>38.5 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Minute hand 7 cm long. Area swept in 10 minutes.</span></summary><div class="ans">In 60 minutes it turns 360°, so in 10 minutes it turns 60°.<br>Area = <sup>22</sup>⁄<sub>7</sub> × 49 × <sup>60</sup>⁄<sub>360</sub> = 154/6 ≈ <b>25.67 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Chord of a circle of radius 10 cm subtends 90°. Areas of (i) minor sector (ii) major sector (π ≈ 3.14).</span></summary><div class="ans">Circle area = 3.14 × 100 = 314 cm².<br>(i) Minor sector = 314 × 90/360 = <b>78.5 cm²</b><br>(ii) Major sector = 314 × 270/360 = <b>235.5 cm²</b></div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Chord of a circle of radius 15 cm subtends 60°. Minor and major segments (π ≈ 3.14, √3 ≈ 1.73).</span></summary><div class="ans">Sector = 3.14 × 225 × 60/360 = 117.75 cm².<br>The triangle formed by the chord and two radii is <b>equilateral</b> (two sides 15 cm and angle 60°), so its area = (√3/4) × 15² = 1.73 × 225 ÷ 4 = 97.31 cm².<br>Minor segment = 117.75 − 97.31 = <b>20.44 cm²</b> (more exactly 20.4375).<br>Circle = 3.14 × 225 = 706.5 cm². Major segment = 706.5 − 20.44 = <b>686.06 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>Two wipers, each 28 cm long, sweep 120° without overlapping. Total area cleaned per sweep.</span></summary><div class="ans">One wiper = <sup>22</sup>⁄<sub>7</sub> × 28 × 28 × <sup>120</sup>⁄<sub>360</sub> = 2464 ÷ 3 = 821.33 cm².<br>Two wipers = 4928/3 ≈ <b>1642.67 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">7*</span><span>A chord of a circle of radius r subtends 60°. Show the minor segment = r²(π/6 − √3/4).</span></summary><div class="ans">Sector = πr² × 60/360 = πr²/6. The triangle is equilateral with side r, area (√3/4)r².<br>Minor segment = πr²/6 − (√3/4)r² = <b>r²(π/6 − √3/4)</b> ≈ 0.0906r². ∎<br><span class="muted">Note: the textbook prints this as πr²(1/6 − √3/4), which would be negative. The π belongs only with 1/6, as shown here.</span></div></details>
+<details class="qa"><summary><span class="qnum">8*</span><span>Equilateral triangle inscribed in a circle of radius r. Show area of triangle : area of circle = 3√3 / 4π ≈ 0.413.</span></summary><div class="ans">Join the centre O to the vertices: three triangles, each with two sides r and angle 120° between them. The side of the big triangle is then r√3 (the perpendicular from O to a side is r/2, so half a side is √(r² − r²/4) = (√3/2)r).<br>Area of triangle = (√3/4)(r√3)² = (3√3/4)r².<br>Ratio = (3√3/4)r² ÷ πr² = <b>3√3/(4π) ≈ 0.413</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">9*</span><span>Square inscribed in a circle of radius r. Show the ratio of areas = 2/π ≈ 0.637.</span></summary><div class="ans">The diagonal of the square is the diameter 2r. Area of a square = ½ × diagonal² = ½ × 4r² = 2r².<br>Ratio = 2r² ÷ πr² = <b>2/π ≈ 0.637</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">10*</span><span>Regular hexagon inscribed in a circle of radius r. Show the ratio = 3√3/2π ≈ 0.827. Why is it twice the answer to Q8?</span></summary><div class="ans">The hexagon is 6 equilateral triangles of side r: area = 6 × (√3/4)r² = (3√3/2)r². Ratio = <b>3√3/(2π) ≈ 0.827</b>.<br><b>Why twice?</b> Join every other vertex of the hexagon to get the inscribed equilateral triangle of Q8. It covers the 3 triangles OAC, OCE, OEA, each equal in area to one of the 6 small triangles. So the triangle is 3 parts and the hexagon is 6 parts: the hexagon is exactly twice the triangle.</div></details>
+</section>
+
+<section id="end">
+<div class="sec-head"><span class="sec-num word">End</span><h2>End-of-chapter exercises: solutions</h2></div>
+<p class="muted">Use π = 22/7 unless told otherwise. Questions marked * are challenge problems.</p>
+<details class="qa"><summary><span class="qnum">1</span><span>Draw area figures for (a + b)(a − b) = a² − b² and (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca.</span></summary><div class="ans">
+<figure class="fig zoomable small"><img src="img/perimeter-area/f6-41.webp" alt="Square of side a plus b divided into a squared, two ab rectangles and b squared" width="537" height="546" loading="lazy" decoding="async"><figcaption><b>Fig. 6.41</b> (a + b)² = a² + 2ab + b²</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p><b>(a + b)(a − b) = a² − b²:</b> from a square of side a, cut away a square of side b from a corner. The leftover L-shape (area a² − b²) splits into two strips. Turn the small strip and put it at the end of the big one: you get a rectangle (a + b) long and (a − b) wide.</p>
+<div class="cards2 idsvg">
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 220 220" role="img" aria-label="Square of side a with a b by b corner removed, leaving two strips"><rect x="30" y="20" width="160" height="160" fill="none" stroke="#5B6475" stroke-width="1.5" stroke-dasharray="5 4"/><rect x="30" y="80" width="160" height="100" fill="#F6C9C7" stroke="#9E2F2C" stroke-width="2"/><rect x="30" y="20" width="100" height="60" fill="#C9D6F0" stroke="#2A4A86" stroke-width="2"/><text x="160" y="56" font-size="15" text-anchor="middle" fill="#5B6475">b²</text><text x="160" y="40" font-size="11" text-anchor="middle" fill="#5B6475">removed</text><text x="110" y="136" font-size="15" text-anchor="middle" fill="#9E2F2C">a × (a − b)</text><text x="80" y="55" font-size="13" text-anchor="middle" fill="#2A4A86">(a − b) × b</text><text x="110" y="200" font-size="15" text-anchor="middle">a</text><text x="18" y="104" font-size="15" text-anchor="middle">a</text></svg><figcaption>Square a × a minus the corner b × b</figcaption></figure>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 270 220" role="img" aria-label="The two strips joined into one rectangle a plus b long and a minus b wide"><rect x="15" y="60" width="160" height="100" fill="#F6C9C7" stroke="#9E2F2C" stroke-width="2"/><rect x="175" y="60" width="60" height="100" fill="#C9D6F0" stroke="#2A4A86" stroke-width="2"/><text x="95" y="115" font-size="15" text-anchor="middle" fill="#9E2F2C">a × (a − b)</text><text x="205" y="115" font-size="12" text-anchor="middle" fill="#2A4A86">b × (a − b)</text><text x="125" y="185" font-size="15" text-anchor="middle">a + b</text><text x="252" y="115" font-size="15" text-anchor="middle">a − b</text><text x="125" y="40" font-size="14" text-anchor="middle" fill="#0E2148" font-weight="700">(a + b)(a − b) = a² − b²</text></svg><figcaption>Rearranged into a rectangle</figcaption></figure>
+</div>
+<p><b>(a + b + c)²:</b> split each side of a square of side (a + b + c) into a, b, c. You get 9 pieces: a², b², c² on the diagonal, and two each of ab, bc and ca.</p>
+<figure class="fig zoomable small"><svg class="dg" viewBox="0 0 250 250" role="img" aria-label="Square of side a plus b plus c divided into nine rectangles"><g stroke="#0E2148" stroke-width="2"><rect x="30" y="30" width="100" height="100" fill="#F6C9C7"/><rect x="130" y="30" width="60" height="100" fill="#FFF5DA"/><rect x="190" y="30" width="40" height="100" fill="#E7F6EC"/><rect x="30" y="130" width="100" height="60" fill="#FFF5DA"/><rect x="130" y="130" width="60" height="60" fill="#C9D6F0"/><rect x="190" y="130" width="40" height="60" fill="#EAF0FA"/><rect x="30" y="190" width="100" height="40" fill="#E7F6EC"/><rect x="130" y="190" width="60" height="40" fill="#EAF0FA"/><rect x="190" y="190" width="40" height="40" fill="#E6D7F0"/></g><g font-size="15" text-anchor="middle" fill="#0E2148"><text x="80" y="85">a²</text><text x="160" y="85">ab</text><text x="210" y="85">ac</text><text x="80" y="165">ab</text><text x="160" y="165">b²</text><text x="210" y="165">bc</text><text x="80" y="215">ac</text><text x="160" y="215">bc</text><text x="210" y="215">c²</text><text x="80" y="22">a</text><text x="160" y="22">b</text><text x="210" y="22">c</text><text x="18" y="85">a</text><text x="18" y="165">b</text><text x="18" y="215">c</text></g></svg><figcaption>(a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca</figcaption></figure>
+</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Isosceles triangle, perimeter 40 cm, equal sides 15 cm each. Area?</span></summary><div class="ans">Base = 40 − 30 = 10 cm. Height = √(15² − 5²) = √200 = 10√2 cm.<br>Area = ½ × 10 × 10√2 = <b>50√2 ≈ 70.71 cm²</b>. (Heron: s = 20, √(20 × 5 × 5 × 10) = √5000 = 50√2 ✓)</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Isosceles triangle with base 10 cm and area 60 cm². Equal sides?</span></summary><div class="ans">½ × 10 × h = 60 ⟹ h = 12 cm. The height bisects the base: equal side = √(5² + 12²) = √169 = <b>13 cm</b>.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Right triangle of area 54 cm² with one leg 12 cm. Perimeter?</span></summary><div class="ans">½ × 12 × other leg = 54 ⟹ other leg = 9 cm. Hypotenuse = √(144 + 81) = √225 = 15 cm.<br>Perimeter = 12 + 9 + 15 = <b>36 cm</b>.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Sides in the ratio 2 : 3 : 4, perimeter 45 cm. Area?</span></summary><div class="ans">9k = 45, k = 5: sides 10, 15, 20 cm. s = 22.5.<br>Area = √(22.5 × 12.5 × 7.5 × 2.5) = √5273.4375 = <b>(75√15)/4 ≈ 72.62 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>Sides 7 cm, 24 cm, 25 cm. Area in two ways.</span></summary><div class="ans"><b>Way 1:</b> 7² + 24² = 49 + 576 = 625 = 25², so the triangle is right-angled. Area = ½ × 7 × 24 = <b>84 cm²</b>.<br><b>Way 2 (Heron):</b> s = 28. Area = √(28 × 21 × 4 × 3) = √7056 = <b>84 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Bicycle wheel of diameter 60 cm rotates 100 times. Distance?</span></summary><div class="ans">One turn = <sup>22</sup>⁄<sub>7</sub> × 60 = 1320/7 cm. 100 turns = 132000/7 ≈ 18,857 cm ≈ <b>188.57 m</b>.</div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>Area of a quadrant of a circle with circumference 66 cm.</span></summary><div class="ans">2 × <sup>22</sup>⁄<sub>7</sub> × r = 66 ⟹ r = 10.5 cm. Circle = <sup>22</sup>⁄<sub>7</sub> × 10.5² = 346.5 cm². Quadrant = <b>86.625 cm²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">9</span><span>Car wheel of radius 28 cm. Distance in one turn, and turns in 1 km?</span></summary><div class="ans">One turn = 2 × <sup>22</sup>⁄<sub>7</sub> × 28 = <b>176 cm</b>. 1 km = 100,000 cm, so turns = 100,000 ÷ 176 ≈ <b>568.2</b> (about 568 turns).</div></details>
+<details class="qa"><summary><span class="qnum">10*</span><span>Two rectangles have the same area and the same perimeter. Are they congruent?</span></summary><div class="ans"><b>Yes.</b> Let the sides be x and y with x + y = p (half the perimeter) and xy = A. Then x and y are the two roots of t² − pt + A = 0, so they are fixed by p and A. Any other rectangle with the same p and A has the same pair of sides, so it is congruent. (This is not true for other shapes: two different triangles can have equal area and perimeter.)</div></details>
+<details class="qa"><summary><span class="qnum">11</span><span>Using the figure, show the area of a trapezium is ½(a + b)h.</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-42.webp" alt="Trapezium split into a parallelogram of base a and a triangle of base b minus a" width="867" height="546" loading="lazy" decoding="async"><figcaption><b>Fig. 6.42</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>The trapezium is a parallelogram (base a, height h) plus a triangle (base b − a, height h).<br>Area = ah + ½(b − a)h = ½(2a + b − a)h = <b>½(a + b)h</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">12</span><span>Divide a trapezium into two triangles to get the same formula.</span></summary><div class="ans">Draw a diagonal. One triangle has base a (top side) and the other has base b (bottom side); both have height h, the distance between the parallel sides.<br>Area = ½ah + ½bh = <b>½(a + b)h</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">13</span><span>Use two identical trapeziums to make a parallelogram.</span></summary><div class="ans">Turn one copy upside down (rotate it 180°) and join it to the first along a slanting side. The top becomes a + b and the bottom b + a, so the shape is a parallelogram with base (a + b) and height h. Its area is (a + b)h, so one trapezium = <b>½(a + b)h</b>.</div></details>
+<details class="qa"><summary><span class="qnum">14</span><span>Show that the area of a kite is half the product of its diagonals, (i) using algebra, (ii) using geometry.</span></summary><div class="ans">In kite ABCD (AB = AD, CB = CD) the diagonals are perpendicular: BD ⊥ AC, meeting at O.<br><b>(i) Algebra:</b> Area = area(ABC) + area(ADC) = ½ × AC × OB + ½ × AC × OD = ½ × AC × (OB + OD) = <b>½ × AC × BD</b>.<br><b>(ii) Geometry:</b> Draw the rectangle with sides AC and BD around the kite (sides parallel to the diagonals). The diagonals cut it into 4 small rectangles, and each side of the kite cuts one of them exactly in half. So the kite is half the rectangle: <b>½ × d₁ × d₂</b>.</div></details>
+<details class="qa"><summary><span class="qnum">15</span><span>Fitting congruent shapes: sides doubled or tripled.</span></summary><div class="ans"><b>(i)</b> PQRS has area 2a × 2b = 4ab = 4 × area(ABCD). <b>Yes</b>, 4 copies fit in a 2 × 2 arrangement.<br><b>(ii)</b> Doubling every side doubles the base and the height, so the area becomes 2 × 2 = <b>4 times</b>. <b>Yes</b>: join the midpoints of the sides of △PQR; this makes 4 triangles, each with sides a, b, c (midpoint theorem), so each is congruent to △ABC.<br><b>(iii)</b> Tripling gives 3 × 3 = <b>9 times</b> the area. <b>Yes</b>: divide each side of △PQR into 3 equal parts and draw lines parallel to the sides. You get 9 small triangles (6 pointing one way and 3 the other), all congruent to △ABC.</div></details>
+<details class="qa"><summary><span class="qnum">16*</span><span>What fraction of the triangle (Fig. 6.43) and of the square (Fig. 6.44) is shaded?</span></summary><div class="ans"><div class="cards2"><figure class="fig zoomable "><img src="img/perimeter-area/f6-43.webp" alt="Triangle with one side halved and another side trisected and a shaded quadrilateral" width="687" height="387" loading="lazy" decoding="async"><figcaption><b>Fig. 6.43</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><figure class="fig zoomable "><img src="img/perimeter-area/f6-44.webp" alt="Square with lines from vertices to midpoints forming a small shaded square in the middle" width="462" height="432" loading="lazy" decoding="async"><figcaption><b>Fig. 6.44</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p><b>Fig. 6.43:</b> Call the top vertex T. One side is cut at its midpoint M, the other side into three equal parts at P₁, P₂ (P₁ nearer T). The shaded part = △(T, bottom-left vertex, P₂) − △TMP₁.<br>△ with T and P₂ = <sup>2</sup>⁄<sub>3</sub> of the whole (same height, base 2/3). △TMP₁ = <sup>1</sup>⁄<sub>2</sub> × <sup>1</sup>⁄<sub>3</sub> = <sup>1</sup>⁄<sub>6</sub> of the whole.<br>Shaded = 2/3 − 1/6 = <b>1/2</b>.</p>
+<p><b>Fig. 6.44:</b> Each corner is joined to the midpoint of a side, making four slanted lines and four small right triangles next to the shaded square. Turn each small triangle half a turn about the midpoint it touches: it fills the notch on the other side of that midpoint. The big square is then rebuilt as <b>5 copies</b> of the shaded square (a plus shape). So the shaded square is <b>1/5</b> of the big square. <span class="muted">Check: with side 2, the shaded square has side 2/√5, so area 4/5 out of 4.</span></p></div></details>
+<details class="qa"><summary><span class="qnum">17</span><span>What fraction of the rectangle is covered by the circles (Figs. 6.45, 6.46)?</span></summary><div class="ans"><div class="cards2"><figure class="fig zoomable "><img src="img/perimeter-area/f6-45.webp" alt="Three equal circles in a row in a rectangle" width="582" height="222" loading="lazy" decoding="async"><figcaption><b>Fig. 6.45</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><figure class="fig zoomable "><img src="img/perimeter-area/f6-46.webp" alt="Four equal circles in a row in a rectangle" width="726" height="222" loading="lazy" decoding="async"><figcaption><b>Fig. 6.46</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>With n circles of radius r: rectangle = 2nr × 2r = 4nr². Circles = nπr².<br>Fraction = nπr² ÷ 4nr² = <b>π/4 ≈ 0.785</b> for both.</div></details>
+<details class="qa"><summary><span class="qnum">18</span><span>Make and prove a conjecture for n circles (10, 20, 50).</span></summary><div class="ans"><b>Conjecture:</b> however many circles there are in a row, they always cover <b>π/4 (about 78.5%)</b> of the rectangle.<br><b>Proof:</b> as in Q17, nπr² ÷ (2nr × 2r) = π/4; the n cancels. For 10, 20 or 50 circles the answer is the same.</div></details>
+<details class="qa"><summary><span class="qnum">19*</span><span>Nine identical rectangles make a large rectangle of area 72 cm². Perimeter of each small rectangle?</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-47.webp" alt="Nine identical rectangles: four lying flat in the top row and five standing up in the bottom row" width="681" height="321" loading="lazy" decoding="async"><figcaption><b>Fig. 6.47</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Let each small rectangle be L × W (L longer). The top row has 4 lying flat (width 4L), the bottom row 5 standing up (width 5W). So <b>4L = 5W</b>.<br>Each has area 72 ÷ 9 = 8 cm², so LW = 8. With W = 4L/5: 4L²/5 = 8, L² = 10, <b>L = √10 ≈ 3.16 cm</b>, W = 4√10/5 ≈ 2.53 cm.<br>Perimeter = 2(L + W) = 2 × 9√10/5 = <b>18√10/5 ≈ 11.38 cm</b>.</div></details>
+<details class="qa"><summary><span class="qnum">20*</span><span>Lines from a vertex to the trisection points of the opposite side: show the blue and red triangles are equal.</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-48.webp" alt="Triangle with lines from the top vertex to the two points that trisect the base; the left and right parts are shaded blue and red" width="582" height="348" loading="lazy" decoding="async"><figcaption><b>Fig. 6.48</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>The blue and red triangles have the same top vertex, so the same height, and equal bases (each one-third of the base). So their areas are <b>equal</b>.<br><b>Cutting idea:</b> cut each triangle along the line joining the midpoints of its two slanting sides, and give the small top piece a half turn about one of those midpoints. Each triangle becomes a <b>parallelogram</b> with base ⅓ of the big base and half the height. Two parallelograms with the same base and height can be cut and slid into each other (as in Figs. 6.17 and 6.19). So the blue pieces can be rearranged to cover the red triangle.</div></details>
+<details class="qa"><summary><span class="qnum">21*</span><span>Quarter circle and two semicircles in a square: show regions A and B have equal area.</span></summary><div class="ans"><figure class="fig zoomable small"><img src="img/perimeter-area/f6-49.webp" alt="Quarter circle in a square with two semicircles on adjacent sides creating an orange lens A and a blue region B" width="462" height="462" loading="lazy" decoding="async"><figcaption><b>Fig. 6.49</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Let the side be 2r. Quarter circle area = ¼π(2r)² = πr². Each semicircle has area ½πr², so the two together have area πr², the same as the quarter circle.<br>The two semicircles overlap in A. So the region they cover = πr² − A. The quarter circle = that region + B = πr² − A + B.<br>So πr² = πr² − A + B, giving <b>A = B</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">22*</span><span>Four semicircles inside a square of side 2: perimeter and area of the 4-petal flower.</span></summary><div class="ans"><figure class="fig zoomable small"><img src="img/perimeter-area/f6-50.webp" alt="Square of side 2 with four inward semicircles forming a blue four-petal flower" width="453" height="456" loading="lazy" decoding="async"><figcaption><b>Fig. 6.50</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Each semicircle has radius 1. Each petal is where two neighbouring semicircles overlap, and its two edges are <b>quarter circles</b> of radius 1.<br><b>Perimeter:</b> 8 quarter arcs = 2 full circles of radius 1 = 4π = 88/7 ≈ <b>12.57 units</b>.<br><b>Area:</b> one petal = 2 × (quarter circle − right triangle) = 2(π/4 − ½) = π/2 − 1. Four petals = <b>2π − 4 ≈ 2.29 sq. units</b>.</div></details>
+<details class="qa"><summary><span class="qnum">23*</span><span>Concentric circles; chord BC = l of the larger touches the smaller. Show the ring area is ¼πl².</span></summary><div class="ans"><figure class="fig zoomable small"><img src="img/perimeter-area/f6-51.webp" alt="Two concentric circles with a chord BC of the larger circle touching the smaller circle at A" width="522" height="516" loading="lazy" decoding="async"><figcaption><b>Fig. 6.51</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>OA ⊥ BC (radius ⊥ tangent), and A is the midpoint of BC, so AB = l/2. In right △OAB: R² − r² = OB² − OA² = (l/2)².<br>Ring area = πR² − πr² = π(R² − r²) = <b>¼πl²</b>. ∎ (You do not need to know R or r!)</div></details>
+<details class="qa"><summary><span class="qnum">24*</span><span>Semicircles on the sides of a right triangle: show Area(A) + Area(B) = Area(C).</span></summary><div class="ans"><figure class="fig zoomable small"><img src="img/perimeter-area/f6-52.webp" alt="Right triangle with semicircles drawn on all three sides labelled A, B and C" width="576" height="447" loading="lazy" decoding="async"><figcaption><b>Fig. 6.52</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>A semicircle on a side of length x has area ½π(x/2)² = (π/8)x². With legs a, b and hypotenuse c:<br>A + B = (π/8)(a² + b²) = (π/8)c² = <b>C</b>, because a² + b² = c². ∎</div></details>
+<details class="qa"><summary><span class="qnum">25*</span><span>Two circles of radius r through each other's centres: area of the region common to both.</span></summary><div class="ans"><figure class="fig zoomable small"><img src="img/perimeter-area/f6-53.webp" alt="Two equal circles through each other's centres with the overlapping lens shaded red" width="762" height="546" loading="lazy" decoding="async"><figcaption><b>Fig. 6.53</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>As in Example 1, ∠CAD = ∠CBD = 120°. The lens is two segments, each = sector 120° − △ with two sides r and angle 120°.<br>One segment = πr²/3 − (√3/4)r². Lens = 2 × that = <b>r²(2π/3 − √3/2) ≈ 1.23r²</b>.</div></details>
+<details class="qa"><summary><span class="qnum">26*</span><span>Three triangles A, B, C in a rectangle: show the rectangle's area is 2(A + C)(B + C)/C.</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-54.webp" alt="Rectangle with three triangles A, B and C sharing a point inside" width="732" height="384" loading="lazy" decoding="async"><figcaption><b>Fig. 6.54</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Let the rectangle be w × h with the bottom-left corner at O. The top point is at distance q from the left side, the right point at height r. Triangle C is right-angled with legs (h − r) and (w − q).<br>A = ½q(h − r), B = ½r(w − q), C = ½(h − r)(w − q).<br>A + C = ½(h − r)w and B + C = ½(w − q)h.<br>(A + C)(B + C) = ¼wh(h − r)(w − q) = ¼wh × 2C = ½wh·C.<br>So <b>wh = 2(A + C)(B + C)/C</b>. ∎</div></details>
+<details class="qa"><summary><span class="qnum">27*</span><span>Quarter circle, semicircle and triangle: show the two shaded regions are equal.</span></summary><div class="ans"><figure class="fig zoomable narrow"><img src="img/perimeter-area/f6-55.webp" alt="Semicircle on AC centred at O with B at the top, and a semicircle on AB bulging out; the moon-shaped region and triangle AOB are shaded" width="807" height="492" loading="lazy" decoding="async"><figcaption><b>Fig. 6.55</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure>Let OA = OB = r, so AB = r√2 and △AOB has area <b>½r²</b>.<br>Semicircle on AB (centre D, radius r√2/2): area = ½π(r²/2) = πr²/4.<br>Segment AFB (between arc AFB and chord AB) = quarter circle − △AOB = πr²/4 − ½r².<br>Moon AEBF = semicircle − segment = πr²/4 − (πr²/4 − ½r²) = <b>½r²</b> = area of △AOB. ∎<br><span class="muted">This "lune" was first found by Hippocrates of Chios: a curved shape with exactly the same area as a straight-sided triangle.</span></div></details>
+</section>
+
+<section id="recap">
+<div class="sec-head"><span class="sec-num word">Recap</span><h2>Formula sheet</h2></div>
+<div class="tbl-wrap"><table>
+<tr><th>Shape</th><th>Perimeter / length</th><th>Area</th></tr>
+<tr><td>Square, side a</td><td>4a</td><td>a²</td></tr>
+<tr><td>Rectangle a × b</td><td>2(a + b)</td><td>ab</td></tr>
+<tr><td>Parallelogram</td><td>2(sum of sides)</td><td>base × height</td></tr>
+<tr><td>Triangle</td><td>a + b + c</td><td>½ × base × height; √[s(s−a)(s−b)(s−c)]</td></tr>
+<tr><td>Trapezium</td><td>sum of sides</td><td>½(a + b)h</td></tr>
+<tr><td>Rhombus / kite</td><td>sum of sides</td><td>½ × d₁ × d₂</td></tr>
+<tr><td>Cyclic 4-gon</td><td>a + b + c + d</td><td>√[(s−a)(s−b)(s−c)(s−d)]</td></tr>
+<tr><td>Circle, radius r</td><td>2πr = πd</td><td>πr²</td></tr>
+<tr><td>Semicircle</td><td>πr (arc) + 2r</td><td>½πr²</td></tr>
+<tr><td>Sector, angle θ</td><td>arc 2πr × θ/360, plus 2r</td><td>πr² × θ/360</td></tr>
+<tr><td>Segment</td><td></td><td>sector − triangle</td></tr>
+</table></div>
+<ul>
+<li><b>π</b> = circumference ÷ diameter, the same for every circle. π ≈ 22/7 ≈ 3.14, and π is <b>irrational</b>.</li>
+<li>Archimedes: 3<sup>10</sup>⁄<sub>71</sub> &lt; π &lt; 3<sup>1</sup>⁄<sub>7</sub>. Zu Chongzhi: 355/113. Āryabhaṭa: 3.1416. Mādhava: π = 4(1 − 1/3 + 1/5 − 1/7 + …).</li>
+<li>A <b>median</b> divides a triangle into two triangles of equal area.</li>
+<li>Triangles on the same base and between the same parallels have equal area.</li>
+<li>If all lengths are multiplied by k, perimeter is multiplied by k and area by <b>k²</b>.</li>
+</ul>
+</section>
+
+<section id="quiz">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p>Tap an option to see the right answer and the reason.</p>
+<div class="quiz">
+<div class="q"><p>1. For every circle, circumference ÷ diameter equals…</p><div class="opts"><button type="button" class="opt">2</button><button type="button" class="opt" data-c>π</button><button type="button" class="opt">2π</button><button type="button" class="opt">it depends on the size</button></div><p class="why">C/D = π for all circles, so C = πd = 2πr.</p></div>
+<div class="q"><p>2. The circumference of a circle of radius 14 cm (π = 22/7) is…</p><div class="opts"><button type="button" class="opt">44 cm</button><button type="button" class="opt" data-c>88 cm</button><button type="button" class="opt">616 cm</button><button type="button" class="opt">154 cm</button></div><p class="why">2 × 22/7 × 14 = 88 cm. (616 cm² would be its area.)</p></div>
+<div class="q"><p>3. An arc of a circle of radius 21 cm subtends 60°. Its length is…</p><div class="opts"><button type="button" class="opt" data-c>22 cm</button><button type="button" class="opt">44 cm</button><button type="button" class="opt">11 cm</button><button type="button" class="opt">66 cm</button></div><p class="why">2 × 22/7 × 21 × 60/360 = 132 ÷ 6 = 22 cm.</p></div>
+<div class="q"><p>4. Who gave the first exact formula for π, as an infinite series?</p><div class="opts"><button type="button" class="opt">Archimedes</button><button type="button" class="opt">Āryabhaṭa</button><button type="button" class="opt" data-c>Mādhava</button><button type="button" class="opt">Euler</button></div><p class="why">π/4 = 1 − 1/3 + 1/5 − 1/7 + … (Mādhava of Sangamagrāma).</p></div>
+<div class="q"><p>5. Which statement is correct?</p><div class="opts"><button type="button" class="opt">π = 22/7</button><button type="button" class="opt">π = 3.14</button><button type="button" class="opt" data-c>π ≈ 22/7 and π is irrational</button><button type="button" class="opt">π is rational</button></div><p class="why">22/7 and 3.14 are only approximations; π cannot be written as a fraction.</p></div>
+<div class="q"><p>6. The area of a triangle with sides 5, 12, 13 cm is…</p><div class="opts"><button type="button" class="opt">60 cm²</button><button type="button" class="opt" data-c>30 cm²</button><button type="button" class="opt">65 cm²</button><button type="button" class="opt">78 cm²</button></div><p class="why">s = 15, √(15 × 10 × 3 × 2) = √900 = 30. (It is right-angled: ½ × 5 × 12.)</p></div>
+<div class="q"><p>7. A median divides a triangle into two triangles that are always…</p><div class="opts"><button type="button" class="opt">congruent</button><button type="button" class="opt" data-c>equal in area</button><button type="button" class="opt">right-angled</button><button type="button" class="opt">isosceles</button></div><p class="why">Equal bases and the same height, so equal area, though usually different shapes.</p></div>
+<div class="q"><p>8. Area of a sector of radius 14 cm and angle 90° (π = 22/7)…</p><div class="opts"><button type="button" class="opt">44 cm²</button><button type="button" class="opt" data-c>154 cm²</button><button type="button" class="opt">616 cm²</button><button type="button" class="opt">308 cm²</button></div><p class="why">¼ × 22/7 × 196 = 154 cm².</p></div>
+<div class="q"><p>9. Brahmagupta's formula gives the area of…</p><div class="opts"><button type="button" class="opt">any quadrilateral</button><button type="button" class="opt" data-c>a cyclic quadrilateral</button><button type="button" class="opt">only a square</button><button type="button" class="opt">a circle</button></div><p class="why">√[(s−a)(s−b)(s−c)(s−d)] works only when all four vertices lie on a circle.</p></div>
+<div class="q"><p>10. If the radius of a circle is doubled, its area becomes…</p><div class="opts"><button type="button" class="opt">2 times</button><button type="button" class="opt">3 times</button><button type="button" class="opt" data-c>4 times</button><button type="button" class="opt">8 times</button></div><p class="why">π(2r)² = 4πr². Area grows with the square of the scale.</p></div>
+<div class="q"><p>11. Circles in a row inside a rectangle (touching each other and the sides) cover what fraction of it?</p><div class="opts"><button type="button" class="opt">1/2</button><button type="button" class="opt">3/4</button><button type="button" class="opt" data-c>π/4</button><button type="button" class="opt">depends on the number of circles</button></div><p class="why">nπr² ÷ (2nr × 2r) = π/4 ≈ 78.5%, for any n.</p></div>
+<div class="q"><p>12. In Baudhāyana's construction, which identity is drawn as a picture?</p><div class="opts"><button type="button" class="opt">(a + b)² = a² + 2ab + b²</button><button type="button" class="opt" data-c>((a+b)/2)² − ((a−b)/2)² = ab</button><button type="button" class="opt">a² + b² = c²</button><button type="button" class="opt">(a − b)² = a² − 2ab + b²</button></div><p class="why">HP² = HK² − BH² = ((a+b)/2)² − ((a−b)/2)² = ab, so the square equals the rectangle.</p></div>
+</div>
+<p class="score" aria-live="polite"></p>
+</section>
+</main>
+
+<footer>
+<p><b>MT Classes</b>, S.K. Nagar, Motihari</p>
+<p>Maths and Science coaching for Classes 8 to 10 (CBSE)</p>
+<p><a href="tel:+917091609997">7091609997</a> &nbsp;&nbsp; <a href="mailto:mtclassesmotihari@gmail.com">mtclassesmotihari@gmail.com</a> &nbsp;&nbsp; <a href="https://www.youtube.com/@MTClassesMotihari" target="_blank" rel="noopener">YouTube: @MTClassesMotihari</a></p>
+<p style="font-size:13.5px;opacity:.8;margin-top:14px">Notes based on NCERT Ganita Manjari (Grade 9 Mathematics, Part I), Chapter 6: Measuring Space: Perimeter and Area. Diagrams are taken from the NCERT textbook chapter.</p>
+</footer>
+<script>
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+
+  // arc and sector explorer
+  (function(){
+    var r=document.getElementById('lab-r'), t=document.getElementById('lab-t'); if(!r||!t) return;
+    var P=22/7;
+    function f(x){return String(Math.round(x*100)/100);}
+    function pt(a,rad){a=a*Math.PI/180;return [110+rad*Math.cos(a),110-rad*Math.sin(a)];}
+    function upd(){
+      var rv=+r.value, tv=+t.value;
+      document.getElementById('lab-r-out').textContent=rv;
+      document.getElementById('lab-t-out').textContent=tv;
+      document.querySelectorAll('.lr').forEach(function(e){e.textContent=rv;});
+      document.querySelectorAll('.lt').forEach(function(e){e.textContent=tv;});
+      var arc=2*P*rv*tv/360, area=P*rv*rv*tv/360;
+      document.getElementById('lab-l').textContent=f(arc);
+      document.getElementById('lab-a').textContent=f(area);
+      document.getElementById('lab-p').textContent=f(arc+2*rv);
+      var e=pt(tv,90), big=tv>180?1:0, d, a;
+      if(tv>=360){d='M200,110 A90,90 0 1 0 20,110 A90,90 0 1 0 200,110 Z';a='M200,110 A90,90 0 1 0 20,110 A90,90 0 1 0 200,110';}
+      else{d='M110,110 L200,110 A90,90 0 '+big+' 0 '+e[0].toFixed(2)+','+e[1].toFixed(2)+' Z';a='M200,110 A90,90 0 '+big+' 0 '+e[0].toFixed(2)+','+e[1].toFixed(2);}
+      document.getElementById('lab-sector').setAttribute('d',d);
+      document.getElementById('lab-arc').setAttribute('d',a);
+      var l=pt(tv/2,tv<40?50:30), th=document.getElementById('lab-theta');
+      th.setAttribute('x',(l[0]-5).toFixed(1)); th.setAttribute('y',(l[1]+5).toFixed(1));
+    }
+    r.addEventListener('input',upd); t.addEventListener('input',upd); upd();
+  })();
+
+  // Heron calculator
+  (function(){
+    var ins=['ha','hb','hc'].map(function(i){return document.getElementById(i);}), out=document.getElementById('hout');
+    if(!out) return;
+    function f(x){return String(Math.round(x*100)/100);}
+    function upd(){
+      var a=+ins[0].value,b=+ins[1].value,c=+ins[2].value;
+      if(!(a>0&&b>0&&c>0)){out.textContent='Enter three positive lengths.';return;}
+      if(a+b<=c||b+c<=a||a+c<=b){out.textContent='Not a triangle: any two sides must add up to more than the third.';return;}
+      var s=(a+b+c)/2, p=s*(s-a)*(s-b)*(s-c);
+      out.textContent='s = '+f(s)+',  Area = √('+f(s)+' × '+f(s-a)+' × '+f(s-b)+' × '+f(s-c)+') = '+f(Math.sqrt(p))+' sq. units';
+    }
+    ins.forEach(function(i){i.addEventListener('input',upd);}); upd();
+  })();
+})();
+
+
+</script>
+</body>
+</html>
