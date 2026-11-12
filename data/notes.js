@@ -31,7 +31,8 @@ window.MT_NOTES = {
       { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf", page: "notes/class9-maths-circles.html" } ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
       { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html" },
-      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" } ] },
+      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" },
+      { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",
