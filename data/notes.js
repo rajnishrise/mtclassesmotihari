@@ -32,7 +32,9 @@ window.MT_NOTES = {
       { title: "Measuring Space: Perimeter and Area", label: "Chapter 6: notes, textbook diagrams and all exercise solutions", file: "notes/class9-maths-perimeter-and-area.pdf", page: "notes/class9-maths-perimeter-and-area.html" },
       { title: "The Mathematics of Maybe: Probability", label: "Chapter 7: notes, coin and dice lab, tree diagrams and all solutions", file: "notes/class9-maths-probability.pdf", page: "notes/class9-maths-probability.html" },
       { title: "Predicting What Comes Next: Sequences and Progressions", label: "Chapter 8: notes, AP and GP explorer, fractal zoomer and all solutions", file: "notes/class9-maths-sequences-and-progressions.pdf", page: "notes/class9-maths-sequences-and-progressions.html" } ] },
-    { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
+    { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [
+      { title: "Tissues in Action", label: "Chapter 3: notes, textbook diagrams, joint and tree-ring tools, all NCERT answers", file: "notes/class9-science-tissues-in-action.pdf", page: "notes/class9-science-tissues-in-action.html" },
+      "Motion",
       { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html" },
       { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" },
       { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html" } ] },
