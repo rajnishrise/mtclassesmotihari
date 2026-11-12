@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probability: Class 9 Maths Chapter 7 Notes | MT Classes Motihari</title>
+<meta name="description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 7, The Mathematics of Maybe: Introduction to Probability. Easy notes with textbook diagrams, a coin and dice lab, two-dice explorer, tree diagram builder, spinner and dye-drop simulators, solutions to every exercise, a formula sheet and a quiz.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+
+/* chapter 6 extras */
+.sci .ini{font-size:15px}
+.lab{display:grid;grid-template-columns:210px 1fr;gap:18px;align-items:center}
+.lab-svg{width:100%;max-width:220px;display:block;margin:0 auto}
+.lab-ctrl label{display:block;font-weight:600;margin:2px 0 8px}
+.lab-ctrl input[type=range]{display:block;width:100%;accent-color:#0E2148;margin-top:4px}
+.lab-ctrl p{margin:4px 0;font-size:16.5px}
+.heron-in{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 10px}
+.heron-in label{font-weight:700;color:var(--navy)}
+.heron-in input{width:66px;font:500 17px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:8px;margin-left:4px}
+#hout{font-size:18px}
+.ans .cards2{margin:4px 0 10px}
+.ans p{margin:0 0 10px}
+.duo .box,.duo .formula{align-self:center}
+.idsvg svg.dg{max-width:300px;margin:0 auto}
+@media print{.fig img{max-height:200px!important}.fig.narrow img{max-height:250px!important}.ans .fig img{max-height:180px!important}.fig{padding:6px;margin:8px 0}.figrow{grid-template-columns:repeat(3,1fr)}.cards2.idsvg svg.dg{max-height:180px}.fig svg.dg{max-height:220px}section{margin-bottom:14px}}
+@media (max-width:760px){.cards2.idsvg{grid-template-columns:1fr}.lab{grid-template-columns:1fr}.lab-svg{max-width:190px}}
+
+/* chapter 7: probability */
+:root{--purple:#7B4BC4;--purplet:#F1EAFB;--teal:#1F9E8F;--blue:#2A6FDB}
+.hero{background:radial-gradient(110% 140% at 85% 15%,#3B2C7A 0,#1A2A63 45%,var(--navy) 70%,#081530 100%)}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.25;margin:0 3px}
+.fr span:first-child{border-bottom:2px solid currentColor;padding:0 4px 1px}
+.fr span:last-child{padding:1px 4px 0}
+.formula .fr{font-size:17px}
+.f{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.05;font-size:.82em;margin:0 2px}
+.f>span:first-child{border-bottom:1.5px solid currentColor;padding:0 2px}
+.f>span:last-child{padding:0 2px}
+.chance-list{list-style:none;padding:0}
+.chance-list li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0;font-weight:600}
+.idea .emo,.sheet-card .emo{font-size:30px;line-height:1;display:block;margin-bottom:4px}
+.idea.exp{border-left-color:var(--teal)}
+.idea.th{border-left-color:var(--purple)}
+.cards2 .idea{margin:0}
+.think-qa{background:var(--bluet);border-color:#B9CBEA}
+.think-qa summary::before{display:none!important}
+
+/* probability scale strip */
+.pscale{margin:14px 0 18px}
+.pbar{height:14px;border-radius:7px;background:linear-gradient(90deg,#D9534F,#E3B23C 50%,#3FA56B)}
+.pticks{display:flex;justify-content:space-between;margin-top:6px;font-size:13.5px;text-align:center;line-height:1.2;color:var(--muted)}
+.pticks span{flex:1}
+.pticks span:first-child{text-align:left}.pticks span:last-child{text-align:right}
+.pticks b{display:block;font:800 18px 'Baloo 2',sans-serif;color:var(--navy)}
+.sl{display:block;font-weight:600;margin:4px 0 10px}
+.sl input[type=range]{display:block;width:100%;accent-color:var(--purple);margin-top:6px}
+.deck{display:flex;gap:8px;justify-content:center;margin:8px 0 14px;flex-wrap:wrap}
+.deck span{width:46px;height:64px;border-radius:8px;border:3px solid #FFF6E0;box-shadow:0 3px 8px -3px rgba(0,0,0,.35);display:grid;place-items:center;font:800 20px 'Baloo 2',sans-serif;color:#fff;transition:background .25s,transform .25s}
+.deck span.p{background:var(--purple);transform:translateY(-4px)}
+.deck span.g{background:#3FA56B}
+.mini-scale{position:relative;margin:6px 6px 10px;padding-top:22px}
+.mini-scale .ptr{position:absolute;top:0;transform:translateX(-50%);font-size:20px;color:var(--navy);transition:left .35s}
+.calc .big{margin:8px 0 0}
+
+/* sorter game */
+.sort-item{background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.sort-item p{margin:0 0 6px;font-weight:600}
+.sort-btns{display:flex;flex-wrap:wrap;gap:6px}
+.sort-btns button,.seg button,.lab-run button{font:600 15px 'Mukta',sans-serif;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.sort-btns button.right{background:#E7F6EC;border-color:var(--green);color:#185C34}
+.sort-btns button.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.sort-item .fb{font-size:15px;color:var(--muted);margin:6px 0 0;display:none}
+.sort-item.done .fb{display:block}
+
+.tag{display:inline-block;border-radius:999px;padding:1px 10px;font-weight:700;font-size:14.5px;white-space:nowrap}
+.tag.t0{background:var(--redt);color:var(--redd)}.tag.tl{background:#FDEBD8;color:#9A4E0E}.tag.tm{background:#E3F4E9;color:#1E6B3E}.tag.t1{background:#D3EEDD;color:#185C34}
+
+/* lab */
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.seg button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.seg.sm button{font-size:14px;padding:4px 10px}
+.seg.sm button.on{background:var(--purple);border-color:var(--purple)}
+.lab-run{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.lab-run button{background:var(--goldt);border-color:var(--gold);color:var(--navy);font-weight:700}
+.lab-run button.reset{background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
+.lab-run button:active,.seg button:active{transform:scale(.96)}
+.lab-face{width:84px;height:84px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font:800 40px 'Baloo 2',sans-serif;background:radial-gradient(circle at 35% 30%,#FFE9A8,#E3B23C 60%,#B8871C);color:var(--navy);box-shadow:0 6px 16px -6px rgba(0,0,0,.4)}
+.lab-face.die{border-radius:18px;background:#fff;border:3px solid var(--navy)}
+.lab-face.flip{animation:flip .45s ease}
+@keyframes flip{0%{transform:rotateY(0) scale(1)}50%{transform:rotateY(90deg) scale(1.15)}100%{transform:rotateY(0) scale(1)}}
+.lab-bars{display:grid;gap:6px;margin:0 0 10px}
+.lab-bar{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:8px;font-size:15px}
+.lab-bar b{font:800 18px 'Baloo 2',sans-serif;text-align:center}
+.lab-bar .trk{position:relative;height:18px;background:#EEF2F9;border-radius:9px;overflow:hidden}
+.lab-bar .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--purple),#A77EE6);border-radius:9px;transition:width .3s}
+.lab-bar .th{position:absolute;top:-2px;bottom:-2px;width:0;border-left:2.5px dashed var(--navy)}
+.lab-bar span.v{white-space:nowrap;min-width:9.5em;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.lab-chart{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px}
+.lab-chart text{font-family:'Mukta',sans-serif}
+.lab-note{margin:10px 0 0;font-size:16px}
+.streak-now{display:inline-block;background:var(--redt);color:var(--redd);border-radius:8px;padding:0 8px;font-weight:700}
+
+/* letter picker */
+.word-in{font:700 20px 'Baloo 2',sans-serif;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1.5px solid var(--line);border-radius:10px;width:100%;max-width:320px;color:var(--navy)}
+.word-tiles{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.word-tiles button,.word-tiles span{width:40px;height:46px;border-radius:8px;border:2px solid var(--navy);background:#fff;font:800 22px 'Baloo 2',sans-serif;color:var(--navy);cursor:pointer;display:grid;place-items:center}
+.word-tiles .hl{background:var(--purple);border-color:var(--purple);color:#fff;transform:translateY(-3px)}
+.word-tiles.static span{cursor:default}
+
+/* fruit bars */
+.fruit-bars{display:grid;gap:6px;margin:8px 0 12px}
+.fruit-bars div{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:8px;font-size:16px}
+.fruit-bars i{font-style:normal;display:block;width:var(--w);background:linear-gradient(90deg,var(--gold),#F4CF6B);border-radius:0 8px 8px 0;padding:1px 8px;font-weight:700;color:var(--navy);text-align:right}
+
+/* gambler */
+.fallacy{background:linear-gradient(135deg,#2B1D5C,#0E2148);color:#E9EEF8;border-radius:18px;padding:16px 18px;margin:20px 0}
+.fallacy h3{color:var(--gold);margin-top:0}
+.fallacy b,.fallacy .term{color:#fff}
+.fallacy .term{background:linear-gradient(transparent 62%,rgba(227,178,60,.5) 0)}
+.fallacy .box{color:var(--ink)}
+.fallacy .box b{color:var(--navy)}
+.streak{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+.streak span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;background:radial-gradient(circle at 35% 30%,#FFE9A8,#E3B23C 60%,#B8871C);color:var(--navy)}
+.streak span.q{background:#fff;color:var(--purple);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+
+/* sample space */
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 14px}
+.rules div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;font-size:15.5px;line-height:1.4}
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.ev{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.ev h4{margin:0 0 6px}
+.ev p{font-size:15px;margin:6px 0 0;line-height:1.4}
+.set{border:2px solid var(--navy2);border-radius:999px;padding:8px 10px;display:flex;flex-wrap:wrap;gap:5px;justify-content:center;background:var(--bluet)}
+.set span{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:0 7px;font-weight:700;font-size:15px}
+.set span.in{background:var(--purple);border-color:var(--purple);color:#fff}
+#dice-ev{font:600 16px 'Mukta',sans-serif;padding:6px 10px;border-radius:10px;border:1.5px solid var(--line);margin-bottom:10px;max-width:100%}
+.dgrid{display:grid;grid-template-columns:28px repeat(6,1fr);gap:4px;max-width:420px}
+.dgrid div{aspect-ratio:1;display:grid;place-items:center;border-radius:7px;font:700 14px 'Baloo 2',sans-serif;background:#F2F5FB;color:var(--muted);transition:background .25s,color .25s,transform .25s}
+.dgrid div.h{background:none;color:var(--navy);font-size:16px;aspect-ratio:auto}
+.dgrid div.on{background:var(--purple);color:#fff;transform:scale(1.04)}
+
+/* tree */
+.tree-svg{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px}
+.tree-svg text{font-family:'Baloo 2',sans-serif}
+.ans-tree{width:100%;max-width:470px;height:auto;display:block;margin:4px auto 10px;background:#fff;border:1px solid var(--line);border-radius:12px}
+
+/* spinner */
+.spin-box{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:center}
+.spin-wrap{position:relative;width:220px;margin:0 auto}
+#spin-svg{width:220px;height:220px;display:block}
+#spin-svg .wheel{transition:transform 2.6s cubic-bezier(.17,.67,.2,1)}
+#spin-svg text{font-family:'Baloo 2',sans-serif}
+.spin-arrow{position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-top:24px solid var(--navy)}
+#spin-ev{font:600 15px 'Mukta',sans-serif;padding:4px 8px;border-radius:8px;border:1.5px solid var(--line)}
+#spin-stats{font-size:16px;margin:4px 0 0}
+.drop-svg{width:100%;max-width:480px;height:auto;display:block;margin:0 auto;border-radius:10px}
+
+/* formula sheet */
+.sheet{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.sheet-card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--purple);border-radius:14px;padding:12px}
+.sheet-card:nth-child(3n+2){border-top-color:var(--gold)}
+.sheet-card:nth-child(3n){border-top-color:var(--teal)}
+.sheet-card h4{margin:0 0 4px}
+.sheet-card p{margin:0;font-size:15.5px;line-height:1.45}
+.sheet-card .fr{font-size:14.5px}
+
+@media (max-width:760px){
+  .rules,.ev-grid{grid-template-columns:1fr}
+  .sheet{grid-template-columns:1fr 1fr}
+  .spin-box{grid-template-columns:1fr;text-align:center}
+  .lab-bar{grid-template-columns:52px 1fr;row-gap:0;font-size:14px}
+  .lab-bar span.v{grid-column:2;min-width:0;text-align:left}
+  .figrow.two{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr}
+}
+@media (max-width:480px){.sheet{grid-template-columns:1fr}.cards2{grid-template-columns:1fr}.fruit-bars div{grid-template-columns:92px 1fr}}
+@media print{.sheet{grid-template-columns:repeat(3,1fr)}.fallacy{background:#fff;color:var(--ink);border:2px solid var(--navy)}.fallacy b,.fallacy .term{color:var(--navy)}.streak span.q{animation:none}.ans-tree{max-height:200px}.rules,.ev-grid{grid-template-columns:repeat(3,1fr)}}
+
+.figrow.two .fig img{max-height:250px;width:auto;max-width:100%;margin:0 auto}
+.ans .fig img{max-height:300px;width:auto;max-width:100%;margin:0 auto}
+.wow .fig img{max-height:420px;width:auto;max-width:100%;margin:0 auto}
+.opt .f{font-size:1em}
+.ev .set{border-radius:16px}
+@media print{.hero{background:#fff!important}.hero .back{display:none}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>The Mathematics of Maybe</h1>
+<p class="sub">Class 9 Maths, Chapter 7: Introduction to Probability (NCERT Ganita Manjari, Part I)</p>
+<p class="pitch">Coins, dice, spinners and sweets: learn to measure chance from 0 to 1. Flip a thousand coins in a second, build tree diagrams, drop paint on a target, and see every exercise solved step by step.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#lab">Play in the lab</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="A spinning coin and a rolling die above a probability scale from 0 to 1" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".35"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient>
+<linearGradient id="hbar" x1="0" x2="1"><stop offset="0" stop-color="#D9534F"/><stop offset=".5" stop-color="#E3B23C"/><stop offset="1" stop-color="#3FA56B"/></linearGradient></defs>
+<circle cx="200" cy="190" r="175" fill="url(#hglow)"/>
+<g transform="translate(120 140)"><ellipse rx="52" ry="52" fill="#E3B23C" stroke="#FFF2C6" stroke-width="5"><animate attributeName="rx" values="52;4;52;4;52" dur="2.4s" repeatCount="indefinite"/></ellipse>
+<text y="17" text-anchor="middle" font-size="50" font-weight="800" fill="#0E2148" font-family="Baloo 2,sans-serif">H<animate attributeName="opacity" values="1;0;0;0;1" keyTimes="0;.24;.5;.76;1" dur="2.4s" repeatCount="indefinite"/></text>
+<text y="17" text-anchor="middle" font-size="50" font-weight="800" fill="#0E2148" font-family="Baloo 2,sans-serif" opacity="0">T<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.26;.5;.74;1" dur="2.4s" repeatCount="indefinite"/></text></g>
+<g transform="translate(285 140)"><g><animateTransform attributeName="transform" type="rotate" values="0;-12;10;0;0" keyTimes="0;.15;.3;.45;1" dur="3s" repeatCount="indefinite"/>
+<rect x="-50" y="-50" width="100" height="100" rx="18" fill="#fff" stroke="#8FB4FF" stroke-width="4"/>
+<g fill="#0E2148"><circle cx="-24" cy="-24" r="9"/><circle cx="24" cy="-24" r="9"/><circle cx="-24" cy="0" r="9"/><circle cx="24" cy="0" r="9"/><circle cx="-24" cy="24" r="9"/><circle cx="24" cy="24" r="9"/></g></g></g>
+<rect x="40" y="262" width="320" height="14" rx="7" fill="url(#hbar)"/>
+<g font-family="Baloo 2,sans-serif" font-weight="700" font-size="18" fill="#CBD6EE" text-anchor="middle"><text x="47" y="306">0</text><text x="200" y="306">½</text><text x="353" y="306">1</text></g>
+<g font-family="Mukta,sans-serif" font-size="14" fill="#CBD6EE" text-anchor="middle"><text x="47" y="326">impossible</text><text x="200" y="326">even chance</text><text x="353" y="326">certain</text></g>
+<path d="M0,-16 L10,0 L-10,0 Z" fill="#fff"><animateTransform attributeName="transform" type="translate" values="60 258;200 258;330 258;120 258;60 258" dur="6s" repeatCount="indefinite"/></path>
+<text x="200" y="370" text-anchor="middle" font-size="30" font-weight="800" fill="#fff" font-family="Baloo 2,sans-serif">0 ≤ P(E) ≤ 1</text>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a href="#start"><span>7.1</span>What is probability?</a></li>
+<li><a href="#random"><span>7.1.1</span>Randomness</a></li>
+<li><a href="#scale"><span>7.1.2</span>The probability scale</a></li>
+<li><a href="#ex1"><span>Ex 7.1</span>Solutions</a></li>
+<li><a href="#measure"><span>7.2</span>Measuring probability objectively</a></li>
+<li><a href="#lab"><span>Lab</span>Coin and dice lab</a></li>
+<li><a href="#theory"><span>7.2.2</span>Theoretical probability</a></li>
+<li><a href="#stats"><span>7.2.3</span>Statistics, sampling, Gambler's Fallacy</a></li>
+<li><a href="#ex2"><span>Ex 7.2</span>Solutions</a></li>
+<li><a href="#space"><span>7.3</span>Sample spaces and events</a></li>
+<li><a href="#ex3"><span>Ex 7.3</span>Solutions</a></li>
+<li><a href="#tree"><span>7.4</span>Tree diagrams</a></li>
+<li><a href="#ex4"><span>Ex 7.4</span>Solutions</a></li>
+<li><a href="#end"><span>End</span>End-of-chapter exercises</a></li>
+<li><a href="#recap"><span>Sheet</span>Formula sheet and summary</a></li>
+<li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
+</ol>
+</nav>
+
+<section id="start">
+<div class="sec-head"><span class="sec-num">7.1</span><h2>What is probability?</h2></div>
+<div class="duo">
+<div>
+<p class="lead"><span class="term">Probability</span> is a kind of <b>measurement</b>. Length measures how long, area measures how much surface, and probability measures <b>how likely</b> an event is to happen.</p>
+<p>You use it every day without noticing:</p>
+<ul class="chance-list">
+<li>🌧️ Is it going to rain today?</li>
+<li>🏑 Will our school win the inter-school hockey match tomorrow?</li>
+<li>🎟️ Will I be chosen in the monthly lucky draw to perform at the assembly?</li>
+</ul>
+</div>
+<figure class="fig zoomable narrow"><img src="img/probability/rain.webp" alt="Two children look at the sky; one imagines rain clouds while the sun shines" width="546" height="759" loading="lazy" decoding="async"><figcaption>Sunny now, but will it rain later? Each friend reads the same sky differently.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<p>These are <span class="term">random events</span>. We know the <b>possible outcomes</b> (rain or no rain; win, draw or lose; one student gets picked) but we cannot know in advance which one will happen. There is an element of <b>chance</b> every time.</p>
+<p>We describe chance with words like <i>impossible, certain, less likely, more likely</i> and <i>equally likely</i>. When a friend says, “The sun is shining, so it's unlikely to rain”, that is a <span class="term">subjective probability</span>: a guess based on how one person reads the evidence. This chapter is about measuring probability <b>objectively</b>, with data and counting.</p>
+</section>
+
+<section id="random">
+<div class="sec-head"><span class="sec-num">7.1.1</span><h2>What is randomness?</h2></div>
+<p><span class="term">Randomness</span> means you know all the things that <i>could</i> happen, but you cannot predict what <i>will</i> happen in one try.</p>
+<div class="cards2">
+<div class="idea"><span class="emo">🪙</span><h4>Tossing a coin</h4><p>Could be Heads or Tails. You can't be sure which in a single toss.</p></div>
+<div class="idea"><span class="emo">🎲</span><h4>Rolling a die</h4><p>Could be 1, 2, 3, 4, 5 or 6. You don't know which will show.</p></div>
+</div>
+<div class="box key"><h4>🔑 Random experiment (trial)</h4><p>Something you can <b>repeat</b> (like tossing a coin) where the result may change every time and <b>cannot be known in advance</b>. All you can say is what <i>could</i> happen, not what <i>will</i> happen.</p></div>
+<p>When you toss a coin, P(Heads) = <span class="f"><span>1</span><span>2</span></span> and P(Tails) = <span class="f"><span>1</span><span>2</span></span> because both are <b>equally likely</b>. Rain is random too: it depends on temperature, humidity, wind and pressure in such a sensitive way that no one can predict it with total certainty. Weather forecasters can only give a <i>probability</i> of rain from patterns in past data.</p>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: Why is tossing a coin a fair way to decide which cricket team bats first?</span></summary><div class="ans">Because the toss is random and the coin is fair: Heads and Tails each have probability <span class="f"><span>1</span><span>2</span></span>. Neither captain can predict or control the result, so both teams have exactly the same chance of winning the toss.</div></details>
+</section>
+
+<section id="scale">
+<div class="sec-head"><span class="sec-num">7.1.2</span><h2>The probability scale</h2></div>
+<p>Probability is measured on a scale from <b>0</b> to <b>1</b>, like a number line.</p>
+<div class="pscale" aria-hidden="true"><div class="pbar"></div><div class="pticks"><span><b>0</b>Impossible</span><span><b>&lt; ½</b>Less likely</span><span><b>½</b>Even chance</span><span><b>&gt; ½</b>More likely</span><span><b>1</b>Certain</span></div></div>
+<ul>
+<li>P = <b>0.75</b> means a 75% chance: <i>more likely than not</i>.</li>
+<li>P = <b>0.5</b> means 50%: <i>equally likely</i> to happen or not.</li>
+<li>P = <b>0</b>: impossible (winning a match without playing). P = <b>1</b>: certain.</li>
+<li>Most events have a probability strictly between 0 and 1.</li>
+</ul>
+<figure class="fig zoomable "><img src="img/probability/scale.webp" alt="A green board with six-card decks arranged from all green (impossible) to all purple (certain) along a probability scale" width="1000" height="717" loading="lazy" decoding="async"><figcaption><b>Fig. 7.1</b> Probability of picking a purple card from a deck of six, from impossible to certain.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+
+<div class="box calc no-print" id="deck-tool"><h4>🃏 Try it: build the deck of six</h4>
+<p class="muted">Slide to change how many of the 6 cards are purple, then watch the pointer move along the scale.</p>
+<label class="sl">Purple cards: <b id="deck-n">2</b> of 6<input type="range" id="deck-r" min="0" max="6" value="2"></label>
+<div class="deck" id="deck"></div>
+<div class="mini-scale"><div class="pbar"></div><span class="ptr" id="deck-ptr">▼</span></div>
+<p class="big" id="deck-out" aria-live="polite"></p>
+</div>
+
+<div class="tbl-wrap"><table>
+<tr><th>Event</th><th>What it means</th></tr>
+<tr><td>Getting a number greater than 6 on a die</td><td><b>Impossible:</b> a die only has 1 to 6.</td></tr>
+<tr><td>Rolling a 3 on a standard die</td><td><b>Less likely:</b> but not impossible, one face is 3.</td></tr>
+<tr><td>Flipping a coin and getting Heads</td><td><b>Even chance:</b> Heads and Tails are equally likely.</td></tr>
+<tr><td>Drawing any number from 2 to 10 from a deck of 52 cards</td><td><b>More likely:</b> 36 of the 52 cards are numbered 2 to 10.</td></tr>
+<tr><td>Choosing a red sweet from a bag of all red sweets</td><td><b>Certain:</b> all the sweets are red.</td></tr>
+</table></div>
+
+<div class="box calc no-print" id="sorter"><h4>🎯 Game: place it on the scale</h4>
+<p class="muted">Tap where each event belongs. You get instant feedback.</p>
+<div id="sort-list"></div>
+<p class="score" id="sort-score"></p>
+</div>
+</section>
+
+<section id="ex1">
+<div class="sec-head"><span class="sec-num word">Ex 7.1</span><h2>Exercise Set 7.1: solutions</h2></div>
+<p class="muted">Tap a question to see the solution.</p>
+<details class="qa"><summary><span class="qnum">1</span><span>Rank each event from 0 (impossible) to 1 (certain) and give reasons: (i) next Monday comes after Sunday (ii) snow in Mumbai in July (iii) an elephant walks through your classroom today (iv) you greet at least one friend at school tomorrow.</span></summary><div class="ans">
+<div class="tbl-wrap"><table class="compact">
+<tr><th>Event</th><th>Label</th><th>Reason</th></tr>
+<tr><td>(i) Monday after Sunday</td><td><span class="tag t1">Certain (1)</span></td><td>The days of the week always follow the same order.</td></tr>
+<tr><td>(ii) Snow in Mumbai in July</td><td><span class="tag t0">Impossible (0)</span></td><td>Mumbai is hot and humid, and July is the monsoon season. It has never snowed there.</td></tr>
+<tr><td>(iii) Elephant in your classroom</td><td><span class="tag tl">Less likely (almost 0)</span></td><td>Not strictly impossible, but extremely rare in a school.</td></tr>
+<tr><td>(iv) Greet a friend tomorrow</td><td><span class="tag tm">More likely (close to 1)</span></td><td>You meet friends almost every school day, unless you are absent or it is a holiday.</td></tr>
+</table></div>
+<p class="muted">Your reasons may differ slightly. What matters is that you justify your label.</p>
+</div></details>
+</section>
+
+<section id="measure">
+<div class="sec-head"><span class="sec-num">7.2</span><h2>Measuring probability objectively</h2></div>
+<p>There are two main ways to estimate the probability of an event objectively.</p>
+<div class="cards2">
+<div class="idea exp"><span class="emo">🧪</span><h4>1. From experience: experimental probability</h4><p>Collect data by repeating an experiment many times, or use past records. Probability = <b>relative frequency</b> of the event.</p></div>
+<div class="idea th"><span class="emo">🧠</span><h4>2. By reasoning: theoretical probability</h4><p>Assume all outcomes are <b>equally likely</b>, then count favourable outcomes out of all possible outcomes. No experiment needed.</p></div>
+</div>
+
+<h3 id="exp">7.2.1 Experimental probability</h3>
+<p>In an experiment, each possible result is an <span class="term">outcome</span>. The set of all possible outcomes is the <span class="term">sample space</span>, written inside curly brackets.</p>
+<div class="figrow two">
+<figure class="fig zoomable "><img src="img/probability/coin.webp" alt="A coin flipped from a thumb showing H and T" width="414" height="507" loading="lazy" decoding="async"><figcaption><b>Fig. 7.2</b> Heads and tails of a coin. Sample space {H, T}</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig zoomable "><img src="img/probability/die.webp" alt="A white six-sided die" width="330" height="384" loading="lazy" decoding="async"><figcaption><b>Fig. 7.3</b> A 6-sided die. Sample space {1, 2, 3, 4, 5, 6}</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<div class="formula"><div>Experimental Probability = <span class="fr"><span>Number of times the event occurred</span><span>Total number of trials</span></span></div><small>Also called the <b>relative frequency</b> of the event.</small></div>
+<div class="box think"><h4>Example 2</h4><p>A die is rolled 50 times and lands on 4 exactly 8 times.</p><p>Experimental probability of rolling a 4 = <span class="f"><span>8</span><span>50</span></span> = <b>0.16</b> or <b>16%</b>. We also say the relative frequency of rolling a 4 is 0.16.</p></div>
+<p>Relative frequency describes what actually happened in real data, not what we predict in theory. It is used a lot in statistics.</p>
+</section>
+
+<section id="lab">
+<div class="sec-head"><span class="sec-num word">Lab</span><h2>The coin and dice lab</h2></div>
+<p>Run your own experiment. Toss a coin or roll a die as many times as you like and watch the <b>experimental probability</b> settle down next to the <b>theoretical probability</b> (dashed line). This is the <span class="term">Law of Large Numbers</span>.</p>
+<div class="box calc labbox no-print" id="lab-tool">
+<div class="seg" role="group" aria-label="Choose the experiment"><button type="button" class="on" data-mode="coin">🪙 Coin</button><button type="button" data-mode="die">🎲 Die</button></div>
+<div class="lab-run"><button type="button" data-n="1">× 1</button><button type="button" data-n="10">× 10</button><button type="button" data-n="100">× 100</button><button type="button" data-n="1000">× 1000</button><button type="button" class="reset" data-n="0">Reset</button></div>
+<div class="lab-face" id="lab-face" aria-live="polite">?</div>
+<div id="lab-bars" class="lab-bars"></div>
+<svg id="lab-chart" class="lab-chart" viewBox="0 0 600 220" role="img" aria-label="Line chart of the experimental probability as the number of trials grows"></svg>
+<p class="lab-note" id="lab-note"></p>
+</div>
+<div class="box alert"><h4>⚠️ Watch the streaks</h4><p>Keep tossing one at a time. You will often see 4, 5 or even 6 Heads in a row. The coin has <b>no memory</b>: the chance of Tails next is still exactly <span class="f"><span>1</span><span>2</span></span>. Read about the Gambler's Fallacy in 7.2.3.</p></div>
+
+<div class="box wow">
+<div class="duo">
+<div><h4>✨ Did you know?</h4>
+<p>The game of <b>Snakes and Ladders</b> comes from ancient India. It grew out of a dice game called <b>Jñān-Chaupaḍ</b>, used to teach moral lessons: each ladder stood for a virtue and each snake for a vice. Landing on a snake showed the result of bad behaviour; climbing a ladder showed the reward of good behaviour. Many versions have been found across India.</p></div>
+<figure class="fig zoomable narrow"><img src="img/probability/chaupad.webp" alt="An old cloth game board with snakes and ladders and many small pictures" width="639" height="870" loading="lazy" decoding="async"><figcaption><b>Fig. 7.4</b> A Jain Jñān-Chaupaḍ game on cloth, National Museum (India, 19th century)</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div></div>
+</section>
+
+<section id="theory">
+<div class="sec-head"><span class="sec-num">7.2.2</span><h2>Theoretical probability</h2></div>
+<p><span class="term">Theoretical probability</span> is what we <b>expect</b> in an ideal, perfectly fair situation where all outcomes are equally likely. No experiment is needed. We write it as P(Event).</p>
+<div class="formula"><div>P(E) = <span class="fr"><span>Number of favourable outcomes</span><span>Number of possible outcomes</span></span></div><small>“Favourable” means the outcomes where the event happens.</small></div>
+<div class="cards2">
+<div class="box think"><h4>Example 3: Rolling a 4</h4><p>Favourable outcomes = 1 (only 4)<br>Possible outcomes = 6 (1 to 6)</p><p>P(4) = <span class="f"><span>1</span><span>6</span></span> = 0.1666… ≈ <b>0.167</b> or <b>16.7%</b></p></div>
+<div class="box think"><h4>Example 4: Letter B from PROBABILITY</h4><p>Favourable = 2 (two Bs)<br>Possible = 11 letters</p><p>P(B) = <span class="f"><span>2</span><span>11</span></span> = 0.1818… ≈ <b>0.182</b> or <b>18.2%</b></p></div>
+</div>
+<div class="box calc no-print" id="word-tool"><h4>🔤 Try it: pick a letter</h4>
+<p class="muted">Type any word, then tap a letter to see the probability of picking it at random.</p>
+<input id="word-in" class="word-in" value="PROBABILITY" maxlength="20" aria-label="Word">
+<div id="word-tiles" class="word-tiles"></div>
+<p class="big" id="word-out" aria-live="polite">Tap a letter.</p>
+</div>
+</section>
+
+<section id="stats">
+<div class="sec-head"><span class="sec-num">7.2.3</span><h2>Statistics, sampling and the Gambler's Fallacy</h2></div>
+<p>Businesses, insurance companies and scientists estimate probabilities from <b>collected data</b>.</p>
+<div class="box think"><h4>Example 5: Favourite fruit</h4>
+<p>50 students in a class were asked their favourite fruit:</p>
+<div class="fruit-bars" role="img" aria-label="Bar chart: mango 20, apple 15, banana 10, grapes 5">
+<div><span>🥭 Mango</span><i style="--w:100%">20</i></div>
+<div><span>🍎 Apple</span><i style="--w:75%">15</i></div>
+<div><span>🍌 Banana</span><i style="--w:50%">10</i></div>
+<div><span>🍇 Grapes</span><i style="--w:25%">5</i></div>
+</div>
+<p>P(a randomly picked student likes mango) = <span class="f"><span>20</span><span>50</span></span> = <b>0.4</b>, a 40% chance.</p>
+<p><b>Scaling up:</b> the whole school has 1500 students (the <span class="term">population</span>). Our 50 students are a <span class="term">sample</span>. Estimated mango lovers = 0.4 × 1500 = <b>600</b>. So buy about 600 mangoes.</p>
+</div>
+<div class="box key"><h4>📏 Sampling</h4><p>A bigger sample (say 100 students) that is more <b>representative</b> (students from different classes) gives a more reliable estimate. Choosing the sample well is called <span class="term">sampling</span>.</p></div>
+
+<h3>Experimental vs theoretical</h3>
+<div class="tbl-wrap"><table>
+<tr><th></th><th>Experimental</th><th>Theoretical</th></tr>
+<tr><td><b>Based on</b></td><td>Actual data from trials</td><td>Reasoning, assuming equally likely outcomes</td></tr>
+<tr><td><b>Needs an experiment?</b></td><td>Yes</td><td>No</td></tr>
+<tr><td><b>Formula</b></td><td>times event occurred ÷ total trials</td><td>favourable ÷ possible outcomes</td></tr>
+<tr><td><b>Can change?</b></td><td>Yes, every new set of trials</td><td>No, it is fixed</td></tr>
+</table></div>
+<div class="box wow"><h4>📈 Law of Large Numbers</h4><p>With few trials the two can be quite different. As the number of trials <b>increases</b>, the experimental probability gets <b>closer</b> to the theoretical probability. You saw this in the lab above.</p></div>
+<div class="box think"><h4>🤔 Think and Reflect</h4><p>If you rolled a 4 eight times in a row, the probability of rolling a 4 next is <b>still</b> <span class="f"><span>1</span><span>6</span></span> ≈ 0.16 (for a fair die). Probability does not tell you what happens next; it predicts what happens <b>in the long run</b>.</p></div>
+
+<div class="fallacy">
+<h3>🎰 The Gambler's Fallacy</h3>
+<div class="streak" aria-hidden="true"><span>H</span><span>H</span><span>H</span><span>H</span><span>H</span><span>H</span><span class="q">?</span></div>
+<p>Six Heads in a row. Surely Tails is “due” now? <b>No!</b> Each toss is a fresh start. P(Tails) on the next flip is still <b><span class="f"><span>1</span><span>2</span></span></b>. Believing that past results change the next one is called the <span class="term">Gambler's Fallacy</span>.</p>
+<div class="box think" style="margin-bottom:0"><h4>Example 6: Snakes and Ladders</h4><p>You rolled a 6 three times in a row and think, “No way I'll get a 6 again!” That is the Gambler's Fallacy. Each roll is <b>independent</b>, so P(6) is always <span class="f"><span>1</span><span>6</span></span> ≈ 0.166 or 16.6%.</p><p><b>Key idea:</b> randomness has no memory.</p></div>
+</div>
+<div class="box key"><h4>⚖️ Fair and unbiased</h4><p>A <b>fair</b> (unbiased) coin is symmetrical, so there is no reason for it to fall on one side more often. A <b>random toss</b> means the coin falls freely without any interference.</p></div>
+</section>
+
+<section id="ex2">
+<div class="sec-head"><span class="sec-num word">Ex 7.2</span><h2>Exercise Set 7.2: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>Sample of 30 sweets: 10 red, 8 green, 7 yellow, 5 blue. (i) P(green)? (ii) If the bag has 600 sweets, how many are likely to be yellow?</span></summary><div class="ans"><p>(i) P(green) = <span class="f"><span>8</span><span>30</span></span> = <span class="f"><span>4</span><span>15</span></span> ≈ <b>0.267</b></p><p>(ii) P(yellow) = <span class="f"><span>7</span><span>30</span></span>. Expected yellow = <span class="f"><span>7</span><span>30</span></span> × 600 = <b>140 sweets</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Sample of 40 students: Science 14, Arts 11, Sports 9, Debate 6. School has 800 students. (i) P(Arts)? (ii) Estimate Sports club fans in the school.</span></summary><div class="ans"><p>(i) P(Arts) = <span class="f"><span>11</span><span>40</span></span> = <b>0.275</b></p><p>(ii) <span class="f"><span>9</span><span>40</span></span> × 800 = <b>180 students</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Toss a coin 20 times. (i) Heads? (ii) Tails? (iii) Experimental P(Heads)? (iv) P(Tails) on one more toss?</span></summary><div class="ans"><p>Your answer depends on your own tosses. A sample result: 11 Heads and 9 Tails.</p><p>(i) 11 &nbsp; (ii) 9 &nbsp; (iii) Experimental P(H) = <span class="f"><span>11</span><span>20</span></span> = <b>0.55</b></p><p>(iv) P(Tails) = <b><span class="f"><span>1</span><span>2</span></span></b>, whatever happened before. The coin has no memory.</p><p class="muted">Use the Coin Lab above with “× 10” twice to do this experiment on screen.</p></div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Toss a paper cup 100 times. Record bottom, top or side. Assign experimental probabilities.</span></summary><div class="ans">
+<figure class="fig zoomable narrow"><img src="img/probability/cup.webp" alt="A boy tosses a paper cup; three cups on a table land on the bottom, top and side" width="789" height="636" loading="lazy" decoding="async"><figcaption><b>Fig. 7.5</b> Paper cup landing positions: bottom, top and side.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>Sample record: bottom 18, top 24, side 58 (total 100).</p>
+<p>P(bottom) = <span class="f"><span>18</span><span>100</span></span> = 0.18, P(top) = <span class="f"><span>24</span><span>100</span></span> = 0.24, P(side) = <span class="f"><span>58</span><span>100</span></span> = 0.58.</p>
+<p>The three probabilities always add up to 1. The outcomes are <b>not equally likely</b>, so we can only find these probabilities by experiment, not by theory.</p></div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Probability of getting an even number on a fair 6-sided die?</span></summary><div class="ans">Even numbers: {2, 4, 6}, 3 favourable out of 6. P = <span class="f"><span>3</span><span>6</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b></div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>A die rolled 12 times shows ‘3’ three times. (i) Experimental P(3)? (ii) Theoretical P(3)? (iii) Why different? What if you roll 60, 600 or 6000 times?</span></summary><div class="ans"><p>(i) <span class="f"><span>3</span><span>12</span></span> = <span class="f"><span>1</span><span>4</span></span> = <b>0.25</b> &nbsp; (ii) <b><span class="f"><span>1</span><span>6</span></span></b> ≈ 0.167</p><p>(iii) 12 rolls is a very small number of trials, so chance plays a big part. With 60, 600 or 6000 rolls we expect about 10, 100 or 1000 threes, and the experimental probability will get closer and closer to <span class="f"><span>1</span><span>6</span></span> (Law of Large Numbers).</p></div></details>
+</section>
+
+<section id="space">
+<div class="sec-head"><span class="sec-num">7.3</span><h2>Sample spaces and events</h2></div>
+<h3>7.3.1 Sample space</h3>
+<p>The <span class="term">sample space</span> <b>S</b> is the list of <b>all</b> possible outcomes. Each outcome is an <b>element</b> of S.</p>
+<div class="rules"><div>✅ Include <b>every</b> possible outcome.</div><div>🚫 List no outcome <b>twice</b>.</div><div>#️⃣ The number of elements is the <b>sample size n(S)</b>.</div></div>
+<div class="tbl-wrap"><table class="compact">
+<tr><th>Experiment</th><th>Sample space S</th><th>n(S)</th></tr>
+<tr><td>Will it rain tomorrow?</td><td>{Rain, No Rain}</td><td>2</td></tr>
+<tr><td>A team plays a match</td><td>{Win, Lose, Draw}</td><td>3</td></tr>
+<tr><td>Toss a coin</td><td>{H, T}</td><td>2</td></tr>
+<tr><td>Roll a die</td><td>{1, 2, 3, 4, 5, 6}</td><td>6</td></tr>
+<tr><td>Toss two coins</td><td>{HH, HT, TH, TT}</td><td>4</td></tr>
+</table></div>
+<div class="box think"><h4>🤔 Think and Reflect</h4><p>{Rain, No Rain} only answers “will it rain?”. If we care how much, we need a more detailed sample space: {No Rain, Drizzle, Light Rain, Heavy Rain}. The sample space must match the question being asked.</p></div>
+
+<h3>7.3.2 Events</h3>
+<p>An <span class="term">event</span> is one outcome or a group of outcomes we are interested in. <b>An event is a subset of the sample space.</b></p>
+<div class="ev-grid">
+<div class="ev"><h4>Two coins</h4><div class="set"><span class="in">HH</span><span class="in">HT</span><span class="in">TH</span><span>TT</span></div><p>E = “at least one Head” = {HH, HT, TH}</p></div>
+<div class="ev"><h4>One die</h4><div class="set"><span>1</span><span>2</span><span>3</span><span>4</span><span class="in">5</span><span class="in">6</span></div><p>E = “greater than 4” = {5, 6}</p></div>
+<div class="ev"><h4>Fruit basket</h4><div class="set"><span>🍎 Apple</span><span class="in">🍌 Banana</span><span>🍊 Orange</span></div><p>E = “a yellow fruit” = {Banana}</p></div>
+</div>
+
+<div class="box calc no-print" id="dice-tool"><h4>🎲🎲 Explorer: two dice, 36 outcomes</h4>
+<p class="muted">Rolling two dice has a sample space of 6 × 6 = 36 equally likely outcomes. Choose an event to light up its outcomes.</p>
+<select id="dice-ev" aria-label="Choose an event">
+<option value="s7">Sum is 7</option>
+<option value="p5">Sum is a prime greater than 5</option>
+<option value="dbl">A double (both dice the same)</option>
+<option value="s10">Sum is 10 or more</option>
+<option value="six">At least one 6</option>
+<option value="s13">Sum is 13</option>
+<option value="all">Sum between 2 and 12</option>
+</select>
+<div class="dgrid" id="dice-grid"></div>
+<p class="big" id="dice-out" aria-live="polite"></p>
+</div>
+</section>
+
+<section id="ex3">
+<div class="sec-head"><span class="sec-num word">Ex 7.3</span><h2>Exercise Set 7.3: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>A single 6-sided die is rolled. Total number of outcomes in the sample space?</span></summary><div class="ans">S = {1, 2, 3, 4, 5, 6}, so n(S) = <b>6</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Write the sample space: (i) rolling a die and tossing a coin together (ii) a random integer between −5 and +5 (iii) one ball from a box of 5 green and 7 red balls.</span></summary><div class="ans">
+<p>(i) S = {1H, 1T, 2H, 2T, 3H, 3T, 4H, 4T, 5H, 5T, 6H, 6T}, n(S) = <b>12</b>.</p>
+<p>(ii) S = {−5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5}, n(S) = <b>11</b>. (If “between” excludes −5 and +5, S = {−4, …, 4} with 9 elements.)</p>
+<p>(iii) By colour: S = {Green, Red}. If we name each ball: S = {G1, G2, G3, G4, G5, R1, R2, …, R7}, n(S) = 12. Only the second list has equally likely outcomes, so P(green) = <span class="f"><span>5</span><span>12</span></span>.</p></div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Snacks: Samosa, Pakora, Bhaji. Drinks: Chai, Lassi. (i) Sample space of snack-drink combinations. (ii) Event “Samosa as the snack”.</span></summary><div class="ans">
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th></th><th>☕ Chai</th><th>🥛 Lassi</th></tr>
+<tr><td><b>Samosa</b></td><td>(Samosa, Chai)</td><td>(Samosa, Lassi)</td></tr>
+<tr><td><b>Pakora</b></td><td>(Pakora, Chai)</td><td>(Pakora, Lassi)</td></tr>
+<tr><td><b>Bhaji</b></td><td>(Bhaji, Chai)</td><td>(Bhaji, Lassi)</td></tr></table></div>
+<p>(i) S has 3 × 2 = <b>6</b> outcomes (listed in the table).</p><p>(ii) E = {(Samosa, Chai), (Samosa, Lassi)}</p></div></details>
+</section>
+
+<section id="tree">
+<div class="sec-head"><span class="sec-num">7.4</span><h2>Tree diagrams</h2></div>
+<p>A <span class="term">tree diagram</span> lists all outcomes of a <span class="term">multi-step experiment</span> (a series of independent trials, like tossing a coin twice or rolling a die three times). Each branch is one possible result, and each path from start to end is <b>one complete outcome</b>.</p>
+<div class="duo">
+<div><div class="box think" style="margin-top:0"><h4>Example 7: Toss a coin twice</h4><ol><li>From a start point, draw a branch for each result of the first toss (H, T).</li><li>From each of those, draw two branches for the second toss.</li><li>Read the 4 paths: S = {HH, HT, TH, TT}.</li></ol><p>Write the probability on each branch (<span class="f"><span>1</span><span>2</span></span>).</p></div></div>
+<figure class="fig zoomable "><img src="img/probability/tree.webp" alt="Tree diagram: first toss H or T, second toss H or T, giving outcomes HH, HT, TH, TT, each branch marked one half" width="834" height="630" loading="lazy" decoding="async"><figcaption><b>Fig. 7.6</b> Tree diagram for tossing a fair coin twice.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<p>P(HH) = <span class="f"><span>1</span><span>4</span></span> = <b>0.25</b> or 25% (1 favourable path out of 4). You can also multiply along the path: <span class="f"><span>1</span><span>2</span></span> × <span class="f"><span>1</span><span>2</span></span> = <span class="f"><span>1</span><span>4</span></span>.</p>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: What is the probability of getting one Head and one Tail?</span></summary><div class="ans">Favourable paths: HT and TH, so 2 out of 4. P = <span class="f"><span>2</span><span>4</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b>.</div></details>
+
+<div class="box calc no-print" id="tree-tool"><h4>🌳 Build a coin tree</h4>
+<p class="muted">Choose how many coins to toss and an event. Matching paths light up.</p>
+<div class="seg" role="group" aria-label="Number of coins"><button type="button" data-c="1">1 coin</button><button type="button" data-c="2" class="on">2 coins</button><button type="button" data-c="3">3 coins</button></div>
+<div class="seg sm" id="tree-ev" role="group" aria-label="Number of heads"></div>
+<svg id="tree-svg" class="tree-svg" viewBox="0 0 520 300" role="img" aria-label="Tree diagram of coin tosses"></svg>
+<p class="big" id="tree-out" aria-live="polite"></p>
+</div>
+</section>
+
+<section id="ex4">
+<div class="sec-head"><span class="sec-num word">Ex 7.4</span><h2>Exercise Set 7.4: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>Basket A: 1 apple, 2 oranges. Basket B: 1 banana, 1 mango. Pick one fruit from each. (i) Tree diagram (ii) Sample space (iii) P(apple and banana)?</span></summary><div class="ans">
+<svg class="dg narrow ans-tree" viewBox="0 0 440 250" role="img" aria-label="Tree: Apple, Orange 1, Orange 2 each splitting into Banana and Mango">
+<g stroke="#2A4A86" stroke-width="2" fill="none"><path d="M20 125 L138 50 M20 125 L138 125 M20 125 L138 200"/><path d="M218 45 L300 22 M218 45 L300 68 M200 125 L300 102 M200 125 L300 148 M200 205 L300 182 M200 205 L300 228"/></g>
+<g font-size="15" font-family="Mukta,sans-serif" fill="#0E2148"><circle cx="20" cy="125" r="6" fill="#0E2148"/>
+<text x="145" y="50" font-weight="700">🍎 Apple</text><text x="145" y="130" font-weight="700">🍊 O₁</text><text x="145" y="210" font-weight="700">🍊 O₂</text>
+<text x="305" y="27">🍌 → (A, B)</text><text x="305" y="73">🥭 → (A, M)</text><text x="305" y="107">🍌 → (O₁, B)</text><text x="305" y="153">🥭 → (O₁, M)</text><text x="305" y="187">🍌 → (O₂, B)</text><text x="305" y="233">🥭 → (O₂, M)</text>
+<text x="62" y="78" fill="#8A6510">⅓</text><text x="72" y="118" fill="#8A6510">⅓</text><text x="62" y="182" fill="#8A6510">⅓</text></g></svg>
+<p>(ii) S = {(A, B), (A, M), (O₁, B), (O₁, M), (O₂, B), (O₂, M)}: 6 equally likely outcomes. (By fruit type: Apple–Banana, Apple–Mango, Orange–Banana, Orange–Mango, but the orange pairs are twice as likely.)</p>
+<p>(iii) Only (A, B) is favourable: P = <b><span class="f"><span>1</span><span>6</span></span></b>. Along the path: <span class="f"><span>1</span><span>3</span></span> × <span class="f"><span>1</span><span>2</span></span> = <span class="f"><span>1</span><span>6</span></span>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>A box has 3 red, 4 black, 2 green pens. You pick one and put it back, then your friend picks one. (i) Possible outcomes and tree diagram (ii) P(both the same colour)?</span></summary><div class="ans">
+<p>(i) First pick: R (<span class="f"><span>3</span><span>9</span></span>), B (<span class="f"><span>4</span><span>9</span></span>), G (<span class="f"><span>2</span><span>9</span></span>). Because the pen is put back, the second pick has the same three branches. Colour outcomes: RR, RB, RG, BR, BB, BG, GR, GB, GG (9 paths). Counting each pen separately there are 9 × 9 = 81 equally likely outcomes.</p>
+<p>(ii) Same colour = RR or BB or GG.<br>P = <span class="f"><span>3</span><span>9</span></span>×<span class="f"><span>3</span><span>9</span></span> + <span class="f"><span>4</span><span>9</span></span>×<span class="f"><span>4</span><span>9</span></span> + <span class="f"><span>2</span><span>9</span></span>×<span class="f"><span>2</span><span>9</span></span> = <span class="f"><span>9</span><span>81</span></span> + <span class="f"><span>16</span><span>81</span></span> + <span class="f"><span>4</span><span>81</span></span> = <b><span class="f"><span>29</span><span>81</span></span></b> ≈ 0.36</p></div></details>
+</section>
+
+<section id="end">
+<div class="sec-head"><span class="sec-num word">End</span><h2>End-of-chapter exercises: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>Fill in the blanks: (i) P(impossible event) = ___ (ii) The set of all possible outcomes is the ___ (iii) P(certain event) = ___ (iv) P(heads) for a fair coin = ___</span></summary><div class="ans">(i) <b>0</b> &nbsp; (ii) <b>sample space</b> &nbsp; (iii) <b>1</b> &nbsp; (iv) <b><span class="f"><span>1</span><span>2</span></span></b> (0.5)</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>In a survey of 50 students, 15 liked football. The ___ (frequency/relative frequency) is ___.</span></summary><div class="ans">The frequency is 15, and the <b>relative frequency</b> is <span class="f"><span>15</span><span>50</span></span> = <b><span class="f"><span>3</span><span>10</span></span> = 0.3</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Which experiments have equally likely outcomes? (i) A car starts or does not start (ii) tossing a fair coin (iii) rolling a fair die (iv) a marble from 3 red and 7 blue (v) a baby is a boy or a girl.</span></summary><div class="ans">
+<p>(i) <b>No.</b> A car in working order usually starts, so “starts” is far more likely.</p>
+<p>(ii) <b>Yes.</b> H and T each <span class="f"><span>1</span><span>2</span></span>.</p>
+<p>(iii) <b>Yes.</b> Each face <span class="f"><span>1</span><span>6</span></span>.</p>
+<p>(iv) <b>No</b> (for colour). P(red) = <span class="f"><span>3</span><span>10</span></span>, P(blue) = <span class="f"><span>7</span><span>10</span></span>. Each single marble is equally likely, but the colours are not.</p>
+<p>(v) <b>Nearly, but not exactly.</b> We often treat boy/girl as equally likely, but birth records show slightly more boys than girls are born.</p></div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Write the sample space and find: (i) two coins, at least one head (ii) cards 1–10, even number (iii) a die, number &gt; 4 (iv) 3 red, 2 blue, 1 green ball, not red (v) three coins, exactly two heads.</span></summary><div class="ans">
+<p>(i) S = {HH, HT, TH, TT}; E = {HH, HT, TH}. P = <b><span class="f"><span>3</span><span>4</span></span></b></p>
+<p>(ii) S = {1, 2, …, 10}; E = {2, 4, 6, 8, 10}. P = <span class="f"><span>5</span><span>10</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b></p>
+<p>(iii) S = {1, …, 6}; E = {5, 6}. P = <span class="f"><span>2</span><span>6</span></span> = <b><span class="f"><span>1</span><span>3</span></span></b></p>
+<p>(iv) S = {R1, R2, R3, B1, B2, G}; not red = {B1, B2, G}. P = <span class="f"><span>3</span><span>6</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b></p>
+<p>(v) S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT} (8 outcomes); E = {HHT, HTH, THH}. P = <b><span class="f"><span>3</span><span>8</span></span></b></p></div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>A bag has 3 candies: strawberry, lemon, mint. P(strawberry)?</span></summary><div class="ans">S = {strawberry, lemon, mint}. P = <b><span class="f"><span>1</span><span>3</span></span></b></div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>2 shirts (red, blue) and 3 pants (jeans, khakis, shorts). List all outfits in a table.</span></summary><div class="ans">
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th></th><th>👖 Jeans</th><th>Khakis</th><th>🩳 Shorts</th></tr>
+<tr><td><b>🔴 Red shirt</b></td><td>Red + Jeans</td><td>Red + Khakis</td><td>Red + Shorts</td></tr>
+<tr><td><b>🔵 Blue shirt</b></td><td>Blue + Jeans</td><td>Blue + Khakis</td><td>Blue + Shorts</td></tr></table></div>
+<p>2 × 3 = <b>6 outfits</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Tyre distances in 1000 cases: &lt;4000 km: 20; 4001–9000: 210; 9001–14000: 325; &gt;14000: 445. Find P(tyre lasts) (i) less than 4000 km (ii) between 4000 and 14000 km (iii) more than 14000 km.</span></summary><div class="ans">
+<p>Total = 20 + 210 + 325 + 445 = 1000 ✓</p>
+<p>(i) <span class="f"><span>20</span><span>1000</span></span> = <b>0.02</b></p>
+<p>(ii) <span class="f"><span>210 + 325</span><span>1000</span></span> = <span class="f"><span>535</span><span>1000</span></span> = <b>0.535</b></p>
+<p>(iii) <span class="f"><span>445</span><span>1000</span></span> = <b>0.445</b></p>
+<p class="muted">Check: 0.02 + 0.535 + 0.445 = 1.</p></div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>Letters of PEACE on cards. (i) P(it is P, E or C)? (ii) P(not an E)?</span></summary><div class="ans">
+<div class="word-tiles static"><span class="hl">P</span><span class="hl">E</span><span>A</span><span class="hl">C</span><span class="hl">E</span></div>
+<p>5 cards: P, E, A, C, E.</p><p>(i) P, E, E, C are favourable: P = <b><span class="f"><span>4</span><span>5</span></span></b></p><p>(ii) Not E: P, A, C. P = <b><span class="f"><span>3</span><span>5</span></span></b></p></div></details>
+<details class="qa"><summary><span class="qnum">9*</span><span>An arrow spins and stops on one of 1–8, equally likely. P(pointing at) (i) 8 (ii) odd (iii) more than 2 (iv) less than 9 (v) a multiple of 3?</span></summary><div class="ans">
+<figure class="fig zoomable narrow"><img src="img/probability/spinner.webp" alt="A wooden spinner wheel with 8 coloured sections numbered 1 to 8" width="462" height="618" loading="lazy" decoding="async"><figcaption><b>Fig. 7.7</b> The spinner. Play with it in the spinner game below.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>(i) {8}: <b><span class="f"><span>1</span><span>8</span></span></b> &nbsp; (ii) {1, 3, 5, 7}: <span class="f"><span>4</span><span>8</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b> &nbsp; (iii) {3, …, 8}: <span class="f"><span>6</span><span>8</span></span> = <b><span class="f"><span>3</span><span>4</span></span></b></p>
+<p>(iv) All 8 numbers: <span class="f"><span>8</span><span>8</span></span> = <b>1</b> (certain) &nbsp; (v) {3, 6}: <span class="f"><span>2</span><span>8</span></span> = <b><span class="f"><span>1</span><span>4</span></span></b></p></div></details>
+<details class="qa"><summary><span class="qnum">10*</span><span>4 red and 5 blue balls. One ball is drawn and laid aside, then a second is drawn. Tree diagram; (i) P(red then blue) (ii) P(2 blue).</span></summary><div class="ans">
+<svg class="dg narrow ans-tree" viewBox="0 0 460 250" role="img" aria-label="Tree without replacement: first R 4/9 or B 5/9, then second draw">
+<g stroke="#2A4A86" stroke-width="2" fill="none"><path d="M20 125 L150 62 M20 125 L150 188"/><path d="M180 62 L290 28 M180 62 L290 96 M180 188 L290 154 M180 188 L290 222"/></g>
+<g font-family="Mukta,sans-serif" font-size="15" fill="#0E2148"><circle cx="20" cy="125" r="6" fill="#0E2148"/>
+<circle cx="165" cy="62" r="13" fill="#D9534F"/><text x="165" y="67" fill="#fff" text-anchor="middle" font-weight="700">R</text>
+<circle cx="165" cy="188" r="13" fill="#2A6FDB"/><text x="165" y="193" fill="#fff" text-anchor="middle" font-weight="700">B</text>
+<text x="68" y="80" fill="#8A6510" font-weight="700">4/9</text><text x="68" y="182" fill="#8A6510" font-weight="700">5/9</text>
+<text x="222" y="35" fill="#8A6510">3/8</text><text x="222" y="100" fill="#8A6510">5/8</text><text x="222" y="160" fill="#8A6510">4/8</text><text x="222" y="225" fill="#8A6510">4/8</text>
+<text x="296" y="33">RR = 12/72 = 1/6</text><text x="296" y="101" font-weight="700">RB = 20/72 = 5/18</text><text x="296" y="159">BR = 20/72 = 5/18</text><text x="296" y="227" font-weight="700">BB = 20/72 = 5/18</text></g></svg>
+<p>After the first ball is laid aside, only 8 balls remain, so the second-draw probabilities change.</p>
+<p>(i) P(R then B) = <span class="f"><span>4</span><span>9</span></span> × <span class="f"><span>5</span><span>8</span></span> = <span class="f"><span>20</span><span>72</span></span> = <b><span class="f"><span>5</span><span>18</span></span></b></p>
+<p>(ii) P(B, B) = <span class="f"><span>5</span><span>9</span></span> × <span class="f"><span>4</span><span>8</span></span> = <span class="f"><span>20</span><span>72</span></span> = <b><span class="f"><span>5</span><span>18</span></span></b></p>
+<p class="muted">Check: 12 + 20 + 20 + 20 = 72, so the four paths add up to 1.</p></div></details>
+<details class="qa"><summary><span class="qnum">11*</span><span>A pair of dice is thrown. Write an event with probability 0 and one with probability 1.</span></summary><div class="ans"><p>Probability 0: “the sum is 13” (the largest sum is 6 + 6 = 12), or “the sum is 1”.</p><p>Probability 1: “the sum is between 2 and 12” or “each die shows a number from 1 to 6”.</p><p class="muted">Try both in the two-dice explorer in 7.3.</p></div></details>
+<details class="qa"><summary><span class="qnum">12*</span><span>(i) Two dice: sum a prime &gt; 5 (ii) 4 red, 3 green, 2 blue; two balls without replacement: different colours (iii) three coins: first is heads and exactly two heads (iv) 4-digit number from 1, 2, 3, 4 (no repeats) is even (v) 3 MCQs with 4 options, guessing: exactly 2 correct.</span></summary><div class="ans">
+<p><b>(i)</b> n(S) = 36. Primes greater than 5 that can be a sum: 7 and 11.<br>Sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 ways. Sum 11: (5,6), (6,5): 2 ways.<br>P = <span class="f"><span>8</span><span>36</span></span> = <b><span class="f"><span>2</span><span>9</span></span></b></p>
+<p><b>(ii)</b> 9 balls. Number of ways to choose 2 balls = (9 × 8) ÷ 2 = 36.<br>Same colour: red pairs (4 × 3) ÷ 2 = 6, green pairs (3 × 2) ÷ 2 = 3, blue pairs 1. Total 10.<br>Different colours = 36 − 10 = 26. P = <span class="f"><span>26</span><span>36</span></span> = <b><span class="f"><span>13</span><span>18</span></span></b><br><span class="muted">Or by counting directly: R–G 4 × 3 = 12, R–B 4 × 2 = 8, G–B 3 × 2 = 6, total 26.</span></p>
+<p><b>(iii)</b> n(S) = 8. First coin H and exactly two heads: {HHT, HTH}. P = <span class="f"><span>2</span><span>8</span></span> = <b><span class="f"><span>1</span><span>4</span></span></b></p>
+<p><b>(iv)</b> Total numbers = 4 × 3 × 2 × 1 = 24. Even means last digit 2 or 4: for each choice of last digit, the other 3 digits can be arranged in 3 × 2 × 1 = 6 ways, so 12 even numbers.<br>P = <span class="f"><span>12</span><span>24</span></span> = <b><span class="f"><span>1</span><span>2</span></span></b></p>
+<p><b>(v)</b> Each question has 4 options, so n(S) = 4 × 4 × 4 = 64.<br>Choose which 2 questions are right: 3 ways (Q1Q2, Q1Q3, Q2Q3). Right answers: 1 way each; the wrong one: 3 ways. Favourable = 3 × 1 × 1 × 3 = 9.<br>P = <b><span class="f"><span>9</span><span>64</span></span></b> ≈ 0.14</p></div></details>
+<details class="qa"><summary><span class="qnum">13*</span><span>Balls numbered 1–4. Tree for (i) draw, replace, draw again (ii) draw, do not replace, draw again (iii) sizes of the two sample spaces.</span></summary><div class="ans">
+<p><b>(i) With replacement:</b> each of the 4 first branches splits into 4.<br>S = {11, 12, 13, 14, 21, 22, 23, 24, 31, 32, 33, 34, 41, 42, 43, 44}</p>
+<p><b>(ii) Without replacement:</b> each first branch splits into the 3 remaining numbers.<br>S = {12, 13, 14, 21, 23, 24, 31, 32, 34, 41, 42, 43}</p>
+<p><b>(iii)</b> 4 × 4 = <b>16</b> and 4 × 3 = <b>12</b>. (The 4 doubles 11, 22, 33, 44 are missing without replacement.)</p></div></details>
+<details class="qa"><summary><span class="qnum">14*</span><span>Toss a coin and draw a card numbered 1–6. List the sample space.</span></summary><div class="ans">S = {H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6}, n(S) = 2 × 6 = <b>12</b>.</div></details>
+<details class="qa"><summary><span class="qnum">15*</span><span>Three coins are tossed and the number of heads recorded. Which list is the sample space: (i) {1, 2, 3} (ii) {0, 1, 2} (iii) {0, 1, 2, 3, 4} (iv) {0, 1, 2, 3}?</span></summary><div class="ans">
+<p>The number of heads can be 0 (TTT), 1, 2 or 3 (HHH). So <b>(iv) {0, 1, 2, 3}</b> is the sample space.</p>
+<p>(i) misses 0 (all tails). (ii) misses 3 (all heads). (iii) includes 4, which is impossible with three coins.</p></div></details>
+<details class="qa"><summary><span class="qnum">16*</span><span>A drop of dye falls at random on a 3 m × 2 m rectangle. P(it lands inside the circle of diameter 1 m)?</span></summary><div class="ans">
+<figure class="fig zoomable narrow"><img src="img/probability/dye.webp" alt="A dropper lets dye fall on a 3 m by 2 m purple rectangle with a circle in the middle" width="570" height="408" loading="lazy" decoding="async"><figcaption><b>Fig. 7.8</b> Dye dropped at random on the rectangle.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>When the drop is equally likely to land anywhere, probability = favourable <b>area</b> ÷ total <b>area</b>.</p>
+<p>Rectangle = 3 × 2 = 6 m². Circle: r = 0.5 m, area = π × 0.5² = <span class="f"><span>π</span><span>4</span></span> ≈ 0.785 m².</p>
+<p>P = <span class="f"><span>π</span><span>4</span></span> ÷ 6 = <b><span class="f"><span>π</span><span>24</span></span></b> ≈ <b>0.131</b> (using π = <span class="f"><span>22</span><span>7</span></span>: <span class="f"><span>11</span><span>84</span></span> ≈ 0.131)</p>
+<p class="muted">Test it with the dye-drop simulator below.</p></div></details>
+
+<h3 class="no-print">🎡 Spinner game (Fig. 7.7)</h3>
+<div class="box calc no-print spin-box" id="spin-tool">
+<div class="spin-wrap"><svg id="spin-svg" viewBox="-110 -110 220 220" role="img" aria-label="Spinner with 8 numbered sections"></svg><div class="spin-arrow" aria-hidden="true"></div></div>
+<div><button type="button" class="btn solid" id="spin-go">Spin!</button>
+<p class="big" id="spin-res" aria-live="polite">Press Spin.</p>
+<label class="sl">Event: <select id="spin-ev"><option value="odd">An odd number</option><option value="g2">Greater than 2</option><option value="m3">A multiple of 3</option><option value="e8">Exactly 8</option></select></label>
+<p id="spin-stats"></p></div>
+</div>
+
+<h3 class="no-print">💧 Dye-drop simulator (Fig. 7.8)</h3>
+<div class="box calc no-print" id="drop-tool">
+<p class="muted">Drop dye at random on the 3 m × 2 m sheet. The fraction landing in the circle estimates π/24 ≈ 0.131.</p>
+<div class="lab-run"><button type="button" data-d="1">Drop 1</button><button type="button" data-d="50">Drop 50</button><button type="button" data-d="500">Drop 500</button><button type="button" class="reset" data-d="0">Clear</button></div>
+<svg id="drop-svg" class="drop-svg" viewBox="0 0 300 200" role="img" aria-label="Rectangle with a circle in the middle and random dye drops"><rect x="0" y="0" width="300" height="200" rx="6" fill="#5B55B8"/><circle cx="150" cy="100" r="50" fill="#F3E6C4"/><g id="drop-dots"></g></svg>
+<p class="big" id="drop-out" aria-live="polite"></p>
+</div>
+</section>
+
+<section id="recap">
+<div class="sec-head"><span class="sec-num word">Sheet</span><h2>Formula sheet and chapter summary</h2></div>
+<div class="sheet">
+<div class="sheet-card"><span class="emo">📏</span><h4>The scale</h4><p>0 ≤ P(E) ≤ 1<br>0 = impossible, 1 = certain, ½ = even chance</p></div>
+<div class="sheet-card"><span class="emo">🧪</span><h4>Experimental</h4><p><span class="fr"><span>times the event occurred</span><span>total trials</span></span></p></div>
+<div class="sheet-card"><span class="emo">🧠</span><h4>Theoretical</h4><p>P(A) = <span class="fr"><span>favourable outcomes</span><span>possible outcomes</span></span></p></div>
+<div class="sheet-card"><span class="emo">🗂️</span><h4>Sample space</h4><p>S = {all outcomes}, none repeated.<br>n(S) = sample size</p></div>
+<div class="sheet-card"><span class="emo">🎯</span><h4>Event</h4><p>A subset of S: one or more outcomes we care about.</p></div>
+<div class="sheet-card"><span class="emo">🌳</span><h4>Tree diagram</h4><p>Each path = one outcome. Multiply along a path, add the paths you want.</p></div>
+<div class="sheet-card"><span class="emo">📈</span><h4>Law of Large Numbers</h4><p>More trials ⟹ experimental gets closer to theoretical.</p></div>
+<div class="sheet-card"><span class="emo">🎰</span><h4>No memory</h4><p>Past results never change the next toss (Gambler's Fallacy).</p></div>
+<div class="sheet-card"><span class="emo">🔢</span><h4>Handy counts</h4><p>1 coin: 2 · 2 coins: 4 · 3 coins: 8<br>1 die: 6 · 2 dice: 36</p></div>
+</div>
+<div class="box key"><h4>📝 Chapter summary</h4><ul>
+<li>Probability measures the likelihood of an event, on a scale from 0 (impossible) to 1 (certain): 0 ≤ P(E) ≤ 1.</li>
+<li>Experimental probability comes from doing an experiment: times the event occurred ÷ total trials.</li>
+<li>Theoretical probability assumes all outcomes are equally likely: favourable ÷ possible outcomes.</li>
+<li>A sample space S = {outcome₁, outcome₂, …, outcomeₙ} lists every possible outcome of a random experiment.</li>
+<li>An event is one or a group of outcomes from the sample space.</li>
+<li>Tree diagrams list and visualise all outcomes and help us calculate probabilities.</li>
+</ul></div>
+</section>
+
+<section id="quiz">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p class="muted">Tap an answer. You get one try per question.</p>
+<div class="quiz">
+<div class="q"><p>1. Which of these can NOT be a probability?</p><div class="opts"><button class="opt" type="button">0</button><button class="opt" type="button">0.99</button><button class="opt" type="button" data-c>1.2</button><button class="opt" type="button"><span class="f"><span>3</span><span>7</span></span></button></div><p class="why">Probability is always between 0 and 1, so 1.2 is impossible.</p></div>
+<div class="q"><p>2. A die is rolled. P(a number less than 3)?</p><div class="opts"><button class="opt" type="button"><span class="f"><span>1</span><span>6</span></span></button><button class="opt" type="button" data-c><span class="f"><span>1</span><span>3</span></span></button><button class="opt" type="button"><span class="f"><span>1</span><span>2</span></span></button><button class="opt" type="button"><span class="f"><span>2</span><span>3</span></span></button></div><p class="why">{1, 2} out of 6: <span class="f"><span>2</span><span>6</span></span> = <span class="f"><span>1</span><span>3</span></span>.</p></div>
+<div class="q"><p>3. A coin shows Heads 5 times in a row. P(Tails) on the next toss?</p><div class="opts"><button class="opt" type="button">Almost 1</button><button class="opt" type="button" data-c><span class="f"><span>1</span><span>2</span></span></button><button class="opt" type="button"><span class="f"><span>5</span><span>6</span></span></button><button class="opt" type="button">0</button></div><p class="why">The coin has no memory. Thinking otherwise is the Gambler's Fallacy.</p></div>
+<div class="q"><p>4. How many outcomes when three coins are tossed?</p><div class="opts"><button class="opt" type="button">3</button><button class="opt" type="button">6</button><button class="opt" type="button" data-c>8</button><button class="opt" type="button">9</button></div><p class="why">2 × 2 × 2 = 8.</p></div>
+<div class="q"><p>5. A coin was tossed 40 times and showed Heads 22 times. Experimental P(Heads)?</p><div class="opts"><button class="opt" type="button">0.5</button><button class="opt" type="button" data-c>0.55</button><button class="opt" type="button">0.45</button><button class="opt" type="button">0.22</button></div><p class="why"><span class="f"><span>22</span><span>40</span></span> = 0.55.</p></div>
+<div class="q"><p>6. Two dice are rolled. P(a double)?</p><div class="opts"><button class="opt" type="button"><span class="f"><span>1</span><span>36</span></span></button><button class="opt" type="button"><span class="f"><span>1</span><span>12</span></span></button><button class="opt" type="button" data-c><span class="f"><span>1</span><span>6</span></span></button><button class="opt" type="button"><span class="f"><span>1</span><span>2</span></span></button></div><p class="why">6 doubles out of 36 outcomes.</p></div>
+<div class="q"><p>7. An event is a ___ of the sample space.</p><div class="opts"><button class="opt" type="button">multiple</button><button class="opt" type="button" data-c>subset</button><button class="opt" type="button">copy</button><button class="opt" type="button">square</button></div><p class="why">An event is made of some (or all, or none) of the outcomes in S.</p></div>
+<div class="q"><p>8. P(choosing a vowel from the word MATHS)?</p><div class="opts"><button class="opt" type="button" data-c><span class="f"><span>1</span><span>5</span></span></button><button class="opt" type="button"><span class="f"><span>2</span><span>5</span></span></button><button class="opt" type="button"><span class="f"><span>1</span><span>4</span></span></button><button class="opt" type="button">0</button></div><p class="why">Only A is a vowel: 1 out of 5 letters.</p></div>
+<div class="q"><p>9. In a sample of 60 students, 15 walk to school. About how many of 1200 students walk?</p><div class="opts"><button class="opt" type="button">150</button><button class="opt" type="button" data-c>300</button><button class="opt" type="button">600</button><button class="opt" type="button">15</button></div><p class="why"><span class="f"><span>15</span><span>60</span></span> = 0.25 and 0.25 × 1200 = 300.</p></div>
+<div class="q"><p>10. Which statement about the Law of Large Numbers is correct?</p><div class="opts"><button class="opt" type="button">After many Heads, Tails becomes more likely</button><button class="opt" type="button" data-c>With more trials, experimental probability gets closer to theoretical</button><button class="opt" type="button">Theoretical probability changes with more trials</button><button class="opt" type="button">10 trials are always enough</button></div><p class="why">Only the long-run proportion settles down; single tosses stay random.</p></div>
+</div>
+<p class="score" aria-live="polite"></p>
+</section>
+</main>
+<footer>
+<p><b>MT Classes</b>, S.K. Nagar, Motihari</p>
+<p>Maths and Science coaching for Classes 8 to 10 (CBSE)</p>
+<p><a href="tel:+917091609997">7091609997</a> &nbsp;&nbsp; <a href="mailto:mtclassesmotihari@gmail.com">mtclassesmotihari@gmail.com</a> &nbsp;&nbsp; <a href="https://www.youtube.com/@MTClassesMotihari" target="_blank" rel="noopener">YouTube: @MTClassesMotihari</a></p>
+<p style="font-size:13.5px;opacity:.8;margin-top:14px">Notes based on NCERT Ganita Manjari (Grade 9 Mathematics, Part I), Chapter 7: The Mathematics of Maybe: Introduction to Probability. Diagrams are taken from the NCERT textbook chapter.</p>
+</footer>
+<script>
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+
+
+  function $(id){return document.getElementById(id);}
+  function gcd(a,b){return b?gcd(b,a%b):a;}
+  function frac(a,b){if(a===0)return '0';if(a===b)return '1';var g=gcd(a,b);return (a/g)+'/'+(b/g);}
+  function r3(x){return String(Math.round(x*1000)/1000);}
+
+  // deck of six
+  (function(){
+    var r=$('deck-r'); if(!r) return;
+    var labels=['Impossible','Less likely','Less likely','Even chance','More likely','More likely','Certain'];
+    function upd(){
+      var n=+r.value, h='';
+      for(var i=0;i<6;i++) h+='<span class="'+(i<n?'p':'g')+'">'+(i<n?'P':'G')+'</span>';
+      $('deck').innerHTML=h; $('deck-n').textContent=n;
+      $('deck-ptr').style.left=(n/6*100)+'%';
+      $('deck-out').textContent='P(purple) = '+frac(n,6)+(n&&n<6?' ≈ '+r3(n/6):'')+'  →  '+labels[n];
+    }
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // sorter game
+  (function(){
+    var box=$('sort-list'); if(!box) return;
+    var cats=['Impossible','Less likely','Even chance','More likely','Certain'];
+    var items=[
+      ['The sun will rise in the east tomorrow.',4,'Certain: it happens every single day.'],
+      ['Rolling a 7 on a normal die.',0,'Impossible: a die only has 1 to 6.'],
+      ['A newborn baby is a girl.',2,'Even chance: about half of all babies are girls.'],
+      ['Rolling a number bigger than 1 on a die.',3,'More likely: 5 of the 6 faces (P = 5/6).'],
+      ['Picking the one red ball from a bag of 10 balls.',1,'Less likely: P = 1/10.'],
+      ['Getting Tails when you toss a coin.',2,'Even chance: P = 1/2.']
+    ], got=0, done=0;
+    items.forEach(function(it){
+      var d=document.createElement('div'); d.className='sort-item';
+      d.innerHTML='<p>'+it[0]+'</p><div class="sort-btns">'+cats.map(function(c,i){return '<button type="button" data-i="'+i+'">'+c+'</button>';}).join('')+'</div><p class="fb">'+it[2]+'</p>';
+      d.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+        if(d.classList.contains('done')) return; d.classList.add('done'); done++;
+        d.querySelector('[data-i="'+it[1]+'"]').classList.add('right');
+        if(+b.dataset.i===it[1]) got++; else b.classList.add('wrong');
+        $('sort-score').textContent='Score: '+got+' / '+items.length+(done===items.length?(got===items.length?'. Brilliant!':'. Read the feedback for the ones you missed.'):'');
+      });});
+      box.appendChild(d);
+    });
+  })();
+
+  // coin and dice lab
+  (function(){
+    var tool=$('lab-tool'); if(!tool) return;
+    var mode='coin', counts, n, hist, last=[], streakK='', streakN=0;
+    var face=$('lab-face'), svg=$('lab-chart'), NS='http://www.w3.org/2000/svg';
+    function keys(){return mode==='coin'?['H','T']:['1','2','3','4','5','6'];}
+    function reset(){counts={};keys().forEach(function(k){counts[k]=0;});n=0;hist=[];streakK='';streakN=0;
+      face.textContent='?';face.className='lab-face'+(mode==='die'?' die':'');draw();}
+    function one(){var ks=keys(),k=ks[Math.floor(Math.random()*ks.length)];counts[k]++;n++;
+      if(k===streakK)streakN++;else{streakK=k;streakN=1;}
+      var tk=mode==='coin'?'H':'6';hist.push(counts[tk]/n);return k;}
+    function draw(){
+      var ks=keys(), th=1/ks.length, h='';
+      ks.forEach(function(k){var p=n?counts[k]/n:0;
+        h+='<div class="lab-bar"><b>'+(mode==='coin'?(k==='H'?'Heads':'Tails').slice(0,5):k)+'</b><div class="trk"><div class="fill" style="width:'+(p*100)+'%"></div><div class="th" style="left:'+(th*100)+'%"></div></div><span class="v">'+counts[k]+' / '+n+(n?' = '+p.toFixed(3):'')+'</span></div>';});
+      $('lab-bars').innerHTML=h;
+      // chart
+      while(svg.firstChild) svg.removeChild(svg.firstChild);
+      var W=600,H=220,L=44,R=12,T=14,B=30, pw=W-L-R, ph=H-T-B, maxY=mode==='coin'?1:0.5;
+      function el(t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
+      function y(v){return T+ph-(v/maxY)*ph;}
+      [0,maxY/2,maxY].forEach(function(v){el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'#E3E8F2'});el('text',{x:L-6,y:y(v)+5,'font-size':16,'text-anchor':'end',fill:'#5B6475'},String(v));});
+      el('line',{x1:L,x2:W-R,y1:y(th),y2:y(th),stroke:'#0E2148','stroke-width':2,'stroke-dasharray':'7 5'});
+      el('text',{x:W-R-4,y:y(th)-6,'font-size':16,'text-anchor':'end',fill:'#0E2148','font-weight':700},'theory: '+(mode==='coin'?'1/2':'1/6'));
+      el('text',{x:L+pw/2,y:H-6,'font-size':16,'text-anchor':'middle',fill:'#5B6475'},'number of trials (1 to '+(n||'n')+')');
+      el('text',{x:L+4,y:T+12,'font-size':16,fill:'#7B4BC4','font-weight':700},'experimental P('+(mode==='coin'?'Heads':'6')+')');
+      if(hist.length>0){
+        var m=hist.length, step=Math.max(1,Math.floor(m/300)), pts=[];
+        for(var i=0;i<m;i+=step) pts.push((L+(m===1?0:i/(m-1))*pw).toFixed(1)+','+y(Math.min(hist[i],maxY)).toFixed(1));
+        pts.push((L+pw).toFixed(1)+','+y(Math.min(hist[m-1],maxY)).toFixed(1));
+        el('polyline',{points:pts.join(' '),fill:'none',stroke:'#7B4BC4','stroke-width':2.5,'stroke-linejoin':'round'});
+      }
+      var note='';
+      if(n===0) note='Choose Coin or Die, then press a button to start.';
+      else{var tk=mode==='coin'?'H':'6', p=counts[tk]/n;
+        note='After <b>'+n+'</b> trials, experimental P('+(mode==='coin'?'Heads':'6')+') = <b>'+p.toFixed(3)+'</b>; theory says <b>'+th.toFixed(3)+'</b> (difference '+Math.abs(p-th).toFixed(3)+').';
+        if(streakN>=3) note+=' Current streak: <span class="streak-now">'+streakN+' × '+streakK+'</span>. Next one is still '+(mode==='coin'?'1/2':'1/6')+'!';}
+      $('lab-note').innerHTML=note;
+    }
+    tool.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){
+      tool.querySelectorAll('[data-mode]').forEach(function(x){x.classList.toggle('on',x===b);});mode=b.dataset.mode;reset();});});
+    tool.querySelectorAll('[data-n]').forEach(function(b){b.addEventListener('click',function(){
+      var k=+b.dataset.n; if(!k){reset();return;} var r; for(var i=0;i<k;i++) r=one();
+      face.textContent=r; face.classList.remove('flip'); void face.offsetWidth; face.classList.add('flip'); draw();});});
+    reset();
+  })();
+
+  // letter picker
+  (function(){
+    var inp=$('word-in'); if(!inp) return;
+    function build(){
+      var w=(inp.value||'').toUpperCase().replace(/[^A-Z]/g,''); var h='';
+      for(var i=0;i<w.length;i++) h+='<button type="button" data-l="'+w[i]+'">'+w[i]+'</button>';
+      $('word-tiles').innerHTML=h; $('word-out').textContent=w?'Tap a letter.':'Type a word.';
+      $('word-tiles').querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+        var l=b.dataset.l, c=0; $('word-tiles').querySelectorAll('button').forEach(function(x){var on=x.dataset.l===l;x.classList.toggle('hl',on);if(on)c++;});
+        $('word-out').textContent='P('+l+') = '+c+'/'+w.length+(c/w.length<1?(gcd(c,w.length)>1?' = '+frac(c,w.length):'')+' ≈ '+r3(c/w.length):'')+'  ('+(Math.round(c/w.length*1000)/10)+'%)';});});
+    }
+    inp.addEventListener('input',build); build();
+  })();
+
+  // two dice explorer
+  (function(){
+    var sel=$('dice-ev'); if(!sel) return;
+    var tests={s7:function(a,b){return a+b===7;},p5:function(a,b){return a+b===7||a+b===11;},dbl:function(a,b){return a===b;},
+      s10:function(a,b){return a+b>=10;},six:function(a,b){return a===6||b===6;},s13:function(){return false;},all:function(){return true;}};
+    var g=$('dice-grid'), h='<div class="h"></div>';
+    for(var j=1;j<=6;j++) h+='<div class="h">'+j+'</div>';
+    for(var a=1;a<=6;a++){h+='<div class="h">'+a+'</div>';for(var b=1;b<=6;b++) h+='<div data-a="'+a+'" data-b="'+b+'">'+(a+b)+'</div>';}
+    g.innerHTML=h;
+    function upd(){var t=tests[sel.value], c=0;
+      g.querySelectorAll('[data-a]').forEach(function(d){var on=t(+d.dataset.a,+d.dataset.b);d.classList.toggle('on',on);if(on)c++;});
+      var s='Favourable outcomes: '+c+' of 36.  P = '+c+'/36';
+      if(c&&c<36&&gcd(c,36)>1) s+=' = '+frac(c,36);
+      if(c===0) s+=' = 0 (impossible)'; if(c===36) s+=' = 1 (certain)';
+      $('dice-out').textContent=s;}
+    sel.addEventListener('change',upd); upd();
+  })();
+
+  // tree builder
+  (function(){
+    var tool=$('tree-tool'); if(!tool) return;
+    var svg=$('tree-svg'), NS='http://www.w3.org/2000/svg', coins=2, want=1;
+    function el(t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
+    function evBtns(){var h='';for(var k=0;k<=coins;k++)h+='<button type="button" data-k="'+k+'"'+(k===want?' class="on"':'')+'>'+(k===1?'exactly 1 Head':'exactly '+k+' Heads')+'</button>';
+      $('tree-ev').innerHTML=h;$('tree-ev').querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){want=+b.dataset.k;evBtns();draw();});});}
+    function draw(){
+      while(svg.firstChild) svg.removeChild(svg.firstChild);
+      var leaves=1<<coins, W=520, H=Math.max(160,leaves*36+20), colW=(W-150)/coins;
+      svg.setAttribute('viewBox','0 0 '+W+' '+H);
+      var good=0;
+      function rec(depth,lo,hi,x,y,path){
+        if(depth===coins){
+          var heads=(path.match(/H/g)||[]).length, ok=heads===want; if(ok)good++;
+          el('rect',{x:x+18,y:y-14,width:20+coins*16,height:28,rx:8,fill:ok?'#7B4BC4':'#F2F5FB'});
+          el('text',{x:x+27,y:y+6,'font-size':18,'font-weight':800,fill:ok?'#fff':'#5B6475'},path);
+          return ok;}
+        var any=false;
+        ['H','T'].forEach(function(s,i){
+          var mlo=i?(lo+hi)/2:lo, mhi=i?hi:(lo+hi)/2, ny=(mlo+mhi)/2, nx=x+colW;
+          var p=path+s, leafOk=sub(p);
+          el('line',{x1:x+(depth?14:0),y1:y,x2:nx-14,y2:ny,stroke:leafOk?'#7B4BC4':'#C9D2E3','stroke-width':leafOk?3.5:2});
+          el('text',{x:(x+nx)/2-6,y:(y+ny)/2-(i?-16:6),'font-size':16,fill:'#8A6510','font-weight':700},'½');
+          el('circle',{cx:nx,cy:ny,r:13,fill:s==='H'?'#E3B23C':'#0E2148'});
+          el('text',{x:nx,y:ny+6,'font-size':16,'font-weight':800,'text-anchor':'middle',fill:s==='H'?'#0E2148':'#fff'},s);
+          if(rec(depth+1,mlo,mhi,nx,ny,p)) any=true;
+        });
+        return any;
+      }
+      function sub(p){var rest=coins-p.length, h=(p.match(/H/g)||[]).length; return h<=want && h+rest>=want;}
+      el('circle',{cx:16,cy:H/2,r:7,fill:'#0E2148'});
+      rec(0,0,H,16,H/2,'');
+      $('tree-out').textContent='Matching paths: '+good+' of '+leaves+'.  P(exactly '+want+' Head'+(want===1?'':'s')+') = '+good+'/'+leaves+(good&&gcd(good,leaves)>1?' = '+frac(good,leaves):'')+(good===0?' = 0':'');
+    }
+    tool.querySelectorAll('[data-c]').forEach(function(b){b.addEventListener('click',function(){
+      tool.querySelectorAll('[data-c]').forEach(function(x){x.classList.toggle('on',x===b);});coins=+b.dataset.c;if(want>coins)want=coins;evBtns();draw();});});
+    evBtns(); draw();
+  })();
+
+  // spinner
+  (function(){
+    var svg=$('spin-svg'); if(!svg) return;
+    var NS='http://www.w3.org/2000/svg', cols=['#D33A3A','#8E44AD','#3949AB','#2E86DE','#27AE60','#9ACD32','#F39C12','#E67E22'];
+    var nums=[1,2,3,4,5,6,7,8], g=document.createElementNS(NS,'g'); g.setAttribute('class','wheel'); svg.appendChild(g);
+    function el(p,t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;p.appendChild(e);return e;}
+    el(g,'circle',{r:104,fill:'#7A4A1E'});
+    nums.forEach(function(n,i){var a0=(i*45-90-22.5)*Math.PI/180,a1=((i+1)*45-90-22.5)*Math.PI/180,R=96;
+      el(g,'path',{d:'M0,0 L'+(R*Math.cos(a0)).toFixed(2)+','+(R*Math.sin(a0)).toFixed(2)+' A'+R+','+R+' 0 0 1 '+(R*Math.cos(a1)).toFixed(2)+','+(R*Math.sin(a1)).toFixed(2)+' Z',fill:cols[i],stroke:'#fff','stroke-width':2});
+      var am=(i*45-90)*Math.PI/180; el(g,'text',{x:(66*Math.cos(am)).toFixed(1),y:(66*Math.sin(am)+8).toFixed(1),'text-anchor':'middle','font-size':24,'font-weight':800,fill:'#fff'},n);});
+    el(svg,'circle',{r:14,fill:'#F4E1C1',stroke:'#7A4A1E','stroke-width':4});
+    var rot=0, spins=0, hits=0, busy=false, tests={odd:function(n){return n%2===1;},g2:function(n){return n>2;},m3:function(n){return n%3===0;},e8:function(n){return n===8;}},
+      theory={odd:'1/2',g2:'3/4',m3:'1/4',e8:'1/8'}, res=[];
+    function stats(){var t=tests[$('spin-ev').value];hits=res.filter(t).length;
+      $('spin-stats').innerHTML=spins?('Spins: <b>'+spins+'</b>. Event happened <b>'+hits+'</b> times. Experimental P = '+hits+'/'+spins+' ≈ <b>'+(hits/spins).toFixed(2)+'</b>; theory = <b>'+theory[$('spin-ev').value]+'</b>.'):'Theory for this event: <b>'+theory[$('spin-ev').value]+'</b>.';}
+    $('spin-ev').addEventListener('change',stats);
+    $('spin-go').addEventListener('click',function(){
+      if(busy) return; busy=true; var k=Math.floor(Math.random()*8);
+      var target=-k*45 + (Math.random()*30-15); var cur=((rot%360)+360)%360;
+      rot+= (360*4) + ((target-cur)%360+360)%360;
+      g.style.transform='rotate('+rot+'deg)';
+      $('spin-res').textContent='Spinning…';
+      setTimeout(function(){busy=false;spins++;res.push(nums[k]);$('spin-res').textContent='It landed on '+nums[k]+'!';stats();},2700);
+    });
+    stats();
+  })();
+
+  // dye drop
+  (function(){
+    var tool=$('drop-tool'); if(!tool) return;
+    var dots=$('drop-dots'), NS='http://www.w3.org/2000/svg', n=0, inC=0;
+    function upd(){$('drop-out').textContent=n?('Drops: '+n+', inside circle: '+inC+'.  Estimate = '+inC+'/'+n+' ≈ '+(inC/n).toFixed(3)+'   (exact π/24 ≈ 0.131)'):'Press a button to drop dye.';}
+    tool.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){
+      var k=+b.dataset.d; if(!k){while(dots.firstChild)dots.removeChild(dots.firstChild);n=0;inC=0;upd();return;}
+      for(var i=0;i<k;i++){var x=Math.random()*300,y=Math.random()*200,ins=(x-150)*(x-150)+(y-100)*(y-100)<=2500;n++;if(ins)inC++;
+        if(dots.childNodes.length<3000){var c=document.createElementNS(NS,'circle');c.setAttribute('cx',x.toFixed(1));c.setAttribute('cy',y.toFixed(1));c.setAttribute('r','3');c.setAttribute('fill',ins?'#D9534F':'#F4CF6B');c.setAttribute('opacity','.85');dots.appendChild(c);}}
+      upd();});});
+    upd();
+  })();
+})();
+</script>
+</body>
+</html>
