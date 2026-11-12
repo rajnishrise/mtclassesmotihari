@@ -29,7 +29,7 @@ window.MT_CONFIG = {
   // ---- ONLINE MODE (Google Sheets) ----
   // Paste your Google Apps Script web-app URL here (see README, step 3).
   // While empty, attendance and results are saved only on the device (demo mode).
-  backendUrl: "",
+  backendUrl: "https://script.google.com/macros/s/AKfycbw0ZcAuOL12kQnZu6oNJI-6bLBv9_nsx0nPn88gEHvFetgd031n0oh4yu8kolD5J7JPoA/exec",
 
   // Teacher PIN used ONLY in demo mode. In online mode the PIN is kept
   // safely inside Google Apps Script and is never stored in this file.
