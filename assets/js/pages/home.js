@@ -1,15 +1,32 @@
 (function () {
   const { $, esc } = MT, C = MT_CONFIG, D = MT_CONTENT;
-  // countdown
+  // countdown: whole calendar days left, counted by the date in India (IST), so the
+  // number drops by one at midnight IST every day. Re-checks every minute and when
+  // the tab comes back into view, so a page left open also updates.
   const be = C.boardExam, box = $("#countdown");
   if (be && box) {
-    const days = Math.ceil((new Date(be.date + "T10:30:00") - new Date()) / 864e5);
-    if (days > 0) {
-      const w = Math.floor(days / 7);
-      box.innerHTML = `<div><span class="tag gold">Countdown</span><h3 style="margin:8px 0 2px">${esc(be.label)}</h3><span class="muted">Starts ${MT.niceDate(be.date)}</span></div>
-        <div class="count"><div><b>${days}</b><small>days left</small></div><div><b>${w}</b><small>weeks</small></div></div>
+    const daysLeft = () => {
+      const ist = new Date(Date.now() + 5.5 * 36e5); // shift to IST, then read UTC fields
+      const today = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate());
+      const [y, m, d] = be.date.split("-").map(Number);
+      return Math.round((Date.UTC(y, m - 1, d) - today) / 864e5);
+    };
+    let shown = null;
+    const render = () => {
+      const days = daysLeft();
+      if (days === shown) return;
+      shown = days;
+      if (days > 0) {
+        const w = Math.floor(days / 7);
+        box.innerHTML = `<div><span class="tag gold">Countdown</span><h3 style="margin:8px 0 2px">${esc(be.label)}</h3><span class="muted">Starts ${MT.niceDate(be.date)}</span></div>
+        <div class="count"><div><b>${days}</b><small>${days === 1 ? "day" : "days"} left</small></div><div><b>${w}</b><small>weeks</small></div></div>
         <a class="btn sm" href="exam.html">Practise now</a>`;
-    } else box.parentElement.classList.add("hide");
+        box.parentElement.classList.remove("hide");
+      } else box.parentElement.classList.add("hide");
+    };
+    render();
+    setInterval(render, 6e4);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) render(); });
   }
   $("#courses").innerHTML = D.courses.map((c) => `<div class="card class-card reveal"><span class="tag gold">CBSE</span><h3 style="margin-top:10px">${esc(c.title)} · Maths & Science</h3>
     <ul>${c.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul><a class="btn sm" href="classes.html">Batch timings</a> <a class="btn sm ghost" href="notes.html#class-${c.cls}">Notes</a></div>`).join("");
