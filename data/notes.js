@@ -19,7 +19,8 @@ window.MT_NOTES = {
       { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf" },
       "Life Processes", "Control and Coordination",
       { title: "How do Organisms Reproduce?", file: "notes/class10-science-how-do-organisms-reproduce.pdf" }, "Heredity",
-      "Light – Reflection and Refraction", "The Human Eye and the Colourful World", "Electricity",
+      "Light – Reflection and Refraction", "The Human Eye and the Colourful World",
+      { title: "Electricity", label: "Handwritten notes", file: "notes/class10-science-electricity.pdf" },
       { title: "Magnetic Effects of Electric Current", label: "AC & DC Current and Household Circuits", file: "notes/class10-science-ac-dc-household-circuits.pdf" },
       "Our Environment" ] },
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
