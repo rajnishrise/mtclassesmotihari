@@ -52,7 +52,7 @@
         let list, saved;
         if (ON) { const r = await MT.api({ action: "roster", pin, batch, date }); list = r.students; saved = r.saved || {}; }
         else { list = demoRoster(batch); saved = local()[batch + "|" + date] || {}; }
-        T.list = list.map((s) => ({ roll: String(s.roll), name: s.name, status: saved[s.roll] || "P" }));
+        T.list = list.map((s) => ({ roll: String(s.roll), name: s.name, phone: s.phone || "", status: saved[s.roll] || "P" }));
         T.edit = Object.keys(saved).length > 0; register();
       } catch (err) { teacherLogin(err.message); }
     };
@@ -63,7 +63,8 @@
       <div><span class="tag s">Present ${p}</span> <span class="tag new">Absent ${T.list.length - p}</span></div></div>
       <p class="muted" style="margin:12px 0">Everyone starts as Present. Tap the button to change a student to Absent.</p>
       ${T.list.length ? T.list.map((s, i) => `<div class="stu"><span class="nm">${esc(s.name)} <small>· ${esc(s.roll)}</small></span><button class="tog ${s.status}" data-i="${i}" aria-label="${esc(s.name)} is ${s.status === "P" ? "present" : "absent"}">${s.status === "P" ? "Present" : "Absent"}</button></div>`).join("") : '<div class="alert">No students found in this batch.</div>'}
-      <div class="cta"><button class="btn gold" id="save" ${T.list.length ? "" : "disabled"}>Save attendance</button><button class="btn ghost" data-tlogin>Back</button></div></div>`);
+      <div class="cta"><button class="btn gold" id="save" ${T.list.length ? "" : "disabled"}>Save attendance</button><button class="btn ghost" data-tlogin>Back</button></div></div>
+      ${T.edit && T.list.length ? waCard(b) : ""}`);
     $("#save").onclick = async () => {
       const btn = $("#save"); btn.disabled = true; btn.textContent = "Saving…";
       try {
@@ -73,6 +74,26 @@
       } catch (err) { MT.toast(err.message); btn.disabled = false; btn.textContent = "Save attendance"; }
     };
   }
+  // WhatsApp message to each parent (opens WhatsApp with the text ready; the teacher taps Send).
+  // Uses the Phone column of the Students tab. A 10-digit Indian number gets 91 added.
+  const waNum = (ph) => { const d = String(ph || "").replace(/\D/g, "").replace(/^0+/, ""); return d.length === 10 ? "91" + d : d.length >= 11 ? d : ""; };
+  function waText(s, b) {
+    const day = MT.niceDate(T.date);
+    return s.status === "A"
+      ? `Dear Parent, ${s.name} (Roll ${s.roll}, ${b.name.split(" —")[0]}) was ABSENT at ${C.name} on ${day}.\nआपका बच्चा ${s.name} आज (${day}) ${C.name} में अनुपस्थित था।\n— ${C.name}, ${C.city}`
+      : `Dear Parent, ${s.name} (Roll ${s.roll}, ${b.name.split(" —")[0]}) was PRESENT at ${C.name} on ${day}.\nआपका बच्चा ${s.name} आज (${day}) ${C.name} में उपस्थित था।\n— ${C.name}, ${C.city}`;
+  }
+  function waCard(b) {
+    const absent = T.list.filter((s) => s.status === "A"), present = T.list.filter((s) => s.status === "P");
+    const row = (s) => { const n = waNum(s.phone);
+      return `<div class="stu"><span class="nm">${esc(s.name)} <small>· ${esc(s.roll)} · ${s.status === "A" ? "Absent" : "Present"}</small></span>${n
+        ? `<a class="btn sm ${s.status === "A" ? "gold" : "ghost"}" target="_blank" rel="noopener" href="https://wa.me/${n}?text=${encodeURIComponent(waText(s, b))}">WhatsApp</a>`
+        : '<small class="muted">No phone in sheet</small>'}</div>`; };
+    return `<div class="card" style="margin-top:16px"><h3 style="margin-top:0">Message parents on WhatsApp</h3>
+      <p class="muted">Tap a button: WhatsApp opens with the message ready, then tap Send. Absent students are listed first.</p>
+      ${absent.map(row).join("")}${present.length ? `<details style="margin-top:10px"><summary>Present students (${present.length})</summary><div style="margin-top:8px">${present.map(row).join("")}</div></details>` : ""}</div>`;
+  }
+
   async function report() {
     const month = T.date.slice(0, 7), b = B.find((x) => x.id === T.batch);
     try {

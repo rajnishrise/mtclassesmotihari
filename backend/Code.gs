@@ -53,7 +53,7 @@ function checkPin(pin) {
 function inBatch(cell, batch) { return txt(cell).split(",").map(function (s) { return s.trim(); }).indexOf(batch) > -1; }
 function studentsOf(batch) {
   return rows("Students").filter(function (r) { return txt(r[0]) && inBatch(r[3], batch); })
-    .map(function (r) { return { roll: txt(r[0]), name: txt(r[1]) }; });
+    .map(function (r) { return { roll: txt(r[0]), name: txt(r[1]), phone: txt(r[5]) }; });
 }
 
 // ---------- teacher ----------
