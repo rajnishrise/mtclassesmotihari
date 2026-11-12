@@ -14,7 +14,8 @@ window.MT_NOTES = {
       "Some Applications of Trigonometry", "Circles", "Areas Related to Circles", "Surface Areas and Volumes",
       "Statistics", "Probability" ] },
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
-      "Chemical Reactions and Equations", "Acids, Bases and Salts",
+      "Chemical Reactions and Equations",
+      { title: "Acids, Bases and Salts", label: "Handwritten notes", file: "notes/class10-science-acids-bases-salts.pdf" },
       { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf" },
       { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf" },
       "Life Processes", "Control and Coordination",
