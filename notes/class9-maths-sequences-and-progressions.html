@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sequences and Progressions: Class 9 Maths Chapter 8 Notes | MT Classes Motihari</title>
+<meta name="description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 8, Predicting What Comes Next: Exploring Sequences and Progressions. Easy notes with textbook diagrams, a number machine, recursive rule stepper, AP and GP explorer, staircase sum builder, fractal zoomer, bouncing ball lab, solutions to every exercise, a formula sheet and a quiz.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+
+/* chapter 6 extras */
+.sci .ini{font-size:15px}
+.lab{display:grid;grid-template-columns:210px 1fr;gap:18px;align-items:center}
+.lab-svg{width:100%;max-width:220px;display:block;margin:0 auto}
+.lab-ctrl label{display:block;font-weight:600;margin:2px 0 8px}
+.lab-ctrl input[type=range]{display:block;width:100%;accent-color:#0E2148;margin-top:4px}
+.lab-ctrl p{margin:4px 0;font-size:16.5px}
+.heron-in{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 10px}
+.heron-in label{font-weight:700;color:var(--navy)}
+.heron-in input{width:66px;font:500 17px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:8px;margin-left:4px}
+#hout{font-size:18px}
+.ans .cards2{margin:4px 0 10px}
+.ans p{margin:0 0 10px}
+.duo .box,.duo .formula{align-self:center}
+.idsvg svg.dg{max-width:300px;margin:0 auto}
+@media print{.fig img{max-height:200px!important}.fig.narrow img{max-height:250px!important}.ans .fig img{max-height:180px!important}.fig{padding:6px;margin:8px 0}.figrow{grid-template-columns:repeat(3,1fr)}.cards2.idsvg svg.dg{max-height:180px}.fig svg.dg{max-height:220px}section{margin-bottom:14px}}
+@media (max-width:760px){.cards2.idsvg{grid-template-columns:1fr}.lab{grid-template-columns:1fr}.lab-svg{max-width:190px}}
+
+/* chapter 7: probability */
+:root{--purple:#7B4BC4;--purplet:#F1EAFB;--teal:#1F9E8F;--blue:#2A6FDB}
+.hero{background:radial-gradient(110% 140% at 85% 15%,#3B2C7A 0,#1A2A63 45%,var(--navy) 70%,#081530 100%)}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.25;margin:0 3px}
+.fr span:first-child{border-bottom:2px solid currentColor;padding:0 4px 1px}
+.fr span:last-child{padding:1px 4px 0}
+.formula .fr{font-size:17px}
+.f{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.05;font-size:.82em;margin:0 2px}
+.f>span:first-child{border-bottom:1.5px solid currentColor;padding:0 2px}
+.f>span:last-child{padding:0 2px}
+.chance-list{list-style:none;padding:0}
+.chance-list li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0;font-weight:600}
+.idea .emo,.sheet-card .emo{font-size:30px;line-height:1;display:block;margin-bottom:4px}
+.idea.exp{border-left-color:var(--teal)}
+.idea.th{border-left-color:var(--purple)}
+.cards2 .idea{margin:0}
+.think-qa{background:var(--bluet);border-color:#B9CBEA}
+.think-qa summary::before{display:none!important}
+
+/* probability scale strip */
+.pscale{margin:14px 0 18px}
+.pbar{height:14px;border-radius:7px;background:linear-gradient(90deg,#D9534F,#E3B23C 50%,#3FA56B)}
+.pticks{display:flex;justify-content:space-between;margin-top:6px;font-size:13.5px;text-align:center;line-height:1.2;color:var(--muted)}
+.pticks span{flex:1}
+.pticks span:first-child{text-align:left}.pticks span:last-child{text-align:right}
+.pticks b{display:block;font:800 18px 'Baloo 2',sans-serif;color:var(--navy)}
+.sl{display:block;font-weight:600;margin:4px 0 10px}
+.sl input[type=range]{display:block;width:100%;accent-color:var(--purple);margin-top:6px}
+.deck{display:flex;gap:8px;justify-content:center;margin:8px 0 14px;flex-wrap:wrap}
+.deck span{width:46px;height:64px;border-radius:8px;border:3px solid #FFF6E0;box-shadow:0 3px 8px -3px rgba(0,0,0,.35);display:grid;place-items:center;font:800 20px 'Baloo 2',sans-serif;color:#fff;transition:background .25s,transform .25s}
+.deck span.p{background:var(--purple);transform:translateY(-4px)}
+.deck span.g{background:#3FA56B}
+.mini-scale{position:relative;margin:6px 6px 10px;padding-top:22px}
+.mini-scale .ptr{position:absolute;top:0;transform:translateX(-50%);font-size:20px;color:var(--navy);transition:left .35s}
+.calc .big{margin:8px 0 0}
+
+/* sorter game */
+.sort-item{background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.sort-item p{margin:0 0 6px;font-weight:600}
+.sort-btns{display:flex;flex-wrap:wrap;gap:6px}
+.sort-btns button,.seg button,.lab-run button{font:600 15px 'Mukta',sans-serif;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.sort-btns button.right{background:#E7F6EC;border-color:var(--green);color:#185C34}
+.sort-btns button.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.sort-item .fb{font-size:15px;color:var(--muted);margin:6px 0 0;display:none}
+.sort-item.done .fb{display:block}
+
+.tag{display:inline-block;border-radius:999px;padding:1px 10px;font-weight:700;font-size:14.5px;white-space:nowrap}
+.tag.t0{background:var(--redt);color:var(--redd)}.tag.tl{background:#FDEBD8;color:#9A4E0E}.tag.tm{background:#E3F4E9;color:#1E6B3E}.tag.t1{background:#D3EEDD;color:#185C34}
+
+/* lab */
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.seg button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.seg.sm button{font-size:14px;padding:4px 10px}
+.seg.sm button.on{background:var(--purple);border-color:var(--purple)}
+.lab-run{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.lab-run button{background:var(--goldt);border-color:var(--gold);color:var(--navy);font-weight:700}
+.lab-run button.reset{background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
+.lab-run button:active,.seg button:active{transform:scale(.96)}
+.lab-face{width:84px;height:84px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font:800 40px 'Baloo 2',sans-serif;background:radial-gradient(circle at 35% 30%,#FFE9A8,#E3B23C 60%,#B8871C);color:var(--navy);box-shadow:0 6px 16px -6px rgba(0,0,0,.4)}
+.lab-face.die{border-radius:18px;background:#fff;border:3px solid var(--navy)}
+.lab-face.flip{animation:flip .45s ease}
+@keyframes flip{0%{transform:rotateY(0) scale(1)}50%{transform:rotateY(90deg) scale(1.15)}100%{transform:rotateY(0) scale(1)}}
+.lab-bars{display:grid;gap:6px;margin:0 0 10px}
+.lab-bar{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:8px;font-size:15px}
+.lab-bar b{font:800 18px 'Baloo 2',sans-serif;text-align:center}
+.lab-bar .trk{position:relative;height:18px;background:#EEF2F9;border-radius:9px;overflow:hidden}
+.lab-bar .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--purple),#A77EE6);border-radius:9px;transition:width .3s}
+.lab-bar .th{position:absolute;top:-2px;bottom:-2px;width:0;border-left:2.5px dashed var(--navy)}
+.lab-bar span.v{white-space:nowrap;min-width:9.5em;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.lab-chart{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px}
+.lab-chart text{font-family:'Mukta',sans-serif}
+.lab-note{margin:10px 0 0;font-size:16px}
+.streak-now{display:inline-block;background:var(--redt);color:var(--redd);border-radius:8px;padding:0 8px;font-weight:700}
+
+/* letter picker */
+.word-in{font:700 20px 'Baloo 2',sans-serif;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1.5px solid var(--line);border-radius:10px;width:100%;max-width:320px;color:var(--navy)}
+.word-tiles{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.word-tiles button,.word-tiles span{width:40px;height:46px;border-radius:8px;border:2px solid var(--navy);background:#fff;font:800 22px 'Baloo 2',sans-serif;color:var(--navy);cursor:pointer;display:grid;place-items:center}
+.word-tiles .hl{background:var(--purple);border-color:var(--purple);color:#fff;transform:translateY(-3px)}
+.word-tiles.static span{cursor:default}
+
+/* fruit bars */
+.fruit-bars{display:grid;gap:6px;margin:8px 0 12px}
+.fruit-bars div{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:8px;font-size:16px}
+.fruit-bars i{font-style:normal;display:block;width:var(--w);background:linear-gradient(90deg,var(--gold),#F4CF6B);border-radius:0 8px 8px 0;padding:1px 8px;font-weight:700;color:var(--navy);text-align:right}
+
+/* gambler */
+.fallacy{background:linear-gradient(135deg,#2B1D5C,#0E2148);color:#E9EEF8;border-radius:18px;padding:16px 18px;margin:20px 0}
+.fallacy h3{color:var(--gold);margin-top:0}
+.fallacy b,.fallacy .term{color:#fff}
+.fallacy .term{background:linear-gradient(transparent 62%,rgba(227,178,60,.5) 0)}
+.fallacy .box{color:var(--ink)}
+.fallacy .box b{color:var(--navy)}
+.streak{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+.streak span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;background:radial-gradient(circle at 35% 30%,#FFE9A8,#E3B23C 60%,#B8871C);color:var(--navy)}
+.streak span.q{background:#fff;color:var(--purple);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+
+/* sample space */
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 14px}
+.rules div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;font-size:15.5px;line-height:1.4}
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.ev{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.ev h4{margin:0 0 6px}
+.ev p{font-size:15px;margin:6px 0 0;line-height:1.4}
+.set{border:2px solid var(--navy2);border-radius:999px;padding:8px 10px;display:flex;flex-wrap:wrap;gap:5px;justify-content:center;background:var(--bluet)}
+.set span{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:0 7px;font-weight:700;font-size:15px}
+.set span.in{background:var(--purple);border-color:var(--purple);color:#fff}
+#dice-ev{font:600 16px 'Mukta',sans-serif;padding:6px 10px;border-radius:10px;border:1.5px solid var(--line);margin-bottom:10px;max-width:100%}
+.dgrid{display:grid;grid-template-columns:28px repeat(6,1fr);gap:4px;max-width:420px}
+.dgrid div{aspect-ratio:1;display:grid;place-items:center;border-radius:7px;font:700 14px 'Baloo 2',sans-serif;background:#F2F5FB;color:var(--muted);transition:background .25s,color .25s,transform .25s}
+.dgrid div.h{background:none;color:var(--navy);font-size:16px;aspect-ratio:auto}
+.dgrid div.on{background:var(--purple);color:#fff;transform:scale(1.04)}
+
+/* tree */
+.tree-svg{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px}
+.tree-svg text{font-family:'Baloo 2',sans-serif}
+.ans-tree{width:100%;max-width:470px;height:auto;display:block;margin:4px auto 10px;background:#fff;border:1px solid var(--line);border-radius:12px}
+
+/* spinner */
+.spin-box{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:center}
+.spin-wrap{position:relative;width:220px;margin:0 auto}
+#spin-svg{width:220px;height:220px;display:block}
+#spin-svg .wheel{transition:transform 2.6s cubic-bezier(.17,.67,.2,1)}
+#spin-svg text{font-family:'Baloo 2',sans-serif}
+.spin-arrow{position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-top:24px solid var(--navy)}
+#spin-ev{font:600 15px 'Mukta',sans-serif;padding:4px 8px;border-radius:8px;border:1.5px solid var(--line)}
+#spin-stats{font-size:16px;margin:4px 0 0}
+.drop-svg{width:100%;max-width:480px;height:auto;display:block;margin:0 auto;border-radius:10px}
+
+/* formula sheet */
+.sheet{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.sheet-card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--purple);border-radius:14px;padding:12px}
+.sheet-card:nth-child(3n+2){border-top-color:var(--gold)}
+.sheet-card:nth-child(3n){border-top-color:var(--teal)}
+.sheet-card h4{margin:0 0 4px}
+.sheet-card p{margin:0;font-size:15.5px;line-height:1.45}
+.sheet-card .fr{font-size:14.5px}
+
+@media (max-width:760px){
+  .rules,.ev-grid{grid-template-columns:1fr}
+  .sheet{grid-template-columns:1fr 1fr}
+  .spin-box{grid-template-columns:1fr;text-align:center}
+  .lab-bar{grid-template-columns:52px 1fr;row-gap:0;font-size:14px}
+  .lab-bar span.v{grid-column:2;min-width:0;text-align:left}
+  .figrow.two{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr}
+}
+@media (max-width:480px){.sheet{grid-template-columns:1fr}.cards2{grid-template-columns:1fr}.fruit-bars div{grid-template-columns:92px 1fr}}
+@media print{.sheet{grid-template-columns:repeat(3,1fr)}.fallacy{background:#fff;color:var(--ink);border:2px solid var(--navy)}.fallacy b,.fallacy .term{color:var(--navy)}.streak span.q{animation:none}.ans-tree{max-height:200px}.rules,.ev-grid{grid-template-columns:repeat(3,1fr)}}
+
+.figrow.two .fig img{max-height:250px;width:auto;max-width:100%;margin:0 auto}
+.ans .fig img{max-height:300px;width:auto;max-width:100%;margin:0 auto}
+.wow .fig img{max-height:420px;width:auto;max-width:100%;margin:0 auto}
+.opt .f{font-size:1em}
+.ev .set{border-radius:16px}
+@media print{.hero{background:#fff!important}.hero .back{display:none}}
+
+/* chapter 8: sequences */
+:root{--teal:#1F9E8F;--tealt:#E4F6F2;--tealdd:#126B60;--purple:#7B4BC4;--purplet:#F1EAFB}
+.hero{background:radial-gradient(110% 140% at 85% 15%,#145C63 0,#16376B 48%,var(--navy) 72%,#081530 100%)}
+.seqs{display:grid;gap:8px;margin:14px 0}
+.seq-row{display:grid;grid-template-columns:150px 1fr auto;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.seq-name{font-weight:700;color:var(--navy);font-size:16px;line-height:1.25}
+.seq-gap{font-size:14.5px;color:var(--tealdd);font-weight:600;white-space:nowrap}
+.seq-tiles{display:flex;flex-wrap:wrap;gap:5px}
+.seq-tiles i,.seq-tiles span{font:800 17px/1 'Baloo 2',sans-serif;font-style:normal;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:8px;min-width:36px;padding:7px 6px 5px;text-align:center}
+.seq-tiles i.dots{background:none;border-color:transparent;min-width:0}
+.seq-tiles.live{margin:8px 0 10px;min-height:36px}
+.seq-tiles.live span{animation:pop .35s ease both}
+.seq-tiles.live span.hit{background:var(--teal);border-color:var(--teal);color:#fff}
+.seq-tiles.live span small{display:block;font:600 11px 'Mukta',sans-serif;color:var(--muted);margin-top:2px}
+.seq-tiles.live span.hit small{color:#E4F6F2}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.pos-strip{display:grid;gap:4px;max-width:420px;margin:10px auto 16px}
+.pos-strip div{display:grid;grid-template-columns:96px repeat(5,1fr);gap:4px;align-items:center;text-align:center}
+.pos-strip small{font-size:14px;color:var(--muted);text-align:right;padding-right:6px}
+.pos-strip span{background:var(--bluet);border-radius:8px;padding:2px 0;font-weight:700;color:var(--navy2)}
+.pos-strip b{background:var(--navy);color:var(--gold);border-radius:8px;padding:2px 0;font:800 18px 'Baloo 2',sans-serif}
+.machine{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px 0 18px;font:800 20px 'Baloo 2',sans-serif}
+.machine .m-in,.machine .m-out{background:var(--goldt);border:2px solid var(--gold);border-radius:999px;padding:4px 16px;color:var(--navy)}
+.machine .m-box{background:var(--navy);color:#fff;border-radius:12px;padding:10px 20px;box-shadow:0 6px 0 var(--teal)}
+.machine .m-arrow{color:var(--teal);font-size:26px}
+.check-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;font-weight:600}
+.check-row input,.heron-in input{width:90px;font:500 17px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:8px;margin:0 4px}
+.pill{font:700 15px 'Mukta',sans-serif;padding:6px 14px;border-radius:999px;border:1.5px solid var(--gold);background:var(--goldt);color:var(--navy);cursor:pointer}
+.pill:active{transform:scale(.96)}
+.fib{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:10px 0}
+.fib span{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font:800 18px 'Baloo 2',sans-serif;background:var(--tealt);color:var(--tealdd);border:2px solid var(--teal)}
+.fib span.nx{background:var(--teal);color:#fff}
+.ap-ex{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.ap-ex div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;font-size:15px;line-height:1.4}
+.ap-ex b{font-size:16px}
+.ap-ex span{color:var(--muted)}
+.pairs{display:grid;gap:4px;margin:12px 0;overflow-x:auto;padding-bottom:4px}
+.pairs div{display:grid;grid-template-columns:40px repeat(10,minmax(0,1fr));gap:3px;align-items:center}
+.pairs span{font-weight:700;color:var(--navy);font-size:16px}
+.pairs i{font:800 16px/30px 'Baloo 2',sans-serif;font-style:normal;text-align:center;border-radius:7px;background:var(--bluet);color:var(--navy2)}
+.pairs div:nth-child(2) i{background:var(--tealt);color:var(--tealdd)}
+.pairs .tot i{background:var(--navy);color:var(--gold)}
+.lab-chart.cross{max-width:260px;margin:0 auto;background:#FDEFF4}
+.lab-chart.stair{max-width:380px;margin:0 auto}
+.lab-chart.frac{max-width:330px;margin:0 auto}
+.race{display:grid;gap:8px;margin:6px 0 8px}
+.race>div{display:grid;grid-template-columns:34px 1fr 72px;gap:8px;align-items:center}
+.race span{font-weight:800;color:var(--navy)}
+.race .trk{height:22px;background:#EEF2F9;border-radius:11px;overflow:hidden}
+.race i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),#F4CF6B);border-radius:11px;transition:width .4s}
+.race i.g{background:linear-gradient(90deg,var(--teal),#5FD3C2)}
+.race b{font:800 18px 'Baloo 2',sans-serif;text-align:right;font-variant-numeric:tabular-nums}
+.area-bar{height:14px;border-radius:7px;background:#EEF2F9;overflow:hidden;margin:4px 0 2px}
+.area-bar div{height:100%;background:linear-gradient(90deg,var(--navy),var(--navy2));transition:width .4s}
+.cmp .idea{margin:0}
+#ex-sl{min-width:0}
+@media (max-width:760px){
+  .seq-row{grid-template-columns:1fr;gap:4px}
+  .seq-gap{white-space:normal}
+  .ap-ex{grid-template-columns:1fr}
+  .pos-strip div{grid-template-columns:78px repeat(5,1fr)}
+  .machine{font-size:17px}
+}
+@media print{.seq-row{break-inside:avoid}.pairs{overflow:visible}.ap-ex{grid-template-columns:repeat(3,1fr)}.fib span{width:36px;height:36px;font-size:15px}}
+
+.nw{white-space:nowrap}
+.formula small{line-height:1.4;margin-top:4px}
+.tbl-c.compact td{white-space:nowrap}
+@media (max-width:420px){.pairs i{font-size:13.5px}.pairs span{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>Predicting What Comes Next</h1>
+<p class="sub">Class 9 Maths, Chapter 8: Exploring Sequences and Progressions (NCERT Ganita Manjari, Part I)</p>
+<p class="pitch">Number patterns that let you see the future. Learn explicit and recursive rules, APs and GPs, Gauss's pairing trick and the magic of fractals, with number machines, a growing-pattern builder, a fractal zoomer, a bouncing ball and every exercise solved.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#explorer">Play with AP and GP</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="Bars growing in an arithmetic progression next to a curve growing in a geometric progression" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="hglow"><stop offset="0" stop-color="#3FD0B0" stop-opacity=".3"/><stop offset="1" stop-color="#3FD0B0" stop-opacity="0"/></radialGradient></defs>
+<circle cx="200" cy="200" r="180" fill="url(#hglow)"/>
+<g stroke="#CBD6EE" stroke-width="2"><line x1="40" y1="300" x2="370" y2="300"/><line x1="40" y1="300" x2="40" y2="60"/></g>
+<g fill="#E3B23C">
+<rect x="58" width="34" rx="5" y="270" height="30"><animate attributeName="opacity" values="0;1;1" keyTimes="0;.1;1" dur="5s" repeatCount="indefinite"/></rect>
+<rect x="104" width="34" rx="5" y="240" height="60"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.12;.22;1" dur="5s" repeatCount="indefinite"/></rect>
+<rect x="150" width="34" rx="5" y="210" height="90"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.24;.34;1" dur="5s" repeatCount="indefinite"/></rect>
+<rect x="196" width="34" rx="5" y="180" height="120"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.36;.46;1" dur="5s" repeatCount="indefinite"/></rect>
+<rect x="242" width="34" rx="5" y="150" height="150"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.48;.58;1" dur="5s" repeatCount="indefinite"/></rect>
+</g>
+<path d="M75 292 C 160 290, 230 270, 260 230 S 320 120, 345 62" fill="none" stroke="#3FD0B0" stroke-width="5" stroke-linecap="round" stroke-dasharray="420" stroke-dashoffset="420"><animate attributeName="stroke-dashoffset" values="420;420;0;0" keyTimes="0;.55;.85;1" dur="5s" repeatCount="indefinite"/></path>
+<g font-family="Baloo 2,sans-serif" font-weight="800" text-anchor="middle">
+<text x="160" y="345" font-size="26" fill="#E3B23C">AP: +d +d +d</text>
+<text x="290" y="96" font-size="22" fill="#3FD0B0">GP: ×r</text>
+<text x="200" y="385" font-size="22" fill="#fff">1, 3, 6, 10, 15, … ?</text>
+</g>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a href="#start"><span>8.1</span>What is a sequence?</a></li>
+<li><a href="#explicit"><span>8.2</span>Explicit rule (formula for tₙ)</a></li>
+<li><a href="#recursive"><span>8.3</span>Recursive rule and Virahānka</a></li>
+<li><a href="#ex1"><span>Ex 8.1</span>Solutions</a></li>
+<li><a href="#ap"><span>8.4</span>Arithmetic progressions</a></li>
+<li><a href="#explorer"><span>Lab</span>AP and GP explorer</a></li>
+<li><a href="#sum"><span>8.5</span>Sum of 1 + 2 + … + n</a></li>
+<li><a href="#ex2"><span>Ex 8.2</span>Solutions</a></li>
+<li><a href="#gp"><span>8.6</span>Geometric progressions</a></li>
+<li><a href="#fractal"><span>8.6.1</span>Fun with fractals</a></li>
+<li><a href="#gpgraph"><span>8.6.2</span>Visualising a GP, bouncing ball</a></li>
+<li><a href="#ex3"><span>Ex 8.3</span>Solutions</a></li>
+<li><a href="#end"><span>End</span>End-of-chapter exercises</a></li>
+<li><a href="#recap"><span>Sheet</span>Formula sheet and summary</a></li>
+<li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
+</ol>
+</nav>
+
+<!-- ============ 8.1 ============ -->
+<section id="start">
+<div class="sec-head"><span class="sec-num">8.1</span><h2>What is a sequence?</h2></div>
+<p class="lead">Patterns are everywhere: in nature, art, music and money. Patterns help us <b>predict what comes next</b>. In maths, a <span class="term">sequence</span> is an <b>ordered list of numbers</b>, and each number in it is called a <span class="term">term</span>.</p>
+<div class="seqs">
+<div class="seq-row"><span class="seq-name">Natural numbers</span><span class="seq-tiles"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="dots">…</i></span><span class="seq-gap">+1 each time</span></div>
+<div class="seq-row"><span class="seq-name">Odd numbers</span><span class="seq-tiles"><i>1</i><i>3</i><i>5</i><i>7</i><i>9</i><i>11</i><i class="dots">…</i></span><span class="seq-gap">+2 each time</span></div>
+<div class="seq-row"><span class="seq-name">Triangular numbers</span><span class="seq-tiles"><i>1</i><i>3</i><i>6</i><i>10</i><i>15</i><i>21</i><i class="dots">…</i></span><span class="seq-gap">+2, +3, +4, +5, +6</span></div>
+<div class="seq-row"><span class="seq-name">Square numbers</span><span class="seq-tiles"><i>1</i><i>4</i><i>9</i><i>16</i><i>25</i><i>36</i><i class="dots">…</i></span><span class="seq-gap">+3, +5, +7, +9, +11</span></div>
+</div>
+<p>The three dots <b>…</b> mean the sequence goes on forever. Such a sequence is <span class="term">infinite</span>. A list that stops, such as 6, 12, 24, 48, 96 (five terms), is a <span class="term">finite</span> sequence. Roll numbers in your class, or the dates of the Mondays in a month, are finite sequences from daily life.</p>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: Describe the pattern in each sequence above and predict the next few numbers.</span></summary><div class="ans">
+<p>Natural numbers: add 1 → 7, 8, 9. Odd numbers: add 2 → 13, 15, 17. Triangular numbers: the gap grows by 1 each time (+7, +8, +9) → 28, 36, 45. Square numbers: the gap is the next odd number (+13, +15, +17) → 49, 64, 81.</p></div></details>
+
+<h3>Triangular numbers are sums</h3>
+<div class="duo">
+<div>
+<p>1 = 1, 3 = 1 + 2, 6 = 1 + 2 + 3, 10 = 1 + 2 + 3 + 4, 15 = 1 + 2 + 3 + 4 + 5.</p>
+<p>So each <b>triangular number</b> is the <b>sum of the natural numbers up to that term</b>. Stack the dots in rows of 1, 2, 3, … and you get a triangle.</p>
+<p>The next two pictures would have 21 dots (6 rows) and 28 dots (7 rows).</p>
+</div>
+<figure class="fig zoomable"><img src="img/sequences/triangular.webp" alt="Triangular arrays of 1, 3, 6, 10 and 15 yellow dots on a green background" width="1029" height="440" loading="lazy" decoding="async"><figcaption><b>Fig. 8.1</b> The first five triangular numbers.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+
+<h3>Square numbers are sums of odd numbers</h3>
+<div class="duo">
+<figure class="fig zoomable small"><img src="img/sequences/odd-squares.webp" alt="An 8 by 8 grid of blue and yellow dots, separated into L-shaped layers of 1, 3, 5, 7 and so on dots" width="399" height="391" loading="lazy" decoding="async"><figcaption><b>Fig. 8.2</b> Square numbers and odd numbers.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div>
+<p>1 = 1, 4 = 1 + 3, 9 = 1 + 3 + 5, 16 = 1 + 3 + 5 + 7, …</p>
+<p>In Fig. 8.2 each new <b>L-shaped layer</b> (alternately blue and yellow) wraps around the square before it. The layers have 1, 3, 5, 7, … dots, so</p>
+<div class="formula"><div>1 + 3 + 5 + … (n odd numbers) = n²</div></div>
+</div>
+</div>
+
+<details class="qa"><summary><span class="qnum">Ex</span><span>Predict the next four terms of 1, 4, 7, 10, 13, … and find the first 10 terms of the sequence of running totals.</span></summary><div class="ans">
+<p>The gap is always 3, so the next four terms are <b>16, 19, 22, 25</b>.</p>
+<p>Running totals: 1, 1+4 = 5, 5+7 = 12, 12+10 = 22, 22+13 = 35, 35+16 = 51, 51+19 = 70, 70+22 = 92, 92+25 = 117, 117+28 = 145.</p>
+<p>First 10 terms: <b>1, 5, 12, 22, 35, 51, 70, 92, 117, 145</b>.</p></div></details>
+
+<h3>A short way to name terms: t<sub>n</sub></h3>
+<div class="box key"><h4>🔑 Notation</h4>
+<p>t<sub>1</sub> = first term, t<sub>2</sub> = second term, …, <b>t<sub>n</sub> = the term in position n</b>. The small number (subscript) is the <i>position</i>, not the value.</p>
+<p>For odd numbers: t<sub>1</sub> = 1, t<sub>2</sub> = 3, t<sub>3</sub> = 5, t<sub>4</sub> = 7. So t<sub>4</sub> = 7 means “the 4th term is 7”. For different sequences we use different letters: t<sub>n</sub>, s<sub>n</sub>, u<sub>n</sub>, …</p></div>
+<div class="pos-strip" aria-hidden="true"><div><small>position n</small><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div><div><small>term t<sub>n</sub></small><b>1</b><b>3</b><b>5</b><b>7</b><b>9</b></div></div>
+<p>Terms can be fractions, like 1, <span class="f"><span>1</span><span>2</span></span>, <span class="f"><span>1</span><span>3</span></span>, <span class="f"><span>1</span><span>4</span></span>, … (decreasing), or negative, like −7, −3, 1, 5, 9, … (here s<sub>1</sub> = −7 and the gap is 4). The <b>position n</b> is always a counting number, but the <b>term</b> can be any real number.</p>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Write t<sub>5</sub>, t<sub>6</sub>, t<sub>7</sub> and t<sub>8</sub> for the triangular numbers.</span></summary><div class="ans"><p>t<sub>5</sub> = 15, t<sub>6</sub> = 15 + 6 = <b>21</b>, t<sub>7</sub> = 21 + 7 = <b>28</b>, t<sub>8</sub> = 28 + 8 = <b>36</b>.</p></div></details>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: List five different kinds of sequences.</span></summary><div class="ans"><p>For example: (1) multiples of 5: 5, 10, 15, … (increasing, equal gaps); (2) a countdown 10, 9, 8, … (decreasing); (3) powers of 2: 1, 2, 4, 8, … (each term doubles); (4) prime numbers 2, 3, 5, 7, 11, … (no simple rule); (5) alternating 1, −1, 1, −1, … (repeats).</p></div></details>
+</section>
+
+<!-- ============ 8.2 ============ -->
+<section id="explicit">
+<div class="sec-head"><span class="sec-num">8.2</span><h2>Explicit rule: a formula for t<sub>n</sub></h2></div>
+<p>An <span class="term">explicit formula</span> uses the <b>position number n</b> to calculate the term directly. Put in n, get out t<sub>n</sub>, like a machine.</p>
+<div class="machine" aria-hidden="true"><span class="m-in">n = 3</span><span class="m-arrow">→</span><span class="m-box">2n − 1</span><span class="m-arrow">→</span><span class="m-out">5</span></div>
+<div class="box calc"><h4>Example 1: u<sub>n</sub> = 2n − 1</h4>
+<p>u<sub>1</sub> = 2×1 − 1 = 1, u<sub>2</sub> = 2×2 − 1 = 3, u<sub>3</sub> = 2×3 − 1 = 5, … These are the <b>odd numbers</b>.</p>
+<p><b>Why is it useful?</b> You can jump straight to the 20th, 53rd or 300th term without knowing the terms before it.</p></div>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Using u<sub>n</sub> = 2n − 1, find the 53rd, 108th and 1170th odd numbers.</span></summary><div class="ans"><p>u<sub>53</sub> = 106 − 1 = <b>105</b>; u<sub>108</sub> = 216 − 1 = <b>215</b>; u<sub>1170</sub> = 2340 − 1 = <b>2339</b>.</p></div></details>
+
+<h3>Is a number a term? Solve for n</h3>
+<p>To check if a number belongs to the sequence, set t<sub>n</sub> equal to it and solve. <b>If n comes out as a natural number (1, 2, 3, …), it is a term. Otherwise it is not</b>, because there is no “94.6th position”.</p>
+<div class="cards2">
+<div class="idea"><span class="emo">✅</span><h4>Is 137 an odd number term?</h4><p>2n − 1 = 137 ⟹ 2n = 138 ⟹ n = 69. Yes, the <b>69th</b> term.</p></div>
+<div class="idea"><span class="emo">❓</span><h4>s<sub>n</sub> = 5n − 2: 308 and 471?</h4><p>5n − 2 = 308 ⟹ n = 62 ✅ (62nd term).<br>5n − 2 = 471 ⟹ n = 94.6 ❌ not a term.</p></div>
+</div>
+<details class="qa"><summary><span class="qnum">Ex 2</span><span>Write the first 6 terms of s<sub>n</sub> = 5n − 2. What are the 100th and 1000th terms?</span></summary><div class="ans"><p>3, 8, 13, 18, 23, 28. s<sub>100</sub> = 500 − 2 = <b>498</b>; s<sub>1000</sub> = 5000 − 2 = <b>4998</b>.</p></div></details>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: What is the rule for the nth square number? Is there a rule for primes?</span></summary><div class="ans"><p>Square numbers: <b>t<sub>n</sub> = n²</b>. The primes 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 have <b>no simple formula</b>; nobody has found a rule that predicts the next prime easily. That is what makes them so interesting!</p></div></details>
+
+<div class="box calc no-print" id="machine-tool">
+<h4>🛠️ Number machine</h4>
+<p class="muted">Pick a rule, slide n, and ask whether any number is a term.</p>
+<div class="seg" id="mach-rule"><button type="button" class="on" data-r="2n-1">2n − 1</button><button type="button" data-r="5n-2">5n − 2</button><button type="button" data-r="3n-7">3n − 7</button><button type="button" data-r="n2">n²</button><button type="button" data-r="n2b">n² − 2n + 3</button></div>
+<label class="sl">n = <b id="mach-n-v">1</b><input type="range" id="mach-n" min="1" max="60" value="1"></label>
+<p class="big" id="mach-out" aria-live="polite"></p>
+<div class="seq-tiles live" id="mach-tiles"></div>
+<div class="check-row"><label>Is <input type="number" id="mach-x" value="137"> a term?</label> <button type="button" class="pill" id="mach-go">Check</button></div>
+<p id="mach-ans" aria-live="polite"></p>
+</div>
+
+<details class="qa"><summary><span class="qnum">Ex</span><span>For t<sub>n</sub> = 3n − 7: (i) find t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub>, t<sub>12</sub>, t<sub>18</sub>, t<sub>50</sub> (ii) which term is 332? (iii) is 557 a term?</span></summary><div class="ans">
+<p>(i) t<sub>1</sub> = −4, t<sub>2</sub> = −1, t<sub>3</sub> = 2, t<sub>12</sub> = 29, t<sub>18</sub> = 47, t<sub>50</sub> = 143.</p>
+<p>(ii) 3n − 7 = 332 ⟹ 3n = 339 ⟹ n = 113. So 332 is the <b>113th term</b>.</p>
+<p>(iii) 3n − 7 = 557 ⟹ 3n = 564 ⟹ n = 188, a natural number. <b>Yes, 557 is the 188th term.</b></p></div></details>
+</section>
+
+<!-- ============ 8.3 ============ -->
+<section id="recursive">
+<div class="sec-head"><span class="sec-num">8.3</span><h2>Recursive rule: each term from the one before</h2></div>
+<p>In 1, 4, 7, 10, 13, … each term is 3 more than the previous one. We can write this as</p>
+<div class="formula"><div>t<sub>1</sub> = 1, &nbsp; t<sub>n</sub> = t<sub>n−1</sub> + 3 &nbsp;for n ≥ 2<small>t<sub>n−1</sub> means “the term just before t<sub>n</sub>”. The explicit rule for the same sequence is t<sub>n</sub> = 3n − 2.</small></div></div>
+<p>A <span class="term">recursive rule</span> describes a term using <b>earlier terms</b>. It always needs a <b>starting value</b>, and to find the 50th term you must walk through all the terms before it.</p>
+<div class="cards2">
+<div class="idea exp"><span class="emo">🎯</span><h4>Explicit</h4><p>Jump straight to any term: t<sub>n</sub> = 3n − 2.<br>Like knowing a house number.</p></div>
+<div class="idea th"><span class="emo">🪜</span><h4>Recursive</h4><p>Climb step by step: t<sub>n</sub> = t<sub>n−1</sub> + 3.<br>Like following directions “next door”.</p></div>
+</div>
+<div class="box calc"><h4>Example 3: u<sub>1</sub> = 1, u<sub>n</sub> = 2u<sub>n−1</sub> + 3</h4>
+<p>u<sub>2</sub> = 2×1 + 3 = 5, u<sub>3</sub> = 2×5 + 3 = 13, u<sub>4</sub> = 2×13 + 3 = 29. First four terms: <b>1, 5, 13, 29</b>.</p>
+<p>Is 133 a term? Keep going: u<sub>5</sub> = 61, u<sub>6</sub> = 125, u<sub>7</sub> = 253. The terms jump from 125 to 253, so <b>133 is not a term</b>.</p></div>
+<div class="box calc"><h4>Example 4: s<sub>1</sub> = 3, s<sub>n</sub> = s<sub>n−1</sub>(s<sub>n−1</sub> − 1)</h4>
+<p>s<sub>2</sub> = 3 × 2 = 6, s<sub>3</sub> = 6 × 5 = 30, s<sub>4</sub> = 30 × 29 = 870. First four terms: <b>3, 6, 30, 870</b>. Notice how fast it grows!</p></div>
+
+<h3>The Virahānka–Fibonacci sequence</h3>
+<p>A recursive rule can use the previous <b>two</b> (or more) terms. The most famous one is</p>
+<div class="formula"><div>V<sub>1</sub> = 1, V<sub>2</sub> = 2, &nbsp; V<sub>n</sub> = V<sub>n−1</sub> + V<sub>n−2</sub> for n ≥ 3</div></div>
+<div class="fib" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>5</span><span>8</span><span>13</span><span>21</span><span>34</span><span class="nx">55</span><span class="nx">89</span></div>
+<p>Each term is the sum of the previous two. The next two terms after 34 are <b>55</b> and <b>89</b>.</p>
+<div class="box wow"><h4>🇮🇳 An Indian discovery</h4><p>This sequence was first written down by <b>Virahānka</b> in the 7th century CE in his book <i>Vṛttajātisamuchaya</i>, while counting rhythms in Prakrit poetry. It was studied further by <b>Gopāla</b> (c. 1135 CE) and <b>Hemachandra</b> (c. 1150 CE), and only later by the Italian mathematician <b>Fibonacci</b> (c. 1200 CE).</p></div>
+
+<div class="box calc no-print">
+<h4>🪜 Recursive rule stepper</h4>
+<p class="muted">Choose a rule and press “Next term” to climb one step at a time.</p>
+<div class="seg sm" id="rec-rule">
+<button type="button" class="on" data-k="ap">t<sub>n</sub> = t<sub>n−1</sub> + 3</button>
+<button type="button" data-k="ex3">u<sub>n</sub> = 2u<sub>n−1</sub> + 3</button>
+<button type="button" data-k="ex4">s<sub>n</sub> = s<sub>n−1</sub>(s<sub>n−1</sub> − 1)</button>
+<button type="button" data-k="fib">Virahānka</button>
+<button type="button" data-k="trib">T<sub>n</sub> = sum of last 3</button>
+</div>
+<div class="lab-run"><button type="button" id="rec-next">Next term ▶</button><button type="button" class="reset" id="rec-reset">Start again</button></div>
+<div class="seq-tiles live" id="rec-tiles"></div>
+<p class="big" id="rec-out" aria-live="polite"></p>
+</div>
+</section>
+
+<!-- ============ Ex 8.1 ============ -->
+<section id="ex1">
+<div class="sec-head"><span class="sec-num word">Ex 8.1</span><h2>Exercise Set 8.1: solutions</h2></div>
+<p class="muted">Try each question first, then tap to check.</p>
+<details class="qa"><summary><span class="qnum">1.</span><span>Find the first five terms: (i) t<sub>n</sub> = 3n − 4, (ii) t<sub>n</sub> = 2 − 5n, (iii) t<sub>n</sub> = n² − 2n + 3.</span></summary><div class="ans">
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th>n</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>3n − 4</td><td>−1</td><td>2</td><td>5</td><td>8</td><td>11</td></tr>
+<tr><td>2 − 5n</td><td>−3</td><td>−8</td><td>−13</td><td>−18</td><td>−23</td></tr>
+<tr><td>n² − 2n + 3</td><td>2</td><td>3</td><td>6</td><td>11</td><td>18</td></tr></table></div>
+<p>For (iii), e.g. t<sub>4</sub> = 16 − 8 + 3 = 11 and t<sub>5</sub> = 25 − 10 + 3 = 18.</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>Find the 10th and 15th terms of t<sub>n</sub> = 5n − 3.</span></summary><div class="ans"><p>t<sub>10</sub> = 50 − 3 = <b>47</b>; t<sub>15</sub> = 75 − 3 = <b>72</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">3.</span><span>Are 97 and 172 terms of t<sub>n</sub> = 5n − 3?</span></summary><div class="ans"><p>5n − 3 = 97 ⟹ 5n = 100 ⟹ n = 20 ✅. <b>97 is the 20th term.</b></p><p>5n − 3 = 172 ⟹ 5n = 175 ⟹ n = 35 ✅. <b>172 is the 35th term.</b></p></div></details>
+<details class="qa"><summary><span class="qnum">4.</span><span>Which term of t<sub>n</sub> = 5n − 3 is 607?</span></summary><div class="ans"><p>5n − 3 = 607 ⟹ 5n = 610 ⟹ n = 122. <b>607 is the 122nd term.</b></p></div></details>
+<details class="qa"><summary><span class="qnum">5.</span><span>t<sub>1</sub> = −5, t<sub>n+1</sub> = t<sub>n</sub> + 3. Find the first five terms. Is 52 a term?</span></summary><div class="ans"><p>Terms: <b>−5, −2, 1, 4, 7</b>. Each term adds 3, so the explicit rule is t<sub>n</sub> = −5 + 3(n − 1) = 3n − 8.</p><p>3n − 8 = 52 ⟹ 3n = 60 ⟹ n = 20. <b>Yes, 52 is the 20th term.</b></p></div></details>
+<details class="qa"><summary><span class="qnum">6.</span><span>T<sub>1</sub> = 1, T<sub>2</sub> = 2, T<sub>3</sub> = 4, T<sub>n</sub> = T<sub>n−1</sub> + T<sub>n−2</sub> + T<sub>n−3</sub>. Find T<sub>4</sub> to T<sub>8</sub>.</span></summary><div class="ans"><p>T<sub>4</sub> = 4 + 2 + 1 = <b>7</b>, T<sub>5</sub> = 7 + 4 + 2 = <b>13</b>, T<sub>6</sub> = 13 + 7 + 4 = <b>24</b>, T<sub>7</sub> = 24 + 13 + 7 = <b>44</b>, T<sub>8</sub> = 44 + 24 + 13 = <b>81</b>.</p></div></details>
+</section>
+
+<!-- ============ 8.4 ============ -->
+<section id="ap">
+<div class="sec-head"><span class="sec-num">8.4</span><h2>Arithmetic progressions (AP)</h2></div>
+<figure class="fig zoomable"><img src="img/sequences/ap-squares.webp" alt="A growing cross of small squares: stage 1 has 1 red square, and each stage adds 4 green squares at the corners" width="1124" height="473" loading="lazy" decoding="async"><figcaption><b>Fig. 8.3</b> Growing pattern of squares: 1, 5, 9, 13, …</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>At each stage <b>4 squares are added</b>, one at each corner. So the counts are</p>
+<div class="formula"><div>1, &nbsp;1 + 1×4, &nbsp;1 + 2×4, &nbsp;1 + 3×4, … &nbsp;⟹&nbsp; t<sub>n</sub> = 1 + (n − 1)×4 = 4n − 3</div></div>
+
+<div class="box calc no-print">
+<h4>🧩 Build the pattern</h4>
+<label class="sl">Stage <b id="cross-n-v">4</b><input type="range" id="cross-n" min="1" max="12" value="4"></label>
+<svg id="cross-svg" class="lab-chart cross" viewBox="0 0 230 230" role="img" aria-label="Growing cross pattern"></svg>
+<p class="big" id="cross-out" aria-live="polite"></p>
+</div>
+
+<div class="box key"><h4>🔑 Arithmetic progression</h4>
+<p>A sequence in which the <b>difference between consecutive terms is constant</b>. This constant is the <span class="term">common difference d</span>.</p>
+<div class="formula"><div>a, &nbsp;a + d, &nbsp;a + 2d, &nbsp;a + 3d, …, &nbsp;a + (n − 1)d</div>
+<div>t<sub>n</sub> = a + (n − 1)d<small>a = first term, d = common difference = t<sub>2</sub> − t<sub>1</sub>. d can be positive, negative or zero.</small></div>
+<div>Recursive: t<sub>1</sub> = a, &nbsp;t<sub>n</sub> = t<sub>n−1</sub> + d</div></div></div>
+<div class="ap-ex">
+<div><b>1, 4, 7, 10, …</b><span>a = 1, d = 3</span><span>t<sub>n</sub> = 1 + (n−1)×3</span></div>
+<div><b>11, 7, 3, −1, −5, …</b><span>a = 11, d = −4</span><span>decreasing AP</span></div>
+<div><b>1, 5, 9, 13, …</b><span>a = 1, d = 4</span><span>t<sub>n</sub> = 4n − 3</span></div>
+</div>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: Which sequences in this chapter are APs?</span></summary><div class="ans"><p><b>APs:</b> natural numbers (d = 1), odd numbers (d = 2), 1, 4, 7, 10, … (d = 3), −7, −3, 1, 5, … (d = 4), 5n − 2, 3n − 7, the squares pattern 1, 5, 9, 13 (d = 4).</p><p><b>Not APs:</b> triangular numbers and square numbers (gaps keep growing), 1, ½, ⅓, … (gaps shrink), primes, Virahānka numbers, and 6, 12, 24, 48, 96 (it doubles).</p></div></details>
+
+<h3>8.4.1 Visualising an AP: a straight line!</h3>
+<div class="duo">
+<div>
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th>Stage</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>n</th></tr><tr><td>Squares</td><td>1</td><td>5</td><td>9</td><td>13</td><td>17</td><td>4n − 3</td></tr></table></div>
+<p>Plot the pairs (stage, squares): (1, 1), (2, 5), (3, 9), (4, 13), (5, 17). <b>They lie on a straight line.</b> This happens for every AP, because each step right goes up by the same amount d.</p>
+<div class="box key"><p>📈 AP ⟹ points on a <b>straight line</b>. The steepness of the line is the common difference d.</p></div>
+</div>
+<figure class="fig zoomable small"><img src="img/sequences/ap-graph.webp" alt="Graph with points (1,1), (2,5), (3,9), (4,13), (5,17) joined by a straight green line" width="530" height="893" loading="lazy" decoding="async"><figcaption><b>Fig. 8.4</b> An AP plotted: a linear pattern.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Show that (i) 2, 5, 8, 11, … and (ii) −5, −1, 3, 7, … are APs and find their nth terms.</span></summary><div class="ans"><p>(i) Differences are all 3, so it is an AP with a = 2, d = 3: t<sub>n</sub> = 2 + (n − 1)3 = <b>3n − 1</b>.</p><p>(ii) Differences are all 4, so a = −5, d = 4: t<sub>n</sub> = −5 + (n − 1)4 = <b>4n − 9</b>.</p><p>Plotting (n, t<sub>n</sub>) gives points on a straight line in both cases.</p></div></details>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Find the nth term of (i) <span class="f"><span>1</span><span>2</span></span>, <span class="f"><span>5</span><span>2</span></span>, <span class="f"><span>9</span><span>2</span></span>, <span class="f"><span>13</span><span>2</span></span>, … (ii) 1.5, 3.5, 5.5, 7.5, …</span></summary><div class="ans"><p>(i) a = <span class="f"><span>1</span><span>2</span></span>, d = 2: t<sub>n</sub> = <span class="f"><span>1</span><span>2</span></span> + 2(n − 1) = <b>2n − <span class="f"><span>3</span><span>2</span></span></b> (that is, <span class="f"><span>4n − 3</span><span>2</span></span>).</p><p>(ii) a = 1.5, d = 2: t<sub>n</sub> = 1.5 + 2(n − 1) = <b>2n − 0.5</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Write recursive rules for the APs above.</span></summary><div class="ans"><p>2, 5, 8, …: t<sub>1</sub> = 2, t<sub>n</sub> = t<sub>n−1</sub> + 3. &nbsp; −5, −1, 3, …: t<sub>1</sub> = −5, t<sub>n</sub> = t<sub>n−1</sub> + 4.<br><span class="f"><span>1</span><span>2</span></span>, <span class="f"><span>5</span><span>2</span></span>, …: t<sub>1</sub> = <span class="f"><span>1</span><span>2</span></span>, t<sub>n</sub> = t<sub>n−1</sub> + 2. &nbsp; 1.5, 3.5, …: t<sub>1</sub> = 1.5, t<sub>n</sub> = t<sub>n−1</sub> + 2.</p></div></details>
+
+<div class="box calc"><h4>🚕 Example 5: Taxi fare</h4>
+<p>Booking fee ₹200 plus ₹40 per km. Fare after 1, 2, 3 km: <b>240, 280, 320, …</b>, an AP with a = 240, d = 40.</p>
+<p>t<sub>n</sub> = 240 + (n − 1)×40 = <b>200 + 40n</b>. For 10 km: 200 + 400 = <b>₹600</b>.</p>
+<div class="taxi no-print"><label class="sl">Distance: <b id="taxi-v">10</b> km<input type="range" id="taxi-n" min="1" max="30" value="10"></label><p class="big" id="taxi-out" aria-live="polite"></p></div></div>
+
+<div class="box calc no-print" id="explorer">
+<h4>🔬 AP and GP explorer</h4>
+<p class="muted">Choose AP or GP, set the first term and the step, and watch the terms and the graph. AP points line up; GP points curve.</p>
+<div class="seg" id="ex-mode"><button type="button" class="on" data-m="ap">AP (add d)</button><button type="button" data-m="gp">GP (multiply by r)</button></div>
+<div class="heron-in"><label>a <input type="number" id="ex-a" value="1" step="any"></label><label id="ex-sl">d <input type="number" id="ex-d" value="4" step="any"></label><label>n <input type="number" id="ex-n" value="20" min="1" step="1"></label></div>
+<p class="big" id="ex-rule" aria-live="polite"></p>
+<div class="seq-tiles live" id="ex-tiles"></div>
+<svg id="ex-plot" class="lab-chart" viewBox="0 0 360 220" role="img" aria-label="Plot of the first eight terms"></svg>
+<div class="check-row"><label>Is <input type="number" id="ex-x" value="77" step="any"> a term?</label> <button type="button" class="pill" id="ex-go">Check</button></div>
+<p id="ex-ans" aria-live="polite"></p>
+</div>
+</section>
+
+<!-- ============ 8.5 ============ -->
+<section id="sum">
+<div class="sec-head"><span class="sec-num">8.5</span><h2>Sum of the first n natural numbers</h2></div>
+<p>Can you add 1 + 2 + … + 10 without adding one by one? Write the sum <b>forwards and backwards</b>:</p>
+<div class="pairs" aria-label="Pairing 1 to 10 with 10 to 1">
+<div><span>S =</span><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i></div>
+<div><span>S =</span><i>10</i><i>9</i><i>8</i><i>7</i><i>6</i><i>5</i><i>4</i><i>3</i><i>2</i><i>1</i></div>
+<div class="tot"><span>2S =</span><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i><i>11</i></div>
+</div>
+<p>Every column adds to 11, and there are 10 columns. So 2S = 10 × 11 = 110, and <b>S = 55</b>.</p>
+<p>The same trick works for any n: S = 1 + 2 + … + n and S = n + (n − 1) + … + 1. Each column adds to (n + 1), and there are n columns:</p>
+<div class="formula"><div>2S = n(n + 1) &nbsp;⟹&nbsp; S<sub>n</sub> = 1 + 2 + … + n = <span class="f"><span>n(n + 1)</span><span>2</span></span></div></div>
+<div class="duo">
+<figure class="fig zoomable small"><img src="img/sequences/sum-dots.webp" alt="A 7 by 6 array of pink and green circles divided by a zigzag line into two staircases of 1 to 6" width="423" height="481" loading="lazy" decoding="async"><figcaption><b>Fig. 8.5</b> 2 × (1 + 2 + 3 + 4 + 5 + 6) = 7 × 6</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div><p><b>The picture proof.</b> The pink staircase has 1 + 2 + … + 6 circles. The green staircase is the same staircase turned upside down. Together they make a <b>rectangle of 7 × 6 = 42</b> circles, so one staircase has 42 ÷ 2 = 21.</p>
+<div class="box wow"><h4>📜 Āryabhaṭa knew it</h4><p>The first known written form of this result is in <b>Āryabhaṭa's <i>Āryabhaṭīya</i></b> (Chapter 2, Verse 19). It says: add the first and last terms, halve it (the average), and multiply by the number of terms.</p></div></div>
+</div>
+
+<div class="box calc no-print">
+<h4>🟢 Staircase builder</h4>
+<label class="sl">n = <b id="st-n-v">6</b><input type="range" id="st-n" min="1" max="15" value="6"></label>
+<svg id="st-svg" class="lab-chart stair" viewBox="0 0 340 300" role="img" aria-label="Two staircases forming a rectangle"></svg>
+<p class="big" id="st-out" aria-live="polite"></p>
+</div>
+
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: Find S<sub>20</sub>, S<sub>50</sub>, S<sub>100</sub> and S<sub>1000</sub>.</span></summary><div class="ans"><p>S<sub>20</sub> = <span class="f"><span>20×21</span><span>2</span></span> = <b>210</b>; S<sub>50</sub> = <span class="f"><span>50×51</span><span>2</span></span> = <b>1275</b>; S<sub>100</sub> = <span class="f"><span>100×101</span><span>2</span></span> = <b>5050</b>; S<sub>1000</sub> = <span class="f"><span>1000×1001</span><span>2</span></span> = <b>500500</b>.</p></div></details>
+
+<div class="box calc"><h4>Sum of a block of numbers: 25 + 26 + … + 58</h4>
+<p>Take everything up to 58 and remove everything up to 24:</p>
+<p>S<sub>58</sub> − S<sub>24</sub> = <span class="f"><span>58 × 59</span><span>2</span></span> − <span class="f"><span>24 × 25</span><span>2</span></span> = 1711 − 300 = <b>1411</b>.</p>
+<div class="check-row no-print"><label>Add from <input type="number" id="blk-m" value="25" min="1"></label> <label>to <input type="number" id="blk-n" value="58" min="1"></label> <button type="button" class="pill" id="blk-go">Add</button></div>
+<p id="blk-out" class="no-print" aria-live="polite"></p></div>
+
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: Triangular numbers are t<sub>n</sub> = <span class="f"><span>n(n + 1)</span><span>2</span></span>. Find the 10th, 17th and 80th.</span></summary><div class="ans"><p>t<sub>10</sub> = <span class="f"><span>10×11</span><span>2</span></span> = <b>55</b>; t<sub>17</sub> = <span class="f"><span>17×18</span><span>2</span></span> = <b>153</b>; t<sub>80</sub> = <span class="f"><span>80×81</span><span>2</span></span> = <b>3240</b>.</p></div></details>
+</section>
+
+<!-- ============ Ex 8.2 ============ -->
+<section id="ex2">
+<div class="sec-head"><span class="sec-num word">Ex 8.2</span><h2>Exercise Set 8.2: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1.</span><span>Find the 10th and 26th terms of the AP 3, 8, 13, 18, …</span></summary><div class="ans"><p>a = 3, d = 5. t<sub>10</sub> = 3 + 9×5 = <b>48</b>; t<sub>26</sub> = 3 + 25×5 = <b>128</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>Which term of 21, 18, 15, … is −81? Is 0 a term?</span></summary><div class="ans"><p>a = 21, d = −3, so t<sub>n</sub> = 21 − 3(n − 1) = 24 − 3n.</p><p>24 − 3n = −81 ⟹ 3n = 105 ⟹ n = 35. <b>−81 is the 35th term.</b></p><p>24 − 3n = 0 ⟹ n = 8, a natural number. <b>Yes, 0 is the 8th term</b> (21, 18, 15, 12, 9, 6, 3, 0).</p></div></details>
+<details class="qa"><summary><span class="qnum">3.</span><span>Find the nth term of 11, 8, 5, 2, … and its recursive rule.</span></summary><div class="ans"><p>a = 11, d = −3: t<sub>n</sub> = 11 − 3(n − 1) = <b>14 − 3n</b>.</p><p>Recursive: <b>t<sub>1</sub> = 11, t<sub>n</sub> = t<sub>n−1</sub> − 3</b> for n ≥ 2.</p></div></details>
+<details class="qa"><summary><span class="qnum">4.</span><span>An AP has 50 terms; the 3rd term is 12 and the last term is 106. Find the 29th term.</span></summary><div class="ans"><p>a + 2d = 12 and a + 49d = 106. Subtracting: 47d = 94 ⟹ <b>d = 2</b>, so a = 12 − 4 = <b>8</b>.</p><p>t<sub>29</sub> = 8 + 28×2 = <b>64</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">5.</span><span>How many 2-digit numbers are divisible by 3? What is their sum?</span></summary><div class="ans"><p>They are 12, 15, 18, …, 99: an AP with a = 12, d = 3. 12 + (n − 1)3 = 99 ⟹ n − 1 = 29 ⟹ <b>n = 30</b>.</p><p>Sum = 3 × (4 + 5 + … + 33) = 3 × (S<sub>33</sub> − S<sub>3</sub>) = 3 × (561 − 6) = <b>1665</b>.</p><p class="muted">Check with Āryabhaṭa's rule: <span class="f"><span>30</span><span>2</span></span> × (12 + 99) = 15 × 111 = 1665.</p></div></details>
+<details class="qa"><summary><span class="qnum">6.</span><span>Harish's salary starts at ₹5,00,000 and rises by ₹20,000 each year. When does it reach ₹7,00,000?</span></summary><div class="ans"><p>Salaries form an AP: 5,00,000, 5,20,000, 5,40,000, … with d = 20,000.</p><p>5,00,000 + (n − 1)×20,000 = 7,00,000 ⟹ n − 1 = 10 ⟹ n = 11.</p><p>So in his <b>11th year</b>, that is <b>after 10 years</b> (10 increments), his salary is ₹7,00,000.</p></div></details>
+<details class="qa"><summary><span class="qnum">7.</span><span>Marbles in rows of 1, 2, 3, …, 25. How many marbles in all?</span></summary><div class="ans"><p>S<sub>25</sub> = <span class="f"><span>25 × 26</span><span>2</span></span> = <b>325 marbles</b>.</p></div></details>
+</section>
+
+<!-- ============ 8.6 ============ -->
+<section id="gp">
+<div class="sec-head"><span class="sec-num">8.6</span><h2>Geometric progressions (GP)</h2></div>
+<div class="duo">
+<figure class="fig zoomable"><img src="img/sequences/gp-squares.webp" alt="Rectangles of green squares: 3, then 6, then 12, then 24 squares" width="739" height="454" loading="lazy" decoding="async"><figcaption><b>Fig. 8.6</b> A growing pattern: 3, 6, 12, 24, …</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div><p>Here the number of squares <b>doubles</b> each stage: 3, 3 + 3 = 6, 6 + 6 = 12, 12 + 12 = 24.</p>
+<p>3, 3×2, 3×2², 3×2³, … so <b>t<sub>n</sub> = 3 × 2<sup>n−1</sup></b>.<br>Recursive: t<sub>1</sub> = 3, t<sub>n</sub> = 2t<sub>n−1</sub>.</p></div>
+</div>
+<p>The ratio of each term to the one before is always the same: <span class="f"><span>6</span><span>3</span></span> = <span class="f"><span>12</span><span>6</span></span> = <span class="f"><span>24</span><span>12</span></span> = <span class="f"><span>48</span><span>24</span></span> = <span class="f"><span>96</span><span>48</span></span> = 2. This constant multiplier is the <span class="term">common ratio r</span>.</p>
+<div class="box key"><h4>🔑 Geometric progression</h4>
+<p>A sequence where each term is the previous term <b>multiplied by a fixed number r</b>.</p>
+<div class="formula"><div>a, &nbsp;ar, &nbsp;ar², &nbsp;ar³, …, &nbsp;ar<sup>n−1</sup></div>
+<div>t<sub>n</sub> = ar<sup>n−1</sup><small>a = first term, r = common ratio = <span class="f"><span>t₂</span><span>t₁</span></span></small></div>
+<div>Recursive: t<sub>1</sub> = a, &nbsp;t<sub>n</sub> = r × t<sub>n−1</sub></div></div></div>
+<div class="cards2 cmp">
+<div class="idea exp"><span class="emo">➕</span><h4>AP: add the same number</h4><p>Check the <b>difference</b> t<sub>2</sub> − t<sub>1</sub>, t<sub>3</sub> − t<sub>2</sub>, …<br>Grows steadily (in a straight line).</p></div>
+<div class="idea th"><span class="emo">✖️</span><h4>GP: multiply by the same number</h4><p>Check the <b>ratio</b> <span class="f"><span>t₂</span><span>t₁</span></span>, <span class="f"><span>t₃</span><span>t₂</span></span>, …<br>Grows (or shrinks) faster and faster.</p></div>
+</div>
+<div class="ap-ex">
+<div><b>Ex 6: 1, 2, 4, 8, 16, …</b><span>GP, r = 2</span></div>
+<div><b>Ex 7: 1, 3, 9, 27, 81, …</b><span>GP, r = 3</span></div>
+<div><b>Ex 8: 1, −1, 1, −1, …</b><span>GP, r = −1</span></div>
+</div>
+<div class="box calc"><h4>Example 9: Is 5, <span class="f"><span>15</span><span>4</span></span>, <span class="f"><span>45</span><span>16</span></span>, <span class="f"><span>135</span><span>64</span></span>, … a GP?</h4>
+<p><span class="f"><span>t₂</span><span>t₁</span></span> = <span class="f"><span>15</span><span>4</span></span> ÷ 5 = <span class="f"><span>3</span><span>4</span></span>; &nbsp; <span class="f"><span>t₃</span><span>t₂</span></span> = <span class="f"><span>45</span><span>16</span></span> × <span class="f"><span>4</span><span>15</span></span> = <span class="f"><span>3</span><span>4</span></span>; &nbsp; <span class="f"><span>t₄</span><span>t₃</span></span> = <span class="f"><span>135</span><span>64</span></span> × <span class="f"><span>16</span><span>45</span></span> = <span class="f"><span>3</span><span>4</span></span>.</p>
+<p>The ratio is constant, so it is a GP with a = 5, r = <span class="f"><span>3</span><span>4</span></span>: <b>t<sub>n</sub> = 5 × <span class="nw">(<span class="f"><span>3</span><span>4</span></span>)<sup>n−1</sup></span></b>.</p></div>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Are these GPs? Find t<sub>n</sub>: (i) 2, 10, 50, 250, … (ii) 4, <span class="f"><span>8</span><span>3</span></span>, <span class="f"><span>16</span><span>9</span></span>, <span class="f"><span>32</span><span>27</span></span>, … (iii) 3, <span class="f"><span>−3</span><span>2</span></span>, <span class="f"><span>3</span><span>4</span></span>, <span class="f"><span>−3</span><span>8</span></span>, …</span></summary><div class="ans">
+<p>(i) Ratio 5 each time. GP, <b>t<sub>n</sub> = 2 × 5<sup>n−1</sup></b>.</p>
+<p>(ii) Ratio <span class="f"><span>2</span><span>3</span></span> each time. GP, <b>t<sub>n</sub> = 4 × <span class="nw">(<span class="f"><span>2</span><span>3</span></span>)<sup>n−1</sup></span></b>.</p>
+<p>(iii) Ratio <span class="f"><span>−1</span><span>2</span></span> each time. GP, <b>t<sub>n</sub> = 3 × <span class="nw">(<span class="f"><span>−1</span><span>2</span></span>)<sup>n−1</sup></span></b>. A negative ratio makes the signs alternate.</p></div></details>
+<details class="qa"><summary><span class="qnum">Ex</span><span>Give a recursive rule for t<sub>n</sub> = 3 × 10<sup>n−1</sup> (3, 30, 300, 3000, …).</span></summary><div class="ans"><p><b>t<sub>1</sub> = 3, t<sub>n</sub> = 10 × t<sub>n−1</sub></b> for n ≥ 2.</p></div></details>
+
+<div class="box calc no-print">
+<h4>🎮 AP, GP or neither?</h4>
+<p class="muted">Look at the gaps and the ratios, then tap your answer.</p>
+<div id="sort-list"></div>
+<p class="score" id="sort-score"></p>
+</div>
+</section>
+
+<!-- ============ 8.6.1 ============ -->
+<section id="fractal">
+<div class="sec-head"><span class="sec-num">8.6.1</span><h2>Fun with fractals</h2></div>
+<figure class="fig zoomable"><img src="img/sequences/sierpinski.webp" alt="Sierpiński triangle stages 0 to 3: a black triangle with smaller and smaller triangular holes" width="832" height="228" loading="lazy" decoding="async"><figcaption><b>Fig. 8.7</b> The Sierpiński triangle, stages 0 to 3.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<ol class="steps">
+<li>Stage 0: a black equilateral triangle.</li>
+<li>Join the midpoints of the sides to get 4 smaller triangles and <b>remove the middle one</b> (Stage 1).</li>
+<li>Repeat on every black triangle that is left, again and again, forever!</li>
+</ol>
+<div class="cards2">
+<div class="idea exp"><span class="emo">🔺</span><h4>Number of black triangles</h4><p>1, 3, 9, 27, 81, 243, … each one becomes 3.<br>GP with r = 3: <b>t<sub>n</sub> = 3<sup>n</sup></b> (stage n).</p></div>
+<div class="idea th"><span class="emo">⬛</span><h4>Black area (Stage 0 = 1)</h4><p>1, <span class="f"><span>3</span><span>4</span></span>, <span class="f"><span>9</span><span>16</span></span>, <span class="f"><span>27</span><span>64</span></span>, … each stage keeps <span class="f"><span>3</span><span>4</span></span>.<br>GP with r = <span class="f"><span>3</span><span>4</span></span>: <b>s<sub>n</sub> = <span class="nw">(<span class="f"><span>3</span><span>4</span></span>)<sup>n</sup></span></b>.</p></div>
+</div>
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th>Stage n</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>n</th></tr>
+<tr><td>Black triangles</td><td>1</td><td>3</td><td>9</td><td>27</td><td>81</td><td>243</td><td>3<sup>n</sup></td></tr>
+<tr><td>Black area</td><td>1</td><td><span class="f"><span>3</span><span>4</span></span></td><td><span class="f"><span>9</span><span>16</span></span></td><td><span class="f"><span>27</span><span>64</span></span></td><td><span class="f"><span>81</span><span>256</span></span></td><td><span class="f"><span>243</span><span>1024</span></span></td><td><span class="nw">(<span class="f"><span>3</span><span>4</span></span>)<sup>n</sup></span></td></tr></table></div>
+<div class="box key"><p>🤯 <b>The surprise:</b> the number of triangles shoots up (243 at stage 5, over 59,000 at stage 10), but the black <b>area keeps shrinking towards 0</b>. Both are GPs: one with r &gt; 1, one with r between 0 and 1.</p></div>
+<details class="qa think-qa"><summary><span class="qnum">🤔</span><span>Think and Reflect: answers to (a) to (d) for the Sierpiński triangle</span></summary><div class="ans"><p>(a) 1, 3, 9, 27. (b) Stage 4: 81, Stage 5: 243. (c) 3<sup>n</sup>. (d) Areas: <span class="f"><span>3</span><span>4</span></span>, <span class="f"><span>9</span><span>16</span></span>, <span class="f"><span>27</span><span>64</span></span>; Stage 4: <span class="f"><span>81</span><span>256</span></span>, Stage 5: <span class="f"><span>243</span><span>1024</span></span>; rule <span class="nw">(<span class="f"><span>3</span><span>4</span></span>)<sup>n</sup></span>. As n grows, the area gets closer and closer to 0. Recursive rules: t<sub>n</sub> = 3 × t<sub>n−1</sub> and s<sub>n</sub> = <span class="f"><span>3</span><span>4</span></span> × s<sub>n−1</sub>, starting from 1 at stage 0.</p></div></details>
+
+<div class="box calc no-print">
+<h4>🔍 Fractal zoomer</h4>
+<div class="seg" id="fr-kind"><button type="button" class="on" data-k="tri">Sierpiński triangle</button><button type="button" data-k="car">Sierpiński carpet</button></div>
+<label class="sl">Stage <b id="fr-n-v">2</b><input type="range" id="fr-n" min="0" max="6" value="2"></label>
+<svg id="fr-svg" class="lab-chart frac" viewBox="0 0 300 270" role="img" aria-label="Fractal drawing"></svg>
+<p class="big" id="fr-out" aria-live="polite"></p>
+<div class="area-bar"><div id="fr-bar"></div></div>
+</div>
+
+<div class="duo">
+<div><p><span class="term">Fractals</span> are shapes that <b>repeat themselves at different scales</b>: zoom into a small part and it looks like the whole. You see them in tree branches, cauliflower and broccoli, snowflakes and coastlines. Simple rules, beautiful designs.</p>
+<div class="box wow"><h4>👤 Wacław Sierpiński (1882–1969)</h4><p>A Polish mathematician who gave us the Sierpiński gasket (triangle), one of the earliest and most famous fractals.</p></div></div>
+<figure class="fig zoomable small"><img src="img/sequences/fractals-nature.webp" alt="Cauliflower florets of different sizes, a bare tree and a snowflake" width="451" height="442" loading="lazy" decoding="async"><figcaption><b>Fig. 8.8</b> Fractals in nature.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+</section>
+
+<!-- ============ 8.6.2 ============ -->
+<section id="gpgraph">
+<div class="sec-head"><span class="sec-num">8.6.2</span><h2>Visualising a GP: a curve, not a line</h2></div>
+<div class="duo">
+<div>
+<div class="tbl-wrap"><table class="tbl-c compact"><tr><th>Stage</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>n</th></tr><tr><td>Squares</td><td>3</td><td>6</td><td>12</td><td>24</td><td>48</td><td>3×2<sup>n−1</sup></td></tr></table></div>
+<p>Plot (1, 3), (2, 6), (3, 12), (4, 24), (5, 48). The points <b>do not lie on a straight line</b>. They bend upwards more and more steeply, because each jump is bigger than the last.</p>
+<div class="box key"><p>📈 AP ⟹ straight line. &nbsp;📈 GP ⟹ curve that bends up (r &gt; 1) or flattens down towards 0 (0 &lt; r &lt; 1).</p></div>
+</div>
+<figure class="fig zoomable small"><img src="img/sequences/gp-graph.webp" alt="Graph of points (1,3), (2,6), (3,12), (4,24), (5,48) joined by a red upward curve" width="676" height="977" loading="lazy" decoding="async"><figcaption><b>Fig. 8.9</b> Points of a GP do not lie on a straight line.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<figure class="fig zoomable"><img src="img/sequences/sierpinski-graphs.webp" alt="Two graphs: (A) number of black triangles 1, 3, 9, 27, 81 rising steeply; (B) black area 1, 0.75, 0.56, 0.42, 0.32 falling towards zero" width="1183" height="734" loading="lazy" decoding="async"><figcaption><b>Fig. 8.10</b> Sierpiński triangle: (A) the number of triangles rises very quickly, (B) the black area falls closer and closer to 0.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+
+<div class="box calc no-print">
+<h4>🏁 Race: AP vs GP</h4>
+<p class="muted">AP: 3, 6, 9, 12, … (add 3). GP: 3, 6, 12, 24, … (double). They start the same. Who wins?</p>
+<label class="sl">Stage <b id="race-n-v">5</b><input type="range" id="race-n" min="1" max="12" value="5"></label>
+<div class="race"><div><span>AP</span><div class="trk"><i id="race-ap"></i></div><b id="race-apv"></b></div><div><span>GP</span><div class="trk"><i id="race-gp" class="g"></i></div><b id="race-gpv"></b></div></div>
+<p id="race-out" aria-live="polite"></p>
+</div>
+
+<h3>Example 10: The bouncing ball</h3>
+<p>A ball is dropped from <b>24 feet</b>. Each bounce reaches <span class="f"><span>3</span><span>4</span></span> of the previous height.</p>
+<div class="duo">
+<div>
+<div class="tbl-wrap"><table class="compact"><tr><th>Bounce</th><th>Height (ft)</th></tr>
+<tr><td>1st</td><td>24 × 0.75 = 18</td></tr><tr><td>2nd</td><td>18 × 0.75 = 13.5</td></tr><tr><td>3rd</td><td>13.5 × 0.75 = 10.125</td></tr><tr><td>4th</td><td>10.125 × 0.75 ≈ 7.594</td></tr><tr><td>5th</td><td>≈ 5.695</td></tr><tr><td>6th</td><td>≈ 4.271</td></tr><tr><td>7th</td><td>≈ 3.203</td></tr></table></div>
+</div>
+<figure class="fig zoomable"><img src="img/sequences/bounce.webp" alt="Bar graph of bouncing ball heights: 24, 18, 13.5, 10.12, 7.59, 5.70, 4.27, 3.20 feet" width="715" height="586" loading="lazy" decoding="async"><figcaption><b>Fig. 8.11</b> Bouncing ball heights.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<p>(a) The heights 18, 13.5, 10.125, 7.594, 5.695, … form a GP with a = 18 and r = <span class="f"><span>3</span><span>4</span></span>.</p>
+<p>(b) <span class="f"><span>1</span><span>6</span></span> of 24 ft is <b>4 ft</b>. After the 6th bounce the ball still reaches 4.27 ft, but after the <b>7th bounce</b> it reaches only 3.20 ft. So <b>7 bounces</b> are needed.</p>
+
+<div class="box calc no-print">
+<h4>⚽ Bounce lab</h4>
+<div class="heron-in"><label>Drop height <input type="number" id="bb-h" value="24" min="1" step="any"></label><label>Bounces back to <input type="number" id="bb-p" value="75" min="1" max="99"> %</label></div>
+<div class="lab-run"><button type="button" id="bb-go">Drop the ball ▶</button></div>
+<svg id="bb-svg" class="lab-chart" viewBox="0 0 360 200" role="img" aria-label="Animated bouncing ball"></svg>
+<p id="bb-out" aria-live="polite"></p>
+</div>
+</section>
+
+<!-- ============ Ex 8.3 ============ -->
+<section id="ex3">
+<div class="sec-head"><span class="sec-num word">Ex 8.3</span><h2>Exercise Set 8.3: solutions</h2></div>
+<details class="qa"><summary><span class="qnum">1.</span><span>A GP has r = 2 and 8th term 192. Find the 12th term.</span></summary><div class="ans"><p>From the 8th to the 12th term we multiply by r four times: t<sub>12</sub> = 192 × 2<sup>4</sup> = 192 × 16 = <b>3072</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>Find the 10th and nth terms of 5, 25, 125, …</span></summary><div class="ans"><p>a = 5, r = 5: t<sub>n</sub> = 5 × 5<sup>n−1</sup> = <b>5<sup>n</sup></b>. t<sub>10</sub> = 5<sup>10</sup> = <b>97,65,625</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">3*.</span><span>t<sub>1</sub> = 2, t<sub>n+1</sub> = 3t<sub>n</sub> − 2. Which term is 730?</span></summary><div class="ans"><p>Terms: 2, 3×2−2 = 4, 3×4−2 = 10, 28, 82, 244, 3×244−2 = <b>730</b>. That is the <b>7th term</b>.</p><p class="muted">Pattern spotted: each term is one more than a power of 3 (2 = 3⁰+1, 4 = 3¹+1, 10 = 3²+1, …), so t<sub>n</sub> = 3<sup>n−1</sup> + 1 and 730 = 3⁶ + 1 gives n = 7.</p></div></details>
+<details class="qa"><summary><span class="qnum">4.</span><span>Which term of 2, 6, 18, … is 4374? Give explicit and recursive formulas.</span></summary><div class="ans"><p>a = 2, r = 3: t<sub>n</sub> = 2 × 3<sup>n−1</sup>. 2 × 3<sup>n−1</sup> = 4374 ⟹ 3<sup>n−1</sup> = 2187 = 3<sup>7</sup> ⟹ n = 8. <b>4374 is the 8th term.</b></p><p>Explicit: <b>t<sub>n</sub> = 2 × 3<sup>n−1</sup></b>. Recursive: <b>t<sub>1</sub> = 2, t<sub>n</sub> = 3t<sub>n−1</sub></b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">5.</span><span>A ball dropped from 80 m bounces to 60% of its fall each time. (i) Height after the 5th bounce? (ii) Total vertical distance when it hits the ground the 6th time?</span></summary><div class="ans"><p>Bounce heights: 48, 28.8, 17.28, 10.368, 6.2208 m (GP, r = 0.6).</p><p>(i) 80 × 0.6<sup>5</sup> = <b>6.2208 m ≈ 6.22 m</b>.</p><p>(ii) First fall 80 m. Then each of the 5 bounces goes up and comes down again before the 6th hit: 2 × (48 + 28.8 + 17.28 + 10.368 + 6.2208) = 2 × 110.6688 = 221.3376 m.</p><p>Total = 80 + 221.3376 = <b>301.3376 m ≈ 301.34 m</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">6.</span><span>Which term of 2, 2√2, 4, … is 128?</span></summary><div class="ans"><p>r = √2. t<sub>n</sub> = 2(√2)<sup>n−1</sup> = 128 ⟹ (√2)<sup>n−1</sup> = 64 = 2<sup>6</sup> = (√2)<sup>12</sup> ⟹ n − 1 = 12 ⟹ <b>n = 13</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">7.</span><span>Sierpiński square carpet (Fig. 8.12): red squares and red area at each stage.</span></summary><div class="ans">
+<figure class="fig zoomable"><img src="img/sequences/carpet.webp" alt="Sierpiński carpet stages 0 to 3: an orange square with a square hole, then 8 smaller holes, and so on" width="853" height="236" loading="lazy" decoding="async"><figcaption><b>Fig. 8.12</b> Stages 0 to 3 of the Sierpiński square carpet.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>Each square is cut into 9 and the middle one is removed, so every red square becomes <b>8</b> squares, and the area is multiplied by <b><span class="f"><span>8</span><span>9</span></span></b>.</p>
+<p>(i) Stages 0 to 3: <b>1, 8, 64, 512</b> red squares.</p>
+<p>(ii) Stage 4: 8<sup>4</sup> = <b>4096</b>; Stage 5: 8<sup>5</sup> = <b>32768</b>.</p>
+<p>(iii) Explicit: <b>t<sub>n</sub> = 8<sup>n</sup></b> (stage n). Recursive: t<sub>0</sub> = 1, <b>t<sub>n</sub> = 8 × t<sub>n−1</sub></b>.</p>
+<p>(iv) Areas: Stage 1: <span class="f"><span>8</span><span>9</span></span>, Stage 2: <span class="f"><span>64</span><span>81</span></span>, Stage 3: <span class="f"><span>512</span><span>729</span></span>, Stage 4: <span class="f"><span>4096</span><span>6561</span></span>, Stage 5: <span class="f"><span>32768</span><span>59049</span></span>. Explicit: <b>s<sub>n</sub> = <span class="nw">(<span class="f"><span>8</span><span>9</span></span>)<sup>n</sup></span></b>; recursive: s<sub>0</sub> = 1, <b>s<sub>n</sub> = <span class="f"><span>8</span><span>9</span></span> × s<sub>n−1</sub></b>. As n grows, the red area gets closer and closer to <b>0</b> (slowly, because <span class="f"><span>8</span><span>9</span></span> is close to 1).</p></div></details>
+</section>
+
+<!-- ============ End ============ -->
+<section id="end">
+<div class="sec-head"><span class="sec-num word">End</span><h2>End-of-chapter exercises</h2></div>
+<details class="qa"><summary><span class="qnum">1.</span><span>Find the 31st term of an AP whose 11th term is 38 and 16th term is 73.</span></summary><div class="ans"><p>a + 10d = 38 and a + 15d = 73. Subtracting: 5d = 35 ⟹ d = 7, so a = 38 − 70 = −32.</p><p>t<sub>31</sub> = −32 + 30×7 = <b>178</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>Find the AP whose 3rd term is 16 and whose 7th term exceeds the 5th term by 12.</span></summary><div class="ans"><p>t<sub>7</sub> − t<sub>5</sub> = 2d = 12 ⟹ d = 6. a + 2d = 16 ⟹ a = 4.</p><p>The AP is <b>4, 10, 16, 22, 28, …</b></p></div></details>
+<details class="qa"><summary><span class="qnum">3*.</span><span>How many three-digit numbers are divisible by 7?</span></summary><div class="ans"><p>Smallest: 105 (7 × 15). Largest: 994 (7 × 142). AP with a = 105, d = 7.</p><p>105 + (n − 1)7 = 994 ⟹ (n − 1)7 = 889 ⟹ n − 1 = 127 ⟹ <b>n = 128</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">4*.</span><span>How many multiples of 4 lie between 10 and 250?</span></summary><div class="ans"><p>From 12 to 248, with d = 4: 12 + (n − 1)4 = 248 ⟹ n − 1 = 59 ⟹ <b>n = 60</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">5*.</span><span>Find a GP where the sum of the first two terms is −4 and the 5th term is 4 times the 3rd term.</span></summary><div class="ans"><p>ar<sup>4</sup> = 4ar<sup>2</sup> ⟹ r<sup>2</sup> = 4 ⟹ r = 2 or r = −2.</p><p>a + ar = −4. If r = 2: 3a = −4, a = <span class="f"><span>−4</span><span>3</span></span> → <b><span class="f"><span>−4</span><span>3</span></span>, <span class="f"><span>−8</span><span>3</span></span>, <span class="f"><span>−16</span><span>3</span></span>, …</b></p><p>If r = −2: −a = −4, a = 4 → <b>4, −8, 16, −32, …</b> Both GPs work.</p></div></details>
+<details class="qa"><summary><span class="qnum">6*.</span><span>Find all ways of writing 100 as a sum of consecutive natural numbers.</span></summary><div class="ans"><p>If k numbers start at m: sum = <span class="f"><span>k(2m + k − 1)</span><span>2</span></span> = 100, so k(2m + k − 1) = 200. Try the factors of 200 with k ≥ 2:</p><ul><li>k = 5: 2m + 4 = 40 ⟹ m = 18 → <b>18 + 19 + 20 + 21 + 22 = 100</b></li><li>k = 8: 2m + 7 = 25 ⟹ m = 9 → <b>9 + 10 + 11 + 12 + 13 + 14 + 15 + 16 = 100</b></li><li>k = 2, 4, 10, 20, 25, 40, … give m that is not a natural number.</li></ul><p>So there are <b>two ways</b> (three if you count “100” on its own).</p></div></details>
+<details class="qa"><summary><span class="qnum">7*.</span><span>30 bacteria double every hour. How many after 2 hours, 4 hours, n hours?</span></summary><div class="ans"><p>GP: 30, 60, 120, 240, 480, … After 2 hours: <b>120</b>; after 4 hours: <b>480</b>; after n hours: <b>30 × 2<sup>n</sup></b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">8*.</span><span>In an AP, t<sub>4</sub> + t<sub>8</sub> = 24 and t<sub>6</sub> + t<sub>10</sub> = 44. Find the first three terms.</span></summary><div class="ans"><p>2a + 10d = 24 and 2a + 14d = 44. Subtracting: 4d = 20 ⟹ d = 5, so 2a = −26, a = −13.</p><p>First three terms: <b>−13, −8, −3</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">9*.</span><span>Smallest n for which 1 + 2 + … + n is greater than 1000.</span></summary><div class="ans"><p>We need n(n + 1) &gt; 2000. 44 × 45 = 1980 (S<sub>44</sub> = 990, too small) and 45 × 46 = 2070 (S<sub>45</sub> = 1035). So <b>n = 45</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">10*.</span><span>Which term of 2, 8, 32, … is 131072? Give explicit and recursive formulas.</span></summary><div class="ans"><p>a = 2, r = 4: 2 × 4<sup>n−1</sup> = 131072 ⟹ 4<sup>n−1</sup> = 65536 = 4<sup>8</sup> ⟹ <b>n = 9</b>.</p><p>Explicit: <b>t<sub>n</sub> = 2 × 4<sup>n−1</sup></b>. Recursive: <b>t<sub>1</sub> = 2, t<sub>n</sub> = 4t<sub>n−1</sub></b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">11*.</span><span>The first three terms of a GP add to <span class="f"><span>13</span><span>12</span></span> and multiply to −1. Find r and the terms.</span></summary><div class="ans"><p>Take the terms as <span class="f"><span>a</span><span>r</span></span>, a, ar. Product = a<sup>3</sup> = −1 ⟹ a = −1.</p><p>Sum: −<span class="f"><span>1</span><span>r</span></span> − 1 − r = <span class="f"><span>13</span><span>12</span></span> ⟹ r + <span class="f"><span>1</span><span>r</span></span> = <span class="f"><span>−25</span><span>12</span></span> ⟹ 12r<sup>2</sup> + 25r + 12 = 0 ⟹ (4r + 3)(3r + 4) = 0.</p><p>r = <span class="f"><span>−3</span><span>4</span></span> gives <b><span class="f"><span>4</span><span>3</span></span>, −1, <span class="f"><span>3</span><span>4</span></span></b>; r = <span class="f"><span>−4</span><span>3</span></span> gives <b><span class="f"><span>3</span><span>4</span></span>, −1, <span class="f"><span>4</span><span>3</span></span></b> (the same numbers in reverse).</p></div></details>
+<details class="qa"><summary><span class="qnum">12*.</span><span>If the 4th, 10th and 16th terms of a GP are x, y, z, prove that x, y, z are in GP.</span></summary><div class="ans"><p>x = ar<sup>3</sup>, y = ar<sup>9</sup>, z = ar<sup>15</sup>. Then <span class="f"><span>y</span><span>x</span></span> = r<sup>6</sup> and <span class="f"><span>z</span><span>y</span></span> = r<sup>6</sup>.</p><p>The ratios are equal (r<sup>6</sup>), so <b>x, y, z are in GP</b> (equivalently y<sup>2</sup> = xz).</p></div></details>
+<details class="qa"><summary><span class="qnum">13*.</span><span>Three terms of a GP add to 26 and their squares add to 364. Find them.</span></summary><div class="ans"><p>Terms a, ar, ar². a(1 + r + r²) = 26 … (1) and a²(1 + r² + r⁴) = 364 … (2).</p><p>Use 1 + r² + r⁴ = (1 + r + r²)(1 − r + r²). Dividing (2) by (1): a(1 − r + r²) = 14 … (3).</p><p>(1) − (3): 2ar = 12 ⟹ ar = 6. (1) + (3): 2a(1 + r²) = 40 ⟹ a + ar² = 20 ⟹ <span class="f"><span>6</span><span>r</span></span> + 6r = 20 ⟹ 3r² − 10r + 3 = 0 ⟹ r = 3 or <span class="f"><span>1</span><span>3</span></span>.</p><p>The terms are <b>2, 6, 18</b> (or 18, 6, 2). Check: 2 + 6 + 18 = 26 and 4 + 36 + 324 = 364 ✅</p></div></details>
+<details class="qa"><summary><span class="qnum">14*.</span><span>P<sub>1</sub> = 1, P<sub>2</sub> = 2, P<sub>n</sub> = P<sub>1</sub> + … + P<sub>n−1</sub> + 1. Find P<sub>1</sub> to P<sub>8</sub> and simpler formulas.</span></summary><div class="ans"><p>P<sub>3</sub> = 1 + 2 + 1 = 4, P<sub>4</sub> = 1 + 2 + 4 + 1 = 8, and so on: <b>1, 2, 4, 8, 16, 32, 64, 128</b>.</p><p>Since P<sub>n</sub> = (P<sub>1</sub> + … + P<sub>n−2</sub> + 1) + P<sub>n−1</sub> = P<sub>n−1</sub> + P<sub>n−1</sub>, the simpler rule is <b>P<sub>n</sub> = 2P<sub>n−1</sub></b>, and the explicit rule is <b>P<sub>n</sub> = 2<sup>n−1</sup></b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">15*.</span><span>W<sub>1</sub> = 1, W<sub>2</sub> = 2, W<sub>n</sub> = W<sub>1</sub> + … + W<sub>n−2</sub> + 2. Find W<sub>1</sub> to W<sub>8</sub>.</span></summary><div class="ans"><p>W<sub>3</sub> = 1 + 2 = 3, W<sub>4</sub> = 1 + 2 + 2 = 5, W<sub>5</sub> = 1 + 2 + 3 + 2 = 8, W<sub>6</sub> = 13, W<sub>7</sub> = 21, W<sub>8</sub> = 34.</p><p><b>1, 2, 3, 5, 8, 13, 21, 34</b>: the <b>Virahānka–Fibonacci sequence</b>! (Subtracting consecutive rules gives W<sub>n</sub> − W<sub>n−1</sub> = W<sub>n−2</sub>.)</p></div></details>
+</section>
+
+<!-- ============ Sheet ============ -->
+<section id="recap">
+<div class="sec-head"><span class="sec-num word">Sheet</span><h2>Formula sheet and chapter summary</h2></div>
+<div class="sheet">
+<div class="sheet-card"><span class="emo">📋</span><h4>Sequence</h4><p>Ordered list of numbers. t<sub>n</sub> = term in position n.</p></div>
+<div class="sheet-card"><span class="emo">🎯</span><h4>Explicit rule</h4><p>t<sub>n</sub> in terms of n, e.g. t<sub>n</sub> = 2n − 1. Is x a term? Solve t<sub>n</sub> = x; n must be a natural number.</p></div>
+<div class="sheet-card"><span class="emo">🪜</span><h4>Recursive rule</h4><p>Start value + rule using earlier terms, e.g. V<sub>n</sub> = V<sub>n−1</sub> + V<sub>n−2</sub>.</p></div>
+<div class="sheet-card"><span class="emo">➕</span><h4>AP</h4><p>a, a+d, a+2d, …<br><b>t<sub>n</sub> = a + (n − 1)d</b><br>t<sub>n</sub> = t<sub>n−1</sub> + d</p></div>
+<div class="sheet-card"><span class="emo">✖️</span><h4>GP</h4><p>a, ar, ar², …<br><b>t<sub>n</sub> = ar<sup>n−1</sup></b><br>t<sub>n</sub> = r × t<sub>n−1</sub></p></div>
+<div class="sheet-card"><span class="emo">🔺</span><h4>Sum 1 to n</h4><p><b>S<sub>n</sub> = <span class="f"><span>n(n + 1)</span><span>2</span></span></b> = nth triangular number.<br>m + … + n = S<sub>n</sub> − S<sub>m−1</sub></p></div>
+<div class="sheet-card"><span class="emo">📈</span><h4>Graphs</h4><p>AP points: straight line.<br>GP points: a curve.</p></div>
+<div class="sheet-card"><span class="emo">🧮</span><h4>Two unknowns</h4><p>Given two terms of an AP, write a + (p−1)d and a + (q−1)d, subtract to get d.</p></div>
+<div class="sheet-card"><span class="emo">❄️</span><h4>Fractals</h4><p>Sierpiński triangle: 3<sup>n</sup> triangles, area <span class="nw">(<span class="f"><span>3</span><span>4</span></span>)<sup>n</sup></span>.<br>Carpet: 8<sup>n</sup> squares, area <span class="nw">(<span class="f"><span>8</span><span>9</span></span>)<sup>n</sup></span>.</p></div>
+</div>
+<div class="box key"><h4>📝 Chapter summary</h4><ul>
+<li>A sequence is an ordered list of numbers; each number is a term.</li>
+<li>An explicit formula uses the position n to calculate the term's value.</li>
+<li>A recursive formula gives a term using the values of previous terms.</li>
+<li>Triangular numbers 1, 3, 6, 10, 15, …: t<sub>n</sub> = <span class="f"><span>n(n + 1)</span><span>2</span></span>, which is also the sum of the first n natural numbers.</li>
+<li>An AP adds a fixed number d (common difference): t<sub>n</sub> = a + (n − 1)d.</li>
+<li>A GP multiplies by a fixed number r (common ratio): t<sub>n</sub> = ar<sup>n−1</sup>.</li>
+<li>Fractals such as the Sierpiński triangle and the Sierpiński carpet lead to GPs.</li>
+</ul></div>
+</section>
+
+<!-- ============ Quiz ============ -->
+<section id="quiz">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p class="muted">Tap an answer. You get one try per question.</p>
+<div class="quiz">
+<div class="q"><p>1. What is the 20th term of t<sub>n</sub> = 4n − 3?</p><div class="opts"><button class="opt" type="button">80</button><button class="opt" type="button" data-c>77</button><button class="opt" type="button">83</button><button class="opt" type="button">73</button></div><p class="why">4 × 20 − 3 = 77.</p></div>
+<div class="q"><p>2. Which of these is an AP?</p><div class="opts"><button class="opt" type="button">1, 2, 4, 8, …</button><button class="opt" type="button">1, 4, 9, 16, …</button><button class="opt" type="button" data-c>10, 7, 4, 1, …</button><button class="opt" type="button">1, 1, 2, 3, 5, …</button></div><p class="why">The difference is always −3.</p></div>
+<div class="q"><p>3. Common ratio of 81, 27, 9, 3, …?</p><div class="opts"><button class="opt" type="button">3</button><button class="opt" type="button">−54</button><button class="opt" type="button" data-c><span class="f"><span>1</span><span>3</span></span></button><button class="opt" type="button">−3</button></div><p class="why">27 ÷ 81 = <span class="f"><span>1</span><span>3</span></span>.</p></div>
+<div class="q"><p>4. 1 + 2 + 3 + … + 40 = ?</p><div class="opts"><button class="opt" type="button">800</button><button class="opt" type="button" data-c>820</button><button class="opt" type="button">840</button><button class="opt" type="button">1600</button></div><p class="why"><span class="f"><span>40 × 41</span><span>2</span></span> = 820.</p></div>
+<div class="q"><p>5. Is 100 a term of t<sub>n</sub> = 3n + 2?</p><div class="opts"><button class="opt" type="button">Yes, the 33rd</button><button class="opt" type="button" data-c>No</button><button class="opt" type="button">Yes, the 34th</button><button class="opt" type="button">Yes, the 98th</button></div><p class="why">3n = 98 gives n = 32.67, not a natural number.</p></div>
+<div class="q"><p>6. Next Virahānka number after 13, 21, 34?</p><div class="opts"><button class="opt" type="button">47</button><button class="opt" type="button">68</button><button class="opt" type="button" data-c>55</button><button class="opt" type="button">42</button></div><p class="why">21 + 34 = 55.</p></div>
+<div class="q"><p>7. t<sub>1</sub> = 2, t<sub>n</sub> = 3t<sub>n−1</sub>. What is t<sub>4</sub>?</p><div class="opts"><button class="opt" type="button">18</button><button class="opt" type="button" data-c>54</button><button class="opt" type="button">11</button><button class="opt" type="button">162</button></div><p class="why">2, 6, 18, 54.</p></div>
+<div class="q"><p>8. Plotting (n, t<sub>n</sub>) for an AP gives…</p><div class="opts"><button class="opt" type="button" data-c>A straight line</button><button class="opt" type="button">An upward curve</button><button class="opt" type="button">A circle</button><button class="opt" type="button">Random dots</button></div><p class="why">Each step adds the same d, so the points line up.</p></div>
+<div class="q"><p>9. Black triangles at Stage 4 of the Sierpiński triangle?</p><div class="opts"><button class="opt" type="button">12</button><button class="opt" type="button">64</button><button class="opt" type="button" data-c>81</button><button class="opt" type="button">27</button></div><p class="why">3<sup>4</sup> = 81.</p></div>
+<div class="q"><p>10. In an AP, a = 5 and t<sub>6</sub> = 30. What is d?</p><div class="opts"><button class="opt" type="button">6</button><button class="opt" type="button" data-c>5</button><button class="opt" type="button">25</button><button class="opt" type="button">4</button></div><p class="why">5 + 5d = 30 ⟹ d = 5.</p></div>
+</div>
+<p class="score" aria-live="polite"></p>
+</section>
+</main>
+<footer>
+<p><b>MT Classes</b>, S.K. Nagar, Motihari</p>
+<p>Maths and Science coaching for Classes 8 to 10 (CBSE)</p>
+<p><a href="tel:+917091609997">7091609997</a> &nbsp;&nbsp; <a href="mailto:mtclassesmotihari@gmail.com">mtclassesmotihari@gmail.com</a> &nbsp;&nbsp; <a href="https://www.youtube.com/@MTClassesMotihari" target="_blank" rel="noopener">YouTube: @MTClassesMotihari</a></p>
+<p style="font-size:13.5px;opacity:.8;margin-top:14px">Notes based on NCERT Ganita Manjari (Grade 9 Mathematics, Part I), Chapter 8: Predicting What Comes Next: Exploring Sequences and Progressions. Diagrams are taken from the NCERT textbook chapter.</p>
+</footer>
+<script>
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+
+
+
+  function $(id){return document.getElementById(id);}
+  var NS='http://www.w3.org/2000/svg';
+  function gcd(a,b){a=Math.abs(a);b=Math.abs(b);while(b){var t=b;b=a%b;a=t;}return a;}
+  function fmt(x){
+    if(!isFinite(x)) return '∞';
+    if(Math.abs(x)>=1e12) return x.toExponential(3);
+    var r=Math.round(x*10000)/10000;
+    var s=String(r); if(r<0) s='−'+String(-r);
+    return s;
+  }
+  function seg(id,cb){
+    var box=$(id); if(!box) return;
+    box.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click',function(){
+        box.querySelectorAll('button').forEach(function(x){x.classList.remove('on');});
+        b.classList.add('on'); cb(b);
+      });
+    });
+  }
+  function tiles(el,arr,hit){
+    el.innerHTML=arr.map(function(v,i){return '<span'+(hit===i?' class="hit"':'')+'>'+v+'<small>t'+(i+1)+'</small></span>';}).join('');
+  }
+
+  // 1. number machine
+  (function(){
+    if(!$('mach-n')) return;
+    var rules={
+      '2n-1':{f:function(n){return 2*n-1;},s:'2n − 1',sub:function(n){return '2 × '+n+' − 1';},lin:[2,-1]},
+      '5n-2':{f:function(n){return 5*n-2;},s:'5n − 2',sub:function(n){return '5 × '+n+' − 2';},lin:[5,-2]},
+      '3n-7':{f:function(n){return 3*n-7;},s:'3n − 7',sub:function(n){return '3 × '+n+' − 7';},lin:[3,-7]},
+      'n2':{f:function(n){return n*n;},s:'n²',sub:function(n){return n+' × '+n;}},
+      'n2b':{f:function(n){return n*n-2*n+3;},s:'n² − 2n + 3',sub:function(n){return n+'² − 2 × '+n+' + 3';}}
+    };
+    var cur='2n-1';
+    function upd(){
+      var n=+$('mach-n').value, R=rules[cur];
+      $('mach-n-v').textContent=n;
+      $('mach-out').innerHTML='t<sub>'+n+'</sub> = '+R.sub(n)+' = '+fmt(R.f(n));
+      var start=Math.max(1,Math.min(n-3,52)), arr=[];
+      var h='';
+      for(var i=start;i<start+8;i++) h+='<span'+(i===n?' class="hit"':'')+'>'+fmt(R.f(i))+'<small>t'+i+'</small></span>';
+      $('mach-tiles').innerHTML=h;
+    }
+    function check(){
+      var x=+$('mach-x').value, R=rules[cur], out;
+      if($('mach-x').value===''){return;}
+      if(R.lin){
+        var p=R.lin[0],q=R.lin[1], n=(x-q)/p;
+        var step=R.s+' = '+fmt(x)+' ⟹ '+p+'n = '+fmt(x-q)+' ⟹ n = '+fmt(n);
+        out= (n>=1 && Math.abs(n-Math.round(n))<1e-9) ? step+'. ✅ Yes, it is term number <b>'+Math.round(n)+'</b>.' : step+'. ❌ n is not a natural number, so it is <b>not a term</b>.';
+      } else {
+        var found=0;
+        for(var k=1;k<=100000;k++){var v=R.f(k); if(v===x){found=k;break;} if(v>x && k>2) break;}
+        out= found ? '✅ Yes: t<sub>'+found+'</sub> = '+fmt(x)+'.' : '❌ No natural number n gives '+fmt(x)+', so it is <b>not a term</b>.';
+      }
+      $('mach-ans').innerHTML=out;
+    }
+    seg('mach-rule',function(b){cur=b.getAttribute('data-r');upd();$('mach-ans').innerHTML='';});
+    $('mach-n').addEventListener('input',upd);
+    $('mach-go').addEventListener('click',check);
+    $('mach-x').addEventListener('keydown',function(e){if(e.key==='Enter')check();});
+    upd();
+  })();
+
+  // 2. recursive stepper
+  (function(){
+    if(!$('rec-next')) return;
+    var P={
+      ap:{start:[1],name:'t',step:function(a){var p=a[a.length-1];return [p+3,'t'+(a.length+1)+' = t'+a.length+' + 3 = '+p+' + 3 = '+(p+3)];}},
+      ex3:{start:[1],name:'u',step:function(a){var p=a[a.length-1];return [2*p+3,'u'+(a.length+1)+' = 2u'+a.length+' + 3 = 2 × '+p+' + 3 = '+(2*p+3)];}},
+      ex4:{start:[3],name:'s',step:function(a){var p=a[a.length-1];return [p*(p-1),'s'+(a.length+1)+' = '+p+' × ('+p+' − 1) = '+(p*(p-1))];}},
+      fib:{start:[1,2],name:'V',step:function(a){var p=a[a.length-1],q=a[a.length-2];return [p+q,'V'+(a.length+1)+' = '+p+' + '+q+' = '+(p+q)];}},
+      trib:{start:[1,2,4],name:'T',step:function(a){var n=a.length,p=a[n-1],q=a[n-2],r=a[n-3];return [p+q+r,'T'+(n+1)+' = '+p+' + '+q+' + '+r+' = '+(p+q+r)];}}
+    };
+    var key='ap', arr;
+    function draw(msg){
+      $('rec-tiles').innerHTML=arr.map(function(v,i){return '<span'+(i===arr.length-1&&msg?' class="hit"':'')+'>'+v.toLocaleString('en-IN')+'<small>'+P[key].name+(i+1)+'</small></span>';}).join('');
+      $('rec-out').textContent=msg||('Start: '+arr.map(function(v,i){return P[key].name+(i+1)+' = '+v;}).join(', ')+'. Press Next term.');
+    }
+    function reset(){arr=P[key].start.slice();draw('');}
+    $('rec-next').addEventListener('click',function(){
+      if(arr.length>=12||arr[arr.length-1]>1e13){$('rec-out').textContent='That is enough steps! See how the rule builds every term from the ones before.';return;}
+      var r=P[key].step(arr); arr.push(r[0]); draw(r[1]);
+    });
+    $('rec-reset').addEventListener('click',reset);
+    seg('rec-rule',function(b){key=b.getAttribute('data-k');reset();});
+    reset();
+  })();
+
+  // 3. cross pattern (AP 4n-3)
+  (function(){
+    var r=$('cross-n'); if(!r) return;
+    function upd(){
+      var n=+r.value, svg=$('cross-svg'), size=2*n-1, c=230/(size+1), off=c/2, h='';
+      var mid=n-1;
+      for(var k=0;k<n;k++){
+        var cells=k===0?[[mid,mid]]:[[mid-k,mid-k],[mid+k,mid-k],[mid-k,mid+k],[mid+k,mid+k]];
+        cells.forEach(function(p){h+='<rect x="'+(off+p[0]*c+0.5)+'" y="'+(off+p[1]*c+0.5)+'" width="'+(c-1)+'" height="'+(c-1)+'" fill="'+(k===0?'#E8343A':(k===n-1?'#7A9A1E':'#A3AB45'))+'"/>';});
+      }
+      svg.innerHTML=h;
+      $('cross-n-v').textContent=n;
+      $('cross-out').innerHTML='Stage '+n+': 1 + '+(n-1)+' × 4 = <b>'+(4*n-3)+'</b> squares';
+    }
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // 4. taxi
+  (function(){
+    var r=$('taxi-n'); if(!r) return;
+    function upd(){var n=+r.value;$('taxi-v').textContent=n;$('taxi-out').textContent='Fare = 200 + 40 × '+n+' = ₹'+(200+40*n);}
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // 5. AP / GP explorer
+  (function(){
+    if(!$('ex-plot')) return;
+    var mode='ap';
+    function vals(){return {a:parseFloat($('ex-a').value),d:parseFloat($('ex-d').value),n:Math.max(1,Math.round(parseFloat($('ex-n').value)||1))};}
+    function term(v,k){return mode==='ap'? v.a+(k-1)*v.d : v.a*Math.pow(v.d,k-1);}
+    function plot(arr){
+      var svg=$('ex-plot'),W=360,H=220,L=44,B=190,T=14,R=346;
+      var mn=Math.min.apply(null,arr.concat([0])),mx=Math.max.apply(null,arr.concat([0]));
+      if(mx===mn){mx+=1;}
+      function X(i){return L+(i)*(R-L)/(arr.length-1||1);} function Y(v){return B-(v-mn)*(B-T)/(mx-mn);}
+      var h='<line x1="'+L+'" y1="'+Y(0)+'" x2="'+R+'" y2="'+Y(0)+'" stroke="#9AA6BD" stroke-width="1.5"/><line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+B+'" stroke="#9AA6BD" stroke-width="1.5"/>';
+      h+='<text x="'+(L-6)+'" y="'+(T+10)+'" text-anchor="end" font-size="11" fill="#5B6475">'+fmt(mx)+'</text><text x="'+(L-6)+'" y="'+(B)+'" text-anchor="end" font-size="11" fill="#5B6475">'+fmt(mn)+'</text>';
+      var pts=arr.map(function(v,i){return X(i)+','+Y(v);}).join(' ');
+      h+='<polyline points="'+pts+'" fill="none" stroke="'+(mode==='ap'?'#E3B23C':'#1F9E8F')+'" stroke-width="2.5" stroke-dasharray="'+(mode==='ap'?'0':'0')+'"/>';
+      arr.forEach(function(v,i){h+='<circle cx="'+X(i)+'" cy="'+Y(v)+'" r="5" fill="#0E2148"/><text x="'+X(i)+'" y="'+(B+18)+'" text-anchor="middle" font-size="12" fill="#5B6475">'+(i+1)+'</text>';});
+      svg.innerHTML=h;
+    }
+    function upd(){
+      var v=vals(); if(isNaN(v.a)||isNaN(v.d)) return;
+      var arr=[]; for(var k=1;k<=8;k++) arr.push(term(v,k));
+      $('ex-tiles').innerHTML=arr.map(function(x,i){return '<span>'+fmt(x)+'<small>t'+(i+1)+'</small></span>';}).join('');
+      var tn=term(v,v.n);
+      $('ex-rule').innerHTML= mode==='ap'
+        ? 't<sub>n</sub> = '+fmt(v.a)+' + (n − 1) × '+fmt(v.d)+' &nbsp;⟹&nbsp; t<sub>'+v.n+'</sub> = '+fmt(v.a)+' + '+(v.n-1)+' × '+fmt(v.d)+' = '+fmt(tn)
+        : 't<sub>n</sub> = '+fmt(v.a)+' × '+fmt(v.d)+'<sup>n−1</sup> &nbsp;⟹&nbsp; t<sub>'+v.n+'</sub> = '+fmt(v.a)+' × '+fmt(v.d)+'<sup>'+(v.n-1)+'</sup> = '+fmt(tn);
+      plot(arr);
+    }
+    function check(){
+      var v=vals(), x=parseFloat($('ex-x').value), out='';
+      if(isNaN(x)||isNaN(v.a)||isNaN(v.d)) return;
+      if(mode==='ap'){
+        if(v.d===0){out= x===v.a?'✅ Every term equals '+fmt(x)+'.':'❌ All terms are '+fmt(v.a)+', so no.';}
+        else{var n=(x-v.a)/v.d+1;
+          out=fmt(v.a)+' + (n − 1) × '+fmt(v.d)+' = '+fmt(x)+' ⟹ n − 1 = '+fmt((x-v.a)/v.d)+' ⟹ n = '+fmt(n)+'. ';
+          out+=(n>=1&&Math.abs(n-Math.round(n))<1e-9)?'✅ Yes, term number <b>'+Math.round(n)+'</b>.':'❌ Not a natural number, so <b>not a term</b>.';}
+      } else {
+        var found=0;
+        for(var k=1;k<=200;k++){var t=term(v,k); if(Math.abs(t-x)<1e-9*Math.max(1,Math.abs(x))){found=k;break;} if(Math.abs(t)>Math.abs(x)*4+1e6 && Math.abs(v.d)>1) break;}
+        out=found?'✅ Yes: t<sub>'+found+'</sub> = '+fmt(v.a)+' × '+fmt(v.d)+'<sup>'+(found-1)+'</sup> = '+fmt(x)+'.':'❌ Multiplying by '+fmt(v.d)+' again and again never gives exactly '+fmt(x)+', so <b>not a term</b>.';
+      }
+      $('ex-ans').innerHTML=out;
+    }
+    seg('ex-mode',function(b){
+      mode=b.getAttribute('data-m');
+      var lab=$('ex-sl'); lab.firstChild.nodeValue=mode==='ap'?'d ':'r ';
+      if(mode==='gp'){$('ex-a').value=3;$('ex-d').value=2;$('ex-x').value=384;} else {$('ex-a').value=1;$('ex-d').value=4;$('ex-x').value=77;}
+      $('ex-ans').innerHTML=''; upd();
+    });
+    ['ex-a','ex-d','ex-n'].forEach(function(id){$(id).addEventListener('input',upd);});
+    $('ex-go').addEventListener('click',check);
+    upd();
+  })();
+
+  // 6. staircase sum
+  (function(){
+    var r=$('st-n'); if(!r) return;
+    function upd(){
+      var n=+r.value, svg=$('st-svg'), cols=n, rows=n+1;
+      var c=Math.min(300/cols,280/rows), ox=(340-cols*c)/2, oy=(300-rows*c)/2, h='';
+      for(var row=0;row<rows;row++) for(var col=0;col<cols;col++){
+        var pink = row>col; // lower staircase: row index 1..n has row items
+        h+='<circle cx="'+(ox+col*c+c/2)+'" cy="'+(oy+row*c+c/2)+'" r="'+(c*0.38)+'" fill="'+(pink?'#E0607E':'#2E9E5B')+'"/>';
+      }
+      svg.innerHTML=h;
+      $('st-n-v').textContent=n;
+      var S=n*(n+1)/2;
+      $('st-out').innerHTML='Rectangle '+(n+1)+' × '+n+' = '+(n*(n+1))+' ⟹ 1 + 2 + … + '+n+' = '+(n*(n+1))+' ÷ 2 = <b>'+S+'</b>';
+    }
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // 7. block sum
+  (function(){
+    if(!$('blk-go')) return;
+    function go(){
+      var m=Math.round(+$('blk-m').value), n=Math.round(+$('blk-n').value);
+      if(!(m>=1&&n>=m)){$('blk-out').textContent='Choose 1 ≤ first ≤ last.';return;}
+      var Sn=n*(n+1)/2, Sm=(m-1)*m/2;
+      $('blk-out').innerHTML=m+' + … + '+n+' = S<sub>'+n+'</sub> − S<sub>'+(m-1)+'</sub> = '+Sn+' − '+Sm+' = <b>'+(Sn-Sm)+'</b>';
+    }
+    $('blk-go').addEventListener('click',go); go();
+  })();
+
+  // 8. AP / GP / neither sorter
+  (function(){
+    var box=$('sort-list'); if(!box) return;
+    var cats=['AP','GP','Neither'];
+    var items=[
+      ['5, 9, 13, 17, …',0,'AP: add 4 each time.'],
+      ['2, 6, 18, 54, …',1,'GP: multiply by 3 each time.'],
+      ['1, 4, 9, 16, …',2,'Neither: gaps 3, 5, 7 change, and ratios change too.'],
+      ['20, 15, 10, 5, …',0,'AP with d = −5.'],
+      ['64, 32, 16, 8, …',1,'GP with r = ½.'],
+      ['1, 2, 3, 5, 8, …',2,'Neither: this is the Virahānka sequence (add the last two).'],
+      ['7, 7, 7, 7, …',0,'Both actually! d = 0 makes it an AP (and r = 1 makes it a GP too).'],
+      ['3, −6, 12, −24, …',1,'GP with r = −2.']
+    ];
+    var got=0,done=0;
+    items.forEach(function(it){
+      var d=document.createElement('div'); d.className='sort-item';
+      d.innerHTML='<p>'+it[0]+'</p><div class="sort-btns">'+cats.map(function(c,i){return '<button type="button" data-i="'+i+'">'+c+'</button>';}).join('')+'</div><p class="fb">'+it[2]+'</p>';
+      d.querySelectorAll('button').forEach(function(b){
+        b.addEventListener('click',function(){
+          if(d.classList.contains('done')) return;
+          var i=+b.getAttribute('data-i'), ok=(i===it[1])||(it[0].indexOf('7, 7')===0&&i<2);
+          d.classList.add('done'); done++;
+          if(ok){got++;b.classList.add('right');} else {b.classList.add('wrong'); d.querySelector('[data-i="'+it[1]+'"]').classList.add('right');}
+          $('sort-score').textContent='Score: '+got+' / '+items.length+(done===items.length?(got===items.length?'. Brilliant!':'. Check the differences and ratios of the ones you missed.'):'');
+        });
+      });
+      box.appendChild(d);
+    });
+  })();
+
+  // 9. fractal zoomer
+  (function(){
+    var r=$('fr-n'); if(!r) return;
+    var kind='tri';
+    function tri(x,y,s,n,out){ // x,y = bottom-left, s = side
+      if(n===0){var h=s*Math.sqrt(3)/2;out.push('M'+x.toFixed(2)+' '+y.toFixed(2)+'L'+(x+s).toFixed(2)+' '+y.toFixed(2)+'L'+(x+s/2).toFixed(2)+' '+(y-h).toFixed(2)+'Z');return;}
+      var t=s/2,hh=t*Math.sqrt(3)/2;
+      tri(x,y,t,n-1,out); tri(x+t,y,t,n-1,out); tri(x+t/2,y-hh,t,n-1,out);
+    }
+    function car(x,y,s,n,out){
+      if(n===0){out.push('M'+x.toFixed(2)+' '+y.toFixed(2)+'h'+s.toFixed(2)+'v'+s.toFixed(2)+'h'+(-s).toFixed(2)+'Z');return;}
+      var t=s/3;
+      for(var i=0;i<3;i++)for(var j=0;j<3;j++) if(!(i===1&&j===1)) car(x+i*t,y+j*t,t,n-1,out);
+    }
+    function upd(){
+      var n=+r.value, out=[], svg=$('fr-svg');
+      if(kind==='tri'){ tri(10,262,280,n,out); svg.innerHTML='<path d="'+out.join('')+'" fill="#111"/>'; }
+      else { car(25,5,260,n,out); svg.innerHTML='<path d="'+out.join('')+'" fill="#E2552B"/>'; }
+      $('fr-n-v').textContent=n;
+      var base=kind==='tri'?3:8, den=kind==='tri'?4:9, cnt=Math.pow(base,n), area=Math.pow(base/den,n);
+      var fr = n===0?'1':(Math.pow(base,n)+'/'+Math.pow(den,n));
+      $('fr-out').innerHTML='Stage '+n+': <b>'+cnt.toLocaleString('en-IN')+'</b> '+(kind==='tri'?'black triangles':'red squares')+' ('+base+'<sup>'+n+'</sup>) · area = ('+base+'/'+den+')<sup>'+n+'</sup> = '+fr+' ≈ <b>'+area.toFixed(3)+'</b>';
+      $('fr-bar').style.width=(area*100)+'%';
+    }
+    seg('fr-kind',function(b){kind=b.getAttribute('data-k'); r.max=kind==='tri'?6:4; if(+r.value>+r.max) r.value=r.max; upd();});
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // 10. race AP vs GP
+  (function(){
+    var r=$('race-n'); if(!r) return;
+    function upd(){
+      var n=+r.value, ap=3*n, gp=3*Math.pow(2,n-1), mx=Math.max(ap,gp);
+      $('race-n-v').textContent=n;
+      $('race-ap').style.width=(ap/mx*100)+'%'; $('race-gp').style.width=(gp/mx*100)+'%';
+      $('race-apv').textContent=ap.toLocaleString('en-IN'); $('race-gpv').textContent=gp.toLocaleString('en-IN');
+      $('race-out').innerHTML= n<=2?'Neck and neck so far…': 'The GP is <b>'+(gp/ap).toFixed(1)+'×</b> bigger. Adding 3 can never keep up with doubling!';
+    }
+    r.addEventListener('input',upd); upd();
+  })();
+
+  // 11. bounce lab
+  (function(){
+    if(!$('bb-go')) return;
+    var timer=null;
+    function go(){
+      var H=parseFloat($('bb-h').value), p=parseFloat($('bb-p').value)/100;
+      if(!(H>0)||!(p>0&&p<1)){$('bb-out').textContent='Enter a height and a percentage between 1 and 99.';return;}
+      var hs=[H]; for(var i=1;i<=8;i++) hs.push(hs[i-1]*p);
+      var svg=$('bb-svg'), W=360, B=180, T=14, sx=(W-30)/9;
+      function Y(h){return B-(h/H)*(B-T-8);}
+      var g='<line x1="10" y1="'+(B+6)+'" x2="350" y2="'+(B+6)+'" stroke="#2E7D4F" stroke-width="3"/>';
+      var path='M'+20+' '+Y(H);
+      for(var k=1;k<=8;k++){var x0=20+(k-1)*sx,x1=20+k*sx; path+=' Q'+((x0+x1)/2)+' '+(Y(hs[k-1])-(k===1?0:(Y(0)-Y(hs[k-1]))))+' '+x1+' '+B;}
+      // build bounces as arcs from ground to ground
+      path='M20 '+Y(H)+' L'+(20+sx*0.5)+' '+B;
+      var x=20+sx*0.5;
+      for(var k2=1;k2<=8;k2++){ var nx=x+sx; path+=' Q'+((x+nx)/2)+' '+(2*Y(hs[k2])-B)+' '+nx+' '+B; x=nx; }
+      g+='<path id="bb-path" d="'+path+'" fill="none" stroke="#B9CBEA" stroke-width="2" stroke-dasharray="4 4"/>';
+      x=20+sx*0.5;
+      for(var k3=1;k3<=8;k3++){ var cx=x+sx/2; g+='<text x="'+cx+'" y="'+(Y(hs[k3])-6)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#0E2148">'+fmt(Math.round(hs[k3]*100)/100)+'</text>'; x+=sx; }
+      g+='<circle id="bb-ball" r="8" fill="#E3B23C" stroke="#8A6510" stroke-width="2" cx="20" cy="'+(Y(H)-8)+'"/>';
+      svg.innerHTML=g;
+      var pathEl=$('bb-path'), ball=$('bb-ball'), L=pathEl.getTotalLength?pathEl.getTotalLength():0, t0=null;
+      if(timer) cancelAnimationFrame(timer);
+      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function frame(ts){
+        if(!t0) t0=ts; var f=Math.min(1,(ts-t0)/4000); if(reduce) f=1;
+        var pt=pathEl.getPointAtLength(L*f); ball.setAttribute('cx',pt.x); ball.setAttribute('cy',pt.y-8);
+        if(f<1) timer=requestAnimationFrame(frame);
+      }
+      if(L) timer=requestAnimationFrame(frame);
+      var lim=H/6, k=1; while(hs[k]>=lim && k<8) k++;
+      $('bb-out').innerHTML='Heights: '+hs.slice(1,6).map(function(h){return fmt(Math.round(h*1000)/1000);}).join(', ')+', … a GP with a = '+fmt(Math.round(hs[1]*1000)/1000)+' and r = '+fmt(p)+'. '+(hs[k]<lim?'It stays below ⅙ of the drop height ('+fmt(Math.round(lim*100)/100)+') from bounce <b>'+k+'</b>.':'');
+    }
+    $('bb-go').addEventListener('click',go); go();
+  })();
+})();
+</script>
+</body>
+</html>
