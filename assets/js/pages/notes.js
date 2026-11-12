@@ -8,13 +8,13 @@
     const books = N.books.filter((b) => b.cls === cls && (sub === "All" || b.subject === sub));
     let html = "";
     books.forEach((b) => {
-      const rows = b.chapters.map((ch, i) => ({ t: typeof ch === "string" ? ch : ch.title, label: ch.label, file: ch.file, n: i + 1 })).filter((r) => r.t.toLowerCase().includes(term));
+      const rows = b.chapters.map((ch, i) => ({ t: typeof ch === "string" ? ch : ch.title, label: ch.label, file: ch.file, page: ch.page, n: i + 1 })).filter((r) => r.t.toLowerCase().includes(term));
       if (!rows.length) return;
       html += `<h3 style="margin-top:22px"><span class="tag ${b.subject === "Maths" ? "m" : "s"}">${b.subject}</span> ${esc(b.book)}</h3>` + rows.map((r) => {
         const quick = N.quick[r.t], test = N.test[r.t];
         return `<div class="note"><span class="n">${r.n}</span><span class="t">${esc(r.t)}${r.label ? `<small>${esc(r.label)}</small>` : ""}</span><span class="act">
           ${quick ? `<button class="btn sm" data-read="${esc(r.t)}">📖 Quick notes</button>` : ""}
-          ${r.file && !/^https?:/i.test(r.file) ? `<a class="btn sm gold" href="viewer.html?file=${encodeURIComponent(r.file)}">📄 Read notes</a><a class="btn sm ghost" href="${esc(r.file)}" download aria-label="Download ${esc(r.t)} notes PDF">⬇ PDF</a>` : ""}
+          ${r.file && !/^https?:/i.test(r.file) ? `<a class="btn sm gold" href="${r.page ? esc(r.page) : `viewer.html?file=${encodeURIComponent(r.file)}`}">📄 Read notes</a><a class="btn sm ghost" href="${esc(r.file)}" download aria-label="Download ${esc(r.t)} notes PDF">⬇ PDF</a>` : ""}
           ${r.file && /^https?:/i.test(r.file) ? `<a class="btn sm gold" href="${esc(r.file)}" target="_blank" rel="noopener">📄 Open notes</a>` : ""}
           ${test ? `<a class="btn sm ghost" href="exam.html#${test}">📝 Test</a>` : ""}
           ${!quick && !r.file ? '<span class="tag">Coming soon</span>' : ""}</span></div>`;

@@ -2,6 +2,7 @@
    chapters: list of chapter names. To attach a PDF, write an object instead of a name:
      { title: "Real Numbers", file: "notes/class10-maths-real-numbers.pdf" }   (file in /notes folder)
      { title: "Real Numbers", file: "https://drive.google.com/..." }           (Google Drive link)
+   Optional page: an HTML notes page in /notes; Read notes opens it instead of the PDF reader.
    Optional label: a line under the title, e.g. which part of the chapter the PDF covers.
    PDFs in /notes open in the site's own reader (viewer.html); Drive links open in a new tab.
    quick: short revision notes that open on the site itself (key = exact chapter title).
@@ -30,7 +31,7 @@ window.MT_NOTES = {
       { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf" } ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
       { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf" },
-      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf" } ] },
+      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",
