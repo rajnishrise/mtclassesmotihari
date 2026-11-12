@@ -17,20 +17,20 @@ window.MT_NOTES = {
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
       { title: "Chemical Reactions and Equations", label: "Handwritten notes", file: "notes/class10-science-chemical-reactions-equations.pdf" },
       { title: "Acids, Bases and Salts", label: "Handwritten notes", file: "notes/class10-science-acids-bases-salts.pdf" },
-      { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf" },
-      { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf" },
+      { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf", page: "notes/class10-science-extraction-of-metals-and-corrosion.html" },
+      { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf", page: "notes/class10-science-carbon-and-its-compounds.html" },
       "Life Processes", "Control and Coordination",
-      { title: "How do Organisms Reproduce?", file: "notes/class10-science-how-do-organisms-reproduce.pdf" }, "Heredity",
+      { title: "How do Organisms Reproduce?", file: "notes/class10-science-how-do-organisms-reproduce.pdf", page: "notes/class10-science-how-do-organisms-reproduce.html" }, "Heredity",
       "Light – Reflection and Refraction", "The Human Eye and the Colourful World",
       { title: "Electricity", label: "Handwritten notes", file: "notes/class10-science-electricity.pdf" },
-      { title: "Magnetic Effects of Electric Current", label: "AC & DC Current and Household Circuits", file: "notes/class10-science-ac-dc-household-circuits.pdf" },
+      { title: "Magnetic Effects of Electric Current", label: "AC & DC Current and Household Circuits", file: "notes/class10-science-ac-dc-household-circuits.pdf", page: "notes/class10-science-ac-dc-household-circuits.html" },
       "Our Environment" ] },
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
     // Only topic names are listed here — replace with your chapter list.
     { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems",
-      { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf" } ] },
+      { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf", page: "notes/class9-maths-circles.html" } ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [ "Motion",
-      { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf" },
+      { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html" },
       { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",

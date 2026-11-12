@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AC & DC Current and Household Circuits: Class 10 Science Notes | MT Classes Motihari</title>
+<meta name="description" content="Class 10 Science, Magnetic Effects of Electric Current: AC and DC, domestic electric circuits, earthing, short circuit, overloading, fuse and MCB, solved numericals, board questions and a quiz.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>AC, DC and Household Circuits</h1>
+<p class="sub">Class 10 Science, Magnetic Effects of Electric Current</p>
+<p class="pitch">Clear notes on AC and DC, how wiring in your house works, and how fuses keep you safe. With solved numericals and a quick quiz.</p>
+<div class="btns"><a class="btn solid" href="#recap">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="An alternating current wave and a direct current line" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".35"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="170" fill="url(#hglow)"/><line x1="30" y1="160" x2="370" y2="160" stroke="#3B5B9A" stroke-width="1.5" stroke-dasharray="3 6"/><path id="acw" d="M30,160 C58,40 92,40 115,160 S172,280 200,160 S257,40 285,160 S342,280 370,160" fill="none" stroke="#E3B23C" stroke-width="5" stroke-linecap="round"/><circle r="11" fill="#F4CF6B" stroke="#FFF2C6" stroke-width="2"><animateMotion dur="4s" repeatCount="indefinite" path="M30,160 C58,40 92,40 115,160 S172,280 200,160 S257,40 285,160 S342,280 370,160"/></circle><text x="30" y="60" fill="#CBD6EE" font-family="Baloo 2, sans-serif" font-size="26" font-weight="800">AC</text><line x1="30" y1="330" x2="370" y2="330" stroke="#3B5B9A" stroke-width="1.5" stroke-dasharray="3 6"/><line x1="30" y1="300" x2="370" y2="300" stroke="#8FB4FF" stroke-width="5" stroke-linecap="round"/><circle r="10" fill="#8FB4FF" stroke="#fff" stroke-width="2"><animateMotion dur="3s" repeatCount="indefinite" path="M30,300 L370,300"/></circle><text x="30" y="285" fill="#CBD6EE" font-family="Baloo 2, sans-serif" font-size="26" font-weight="800">DC</text></svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a href="#recap"><span>1</span>Electric current recap</a></li>
+<li><a href="#dc"><span>2</span>Direct current (DC)</a></li>
+<li><a href="#ac"><span>3</span>Alternating current (AC)</a></li>
+<li><a href="#compare"><span>4</span>AC vs DC</a></li>
+<li><a href="#house"><span>5</span>Household circuits</a></li>
+<li><a href="#earthing"><span>6</span>Earthing</a></li>
+<li><a href="#faults"><span>7</span>Short circuit and overloading</a></li>
+<li><a href="#fuse"><span>8</span>Fuse and MCB</a></li>
+<li><a href="#numericals"><span>9</span>Solved numericals</a></li>
+<li><a href="#safety"><span>10</span>Safety measures</a></li>
+<li><a href="#revision"><span>Recap</span>Quick revision</a></li>
+<li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
+<li><a href="#answers"><span>Board</span>Important questions</a></li>
+</ol>
+</nav>
+
+<section id="recap">
+<div class="sec-head"><span class="sec-num">1</span><h2>Electric current: quick recap</h2></div>
+<p class="lead"><span class="term">Electric current</span> is the rate of flow of electric charge through a conductor. Its SI unit is the <b>ampere (A)</b>.</p>
+<div class="formula"><div>I = Q / t</div><small>I = current, Q = charge, t = time</small></div>
+<p>Depending on how the current flows with time, it is of two types: <b>Direct Current (DC)</b> and <b>Alternating Current (AC)</b>.</p>
+</section>
+
+<section id="dc">
+<div class="sec-head"><span class="sec-num">2</span><h2>Direct Current (DC)</h2></div>
+<p>A current that flows in <b>one direction only</b> and whose magnitude usually stays constant is called <span class="term">direct current (DC)</span>.</p>
+<div class="cards2 stack-m">
+<div class="box key"><h4>🔋 Sources of DC</h4><ul><li>Electric cells and batteries (dry cell, torch cell, car battery)</li><li>Solar cells</li><li>DC generator (dynamo)</li></ul></div>
+<div class="box think"><h4>📱 Uses of DC</h4><ul><li>Charging mobile phones, laptops and inverter batteries</li><li>Torches, remote controls, wall clocks</li><li>Electroplating and electrolysis (need a fixed direction of current)</li></ul></div>
+</div>
+</section>
+
+<section id="ac">
+<div class="sec-head"><span class="sec-num">3</span><h2>Alternating Current (AC)</h2></div>
+<p>A current that <b>reverses its direction periodically</b> (after equal intervals of time) is called <span class="term">alternating current (AC)</span>. Its magnitude also changes continuously, rising from zero to maximum and falling back.</p>
+<h3>Sources of AC</h3>
+<ul><li>AC generator (works on electromagnetic induction)</li><li>Power stations (thermal, hydro, nuclear) all produce AC</li></ul>
+<div class="box wow"><h4>⚡ Key facts about AC in India</h4><ul>
+<li><b>Frequency = 50 Hz</b>: AC completes 50 cycles every second.</li>
+<li>Time for one cycle = 1/50 s = <b>0.02 s</b>.</li>
+<li>In one cycle the direction reverses twice, so the current changes direction every <b>1/100 s</b> (100 times per second).</li>
+<li>Household supply voltage = <b>220 V</b>. (USA uses 110–120 V at 60 Hz.)</li></ul></div>
+<figure class="fig zoomable "><img src="img/ac-dc/p02-000.webp" alt="Graph of current against time: a flat line for DC and a wave for AC" width="1400" height="467" loading="lazy" decoding="async"><figcaption><b>Fig. 1</b> Graph of current vs time for DC (left) and AC (right).</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</section>
+
+<section id="compare">
+<div class="sec-head"><span class="sec-num">4</span><h2>Difference between AC and DC</h2></div>
+<div class="tbl-wrap"><table>
+<tr><th>Basis</th><th>Alternating Current (AC)</th><th>Direct Current (DC)</th></tr>
+<tr><td><b>Direction</b></td><td>Reverses periodically</td><td>Always in one direction</td></tr>
+<tr><td><b>Magnitude</b></td><td>Changes continuously with time</td><td>Generally constant</td></tr>
+<tr><td><b>Frequency</b></td><td>50 Hz in India</td><td>Zero</td></tr>
+<tr><td><b>Source</b></td><td>AC generator, power stations</td><td>Cells, batteries, DC generator</td></tr>
+<tr><td><b>Transmission</b></td><td>Can be sent over long distances with less energy loss</td><td>Large energy loss over long distances</td></tr>
+<tr><td><b>Voltage change</b></td><td>Easily stepped up/down by a transformer</td><td>Cannot be changed by a transformer</td></tr>
+<tr><td><b>Storage</b></td><td>Cannot be stored in a battery</td><td>Can be stored in a battery</td></tr>
+<tr><td><b>Graph</b></td><td>Wave (sine curve)</td><td>Straight line parallel to time axis</td></tr>
+</table></div>
+<div class="box key"><h4>💡 Why is AC preferred for supply to homes?</h4><p>The main advantage of AC over DC is that AC can be <b>transmitted over long distances without much loss of energy</b>. Its voltage can be raised with a <b>step-up transformer</b> at the power station (so current and heating losses in the wires are low) and lowered again with a <b>step-down transformer</b> near our homes.</p></div>
+</section>
+
+<section id="house">
+<div class="sec-head"><span class="sec-num">5</span><h2>Domestic (household) electric circuits</h2></div>
+<p>Electricity reaches our homes from the pole or underground cable through the <b>mains supply at 220 V AC, 50 Hz</b>. A household circuit uses three wires:</p>
+<div class="tbl-wrap"><table>
+<tr><th>Wire</th><th>Old colour</th><th>New (IEC) colour</th><th>Potential / Role</th></tr>
+<tr><td><b>Live (positive)</b></td><td>Red</td><td>Brown</td><td>At 220 V; carries current into the appliance</td></tr>
+<tr><td><b>Neutral (negative)</b></td><td>Black</td><td>Light blue</td><td>At 0 V; completes the circuit (return path)</td></tr>
+<tr><td><b>Earth</b></td><td>Green</td><td>Green-yellow</td><td>Connected to a metal plate buried deep in the earth; safety wire</td></tr>
+</table></div>
+<p>The potential difference between the live and neutral wire in India is <b>220 V</b>.</p>
+<h3>Path of current in the house</h3>
+<ol class="steps">
+<li><b>Main fuse:</b> installed by the electricity board at the entry point; protects the whole house.</li>
+<li><b>Electricity meter:</b> records the electrical energy consumed in kilowatt-hour (kWh or “units”).</li>
+<li><b>Main switch and distribution box:</b> the supply is divided into separate circuits for different rooms, each with its own fuse or MCB.</li>
+</ol>
+<h3>Two separate circuits are used</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Circuit</th><th>Current rating</th><th>Appliances</th></tr>
+<tr><td><b>Low-power circuit</b></td><td>5 A</td><td>Bulbs, tube lights, fans</td></tr>
+<tr><td><b>High-power circuit</b></td><td>15 A</td><td>Geyser, room heater, electric iron, AC, refrigerator, washing machine</td></tr>
+</table></div>
+<figure class="fig zoomable "><img src="img/ac-dc/p03-002.webp" alt="Schematic of a domestic circuit: main supply, main fuse, meter, distribution box, then live, neutral and earth wires feeding appliances in parallel through 5 A and 15 A fuses" width="1400" height="718" loading="lazy" decoding="async"><figcaption><b>Fig. 2</b> Schematic diagram of a domestic electric circuit.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="box think"><h4>🤔 Why are appliances connected in parallel?</h4><ul>
+<li>Each appliance gets the <b>same voltage (220 V)</b>.</li>
+<li>Each appliance can be switched ON/OFF <b>independently</b> using its own switch.</li>
+<li>If one appliance fails or is switched off, the others keep working.</li>
+<li>Total resistance is less, so each appliance draws the current it needs.</li></ul></div>
+</section>
+
+<section id="earthing">
+<div class="sec-head"><span class="sec-num">6</span><h2>Earthing (earth wire)</h2></div>
+<p>Appliances with a <b>metallic body</b> (electric iron, toaster, refrigerator, geyser, washing machine) are connected to the earth wire. It is joined to a metal plate buried deep in the ground near the house.</p>
+<div class="box key"><h4>🛡️ Purpose of earthing</h4><p>If the live wire accidentally touches the metal body due to faulty insulation (<b>leakage of current</b>), the earth wire provides a <b>low-resistance path</b> for the current to flow into the earth.</p><p>This keeps the potential of the metal body equal to that of the earth (zero), so the user does not get a severe electric shock.</p></div>
+</section>
+
+<section id="faults">
+<div class="sec-head"><span class="sec-num">7</span><h2>Faults in household circuits</h2></div>
+<h3>(a) Short circuit</h3>
+<p>A <span class="term">short circuit</span> occurs when the <b>live wire and neutral wire come in direct contact</b>, usually because the insulation is damaged or the appliance is faulty. The resistance of the circuit becomes almost zero, so a very large current flows (I = V/R). This produces excessive heat and can cause sparks and fire.</p>
+<h3>(b) Overloading</h3>
+<p><span class="term">Overloading</span> occurs when <b>too many appliances are connected to a single socket</b>, or the supply voltage rises accidentally. The total current drawn exceeds the safe limit of the wires, which overheat and can catch fire.</p>
+<div class="box trick"><h4>🧠 Remember</h4><ul>
+<li><b>Short circuit</b> → live and neutral touch → resistance ≈ 0 → current becomes very high.</li>
+<li><b>Overloading</b> → too many appliances in one socket → total current exceeds safe limit.</li>
+<li>Both can cause fire; the fuse or MCB protects against both.</li></ul></div>
+</section>
+
+<section id="fuse">
+<div class="sec-head"><span class="sec-num">8</span><h2>Electric fuse and MCB</h2></div>
+<p>An <span class="term">electric fuse</span> is a safety device that protects circuits and appliances from damage due to short-circuiting or overloading.</p>
+<div class="ideas">
+<div class="idea"><h4>Principle</h4><p>Heating effect of electric current (Joule’s heating). When excess current flows, the fuse wire gets heated, <b>melts</b> and breaks the circuit.</p></div>
+<div class="idea"><h4>Material</h4><p>An alloy of tin and lead (or copper/aluminium in modern fuses) with a <b>low melting point</b> and suitable resistance.</p></div>
+<div class="idea"><h4>Connection</h4><p>Always connected <b>in series with the live wire</b>, so the appliance is cut off from the high-potential wire when it blows.</p></div>
+<div class="idea"><h4>Ratings</h4><p>Fuses are rated 1 A, 2 A, 3 A, 5 A, 10 A, 15 A etc. A fuse of <b>slightly higher rating</b> than the normal current of the appliance is used.</p></div>
+<div class="idea"><h4>MCB (Miniature Circuit Breaker)</h4><p>An automatic switch that trips (turns off) when the current exceeds a safe value. Unlike a fuse, it need not be replaced: it can simply be switched on again after the fault is repaired.</p></div>
+</div>
+</section>
+
+<section id="numericals">
+<div class="sec-head"><span class="sec-num">9</span><h2>Solved numericals</h2></div>
+<details class="qa"><summary><span class="qnum">1</span><span>An electric oven of 2 kW power rating is operated in a domestic circuit (220 V) that has a current rating of 5 A. What result do you expect?</span></summary><div class="ans">P = V × I ⇒ I = P / V = 2000 / 220 = <b>9.09 A</b>. The current drawn (9.09 A) is more than the rating of the circuit (5 A), so the fuse will melt / MCB will trip and the circuit will break. The oven should be used on the <b>15 A circuit</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>What fuse should be used for an electric iron of 1 kW operating at 220 V?</span></summary><div class="ans">I = P / V = 1000 / 220 = <b>4.54 A</b>. A fuse of slightly higher rating is needed, so a <b>5 A fuse</b> is suitable.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>How many times does the direction of AC in India change in one second?</span></summary><div class="ans">Frequency = 50 Hz, and the direction changes twice in every cycle. So it changes 2 × 50 = <b>100 times per second</b>, i.e. once every 1/100 s.</div></details>
+</section>
+
+<section id="safety">
+<div class="sec-head"><span class="sec-num">10</span><h2>Electrical safety measures</h2></div>
+<ul>
+<li>Use wires of good quality with proper insulation and correct current rating.</li>
+<li>Always use a fuse or MCB of proper rating in the live wire.</li>
+<li>Connect metallic appliances to the earth wire (three-pin plug).</li>
+<li>Do not connect too many appliances to one socket; avoid multi-plug overloading.</li>
+<li>Switch off the main supply before any repair; never touch switches with wet hands.</li>
+</ul>
+</section>
+
+<section id="revision">
+<div class="sec-head"><span class="sec-num word">Recap</span><h2>Quick revision</h2></div>
+<div class="box key"><h4>One-line points</h4><ul>
+<li>DC → one direction; AC → reverses direction periodically.</li>
+<li>India: 220 V, 50 Hz; AC changes direction every 1/100 s.</li>
+<li>Main advantage of AC: long-distance transmission with less energy loss.</li>
+<li>Live (red/brown) 220 V; Neutral (black/blue) 0 V; Earth (green): safety.</li>
+<li>5 A circuit → bulbs and fans; 15 A circuit → high-power appliances.</li>
+<li>Household appliances are connected in parallel.</li>
+<li>Short circuit: live touches neutral. Overloading: too many appliances in one socket.</li>
+<li>Fuse: works on heating effect; low melting point; in series with live wire.</li></ul></div>
+</section>
+
+<section id="quiz">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p>Tap an option. You will see the right answer and the reason straight away.</p>
+<div class="quiz">
+<div class="q"><p>1. The frequency of AC supply in India is…</p><div class="opts"><button type="button" class="opt">60 Hz</button><button type="button" class="opt" data-c>50 Hz</button><button type="button" class="opt">100 Hz</button><button type="button" class="opt">220 Hz</button></div><p class="why">India uses 220 V at 50 Hz.</p></div>
+<div class="q"><p>2. Which of these gives direct current?</p><div class="opts"><button type="button" class="opt">Power station</button><button type="button" class="opt">AC generator</button><button type="button" class="opt" data-c>Torch cell</button><button type="button" class="opt">House socket</button></div><p class="why">Cells and batteries give DC; power stations and AC generators give AC.</p></div>
+<div class="q"><p>3. The wire at zero potential in a house is the…</p><div class="opts"><button type="button" class="opt">live wire</button><button type="button" class="opt" data-c>neutral wire</button><button type="button" class="opt">earth wire</button><button type="button" class="opt">fuse wire</button></div><p class="why">Neutral is at 0 V and is the return path.</p></div>
+<div class="q"><p>4. A fuse is always connected…</p><div class="opts"><button type="button" class="opt">in parallel with the live wire</button><button type="button" class="opt">in series with the neutral wire</button><button type="button" class="opt" data-c>in series with the live wire</button><button type="button" class="opt">to the earth wire</button></div><p class="why">So the appliance is cut off from the high-potential wire when it blows.</p></div>
+<div class="q"><p>5. A short circuit happens when…</p><div class="opts"><button type="button" class="opt">too many appliances use one socket</button><button type="button" class="opt" data-c>live and neutral wires touch</button><button type="button" class="opt">the earth wire breaks</button><button type="button" class="opt">the fuse melts</button></div><p class="why">Resistance becomes almost zero and a very large current flows.</p></div>
+<div class="q"><p>6. Which circuit should a geyser use?</p><div class="opts"><button type="button" class="opt">5 A</button><button type="button" class="opt" data-c>15 A</button><button type="button" class="opt">1 A</button><button type="button" class="opt">Any one</button></div><p class="why">High-power appliances go on the 15 A circuit.</p></div>
+<div class="q"><p>7. Current drawn by a 1 kW iron at 220 V is about…</p><div class="opts"><button type="button" class="opt">2.2 A</button><button type="button" class="opt" data-c>4.5 A</button><button type="button" class="opt">9 A</button><button type="button" class="opt">15 A</button></div><p class="why">I = P/V = 1000/220 ≈ 4.54 A, so a 5 A fuse suits it.</p></div>
+<div class="q"><p>8. The main advantage of AC over DC is that AC…</p><div class="opts"><button type="button" class="opt">can be stored in batteries</button><button type="button" class="opt">never changes direction</button><button type="button" class="opt" data-c>can be sent far with less energy loss</button><button type="button" class="opt">has zero frequency</button></div><p class="why">Transformers step its voltage up and down, so line losses are low.</p></div>
+</div>
+<p class="score" aria-live="polite"></p>
+</section>
+
+<section id="answers">
+<div class="sec-head"><span class="sec-num word">Board</span><h2>Important questions (board pattern)</h2></div>
+<p>Tap a question to see its answer.</p>
+<details class="qa"><summary><span class="qnum">1</span><span>What is the difference between direct current and alternating current? Name one source of each. (2 marks)</span></summary><div class="ans">DC flows in one direction only; AC reverses its direction periodically. Source of DC: electric cell/battery. Source of AC: AC generator/power station.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Name the wire that is at zero potential in a household circuit.</span></summary><div class="ans">The <b>neutral wire</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Why is a fuse connected in series in the live wire?</span></summary><div class="ans">So that when excess current flows, the fuse melts and the appliance gets disconnected from the high-potential live wire, making it safe.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>What is the function of an earth wire? Why is it necessary to earth metallic appliances? (3 marks)</span></summary><div class="ans">The earth wire provides a low-resistance conducting path for current. If current leaks to the metal body of an appliance, it flows to the earth, keeping the body at earth potential, so the user does not get a severe shock.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>What precaution should be taken to avoid overloading of domestic circuits?</span></summary><div class="ans">Do not connect too many appliances to a single socket, and use a fuse/MCB of the correct rating in the circuit.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>Why is AC preferred over DC for long-distance transmission?</span></summary><div class="ans">AC can be transmitted over long distances with little loss of energy because its voltage can be stepped up and down easily with transformers.</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Why are copper or aluminium wires used for electrical transmission and not fuse wire alloy?</span></summary><div class="ans">Copper and aluminium have very low resistivity and high melting points, so they carry current with little heating. Fuse wire has a low melting point and is designed to melt.</div></details>
+</section>
+
+</main>
+<footer>
+<p><b>MT Classes</b>, S.K. Nagar, Motihari</p>
+<p>Maths and Science coaching for Classes 8 to 10 (CBSE)</p>
+<p><a href="tel:+917091609997">7091609997</a> &nbsp;&nbsp; <a href="mailto:mtclassesmotihari@gmail.com">mtclassesmotihari@gmail.com</a> &nbsp;&nbsp; <a href="https://www.youtube.com/@MTClassesMotihari" target="_blank" rel="noopener">YouTube: @MTClassesMotihari</a></p>
+<p style="font-size:13.5px;opacity:.8;margin-top:14px">Notes based on NCERT Science (Class 10), Chapter: Magnetic Effects of Electric Current.</p>
+</footer>
+<script>
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+})();
+
+
+</script>
+</body>
+</html>
