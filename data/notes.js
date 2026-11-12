@@ -37,7 +37,8 @@ window.MT_NOTES = {
       "Motion",
       { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html" },
       { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" },
-      { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html" } ] },
+      { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html" },
+      { title: "Reproduction: How Life Continues", label: "Chapter 11: notes, textbook diagrams, meiosis bead lab, cycle and pollen tools, all NCERT answers", file: "notes/class9-science-reproduction-how-life-continues.pdf", page: "notes/class9-science-reproduction-how-life-continues.html" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",
