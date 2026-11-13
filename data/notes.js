@@ -20,7 +20,7 @@ window.MT_NOTES = {
       { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf", page: "notes/class10-science-extraction-of-metals-and-corrosion.html" },
       { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf", page: "notes/class10-science-carbon-and-its-compounds.html" },
       "Life Processes", "Control and Coordination",
-      { title: "How do Organisms Reproduce?", label: "Chapter 7: notes with NCERT diagrams, CBSE board questions 2023–2026, tools and all NCERT answers", file: "notes/class10-science-how-do-organisms-reproduce-ncert.pdf", page: "notes/class10-science-how-do-organisms-reproduce-ncert.html" }, "Heredity",
+      { title: "How do Organisms Reproduce?", label: "Chapter 7: notes with NCERT diagrams, CBSE board questions 2023–2026, tools and all NCERT answers", file: "notes/class10-science-how-do-organisms-reproduce-ncert.pdf", page: "notes/class10-science-how-do-organisms-reproduce-ncert.html" }, { title: "Heredity", label: "Chapter 8: notes with NCERT diagrams, Punnett square tool, CBSE board questions 2023–2026 and all NCERT answers", file: "notes/class10-science-heredity.pdf", page: "notes/class10-science-heredity.html" },
       "Light – Reflection and Refraction", "The Human Eye and the Colourful World",
       { title: "Electricity", label: "Handwritten notes", file: "notes/class10-science-electricity.pdf" },
       { title: "Magnetic Effects of Electric Current", label: "AC & DC Current and Household Circuits", file: "notes/class10-science-ac-dc-household-circuits.pdf", page: "notes/class10-science-ac-dc-household-circuits.html" },
