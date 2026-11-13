@@ -1726,6 +1726,17 @@ hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
   ], true);
 
 })();
+(function () {
+  var seg = document.getElementById('pyq-seg'); if (!seg) return;
+  seg.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      seg.querySelectorAll('button').forEach(function (x) { x.classList.remove('on'); });
+      b.classList.add('on');
+      var y = b.dataset.y;
+      document.querySelectorAll('.pyq').forEach(function (p) { p.style.display = (y === 'all' || p.dataset.y === y) ? '' : 'none'; });
+    });
+  });
+})();
 </script>
 </body>
 </html>
