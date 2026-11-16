@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surface Areas and Volumes | Class 10 Maths Chapter 12 Notes, 3D Solid Builder, NCERT Solutions, CBSE and Bihar Board Questions | MT Classes Motihari</title>
+<meta name="description" content="Class 10 Maths (NCERT) Chapter 12, Surface Areas and Volumes: surface area and volume of combinations of cuboid, cube, cylinder, cone, sphere and hemisphere, with every NCERT figure, a 3D Solid Builder with 9 shapes, lead-shot and melt-and-recast labs, 4 games, CBSE 2023 to 2026 and Bihar Board questions, answers to all 17 NCERT exercise questions and a quiz.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+/* chapter 9 extras */
+.snap .tbl-wrap table{font-size:15.5px}
+.snap .box.calc{margin:0}
+.box.calc .big{margin:6px 0 0}
+.ans .fig{margin:6px 0 10px}
+.chem{white-space:normal}
+
+/* chapter 3 extras: hero picture, tools, flowcharts */
+.hero-pic img{width:100%;height:auto;max-width:440px;display:block;margin:0 auto;border-radius:18px;border:3px solid var(--gold);box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
+.tool{background:#fff;border:2px solid var(--navy);border-radius:16px;padding:14px 16px;margin:18px 0}
+.tool>h4:first-child{margin:0 0 4px;font-size:19px}
+.tool .hint{font-size:15px;color:var(--muted);margin:0 0 10px}
+.tool input[type=range]{display:block;width:100%;accent-color:#0E2148;margin:6px 0 2px}
+.tool label{font-weight:600;font-size:16px}
+.tool svg{width:100%;height:auto;display:block}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.seg button,.tbtn{font:600 15.5px 'Mukta',sans-serif;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.seg button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tbtn.solid{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.readout{background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:8px 12px;font-weight:600;margin-top:10px}
+.readout b{font:800 19px 'Baloo 2',sans-serif}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+.row-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0}
+.row-in input[type=number]{width:110px;font:600 17px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+.bar{height:22px;border-radius:8px;background:#EEF2F9;overflow:hidden;margin:4px 0 8px}
+.bar i{display:block;height:100%;border-radius:8px}
+.tree{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.tree>div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.tree h4{margin:0 0 8px;text-align:center;background:var(--navy);color:#fff;border-radius:10px;padding:6px}
+.tree .lvl{border-left:3px solid var(--gold);padding-left:10px;margin:8px 0}
+.tree .lvl b{display:block}
+.tree .lvl span{font-size:15px;color:var(--muted)}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.cards3 .fig{margin:0;display:flex;flex-direction:column}
+.cards3 .fig figcaption{font-size:14.5px}
+.cards3 .fig p{font-size:15px;margin:6px 0 0;line-height:1.45}
+.who{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px;margin:0}
+.who .clue{font:700 19px 'Baloo 2',sans-serif;color:var(--navy);min-height:3em;margin:4px 0 10px}
+.who .opts{margin-bottom:8px}
+.yes{color:var(--green);font-weight:700}.no{color:var(--redd);font-weight:700}
+@media (max-width:760px){
+  .tool-grid,.tree{grid-template-columns:1fr}
+  .cards3{grid-template-columns:1fr 1fr}
+  .hero-pic{order:-1;margin:0 0 -8px}
+  .hero-pic img{max-width:340px}
+}
+@media print{.hero-pic{order:0!important;margin:0!important}.hero-pic img{max-width:200px}.fig img{max-height:240px!important}.cards3 .fig img,.cards2 .fig img{max-height:200px!important}.duo{grid-template-columns:1fr 1fr!important}.ideas{gap:6px}.cards3{grid-template-columns:repeat(3,1fr)}.tree{grid-template-columns:1fr 1fr}.hero-in{grid-template-columns:1fr 200px}}
+
+/* chapter 11 extras */
+.hero h1{font-size:clamp(36px,6vw,60px)}
+hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
+.bead-found{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bead-found span{display:inline-flex;gap:3px;padding:4px 7px;border:1.5px solid var(--line);border-radius:999px;background:#FBFCFF}
+.bead-found i{width:14px;height:14px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.25)}
+.sci-photo{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:start}
+.sci-photo img{width:110px;height:auto;border-radius:12px;border:2px solid var(--gold);background:#fff}
+.sci-photo p{margin:0}
+.ans .fig{background:#fff}
+.cards2>.idea,.cards3>.idea{margin:0}
+.tool input[type=date]{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+@media (max-width:760px){.sci-photo{grid-template-columns:84px 1fr}.sci-photo img{width:84px}.cards3{grid-template-columns:1fr}}
+@media print{.sci-photo img{width:80px}}
+.sec-num.long{font-size:15px;letter-spacing:-.3px}
+@media print{.cards3{grid-template-columns:repeat(3,1fr)!important}.cards3 .fig img,.cards2 .fig img{max-height:160px!important}}
+</style>
+<style>
+.pyq .qnum{flex:none}
+.yr{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px/1.2 'Mukta',sans-serif;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.pyq details.qa summary{flex-wrap:wrap;row-gap:4px}
+.pyq{margin:6px 0}
+.score2{font-weight:700;color:var(--navy)}
+.stepper{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.stepper .st{border:1.5px solid var(--line);border-radius:12px;padding:6px;text-align:center;background:#FBFCFF;opacity:.55}
+.stepper .st.past{opacity:.85}
+.stepper .st.now{opacity:1;border-color:var(--gold);background:var(--goldt);box-shadow:0 0 0 2px var(--gold)}
+.stepper .em{display:block;font-size:24px;line-height:1.2}
+.stepper .nm{font-size:13.5px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 15.5px 'Mukta',sans-serif;padding:7px 14px;border-radius:12px;border:1.5px solid var(--navy2);background:#fff;color:var(--navy);cursor:pointer}
+.chip.ok{background:#E3F4EA;border-color:var(--green);color:#1F5A38}
+.chip.shake{animation:shk .35s}
+@keyframes shk{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+#who .opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fig.wide img{max-width:760px;margin:0 auto}
+@media (max-width:760px){.stepper{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.pyq{display:block!important}.yr{background:none;color:var(--navy);border:1px solid var(--navy)}}
+</style>
+<!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+/* chapter 14 probability */
+#bag-svg{max-width:300px;margin:0 auto}
+#spin-svg{max-width:300px;margin:0 auto}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.12;font-size:.86em;margin:0 2px}
+.fr>span{display:block;padding:0 3px}
+.fr>span:first-child{border-bottom:1.6px solid currentColor}
+.formula .fr{font-size:.92em}
+.big .fr{font-size:.82em}
+.ebar{text-decoration:overline;text-decoration-thickness:2px}
+.quote{margin:0 0 16px;padding:12px 18px;border-left:5px solid var(--gold);background:#fff;border-radius:0 12px 12px 0;font-style:italic;color:var(--navy2)}
+.quote span{display:block;font-style:normal;color:var(--muted);font-size:15px;text-align:right}
+.sci-photo .fig img{width:110px}
+.snap{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.snap .big{font-size:18px}
+.tool select.sel{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px;background:#fff;max-width:100%}
+.deck{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:4px;margin:6px 0 4px}
+.pc{background:#fff;border:1.5px solid #9AA6BD;border-radius:6px;aspect-ratio:5/7;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;color:#1D2433;transition:opacity .2s,transform .2s}
+.pc b{font:800 15px 'Baloo 2',sans-serif;color:inherit}
+.pc i{font-style:normal;font-size:17px}
+.pc.red{color:#C0392B}
+.pc.off{opacity:.18}
+.pc:not(.off){border-color:var(--gold);background:#FFFBEF}
+.pc.pick{transform:scale(1.18);box-shadow:0 0 0 3px #2A4A86;opacity:1;z-index:1;position:relative}
+.bag-ctl{display:flex;flex-wrap:wrap;gap:8px 16px;margin:4px 0 8px}
+.bag-c{display:flex;align-items:center;gap:6px}
+.bag-c i{width:16px;height:16px;border-radius:50%;display:inline-block}
+.bag-c span{min-width:3.4em;font-weight:600}
+.bag-c b{min-width:1.4em;text-align:center;font:800 18px 'Baloo 2',sans-serif}
+.bag-c .tbtn{padding:2px 12px;font-size:18px;line-height:1.2}
+.bag-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:600}
+.bag-row i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.dgrid{font-size:14.5px}
+.dgrid th,.dgrid td{text-align:center;padding:6px 4px}
+.dgrid th.g{background:#6B7280}
+.dgrid th.b{background:#2A4A86;width:44px}
+.dgrid th.corner{font-size:12px;font-weight:600;background:var(--navy);white-space:nowrap}
+.dgrid td{transition:background .2s;white-space:nowrap;border-left:1px solid var(--line)}
+.dgrid tr:nth-child(even) td{background:#fff}
+.dgrid td.on,.dgrid tr:nth-child(even) td.on{background:#FFE6A3;color:#6B4A00;font-weight:700}
+.numgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px;margin:8px 0}
+.numgrid span{text-align:center;font-size:13.5px;padding:3px 0;border-radius:6px;background:#F4F7FC;color:#5B6475}
+.numgrid span.on{background:var(--gold);color:var(--navy);font-weight:700}
+.row-in input[type=number]{width:80px}
+.coin3d{width:96px;height:96px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font:800 42px 'Baloo 2',sans-serif;color:var(--navy);background:radial-gradient(circle at 35% 35%,#FFE7A6,#E3B23C 60%,#8A6510);border:3px solid #8A6510;box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+.coin3d.tail{background:radial-gradient(circle at 35% 35%,#E9EEF8,#9AA6BD 60%,#56647F);border-color:#56647F}
+.coin3d.flip{animation:flip .6s}
+@keyframes flip{0%{transform:rotateY(0) translateY(0)}50%{transform:rotateY(540deg) translateY(-26px)}100%{transform:rotateY(1080deg) translateY(0)}}
+.big-formula div{font-size:22px}
+@media (max-width:760px){
+  .deck{gap:2px}
+  .pc{border-radius:4px;border-width:1px}
+  .pc b{font-size:11px}.pc i{font-size:12px}
+  .dgrid{font-size:12px}
+  .dgrid th,.dgrid td{padding:5px 2px}
+  .dgrid th.corner{font-size:10px;white-space:normal}
+  .numgrid span{font-size:12px}
+  .big-formula div{font-size:17px}
+  .sci-photo .fig img{width:84px}
+}
+@media (prefers-reduced-motion:reduce){.coin3d.flip{animation:none}}
+@media print{.dgrid td{font-size:10pt}}
+</style>
+<style>
+/* chapter 13 statistics */
+.hero .pitch b,.hero .pitch i{color:var(--gold)}
+p.calc.big{font:700 20px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.starbar .gmenu{display:none}
+.gmenu.out{display:flex;margin:0 0 14px}
+.gmenu.out a{color:var(--navy);border-color:var(--line);background:#fff}
+.tcap{font:700 15px 'Mukta',sans-serif;color:var(--goldd);margin:14px 0 -8px}
+details.qa summary>span:last-child{min-width:0;flex:1}
+.pyq details.qa summary>span:last-child{flex:1 1 100%}
+details.qa summary .tbl-wrap{margin:8px 0 2px;font-weight:400}
+tr.tot td{background:var(--goldt)!important;font-weight:700;color:var(--navy);border-top:2px solid var(--gold)}
+table.horiz th:first-child,table.horiz td:first-child{text-align:left;white-space:nowrap}
+table.horiz td,table.horiz th{white-space:nowrap}
+.cards3 .idea p{font-size:16px}
+.proof .formula{margin:8px 0 0}
+.stp{display:inline-flex;align-items:center;gap:6px}
+.stp b{min-width:1.8em;text-align:center}
+.tbtn.mini{padding:0 9px;font-size:16px;line-height:1.5}
+.mini-lab{font-size:13.5px;color:var(--muted);margin-left:6px}
+#mo-btns{gap:4px 8px}
+.row-in label{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.row-in input[type=number]{width:96px}
+/* arcade */
+.starbar{position:sticky;top:6px;z-index:5;background:var(--navy);color:#fff;border-radius:16px;padding:10px 14px;margin:0 0 16px;box-shadow:0 10px 24px -14px rgba(14,33,72,.7)}
+.starbar>div:first-child{font:700 18px 'Baloo 2',sans-serif}
+.starbar b{color:var(--gold);font-size:24px;display:inline-block}
+.starbar b.pop{animation:pop .5s}
+@keyframes pop{50%{transform:scale(1.6)}}
+.starbar .bar{background:#24407A;height:10px;margin:6px 0 8px}
+.badge{display:inline-block;margin-left:8px;background:var(--gold);color:var(--navy);border-radius:999px;padding:1px 10px;font:700 14px 'Mukta',sans-serif}
+.gmenu{display:flex;flex-wrap:wrap;gap:6px}
+.gmenu a{color:#fff;text-decoration:none;font-size:14px;border:1px solid #4D6BA8;border-radius:999px;padding:2px 10px}
+.game{background:#fff;border:2px solid var(--navy);border-radius:18px;padding:14px 16px;margin:18px 0;scroll-margin-top:110px;box-shadow:0 8px 0 -2px var(--gold)}
+.game>h3{margin:0 0 4px}
+.game .hint{font-size:15.5px;color:var(--muted);margin:0 0 8px}
+.game svg{width:100%;height:auto;display:block}
+.game .clue{font:700 18px 'Baloo 2',sans-serif;color:var(--navy);margin:4px 0 8px}
+.bignum{font:800 26px 'Baloo 2',sans-serif;min-width:1.6em;text-align:center;color:var(--redd)}
+#ss-svg.level{background:#E7F6EC;border-radius:12px}
+.game input[type=range]{width:100%;accent-color:#E3B23C}
+.opts.three{grid-template-columns:repeat(3,1fr)}
+.mem{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:6px 0 10px}
+.mcard{position:relative;min-height:86px;border-radius:12px;border:2px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;padding:6px;font:600 14px/1.25 'Mukta',sans-serif;transition:transform .25s}
+.mcard .face{display:none}
+.mcard .back{font:800 30px 'Baloo 2',sans-serif;color:var(--gold)}
+.mcard.up,.mcard.done{background:#fff;color:var(--ink);transform:rotateY(180deg) scaleX(-1)}
+.mcard.up .face,.mcard.done .face{display:block}
+.mcard.up .back,.mcard.done .back{display:none}
+.mcard .face.sym{font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.mcard.done{border-color:var(--green);background:#E7F6EC}
+.case{background:#FBF7EC;border:1.5px dashed var(--goldd);border-radius:12px;padding:10px 12px}
+.case-tag{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px 'Mukta',sans-serif;border-radius:6px;padding:2px 8px;margin-bottom:6px}
+.speed-top{display:flex;gap:16px;align-items:center}
+.timer{width:58px;height:58px;border-radius:50%;border:4px solid var(--gold);display:grid;place-items:center;font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.timer.low{border-color:var(--red);color:var(--redd);animation:pop 1s infinite}
+.game.flash-ok{box-shadow:0 0 0 4px var(--green)}
+.game.flash-bad{box-shadow:0 0 0 4px var(--red)}
+.slots{display:flex;flex-wrap:wrap;gap:6px;min-height:46px;background:#F4F7FC;border-radius:12px;padding:8px;margin:6px 0 10px}
+.slot{min-width:34px;height:32px;border-bottom:3px solid #B9CBEA;display:grid;place-items:center;font:700 17px 'Baloo 2',sans-serif;color:var(--navy);padding:0 4px}
+.slot.ok{border-color:var(--green)}
+.chip:disabled{opacity:.35;cursor:default}
+input.rung{width:84px;font:600 16px 'Mukta',sans-serif;padding:3px 6px;border:1.5px solid var(--line);border-radius:8px;text-align:center}
+input.rung.good{border-color:var(--green);background:#E7F6EC}
+input.rung.bad{border-color:var(--red);background:var(--redt)}
+@media (max-width:760px){.mem{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.mcard{min-height:78px;font-size:12px;padding:4px}.mcard .face.sym{font-size:18px}.opts.three{grid-template-columns:repeat(3,1fr)}.starbar>div:first-child{font-size:16px}.game{padding:12px}}
+@media (max-width:420px){.mcard{font-size:11px}}
+@media print{.tcap{margin-top:8px}tr.tot td{background:#fff!important}}
+</style>
+<style>
+/* chapter 12 surface areas and volumes */
+.kit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.kcard{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:10px 12px;text-align:center}
+.kcard svg{width:100%;max-width:130px;height:auto;display:block;margin:0 auto}
+.kcard svg text{font-family:'Mukta',sans-serif;fill:#0E2148;font-weight:700}
+.kcard h4{margin:4px 0 2px}
+.kcard p{margin:0;font:600 16px/1.55 'Mukta',sans-serif;color:var(--navy)}
+.kcard small{font-weight:400;color:var(--muted);font-size:13.5px}
+.fig.tiny img{max-width:200px}
+.proof .duo{align-items:start}
+.proof .duo .fig{margin:0}
+#sb-svg,#hu-svg{max-width:360px;margin:0 auto;background:linear-gradient(#F4F8FD,#fff);border-radius:12px}
+#sb-svg .vis,#hu-svg .vis{fill:#FFD978;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .vis2,#hu-svg .vis2{fill:#E8A93A;stroke:#0E2148;stroke-width:1.6;stroke-dasharray:5 3}
+#sb-svg .hid,#hu-svg .hid{fill:rgba(217,83,79,.14);stroke:#D9534F;stroke-width:2.4;stroke-dasharray:7 5}
+#sb-svg .wat{fill:#5DB7F0;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .air{fill:#fff;stroke:#0E2148;stroke-width:2}
+#sb-svg .ol{fill:#F2F6FB;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .ol2{fill:none;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .olh{fill:none;stroke:#7C8AA5;stroke-width:1.5;stroke-dasharray:4 4}
+.dg .lab,svg .lab{font:600 13px 'Mukta',sans-serif;fill:#0E2148}
+.sb-grid{align-items:start}
+.sb-title{font-size:16px;margin:0 0 8px}
+.sb-mode{margin:10px 0 0;justify-content:center}
+.sb-out ul{margin:2px 0 8px}
+.sb-out p{margin:4px 0}
+.sb-out .sb-hid{color:var(--redd);font-weight:500;font-size:15.5px}
+.sb-out .sb-total{font:700 19px 'Baloo 2',sans-serif;color:var(--navy)}
+.sb-out .sb-total b{color:var(--goldd)}
+#sh-svg{max-width:320px;margin:0 auto}
+.melt-row{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:start}
+.melt-row>div>b{display:block;margin-bottom:4px}
+.melt-arrow{font:800 30px 'Baloo 2',sans-serif;color:var(--goldd);align-self:center}
+.mt-in{display:flex!important;align-items:center;gap:6px;margin:6px 0;font-size:15.5px}
+.mt-in input{width:90px;font:600 16px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:10px}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.ok{background:#E3F4EA!important;border-color:var(--green)!important;color:#1F5A38!important}
+.de-lines{flex-direction:column;align-items:stretch}
+.de-lines .chip{text-align:left}
+.mcard .face{font-size:13.5px}
+.cards3 .idea h4{font-size:17px}
+@media (max-width:760px){
+  .kit{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kcard p{font-size:15px}
+  .melt-row{grid-template-columns:1fr}
+  .proof .duo .fig img{max-height:240px;width:auto;max-width:100%;margin:0 auto}
+  .melt-arrow{transform:rotate(90deg);justify-self:center}
+}
+@media print{.kit{grid-template-columns:repeat(3,1fr)}.kcard,.proof{break-inside:avoid}.fig.tiny img{max-height:180px!important}}
+.flow li:last-child b{color:var(--gold)}
+
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>Surface Areas and Volumes</h1>
+<p class="sub">Class 10 Maths, Chapter 12 (NCERT, CBSE and Bihar Board 2026-27)</p>
+<p class="pitch">Glue solids together, then learn what to <b>paint</b> and what to <b>pour</b>. Every NCERT figure, a <b>3D Solid Builder</b> with 9 shapes, a lead-shot lab, a melt-and-recast machine, a <b>Shape Arcade of 4 games</b>, CBSE 2023–2026 and Bihar Board questions, all 17 NCERT exercise questions solved and a 15-question quiz.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#builder">🧱 Solid Builder</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#pyq">Board questions</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-atom" aria-hidden="true">
+<svg class="anim" viewBox="0 0 400 360">
+<defs>
+<linearGradient id="hg-cone" x1="0" x2="1"><stop offset="0" stop-color="#C98A1E"/><stop offset=".45" stop-color="#F3C969"/><stop offset="1" stop-color="#B07514"/></linearGradient>
+<radialGradient id="hg-scoop" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FFE2EC"/><stop offset=".6" stop-color="#F39BB8"/><stop offset="1" stop-color="#C9577D"/></radialGradient>
+<clipPath id="hg-clip"><rect x="0" y="40" width="400" height="320"><animate attributeName="y" values="360;40;40;360" keyTimes="0;.45;.85;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+</defs>
+<circle cx="200" cy="180" r="160" fill="none" stroke="#2A4A86" stroke-width="1.5" stroke-dasharray="4 7"><animateTransform attributeName="transform" type="rotate" from="0 200 180" to="360 200 180" dur="40s" repeatCount="indefinite"/></circle>
+<path d="M120 160 L200 330 L280 160 Z" fill="url(#hg-cone)" stroke="#0E2148" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="#8A6510" stroke-width="1.4" opacity=".55"><path d="M140 202 L250 202"/><path d="M160 245 L232 245"/><path d="M150 180 L205 290"/><path d="M190 168 L232 260"/><path d="M250 180 L195 290"/></g>
+<path d="M120 160 A80 80 0 0 1 280 160 Z" fill="url(#hg-scoop)" stroke="#0E2148" stroke-width="3"/>
+<g clip-path="url(#hg-clip)" opacity=".55"><path d="M120 160 L200 330 L280 160 Z" fill="#5DB7F0"/><path d="M120 160 A80 80 0 0 1 280 160 Z" fill="#5DB7F0"/></g>
+<ellipse cx="200" cy="160" rx="80" ry="20" fill="none" stroke="#D9534F" stroke-width="3" stroke-dasharray="8 6"><animate attributeName="stroke-dashoffset" values="0;28" dur="1.5s" repeatCount="indefinite"/></ellipse>
+<text x="300" y="168" font-family="Baloo 2,sans-serif" font-weight="800" font-size="17" fill="#FF8C86">hidden!</text>
+<text x="200" y="40" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="19" fill="#E3B23C">paint the outside · pour the inside</text>
+<text x="200" y="356" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="21" fill="#E3B23C">V = ⅔πr³ + ⅓πr²h</text>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a href="#start"><span>12.1</span>Introduction: the basic solids</a></li>
+<li><a href="#formulas"><span>Kit</span>Formula kit for 6 solids</a></li>
+<li><a href="#glue"><span>Idea</span>The glue rule: paint vs pour</a></li>
+<li><a href="#sa"><span>12.2</span>Surface area: Examples 1 to 4</a></li>
+<li><a href="#builder"><span>🧱</span>3D Solid Builder (9 shapes)</a></li>
+<li><a href="#vol"><span>12.3</span>Volume: Examples 5 to 7</a></li>
+<li><a href="#labs"><span>Labs</span>Lead shots, melt-and-recast, units</a></li>
+<li><a href="#local"><span>Bihar</span>Maths around Motihari</a></li>
+<li><a href="#mistakes"><span>Traps</span>Common mistakes</a></li>
+<li><a href="#map"><span>Map</span>Mind map and 4-step method</a></li>
+<li><a href="#arcade"><span>🎮</span>Shape Arcade: 4 games</a></li>
+<li><a href="#pyq"><span>Board</span>CBSE and Bihar Board questions</a></li>
+<li><a href="#practice"><span>Practice</span>Board-pattern practice</a></li>
+<li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
+<li><a href="#answers"><span>NCERT</span>Answers to all 17 exercise questions</a></li>
+</ol>
+</nav>
+
+<div class="box key"><h4>📌 Chapter snapshot</h4><ul>
+<li>Chapter 12 of NCERT Class 10 Mathematics (reprint 2026-27): sections 12.1 to 12.4, <b>7 solved examples</b> and <b>two exercises (9 + 8 = 17 questions)</b>.</li>
+<li>Part of the unit <b>Mensuration</b> (10 marks in the CBSE 80-mark paper, shared with Areas Related to Circles). This chapter usually gives <b>1 or 2 MCQs</b> (curved surface area of a cone, TSA of a hemisphere, an assertion–reason) and one <b>3-mark</b> question on a combined solid (2023, 2025, 2026: dome room, capsule, ice-cream cone).</li>
+<li>In the <b>Bihar Board</b> paper (objective + subjective), expect quick formula MCQs (sphere volume, cuboid lateral surface, cubes from a cube) and a 2 to 5-mark combined-solid question.</li>
+<li>Frustum of a cone and “conversion of solids” were <b>removed</b> from the NCERT book. Melting-and-recasting still shows up in Bihar Board and old papers, so a short lab is included as an extra.</li></ul></div>
+
+<section id="start">
+<div class="sec-head"><span class="sec-num">12.1</span><h2>Introduction: from single solids to combinations</h2></div>
+<p class="lead">In Class IX you found surface areas and volumes of a <b>cuboid, cone, cylinder and sphere</b>. Real objects are rarely one solid. A tanker is a cylinder with two hemispheres, a test tube is a cylinder with a hemisphere, an ice-cream is a cone with a hemisphere. This chapter is about such <span class="term">combinations of solids</span>.</p>
+<figure class="fig wide zoomable"><img src="img/surface-volumes/fig12-1.webp" alt="NCERT Fig. 12.1: a cuboid, a cone, a cylinder and a sphere" width="900" height="248" loading="lazy" decoding="async"><figcaption><b>Fig. 12.1</b> The basic solids: (i) cuboid, (ii) cone, (iii) cylinder, (iv) sphere</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="cards2 stack-m">
+<figure class="fig zoomable"><img src="img/surface-volumes/fig12-2.webp" alt="NCERT Fig. 12.2: an oil tanker truck whose container is a cylinder with two hemispherical ends" width="727" height="406" loading="lazy" decoding="async"><figcaption><b>Fig. 12.2</b> Tanker = hemisphere + cylinder + hemisphere</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<figure class="fig tiny zoomable"><img src="img/surface-volumes/fig12-3.webp" alt="NCERT Fig. 12.3: a test tube" width="193" height="510" loading="lazy" decoding="async"><figcaption><b>Fig. 12.3</b> Test tube = cylinder + hemisphere</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+</div>
+<div class="box think"><h4>🤔 The whole chapter in one question</h4><p>When two solids are joined, <b>which surfaces can you still touch</b> (surface area) and <b>how much space is inside</b> (volume)? Surface area needs care because some surfaces get hidden. Volume is easy: it just adds up (or subtracts, when something is scooped out).</p></div>
+</section>
+
+<section id="formulas">
+<div class="sec-head"><span class="sec-num word">Kit</span><h2>Formula kit for the six basic solids</h2></div>
+<p>Learn these perfectly first. Every question in this chapter is built out of them. r = radius, h = height, l = slant height, a = edge.</p>
+<div class="kit">
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M20 40 L70 40 L70 88 L20 88 Z" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><path d="M20 40 L44 22 L94 22 L70 40 Z" fill="#E4F2FD" stroke="#0E2148" stroke-width="2"/><path d="M70 40 L94 22 L94 70 L70 88 Z" fill="#A9D3F5" stroke="#0E2148" stroke-width="2"/><text x="44" y="99" font-size="11" text-anchor="middle">l</text><text x="88" y="86" font-size="11">b</text><text x="10" y="68" font-size="11">h</text></svg><h4>Cuboid</h4><p>LSA = 2h(l + b)<br>TSA = 2(lb + bh + hl)<br>V = l × b × h<br><small>Diagonal = √(l² + b² + h²)</small></p></div>
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M26 38 L70 38 L70 86 L26 86 Z" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><path d="M26 38 L46 22 L90 22 L70 38 Z" fill="#E4F2FD" stroke="#0E2148" stroke-width="2"/><path d="M70 38 L90 22 L90 70 L70 86 Z" fill="#A9D3F5" stroke="#0E2148" stroke-width="2"/><text x="48" y="99" font-size="11" text-anchor="middle">a</text></svg><h4>Cube</h4><p>LSA = 4a²<br>TSA = 6a²<br>V = a³<br><small>Diagonal = √3 a</small></p></div>
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M30 20 L30 80 A30 9 0 0 0 90 80 L90 20" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><ellipse cx="60" cy="20" rx="30" ry="9" fill="#E4F2FD" stroke="#0E2148" stroke-width="2"/><path d="M60 20 L90 20" stroke="#D9534F" stroke-width="2"/><text x="72" y="16" font-size="11">r</text><text x="96" y="54" font-size="11">h</text></svg><h4>Cylinder</h4><p>CSA = 2πrh<br>TSA = 2πr(r + h)<br>V = πr²h</p></div>
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M30 80 L60 12 L90 80 A30 9 0 0 1 30 80 Z" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><path d="M30 80 A30 9 0 0 1 90 80" fill="none" stroke="#0E2148" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M60 12 L60 80 L90 80" fill="none" stroke="#D9534F" stroke-width="1.6"/><text x="64" y="50" font-size="11">h</text><text x="80" y="44" font-size="11">l</text><text x="72" y="77" font-size="10">r</text></svg><h4>Cone</h4><p>l = √(r² + h²)<br>CSA = πrl<br>TSA = πr(l + r)<br>V = ⅓πr²h</p></div>
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><circle cx="60" cy="52" r="38" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><ellipse cx="60" cy="52" rx="38" ry="10" fill="none" stroke="#0E2148" stroke-width="1.2" stroke-dasharray="3 3"/><path d="M60 52 L98 52" stroke="#D9534F" stroke-width="2"/><text x="76" y="48" font-size="11">r</text></svg><h4>Sphere</h4><p>SA = 4πr²<br>V = <sup>4</sup>⁄<sub>3</sub>πr³<br><small>Only one surface: all of it is curved</small></p></div>
+<div class="kcard"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M22 36 A38 38 0 0 0 98 36 Z" fill="#CFE6FA" stroke="#0E2148" stroke-width="2"/><ellipse cx="60" cy="36" rx="38" ry="10" fill="#E4F2FD" stroke="#0E2148" stroke-width="2"/><path d="M60 36 L98 36" stroke="#D9534F" stroke-width="2"/><text x="76" y="32" font-size="11">r</text></svg><h4>Hemisphere</h4><p>CSA = 2πr²<br>TSA = 3πr²<br>V = <sup>2</sup>⁄<sub>3</sub>πr³</p></div>
+</div>
+<div class="box trick"><h4>🧠 Memory hooks</h4><ul>
+<li><b>Hemisphere TSA = 3πr²</b>: the curved bowl (2πr²) + the flat lid (πr²). This exact fact was asked in CBSE 2025 and 2026.</li>
+<li><b>Cone = ⅓ cylinder</b>: a cone of the same r and h holds exactly one-third of the water a cylinder holds. <b>Hemisphere = ⅔ of that cylinder</b> (when h = r). So cone : hemisphere : cylinder = 1 : 2 : 3 (Archimedes’ favourite result).</li>
+<li><b>Slant height l</b> only appears in the cone’s <b>surface</b>, never in its volume. Volume uses the vertical height h.</li>
+<li>Squares for area (cm²), cubes for volume (cm³). 1 litre = 1000 cm³, 1 m³ = 1000 litres.</li></ul></div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Use π =</th><th>When</th><th>Nice numbers</th></tr></thead><tbody><tr><td><b>22/7</b></td><td>“Unless stated otherwise” in NCERT; radii like 7, 3.5, 14, 21, 0.7</td><td>π × 7² = 154, π × 3.5² = 38.5, π × 14 = 44</td></tr><tr><td><b>3.14</b></td><td>When the question says so (Examples 3, 6, 7; Ex 12.2 Q6, Q8)</td><td>3.14 × 2.5² = 19.625</td></tr><tr><td><b>leave as π</b></td><td>“in terms of π” (Ex 12.2 Q1)</td><td>keep 2π, ⅓π … till the end</td></tr></tbody></table></div>
+</section>
+
+<section id="glue">
+<div class="sec-head"><span class="sec-num word">Idea</span><h2>The glue rule: what to paint, what to pour</h2></div>
+<p>NCERT explains it with the tanker (Fig. 12.4): it is made of a cylinder with a hemisphere stuck on each end. Once glued, the two flat circles where they meet are <b>inside</b> the object. You cannot paint them.</p>
+<figure class="fig wide zoomable"><img src="img/surface-volumes/fig12-4.webp" alt="NCERT Fig. 12.4: two hemispheres and a cylinder being joined into one capsule-shaped solid" width="900" height="86" loading="lazy" decoding="async"><figcaption><b>Fig. 12.4</b> Three pieces become one. The shaded flat circles disappear inside.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="formula"><div>TSA of new solid = CSA of hemisphere + CSA of cylinder + CSA of hemisphere</div><small>Only the curved surfaces stay outside. The flat circles are hidden.</small></div>
+<p>The same thing happens with the toy (top) made of a cone and a hemisphere (Fig. 12.5): bring the flat faces together, and both flat faces vanish.</p>
+<figure class="fig wide zoomable"><img src="img/surface-volumes/fig12-5.webp" alt="NCERT Fig. 12.5: a cone and a hemisphere brought together flat face to flat face to make a round-bottomed toy" width="900" height="214" loading="lazy" decoding="async"><figcaption><b>Fig. 12.5</b> Cone + hemisphere = a round-bottomed toy. TSA of toy = CSA of hemisphere + CSA of cone.</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<div class="cards2 stack-m">
+<div class="idea" style="border-left-color:var(--gold)"><h4>🎨 Paint = surface area <span>add only the visible parts</span></h4><p>Hidden faces (where solids touch) are <b>not</b> counted. A <b>scooped</b> hole <b>adds</b> its inner surface (you can paint inside the bowl) and <b>removes</b> the flat disc that was cut away.</p></div>
+<div class="idea" style="border-left-color:#5DB7F0"><h4>💧 Pour = volume <span>just add or subtract</span></h4><p>Joined solids: V = V₁ + V₂. Scooped out / hollowed: V = V₁ − V₂. Nothing ever “hides” in volume.</p></div>
+</div>
+<div class="box alert"><h4>⚠️ The number one mistake</h4><p>TSA of a combined solid is <b>not</b> TSA₁ + TSA₂. NCERT says it directly after Example 1: “total surface area of the top is <i>not</i> the sum of the total surface areas of the cone and hemisphere.”</p></div>
+<h3>Three kinds of joins you will meet</h3>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Type</th><th>Example</th><th>Surface area</th><th>Volume</th></tr></thead><tbody>
+<tr><td><b>Same-size join</b> (radii equal)</td><td>Cone on hemisphere, capsule, tent</td><td>Both touching faces vanish completely</td><td>V₁ + V₂</td></tr>
+<tr><td><b>Unequal join</b></td><td>Hemisphere on a cube (Ex. 2), rocket (Ex. 3)</td><td>Bigger face loses only the part covered: a <b>ring</b> or a square with a hole is left</td><td>V₁ + V₂</td></tr>
+<tr><td><b>Scoop / cavity</b></td><td>Bird-bath (Ex. 4), Ex 12.1 Q5, Q8, Q9</td><td>Remove the flat disc, <b>add</b> the inside curved surface</td><td>V₁ − V₂</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="sa">
+<div class="sec-head"><span class="sec-num">12.2</span><h2>Surface area of a combination of solids</h2></div>
+<p class="lead">Method: <b>break</b> the object into basic solids, <b>mark</b> the hidden faces, <b>add</b> the visible areas, and write the <b>unit</b> (cm²).</p>
+
+<div class="proof"><h4>Example 1: Rasheed’s lattu (top)</h4>
+<div class="duo"><div><p>A top is a cone surmounted on a hemisphere. Total height 5 cm, diameter 3.5 cm. Find the area to be coloured. (π = <sup>22</sup>⁄<sub>7</sub>)</p>
+<p><b>Visible parts:</b> CSA of hemisphere + CSA of cone.</p></div>
+<figure class="fig tiny zoomable"><img src="img/surface-volumes/fig12-6.webp" alt="NCERT Fig. 12.6: a top made of a cone on a hemisphere, height 5 cm, diameter 3.5 cm" width="381" height="357" loading="lazy" decoding="async"><figcaption><b>Fig. 12.6</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p>r = 1.75 cm. CSA of hemisphere = 2πr² = 2 × <span class="fr"><span>22</span><span>7</span></span> × 1.75 × 1.75 = <b>19.25 cm²</b></p>
+<p>Height of cone = 5 − 1.75 = 3.25 cm. Slant height l = √(1.75² + 3.25²) = √13.625 ≈ <b>3.7 cm</b></p>
+<p>CSA of cone = πrl = <span class="fr"><span>22</span><span>7</span></span> × 1.75 × 3.7 = <b>20.35 cm²</b></p>
+<p class="calc big">Area to colour = 19.25 + 20.35 ≈ 39.6 cm²</p>
+<p class="muted">Shortcut used by NCERT: <span class="fr"><span>22</span><span>7</span></span> × <span class="fr"><span>3.5</span><span>2</span></span> × (3.5 + 3.7) = <span class="fr"><span>11</span><span>2</span></span> × 7.2 = 39.6.</p></div>
+
+<div class="proof"><h4>Example 2: Decorative block (cube + hemisphere)</h4>
+<div class="duo"><div><p>A cube of edge 5 cm has a hemisphere of diameter 4.2 cm fixed on top. Find the total surface area.</p>
+<p>Unequal join: the top face of the cube loses a circle (πr²), but the hemisphere adds its curved surface (2πr²).</p></div>
+<figure class="fig small zoomable"><img src="img/surface-volumes/fig12-7.webp" alt="NCERT Fig. 12.7: a cube of edge 5 cm with a hemisphere of diameter 4.2 cm on top" width="524" height="492" loading="lazy" decoding="async"><figcaption><b>Fig. 12.7</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p>TSA of cube = 6 × 5² = 150 cm². r = 2.1 cm.</p>
+<p>Surface area = 150 − πr² + 2πr² = 150 + πr² = 150 + <span class="fr"><span>22</span><span>7</span></span> × 2.1 × 2.1 = 150 + 13.86</p>
+<p class="calc big">Surface area of block = 163.86 cm²</p>
+<p class="muted">Net effect of sticking a hemisphere on a flat face: <b>+πr²</b>. Remember this, it saves time.</p></div>
+
+<div class="proof"><h4>Example 3: Wooden rocket (cone on a thinner cylinder)</h4>
+<div class="duo"><div><p>Total height 26 cm, cone height 6 cm, cone base diameter 5 cm, cylinder diameter 3 cm. Cone painted orange, cylinder yellow. (π = 3.14)</p>
+<p>r = 2.5, h = 6, r′ = 1.5, h′ = 20. l = √(2.5² + 6²) = <b>6.5 cm</b>.</p></div>
+<figure class="fig small zoomable"><img src="img/surface-volumes/fig12-8.webp" alt="NCERT Fig. 12.8: a rocket with a cone of base diameter 5 cm on a cylinder of diameter 3 cm, total height 26 cm" width="751" height="833" loading="lazy" decoding="async"><figcaption><b>Fig. 12.8</b> The cone base sticks out as a ring</figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p><b>Orange</b> = CSA of cone + <b>ring</b> under the cone = πrl + πr² − πr′² = π[(2.5 × 6.5) + 6.25 − 2.25] = 3.14 × 20.25 = <b>63.585 cm²</b></p>
+<p><b>Yellow</b> = CSA of cylinder + one base = 2πr′h′ + πr′² = πr′(2h′ + r′) = 3.14 × 1.5 × 41.5 = <b>195.465 cm²</b></p>
+<div class="box think" style="margin:8px 0 0"><p>Why the ring? The cone’s base (radius 2.5) is wider than the cylinder (radius 1.5). Only the middle circle of radius 1.5 is hidden. The outer ring is visible from below, so it is painted.</p></div></div>
+
+<div class="proof"><h4>Example 4: Mayank’s bird-bath (scoop)</h4>
+<div class="duo"><div><p>A cylinder (height 1.45 m, radius 30 cm) with a hemispherical depression at the top. Find the total surface area.</p>
+<p>The top circle is scooped away and the inside bowl (2πr²) appears. NCERT counts the outer curved surface and the bowl.</p></div>
+<figure class="fig small zoomable"><img src="img/surface-volumes/fig12-9.webp" alt="NCERT Fig. 12.9: a bird-bath, a cylinder of radius 30 cm and height 1.45 m with a hemispherical depression" width="414" height="460" loading="lazy" decoding="async"><figcaption><b>Fig. 12.9</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p>TSA = 2πrh + 2πr² = 2πr(h + r) = 2 × <span class="fr"><span>22</span><span>7</span></span> × 30 × (145 + 30)</p>
+<p class="calc big">= 33000 cm² = 3.3 m²</p>
+<p class="muted">Units! h = 1.45 m = 145 cm. Convert everything to one unit first. 1 m² = 10 000 cm².</p></div>
+</section>
+
+<section id="builder" class="no-print">
+<div class="sec-head"><span class="sec-num word">🧱</span><h2>3D Solid Builder</h2></div>
+<p class="lead">Pick a shape from the book, move the sliders, and switch between <b>🎨 Paint</b> (surface area: the red dashed faces are hidden and not counted) and <b>💧 Pour</b> (volume fills up). The full working updates as you slide, so you can check any answer.</p>
+<div class="tool" id="sb">
+<div class="seg" id="sb-shapes"></div>
+<div class="tool-grid sb-grid">
+<div><svg id="sb-svg" viewBox="0 0 340 300" role="img" aria-label="Drawing of the chosen combined solid"></svg>
+<div class="seg sb-mode" id="sb-mode"><button type="button" class="on" data-m="paint">🎨 Paint (surface area)</button><button type="button" data-m="pour">💧 Pour (volume)</button></div>
+<div class="pkey"><span><i style="background:#FFD978;border:1.5px solid #8A6510"></i>painted surface</span><span><i style="background:#FDEDEC;border:1.5px dashed #D9534F"></i>hidden / removed face</span></div></div>
+<div><p class="sb-title" id="sb-title"></p><div id="sb-sliders"></div>
+<div class="seg" id="sb-pi" style="margin-top:8px"><button type="button" class="on" data-pi="227">π = 22/7</button><button type="button" data-pi="314">π = 3.14</button></div></div>
+</div>
+<div class="readout sb-out" id="sb-out"></div>
+</div>
+</section>
+
+<section id="vol">
+<div class="sec-head"><span class="sec-num">12.3</span><h2>Volume of a combination of solids</h2></div>
+<p class="lead">Surface area had to be careful because faces disappear. Volume does not: the volume of the joined solid is <b>the sum of the volumes of its parts</b>. If a part is removed, subtract it.</p>
+<div class="formula"><div>V(joined) = V₁ + V₂  ·  V(hollowed) = V₁ − V₂</div><small>Then subtract anything that takes up space inside (machines, people, a raised bottom).</small></div>
+
+<div class="proof"><h4>Example 5: Shanta’s shed (cuboid + half cylinder)</h4>
+<figure class="fig narrow zoomable"><img src="img/surface-volumes/fig12-12.webp" alt="NCERT Fig. 12.12: a shed shaped like a cuboid 15 m by 7 m by 8 m with a half cylinder on top" width="793" height="464" loading="lazy" decoding="async"><figcaption><b>Fig. 12.12</b> Base 7 m × 15 m, cuboid height 8 m, half-cylinder of diameter 7 m and length 15 m</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<p>Volume of air = cuboid + ½ cylinder = 15 × 7 × 8 + ½ × <span class="fr"><span>22</span><span>7</span></span> × <span class="fr"><span>7</span><span>2</span></span> × <span class="fr"><span>7</span><span>2</span></span> × 15 = 840 + 288.75 = <b>1128.75 m³</b></p>
+<p>Machinery 300 m³, 20 workers × 0.08 m³ = 1.6 m³.</p>
+<p class="calc big">Air left = 1128.75 − (300 + 1.6) = 827.15 m³</p>
+<p class="muted">The half cylinder lies on its side: its “height” is the length of the shed (15 m) and its radius is half the width (3.5 m).</p></div>
+
+<div class="proof"><h4>Example 6: The juice seller’s trick glass</h4>
+<div class="duo"><div><p>Glass: inner diameter 5 cm, height 10 cm, with a raised hemispherical bottom. Find the apparent and the actual capacity. (π = 3.14)</p>
+<p>Apparent = πr²h = 3.14 × 2.5 × 2.5 × 10 = <b>196.25 cm³</b></p>
+<p>Hemisphere = ⅔πr³ = ⅔ × 3.14 × 2.5³ = <b>32.71 cm³</b></p></div>
+<figure class="fig tiny zoomable"><img src="img/surface-volumes/fig12-13.webp" alt="NCERT Fig. 12.13: a cylindrical glass with a raised hemispherical bottom" width="197" height="367" loading="lazy" decoding="async"><figcaption><b>Fig. 12.13</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p class="calc big">Actual capacity = 196.25 − 32.71 = 163.54 cm³</p>
+<p class="muted">Real-life lesson: the customer pays for 196 cm³ but gets only 164 cm³, about 17% less.</p></div>
+
+<div class="proof"><h4>Example 7: Toy inside a cylinder</h4>
+<div class="duo"><div><p>A toy is a hemisphere surmounted by a cone. Cone height 2 cm, base diameter 4 cm. Find its volume, and the difference from a circumscribing cylinder. (π = 3.14)</p>
+<p>r = 2 cm. V = ⅔πr³ + ⅓πr²h = ⅔ × 3.14 × 8 + ⅓ × 3.14 × 4 × 2 = <b>25.12 cm³</b></p></div>
+<figure class="fig small zoomable"><img src="img/surface-volumes/fig12-14.webp" alt="NCERT Fig. 12.14: a toy made of a cone ABC on a hemisphere BPC inside a cylinder EFGH" width="373" height="371" loading="lazy" decoding="async"><figcaption><b>Fig. 12.14</b> Cylinder EFGH just encloses the toy</figcaption><span class="zoom-hint">Tap to zoom</span></figure></div>
+<p>Cylinder: radius 2, height EH = AO + OP = 2 + 2 = 4. V = 3.14 × 4 × 4 = 50.24 cm³.</p>
+<p class="calc big">Difference = 50.24 − 25.12 = 25.12 cm³</p>
+<div class="box wow" style="margin:8px 0 0"><h4>✨ Not a coincidence!</h4><p>Here h = r = 2. Cone = ⅓πr³, hemisphere = ⅔πr³, so the toy = πr³. The cylinder (height 2r) = 2πr³. So the toy fills <b>exactly half</b> the cylinder, for <b>any</b> r. That is why the two answers are equal.</p></div></div>
+</section>
+
+<section id="labs">
+<div class="sec-head"><span class="sec-num word">Labs</span><h2>Labs: lead shots, melt and recast, units</h2></div>
+<div class="tool no-print" id="shots">
+<h4>🔬 Lab 1: Drop the lead shots (Exercise 12.2, Q5)</h4>
+<p class="hint">An inverted cone (height 8 cm, radius 5 cm) is full of water. Each lead shot is a sphere of radius 0.5 cm. Drop shots in and watch the water that spills. How many until <b>one-fourth</b> of the water has flowed out?</p>
+<div class="tool-grid"><svg id="sh-svg" viewBox="0 0 300 260" role="img" aria-label="Cone of water with lead shots"></svg>
+<div><div class="row-in"><button type="button" class="tbtn" data-n="1">Drop 1</button><button type="button" class="tbtn" data-n="10">Drop 10</button><button type="button" class="tbtn solid" data-n="25">Drop 25</button><button type="button" class="tbtn" id="sh-reset">Empty</button></div>
+<div class="readout" id="sh-out"></div></div></div>
+</div>
+<div class="tool no-print" id="melt">
+<h4>🔥 Lab 2: Melt and recast machine</h4>
+<p class="hint">Volume never changes when you melt and reshape. Choose what you melt and what you make; the machine divides the volumes. (Extra practice: asked in Bihar Board and older CBSE papers.)</p>
+<div class="melt-row"><div><b>Melt</b><select class="sel" id="mt-from"></select><div id="mt-from-in"></div></div><div class="melt-arrow">➜</div><div><b>Make</b><select class="sel" id="mt-to"></select><div id="mt-to-in"></div></div></div>
+<div class="readout" id="mt-out"></div>
+</div>
+<div class="tool no-print" id="units">
+<h4>📏 Lab 3: Unit converter</h4>
+<p class="hint">Half the marks lost in this chapter are lost to units. Type a value.</p>
+<div class="row-in"><input type="number" id="un-v" value="1128.75" step="any" aria-label="Value"><select class="sel" id="un-u"><option value="cm3">cm³</option><option value="m3" selected>m³</option><option value="l">litres</option><option value="ml">mL</option><option value="cm2">cm²</option><option value="m2">m²</option><option value="mm2">mm²</option></select></div>
+<div class="readout" id="un-out"></div>
+</div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Convert</th><th>Rule</th></tr></thead><tbody><tr><td>m → cm</td><td>× 100</td></tr><tr><td>m² → cm²</td><td>× 10 000 (100²)</td></tr><tr><td>m³ → cm³</td><td>× 10 00 000 (100³)</td></tr><tr><td>1 litre</td><td>= 1000 cm³ = 1000 mL</td></tr><tr><td>1 m³</td><td>= 1000 litres</td></tr><tr><td>mass</td><td>= volume × density (Ex 12.2 Q6: 8 g per cm³)</td></tr></tbody></table></div>
+</section>
+
+<section id="local">
+<div class="sec-head"><span class="sec-num word">Bihar</span><h2>Maths around Motihari</h2></div>
+<p>Combined solids are everywhere around us. Try these “model” questions. <span class="muted">(The numbers are simple made-up values for practice, not real measurements.)</span></p>
+<div class="cards3">
+<div class="idea"><h4>🛕 Kesaria Stupa <span>East Champaran</span></h4><p>Model it as a cylinder (r = 21 m, h = 10 m) with a hemispherical dome. Volume = πr²h + ⅔πr³ = <span class="fr"><span>22</span><span>7</span></span> × 441 × 10 + ⅔ × <span class="fr"><span>22</span><span>7</span></span> × 9261 = 13 860 + 19 404 = <b>33 264 m³</b>.</p></div>
+<div class="idea"><h4>⛺ Mela tent <span>cylinder + cone</span></h4><p>r = 7 m, wall 3 m, slant 10 m. Canvas = 2πrh + πrl = 132 + 220 = <b>352 m²</b>. At ₹50 per m²: <b>₹17 600</b>. No floor canvas!</p></div>
+<div class="idea"><h4>🌾 Grain silo <span>cylinder + cone roof</span></h4><p>r = 3.5 m, h = 12 m, roof height 3 m. Storage = πr²h + ⅓πr²(3) = 462 + 38.5 = <b>500.5 m³</b>, enough for about 375 tonnes of wheat at 750 kg/m³.</p></div>
+<div class="idea"><h4>💊 Capsule <span>Ex 12.1 Q6</span></h4><p>Length 14 mm, diameter 5 mm: cylinder 9 mm long + a full sphere of radius 2.5 mm. Surface = 2πrh + 4πr² = <b>220 mm²</b>.</p></div>
+<div class="idea"><h4>🍬 Gulab jamun <span>Ex 12.2 Q3</span></h4><p>45 jamuns, each a cylinder with hemispherical ends (5 cm × 2.8 cm). Syrup at 30% = about <b>338 cm³</b>, a third of a litre.</p></div>
+<div class="idea"><h4>🍦 Ice-cream cone <span>CBSE 2023</span></h4><p>Cone r = 3 cm, h = 12 cm, filled except the lower ⅙, with a hemisphere on top: 30π + 18π = <b>48π ≈ 150.72 cm³</b>.</p></div>
+</div>
+</section>
+
+<section id="mistakes">
+<div class="sec-head"><span class="sec-num word">Traps</span><h2>Common mistakes (and how to dodge them)</h2></div>
+<div class="ideas">
+<div class="idea"><h4>❌ Adding TSAs <span>the classic</span></h4><p>TSA(toy) ≠ TSA(cone) + TSA(hemisphere). Use only the <b>visible</b> curved parts.</p></div>
+<div class="idea"><h4>❌ Slant height in the volume <span>cone</span></h4><p>V = ⅓πr²<b>h</b> uses vertical height. l is only for the curved surface.</p></div>
+<div class="idea"><h4>❌ Wrong cone height <span>Ex 1, Q3</span></h4><p>If the <b>total</b> height is given, subtract the hemisphere’s radius: cone height = total − r.</p></div>
+<div class="idea"><h4>❌ Capsule length <span>Ex 12.1 Q6</span></h4><p>Cylinder part = total length − 2r (both ends are hemispheres).</p></div>
+<div class="idea"><h4>❌ Diameter used as radius <span>everywhere</span></h4><p>Underline the word “diameter” and halve it at once.</p></div>
+<div class="idea"><h4>❌ Forgetting the extra surface of a scoop <span>Q5, Q8, Q9</span></h4><p>A hole <b>removes</b> a flat face and <b>adds</b> an inside curved surface. Net for a hemisphere scoop: −πr² + 2πr² = +πr².</p></div>
+<div class="idea"><h4>❌ Mixing units <span>Ex 4</span></h4><p>1.45 m and 30 cm in the same formula? Convert first.</p></div>
+<div class="idea"><h4>❌ Tent floor <span>Ex 12.1 Q7</span></h4><p>“Base not covered with canvas”: do not add πr².</p></div>
+</div>
+</section>
+
+<section id="map">
+<div class="sec-head"><span class="sec-num word">Map</span><h2>Mind map and the 4-step method</h2></div>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 760 380" role="img" aria-label="Mind map of the chapter">
+<g font-family="Mukta,sans-serif" font-size="15" text-anchor="middle">
+<g stroke="#2A4A86" stroke-width="2" fill="none"><path d="M380 190 L170 80"/><path d="M380 190 L590 80"/><path d="M380 190 L170 300"/><path d="M380 190 L590 300"/><path d="M380 190 L380 60"/><path d="M380 190 L380 330"/></g>
+<rect x="270" y="160" width="220" height="60" rx="30" fill="#0E2148"/><text x="380" y="186" fill="#E3B23C" font-weight="700" font-size="17">Combination</text><text x="380" y="206" fill="#fff">of solids</text>
+<rect x="60" y="45" width="220" height="70" rx="14" fill="#FFF5DA" stroke="#E3B23C" stroke-width="2"/><text x="170" y="72" font-weight="700" fill="#0E2148">🎨 Surface area</text><text x="170" y="94" fill="#1D2433">add visible parts only</text>
+<rect x="480" y="45" width="220" height="70" rx="14" fill="#EAF0FA" stroke="#5DB7F0" stroke-width="2"/><text x="590" y="72" font-weight="700" fill="#0E2148">💧 Volume</text><text x="590" y="94" fill="#1D2433">V₁ + V₂ or V₁ − V₂</text>
+<rect x="60" y="265" width="220" height="70" rx="14" fill="#fff" stroke="#2A4A86" stroke-width="2"/><text x="170" y="292" font-weight="700" fill="#0E2148">Joins</text><text x="170" y="314" fill="#1D2433">same size · unequal (ring) · scoop</text>
+<rect x="480" y="265" width="220" height="70" rx="14" fill="#fff" stroke="#2A4A86" stroke-width="2"/><text x="590" y="292" font-weight="700" fill="#0E2148">Real life</text><text x="590" y="314" fill="#1D2433">paint, canvas, capacity, mass, cost</text>
+<rect x="300" y="20" width="160" height="40" rx="12" fill="#fff" stroke="#E3B23C" stroke-width="2"/><text x="380" y="46" fill="#0E2148" font-weight="700">6 basic solids</text>
+<rect x="290" y="330" width="180" height="40" rx="12" fill="#fff" stroke="#D9534F" stroke-width="2"/><text x="380" y="356" fill="#9E2F2C" font-weight="700">units: cm² vs cm³</text>
+</g></svg><figcaption><b>Mind map</b> of Chapter 12</figcaption><span class="zoom-hint">Tap to zoom</span></figure>
+<ol class="flow">
+<li>1. <b>Break</b>: name the basic solids and write r, h, l for each</li>
+<li>2. <b>Mark</b>: which faces are hidden, which are added by a scoop?</li>
+<li>3. <b>Add or subtract</b>: areas of visible parts, or volumes</li>
+<li>4. <b>Unit and π</b>: right π, cm² or cm³, round as asked</li>
+</ol>
+</section>
+
+<section id="arcade" class="no-print">
+<div class="sec-head"><span class="sec-num word">🎮</span><h2>Shape Arcade: 4 games</h2></div>
+<p class="lead">Play to learn. Every game gives you ⭐ stars, saved on this phone. Collect all 20 to become a <b>Solid Champion</b>.</p>
+<div class="starbar"><div><b id="star-n">0</b> / <span id="star-max">20</span> ⭐ <span id="star-badge" class="badge">Beginner</span></div><div class="bar"><i id="star-bar" style="width:0;background:var(--gold)"></i></div></div>
+<div class="gmenu out"><a href="#hunter">🔍 Hidden-face hunter</a><a href="#memory">🃏 Formula memory</a><a href="#speed">⏱️ Speed round</a><a href="#detective">🕵️ Error detective</a></div>
+
+<div class="game" id="hunter">
+<h3>🔍 Game 1: Hidden-face hunter</h3>
+<p class="hint">Look at the solid. Tap <b>every</b> surface that must be counted in its total surface area, then press Check. 6 rounds.</p>
+<div class="clue" id="hu-clue"></div>
+<svg id="hu-svg" viewBox="0 0 340 300" role="img" aria-label="Combined solid for the round"></svg>
+<div class="chips" id="hu-chips"></div>
+<div class="row-in"><button type="button" class="tbtn solid" id="hu-check">Check</button><button type="button" class="tbtn" id="hu-next">Next round</button><span class="score2" id="hu-score"></span></div>
+<div class="readout" id="hu-out"></div>
+</div>
+
+<div class="game" id="memory">
+<h3>🃏 Game 2: Formula memory</h3>
+<p class="hint">Flip two cards at a time. Match each quantity with its formula. Fewer moves, more stars.</p>
+<div class="mem" id="mem-grid"></div>
+<div class="row-in"><span class="score2" id="mem-score"></span><button type="button" class="tbtn" id="mem-new">Shuffle again</button></div>
+</div>
+
+<div class="game" id="speed">
+<h3>⏱️ Game 3: Speed round (π = 22/7)</h3>
+<p class="hint">60 seconds. Answer as many as you can. Every answer is a whole number if you cancel the 7 first.</p>
+<div class="speed-top"><div class="timer" id="sp-t">60</div><div><div class="clue" id="sp-q">Press Start.</div></div></div>
+<div class="opts" id="sp-opts"></div>
+<div class="row-in"><button type="button" class="tbtn solid" id="sp-start">Start</button><span class="score2" id="sp-score"></span></div>
+</div>
+
+<div class="game" id="detective">
+<h3>🕵️ Game 4: Error detective</h3>
+<p class="hint">Each solution has <b>one</b> wrong line. Tap it. 5 cases.</p>
+<div class="case"><span class="case-tag" id="de-tag"></span><div class="clue" id="de-q"></div><div class="chips de-lines" id="de-lines"></div></div>
+<div class="readout" id="de-out"></div>
+<div class="row-in"><button type="button" class="tbtn" id="de-next">Next case</button><span class="score2" id="de-score"></span></div>
+</div>
+</section>
+
+<section id="pyq">
+<div class="sec-head"><span class="sec-num word">Board</span><h2>CBSE and Bihar Board questions</h2></div>
+<p>Questions on this chapter from CBSE Class 10 Mathematics (Standard) papers, set 30/1/1 (2023 to 2026), and from the Bihar Board (BSEB) Matric papers 2024 and 2025, with full solutions. Wording is lightly shortened; data are as in the paper. Where the source did not show the options, none are given.</p>
+<div class="seg no-print" id="pyq-seg"><button type="button" class="on" data-y="all">All</button><button type="button" data-y="2026">CBSE 2026</button><button type="button" data-y="2025">CBSE 2025</button><button type="button" data-y="2024">CBSE 2024</button><button type="button" data-y="2023">CBSE 2023</button><button type="button" data-y="bseb">Bihar Board</button></div>
+
+<div class="pyq" data-y="2026">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q16 · 1 mark</span></span><span>The total surface area of a solid hemisphere of diameter 2d is: (a) 3πd² (b) 2πd² (c) ½πd² (d) ¾πd²</span></summary><div class="ans"><b>(a) 3πd².</b> Radius = d. TSA of a solid hemisphere = curved 2πr² + flat πr² = 3πr² = 3πd².</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q30 · 3 marks</span></span><span>A solid is in the shape of a cylinder with two hemispherical ends. The total height of the solid is 20 cm and the diameter of the cylinder is 7 cm. Find the total volume of the solid. (π = 22/7)</span></summary><div class="ans"><p>r = 3.5 cm. Cylinder height = 20 − 3.5 − 3.5 = <b>13 cm</b>.</p><p>Two hemispheres = one sphere: V = πr²h + ⁴⁄₃πr³ = πr²(h + ⁴⁄₃r)</p><p>= <span class="fr"><span>22</span><span>7</span></span> × <span class="fr"><span>7</span><span>2</span></span> × <span class="fr"><span>7</span><span>2</span></span> × (13 + <span class="fr"><span>14</span><span>3</span></span>) = <span class="fr"><span>77</span><span>2</span></span> × <span class="fr"><span>53</span><span>3</span></span> = <span class="fr"><span>4081</span><span>6</span></span></p><p class="calc big">V ≈ 680.17 cm³</p></div></details>
+</div>
+
+<div class="pyq" data-y="2025">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q20 · 1 mark (A–R)</span></span><span>Assertion (A): If we join two hemispheres of the same radius along their bases, we get a sphere. Reason (R): Total surface area of a sphere of radius r is 3πr². (A) Both true, R explains A (B) Both true, R does not explain A (C) A true, R false (D) A false, R true</span></summary><div class="ans"><b>(C).</b> A is true. R is false: a sphere’s surface area is 4πr² (3πr² is the TSA of a solid <b>hemisphere</b>).</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q30 · 3 marks</span></span><span>A room is in the form of a cylinder surmounted by a hemispherical dome. The base radius of the hemisphere is half the height of the cylindrical part. If the room contains <span class="fr"><span>1408</span><span>21</span></span> m³ of air, find the height of the cylindrical part. (π = 22/7)</span></summary><div class="ans"><p>Let the radius be r. Then cylinder height h = 2r.</p><p>V = πr²h + ⅔πr³ = 2πr³ + ⅔πr³ = <span class="fr"><span>8</span><span>3</span></span>πr³</p><p><span class="fr"><span>8</span><span>3</span></span> × <span class="fr"><span>22</span><span>7</span></span> × r³ = <span class="fr"><span>1408</span><span>21</span></span> ⇒ <span class="fr"><span>176</span><span>21</span></span> r³ = <span class="fr"><span>1408</span><span>21</span></span> ⇒ r³ = 8 ⇒ r = 2 m</p><p class="calc big">Height of cylinder = 2r = 4 m</p><p class="muted">CBSE 2023 asked the same room and wanted the <b>total</b> height: 4 + 2 = 6 m. Read which height is asked!</p></div></details>
+</div>
+
+<div class="pyq" data-y="2024">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q31 · 3 marks (reworded)</span></span><span>The difference between the outer and inner radii of a hollow right circular cylinder 14 cm long is 1 cm. If the volume of metal used is 176 cm³, find the outer and inner radii. (π = 22/7)</span></summary><div class="ans"><p>Let the radii be R and r, with R − r = 1.</p><p>Metal = πR²h − πr²h = πh(R² − r²) = <span class="fr"><span>22</span><span>7</span></span> × 14 × (R − r)(R + r) = 44(R + r)</p><p>44(R + r) = 176 ⇒ R + r = 4. With R − r = 1: 2R = 5.</p><p class="calc big">Outer radius 2.5 cm, inner radius 1.5 cm</p><p class="muted">Idea: a hollow pipe = big cylinder − small cylinder (volume subtracts, just like a scoop).</p></div></details>
+</div>
+
+<div class="pyq" data-y="2023">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q10 · 1 mark</span></span><span>The curved surface area of a cylinder of height 5 cm is 94.2 cm². Its radius is (π = 3.14): (A) 2 cm (B) 3 cm (C) 2.9 cm (D) 6 cm</span></summary><div class="ans"><b>(B) 3 cm.</b> 2πrh = 94.2 ⇒ 2 × 3.14 × r × 5 = 94.2 ⇒ 31.4r = 94.2 ⇒ r = 3.</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q12 · 1 mark</span></span><span>The curved surface area of a cone of height 24 cm and radius 7 cm is: (A) 528 cm² (B) 1056 cm² (C) 550 cm² (D) 500 cm²</span></summary><div class="ans"><b>(C) 550 cm².</b> l = √(24² + 7²) = √625 = 25. CSA = πrl = <span class="fr"><span>22</span><span>7</span></span> × 7 × 25 = 550. (7–24–25 is a Pythagorean triple: learn it.)</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q31(a) · 3 marks</span></span><span>A room is in the form of a cylinder surmounted by a hemispherical dome. The base radius of the hemisphere is half the height of the cylindrical part. Find the total height of the room if it contains <span class="fr"><span>1408</span><span>21</span></span> m³ of air. (π = 22/7)</span></summary><div class="ans"><p>As in CBSE 2025: <span class="fr"><span>8</span><span>3</span></span>πr³ = <span class="fr"><span>1408</span><span>21</span></span> ⇒ r = 2 m, cylinder height 4 m.</p><p class="calc big">Total height = 4 + 2 = 6 m</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q31(b) · 3 marks</span></span><span>OR: An empty cone of radius 3 cm and height 12 cm is filled with ice-cream so that the lower ⅙ of its volume is empty, and a hemisphere of ice-cream is formed on top. Find the volume of the ice-cream. (π = 3.14)</span></summary><div class="ans"><p>Cone = ⅓π(3²)(12) = 36π cm³. Filled part = ⅚ × 36π = 30π cm³.</p><p>Hemisphere on top (r = 3) = ⅔π(27) = 18π cm³.</p><p class="calc big">Ice-cream = 30π + 18π = 48π = 150.72 cm³</p></div></details>
+</div>
+
+<div class="pyq" data-y="bseb">
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2025 · short answer</span></span><span>The diagonal of a cube is 9√3 cm. Find the total surface area of the cube.</span></summary><div class="ans"><p>Diagonal = √3 a = 9√3 ⇒ a = 9 cm.</p><p class="calc big">TSA = 6a² = 6 × 81 = 486 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2025 · short answer</span></span><span>If the radius of the base of a cone is 7 cm and its height is 24 cm, find its curved surface area.</span></summary><div class="ans"><p>l = √(7² + 24²) = 25 cm. CSA = πrl = <span class="fr"><span>22</span><span>7</span></span> × 7 × 25 = <b>550 cm²</b>. (Same numbers as CBSE 2023!)</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2024 · objective</span></span><span>If 2r is the radius of a sphere, then its volume is:</span></summary><div class="ans"><b><span class="fr"><span>32</span><span>3</span></span>πr³.</b> V = ⁴⁄₃π(2r)³ = ⁴⁄₃π × 8r³. Trap: doubling the radius makes the volume <b>8 times</b>, not 2 times.</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2024 · objective</span></span><span>The length, breadth and height of a cuboid are 15 m, 6 m and 5 m. Its lateral surface area is:</span></summary><div class="ans"><b>210 m².</b> LSA = 2h(l + b) = 2 × 5 × 21.</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2024 · objective</span></span><span>How many cubes of side 4 cm can be formed from a cube of side 8 cm?</span></summary><div class="ans"><b>8.</b> <span class="fr"><span>8³</span><span>4³</span></span> = <span class="fr"><span>512</span><span>64</span></span> = 8. (Each edge is cut into 2, and 2 × 2 × 2 = 8.)</div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2024 · objective</span></span><span>Three metal cubes with edges 3 cm, 4 cm and 5 cm are melted to form a single cube. Find the lateral surface area of the new cube.</span></summary><div class="ans"><p>New volume = 27 + 64 + 125 = 216 cm³ ⇒ edge = 6 cm.</p><p class="calc big">LSA = 4a² = 4 × 36 = 144 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">Bihar Board 2024 · objective</span></span><span>The radii of two cylinders are in the ratio 2 : 3 and their heights are in the ratio 5 : 3. The ratio of their volumes is:</span></summary><div class="ans"><b>20 : 27.</b> <span class="fr"><span>V₁</span><span>V₂</span></span> = <span class="fr"><span>r₁²h₁</span><span>r₂²h₂</span></span> = <span class="fr"><span>4 × 5</span><span>9 × 3</span></span> = <span class="fr"><span>20</span><span>27</span></span>.</div></details>
+</div>
+</section>
+
+<section id="practice">
+<div class="sec-head"><span class="sec-num word">Practice</span><h2>Board-pattern practice</h2></div>
+<h3 class="group-title">MCQs (1 mark)</h3>
+<details class="qa"><summary><span class="qnum">M1</span><span>A cone and a cylinder have the same base and the same height. The ratio of their volumes is (a) 1 : 2 (b) 1 : 3 (c) 2 : 3 (d) 3 : 1</span></summary><div class="ans"><b>(b) 1 : 3.</b></div></details>
+<details class="qa"><summary><span class="qnum">M2</span><span>A solid hemisphere of radius 7 cm is fixed on a face of a cube of edge 14 cm. The increase in the surface area of the cube is (a) 154 cm² (b) 308 cm² (c) 462 cm² (d) 0</span></summary><div class="ans"><b>(a) 154 cm².</b> Net change = −πr² + 2πr² = πr² = 154.</div></details>
+<details class="qa"><summary><span class="qnum">M3</span><span>Two cubes of edge 5 cm are joined end to end. The surface area of the cuboid formed is (a) 300 cm² (b) 250 cm² (c) 200 cm² (d) 150 cm²</span></summary><div class="ans"><b>(b) 250 cm².</b> 10 × 5 × 5 cuboid: 2(50 + 25 + 50) = 250. (Or 2 × 150 − 2 × 25 hidden faces.)</div></details>
+<details class="qa"><summary><span class="qnum">M4</span><span>If the radius of a sphere is halved, its volume becomes (a) ½ (b) ¼ (c) ⅛ (d) 2 times</span></summary><div class="ans"><b>(c) ⅛.</b> Volume ∝ r³.</div></details>
+<details class="qa"><summary><span class="qnum">M5</span><span>A cylinder, a cone and a hemisphere have equal bases and equal heights. The ratio of their volumes is (a) 3 : 1 : 2 (b) 1 : 2 : 3 (c) 2 : 1 : 3 (d) 3 : 2 : 1</span></summary><div class="ans"><b>(a) 3 : 1 : 2.</b> h = r: πr³ : ⅓πr³ : ⅔πr³.</div></details>
+<h3 class="group-title">Assertion–Reason</h3>
+<p class="muted">(a) Both true, R explains A. (b) Both true, R does not explain A. (c) A true, R false. (d) A false, R true.</p>
+<details class="qa"><summary><span class="qnum">AR1</span><span>A: The total surface area of a toy made of a cone on a hemisphere is πrl + 2πr². R: When two solids are joined, the surface area of the new solid is the sum of their total surface areas.</span></summary><div class="ans"><b>(c).</b> R is false: hidden faces are not counted.</div></details>
+<details class="qa"><summary><span class="qnum">AR2</span><span>A: The volume of a capsule (cylinder with hemispherical ends) is πr²h + ⁴⁄₃πr³. R: Two equal hemispheres together make a sphere.</span></summary><div class="ans"><b>(a).</b></div></details>
+<details class="qa"><summary><span class="qnum">AR3</span><span>A: If a cone of radius r and height h is hollowed out of a cylinder of the same r and h, the remaining volume is ⅔πr²h. R: The volume of a cone is one-third of the cylinder with the same base and height.</span></summary><div class="ans"><b>(a).</b> πr²h − ⅓πr²h = ⅔πr²h.</div></details>
+<h3 class="group-title">Case study (4 marks)</h3>
+<details class="qa"><summary><span class="qnum">CS</span><span>School water tank: a cylinder of radius 1.4 m and height 2 m with a hemispherical bottom of the same radius. (i) Find the volume of the cylindrical part. (ii) Find the volume of the hemispherical part. (iii) How many litres can the tank hold? OR Find the outer surface area of the tank to be painted (top closed). (π = 22/7)</span></summary><div class="ans"><p>(i) πr²h = <span class="fr"><span>22</span><span>7</span></span> × 1.96 × 2 = <b>12.32 m³</b></p><p>(ii) ⅔πr³ = ⅔ × <span class="fr"><span>22</span><span>7</span></span> × 2.744 = <b>5.749 m³</b> (≈ 5.75)</p><p>(iii) 12.32 + 5.749 = 18.069 m³ = <b>18 069 litres</b> (approx.)</p><p>OR paint = top πr² + side 2πrh + bowl 2πr² = 6.16 + 17.6 + 12.32 = <b>36.08 m²</b></p></div></details>
+<h3 class="group-title">Long answer (5 marks)</h3>
+<details class="qa"><summary><span class="qnum">L1</span><span>A solid toy is a hemisphere surmounted by a right circular cone of height 4 cm and base diameter 8 cm. Find (i) the volume of the toy, (ii) the volume of the circumscribing cylinder, (iii) the space between them, (iv) the surface area of the toy. (π = 3.14)</span></summary><div class="ans"><p>r = 4, cone h = 4, l = √32 = 4√2 ≈ 5.657.</p><p>(i) Toy = ⅓πr²h + ⅔πr³ = ⅓π(16)(4) + ⅔π(64) = <span class="fr"><span>64π</span><span>3</span></span> + <span class="fr"><span>128π</span><span>3</span></span> = 64π = <b>200.96 cm³</b></p><p>(ii) Cylinder: radius 4, height 4 + 4 = 8: π × 16 × 8 = 128π = <b>401.92 cm³</b></p><p>(iii) 128π − 64π = 64π = <b>200.96 cm³</b> (again exactly half, because h = r!)</p><p>(iv) πrl + 2πr² = π × 4 × 5.657 + 2π × 16 = 3.14 × (22.63 + 32) = <b>171.53 cm²</b></p></div></details>
+<details class="qa"><summary><span class="qnum">L2</span><span>From a solid cylinder of height 14 cm and base diameter 7 cm, two equal conical holes, each of radius 2.1 cm and height 4 cm, are cut off (one from each end). Find the volume of the remaining solid. (π = 22/7)</span></summary><div class="ans"><p>Cylinder = <span class="fr"><span>22</span><span>7</span></span> × 3.5² × 14 = <b>539 cm³</b></p><p>Two cones = 2 × ⅓ × <span class="fr"><span>22</span><span>7</span></span> × 2.1² × 4 = 2 × 18.48 = <b>36.96 cm³</b></p><p class="calc big">Remaining = 539 − 36.96 = 502.04 cm³</p></div></details>
+</section>
+
+<section id="recap">
+<div class="sec-head"><span class="sec-num">12.4</span><h2>Summary (NCERT 12.4)</h2></div>
+<ol class="steps">
+<li>To find the <b>surface area</b> of an object formed by combining any two of the basic solids (cuboid, cone, cylinder, sphere, hemisphere), add the areas of the surfaces that stay <b>visible</b>.</li>
+<li>To find the <b>volume</b> of objects formed by combining any two of these solids, add (or subtract) the volumes of the parts.</li>
+</ol>
+</section>
+
+<section id="quiz">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p>15 quick questions. Tap an answer to see if it is right. <span class="score">Score: 0 / 15</span></p>
+<div class="quiz">
+<div class="q"><p>1. TSA of a solid hemisphere of radius r is</p><div class="opts"><button class="opt" type="button">2πr²</button><button class="opt" type="button" data-c>3πr²</button><button class="opt" type="button">4πr²</button><button class="opt" type="button">πr²</button></div><p class="why">Curved 2πr² + flat πr².</p></div>
+<div class="q"><p>2. A toy is a cone on a hemisphere (same r). Its surface area is</p><div class="opts"><button class="opt" type="button">πrl + 3πr²</button><button class="opt" type="button">πr(l + r) + 3πr²</button><button class="opt" type="button" data-c>πrl + 2πr²</button><button class="opt" type="button">πrl + πr²</button></div><p class="why">Only the two curved surfaces are visible.</p></div>
+<div class="q"><p>3. Slant height of a cone with r = 6 cm, h = 8 cm</p><div class="opts"><button class="opt" type="button">14 cm</button><button class="opt" type="button" data-c>10 cm</button><button class="opt" type="button">7 cm</button><button class="opt" type="button">48 cm</button></div><p class="why">√(36 + 64) = 10.</p></div>
+<div class="q"><p>4. Two cubes of volume 27 cm³ each are joined end to end. Surface area of the cuboid?</p><div class="opts"><button class="opt" type="button">108 cm²</button><button class="opt" type="button" data-c>90 cm²</button><button class="opt" type="button">72 cm²</button><button class="opt" type="button">54 cm²</button></div><p class="why">Edge 3: 6 × 3 × 3: 2(18 + 9 + 18) = 90.</p></div>
+<div class="q"><p>5. Volume of a capsule (r, cylinder length h) is</p><div class="opts"><button class="opt" type="button">πr²h + ⅔πr³</button><button class="opt" type="button" data-c>πr²h + ⁴⁄₃πr³</button><button class="opt" type="button">2πrh + 4πr²</button><button class="opt" type="button">πr²h + 2πr³</button></div><p class="why">Two hemispheres = one sphere.</p></div>
+<div class="q"><p>6. A cone is hollowed out of a cylinder of the same r and h. Remaining volume:</p><div class="opts"><button class="opt" type="button">⅓πr²h</button><button class="opt" type="button" data-c>⅔πr²h</button><button class="opt" type="button">πr²h</button><button class="opt" type="button">⁴⁄₃πr²h</button></div><p class="why">1 − ⅓ = ⅔.</p></div>
+<div class="q"><p>7. A hemisphere of radius 3.5 cm is scooped out of a face of a cube. Change in surface area:</p><div class="opts"><button class="opt" type="button">−38.5 cm²</button><button class="opt" type="button">0</button><button class="opt" type="button" data-c>+38.5 cm²</button><button class="opt" type="button">+77 cm²</button></div><p class="why">−πr² + 2πr² = +πr² = 38.5.</p></div>
+<div class="q"><p>8. Number of lead shots in Ex 12.2 Q5 (cone 8 cm × 5 cm, shot radius 0.5 cm, ¼ water out):</p><div class="opts"><button class="opt" type="button">50</button><button class="opt" type="button" data-c>100</button><button class="opt" type="button">200</button><button class="opt" type="button">400</button></div><p class="why">(50π/3) ÷ (π/6) = 100.</p></div>
+<div class="q"><p>9. 1 m³ =</p><div class="opts"><button class="opt" type="button">100 litres</button><button class="opt" type="button" data-c>1000 litres</button><button class="opt" type="button">10 000 litres</button><button class="opt" type="button">1 litre</button></div><p class="why">1 m³ = 10⁶ cm³ = 1000 × 1000 cm³.</p></div>
+<div class="q"><p>10. Greatest diameter of a hemisphere on a cube of side 7 cm:</p><div class="opts"><button class="opt" type="button">3.5 cm</button><button class="opt" type="button" data-c>7 cm</button><button class="opt" type="button">14 cm</button><button class="opt" type="button">7√2 cm</button></div><p class="why">It must sit on a face of side 7.</p></div>
+<div class="q"><p>11. Tent canvas (no floor) for cylinder radius r, height h with cone of slant l:</p><div class="opts"><button class="opt" type="button">2πrh + πrl + πr²</button><button class="opt" type="button" data-c>2πrh + πrl</button><button class="opt" type="button">2πr(r + h) + πrl</button><button class="opt" type="button">πr²h + ⅓πr²l</button></div><p class="why">Floor and the hidden joint are not covered.</p></div>
+<div class="q"><p>12. A cylinder and a cone have the same r and h. Their volumes are in the ratio</p><div class="opts"><button class="opt" type="button">1 : 3</button><button class="opt" type="button" data-c>3 : 1</button><button class="opt" type="button">2 : 1</button><button class="opt" type="button">1 : 1</button></div><p class="why">Cylinder is three cones.</p></div>
+<div class="q"><p>13. If the radius of a sphere is doubled, its surface area becomes</p><div class="opts"><button class="opt" type="button">2 times</button><button class="opt" type="button" data-c>4 times</button><button class="opt" type="button">8 times</button><button class="opt" type="button">same</button></div><p class="why">Area ∝ r².</p></div>
+<div class="q"><p>14. In Example 3 (rocket), why is a ring painted orange?</p><div class="opts"><button class="opt" type="button">The cylinder is hollow</button><button class="opt" type="button" data-c>The cone base is wider than the cylinder</button><button class="opt" type="button">π = 3.14 is used</button><button class="opt" type="button">The cone is upside down</button></div><p class="why">Only a circle of radius 1.5 is hidden; the ring from 1.5 to 2.5 shows.</p></div>
+<div class="q"><p>15. Which of these does NOT use slant height?</p><div class="opts"><button class="opt" type="button">CSA of cone</button><button class="opt" type="button">TSA of cone</button><button class="opt" type="button" data-c>Volume of cone</button><button class="opt" type="button">Canvas of a conical tent</button></div><p class="why">V = ⅓πr²h.</p></div>
+</div>
+</section>
+
+<section id="answers">
+<div class="sec-head"><span class="sec-num word">NCERT</span><h2>Answers to all 17 exercise questions</h2></div>
+<h3 class="group-title">Exercise 12.1 (π = 22/7 unless stated)</h3>
+<details class="qa"><summary><span class="qnum">1.</span><span>2 cubes each of volume 64 cm³ are joined end to end. Find the surface area of the resulting cuboid.</span></summary><div class="ans"><p>a³ = 64 ⇒ a = 4 cm. Cuboid: l = 8, b = 4, h = 4.</p><p>SA = 2(lb + bh + hl) = 2(32 + 16 + 32)</p><p class="calc big">= 160 cm²</p><p class="muted">Check: 2 × 96 − 2 × 16 (two hidden faces) = 160 ✓</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>A vessel is a hollow hemisphere mounted by a hollow cylinder. Diameter of hemisphere 14 cm, total height 13 cm. Find the inner surface area.</span></summary><div class="ans"><p>r = 7 cm, cylinder height = 13 − 7 = 6 cm.</p><p>Inner SA = 2πr² + 2πrh = 2πr(r + h) = 2 × <span class="fr"><span>22</span><span>7</span></span> × 7 × 13</p><p class="calc big">= 572 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum">3.</span><span>A toy is a cone of radius 3.5 cm mounted on a hemisphere of the same radius. Total height 15.5 cm. Find the TSA of the toy.</span></summary><div class="ans"><p>Cone height = 15.5 − 3.5 = 12 cm. l = √(12² + 3.5²) = √156.25 = 12.5 cm.</p><p>TSA = πrl + 2πr² = πr(l + 2r) = <span class="fr"><span>22</span><span>7</span></span> × 3.5 × (12.5 + 7) = 11 × 19.5</p><p class="calc big">= 214.5 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum">4.</span><span>A cubical block of side 7 cm is surmounted by a hemisphere. What is the greatest diameter the hemisphere can have? Find the surface area of the solid.</span></summary><div class="ans"><p>Greatest diameter = side of cube = <b>7 cm</b>, so r = 3.5 cm.</p><p>SA = 6a² − πr² + 2πr² = 6a² + πr² = 294 + <span class="fr"><span>22</span><span>7</span></span> × 12.25 = 294 + 38.5</p><p class="calc big">= 332.5 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum">5.</span><span>A hemispherical depression is cut out from one face of a cubical wooden block such that the diameter l of the hemisphere equals the edge of the cube. Find the surface area of the remaining solid.</span></summary><div class="ans"><p>Edge = l, r = <span class="fr"><span>l</span><span>2</span></span>.</p><p>SA = 6l² − πr² + 2πr² = 6l² + πr² = 6l² + <span class="fr"><span>πl²</span><span>4</span></span></p><p class="calc big">= <span class="fr"><span>l²</span><span>4</span></span>(24 + π) square units</p></div></details>
+<details class="qa"><summary><span class="qnum">6.</span><span>A medicine capsule is a cylinder with two hemispheres stuck to its ends. Length 14 mm, diameter 5 mm. Find its surface area.</span></summary><div class="ans"><figure class="fig small zoomable"><img src="img/surface-volumes/fig12-10.webp" alt="NCERT Fig. 12.10: a capsule 14 mm long and 5 mm wide" width="583" height="224" loading="lazy" decoding="async"><figcaption><b>Fig. 12.10</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><p>r = 2.5 mm, cylinder length = 14 − 5 = 9 mm.</p><p>SA = 2πrh + 4πr² = 2πr(h + 2r) = 2 × <span class="fr"><span>22</span><span>7</span></span> × 2.5 × 14</p><p class="calc big">= 220 mm²</p></div></details>
+<details class="qa"><summary><span class="qnum">7.</span><span>A tent is a cylinder (height 2.1 m, diameter 4 m) surmounted by a conical top of slant height 2.8 m. Find the canvas used and its cost at ₹500 per m². (Base not covered.)</span></summary><div class="ans"><p>r = 2 m. Canvas = 2πrh + πrl = πr(2h + l) = <span class="fr"><span>22</span><span>7</span></span> × 2 × (4.2 + 2.8) = <span class="fr"><span>22</span><span>7</span></span> × 2 × 7</p><p class="calc big">= 44 m², cost = 44 × 500 = ₹22 000</p></div></details>
+<details class="qa"><summary><span class="qnum">8.</span><span>From a solid cylinder (height 2.4 cm, diameter 1.4 cm) a conical cavity of the same height and diameter is hollowed out. Find the TSA of the remaining solid to the nearest cm².</span></summary><div class="ans"><p>r = 0.7, h = 2.4, l = √(0.49 + 5.76) = 2.5 cm.</p><p>Visible: curved side 2πrh + bottom base πr² + inside cone πrl (the top disc is gone).</p><p>TSA = πr(2h + r + l) = <span class="fr"><span>22</span><span>7</span></span> × 0.7 × (4.8 + 0.7 + 2.5) = 2.2 × 8 = 17.6</p><p class="calc big">≈ 18 cm²</p></div></details>
+<details class="qa"><summary><span class="qnum">9.</span><span>A wooden article is made by scooping out a hemisphere from each end of a solid cylinder (height 10 cm, radius 3.5 cm). Find its TSA.</span></summary><div class="ans"><figure class="fig tiny zoomable"><img src="img/surface-volumes/fig12-11.webp" alt="NCERT Fig. 12.11: a cylinder with a hemisphere scooped out of each end" width="245" height="386" loading="lazy" decoding="async"><figcaption><b>Fig. 12.11</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><p>TSA = 2πrh + 2 × 2πr² = 2πr(h + 2r) = 2 × <span class="fr"><span>22</span><span>7</span></span> × 3.5 × 17 = 22 × 17</p><p class="calc big">= 374 cm²</p></div></details>
+
+<h3 class="group-title">Exercise 12.2 (π = 22/7 unless stated)</h3>
+<details class="qa"><summary><span class="qnum">1.</span><span>A solid is a cone standing on a hemisphere, both radii 1 cm, cone height = radius. Find the volume in terms of π.</span></summary><div class="ans"><p>V = ⅓πr²h + ⅔πr³ = ⅓π + ⅔π</p><p class="calc big">= π cm³</p></div></details>
+<details class="qa"><summary><span class="qnum">2.</span><span>Rachel’s model: a cylinder with two cones at its ends. Diameter 3 cm, length 12 cm, each cone 2 cm high. Find the volume of air inside.</span></summary><div class="ans"><p>r = 1.5, cylinder length = 12 − 2 − 2 = 8 cm.</p><p>V = πr²(8) + 2 × ⅓πr²(2) = πr²(8 + <span class="fr"><span>4</span><span>3</span></span>) = <span class="fr"><span>22</span><span>7</span></span> × 2.25 × <span class="fr"><span>28</span><span>3</span></span></p><p class="calc big">= 66 cm³</p></div></details>
+<details class="qa"><summary><span class="qnum">3.</span><span>A gulab jamun has syrup up to 30% of its volume. Find the syrup in 45 gulab jamuns, each a cylinder with hemispherical ends, length 5 cm, diameter 2.8 cm.</span></summary><div class="ans"><figure class="fig tiny zoomable"><img src="img/surface-volumes/fig12-15.webp" alt="NCERT Fig. 12.15: gulab jamuns in a glass bowl" width="270" height="388" loading="lazy" decoding="async"><figcaption><b>Fig. 12.15</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><p>r = 1.4, cylinder length = 5 − 2.8 = 2.2 cm.</p><p>One = πr²h + ⁴⁄₃πr³ = <span class="fr"><span>22</span><span>7</span></span> × 1.96 × (2.2 + 1.867) = 6.16 × 4.067 ≈ 25.05 cm³</p><p>45 jamuns ≈ 1127.28 cm³; 30% of that =</p><p class="calc big">≈ 338 cm³</p></div></details>
+<details class="qa"><summary><span class="qnum">4.</span><span>A wooden pen stand is a cuboid 15 cm × 10 cm × 3.5 cm with four conical depressions (radius 0.5 cm, depth 1.4 cm). Find the volume of wood.</span></summary><div class="ans"><figure class="fig small zoomable"><img src="img/surface-volumes/fig12-16.webp" alt="NCERT Fig. 12.16: a pen stand with four conical holes and four pens" width="506" height="488" loading="lazy" decoding="async"><figcaption><b>Fig. 12.16</b></figcaption><span class="zoom-hint">Tap to zoom</span></figure><p>Cuboid = 15 × 10 × 3.5 = 525 cm³.</p><p>4 cones = 4 × ⅓ × <span class="fr"><span>22</span><span>7</span></span> × 0.25 × 1.4 = 4 × 0.367 = 1.467 cm³.</p><p class="calc big">Wood = 525 − 1.47 = 523.53 cm³</p></div></details>
+<details class="qa"><summary><span class="qnum">5.</span><span>An inverted cone (height 8 cm, top radius 5 cm) is full of water. Lead shots (spheres of radius 0.5 cm) are dropped in until one-fourth of the water flows out. How many shots?</span></summary><div class="ans"><p>Water = ⅓π × 25 × 8 = <span class="fr"><span>200π</span><span>3</span></span> cm³. Overflow = ¼ of it = <span class="fr"><span>50π</span><span>3</span></span> cm³.</p><p>One shot = ⁴⁄₃π(0.5)³ = <span class="fr"><span>π</span><span>6</span></span> cm³.</p><p class="calc big">n = <span class="fr"><span>50π</span><span>3</span></span> ÷ <span class="fr"><span>π</span><span>6</span></span> = 100 shots</p><p class="muted">Try it in <a href="#shots">Lab 1</a>.</p></div></details>
+<details class="qa"><summary><span class="qnum">6.</span><span>A solid iron pole: cylinder of height 220 cm, base diameter 24 cm, surmounted by a cylinder of height 60 cm, radius 8 cm. Mass, if 1 cm³ of iron ≈ 8 g. (π = 3.14)</span></summary><div class="ans"><p>V = π(12²)(220) + π(8²)(60) = π(31680 + 3840) = 35520π = 111 532.8 cm³</p><p class="calc big">Mass = 111 532.8 × 8 g = 892 262.4 g ≈ 892.26 kg</p></div></details>
+<details class="qa"><summary><span class="qnum">7.</span><span>A solid (cone of height 120 cm, radius 60 cm on a hemisphere of radius 60 cm) is placed upright in a cylinder full of water (radius 60 cm, height 180 cm). Find the water left.</span></summary><div class="ans"><p>Cone = ⅓π(3600)(120) = 144 000π. Hemisphere = ⅔π(216 000) = 144 000π. Solid = 288 000π.</p><p>Cylinder = π(3600)(180) = 648 000π.</p><p>Water left = 360 000π = 360 000 × <span class="fr"><span>22</span><span>7</span></span> ≈ 1 131 428.57 cm³</p><p class="calc big">≈ 1.131 m³</p></div></details>
+<details class="qa"><summary><span class="qnum">8.</span><span>A spherical glass vessel (diameter 8.5 cm) has a cylindrical neck 8 cm long, 2 cm in diameter. A child finds its volume to be 345 cm³. Is she correct? (π = 3.14)</span></summary><div class="ans"><p>Sphere: r = 4.25: ⁴⁄₃ × 3.14 × 76.77 ≈ 321.39 cm³. Neck: 3.14 × 1² × 8 = 25.12 cm³.</p><p class="calc big">Total ≈ 346.51 cm³, so she is not correct; it is 346.51 cm³.</p></div></details>
+</section>
+</main>
+
+<footer><p><b>MT Classes, Motihari</b> · Class 10 Maths notes · Chapter 12: Surface Areas and Volumes</p><p>Figures and examples from the NCERT Mathematics textbook for Class 10 (reprint 2026-27). Board questions from CBSE Class 10 Mathematics (Standard) papers 2023 to 2026, set 30/1/1, and BSEB Matric papers 2024 and 2025. <a href="/notes.html">More notes</a></p></footer>
+
+<script>
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+})();
+</script>
+<script>
+(function () {
+  function $(id) { return document.getElementById(id); }
+  function fmt(x) { if (!isFinite(x)) return '–'; var s = (Math.round(x * 100) / 100).toFixed(2); return s.replace(/\.?0+$/, '').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function segPick(seg, cb) {
+    seg.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () { seg.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); }); cb(b); });
+    });
+  }
+  var PI = 22 / 7, PIS = '22/7';
+
+  // ---------- drawing primitives (y grows downward) ----------
+  var RY = 0.28;
+  function E(cx, cy, rx, cls) { return '<ellipse cx="' + cx + '" cy="' + cy + '" rx="' + rx + '" ry="' + rx * RY + '" class="' + cls + '"/>'; }
+  function cylP(cx, yt, yb, R) { var r = R * RY; return 'M' + (cx - R) + ' ' + yt + 'L' + (cx - R) + ' ' + yb + 'A' + R + ' ' + r + ' 0 0 0 ' + (cx + R) + ' ' + yb + 'L' + (cx + R) + ' ' + yt + 'A' + R + ' ' + r + ' 0 0 1 ' + (cx - R) + ' ' + yt + 'Z'; }
+  function coneUpP(cx, yb, R, H) { return 'M' + (cx - R) + ' ' + yb + 'L' + cx + ' ' + (yb - H) + 'L' + (cx + R) + ' ' + yb + 'A' + R + ' ' + R * RY + ' 0 0 1 ' + (cx - R) + ' ' + yb + 'Z'; }
+  function coneDownP(cx, yt, R, H) { return 'M' + (cx - R) + ' ' + yt + 'L' + cx + ' ' + (yt + H) + 'L' + (cx + R) + ' ' + yt + 'A' + R + ' ' + R * RY + ' 0 0 0 ' + (cx - R) + ' ' + yt + 'Z'; }
+  function hemiDownP(cx, y, R) { return 'M' + (cx - R) + ' ' + y + 'A' + R + ' ' + R + ' 0 0 0 ' + (cx + R) + ' ' + y + 'A' + R + ' ' + R * RY + ' 0 0 0 ' + (cx - R) + ' ' + y + 'Z'; }
+  function hemiUpP(cx, y, R) { return 'M' + (cx - R) + ' ' + y + 'A' + R + ' ' + R + ' 0 0 1 ' + (cx + R) + ' ' + y + 'A' + R + ' ' + R * RY + ' 0 0 1 ' + (cx - R) + ' ' + y + 'Z'; }
+  function P(d, cls) { return '<path d="' + d + '" class="' + cls + '"/>'; }
+  function T(x, y, s, a) { return '<text x="' + x + '" y="' + y + '" class="lab"' + (a ? ' text-anchor="' + a + '"' : '') + '>' + s + '</text>'; }
+
+  // role -> class, per mode: s = solid surface, i = inner (scooped) surface, h = hidden face, a = removed (air)
+  function roles(mode) {
+    if (mode === 'paint') return { s: 'vis', i: 'vis2', h: 'hid', a: 'vis2', e: 'edge' };
+    if (mode === 'water') return { s: 'wat', i: 'air', h: 'wat', a: 'air', e: 'wat' };
+    return { s: 'ol', i: 'ol', h: 'olh', a: 'ol', e: 'ol' };
+  }
+
+  // ---------- the 9 shapes ----------
+  var CX = 170, BASE = 280;
+  function fit(w, h) { var k = Math.min(250 / w, 250 / (h + 0.3 * w)); BASE = 290 - w * k / 2 * RY; return k; }
+  var SHAPES = [
+    { id: 'toy', name: 'Toy / top', book: 'Cone on a hemisphere (Example 1, Ex 12.1 Q3, Ex 12.2 Q1)',
+      ps: [['r', 'radius r', 1, 10, 0.5, 3.5], ['hc', 'cone height', 1, 20, 0.5, 12]],
+      draw: function (p, c) { var k = fit(2 * p.r, p.r * 1.05 + p.hc), R = p.r * k, yj = BASE - p.r * k;
+        return P(hemiDownP(CX, yj, R), c.s) + P(coneUpP(CX, yj, R, p.hc * k), c.s) + E(CX, yj, R, c.h); },
+      calc: function (p) { var l = Math.sqrt(p.r * p.r + p.hc * p.hc);
+        return { pre: 'l = √(r² + h²) = √(' + fmt(p.r * p.r) + ' + ' + fmt(p.hc * p.hc) + ') = ' + fmt(l),
+          sa: [['CSA of cone', 'πrl', PI * p.r * l], ['CSA of hemisphere', '2πr²', 2 * PI * p.r * p.r]],
+          hid: 'flat base of cone and flat face of hemisphere (glued together)',
+          v: [['cone', '⅓πr²h', PI * p.r * p.r * p.hc / 3], ['hemisphere', '⅔πr³', 2 * PI * Math.pow(p.r, 3) / 3]] }; } },
+    { id: 'capsule', name: 'Capsule', book: 'Cylinder with two hemispherical ends (Ex 12.1 Q6, Ex 12.2 Q3, CBSE 2026)',
+      ps: [['r', 'radius r', 1, 10, 0.5, 2.5], ['h', 'cylinder length', 1, 30, 0.5, 9]],
+      draw: function (p, c) { var k = fit(2 * p.r, 2 * p.r + p.h), R = p.r * k, y1 = BASE - p.r * k, y2 = y1 - p.h * k;
+        return P(hemiDownP(CX, y1, R), c.s) + P(cylP(CX, y2, y1, R), c.s) + P(hemiUpP(CX, y2, R), c.s) + E(CX, y1, R, c.h) + E(CX, y2, R, c.h); },
+      calc: function (p) { return { sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['CSA of 2 hemispheres', '4πr²', 4 * PI * p.r * p.r]],
+          hid: 'the two flat circles at the joints',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['2 hemispheres (a sphere)', '⁴⁄₃πr³', 4 * PI * Math.pow(p.r, 3) / 3]] }; } },
+    { id: 'tent', name: 'Tent', book: 'Cylinder surmounted by a cone (Ex 12.1 Q7). Canvas: no floor.',
+      ps: [['r', 'radius r', 1, 10, 0.5, 2], ['h', 'wall height', 0.5, 20, 0.1, 2.1], ['l', 'cone slant l', 1, 20, 0.1, 2.8]],
+      draw: function (p, c) { var hc = Math.sqrt(Math.max(p.l * p.l - p.r * p.r, 0.01)), k = fit(2 * p.r, p.h + hc + 0.3 * p.r), R = p.r * k, yt = BASE - p.h * k;
+        return P(cylP(CX, yt, BASE, R), c.s) + P(coneUpP(CX, yt, R, hc * k), c.s) + E(CX, yt, R, c.h) + E(CX, BASE, R, c.h); },
+      calc: function (p) { var hc = Math.sqrt(Math.max(p.l * p.l - p.r * p.r, 0));
+        return { pre: p.l <= p.r ? 'Slant height must be more than r!' : 'cone height = √(l² − r²) = ' + fmt(hc),
+          sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['CSA of cone', 'πrl', PI * p.r * p.l]],
+          hid: 'the joint circle and the floor (not covered with canvas)',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['cone', '⅓πr²h′', PI * p.r * p.r * hc / 3]] }; } },
+    { id: 'block', name: 'Block', book: 'Hemisphere on a cube (Example 2, Ex 12.1 Q4)',
+      ps: [['a', 'cube edge a', 2, 20, 0.5, 5], ['r', 'hemisphere radius r', 0.5, 10, 0.1, 2.1]],
+      fix: function (p) { if (p.r > p.a / 2) p.r = p.a / 2; },
+      draw: function (p, c) { var k = fit(1.35 * p.a, 1.25 * p.a + p.r), A = p.a * k, d = A * 0.35, x0 = CX - A * 0.62, yb = BASE, yt = yb - A, R = p.r * k;
+        var tx = x0 + A / 2 + d / 2, ty = yt - d * 0.55;
+        return P('M' + x0 + ' ' + yt + 'L' + (x0 + A) + ' ' + yt + 'L' + (x0 + A) + ' ' + yb + 'L' + x0 + ' ' + yb + 'Z', c.s) +
+          P('M' + (x0 + A) + ' ' + yt + 'L' + (x0 + A + d) + ' ' + (yt - d * 1.1) + 'L' + (x0 + A + d) + ' ' + (yb - d * 1.1) + 'L' + (x0 + A) + ' ' + yb + 'Z', c.s) +
+          P('M' + x0 + ' ' + yt + 'L' + (x0 + d) + ' ' + (yt - d * 1.1) + 'L' + (x0 + A + d) + ' ' + (yt - d * 1.1) + 'L' + (x0 + A) + ' ' + yt + 'Z', c.s) +
+          P(hemiUpP(tx, ty, R), c.s) + E(tx, ty, R, c.h); },
+      calc: function (p) { return { pre: 'greatest possible r = a/2 = ' + fmt(p.a / 2),
+          sa: [['cube faces (the top loses a circle)', '6a² − πr²', 6 * p.a * p.a - PI * p.r * p.r], ['CSA of hemisphere', '2πr²', 2 * PI * p.r * p.r]],
+          hid: 'circle of the cube’s top face under the hemisphere, and the hemisphere’s flat face',
+          v: [['cube', 'a³', Math.pow(p.a, 3)], ['hemisphere', '⅔πr³', 2 * PI * Math.pow(p.r, 3) / 3]] }; } },
+    { id: 'bath', name: 'Bird-bath', book: 'Cylinder with a hemisphere scooped from the top (Example 4 type)',
+      ps: [['r', 'radius r', 1, 10, 0.5, 3], ['h', 'cylinder height', 1, 30, 0.5, 14.5]],
+      fix: function (p) { if (p.h < p.r) p.h = p.r; },
+      draw: function (p, c) { var k = fit(2 * p.r, p.h + 0.3 * p.r), R = p.r * k, yt = BASE - p.h * k;
+        return P(cylP(CX, yt, BASE, R), c.s) + E(CX, yt, R, c.a) + P(hemiDownP(CX, yt, R), c.i) + E(CX, yt, R, c.a); },
+      calc: function (p) { return { sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['bottom circle', 'πr²', PI * p.r * p.r], ['inside bowl', '2πr²', 2 * PI * p.r * p.r]],
+          hid: 'the top circle (cut away). NCERT’s Example 4 also leaves out the bottom circle',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['minus hemisphere', '−⅔πr³', -2 * PI * Math.pow(p.r, 3) / 3]] }; } },
+    { id: 'article', name: 'Wooden article', book: 'Hemispheres scooped from both ends of a cylinder (Ex 12.1 Q9)',
+      ps: [['r', 'radius r', 1, 10, 0.5, 3.5], ['h', 'cylinder height', 2, 30, 0.5, 10]],
+      fix: function (p) { if (p.h < 2 * p.r) p.h = 2 * p.r; },
+      draw: function (p, c) { var k = fit(2 * p.r, p.h + 0.3 * p.r), R = p.r * k, yt = BASE - p.h * k;
+        return P(cylP(CX, yt, BASE, R), c.s) + E(CX, BASE, R, c.a) + P(hemiUpP(CX, BASE, R), c.i) + P(hemiDownP(CX, yt, R), c.i) + E(CX, yt, R, c.a); },
+      calc: function (p) { return { sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['two inside bowls', '4πr²', 4 * PI * p.r * p.r]],
+          hid: 'both end circles (cut away)',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['minus 2 hemispheres', '−⁴⁄₃πr³', -4 * PI * Math.pow(p.r, 3) / 3]] }; } },
+    { id: 'cavity', name: 'Conical cavity', book: 'Cone hollowed out of a cylinder, same r and h (Ex 12.1 Q8)',
+      ps: [['r', 'radius r', 0.5, 10, 0.1, 0.7], ['h', 'height h', 0.5, 20, 0.1, 2.4]],
+      draw: function (p, c) { var k = fit(2 * p.r, p.h + 0.3 * p.r), R = p.r * k, yt = BASE - p.h * k;
+        return P(cylP(CX, yt, BASE, R), c.s) + E(CX, yt, R, c.a) + P(coneDownP(CX, yt, R, p.h * k), c.i) + E(CX, yt, R, c.a); },
+      calc: function (p) { var l = Math.sqrt(p.r * p.r + p.h * p.h);
+        return { pre: 'slant height of cavity l = ' + fmt(l),
+          sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['bottom circle', 'πr²', PI * p.r * p.r], ['inside of cone', 'πrl', PI * p.r * l]],
+          hid: 'the top circle (cut away)',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['minus cone', '−⅓πr²h', -PI * p.r * p.r * p.h / 3]] }; } },
+    { id: 'model', name: 'Rachel’s model', book: 'Cylinder with a cone at each end (Ex 12.2 Q2)',
+      ps: [['r', 'radius r', 0.5, 10, 0.1, 1.5], ['h', 'cylinder length', 1, 30, 0.5, 8], ['hc', 'each cone height', 0.5, 10, 0.5, 2]],
+      draw: function (p, c) { var k = fit(2 * p.r, p.h + 2 * p.hc), R = p.r * k, y1 = BASE - p.hc * k, y2 = y1 - p.h * k;
+        return P(coneDownP(CX, y1, R, p.hc * k), c.s) + P(cylP(CX, y2, y1, R), c.s) + P(coneUpP(CX, y2, R, p.hc * k), c.s) + E(CX, y1, R, c.h) + E(CX, y2, R, c.h); },
+      calc: function (p) { var l = Math.sqrt(p.r * p.r + p.hc * p.hc);
+        return { pre: 'slant height of each cone l = ' + fmt(l),
+          sa: [['CSA of cylinder', '2πrh', 2 * PI * p.r * p.h], ['CSA of 2 cones', '2πrl', 2 * PI * p.r * l]],
+          hid: 'the two joint circles',
+          v: [['cylinder', 'πr²h', PI * p.r * p.r * p.h], ['2 cones', '⅔πr²h′', 2 * PI * p.r * p.r * p.hc / 3]] }; } },
+    { id: 'shed', name: 'Shed', book: 'Cuboid surmounted by a half cylinder (Example 5)',
+      ps: [['l', 'length', 2, 30, 0.5, 15], ['b', 'width (= diameter)', 1, 20, 0.5, 7], ['ht', 'wall height', 1, 20, 0.5, 8]],
+      draw: function (p, c) { var R0 = p.b / 2, k = fit(p.b + 0.45 * p.l, p.ht + R0 + 0.25 * p.l), B = p.b * k, H = p.ht * k, R = B / 2, dx = p.l * k * 0.45, dy = -p.l * k * 0.25, x0 = CX - (B + dx) / 2, yb = BASE, yt = yb - H;
+        function face(ox, oy) { return 'M' + (x0 + ox) + ' ' + (yb + oy) + 'L' + (x0 + ox) + ' ' + (yt + oy) + 'A' + R + ' ' + R + ' 0 0 1 ' + (x0 + B + ox) + ' ' + (yt + oy) + 'L' + (x0 + B + ox) + ' ' + (yb + oy) + 'Z'; }
+        var roof = 'M' + x0 + ' ' + yt + 'A' + R + ' ' + R + ' 0 0 1 ' + (x0 + B) + ' ' + yt + 'L' + (x0 + B + dx) + ' ' + (yt + dy) + 'A' + R + ' ' + R + ' 0 0 0 ' + (x0 + dx) + ' ' + (yt + dy) + 'Z';
+        var side = 'M' + (x0 + B) + ' ' + yb + 'L' + (x0 + B) + ' ' + yt + 'L' + (x0 + B + dx) + ' ' + (yt + dy) + 'L' + (x0 + B + dx) + ' ' + (yb + dy) + 'Z';
+        return P(face(dx, dy), c.s) + P(roof, c.s) + P(side, c.s) + P(face(0, 0), c.s) + '<path d="M' + x0 + ' ' + yt + 'L' + (x0 + B) + ' ' + yt + '" class="' + c.h + '"/>'; },
+      calc: function (p) { var R = p.b / 2;
+        return { pre: 'radius of half cylinder = b/2 = ' + fmt(R),
+          sa: [['floor', 'lb', p.l * p.b], ['two long walls', '2lh', 2 * p.l * p.ht], ['two end walls', '2bh + πR²', 2 * p.b * p.ht + PI * R * R], ['curved roof', 'πRl', PI * R * p.l]],
+          hid: 'the rectangle where the roof sits on the cuboid',
+          v: [['cuboid', 'lbh', p.l * p.b * p.ht], ['half cylinder', '½πR²l', PI * R * R * p.l / 2]] }; } }
+  ];
+  function shapeById(id) { for (var i = 0; i < SHAPES.length; i++) if (SHAPES[i].id === id) return SHAPES[i]; }
+  function renderSolid(sh, p, mode, clipY) {
+    if (mode === 'paint') return sh.draw(p, roles('paint'));
+    return '<defs><clipPath id="sbclip"><rect x="0" y="' + clipY + '" width="340" height="320"/></clipPath></defs>' +
+      sh.draw(p, roles('outline')) + '<g clip-path="url(#sbclip)">' + sh.draw(p, roles('water')) + '</g>';
+  }
+
+  // ---------- Solid Builder ----------
+  (function () {
+    if (!$('sb')) return;
+    var cur = SHAPES[0], p = {}, mode = 'paint', anim = null;
+    var shapesEl = $('sb-shapes');
+    SHAPES.forEach(function (s, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = s.name; b.dataset.id = s.id; if (!i) b.className = 'on'; shapesEl.appendChild(b); });
+    segPick(shapesEl, function (b) { pick(shapeById(b.dataset.id)); });
+    segPick($('sb-mode'), function (b) { mode = b.dataset.m; draw(true); });
+    segPick($('sb-pi'), function (b) { PI = b.dataset.pi === '227' ? 22 / 7 : 3.14; PIS = b.dataset.pi === '227' ? '22/7' : '3.14'; out(); });
+    function pick(s) {
+      cur = s; p = {};
+      var h = '';
+      s.ps.forEach(function (q) { p[q[0]] = q[5]; h += '<label for="sb-' + q[0] + '">' + q[1] + ' = <b id="sbv-' + q[0] + '">' + q[5] + '</b></label><input type="range" id="sb-' + q[0] + '" min="' + q[2] + '" max="' + q[3] + '" step="' + q[4] + '" value="' + q[5] + '">'; });
+      $('sb-sliders').innerHTML = h; $('sb-title').innerHTML = '<b>' + s.name + ':</b> ' + s.book;
+      s.ps.forEach(function (q) { $('sb-' + q[0]).addEventListener('input', function (e) { p[q[0]] = +e.target.value; if (cur.fix) { cur.fix(p); s.ps.forEach(function (z) { $('sb-' + z[0]).value = p[z[0]]; }); } s.ps.forEach(function (z) { $('sbv-' + z[0]).textContent = p[z[0]]; }); draw(false); }); });
+      draw(true);
+    }
+    function draw(animate) {
+      var svg = $('sb-svg');
+      if (mode === 'paint' || !animate) { if (anim) cancelAnimationFrame(anim); svg.innerHTML = renderSolid(cur, p, mode, 0); out(); return; }
+      var t0 = null;
+      function step(t) { if (!t0) t0 = t; var f = Math.min((t - t0) / 1400, 1); svg.innerHTML = renderSolid(cur, p, 'pour', 300 - 290 * f); if (f < 1) anim = requestAnimationFrame(step); }
+      if (anim) cancelAnimationFrame(anim); anim = requestAnimationFrame(step); out();
+    }
+    function out() {
+      var r = cur.calc(p), tot = 0, vt = 0, h = '';
+      if (r.pre) h += '<p class="muted">' + r.pre + '</p>';
+      h += '<p><b>🎨 Surface area</b> (π = ' + PIS + ')</p><ul>';
+      r.sa.forEach(function (x) { tot += x[2]; h += '<li>' + x[0] + ' = ' + x[1] + ' = <b>' + fmt(x[2]) + '</b></li>'; });
+      h += '</ul><p class="sb-hid">Not counted: ' + r.hid + '.</p><p class="sb-total">Surface area = <b>' + fmt(tot) + '</b> sq units</p>';
+      h += '<p><b>💧 Volume</b></p><ul>';
+      r.v.forEach(function (x) { vt += x[2]; h += '<li>' + x[0] + ' = ' + x[1] + ' = <b>' + fmt(x[2]) + '</b></li>'; });
+      h += '</ul><p class="sb-total">Volume = <b>' + fmt(vt) + '</b> cubic units</p>';
+      $('sb-out').innerHTML = h;
+    }
+    pick(SHAPES[0]);
+  })();
+
+  // ---------- Lab 1: lead shots ----------
+  (function () {
+    if (!$('shots')) return;
+    var n = 0, dots = [], H = 8, Rr = 5, need = 100;
+    function inside() { // random point inside cone cross-section near the bottom, filling upward
+      for (var t = 0; t < 50; t++) { var y = Math.random() * (0.25 + n / 160); var yy = Math.min(y, 0.95); var x = (Math.random() * 2 - 1) * 0.8; return [x, Math.max(yy, 0.06)]; }
+    }
+    function draw() {
+      var cx = 150, top = 30, bot = 230, w = 110, fill = Math.max(0, 1 - Math.min(n, need) / need * 0.25);
+      var h = '<path d="M' + (cx - w) + ' ' + top + 'L' + cx + ' ' + bot + 'L' + (cx + w) + ' ' + top + '" fill="#EAF6FE" stroke="#0E2148" stroke-width="3"/>';
+      h += '<path d="M' + (cx - w) + ' ' + top + 'L' + cx + ' ' + bot + 'L' + (cx + w) + ' ' + top + 'Z" fill="#5DB7F0" opacity=".55"/>';
+      dots.forEach(function (d) { var y = bot - d[1] * (bot - top), x = cx + d[0] * (y - bot) / (top - bot) * w * -1; h += '<circle cx="' + (cx + d[0] * (bot - y) / (bot - top) * w) + '" cy="' + y + '" r="4" fill="#6B7280" stroke="#374151"/>'; });
+      h += '<ellipse cx="' + cx + '" cy="' + top + '" rx="' + w + '" ry="14" fill="#9BD3F7" stroke="#0E2148" stroke-width="2"/>';
+      var spill = Math.min(n, need) / need;
+      if (n) h += '<path d="M' + (cx + w) + ' ' + top + ' q 18 4 22 ' + (40 + 150 * spill) + '" fill="none" stroke="#5DB7F0" stroke-width="' + (3 + 5 * spill) + '" stroke-linecap="round"/><ellipse cx="' + (cx + w + 24) + '" cy="248" rx="' + (8 + 28 * spill) + '" ry="6" fill="#5DB7F0" opacity=".7"/>';
+      h += '<text x="10" y="254" class="lab">h = 8 cm, r = 5 cm, shot r = 0.5 cm</text>';
+      $('sh-svg').innerHTML = h;
+      var water = 200 * Math.PI / 3, shot = Math.PI / 6, out = n * shot, frac = out / water;
+      $('sh-out').innerHTML = 'Shots dropped: <b>' + n + '</b> · water spilled = ' + n + ' × π/6 = <b>' + fmt(out) + ' cm³</b> = ' + fmt(frac * 100) + '% of ' + fmt(water) + ' cm³' +
+        '<div class="bar"><i style="width:' + Math.min(frac / 0.25, 1) * 100 + '%;background:' + (n >= need ? 'var(--green)' : 'var(--gold)') + '"></i></div>' +
+        (n === need ? '🎉 Exactly one-fourth has flowed out with <b>100 shots</b>: (50π/3) ÷ (π/6) = 100.' : n > need ? 'Too many! More than one-fourth has spilled. The answer is 100.' : 'Target: one-fourth = 50π/3 ≈ 52.36 cm³.');
+    }
+    document.querySelectorAll('#shots [data-n]').forEach(function (b) { b.addEventListener('click', function () { var k = +b.dataset.n; for (var i = 0; i < k; i++) { n++; if (dots.length < 140) dots.push(inside()); } draw(); }); });
+    $('sh-reset').addEventListener('click', function () { n = 0; dots = []; draw(); });
+    draw();
+  })();
+
+  // ---------- Lab 2: melt and recast ----------
+  (function () {
+    if (!$('melt')) return;
+    var S = {
+      sphere: ['Sphere', [['r', 'radius']], function (q) { return 4 / 3 * Math.PI * Math.pow(q.r, 3); }],
+      hemi: ['Hemisphere', [['r', 'radius']], function (q) { return 2 / 3 * Math.PI * Math.pow(q.r, 3); }],
+      cyl: ['Cylinder', [['r', 'radius'], ['h', 'height']], function (q) { return Math.PI * q.r * q.r * q.h; }],
+      cone: ['Cone', [['r', 'radius'], ['h', 'height']], function (q) { return Math.PI * q.r * q.r * q.h / 3; }],
+      cuboid: ['Cuboid', [['l', 'length'], ['b', 'breadth'], ['h', 'height']], function (q) { return q.l * q.b * q.h; }],
+      cube: ['Cube', [['a', 'edge']], function (q) { return Math.pow(q.a, 3); }],
+      wire: ['Wire (find its length)', [['r', 'radius of wire']], null]
+    };
+    var DEF = { from: { sphere: { r: 8 }, hemi: { r: 6 }, cyl: { r: 6, h: 15 }, cone: { r: 6, h: 24 }, cuboid: { l: 44, b: 22, h: 8 }, cube: { a: 12 } },
+      to: { sphere: { r: 2 }, hemi: { r: 3 }, cyl: { r: 1, h: 4 }, cone: { r: 3, h: 4 }, cuboid: { l: 2, b: 2, h: 2 }, cube: { a: 2 }, wire: { r: 0.1 } } };
+    var st = { from: 'sphere', to: 'sphere', fq: { r: 8 }, tq: { r: 2 } };
+    function opts(sel, list, v) { sel.innerHTML = list.map(function (k) { return '<option value="' + k + '"' + (k === v ? ' selected' : '') + '>' + S[k][0] + '</option>'; }).join(''); }
+    opts($('mt-from'), ['sphere', 'hemi', 'cyl', 'cone', 'cuboid', 'cube'], 'sphere');
+    opts($('mt-to'), ['sphere', 'hemi', 'cyl', 'cone', 'cuboid', 'cube', 'wire'], 'sphere');
+    function inputs(side) {
+      var key = side === 'from' ? st.from : st.to, q = side === 'from' ? st.fq : st.tq, el = $('mt-' + side + '-in');
+      el.innerHTML = S[key][1].map(function (f) { return '<label class="mt-in">' + f[1] + ' <input type="number" step="any" min="0" data-k="' + f[0] + '" value="' + q[f[0]] + '"> cm</label>'; }).join('');
+      el.querySelectorAll('input').forEach(function (i) { i.addEventListener('input', function () { q[i.dataset.k] = +i.value; calc(); }); });
+    }
+    function calc() {
+      var V1 = S[st.from][2](st.fq), o = 'Volume melted = <b>' + fmt(V1) + ' cm³</b> (π = 3.1416). ';
+      if (st.to === 'wire') { var len = V1 / (Math.PI * st.tq.r * st.tq.r); o += 'Wire is a long cylinder: length = V ÷ πr² = <b>' + fmt(len) + ' cm</b> = ' + fmt(len / 100) + ' m.'; }
+      else { var V2 = S[st.to][2](st.tq), n = V1 / V2; o += 'One new piece = ' + fmt(V2) + ' cm³. Number of pieces = ' + fmt(V1) + ' ÷ ' + fmt(V2) + ' = <b>' + fmt(n) + '</b>' + (Math.abs(n - Math.round(n)) > 0.01 ? ' → <b>' + Math.floor(n) + '</b> whole pieces' : '') + '.'; }
+      $('mt-out').innerHTML = o;
+    }
+    $('mt-from').addEventListener('change', function (e) { st.from = e.target.value; st.fq = Object.assign({}, DEF.from[st.from]); inputs('from'); calc(); });
+    $('mt-to').addEventListener('change', function (e) { st.to = e.target.value; st.tq = Object.assign({}, DEF.to[st.to]); inputs('to'); calc(); });
+    inputs('from'); inputs('to'); calc();
+  })();
+
+  // ---------- Lab 3: units ----------
+  (function () {
+    if (!$('units')) return;
+    var VOL = { cm3: [1, 'cm³'], m3: [1e6, 'm³'], l: [1000, 'litres'], ml: [1, 'mL'] }, AR = { cm2: [1, 'cm²'], m2: [1e4, 'm²'], mm2: [0.01, 'mm²'] };
+    function go() {
+      var v = +$('un-v').value, u = $('un-u').value, set = VOL[u] ? VOL : AR, base = v * set[u][0], parts = [];
+      for (var k in set) if (k !== u) parts.push('<b>' + fmt(base / set[k][0]) + '</b> ' + set[k][1]);
+      $('un-out').innerHTML = fmt(v) + ' ' + set[u][1] + ' = ' + parts.join(' = ');
+    }
+    $('un-v').addEventListener('input', go); $('un-u').addEventListener('change', go); go();
+  })();
+
+  // ---------- stars ----------
+  var STARMAX = { hunter: 5, memory: 5, speed: 5, detective: 5 }, KEY = 'mt-sav10-stars', stars = {};
+  try { stars = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { stars = {}; }
+  function award(g, n) { n = Math.min(STARMAX[g], n); if ((stars[g] || 0) >= n) return; stars[g] = n; try { localStorage.setItem(KEY, JSON.stringify(stars)); } catch (e) {} showStars(true); }
+  function showStars(pop) {
+    var t = 0, m = 0; for (var k in STARMAX) { m += STARMAX[k]; t += stars[k] || 0; }
+    if (!$('star-n')) return;
+    $('star-n').textContent = t; $('star-max').textContent = m; $('star-bar').style.width = (t / m * 100) + '%';
+    $('star-badge').textContent = t >= m ? 'Solid Champion 🏆' : t >= 15 ? 'Volume Wizard' : t >= 10 ? 'Shape Builder' : t >= 5 ? 'Explorer' : t >= 1 ? 'Learner' : 'Beginner';
+    if (pop) { var b = $('star-n'); b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
+  }
+  showStars(false);
+
+  // ---------- Game 1: hidden-face hunter ----------
+  (function () {
+    if (!$('hunter')) return;
+    var R = [
+      { s: 'toy', p: { r: 3.5, hc: 12 }, q: 'A toy: cone on a hemisphere.', o: ['CSA of cone', 'base of cone', 'CSA of hemisphere', 'flat face of hemisphere'], c: [0, 2] },
+      { s: 'capsule', p: { r: 2.5, h: 9 }, q: 'A capsule.', o: ['CSA of cylinder', 'two ends of cylinder', 'CSA of both hemispheres', 'flat faces of hemispheres'], c: [0, 2] },
+      { s: 'block', p: { a: 5, r: 2.1 }, q: 'A cube with a hemisphere on top.', o: ['5 full faces of cube', 'top face minus a circle', 'full top face', 'CSA of hemisphere', 'flat face of hemisphere'], c: [0, 1, 3] },
+      { s: 'cavity', p: { r: 0.7, h: 2.4 }, q: 'A cylinder with a conical cavity from the top.', o: ['CSA of cylinder', 'top circle', 'bottom circle', 'inside of cone (πrl)', 'base of the cone'], c: [0, 2, 3] },
+      { s: 'article', p: { r: 3.5, h: 10 }, q: 'A cylinder with a hemisphere scooped from each end.', o: ['CSA of cylinder', 'two end circles', 'two inside bowls', 'one inside bowl'], c: [0, 2] },
+      { s: 'tent', p: { r: 2, h: 2.1, l: 2.8 }, q: 'Canvas of a tent (no floor).', o: ['CSA of cylinder', 'floor circle', 'CSA of cone', 'base of cone'], c: [0, 2] }
+    ];
+    var i = 0, sel = [], right = 0, checked = false;
+    function show() {
+      var r = R[i]; sel = []; checked = false;
+      $('hu-clue').textContent = 'Round ' + (i + 1) + ' of ' + R.length + ': ' + r.q;
+      $('hu-svg').innerHTML = shapeById(r.s).draw(r.p, { s: 'vis', i: 'vis2', h: 'hid', a: 'vis2' });
+      $('hu-chips').innerHTML = r.o.map(function (t, k) { return '<button type="button" class="chip" data-k="' + k + '">' + t + '</button>'; }).join('');
+      $('hu-chips').querySelectorAll('.chip').forEach(function (b) { b.addEventListener('click', function () { if (checked) return; var k = +b.dataset.k, j = sel.indexOf(k); if (j < 0) sel.push(k); else sel.splice(j, 1); b.classList.toggle('on', j < 0); }); });
+      $('hu-out').textContent = 'Tap the surfaces you would paint.'; $('hu-score').textContent = 'Correct: ' + right + ' / ' + R.length;
+    }
+    $('hu-check').addEventListener('click', function () {
+      if (checked) return; checked = true; var r = R[i], ok = sel.length === r.c.length && r.c.every(function (k) { return sel.indexOf(k) >= 0; });
+      $('hu-chips').querySelectorAll('.chip').forEach(function (b) { var k = +b.dataset.k; if (r.c.indexOf(k) >= 0) b.classList.add('ok'); else if (sel.indexOf(k) >= 0) b.classList.add('shake'); });
+      if (ok) right++;
+      $('hu-out').innerHTML = ok ? '✅ Perfect! Only the green surfaces are visible.' : '❌ Not quite. The green ones count; the red dashed faces in the picture are hidden or cut away.';
+      $('hu-score').textContent = 'Correct: ' + right + ' / ' + R.length;
+      $('hunter').classList.add(ok ? 'flash-ok' : 'flash-bad'); setTimeout(function () { $('hunter').classList.remove('flash-ok', 'flash-bad'); }, 600);
+      if (i === R.length - 1) { if (right) award('hunter', right); $('hu-out').innerHTML += ' <b>Game over: ' + right + ' / ' + R.length + '.</b> Press Next to play again.'; }
+    });
+    $('hu-next').addEventListener('click', function () { i++; if (i >= R.length) { i = 0; right = 0; } show(); });
+    show();
+  })();
+
+  // ---------- Game 2: memory ----------
+  (function () {
+    if (!$('mem-grid')) return;
+    var PAIRS = [['CSA of cone', 'πrl'], ['TSA of hemisphere', '3πr²'], ['Volume of cone', '⅓πr²h'], ['Volume of sphere', '⁴⁄₃πr³'], ['CSA of cylinder', '2πrh'], ['Volume of hemisphere', '⅔πr³'], ['Slant height', '√(r² + h²)'], ['TSA of cube', '6a²']];
+    var open = [], moves = 0, done = 0, lock = false;
+    function deal() {
+      var cards = []; PAIRS.forEach(function (p, i) { cards.push({ t: p[0], i: i, sym: false }); cards.push({ t: p[1], i: i, sym: true }); });
+      cards = shuffle(cards); open = []; moves = 0; done = 0; lock = false;
+      $('mem-grid').innerHTML = cards.map(function (c) { return '<button type="button" class="mcard" data-i="' + c.i + '"><span class="back">?</span><span class="face' + (c.sym ? ' sym' : '') + '">' + c.t + '</span></button>'; }).join('');
+      $('mem-score').textContent = 'Moves: 0';
+      $('mem-grid').querySelectorAll('.mcard').forEach(function (b) { b.addEventListener('click', function () { flip(b); }); });
+    }
+    function flip(b) {
+      if (lock || b.classList.contains('up') || b.classList.contains('done')) return;
+      b.classList.add('up'); open.push(b);
+      if (open.length < 2) return;
+      moves++; $('mem-score').textContent = 'Moves: ' + moves;
+      var a = open[0], c = open[1]; open = [];
+      if (a.dataset.i === c.dataset.i) { a.classList.add('done'); c.classList.add('done'); done++; if (done === PAIRS.length) { var s = moves <= 10 ? 5 : moves <= 13 ? 4 : moves <= 16 ? 3 : moves <= 20 ? 2 : 1; award('memory', s); $('mem-score').textContent = 'All matched in ' + moves + ' moves: ' + s + ' ⭐'; } }
+      else { lock = true; setTimeout(function () { a.classList.remove('up'); c.classList.remove('up'); lock = false; }, 900); }
+    }
+    $('mem-new').addEventListener('click', deal); deal();
+  })();
+
+  // ---------- Game 3: speed round ----------
+  (function () {
+    if (!$('speed')) return;
+    function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+    var GEN = [
+      function () { var r = pick([7, 14]), h = pick([2, 3, 5, 10]); return ['Volume of a cylinder, r = ' + r + ', h = ' + h, 22 / 7 * r * r * h, 'cm³']; },
+      function () { var r = pick([7, 14]), h = pick([3, 6, 9, 12]); return ['Volume of a cone, r = ' + r + ', h = ' + h, 22 / 7 * r * r * h / 3, 'cm³']; },
+      function () { var h = pick([3, 5, 10, 12]); return ['CSA of a cylinder, r = 7, h = ' + h, 44 * h, 'cm²']; },
+      function () { var l = pick([10, 15, 25]); return ['CSA of a cone, r = 7, l = ' + l, 22 * l, 'cm²']; },
+      function () { var r = pick([7, 14]); return ['CSA of a hemisphere, r = ' + r, 2 * 22 / 7 * r * r, 'cm²']; },
+      function () { var r = pick([7, 14]); return ['TSA of a solid hemisphere, r = ' + r, 3 * 22 / 7 * r * r, 'cm²']; },
+      function () { var r = pick([3.5, 7, 14]); return ['Surface area of a sphere, r = ' + r, 4 * 22 / 7 * r * r, 'cm²']; },
+      function () { return ['Volume of a hemisphere, r = 21', 19404, 'cm³']; },
+      function () { var a = pick([3, 4, 5, 6, 8]); return ['TSA of a cube, edge ' + a, 6 * a * a, 'cm²']; },
+      function () { var a = pick([2, 3, 4, 5]); return ['Two cubes of edge ' + a + ' joined: surface area', 10 * a * a, 'cm²']; }
+    ];
+    var t = 0, timer = null, score = 0, best = 0, ans = 0;
+    try { best = +localStorage.getItem('mt-sav10-speed') || 0; } catch (e) {}
+    function q() {
+      var g = pick(GEN)(); ans = Math.round(g[1]);
+      var set = [ans], alts = shuffle([ans * 2, Math.round(ans / 2), Math.round(ans * 1.5), ans + 22, ans - 14, Math.round(ans * 3)]);
+      for (var i = 0; set.length < 4 && i < alts.length; i++) if (alts[i] > 0 && set.indexOf(alts[i]) < 0) set.push(alts[i]);
+      $('sp-q').textContent = g[0] + ' (' + g[2] + ')';
+      $('sp-opts').innerHTML = shuffle(set).map(function (v) { return '<button type="button" class="opt" data-v="' + v + '">' + fmt(v) + '</button>'; }).join('');
+      $('sp-opts').querySelectorAll('.opt').forEach(function (b) { b.addEventListener('click', function () {
+        if (!timer) return; var ok = +b.dataset.v === ans; if (ok) score++;
+        $('speed').classList.add(ok ? 'flash-ok' : 'flash-bad'); setTimeout(function () { $('speed').classList.remove('flash-ok', 'flash-bad'); }, 250);
+        $('sp-score').textContent = 'Score: ' + score + (best ? ' · Best: ' + best : ''); q(); }); });
+    }
+    $('sp-start').addEventListener('click', function () {
+      if (timer) return; t = 60; score = 0; $('sp-score').textContent = 'Score: 0'; $('sp-t').textContent = t; $('sp-t').classList.remove('low'); q();
+      timer = setInterval(function () { t--; $('sp-t').textContent = t; if (t <= 10) $('sp-t').classList.add('low');
+        if (t <= 0) { clearInterval(timer); timer = null; $('sp-opts').innerHTML = ''; var s = score >= 12 ? 5 : score >= 9 ? 4 : score >= 6 ? 3 : score >= 4 ? 2 : score >= 1 ? 1 : 0; if (s) award('speed', s);
+          if (score > best) { best = score; try { localStorage.setItem('mt-sav10-speed', best); } catch (e) {} }
+          $('sp-q').textContent = 'Time up! You scored ' + score + (s ? ' (' + s + ' ⭐)' : '') + '. Press Start to play again.'; $('sp-t').classList.remove('low'); } }, 1000);
+    });
+  })();
+
+  // ---------- Game 4: error detective ----------
+  (function () {
+    if (!$('detective')) return;
+    var C = [
+      { tag: 'Ex 12.1 Q3', q: 'Toy: cone (r = 3.5) on a hemisphere, total height 15.5 cm. Find the TSA.', l: ['Cone height = 15.5 − 3.5 = 12 cm', 'l = √(12² + 3.5²) = 12.5 cm', 'TSA = TSA of cone + TSA of hemisphere', '= πr(l + r) + 3πr²'], b: 2, w: 'The joined flat faces are hidden. TSA = πrl + 2πr² = 214.5 cm².' },
+      { tag: 'Cone volume', q: 'Cone: r = 7 cm, h = 24 cm. Find the volume.', l: ['l = √(7² + 24²) = 25 cm', 'V = ⅓πr²l = ⅓ × 22/7 × 49 × 25', '= 1283.33 cm³'], b: 1, w: 'Volume uses the vertical height: ⅓ × 22/7 × 49 × 24 = 1232 cm³.' },
+      { tag: 'Ex 12.1 Q6', q: 'Capsule: length 14 mm, diameter 5 mm. Find its surface area.', l: ['r = 2.5 mm', 'Cylinder length = 14 − 2.5 = 11.5 mm', 'SA = 2πrh + 4πr²'], b: 1, w: 'Both ends are hemispheres: 14 − 2 × 2.5 = 9 mm. Then SA = 220 mm².' },
+      { tag: 'Example 4', q: 'Bird-bath: cylinder height 1.45 m, radius 30 cm. Find the TSA.', l: ['TSA = CSA of cylinder + CSA of hemisphere', '= 2πr(h + r)', '= 2 × 22/7 × 30 × (1.45 + 30)', '= 33000 cm²'], b: 2, w: 'Units mixed! h must be 145 cm: 2 × 22/7 × 30 × 175 = 33000 cm².' },
+      { tag: 'Example 2', q: 'Cube of edge 5 cm with a hemisphere of diameter 4.2 cm on top. Find the SA.', l: ['TSA of cube = 6 × 25 = 150 cm²', 'SA = 150 + 2πr²', '= 150 + 27.72 = 177.72 cm²'], b: 1, w: 'The circle under the hemisphere is hidden: SA = 150 − πr² + 2πr² = 150 + πr² = 163.86 cm².' }
+    ];
+    var i = 0, first = true, score = 0, done = false;
+    function show() {
+      var c = C[i]; first = true; done = false;
+      $('de-tag').textContent = 'Case ' + (i + 1) + ' of ' + C.length + ' · ' + c.tag; $('de-q').textContent = c.q;
+      $('de-lines').innerHTML = c.l.map(function (t, k) { return '<button type="button" class="chip" data-k="' + k + '">' + t + '</button>'; }).join('');
+      $('de-out').textContent = 'Which line is wrong?';
+      $('de-lines').querySelectorAll('.chip').forEach(function (b) { b.addEventListener('click', function () {
+        if (done) return; var k = +b.dataset.k;
+        if (k === c.b) { done = true; b.classList.add('ok'); if (first) score++; $('de-out').innerHTML = '✅ Caught it! ' + c.w; $('de-score').textContent = 'Solved first try: ' + score + ' / ' + C.length; if (i === C.length - 1) award('detective', score); }
+        else { first = false; b.classList.add('shake'); setTimeout(function () { b.classList.remove('shake'); }, 400); $('de-out').textContent = 'That line is fine. Look again.'; } }); });
+    }
+    $('de-next').addEventListener('click', function () { i++; if (i >= C.length) { i = 0; score = 0; } show(); });
+    show();
+  })();
+
+  // ---------- PYQ filter ----------
+  (function () {
+    var seg = $('pyq-seg'); if (!seg) return;
+    segPick(seg, function (b) { var y = b.dataset.y; document.querySelectorAll('.pyq').forEach(function (p) { p.style.display = (y === 'all' || p.dataset.y === y) ? '' : 'none'; }); });
+  })();
+})();
+</script>
+
+</body>
+</html>
