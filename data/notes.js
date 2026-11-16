@@ -12,8 +12,9 @@ window.MT_NOTES = {
     { cls: 10, subject: "Maths", book: "NCERT Mathematics", chapters: [
       "Real Numbers", "Polynomials", "Pair of Linear Equations in Two Variables", "Quadratic Equations",
       "Arithmetic Progressions", "Triangles", "Coordinate Geometry", "Introduction to Trigonometry",
-      "Some Applications of Trigonometry", "Circles", "Areas Related to Circles",
-      { title: "Surface Areas and Volumes", label: "Chapter 12: notes with all NCERT figures, 3D Solid Builder, lead-shot and melt-and-recast labs, 4 games, CBSE 2023–2026 and Bihar Board questions and all NCERT answers", file: "notes/class10-maths-surface-areas-and-volumes.pdf", page: "notes/class10-maths-surface-areas-and-volumes.html" },
+      "Some Applications of Trigonometry", "Circles",
+      { title: "Areas Related to Circles", label: "Chapter 11: CBSE exam notes with all NCERT figures, Sector and Segment Explorer, clock, grazing and design labs, 5 games, CBSE 2023–2026 questions, section-wise practice and all NCERT answers", file: "notes/class10-maths-areas-related-to-circles.pdf", page: "notes/class10-maths-areas-related-to-circles.html" },
+      { title: "Surface Areas and Volumes", label: "Chapter 12: notes with all NCERT figures, 3D Solid Builder, lead-shot and melt-and-recast labs, 4 games, CBSE 2023–2026 questions, section-wise practice and all NCERT answers", file: "notes/class10-maths-surface-areas-and-volumes.pdf", page: "notes/class10-maths-surface-areas-and-volumes.html" },
       { title: "Statistics", label: "Chapter 13: notes with every NCERT table, 6 calculators, 8 games and puzzles, CBSE board questions 2023–2026 and all NCERT answers", file: "notes/class10-maths-statistics.pdf", page: "notes/class10-maths-statistics.html" },
       { title: "Probability", label: "Chapter 14: notes with all NCERT figures, die, deck, two-dice and spinner tools, CBSE board questions 2023–2026 and all NCERT answers", file: "notes/class10-maths-probability.pdf", page: "notes/class10-maths-probability.html" } ] },
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
