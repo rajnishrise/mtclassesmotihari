@@ -51,6 +51,7 @@ window.MT_NOTES = {
       "Tales by Dots and Lines", "Algebra Play", "Area" ] },
     { cls: 8, subject: "Science", book: "NCERT Curiosity", chapters: [
       { title: "Nature of Matter: Elements, Compounds and Mixtures", label: "Chapter 8: kid-friendly notes with all textbook figures, particle, electrolysis, iron-sulfur and mixture labs, 7 games, 100 CBSE-style questions with answers, quiz and all NCERT answers", file: "notes/class8-science-nature-of-matter.pdf", page: "notes/class8-science-nature-of-matter.html" },
+      { title: "The Amazing World of Solutes, Solvents, and Solutions", label: "Chapter 9: kid-friendly notes with all textbook figures, 8 live labs (dissolving, fish tank, float-or-sink, density detective, meniscus reader, hot air balloon), 8 games, 100 CBSE-style questions with answers, quiz and all NCERT answers", file: "notes/class8-science-solutes-solvents-solutions.pdf", page: "notes/class8-science-solutes-solvents-solutions.html" },
       "Force and Pressure" ] }
   ],
 
