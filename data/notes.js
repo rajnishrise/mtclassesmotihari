@@ -49,7 +49,9 @@ window.MT_NOTES = {
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",
       "The Baudhayana–Pythagoras Theorem", "Proportional Reasoning – 2", "Exploring Some Geometric Themes",
       "Tales by Dots and Lines", "Algebra Play", "Area" ] },
-    { cls: 8, subject: "Science", book: "NCERT Curiosity", chapters: [ "Force and Pressure" ] }
+    { cls: 8, subject: "Science", book: "NCERT Curiosity", chapters: [
+      { title: "Nature of Matter: Elements, Compounds and Mixtures", label: "Chapter 8: kid-friendly notes with all textbook figures, particle, electrolysis, iron-sulfur and mixture labs, 7 games, 100 CBSE-style questions with answers, quiz and all NCERT answers", file: "notes/class8-science-nature-of-matter.pdf", page: "notes/class8-science-nature-of-matter.html" },
+      "Force and Pressure" ] }
   ],
 
   test: {
