@@ -50,6 +50,7 @@ window.MT_NOTES = {
       "The Baudhayana–Pythagoras Theorem", "Proportional Reasoning – 2", "Exploring Some Geometric Themes",
       "Tales by Dots and Lines", "Algebra Play", "Area" ] },
     { cls: 8, subject: "Science", book: "NCERT Curiosity", chapters: [
+      { title: "Exploring the Investigative World of Science", label: "Chapter 1: kid-friendly notes with all textbook figures, 6 live labs (puri fair-test lab, Moon phase machine, investigation planner, sand vs stars counter), 8 games, 70 CBSE-style questions with answers, quiz and every textbook question answered", file: "notes/class8-science-investigative-world.pdf", page: "notes/class8-science-investigative-world.html" },
       { title: "Nature of Matter: Elements, Compounds and Mixtures", label: "Chapter 8: kid-friendly notes with all textbook figures, particle, electrolysis, iron-sulfur and mixture labs, 7 games, 100 CBSE-style questions with answers, quiz and all NCERT answers", file: "notes/class8-science-nature-of-matter.pdf", page: "notes/class8-science-nature-of-matter.html" },
       { title: "The Amazing World of Solutes, Solvents, and Solutions", label: "Chapter 9: kid-friendly notes with all textbook figures, 8 live labs (dissolving, fish tank, float-or-sink, density detective, meniscus reader, hot air balloon), 8 games, 100 CBSE-style questions with answers, quiz and all NCERT answers", file: "notes/class8-science-solutes-solvents-solutions.pdf", page: "notes/class8-science-solutes-solvents-solutions.html" },
       "Force and Pressure" ] }
