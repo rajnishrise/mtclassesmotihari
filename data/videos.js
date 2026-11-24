@@ -10,8 +10,13 @@
      chapter = chapter name (used for the chapter filter and the thumbnail)
      title   = what the lesson is about (shown big on the thumbnail)
      part    = optional, e.g. 3  ->  shows "Part 3" on the thumbnail
+   A video file hosted on this website (not YouTube) uses src instead:
+     { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 9 · Simple Machines · animated lesson hosted on this site
+  { src: "videos/class9-science-simple-machines.mp4", poster: "videos/class9-science-simple-machines.jpg", id: "simple-machines", cls: 9, subject: "Physics", chapter: "Simple Machines", title: "Simple Machines: pulley, inclined plane and lever (animated lesson)" },
+
   // Class 9 · Motion · NCERT Exemplar
   { id: "eXg2PoaHYAs", cls: 9,  subject: "Physics", chapter: "Motion", title: "NCERT Exemplar solutions", part: 4 },
   { id: "-ETVQ3KBGIE", cls: 9,  subject: "Physics", chapter: "Motion", title: "NCERT Exemplar solutions", part: 3 },

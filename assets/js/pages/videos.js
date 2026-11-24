@@ -4,7 +4,8 @@
   const { $, esc } = MT, C = MT_CONFIG;
   // Accept a bare id, a youtube.com/watch link, a youtu.be link or a /shorts/ link.
   const idOf = (s) => { s = String(s || "").trim(); const m = s.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/); return m ? m[1] : /^[\w-]{11}$/.test(s) ? s : ""; };
-  const V = (window.MT_VIDEOS || []).map((v) => ({ ...v, id: idOf(v.id), subject: v.subject || "Science", chapter: v.chapter || "" })).filter((v) => v.id);
+  // Entries with `src` are videos hosted on this site (an MP4 file); their id is a short name used in the #watch= link.
+  const V = (window.MT_VIDEOS || []).map((v) => ({ ...v, id: v.src ? String(v.id || "").trim() : idOf(v.id), subject: v.subject || "Science", chapter: v.chapter || "" })).filter((v) => v.id);
   const SUBJ = { Physics: "phy", Chemistry: "chem", Biology: "bio", Maths: "math", Science: "phy" };
   const ICON = { Physics: "⚡", Chemistry: "⚗️", Biology: "🌿", Maths: "📐", Science: "🔬" };
   let cls = 0, chap = "", q = "", list = [], cur = -1;
@@ -50,7 +51,9 @@
     cur = i; const v = list[i];
     if (pl.classList.contains("hide")) lastFocus = document.activeElement;
     // youtube-nocookie + rel=0 keeps viewers on this site: related videos stay from this channel and no YouTube page opens.
-    pl.querySelector(".pframe").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+    pl.querySelector(".pframe").innerHTML = v.src
+      ? `<video src="${esc(v.src)}"${v.poster ? ` poster="${esc(v.poster)}"` : ""} controls autoplay playsinline preload="metadata" title="${esc(v.title)}"></video>`
+      : `<iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
     pl.querySelector(".ptitle").innerHTML = `<b>${esc(v.title)}</b><span class="muted small">Class ${v.cls} · ${esc(v.chapter || v.subject)}${v.part ? " · Part " + esc(v.part) : ""}</span>`;
     pl.querySelector(".pidx").textContent = `${i + 1} of ${list.length}`;
     pl.querySelector("[data-prev]").disabled = i === 0;
@@ -68,7 +71,7 @@
     if (lastFocus) lastFocus.focus();
   }
   function fromHash() {
-    const id = (location.hash.match(/^#watch=([\w-]{11})/) || [])[1];
+    const id = (location.hash.match(/^#watch=([\w-]+)/) || [])[1];
     if (!id) return close(true);
     let i = list.findIndex((v) => v.id === id);
     if (i < 0 && V.some((v) => v.id === id)) { cls = 0; chap = ""; q = ""; $("#v-search").value = ""; draw(); i = list.findIndex((v) => v.id === id); }
