@@ -318,6 +318,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .box.calc .big{margin:6px 0 0}
 .ans .fig{margin:6px 0 10px}
 .chem{white-space:normal}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -330,7 +344,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>Atomic Foundations of Matter</h1>
 <p class="sub">Class 9 Science, Chapter 9 (NCERT Exploration, new syllabus)</p>
 <p class="pitch">Laws of chemical combination, Dalton's theory, covalent and ionic bonds, formulae and molecular mass, with 25 textbook diagrams, every NCERT question solved, and a quick quiz.</p>
-<div class="btns"><a class="btn solid" href="#start">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="Two hydrogen atoms sharing a pair of electrons to form a covalent bond" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".45"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs>
 <circle cx="200" cy="200" r="175" fill="url(#hglow)"/>
@@ -347,6 +361,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (12 min)</a></li>
 <li><a href="#start"><span>Start</span>Think it over</a></li>
 <li><a href="#conservation"><span>9.1</span>Law of Conservation of Mass</a></li>
 <li><a href="#proportions"><span>9.2</span>Law of Constant Proportions</a></li>
@@ -361,6 +376,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <li><a href="#answers"><span>NCERT</span>Answers to all questions</a></li>
 </ol>
 </nav>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Atomic Foundations of Matter</h2><p>A 12-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls preload="metadata" playsinline poster="/videos/class9-science-atomic-foundations-of-matter.jpg" src="/videos/class9-science-atomic-foundations-of-matter.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="/videos/class9-science-atomic-foundations-of-matter.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [30.3, "Hydrogen + oxygen → water"], [54.0, "Activity 9.1: mass in a physical change"], [81.1, "Activity 9.2: open and closed flask"], [116.0, "Law of conservation of mass"], [174.3, "Law of constant proportions"], [223.9, "Dalton's atomic theory"], [275.4, "Molecules and two kinds of bonds"], [313.6, "Covalent bonds: H₂, Cl₂, O₂, N₂"], [356.8, "HCl, water and naming"], [400.8, "Ionic bond and NaCl"], [449.7, "Ions and naming"], [484.4, "Criss-cross method"], [534.5, "Properties of ionic and covalent compounds"], [576.8, "Molecular and formula unit mass"], [630.8, "Summary"], [657.9, "Quick quiz"], [702.9, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="start">
 <div class="sec-head"><span class="sec-num word">Start</span><h2>Think it over</h2></div>
