@@ -277,6 +277,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
   .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
 }
 
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -289,12 +303,13 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>Journey Inside the Atom</h1>
 <p class="sub">Class 9 Science, Chapter 8 (NCERT Exploration, new syllabus)</p>
 <p class="pitch">Creative notes with 24 diagrams, every NCERT question solved, and a quick quiz.</p>
-<div class="btns"><a class="btn solid" href="#big-picture">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#big-picture">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="An atom with electrons moving around the nucleus" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".45"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs><circle cx="200.0" cy="200.0" r="120.0" fill="url(#hglow)" stroke="none" stroke-width="0" /><circle cx="200.0" cy="200.0" r="188.0" fill="none" stroke="#3B5B9A" stroke-width="1" stroke-dasharray="2 7"/><g transform="rotate(0 200 200)"><path d="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0" fill="none" stroke="#E3B23C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><circle r="10" fill="#F4CF6B" stroke="#FFF2C6" stroke-width="2"><animateMotion dur="7s" begin="0s" repeatCount="indefinite" path="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0"/></circle></g><g transform="rotate(60 200 200)"><path d="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0" fill="none" stroke="#E3B23C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><circle r="10" fill="#F4CF6B" stroke="#FFF2C6" stroke-width="2"><animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0"/></circle></g><g transform="rotate(120 200 200)"><path d="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0" fill="none" stroke="#E3B23C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><circle r="10" fill="#F4CF6B" stroke="#FFF2C6" stroke-width="2"><animateMotion dur="11s" begin="-6s" repeatCount="indefinite" path="M30,200 a170,62 0 1,0 340,0 a170,62 0 1,0 -340,0"/></circle></g><circle cx="218.1" cy="257.7" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /><circle cx="224.5" cy="147.7" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /><circle cx="149.2" cy="221.0" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="144.3" y1="221.0" x2="154.2" y2="221.0" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="149.2" y1="216.0" x2="149.2" y2="225.9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="248.8" cy="217.8" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="243.9" y1="217.8" x2="253.8" y2="217.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="248.8" y1="212.9" x2="248.8" y2="222.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="177.5" cy="156.7" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="172.6" y1="156.7" x2="182.5" y2="156.7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="177.5" y1="151.7" x2="177.5" y2="161.6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="188.2" cy="243.9" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="183.3" y1="243.9" x2="193.2" y2="243.9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="188.2" y1="238.9" x2="188.2" y2="248.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="235.3" cy="177.6" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /><circle cx="162.8" cy="193.4" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="157.8" y1="193.4" x2="167.7" y2="193.4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="162.8" y1="188.5" x2="162.8" y2="198.4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="220.3" cy="226.5" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /><circle cx="202.5" cy="171.9" r="11.0" fill="#D9534F" stroke="#9E2F2C" stroke-width="1.2" /><line x1="197.5" y1="171.9" x2="207.4" y2="171.9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><line x1="202.5" y1="167.0" x2="202.5" y2="176.9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" /><circle cx="183.9" cy="214.7" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /><circle cx="212.6" cy="200.0" r="11.0" fill="#8D9AB3" stroke="#56647F" stroke-width="1.2" /></svg></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (14 min)</a></li>
 <li><a href="#big-picture"><span>Start</span>Everything is made of atoms</a></li>
 <li><a href="#roots"><span>8.1</span>Where the idea began</a></li>
 <li><a href="#models"><span>8.2</span>Journey through atomic models</a></li>
@@ -310,6 +325,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <li><a href="#answers"><span>NCERT</span>Answers to all questions</a></li>
 </ol>
 </nav>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Journey Inside the Atom</h2><p>A 14-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls preload="metadata" playsinline poster="/videos/class9-science-journey-inside-the-atom.jpg" src="/videos/class9-science-journey-inside-the-atom.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="/videos/class9-science-journey-inside-the-atom.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [25.9, "Everything is made of atoms"], [61.2, "Kanada, Democritus and Dalton"], [103.4, "Discovery of the electron"], [160.5, "Thomson's model"], [189.4, "Gold foil experiment"], [242.8, "Rutherford's model and the nucleus"], [277.7, "Rutherford's problem, the proton"], [321.5, "Bohr's model"], [369.1, "Discovery of the neutron"], [416.5, "Symbols of elements"], [472.3, "Atomic number and mass number"], [528.8, "Electronic configuration"], [587.5, "Valency"], [634.1, "Isotopes and average atomic mass"], [700.9, "Isobars"], [727.2, "Timeline of atomic models"], [758.7, "Quick quiz"], [810.2, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="big-picture">
 <div class="sec-head"><span class="sec-num word">Start</span><h2>Everything is made of atoms</h2></div>

@@ -17,6 +17,12 @@ window.MT_VIDEOS = [
   // Class 9 · Simple Machines · animated lesson hosted on this site
   { src: "videos/class9-science-simple-machines.mp4", poster: "videos/class9-science-simple-machines.jpg", id: "simple-machines", cls: 9, subject: "Physics", chapter: "Simple Machines", title: "Simple Machines: pulley, inclined plane and lever (animated lesson)" },
 
+  // Class 9 · Inside the Atom · animated lesson hosted on this site
+  { src: "videos/class9-science-journey-inside-the-atom.mp4", poster: "videos/class9-science-journey-inside-the-atom.jpg", id: "journey-inside-the-atom", cls: 9, subject: "Chemistry", chapter: "Journey Inside the Atom", title: "Journey Inside the Atom: atomic models, shells, valency and isotopes (animated lesson)" },
+
+  // Class 9 · Atomic Foundations of Matter · animated lesson hosted on this site
+  { src: "videos/class9-science-atomic-foundations-of-matter.mp4", poster: "videos/class9-science-atomic-foundations-of-matter.jpg", id: "atomic-foundations-of-matter", cls: 9, subject: "Chemistry", chapter: "Atomic Foundations of Matter", title: "Atomic Foundations of Matter: laws, bonds, formulae and molecular mass (animated lesson)" },
+
   // Class 9 · Motion · NCERT Exemplar
   { id: "eXg2PoaHYAs", cls: 9,  subject: "Physics", chapter: "Motion", title: "NCERT Exemplar solutions", part: 4 },
   { id: "-ETVQ3KBGIE", cls: 9,  subject: "Physics", chapter: "Motion", title: "NCERT Exemplar solutions", part: 3 },
