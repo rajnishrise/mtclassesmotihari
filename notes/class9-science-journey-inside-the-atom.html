@@ -328,9 +328,9 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 
 <section id="video" class="no-print"><div class="vl">
 <div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Journey Inside the Atom</h2><p>A 14-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
-<video controls preload="metadata" playsinline poster="/videos/class9-science-journey-inside-the-atom.jpg" src="/videos/class9-science-journey-inside-the-atom.mp4"></video>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class9-science-journey-inside-the-atom.jpg" src="/videos/class9-science-journey-inside-the-atom.mp4"></video>
 <div class="vl-ch" id="vl-ch"></div>
-<p class="vl-foot">Can't play it here? <a href="/videos/class9-science-journey-inside-the-atom.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class9-science-journey-inside-the-atom.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
 </div>
 <script>(function(){var C=[[0.0, "Introduction"], [25.9, "Everything is made of atoms"], [61.2, "Kanada, Democritus and Dalton"], [103.4, "Discovery of the electron"], [160.5, "Thomson's model"], [189.4, "Gold foil experiment"], [242.8, "Rutherford's model and the nucleus"], [277.7, "Rutherford's problem, the proton"], [321.5, "Bohr's model"], [369.1, "Discovery of the neutron"], [416.5, "Symbols of elements"], [472.3, "Atomic number and mass number"], [528.8, "Electronic configuration"], [587.5, "Valency"], [634.1, "Isotopes and average atomic mass"], [700.9, "Isobars"], [727.2, "Timeline of atomic models"], [758.7, "Quick quiz"], [810.2, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
 function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
@@ -893,5 +893,6 @@ v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.
 })();
 
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>

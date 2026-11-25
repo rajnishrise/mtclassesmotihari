@@ -730,9 +730,9 @@ input.rung.bad{border-color:var(--red);background:var(--redt)}
 
 <section id="video" class="no-print"><div class="vl">
 <div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Exploring the Investigative World of Science</h2><p>A 13-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
-<video controls preload="metadata" playsinline poster="/videos/class8-science-investigative-world.jpg" src="/videos/class8-science-investigative-world.mp4"></video>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class8-science-investigative-world.jpg" src="/videos/class8-science-investigative-world.mp4"></video>
 <div class="vl-ch" id="vl-ch"></div>
-<p class="vl-foot">Can't play it here? <a href="/videos/class8-science-investigative-world.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class8-science-investigative-world.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
 </div>
 <script>(function(){var C=[[0.0, "Introduction"], [20.6, "Probe and ponder questions"], [60.4, "Grade 6, 7 and 8: three steps"], [93.2, "Observe, experiment, explain"], [140.9, "The root and the kite"], [187.1, "Journey: microbes, health, electricity"], [234.2, "Journey: forces, pressure and winds"], [271.8, "Journey: particles and solutions"], [310.8, "Journey: the world of light"], [336.8, "Moon phases and calendars"], [394.1, "Ecosystems and a just-right Earth"], [436.8, "The climate challenge"], [470.8, "Puri investigation: the question"], [502.6, "Things we change and observe"], [548.3, "A fair test"], [587.8, "Systematic investigation"], [642.1, "Sand or stars? Estimating"], [706.9, "Quick quiz"], [761.5, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
 function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
@@ -1742,5 +1742,6 @@ v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.
 })();
 </script>
 
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
