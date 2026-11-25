@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 8 · Ch 9 Solutes, Solvents and Solutions · animated lesson hosted on this site
+  { src: "videos/class8-science-solutes-solvents-solutions.mp4", poster: "videos/class8-science-solutes-solvents-solutions.jpg", id: "class8-science-solutes-solvents-solutions", cls: 8, subject: "Chemistry", chapter: "Solutes, Solvents and Solutions", title: "Solutions: ORS, saturated solutions, heat and solubility, oxygen in ponds, density and why ice floats (animated lesson)" },
+  // Class 8 · Ch 8 Nature of Matter · animated lesson hosted on this site
+  { src: "videos/class8-science-nature-of-matter.mp4", poster: "videos/class8-science-nature-of-matter.jpg", id: "class8-science-nature-of-matter", cls: 8, subject: "Chemistry", chapter: "Nature of Matter", title: "Nature of Matter: mixtures, alloys, air, pure substances, breaking water, elements, compounds and iron + sulfur (animated lesson)" },
   // Class 9 · Sequences and Progressions · animated lesson hosted on this site
   { src: "videos/class9-maths-sequences-and-progressions.mp4", poster: "videos/class9-maths-sequences-and-progressions.jpg", id: "class9-maths-sequences-and-progressions", cls: 9, subject: "Maths", chapter: "Sequences and Progressions", title: "Sequences and Progressions: number machines, Virahānka numbers, AP, Āryabhaṭa's sum, GP, fractals and the bouncing ball (animated lesson)" },
   // Class 9 · Probability · animated lesson hosted on this site
