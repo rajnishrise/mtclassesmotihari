@@ -376,6 +376,20 @@ hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
 @media print{.sci-photo img{width:80px}}
 .sec-num.long{font-size:15px;letter-spacing:-.3px}
 @media print{.cards3{grid-template-columns:repeat(3,1fr)!important}.cards3 .fig img,.cards2 .fig img{max-height:160px!important}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <style>
 .pyq .qnum{flex:none}
@@ -834,13 +848,14 @@ main>section.th::before{content:attr(data-emoji);position:absolute;right:10px;to
 <svg class="ecg-hero" viewBox="0 0 440 44" aria-hidden="true"><path d="M0 22H150l8-14 8 30 10-38 9 34 7-12H300l6-8 6 16 5-8H440" fill="none" stroke="#FFD25E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <p class="sub">Class 8 Science, Chapter 3: Health: The Ultimate Treasure (NCERT Curiosity, 2026-27)</p>
 <p class="pitch">Being healthy is much more than "not being sick". Learn the <b>3 sides of health</b>, how <b>germs spread</b>, why <b>diabetes</b> is rising, how <b>vaccines</b> train your body and why <b>antibiotics</b> must be used wisely. With every textbook figure, <b>7 live labs</b>, a <b>Health Arcade of 8 games</b>, 100 exam questions with answers and all NCERT answers.</p>
-<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#labhub">🧪 Labs</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#bank">Questions</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><a class="btn ghost" href="#labhub">🧪 Labs</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#bank">Questions</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-pic"><img src="img/health-8/hero.webp" alt="Chapter opener from the NCERT textbook: a bulletin board full of health news clippings, such as 11.4% of India's population is diabetic, regular handwashing reduces infection by 50%, air pollution is a public health emergency and Fit India Movement" width="1000" height="567" decoding="async"></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (15 min)</a></li>
 <li><a class="t-sun" href="#start"><span>3.0</span>Probe and ponder: the health bulletin board</a></li>
 <li><a class="t-violet" href="#health"><span>3.1</span>What is health? Physical, mental, social</a></li>
 <li><a class="t-leaf" href="#stay"><span>3.2</span>How can we stay healthy? Healthy lifestyle</a></li>
@@ -871,6 +886,19 @@ main>section.th::before{content:attr(data-emoji);position:absolute;right:10px;to
 <div class="box wow no-print" id="labhub"><h4>🧪 7 live labs in this page (tap to jump)</h4>
 <div class="gmenu out labs-menu"><a href="#lab-wb">⚖️ Well-being Balance</a><a href="#lab-aqi">🌫️ AQI Meter</a><a href="#lab-spread">🦠 Germ Spread Simulator</a><a href="#lab-wash">🧼 Handwash Timer</a><a href="#lab-dg">📊 Dengue Graph (Q7)</a><a href="#lab-im">🛡️ Immune Memory (Q11)</a><a href="#lab-ab">💊 Antibiotic Resistance Lab</a></div>
 <p style="margin:8px 0 0">Every section has its own colour, so you always know where you are. Everything works on a phone.</p></div>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Health: The Ultimate Treasure</h2><p>A 15-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls preload="metadata" playsinline poster="/videos/class8-science-health-ultimate-treasure.jpg" src="/videos/class8-science-health-ultimate-treasure.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="/videos/class8-science-health-ultimate-treasure.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [19.8, "Health in the news"], [49.7, "Probe and ponder questions"], [74.6, "Health is more than not falling sick"], [106.3, "WHO definition of health"], [143.7, "How can we stay healthy?"], [176.3, "Healthy lifestyle tips"], [207.7, "Keep the environment clean"], [248.5, "Symptoms and signs"], [273.0, "What causes diseases?"], [307.3, "Communicable and non-communicable"], [348.7, "Ways diseases spread"], [383.3, "Cold, chickenpox, measles, TB"], [427.8, "Hepatitis A, cholera, typhoid, worms"], [474.2, "Malaria and dengue"], [506.1, "Preventing infections"], [534.9, "Lifestyle diseases and diabetes"], [582.2, "Sanitation and immunity"], [612.0, "Vaccines and acquired immunity"], [655.6, "Edward Jenner and smallpox"], [709.1, "India's role in vaccines"], [746.6, "Antibiotics and Fleming"], [788.8, "Use antibiotics wisely"], [843.1, "Quick quiz"], [891.3, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="start" class="th t-sun pat-ring" data-emoji="🤔">
 <div class="sec-head"><span class="sec-num">3.0</span><h2>Probe and ponder</h2></div>

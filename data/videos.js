@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 8 · Ch 3 Health: The Ultimate Treasure · animated lesson hosted on this site
+  { src: "videos/class8-science-health-ultimate-treasure.mp4", poster: "videos/class8-science-health-ultimate-treasure.jpg", id: "health-ultimate-treasure", cls: 8, subject: "Biology", chapter: "Health: The Ultimate Treasure", title: "Health: The Ultimate Treasure: healthy habits, germs and vectors, vaccines and antibiotics (animated lesson)" },
+  // Class 9 · Ch 11 Reproduction: How Life Continues · animated lesson hosted on this site
+  { src: "videos/class9-science-reproduction-how-life-continues.mp4", poster: "videos/class9-science-reproduction-how-life-continues.jpg", id: "reproduction-how-life-continues", cls: 9, subject: "Biology", chapter: "Reproduction: How Life Continues", title: "Reproduction: How Life Continues: budding, mitosis and meiosis, flowers, pollination and human reproduction (animated lesson)" },
   // Class 9 · Tissues in Action · animated lesson hosted on this site
   { src: "videos/class9-science-tissues-in-action.mp4", poster: "videos/class9-science-tissues-in-action.jpg", id: "tissues-in-action", cls: 9, subject: "Biology", chapter: "Tissues in Action", title: "Tissues in Action: meristems, xylem and phloem, blood, muscles, neurons and joints (animated lesson)" },
 
