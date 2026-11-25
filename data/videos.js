@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 9 · Perimeter and Area · animated lesson hosted on this site
+  { src: "videos/class9-maths-perimeter-and-area.mp4", poster: "videos/class9-maths-perimeter-and-area.jpg", id: "class9-maths-perimeter-and-area", cls: 9, subject: "Maths", chapter: "Perimeter and Area", title: "Perimeter and Area: π, arc length, race-track stagger, Heron's formula, Brahmagupta and sectors (animated lesson)" },
+  // Class 9 · Circles · animated lesson hosted on this site
+  { src: "videos/class9-maths-circles.mp4", poster: "videos/class9-maths-circles.jpg", id: "class9-maths-circles", cls: 9, subject: "Maths", chapter: "Circles", title: "Circles: chords, perpendicular from centre, angle at centre = 2 × angle at circle, cyclic quadrilaterals (animated lesson)" },
   // Class 10 · Ch 14 Probability · animated lesson hosted on this site
   { src: "videos/class10-maths-probability.mp4", poster: "videos/class10-maths-probability.jpg", id: "class10-maths-probability", cls: 10, subject: "Maths", chapter: "Probability", title: "Probability: coins, dice, cards, marbles, P(not E) and two-dice sums (animated lesson)" },
   // Class 10 · Ch 13 Statistics · animated lesson hosted on this site
