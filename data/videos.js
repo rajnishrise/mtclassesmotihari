@@ -14,6 +14,9 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 9 · Tissues in Action · animated lesson hosted on this site
+  { src: "videos/class9-science-tissues-in-action.mp4", poster: "videos/class9-science-tissues-in-action.jpg", id: "tissues-in-action", cls: 9, subject: "Biology", chapter: "Tissues in Action", title: "Tissues in Action: meristems, xylem and phloem, blood, muscles, neurons and joints (animated lesson)" },
+
   // Class 8 · Ch 1 Exploring the Investigative World of Science · animated lesson hosted on this site
   { src: "videos/class8-science-investigative-world.mp4", poster: "videos/class8-science-investigative-world.jpg", id: "investigative-world", cls: 8, subject: "Science", chapter: "Investigative World of Science", title: "Exploring the Investigative World of Science: fair tests, variables and the Moon (animated lesson)" },
 
