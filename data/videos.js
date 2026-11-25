@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Extraction of Metals and Corrosion · animated lesson hosted on this site
+  { src: "videos/class10-science-extraction-of-metals-and-corrosion.mp4", poster: "videos/class10-science-extraction-of-metals-and-corrosion.jpg", id: "extraction-of-metals", cls: 10, subject: "Chemistry", chapter: "Extraction of Metals and Corrosion", title: "Extraction of Metals: ores, activity series, reduction, electrolysis, refining and rust (animated lesson)" },
+  // Class 10 · Ch 4 Carbon and its Compounds · animated lesson hosted on this site
+  { src: "videos/class10-science-carbon-and-its-compounds.mp4", poster: "videos/class10-science-carbon-and-its-compounds.jpg", id: "carbon-and-its-compounds", cls: 10, subject: "Chemistry", chapter: "Carbon and its Compounds", title: "Carbon and its Compounds: covalent bonds, allotropes, naming, reactions, ethanol, ethanoic acid and soap (animated lesson)" },
   // Class 10 · Ch 8 Heredity · animated lesson hosted on this site
   { src: "videos/class10-science-heredity.mp4", poster: "videos/class10-science-heredity.jpg", id: "heredity", cls: 10, subject: "Biology", chapter: "Heredity", title: "Heredity: variation, Mendel's experiments, genes and sex determination (animated lesson)" },
   // Class 10 · Ch 7 How do Organisms Reproduce? · animated lesson hosted on this site
