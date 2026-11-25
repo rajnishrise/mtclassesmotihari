@@ -311,6 +311,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .box.calc .fig{margin:10px 0}
 .cards2>.fig{margin:0}
 
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -323,13 +337,14 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>Circles</h1>
 <p class="sub">Class 9 Maths, Chapter 5: “I’m Up and Down, and Round and Round” (Ganita Manjari, Part I)</p>
 <p class="pitch">Every idea from the very beginning, all 12 theorems proved with a reason for every step, and worked solutions to every question in the chapter.</p>
-<div class="btns"><a class="btn solid" href="#what">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#what">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="A circle with a rotating radius and a chord" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".35"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="185" fill="url(#hglow)"/><circle cx="200" cy="200" r="140" fill="none" stroke="#CBD6EE" stroke-width="5"/><line x1="78" y1="270" x2="322" y2="270" stroke="#E3B23C" stroke-width="5" stroke-linecap="round"/><line x1="200" y1="200" x2="200" y2="270" stroke="#F4B5B3" stroke-width="3" stroke-dasharray="7 6"/><path d="M200,256 h14 v14" fill="none" stroke="#F4B5B3" stroke-width="2.5"/><g><animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="9s" repeatCount="indefinite"/><line x1="200" y1="200" x2="340" y2="200" stroke="#8FB4FF" stroke-width="4" stroke-linecap="round"/><circle cx="340" cy="200" r="10" fill="#F4CF6B" stroke="#FFF2C6" stroke-width="2"/></g><circle cx="200" cy="200" r="8" fill="#E3B23C" stroke="#0E2148" stroke-width="2"/><circle cx="78" cy="270" r="7" fill="#fff"/><circle cx="322" cy="270" r="7" fill="#fff"/></svg></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (8 min)</a></li>
 <li><a href="#what"><span>5.1</span>What is a circle?</a></li>
 <li><a href="#symmetry"><span>5.2</span>Symmetries of a circle</a></li>
 <li><a href="#three-points"><span>5.3</span>Circles through given points (T1)</a></li>
@@ -346,6 +361,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 </nav>
 
 <div class="box key"><h4>📖 How to use this guide</h4><p><b>Part A</b> explains every idea of the chapter from the very beginning (no earlier knowledge is assumed) and proves all twelve theorems in full. <b>Part B</b> gives worked solutions to every question in the chapter: all Think and Reflect boxes, Exercise Sets 5.1 to 5.6, and all 26 End-of-Chapter Exercises. <b>Part C</b> is a one-page revision sheet. Read Part A first with a pencil and paper, drawing each figure yourself as you go. Tap any figure to zoom.</p></div>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Circles</h2><p>A 8-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class9-maths-circles.jpg" src="/videos/class9-maths-circles.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class9-maths-circles.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [26.7, "What is a circle?"], [55.4, "Symmetries of a circle"], [87.9, "Circles through given points (T1)"], [131.5, "Chords and angles (T2, T3)"], [172.3, "Midpoints of chords (T4, T5)"], [213.4, "Distance from the centre (T6–T8)"], [255.4, "Example: chord length"], [299.7, "Angles subtended by an arc (T9)"], [344.6, "Angle in a semicircle"], [379.6, "Cyclic quadrilaterals (T10–T12)"], [435.5, "Quick quiz"], [479.0, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="what">
 <div class="sec-head"><span class="sec-num">5.1</span><h2>What is a circle?</h2></div>
@@ -726,5 +754,6 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 
 
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
