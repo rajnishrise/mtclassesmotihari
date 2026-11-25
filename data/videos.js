@@ -14,6 +14,12 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 14 Probability · animated lesson hosted on this site
+  { src: "videos/class10-maths-probability.mp4", poster: "videos/class10-maths-probability.jpg", id: "class10-maths-probability", cls: 10, subject: "Maths", chapter: "Probability", title: "Probability: coins, dice, cards, marbles, P(not E) and two-dice sums (animated lesson)" },
+  // Class 10 · Ch 13 Statistics · animated lesson hosted on this site
+  { src: "videos/class10-maths-statistics.mp4", poster: "videos/class10-maths-statistics.jpg", id: "class10-maths-statistics", cls: 10, subject: "Maths", chapter: "Statistics", title: "Statistics: mean by three methods, mode and median of grouped data (animated lesson)" },
+  // Class 10 · Ch 12 Surface Areas and Volumes · animated lesson hosted on this site
+  { src: "videos/class10-maths-surface-areas-and-volumes.mp4", poster: "videos/class10-maths-surface-areas-and-volumes.jpg", id: "class10-maths-surface-areas-and-volumes", cls: 10, subject: "Maths", chapter: "Surface Areas and Volumes", title: "Surface Areas and Volumes: combined solids, paint vs pour, toy, capsule and scooped cylinder (animated lesson)" },
   // Class 10 · Ch 11 Areas Related to Circles · animated lesson hosted on this site
   { src: "videos/class10-maths-areas-related-to-circles.mp4", poster: "videos/class10-maths-areas-related-to-circles.jpg", id: "class10-maths-areas-related-to-circles", cls: 10, subject: "Maths", chapter: "Areas Related to Circles", title: "Areas Related to Circles: sectors, arc length, segments, the clock hand and the hungry goat (animated lesson)" },
   // Class 10 · Ch 10 Circles · animated lesson hosted on this site
