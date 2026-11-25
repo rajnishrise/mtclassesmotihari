@@ -488,6 +488,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .opt .f{font-size:1em}
 .ev .set{border-radius:16px}
 @media print{.hero{background:#fff!important}.hero .back{display:none}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -497,7 +511,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>The Mathematics of Maybe</h1>
 <p class="sub">Class 9 Maths, Chapter 7: Introduction to Probability (NCERT Ganita Manjari, Part I)</p>
 <p class="pitch">Coins, dice, spinners and sweets: learn to measure chance from 0 to 1. Flip a thousand coins in a second, build tree diagrams, drop paint on a target, and see every exercise solved step by step.</p>
-<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#lab">Play in the lab</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><a class="btn ghost" href="#lab">Play in the lab</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="A spinning coin and a rolling die above a probability scale from 0 to 1" xmlns="http://www.w3.org/2000/svg">
 <defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".35"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient>
@@ -519,6 +533,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (6 min)</a></li>
 <li><a href="#start"><span>7.1</span>What is probability?</a></li>
 <li><a href="#random"><span>7.1.1</span>Randomness</a></li>
 <li><a href="#scale"><span>7.1.2</span>The probability scale</a></li>
@@ -537,6 +552,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <li><a href="#quiz"><span>Quiz</span>Test yourself</a></li>
 </ol>
 </nav>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Probability</h2><p>A 6-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class9-maths-probability.jpg" src="/videos/class9-maths-probability.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class9-maths-probability.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [29.0, "Randomness"], [50.7, "The probability scale"], [81.2, "Experimental probability"], [119.2, "Theoretical probability"], [151.5, "Statistics and sampling"], [186.9, "The Gambler's Fallacy"], [219.4, "Sample spaces and events"], [253.7, "Tree diagrams"], [286.1, "Example: two baskets"], [322.5, "Quick quiz"], [364.5, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="start">
 <div class="sec-head"><span class="sec-num">7.1</span><h2>What is probability?</h2></div>
@@ -1224,5 +1252,6 @@ th small{font-weight:400;opacity:.85;font-size:12px}
   })();
 })();
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>

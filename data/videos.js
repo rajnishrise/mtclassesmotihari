@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 9 · Sequences and Progressions · animated lesson hosted on this site
+  { src: "videos/class9-maths-sequences-and-progressions.mp4", poster: "videos/class9-maths-sequences-and-progressions.jpg", id: "class9-maths-sequences-and-progressions", cls: 9, subject: "Maths", chapter: "Sequences and Progressions", title: "Sequences and Progressions: number machines, Virahānka numbers, AP, Āryabhaṭa's sum, GP, fractals and the bouncing ball (animated lesson)" },
+  // Class 9 · Probability · animated lesson hosted on this site
+  { src: "videos/class9-maths-probability.mp4", poster: "videos/class9-maths-probability.jpg", id: "class9-maths-probability", cls: 9, subject: "Maths", chapter: "Probability", title: "Probability: the 0 to 1 scale, experiments vs reasoning, gambler's fallacy, sample spaces and tree diagrams (animated lesson)" },
   // Class 9 · Perimeter and Area · animated lesson hosted on this site
   { src: "videos/class9-maths-perimeter-and-area.mp4", poster: "videos/class9-maths-perimeter-and-area.jpg", id: "class9-maths-perimeter-and-area", cls: 9, subject: "Maths", chapter: "Perimeter and Area", title: "Perimeter and Area: π, arc length, race-track stagger, Heron's formula, Brahmagupta and sectors (animated lesson)" },
   // Class 9 · Circles · animated lesson hosted on this site
