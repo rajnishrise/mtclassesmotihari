@@ -14,6 +14,12 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 8 · Ch 1 Exploring the Investigative World of Science · animated lesson hosted on this site
+  { src: "videos/class8-science-investigative-world.mp4", poster: "videos/class8-science-investigative-world.jpg", id: "investigative-world", cls: 8, subject: "Science", chapter: "Investigative World of Science", title: "Exploring the Investigative World of Science: fair tests, variables and the Moon (animated lesson)" },
+
+  // Class 8 · Ch 2 The Invisible Living World · animated lesson hosted on this site
+  { src: "videos/class8-science-invisible-living-world.mp4", poster: "videos/class8-science-invisible-living-world.jpg", id: "invisible-living-world", cls: 8, subject: "Biology", chapter: "The Invisible Living World", title: "The Invisible Living World: cells, microbes, yeast, curd and Rhizobium (animated lesson)" },
+
   // Class 9 · Simple Machines · animated lesson hosted on this site
   { src: "videos/class9-science-simple-machines.mp4", poster: "videos/class9-science-simple-machines.jpg", id: "simple-machines", cls: 9, subject: "Physics", chapter: "Simple Machines", title: "Simple Machines: pulley, inclined plane and lever (animated lesson)" },
 
