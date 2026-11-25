@@ -70,3 +70,10 @@ If you change `Code.gs` later, use **Deploy → Manage deployments → Edit → 
 - **Demo teacher PIN** (`1234` in `config.js`) is only for demo mode and is visible to everyone. In online mode the real PIN lives in Apps Script and is never in this repository.
 - **Custom domain:** in *Settings → Pages* add your domain; GitHub creates the `CNAME` file for you.
 - Colours are set at the top of `assets/css/style.css` (navy and gold).
+
+## Video download PIN
+
+Lesson videos (`videos/*.mp4`) play on the site for everyone, but downloading them needs a PIN.
+Set the PIN in Vercel: **Project → Settings → Environment Variables**, add `VIDEO_PIN` (for example a 6-digit number) for Production, then redeploy.
+The PIN is never stored in this repository. To change it, edit the variable and redeploy.
+`api/video-pin.js` checks the PIN and gives a 10-minute download link; `middleware.js` blocks opening a video file directly without one.

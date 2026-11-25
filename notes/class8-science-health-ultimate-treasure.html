@@ -889,9 +889,9 @@ main>section.th::before{content:attr(data-emoji);position:absolute;right:10px;to
 
 <section id="video" class="no-print"><div class="vl">
 <div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Health: The Ultimate Treasure</h2><p>A 15-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
-<video controls preload="metadata" playsinline poster="/videos/class8-science-health-ultimate-treasure.jpg" src="/videos/class8-science-health-ultimate-treasure.mp4"></video>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class8-science-health-ultimate-treasure.jpg" src="/videos/class8-science-health-ultimate-treasure.mp4"></video>
 <div class="vl-ch" id="vl-ch"></div>
-<p class="vl-foot">Can't play it here? <a href="/videos/class8-science-health-ultimate-treasure.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class8-science-health-ultimate-treasure.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
 </div>
 <script>(function(){var C=[[0.0, "Introduction"], [19.8, "Health in the news"], [49.7, "Probe and ponder questions"], [74.6, "Health is more than not falling sick"], [106.3, "WHO definition of health"], [143.7, "How can we stay healthy?"], [176.3, "Healthy lifestyle tips"], [207.7, "Keep the environment clean"], [248.5, "Symptoms and signs"], [273.0, "What causes diseases?"], [307.3, "Communicable and non-communicable"], [348.7, "Ways diseases spread"], [383.3, "Cold, chickenpox, measles, TB"], [427.8, "Hepatitis A, cholera, typhoid, worms"], [474.2, "Malaria and dengue"], [506.1, "Preventing infections"], [534.9, "Lifestyle diseases and diabetes"], [582.2, "Sanitation and immunity"], [612.0, "Vaccines and acquired immunity"], [655.6, "Edward Jenner and smallpox"], [709.1, "India's role in vaccines"], [746.6, "Antibiotics and Fleming"], [788.8, "Use antibiotics wisely"], [843.1, "Quick quiz"], [891.3, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
 function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
@@ -1930,5 +1930,6 @@ v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.
 })();
 </script>
 
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>

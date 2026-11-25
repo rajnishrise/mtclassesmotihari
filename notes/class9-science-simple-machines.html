@@ -362,9 +362,9 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 
 <section id="video" class="no-print"><div class="vl">
 <div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Simple Machines</h2><p>A 14-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
-<video controls preload="metadata" playsinline poster="/videos/class9-science-simple-machines.jpg" src="/videos/class9-science-simple-machines.mp4"></video>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class9-science-simple-machines.jpg" src="/videos/class9-science-simple-machines.mp4"></video>
 <div class="vl-ch" id="vl-ch"></div>
-<p class="vl-foot">Can't play it here? <a href="/videos/class9-science-simple-machines.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class9-science-simple-machines.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
 </div>
 <script>(function(){var C=[[0.0, "Introduction"], [22.9, "What is a simple machine?"], [77.9, "Load, effort and MA"], [135.9, "Golden rule: work in = work out"], [193.4, "Fixed pulley (MA = 1)"], [238.2, "Movable pulley (MA = 2)"], [282.3, "Block and tackle"], [341.3, "Inclined plane (MA = L/h)"], [406.3, "Inclined plane examples"], [471.1, "Wedge and screw"], [488.4, "Lever and its principle"], [586.3, "Classes of levers"], [642.4, "Forearm: a Class III lever"], [674.5, "Spoon, scissors and seesaw"], [721.5, "Ideal vs real, efficiency"], [769.7, "Formula sheet"], [804.6, "Quick quiz"], [853.4, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
 function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
@@ -814,5 +814,6 @@ v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.
 
 
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>

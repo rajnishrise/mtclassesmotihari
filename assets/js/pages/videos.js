@@ -52,7 +52,7 @@
     if (pl.classList.contains("hide")) lastFocus = document.activeElement;
     // youtube-nocookie + rel=0 keeps viewers on this site: related videos stay from this channel and no YouTube page opens.
     pl.querySelector(".pframe").innerHTML = v.src
-      ? `<video src="${esc(v.src)}"${v.poster ? ` poster="${esc(v.poster)}"` : ""} controls autoplay playsinline preload="metadata" title="${esc(v.title)}"></video>`
+      ? `<video src="${esc(v.src)}"${v.poster ? ` poster="${esc(v.poster)}"` : ""} controls controlslist="nodownload" oncontextmenu="return false" autoplay playsinline preload="metadata" title="${esc(v.title)}"></video>`
       : `<iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
     pl.querySelector(".ptitle").innerHTML = `<b>${esc(v.title)}</b><span class="muted small">Class ${v.cls} · ${esc(v.chapter || v.subject)}${v.part ? " · Part " + esc(v.part) : ""}</span>`;
     pl.querySelector(".pidx").textContent = `${i + 1} of ${list.length}`;

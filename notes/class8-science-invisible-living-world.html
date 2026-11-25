@@ -743,9 +743,9 @@ td.pic img{max-width:80px;height:auto}
 
 <section id="video" class="no-print"><div class="vl">
 <div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: The Invisible Living World</h2><p>A 15-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
-<video controls preload="metadata" playsinline poster="/videos/class8-science-invisible-living-world.jpg" src="/videos/class8-science-invisible-living-world.mp4"></video>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class8-science-invisible-living-world.jpg" src="/videos/class8-science-invisible-living-world.mp4"></video>
 <div class="vl-ch" id="vl-ch"></div>
-<p class="vl-foot">Can't play it here? <a href="/videos/class8-science-invisible-living-world.mp4" download>Download the video (MP4)</a> and watch it offline.</p>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class8-science-invisible-living-world.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
 </div>
 <script>(function(){var C=[[0.0, "Introduction"], [21.9, "Probe and ponder questions"], [46.1, "Lenses: seeing the invisible"], [90.7, "Robert Hooke and Leeuwenhoek"], [141.3, "Onion peel cells"], [187.2, "Human cheek cells"], [223.1, "Parts of a cell"], [272.3, "Plant vs animal cells"], [309.5, "Shape fits the function"], [350.1, "Levels of organisation"], [406.8, "What are microorganisms?"], [460.2, "Protozoa, algae, fungi, bacteria"], [516.5, "Microbes are everywhere"], [554.7, "Microbes clean the environment"], [603.4, "Biogas and oil-eating bacteria"], [641.9, "Yeast makes dough rise"], [696.1, "Lactobacillus and curd"], [736.4, "Rhizobium and root nodules"], [766.5, "Microalgae and Spirulina"], [812.9, "The cell: basic unit of life"], [867.8, "Quick quiz"], [912.9, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
 function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
@@ -1927,5 +1927,6 @@ v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.
 })();
 </script>
 
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
