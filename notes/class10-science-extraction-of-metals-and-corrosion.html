@@ -308,6 +308,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
 .snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
 
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -320,13 +334,14 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>Extraction of Metals and Corrosion</h1>
 <p class="sub">Class 10 Science, Chapter 3: Metals and Non-metals</p>
 <p class="pitch">From ore to pure metal, step by step, with every equation you need, why metals corrode, and all the board favourites solved.</p>
-<div class="btns"><a class="btn solid" href="#ores">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#ores">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="Molten metal pouring from a crucible" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".45"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient><linearGradient id="melt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset="1" stop-color="#E37B2C"/></linearGradient></defs><circle cx="200" cy="230" r="170" fill="url(#hglow)"/><g transform="rotate(-28 150 130)"><path d="M70,80 L230,80 L210,190 L90,190 Z" fill="#2A4A86" stroke="#CBD6EE" stroke-width="4" stroke-linejoin="round"/><path d="M80,95 L220,95" stroke="url(#melt)" stroke-width="12" stroke-linecap="round"/></g><path d="M228,104 C246,150 238,220 240,300" fill="none" stroke="url(#melt)" stroke-width="14" stroke-linecap="round"><animate attributeName="stroke-width" values="14;10;14" dur="1.6s" repeatCount="indefinite"/></path><rect x="140" y="300" width="200" height="56" rx="8" fill="#13285A" stroke="#CBD6EE" stroke-width="4"/><rect x="152" y="312" width="176" height="32" rx="5" fill="url(#melt)"><animate attributeName="opacity" values="1;.75;1" dur="2s" repeatCount="indefinite"/></rect><circle cx="276" cy="270" r="5" fill="#FFE08A"><animate attributeName="cy" values="290;240" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.2s" repeatCount="indefinite"/></circle><circle cx="206" cy="280" r="4" fill="#FFE08A"><animate attributeName="cy" values="296;250" dur="1.5s" begin="-.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.5s" begin="-.6s" repeatCount="indefinite"/></circle></svg></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (7 min)</a></li>
 <li><a href="#ores"><span>1</span>Occurrence of metals, ores</a></li>
 <li><a href="#activity"><span>2</span>Activity series and extraction</a></li>
 <li><a href="#enrich"><span>3</span>Enrichment of ores</a></li>
@@ -340,6 +355,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <li><a href="#answers"><span>Board</span>Board questions with answers</a></li>
 </ol>
 </nav>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Extraction of Metals and Corrosion</h2><p>A 7-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class10-science-extraction-of-metals-and-corrosion.jpg" src="/videos/class10-science-extraction-of-metals-and-corrosion.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class10-science-extraction-of-metals-and-corrosion.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [23.1, "Minerals and ores"], [53.3, "Types of ores"], [75.7, "Activity series and extraction"], [105.3, "Enrichment of ores"], [128.1, "Metals low in the series"], [151.8, "Metals in the middle"], [188.0, "Thermit reaction"], [215.1, "Metals high in the series"], [247.9, "Electrolytic refining"], [278.1, "Corrosion and rusting"], [318.6, "Prevention and alloys"], [353.8, "Quick quiz"], [392.3, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="ores">
 <div class="sec-head"><span class="sec-num">1</span><h2>Occurrence of metals: key terms</h2></div>
@@ -746,5 +774,6 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 
 
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
