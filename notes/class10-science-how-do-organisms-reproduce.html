@@ -308,6 +308,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
 .snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
 
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -320,13 +334,14 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>How do Organisms Reproduce?</h1>
 <p class="sub">Class 10 Science, Chapter 7 (NCERT, CBSE 2026-27)</p>
 <p class="pitch">Every NCERT topic explained simply, with 12 labelled diagrams, flowcharts, memory tricks, all NCERT questions answered and exam practice.</p>
-<div class="btns"><a class="btn solid" href="#why">Start reading</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#why">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="A cell dividing into two daughter cells" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="hglow"><stop offset="0" stop-color="#E3B23C" stop-opacity=".4"/><stop offset="1" stop-color="#E3B23C" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="175" fill="url(#hglow)"/><g><ellipse cx="200" cy="200" rx="90" ry="90" fill="#DCE7FA" fill-opacity=".9" stroke="#CBD6EE" stroke-width="4"><animate attributeName="rx" values="90;150;150;90" keyTimes="0;.45;.55;1" dur="5s" repeatCount="indefinite"/><animate attributeName="ry" values="90;70;70;90" keyTimes="0;.45;.55;1" dur="5s" repeatCount="indefinite"/></ellipse><circle cx="200" cy="200" r="26" fill="#2A4A86" stroke="#E3B23C" stroke-width="3"><animate attributeName="cx" values="200;125;125;200" keyTimes="0;.45;.55;1" dur="5s" repeatCount="indefinite"/></circle><circle cx="200" cy="200" r="26" fill="#2A4A86" stroke="#E3B23C" stroke-width="3"><animate attributeName="cx" values="200;275;275;200" keyTimes="0;.45;.55;1" dur="5s" repeatCount="indefinite"/></circle><line x1="200" y1="120" x2="200" y2="280" stroke="#E3B23C" stroke-width="4" stroke-dasharray="8 8" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.35;.45;.6;1" dur="5s" repeatCount="indefinite"/></line></g><circle cx="110" cy="90" r="8" fill="#F4CF6B"/><circle cx="300" cy="320" r="6" fill="#F4CF6B"/><circle cx="320" cy="90" r="5" fill="#8FB4FF"/></svg></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (12 min)</a></li>
 <li><a href="#why"><span>1</span>Why do organisms reproduce?</a></li>
 <li><a href="#dna"><span>2</span>DNA copying and variation</a></li>
 <li><a href="#modes"><span>3</span>Modes of reproduction</a></li>
@@ -346,6 +361,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <li>Unit II, World of Living, carries <b>25 marks</b> in the 80-mark theory paper (shared with Life Processes, Control and Coordination, and Heredity).</li>
 <li>This is Chapter 7 of the rationalised NCERT Class 10 Science textbook, which is unchanged for the 2026-27 session.</li>
 <li>CBSE syllabus points: asexual and sexual reproduction in plants and animals; reproductive health (need and methods of family planning); safe sex vs HIV/AIDS; child bearing and women’s health.</li></ul></div>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: How do Organisms Reproduce?</h2><p>A 12-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class10-science-how-do-organisms-reproduce-ncert.jpg" src="/videos/class10-science-how-do-organisms-reproduce-ncert.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class10-science-how-do-organisms-reproduce-ncert.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [24.5, "Why reproduce? DNA copying"], [60.9, "Variation and its importance"], [97.8, "Fission"], [129.0, "Fragmentation and regeneration"], [162.3, "Budding"], [182.7, "Vegetative propagation"], [234.6, "Spore formation"], [259.9, "Why sexual reproduction?"], [300.3, "Parts of a flower"], [336.1, "Pollination and fertilisation"], [373.0, "Seed, fruit and germination"], [406.4, "Puberty"], [446.6, "Male reproductive system"], [488.1, "Female reproductive system"], [531.1, "Placenta, birth and menstruation"], [581.8, "Reproductive health"], [634.1, "Quick quiz"], [674.6, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="why">
 <div class="sec-head"><span class="sec-num">1</span><h2>Why do organisms reproduce?</h2></div>
@@ -1056,5 +1084,6 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 
 
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>

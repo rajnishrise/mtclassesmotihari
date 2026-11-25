@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 8 Heredity · animated lesson hosted on this site
+  { src: "videos/class10-science-heredity.mp4", poster: "videos/class10-science-heredity.jpg", id: "heredity", cls: 10, subject: "Biology", chapter: "Heredity", title: "Heredity: variation, Mendel's experiments, genes and sex determination (animated lesson)" },
+  // Class 10 · Ch 7 How do Organisms Reproduce? · animated lesson hosted on this site
+  { src: "videos/class10-science-how-do-organisms-reproduce-ncert.mp4", poster: "videos/class10-science-how-do-organisms-reproduce-ncert.jpg", id: "how-do-organisms-reproduce", cls: 10, subject: "Biology", chapter: "How do Organisms Reproduce?", title: "How do Organisms Reproduce?: DNA copying, fission to flowers, and human reproduction (animated lesson)" },
   // Class 10 · Ch 6 Control and Coordination · animated lesson hosted on this site
   { src: "videos/class10-science-control-and-coordination.mp4", poster: "videos/class10-science-control-and-coordination.jpg", id: "control-and-coordination", cls: 10, subject: "Biology", chapter: "Control and Coordination", title: "Control and Coordination: neurons, reflex arc, brain, plant movements and hormones (animated lesson)" },
   // Class 10 · Ch 5 Life Processes · animated lesson hosted on this site
