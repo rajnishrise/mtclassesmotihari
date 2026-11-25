@@ -558,6 +558,20 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 .formula small{line-height:1.4;margin-top:4px}
 .tbl-c.compact td{white-space:nowrap}
 @media (max-width:420px){.pairs i{font-size:13.5px}.pairs span{font-size:14px}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -567,7 +581,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <h1>Predicting What Comes Next</h1>
 <p class="sub">Class 9 Maths, Chapter 8: Exploring Sequences and Progressions (NCERT Ganita Manjari, Part I)</p>
 <p class="pitch">Number patterns that let you see the future. Learn explicit and recursive rules, APs and GPs, Gauss's pairing trick and the magic of fractals, with number machines, a growing-pattern builder, a fractal zoomer, a bouncing ball and every exercise solved.</p>
-<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#explorer">Play with AP and GP</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><a class="btn ghost" href="#explorer">Play with AP and GP</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-atom"><svg class="anim" viewBox="0 0 400 400" role="img" aria-label="Bars growing in an arithmetic progression next to a curve growing in a geometric progression" xmlns="http://www.w3.org/2000/svg">
 <defs><radialGradient id="hglow"><stop offset="0" stop-color="#3FD0B0" stop-opacity=".3"/><stop offset="1" stop-color="#3FD0B0" stop-opacity="0"/></radialGradient></defs>
@@ -591,6 +605,7 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (7 min)</a></li>
 <li><a href="#start"><span>8.1</span>What is a sequence?</a></li>
 <li><a href="#explicit"><span>8.2</span>Explicit rule (formula for tₙ)</a></li>
 <li><a href="#recursive"><span>8.3</span>Recursive rule and Virahānka</a></li>
@@ -610,6 +625,19 @@ th small{font-weight:400;opacity:.85;font-size:12px}
 </nav>
 
 <!-- ============ 8.1 ============ -->
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Sequences and Progressions</h2><p>A 7-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class9-maths-sequences-and-progressions.jpg" src="/videos/class9-maths-sequences-and-progressions.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class9-maths-sequences-and-progressions.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [26.7, "What is a sequence?"], [63.8, "Explicit rule"], [105.7, "Recursive rule and Virahānka"], [143.3, "Arithmetic progressions"], [178.1, "Sum of 1 + 2 + … + n"], [211.3, "Geometric progressions"], [248.5, "Fun with fractals"], [289.2, "Example: bouncing ball"], [323.1, "Quick quiz"], [366.2, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
+
 <section id="start">
 <div class="sec-head"><span class="sec-num">8.1</span><h2>What is a sequence?</h2></div>
 <p class="lead">Patterns are everywhere: in nature, art, music and money. Patterns help us <b>predict what comes next</b>. In maths, a <span class="term">sequence</span> is an <b>ordered list of numbers</b>, and each number in it is called a <span class="term">term</span>.</p>
@@ -1439,5 +1467,6 @@ th small{font-weight:400;opacity:.85;font-size:12px}
   })();
 })();
 </script>
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
