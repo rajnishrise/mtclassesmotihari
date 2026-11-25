@@ -14,6 +14,8 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · AC, DC and Household Circuits · animated lesson hosted on this site
+  { src: "videos/class10-science-ac-dc-household-circuits.mp4", poster: "videos/class10-science-ac-dc-household-circuits.jpg", id: "ac-dc-household-circuits", cls: 10, subject: "Physics", chapter: "AC, DC and Household Circuits", title: "AC, DC and Household Circuits: 50 Hz, three wires, earthing, short circuit, fuse and MCB (animated lesson)" },
   // Class 10 · Extraction of Metals and Corrosion · animated lesson hosted on this site
   { src: "videos/class10-science-extraction-of-metals-and-corrosion.mp4", poster: "videos/class10-science-extraction-of-metals-and-corrosion.jpg", id: "extraction-of-metals", cls: 10, subject: "Chemistry", chapter: "Extraction of Metals and Corrosion", title: "Extraction of Metals: ores, activity series, reduction, electrolysis, refining and rust (animated lesson)" },
   // Class 10 · Ch 4 Carbon and its Compounds · animated lesson hosted on this site
