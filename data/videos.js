@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 11 Areas Related to Circles · animated lesson hosted on this site
+  { src: "videos/class10-maths-areas-related-to-circles.mp4", poster: "videos/class10-maths-areas-related-to-circles.jpg", id: "class10-maths-areas-related-to-circles", cls: 10, subject: "Maths", chapter: "Areas Related to Circles", title: "Areas Related to Circles: sectors, arc length, segments, the clock hand and the hungry goat (animated lesson)" },
+  // Class 10 · Ch 10 Circles · animated lesson hosted on this site
+  { src: "videos/class10-maths-circles.mp4", poster: "videos/class10-maths-circles.jpg", id: "class10-maths-circles", cls: 10, subject: "Maths", chapter: "Circles", title: "Circles: secants, tangents, tangent ⟂ radius, equal tangents and the 180° rule (animated lesson)" },
   // Class 10 · AC, DC and Household Circuits · animated lesson hosted on this site
   { src: "videos/class10-science-ac-dc-household-circuits.mp4", poster: "videos/class10-science-ac-dc-household-circuits.jpg", id: "ac-dc-household-circuits", cls: 10, subject: "Physics", chapter: "AC, DC and Household Circuits", title: "AC, DC and Household Circuits: 50 Hz, three wires, earthing, short circuit, fuse and MCB (animated lesson)" },
   // Class 10 · Extraction of Metals and Corrosion · animated lesson hosted on this site
