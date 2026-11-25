@@ -14,6 +14,10 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 6 Control and Coordination · animated lesson hosted on this site
+  { src: "videos/class10-science-control-and-coordination.mp4", poster: "videos/class10-science-control-and-coordination.jpg", id: "control-and-coordination", cls: 10, subject: "Biology", chapter: "Control and Coordination", title: "Control and Coordination: neurons, reflex arc, brain, plant movements and hormones (animated lesson)" },
+  // Class 10 · Ch 5 Life Processes · animated lesson hosted on this site
+  { src: "videos/class10-science-life-processes.mp4", poster: "videos/class10-science-life-processes.jpg", id: "life-processes", cls: 10, subject: "Biology", chapter: "Life Processes", title: "Life Processes: nutrition, respiration, transport and excretion (animated lesson)" },
   // Class 8 · Ch 3 Health: The Ultimate Treasure · animated lesson hosted on this site
   { src: "videos/class8-science-health-ultimate-treasure.mp4", poster: "videos/class8-science-health-ultimate-treasure.jpg", id: "health-ultimate-treasure", cls: 8, subject: "Biology", chapter: "Health: The Ultimate Treasure", title: "Health: The Ultimate Treasure: healthy habits, germs and vectors, vaccines and antibiotics (animated lesson)" },
   // Class 9 · Ch 11 Reproduction: How Life Continues · animated lesson hosted on this site
