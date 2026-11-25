@@ -376,6 +376,20 @@ hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
 @media print{.sci-photo img{width:80px}}
 .sec-num.long{font-size:15px;letter-spacing:-.3px}
 @media print{.cards3{grid-template-columns:repeat(3,1fr)!important}.cards3 .fig img,.cards2 .fig img{max-height:160px!important}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
 </style>
 <style>
 .pyq .qnum{flex:none}
@@ -689,13 +703,14 @@ input.rung.bad{border-color:var(--red);background:var(--redt)}
 <h1>Solutes, Solvents and Solutions</h1>
 <p class="sub">Class 8 Science, Chapter 9: The Amazing World of Solutes, Solvents, and Solutions (NCERT Curiosity, 2026-27)</p>
 <p class="pitch">Why does every sip of <b>ORS</b> taste the same? Why does a stone sink but a huge wooden log float? This chapter answers both: <b>solutions</b> and <b>density</b>. Read it with every textbook figure, <b>8 live labs</b> you can play with, a <b>Solution Arcade of 8 games</b>, 100 exam questions with answers and all NCERT answers.</p>
-<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#labhub">🧪 Labs</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#bank">Questions</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost no-print" href="#video">▶ Watch video lesson</a><a class="btn ghost" href="#labhub">🧪 Labs</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#bank">Questions</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
 <a class="back no-print" href="/notes.html">← All notes</a>
 </div><div class="hero-pic"><img src="img/solutions-8/hero.webp" alt="Chapter opener from the NCERT textbook: Mahatma Gandhi and a crowd of people at the seashore picking up salt" width="1000" height="562" decoding="async"></div></div></header>
 <main>
 <nav class="toc" aria-label="Chapter contents">
 <h2>In this chapter</h2>
 <ol>
+<li class="no-print"><a href="#video"><span>▶</span>Video lesson (7 min)</a></li>
 <li><a href="#start"><span>9.0</span>Probe and ponder (opening questions)</a></li>
 <li><a href="#mix"><span>Intro</span>ORS, uniform and non-uniform mixtures</a></li>
 <li><a href="#sss"><span>9.1</span>Solute, solvent and solution</a></li>
@@ -727,6 +742,19 @@ input.rung.bad{border-color:var(--red);background:var(--redt)}
 <div class="box wow no-print" id="labhub"><h4>🧪 8 live labs in this page (tap to jump)</h4>
 <div class="gmenu out labs-menu"><a href="#lab-dv">🥄 Watch it dissolve</a><a href="#lab-sol">🧂 Dissolving Lab</a><a href="#lab-conc">🥤 Concentration Comparer</a><a href="#lab-fish">🐟 Fish Tank Oxygen</a><a href="#lab-tank">🛁 Float-or-Sink Tank</a><a href="#lab-det">⚖️ Density Detective</a><a href="#lab-cyl">📏 Meniscus Reader</a><a href="#lab-heat">🎈 Heat and Squeeze</a></div>
 <p style="margin:8px 0 0">Plus a density calculator, unit converter, density ladder and a frozen-lake slider. Everything works on a phone.</p></div>
+
+<section id="video" class="no-print"><div class="vl">
+<div class="vl-head"><span class="play" aria-hidden="true">▶</span><div><h2>Video lesson: Solutes, Solvents and Solutions</h2><p>A 7-minute animated lesson with narration and subtitles. Tap a topic to jump to it.</p></div></div>
+<video controls controlslist="nodownload" oncontextmenu="return false" preload="metadata" playsinline poster="/videos/class8-science-solutes-solvents-solutions.jpg" src="/videos/class8-science-solutes-solvents-solutions.mp4"></video>
+<div class="vl-ch" id="vl-ch"></div>
+<p class="vl-foot">Can't play it here? <a href="#" data-pin-dl="class8-science-solutes-solvents-solutions.mp4">🔒 Download the video (MP4)</a> with the PIN from MT Classes and watch it offline.</p>
+</div>
+<script>(function(){var C=[[0.0, "Introduction"], [31.8, "Uniform mixtures"], [59.6, "Solute, solvent, solution"], [96.0, "Saturated solutions"], [135.0, "Temperature and solubility"], [173.5, "Gases in water"], [207.4, "Float or sink"], [233.5, "Density"], [263.2, "Measuring density"], [305.8, "Temperature and pressure"], [349.1, "Quick quiz"], [398.5, "Wrap-up"]];var v=document.querySelector('#video video'),w=document.getElementById('vl-ch');
+function f(t){t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')}
+w.innerHTML=C.map(function(c,i){return '<button type="button" data-i="'+i+'"><b>'+f(c[0])+'</b>'+c[1]+'</button>'}).join('');
+w.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;v.currentTime=C[+b.dataset.i][0]+.05;v.play()});
+v.addEventListener('timeupdate',function(){var k=0;C.forEach(function(c,i){if(v.currentTime>=c[0])k=i});[].forEach.call(w.children,function(b,i){b.classList.toggle('on',i===k)})});})();</script>
+</section>
 
 <section id="start">
 <div class="sec-head"><span class="sec-num">9.0</span><h2>Probe and ponder</h2></div>
@@ -2145,5 +2173,6 @@ input.rung.bad{border-color:var(--red);background:var(--redt)}
 })();
 </script>
 
+<script src="/assets/js/video-pin.js" defer></script>
 </body>
 </html>
