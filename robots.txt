@@ -1,0 +1,7 @@
+# MT Classes Motihari: all study pages are open to search engines and AI answer engines.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /viewer.html
+
+Sitemap: https://www.mtclassesmotihari.com/sitemap.xml
