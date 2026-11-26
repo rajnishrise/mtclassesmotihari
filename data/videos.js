@@ -14,6 +14,8 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 10 The Human Eye and the Colourful World · animated lesson hosted on this site
+  { src: "videos/class10-science-human-eye-colourful-world.mp4", poster: "videos/class10-science-human-eye-colourful-world.jpg", id: "class10-science-human-eye-colourful-world", cls: 10, subject: "Physics", chapter: "The Human Eye and the Colourful World", title: "Human Eye: accommodation, myopia, hypermetropia, prism, VIBGYOR, rainbow, twinkling stars, blue sky and red sunset (animated lesson)" },
   // Class 10 · Ch 9 Light: Reflection and Refraction · animated lesson hosted on this site
   { src: "videos/class10-science-light-reflection-refraction.mp4", poster: "videos/class10-science-light-reflection-refraction.jpg", id: "class10-science-light-reflection-refraction", cls: 10, subject: "Physics", chapter: "Light: Reflection and Refraction", title: "Light: laws of reflection, concave and convex mirrors, mirror formula, refraction, refractive index, lenses and power (animated lesson)" },
   // Class 8 · Ch 9 Solutes, Solvents and Solutions · animated lesson hosted on this site
