@@ -77,3 +77,13 @@ Lesson videos (`videos/*.mp4`) play on the site for everyone, but downloading th
 Set the PIN in Vercel: **Project → Settings → Environment Variables**, add `VIDEO_PIN` (for example a 6-digit number) for Production, then redeploy.
 The PIN is never stored in this repository. To change it, edit the variable and redeploy.
 `api/video-pin.js` checks the PIN and gives a 10-minute download link; `middleware.js` blocks opening a video file directly without one.
+
+## Search engines and AI answers (SEO / AEO)
+
+After adding or changing a page, a notes page (`notes/*.html` listed in `data/notes.js`) or a video in `data/videos.js`, run:
+
+```bash
+node tools/seo.mjs
+```
+
+It rewrites the `<!-- SEO:START -->` … `<!-- SEO:END -->` block in every page's `<head>` (canonical link, Open Graph tags and JSON-LD structured data: institute, FAQ, notes as LearningResource, videos as VideoObject) and regenerates `sitemap.xml`, `robots.txt` and `llms.txt`. Never edit those blocks or files by hand. The site address it uses is `https://www.mtclassesmotihari.com`.
