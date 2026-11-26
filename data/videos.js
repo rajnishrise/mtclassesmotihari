@@ -14,6 +14,8 @@
      { src: "videos/file.mp4", poster: "videos/file.jpg", id: "short-name", cls: 9, ... }
    Newest videos go at the top. */
 window.MT_VIDEOS = [
+  // Class 10 · Ch 9 Light: Reflection and Refraction · animated lesson hosted on this site
+  { src: "videos/class10-science-light-reflection-refraction.mp4", poster: "videos/class10-science-light-reflection-refraction.jpg", id: "class10-science-light-reflection-refraction", cls: 10, subject: "Physics", chapter: "Light: Reflection and Refraction", title: "Light: laws of reflection, concave and convex mirrors, mirror formula, refraction, refractive index, lenses and power (animated lesson)" },
   // Class 8 · Ch 9 Solutes, Solvents and Solutions · animated lesson hosted on this site
   { src: "videos/class8-science-solutes-solvents-solutions.mp4", poster: "videos/class8-science-solutes-solvents-solutions.jpg", id: "class8-science-solutes-solvents-solutions", cls: 8, subject: "Chemistry", chapter: "Solutes, Solvents and Solutions", title: "Solutions: ORS, saturated solutions, heat and solubility, oxygen in ponds, density and why ice floats (animated lesson)" },
   // Class 8 · Ch 8 Nature of Matter · animated lesson hosted on this site
