@@ -26,8 +26,9 @@ const write = (p, s) => fs.writeFileSync(path.join(ROOT, p), s);
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const unesc = (s) => String(s).replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/&amp;/g, "&");
 const url = (p) => SITE + "/" + (p === "index.html" ? "" : p);
+// Commits made only by this script start with "SEO:" and are skipped, so dates show real content changes.
 const gitDate = (p) => {
-  try { return execFileSync("git", ["log", "-1", "--format=%cI", "--", p], { cwd: ROOT }).toString().trim(); } catch { return ""; }
+  try { return execFileSync("git", ["log", "-1", "--no-merges", "--invert-grep", "--grep=^SEO:", "--grep=^Add SEO and AEO foundations", "--format=%cI", "--", p], { cwd: ROOT }).toString().trim(); } catch { return ""; }
 };
 const today = new Date().toISOString();
 const lastmod = (p) => (gitDate(p) || today).slice(0, 10);
@@ -194,6 +195,27 @@ for (const ch of chapters) {
   if (vid) graph[0].video = videoObject(vid);
   write(ch.page, inject(html, headBlock({ p: ch.page, title, desc, type: "article", graph })));
 }
+
+// ---- plain HTML copies of lists that the page scripts draw, so crawlers and AI bots
+//      that don't run JavaScript still see them. The scripts replace them on load. ----
+const prerender = (p, id, inner) => {
+  const html = read(p);
+  const re = new RegExp(`(id="${id}"[^>]*>)(?:<!--PRERENDER-->[\\s\\S]*?<!--/PRERENDER-->)?(</div>)`);
+  if (!re.test(html)) throw new Error(`#${id} not found in ${p}`);
+  write(p, html.replace(re, (_, a, b) => `${a}<!--PRERENDER-->${inner}<!--/PRERENDER-->${b}`));
+};
+prerender("index.html", "faqs", CONTENT.faqs.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join(""));
+prerender("notes.html", "notes-root", NOTES.books.map((b) => `<h2 style="margin-top:22px;font-size:1.2rem">Class ${b.cls} ${b.subject} notes (${esc(b.book)})</h2>` +
+  b.chapters.map((ch, i) => {
+    const t = typeof ch === "string" ? ch : ch.title;
+    const link = ch.page || (ch.file && /^https?:/i.test(ch.file) ? ch.file : "");
+    const pdf = ch.file && !/^https?:/i.test(ch.file) ? ` <a class="btn sm ghost" href="${esc(ch.file)}">PDF</a>` : "";
+    return `<div class="note"><span class="n">${i + 1}</span><span class="t">${link ? `<a href="${esc(link)}">${esc(t)}</a>` : esc(t)}${ch.label ? `<small>${esc(ch.label)}</small>` : ""}</span><span class="act">${pdf}</span></div>`;
+  }).join("")).join(""));
+prerender("videos.html", "videos", VIDEOS.map((v) => {
+  const href = v.src ? `videos.html#watch=${v.id}` : `https://www.youtube.com/watch?v=${String(v.id).replace(/^.*(?:v=|youtu\.be\/)/, "").slice(0, 11)}`;
+  return `<a class="card" href="${esc(href)}"><h3>Class ${v.cls} ${esc(v.subject)}: ${esc(v.chapter)}${v.part ? ` (Part ${v.part})` : ""}</h3><p class="muted">${esc(v.title)}</p></a>`;
+}).join(""));
 
 // ---- sitemap.xml ----
 const indexable = PAGES.filter((p) => !p.noindex).map((p) => p.p).concat(chapters.map((c) => c.page));
