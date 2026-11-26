@@ -55,7 +55,9 @@ const org = {
   telephone: C.phone.replace(/\s+/g, ""),
   email: C.email || undefined,
   priceRange: "₹",
-  address: { "@type": "PostalAddress", streetAddress: "S.K. Nagar", addressLocality: "Motihari", addressRegion: "Bihar", addressCountry: "IN" },
+  address: { "@type": "PostalAddress", streetAddress: "S.K. Nagar (Sri Krishna Nagar)", addressLocality: "Motihari", addressRegion: "Bihar", postalCode: "845401", addressCountry: "IN" },
+  ...(C.geo ? { geo: { "@type": "GeoCoordinates", latitude: C.geo.lat, longitude: C.geo.lng } } : {}),
+  hasMap: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(C.plusCode || C.mapQuery),
   areaServed: [{ "@type": "City", name: "Motihari" }, { "@type": "AdministrativeArea", name: "East Champaran" }],
   founder: { "@type": "Person", name: C.founder.name, jobTitle: C.founder.role },
   sameAs: [C.youtubeChannel].filter(Boolean),
@@ -179,7 +181,7 @@ for (const pg of PAGES) {
   }
   if (pg.p === "notes.html") graph.push({ "@type": "ItemList", name: "Chapter-wise notes for Class 8, 9 and 10 Maths and Science", itemListElement: chapters.map((ch, i) => ({ "@type": "ListItem", position: i + 1, url: url(ch.page), name: `Class ${ch.cls} ${ch.subject}: ${ch.title}` })) });
   if (pg.p === "videos.html") graph.push({ "@type": "ItemList", name: "Animated video lessons", itemListElement: siteVideos.map((v, i) => ({ "@type": "ListItem", position: i + 1, item: videoObject(v) })) });
-  if (pg.p === "contact.html" || pg.p === "classes.html") graph.push({ "@id": ORG_ID, "@type": org["@type"], name: org.name, url: org.url, telephone: org.telephone, address: org.address });
+  if (pg.p === "contact.html" || pg.p === "classes.html") graph.push({ "@id": ORG_ID, "@type": org["@type"], name: org.name, url: org.url, telephone: org.telephone, address: org.address, geo: org.geo, hasMap: org.hasMap });
   write(pg.p, inject(html, headBlock({ ...pg, title, desc, graph })));
 }
 
@@ -245,7 +247,7 @@ write("llms.txt", `# MT Classes Motihari
 
 - Phone / WhatsApp: ${C.phone}
 - Email: ${C.email}
-- Address: ${C.address}
+- Address: ${C.address} (Google Maps plus code ${C.plusCode})
 - Batches: ${CONTENT.batches.map((b) => `${b.name} (${b.days}, ${b.time})`).join("; ")}
 - YouTube: ${C.youtubeChannel}
 

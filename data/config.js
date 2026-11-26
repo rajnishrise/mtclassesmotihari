@@ -11,8 +11,10 @@ window.MT_CONFIG = {
   phone: "+91 70916 09997",          // shown on the site
   whatsapp: "917091609997",          // country code + number, digits only
   email: "mtclassesmotihari@gmail.com",                         // optional
-  address: "S.K. Nagar, Motihari, East Champaran, Bihar",
-  mapQuery: "S.K. Nagar, Motihari, Bihar",
+  address: "S.K. Nagar (Sri Krishna Nagar), Motihari, East Champaran, Bihar 845401",
+  mapQuery: "JWW8+X74, Motihari, Bihar 845401",   // Google Maps plus code of the institute
+  plusCode: "7MR6JWW8+X74",
+  geo: { lat: 26.647388, lng: 84.915703 },
   hours: "Mon – Sat",
 
   // ---- Links (leave "" to hide) ----
