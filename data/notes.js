@@ -22,7 +22,7 @@ window.MT_NOTES = {
       { title: "Statistics", label: "Chapter 13: notes with every NCERT table, 6 calculators, 8 games and puzzles, CBSE board questions 2023–2026 and all NCERT answers", file: "notes/class10-maths-statistics.pdf", page: "notes/class10-maths-statistics.html" },
       { title: "Probability", label: "Chapter 14: notes with all NCERT figures, die, deck, two-dice and spinner tools, CBSE board questions 2023–2026 and all NCERT answers", file: "notes/class10-maths-probability.pdf", page: "notes/class10-maths-probability.html" } ] },
     { cls: 10, subject: "Science", book: "NCERT Science", chapters: [
-      { title: "Chemical Reactions and Equations", label: "Handwritten notes", file: "notes/class10-science-chemical-reactions-equations.pdf" },
+      { title: "Chemical Reactions and Equations", label: "Chapter 1: colourful CBSE notes with all 11 NCERT activities drawn, equation balancer, virtual lab bench and redox detective labs, an activity for every topic, 3 games, CBSE board questions 2023–2026 with step marks, A–E practice and all NCERT answers", file: "notes/class10-science-chemical-reactions-and-equations.pdf", page: "notes/class10-science-chemical-reactions-and-equations.html" },
       { title: "Acids, Bases and Salts", label: "Handwritten notes", file: "notes/class10-science-acids-bases-salts.pdf" },
       { title: "Metals and Non-metals", label: "Extraction of Metals & Corrosion", file: "notes/class10-science-extraction-of-metals-and-corrosion.pdf", page: "notes/class10-science-extraction-of-metals-and-corrosion.html" },
       { title: "Carbon and its Compounds", file: "notes/class10-science-carbon-and-its-compounds.pdf", page: "notes/class10-science-carbon-and-its-compounds.html" },
