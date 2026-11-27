@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coordinate Geometry | Class 10 Maths Chapter 7 Notes, Distance Formula, Section Formula and CBSE Questions | MT Classes Motihari</title>
+<meta name="description" content="Class 10 Maths (NCERT) Chapter 7, Coordinate Geometry: colourful CBSE board notes on the Cartesian plane, quadrants, the distance formula with proof, collinearity, isosceles and right triangles, square, rhombus, rectangle and parallelogram tests, the section formula, mid-point, ratio by the x-axis and y-axis, trisection points and fourth vertex of a parallelogram, a live distance lab, section-formula lab and shape detective, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<meta property="og:title" content="Coordinate Geometry | Class 10 Maths Chapter 7 Notes, Distance Formula, Section Formula and CBSE Questions | MT Classes Motihari">
+<meta property="og:description" content="Class 10 Maths (NCERT) Chapter 7, Coordinate Geometry: colourful CBSE board notes on the Cartesian plane, quadrants, the distance formula with proof, collinearity, isosceles and right triangles, square, rhombus, rectangle and parallelogram tests, the section formula, mid-point, ratio by the x-axis and y-axis, trisection points and fourth vertex of a parallelogram, a live distance lab, section-formula lab and shape detective, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+/* chapter 9 extras */
+.snap .tbl-wrap table{font-size:15.5px}
+.snap .box.calc{margin:0}
+.box.calc .big{margin:6px 0 0}
+.ans .fig{margin:6px 0 10px}
+.chem{white-space:normal}
+
+/* chapter 3 extras: hero picture, tools, flowcharts */
+.hero-pic img{width:100%;height:auto;max-width:440px;display:block;margin:0 auto;border-radius:18px;border:3px solid var(--gold);box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
+.tool{background:#fff;border:2px solid var(--navy);border-radius:16px;padding:14px 16px;margin:18px 0}
+.tool>h4:first-child{margin:0 0 4px;font-size:19px}
+.tool .hint{font-size:15px;color:var(--muted);margin:0 0 10px}
+.tool input[type=range]{display:block;width:100%;accent-color:#0E2148;margin:6px 0 2px}
+.tool label{font-weight:600;font-size:16px}
+.tool svg{width:100%;height:auto;display:block}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.seg button,.tbtn{font:600 15.5px 'Mukta',sans-serif;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.seg button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tbtn.solid{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.readout{background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:8px 12px;font-weight:600;margin-top:10px}
+.readout b{font:800 19px 'Baloo 2',sans-serif}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+.row-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0}
+.row-in input[type=number]{width:110px;font:600 17px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+.bar{height:22px;border-radius:8px;background:#EEF2F9;overflow:hidden;margin:4px 0 8px}
+.bar i{display:block;height:100%;border-radius:8px}
+.tree{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.tree>div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.tree h4{margin:0 0 8px;text-align:center;background:var(--navy);color:#fff;border-radius:10px;padding:6px}
+.tree .lvl{border-left:3px solid var(--gold);padding-left:10px;margin:8px 0}
+.tree .lvl b{display:block}
+.tree .lvl span{font-size:15px;color:var(--muted)}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.cards3 .fig{margin:0;display:flex;flex-direction:column}
+.cards3 .fig figcaption{font-size:14.5px}
+.cards3 .fig p{font-size:15px;margin:6px 0 0;line-height:1.45}
+.who{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px;margin:0}
+.who .clue{font:700 19px 'Baloo 2',sans-serif;color:var(--navy);min-height:3em;margin:4px 0 10px}
+.who .opts{margin-bottom:8px}
+.yes{color:var(--green);font-weight:700}.no{color:var(--redd);font-weight:700}
+@media (max-width:760px){
+  .tool-grid,.tree{grid-template-columns:1fr}
+  .cards3{grid-template-columns:1fr 1fr}
+  .hero-pic{order:-1;margin:0 0 -8px}
+  .hero-pic img{max-width:340px}
+}
+@media print{.hero-pic{order:0!important;margin:0!important}.hero-pic img{max-width:200px}.fig img{max-height:240px!important}.cards3 .fig img,.cards2 .fig img{max-height:200px!important}.duo{grid-template-columns:1fr 1fr!important}.ideas{gap:6px}.cards3{grid-template-columns:repeat(3,1fr)}.tree{grid-template-columns:1fr 1fr}.hero-in{grid-template-columns:1fr 200px}}
+
+/* chapter 11 extras */
+.hero h1{font-size:clamp(36px,6vw,60px)}
+hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
+.bead-found{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bead-found span{display:inline-flex;gap:3px;padding:4px 7px;border:1.5px solid var(--line);border-radius:999px;background:#FBFCFF}
+.bead-found i{width:14px;height:14px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.25)}
+.sci-photo{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:start}
+.sci-photo img{width:110px;height:auto;border-radius:12px;border:2px solid var(--gold);background:#fff}
+.sci-photo p{margin:0}
+.ans .fig{background:#fff}
+.cards2>.idea,.cards3>.idea{margin:0}
+.tool input[type=date]{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+@media (max-width:760px){.sci-photo{grid-template-columns:84px 1fr}.sci-photo img{width:84px}.cards3{grid-template-columns:1fr}}
+@media print{.sci-photo img{width:80px}}
+.sec-num.long{font-size:15px;letter-spacing:-.3px}
+@media print{.cards3{grid-template-columns:repeat(3,1fr)!important}.cards3 .fig img,.cards2 .fig img{max-height:160px!important}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
+</style>
+<style>
+.pyq .qnum{flex:none}
+.yr{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px/1.2 'Mukta',sans-serif;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.pyq details.qa summary{flex-wrap:wrap;row-gap:4px}
+.pyq{margin:6px 0}
+.score2{font-weight:700;color:var(--navy)}
+.stepper{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.stepper .st{border:1.5px solid var(--line);border-radius:12px;padding:6px;text-align:center;background:#FBFCFF;opacity:.55}
+.stepper .st.past{opacity:.85}
+.stepper .st.now{opacity:1;border-color:var(--gold);background:var(--goldt);box-shadow:0 0 0 2px var(--gold)}
+.stepper .em{display:block;font-size:24px;line-height:1.2}
+.stepper .nm{font-size:13.5px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 15.5px 'Mukta',sans-serif;padding:7px 14px;border-radius:12px;border:1.5px solid var(--navy2);background:#fff;color:var(--navy);cursor:pointer}
+.chip.ok{background:#E3F4EA;border-color:var(--green);color:#1F5A38}
+.chip.shake{animation:shk .35s}
+@keyframes shk{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+#who .opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fig.wide img{max-width:760px;margin:0 auto}
+@media (max-width:760px){.stepper{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.pyq{display:block!important}.yr{background:none;color:var(--navy);border:1px solid var(--navy)}}
+</style>
+<style>
+/* chapter 14 probability */
+#bag-svg{max-width:300px;margin:0 auto}
+#spin-svg{max-width:300px;margin:0 auto}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.12;font-size:.86em;margin:0 2px}
+.fr>span{display:block;padding:0 3px}
+.fr>span:first-child{border-bottom:1.6px solid currentColor}
+.formula .fr{font-size:.92em}
+.big .fr{font-size:.82em}
+.ebar{text-decoration:overline;text-decoration-thickness:2px}
+.quote{margin:0 0 16px;padding:12px 18px;border-left:5px solid var(--gold);background:#fff;border-radius:0 12px 12px 0;font-style:italic;color:var(--navy2)}
+.quote span{display:block;font-style:normal;color:var(--muted);font-size:15px;text-align:right}
+.sci-photo .fig img{width:110px}
+.snap{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.snap .big{font-size:18px}
+.tool select.sel{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px;background:#fff;max-width:100%}
+.deck{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:4px;margin:6px 0 4px}
+.pc{background:#fff;border:1.5px solid #9AA6BD;border-radius:6px;aspect-ratio:5/7;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;color:#1D2433;transition:opacity .2s,transform .2s}
+.pc b{font:800 15px 'Baloo 2',sans-serif;color:inherit}
+.pc i{font-style:normal;font-size:17px}
+.pc.red{color:#C0392B}
+.pc.off{opacity:.18}
+.pc:not(.off){border-color:var(--gold);background:#FFFBEF}
+.pc.pick{transform:scale(1.18);box-shadow:0 0 0 3px #2A4A86;opacity:1;z-index:1;position:relative}
+.bag-ctl{display:flex;flex-wrap:wrap;gap:8px 16px;margin:4px 0 8px}
+.bag-c{display:flex;align-items:center;gap:6px}
+.bag-c i{width:16px;height:16px;border-radius:50%;display:inline-block}
+.bag-c span{min-width:3.4em;font-weight:600}
+.bag-c b{min-width:1.4em;text-align:center;font:800 18px 'Baloo 2',sans-serif}
+.bag-c .tbtn{padding:2px 12px;font-size:18px;line-height:1.2}
+.bag-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:600}
+.bag-row i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.dgrid{font-size:14.5px}
+.dgrid th,.dgrid td{text-align:center;padding:6px 4px}
+.dgrid th.g{background:#6B7280}
+.dgrid th.b{background:#2A4A86;width:44px}
+.dgrid th.corner{font-size:12px;font-weight:600;background:var(--navy);white-space:nowrap}
+.dgrid td{transition:background .2s;white-space:nowrap;border-left:1px solid var(--line)}
+.dgrid tr:nth-child(even) td{background:#fff}
+.dgrid td.on,.dgrid tr:nth-child(even) td.on{background:#FFE6A3;color:#6B4A00;font-weight:700}
+.numgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px;margin:8px 0}
+.numgrid span{text-align:center;font-size:13.5px;padding:3px 0;border-radius:6px;background:#F4F7FC;color:#5B6475}
+.numgrid span.on{background:var(--gold);color:var(--navy);font-weight:700}
+.row-in input[type=number]{width:80px}
+.coin3d{width:96px;height:96px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font:800 42px 'Baloo 2',sans-serif;color:var(--navy);background:radial-gradient(circle at 35% 35%,#FFE7A6,#E3B23C 60%,#8A6510);border:3px solid #8A6510;box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+.coin3d.tail{background:radial-gradient(circle at 35% 35%,#E9EEF8,#9AA6BD 60%,#56647F);border-color:#56647F}
+.coin3d.flip{animation:flip .6s}
+@keyframes flip{0%{transform:rotateY(0) translateY(0)}50%{transform:rotateY(540deg) translateY(-26px)}100%{transform:rotateY(1080deg) translateY(0)}}
+.big-formula div{font-size:22px}
+@media (max-width:760px){
+  .deck{gap:2px}
+  .pc{border-radius:4px;border-width:1px}
+  .pc b{font-size:11px}.pc i{font-size:12px}
+  .dgrid{font-size:12px}
+  .dgrid th,.dgrid td{padding:5px 2px}
+  .dgrid th.corner{font-size:10px;white-space:normal}
+  .numgrid span{font-size:12px}
+  .big-formula div{font-size:17px}
+  .sci-photo .fig img{width:84px}
+}
+@media (prefers-reduced-motion:reduce){.coin3d.flip{animation:none}}
+@media print{.dgrid td{font-size:10pt}}
+</style>
+<style>
+/* chapter 13 statistics */
+.hero .pitch b,.hero .pitch i{color:var(--gold)}
+p.calc.big{font:700 20px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.starbar .gmenu{display:none}
+.gmenu.out{display:flex;margin:0 0 14px}
+.gmenu.out a{color:var(--navy);border-color:var(--line);background:#fff}
+.tcap{font:700 15px 'Mukta',sans-serif;color:var(--goldd);margin:14px 0 -8px}
+details.qa summary>span:last-child{min-width:0;flex:1}
+.pyq details.qa summary>span:last-child{flex:1 1 100%}
+details.qa summary .tbl-wrap{margin:8px 0 2px;font-weight:400}
+tr.tot td{background:var(--goldt)!important;font-weight:700;color:var(--navy);border-top:2px solid var(--gold)}
+table.horiz th:first-child,table.horiz td:first-child{text-align:left;white-space:nowrap}
+table.horiz td,table.horiz th{white-space:nowrap}
+.cards3 .idea p{font-size:16px}
+.proof .formula{margin:8px 0 0}
+.stp{display:inline-flex;align-items:center;gap:6px}
+.stp b{min-width:1.8em;text-align:center}
+.tbtn.mini{padding:0 9px;font-size:16px;line-height:1.5}
+.mini-lab{font-size:13.5px;color:var(--muted);margin-left:6px}
+#mo-btns{gap:4px 8px}
+.row-in label{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.row-in input[type=number]{width:96px}
+/* arcade */
+.starbar{position:sticky;top:6px;z-index:5;background:var(--navy);color:#fff;border-radius:16px;padding:10px 14px;margin:0 0 16px;box-shadow:0 10px 24px -14px rgba(14,33,72,.7)}
+.starbar>div:first-child{font:700 18px 'Baloo 2',sans-serif}
+.starbar b{color:var(--gold);font-size:24px;display:inline-block}
+.starbar b.pop{animation:pop .5s}
+@keyframes pop{50%{transform:scale(1.6)}}
+.starbar .bar{background:#24407A;height:10px;margin:6px 0 8px}
+.badge{display:inline-block;margin-left:8px;background:var(--gold);color:var(--navy);border-radius:999px;padding:1px 10px;font:700 14px 'Mukta',sans-serif}
+.gmenu{display:flex;flex-wrap:wrap;gap:6px}
+.gmenu a{color:#fff;text-decoration:none;font-size:14px;border:1px solid #4D6BA8;border-radius:999px;padding:2px 10px}
+.game{background:#fff;border:2px solid var(--navy);border-radius:18px;padding:14px 16px;margin:18px 0;scroll-margin-top:110px;box-shadow:0 8px 0 -2px var(--gold)}
+.game>h3{margin:0 0 4px}
+.game .hint{font-size:15.5px;color:var(--muted);margin:0 0 8px}
+.game svg{width:100%;height:auto;display:block}
+.game .clue{font:700 18px 'Baloo 2',sans-serif;color:var(--navy);margin:4px 0 8px}
+.bignum{font:800 26px 'Baloo 2',sans-serif;min-width:1.6em;text-align:center;color:var(--redd)}
+#ss-svg.level{background:#E7F6EC;border-radius:12px}
+.game input[type=range]{width:100%;accent-color:#E3B23C}
+.opts.three{grid-template-columns:repeat(3,1fr)}
+.mem{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:6px 0 10px}
+.mcard{position:relative;min-height:86px;border-radius:12px;border:2px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;padding:6px;font:600 14px/1.25 'Mukta',sans-serif;transition:transform .25s}
+.mcard .face{display:none}
+.mcard .back{font:800 30px 'Baloo 2',sans-serif;color:var(--gold)}
+.mcard.up,.mcard.done{background:#fff;color:var(--ink);transform:rotateY(180deg) scaleX(-1)}
+.mcard.up .face,.mcard.done .face{display:block}
+.mcard.up .back,.mcard.done .back{display:none}
+.mcard .face.sym{font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.mcard.done{border-color:var(--green);background:#E7F6EC}
+.case{background:#FBF7EC;border:1.5px dashed var(--goldd);border-radius:12px;padding:10px 12px}
+.case-tag{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px 'Mukta',sans-serif;border-radius:6px;padding:2px 8px;margin-bottom:6px}
+.speed-top{display:flex;gap:16px;align-items:center}
+.timer{width:58px;height:58px;border-radius:50%;border:4px solid var(--gold);display:grid;place-items:center;font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.timer.low{border-color:var(--red);color:var(--redd);animation:pop 1s infinite}
+.game.flash-ok{box-shadow:0 0 0 4px var(--green)}
+.game.flash-bad{box-shadow:0 0 0 4px var(--red)}
+.slots{display:flex;flex-wrap:wrap;gap:6px;min-height:46px;background:#F4F7FC;border-radius:12px;padding:8px;margin:6px 0 10px}
+.slot{min-width:34px;height:32px;border-bottom:3px solid #B9CBEA;display:grid;place-items:center;font:700 17px 'Baloo 2',sans-serif;color:var(--navy);padding:0 4px}
+.slot.ok{border-color:var(--green)}
+.chip:disabled{opacity:.35;cursor:default}
+input.rung{width:84px;font:600 16px 'Mukta',sans-serif;padding:3px 6px;border:1.5px solid var(--line);border-radius:8px;text-align:center}
+input.rung.good{border-color:var(--green);background:#E7F6EC}
+input.rung.bad{border-color:var(--red);background:var(--redt)}
+@media (max-width:760px){.mem{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.mcard{min-height:78px;font-size:12px;padding:4px}.mcard .face.sym{font-size:18px}.opts.three{grid-template-columns:repeat(3,1fr)}.starbar>div:first-child{font-size:16px}.game{padding:12px}}
+@media (max-width:420px){.mcard{font-size:11px}}
+@media print{.tcap{margin-top:8px}tr.tot td{background:#fff!important}}
+</style>
+<style>
+/* chapter 12 surface areas and volumes */
+.kit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.kcard{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:10px 12px;text-align:center}
+.kcard svg{width:100%;max-width:130px;height:auto;display:block;margin:0 auto}
+.kcard svg text{font-family:'Mukta',sans-serif;fill:#0E2148;font-weight:700}
+.kcard h4{margin:4px 0 2px}
+.kcard p{margin:0;font:600 16px/1.55 'Mukta',sans-serif;color:var(--navy)}
+.kcard small{font-weight:400;color:var(--muted);font-size:13.5px}
+.fig.tiny img{max-width:200px}
+.proof .duo{align-items:start}
+.proof .duo .fig{margin:0}
+#sb-svg,#hu-svg{max-width:360px;margin:0 auto;background:linear-gradient(#F4F8FD,#fff);border-radius:12px}
+#sb-svg .vis,#hu-svg .vis{fill:#FFD978;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .vis2,#hu-svg .vis2{fill:#E8A93A;stroke:#0E2148;stroke-width:1.6;stroke-dasharray:5 3}
+#sb-svg .hid,#hu-svg .hid{fill:rgba(217,83,79,.14);stroke:#D9534F;stroke-width:2.4;stroke-dasharray:7 5}
+#sb-svg .wat{fill:#5DB7F0;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .air{fill:#fff;stroke:#0E2148;stroke-width:2}
+#sb-svg .ol{fill:#F2F6FB;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .ol2{fill:none;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .olh{fill:none;stroke:#7C8AA5;stroke-width:1.5;stroke-dasharray:4 4}
+.dg .lab,svg .lab{font:600 13px 'Mukta',sans-serif;fill:#0E2148}
+.sb-grid{align-items:start}
+.sb-title{font-size:16px;margin:0 0 8px}
+.sb-mode{margin:10px 0 0;justify-content:center}
+.sb-out ul{margin:2px 0 8px}
+.sb-out p{margin:4px 0}
+.sb-out .sb-hid{color:var(--redd);font-weight:500;font-size:15.5px}
+.sb-out .sb-total{font:700 19px 'Baloo 2',sans-serif;color:var(--navy)}
+.sb-out .sb-total b{color:var(--goldd)}
+#sh-svg{max-width:320px;margin:0 auto}
+.melt-row{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:start}
+.melt-row>div>b{display:block;margin-bottom:4px}
+.melt-arrow{font:800 30px 'Baloo 2',sans-serif;color:var(--goldd);align-self:center}
+.mt-in{display:flex!important;align-items:center;gap:6px;margin:6px 0;font-size:15.5px}
+.mt-in input{width:90px;font:600 16px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:10px}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.ok{background:#E3F4EA!important;border-color:var(--green)!important;color:#1F5A38!important}
+.de-lines{flex-direction:column;align-items:stretch}
+.de-lines .chip{text-align:left}
+.mcard .face{font-size:13.5px}
+.cards3 .idea h4{font-size:17px}
+@media (max-width:760px){
+  .kit{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kcard p{font-size:15px}
+  .melt-row{grid-template-columns:1fr}
+  .proof .duo .fig img{max-height:240px;width:auto;max-width:100%;margin:0 auto}
+  .melt-arrow{transform:rotate(90deg);justify-self:center}
+}
+@media print{.kit{grid-template-columns:repeat(3,1fr)}.kcard,.proof{break-inside:avoid}.fig.tiny img{max-height:180px!important}}
+.flow li:last-child b{color:var(--gold)}
+
+/* chapter 11 areas related to circles */
+#ex-svg,#ck-svg,#gz-svg,#sl-svg,#dz-svg,#nm-svg,#gs-svg{max-width:320px;margin:0 auto}
+.kcard p .fr{font-size:.8em}
+.tbl-c .fr{font-size:.85em}
+.cards2 .flow{width:100%}
+.tool .mini-lab input{vertical-align:middle;margin-right:4px}
+#ex-mode,#gz-mode{justify-content:center}
+.sb-out ul{padding-left:1.1em}
+.yr{white-space:normal}
+.pyq .qnum{flex:0 1 auto;min-width:0}
+@media (max-width:760px){#nm-opts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<style>
+/* chapter 10 circles */
+#tx-svg{max-width:360px;margin:0 auto}
+#qd-svg,#ic-svg,#an-svg,#pa-svg,#ls-svg,#tc-svg{max-width:330px;margin:0 auto}
+#tx-mode{justify-content:center}
+#pb-done{margin:6px 0 10px}
+#pb-done li{font-size:16px}
+.chip:disabled{opacity:.55;cursor:default}
+.figrow .fig img{max-height:220px;width:auto;max-width:100%;margin:0 auto}
+@media (max-width:760px){#ls-opts{grid-template-columns:1fr}}
+@media print{.figrow{grid-template-columns:repeat(3,1fr)}}
+</style>
+<style>
+/* class 8 chapter 8 matter */
+.hero-pic img{border-radius:18px}
+.mk{display:inline-block;background:#E7F6EC;color:#185C34;border:1px solid #2E7D4F;border-radius:6px;font:700 12.5px/1.4 'Mukta',sans-serif;padding:0 6px;margin-left:4px;vertical-align:middle}
+#pv-svg,#el-svg,#fs-svg{max-width:360px;margin:0 auto}
+#mx-svg{max-width:260px;margin:0 auto}
+#mo-svg{max-width:420px;margin:0 auto 8px}
+#pv-svg text,#mo-svg text,#el-svg text,#fs-svg text,#mx-svg text{font-family:'Mukta',sans-serif}
+.jig{animation:jig 2.4s ease-in-out infinite}
+@keyframes jig{0%,100%{transform:translate(0,0)}25%{transform:translate(1.5px,-1px)}50%{transform:translate(-1px,1.5px)}75%{transform:translate(1px,1px)}}
+.bub{animation:bub 1.8s linear infinite}
+@keyframes bub{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-34px);opacity:0}}
+#pv-seg button,#mx-seg button{font-size:14.5px;padding:5px 11px}
+.fig.plain{margin:0}
+.duo>.fig{margin:0}
+.cards2>.fig{display:flex;flex-direction:column;justify-content:space-between}
+.mcard .face{font-size:13px}
+.qa .ans .fig{max-width:260px}
+.bank-intro{background:var(--bluet);border-radius:10px;padding:8px 12px;font-size:16px}
+.chip span{vertical-align:middle}
+@media (prefers-reduced-motion:reduce){.jig,.bub{animation:none}}
+@media (max-width:760px){.mem{grid-template-columns:repeat(4,minmax(0,1fr))}.mcard .face{font-size:11.5px}}
+@media print{.mk{border-color:#2E7D4F}#water .cards2 .fig img,#ironsulfur .cards2 .fig img{max-height:300px!important}}
+</style>
+<style>
+/* class 8 chapter 3 health: colourful section themes */
+.t-sun{--c:#F59E0B;--cg:#F97316;--cd:#9A4A05;--ct:#FFF4DC;--cl:#FBD38D}
+.t-violet{--c:#7C5CD6;--cg:#C054D6;--cd:#4B2E99;--ct:#F3EEFF;--cl:#D6C8F7}
+.t-leaf{--c:#2E9E5B;--cg:#8BC34A;--cd:#1D6B3C;--ct:#EAF8EE;--cl:#B7E2C4}
+.t-sky{--c:#1E88E5;--cg:#26C6DA;--cd:#0D4F8B;--ct:#E7F3FD;--cl:#B5D8F7}
+.t-coral{--c:#E8574A;--cg:#F59E42;--cd:#9C2A20;--ct:#FFEEEA;--cl:#F8C3BB}
+.t-rose{--c:#D6407A;--cg:#F27BA8;--cd:#8E1F4D;--ct:#FDEBF2;--cl:#F4BCD2}
+.t-teal{--c:#0F9D8F;--cg:#3CC3D0;--cd:#0A5F57;--ct:#E3F7F5;--cl:#A8E3DC}
+.t-indigo{--c:#3949AB;--cg:#8E24AA;--cd:#222D7A;--ct:#ECEEFB;--cl:#C3C9EF}
+.t-navy{--c:#0E2148;--cg:#2A4A86;--cd:#0E2148;--ct:#EEF3FB;--cl:#C9D6EC}
+
+/* hero */
+.hero{background:radial-gradient(90% 120% at 90% 10%,#20B39A 0,transparent 60%),radial-gradient(80% 110% at 0% 100%,#7C5CD6 0,transparent 55%),linear-gradient(135deg,#0B5E6B,#0E2148)}
+.hero h1{font-size:clamp(34px,5.6vw,58px)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FFD25E,#FF8A5B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ecg-hero{display:block;width:100%;max-width:440px;height:44px;margin:0 0 8px}
+.ecg-hero path{stroke-dasharray:900;stroke-dashoffset:900;animation:ecg 3.2s ease-in-out infinite}
+@keyframes ecg{0%{stroke-dashoffset:900}45%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+
+/* colourful contents */
+.toc ol{gap:6px 14px}
+.toc a{border:0;border-radius:12px;padding:6px 8px;background:var(--ct);align-items:center}
+.toc a span{background:linear-gradient(120deg,var(--c),var(--cg));color:#fff;border-radius:8px;padding:0 6px;font-size:14px;min-width:3.2em;text-align:center}
+.toc a:hover{outline:2px solid var(--cl)}
+
+/* themed section cards */
+main>section.th{position:relative;background:linear-gradient(180deg,var(--ct) 0,#fff 300px);border:2px solid var(--cl);border-radius:24px;padding:20px 16px 12px;box-shadow:0 14px 30px -24px var(--cd)}
+main>section.th::before{content:attr(data-emoji);position:absolute;right:10px;top:78px;font-size:96px;line-height:1;opacity:.09;pointer-events:none}
+.th>.sec-head{background:linear-gradient(115deg,var(--c),var(--cg));margin:-20px -16px 18px;padding:14px 16px;border-radius:22px 22px 0 0;position:relative;overflow:hidden}
+.th>.sec-head::after{content:"";position:absolute;right:-10px;top:-10px;bottom:-10px;width:45%;background-image:radial-gradient(rgba(255,255,255,.28) 2px,transparent 2.6px);background-size:14px 14px;pointer-events:none}
+.th.pat-wave>.sec-head::after{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.16) 0 8px,transparent 8px 18px)}
+.th.pat-ring>.sec-head::after{background-image:radial-gradient(circle at 80% 50%,rgba(255,255,255,.22) 0 22px,transparent 23px 34px,rgba(255,255,255,.14) 35px 44px,transparent 45px)}
+.th>.sec-head h2{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.12);position:relative;z-index:1}
+.th .sec-num{border-color:#fff;color:var(--cd);background:#fff;box-shadow:0 4px 0 rgba(0,0,0,.12);position:relative;z-index:1}
+.th .sec-num::after{background:var(--cg);border-color:#fff}
+.th h3{color:var(--cd);display:flex;gap:10px;align-items:stretch}
+.th h3::before{content:"";flex:none;width:6px;border-radius:3px;background:linear-gradient(var(--c),var(--cg))}
+.th h4{color:var(--cd)}
+.th b,.th strong{color:var(--cd)}
+.th .term{color:var(--cd);background:linear-gradient(transparent 60%,var(--cl) 0)}
+.th .box.key{background:#fff;border-left:6px solid var(--c);box-shadow:0 6px 18px -14px var(--cd)}
+.th .box.think{background:var(--ct);border:1.5px dashed var(--c)}
+.th .box.wow{background:linear-gradient(135deg,var(--cd),#0E2148);color:#F3F6FC}
+.th .box.wow b,.th .box.wow h4{color:#FFD25E}
+.th .tool{border:2px solid var(--c);border-top-width:7px;box-shadow:0 8px 0 -3px var(--cl)}
+.th .tool>h4{color:var(--cd)}
+.th .seg button.on{background:var(--cd);border-color:var(--cd)}
+.th .tbtn.solid{background:var(--c);border-color:var(--c);color:#fff}
+.th .readout{background:var(--ct);border-color:var(--c)}
+.th th{background:var(--cd)}
+.th .tbl-wrap{border-color:var(--cl)}
+.th tr:nth-child(even) td{background:var(--ct)}
+.th .fig{border-color:var(--cl)}
+.th .idea{border-left-color:var(--c)}
+.th input[type=range]{accent-color:var(--c)}
+
+/* themed bottom sections */
+#bank>.sec-head,#quiz>.sec-head,#answers>.sec-head,#exam>.sec-head,#map>.sec-head,#arcade>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#bank .qa summary::before,#answers .qa summary::before{background:var(--cl);color:var(--cd)}
+
+/* ECG divider */
+.ecg{height:34px;margin:-18px 0 22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 34'%3E%3Cpath d='M0 17h60l6-10 6 22 8-30 7 26 5-8h108' fill='none' stroke='%23E8574A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' opacity='.55'/%3E%3C/svg%3E") center/200px 34px repeat-x}
+
+/* aspects of health cards */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.tri>div{border-radius:16px;padding:12px;color:#fff;box-shadow:0 10px 20px -16px #000}
+.tri>div h4{color:#fff;margin:0 0 4px;font-size:19px}
+.tri>div p{margin:0;font-size:15.5px}
+.tri .ph{background:linear-gradient(135deg,#F59E0B,#F97316)}
+.tri .me{background:linear-gradient(135deg,#7C5CD6,#C054D6)}
+.tri .so{background:linear-gradient(135deg,#0F9D8F,#3CC3D0)}
+
+/* habits picture grid */
+.habits{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
+.habits figure{margin:0;background:#fff;border-radius:14px;padding:6px;text-align:center;border:2px solid var(--cl)}
+.habits img{width:100%;height:96px;object-fit:contain}
+.habits figcaption{font:700 14px/1.2 'Mukta',sans-serif;color:var(--cd);margin-top:4px}
+.dolist{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.dolist>div{border-radius:14px;padding:10px 14px}
+.dolist .do{background:#E7F6EC;border:2px solid #7CCB98}
+.dolist .dont{background:#FFEDEA;border:2px solid #F3A79D}
+.dolist h4{margin:0 0 4px}
+.dolist .do h4{color:#1D6B3C}.dolist .dont h4{color:#9C2A20}
+.dolist ul{margin:0}
+
+/* disease cards */
+.dgroup{display:flex;align-items:center;gap:8px;margin:18px 0 8px;font:800 18px 'Baloo 2',sans-serif;color:#fff;padding:6px 14px;border-radius:999px;width:fit-content}
+.dgroup.air{background:linear-gradient(90deg,#1E88E5,#26C6DA)}
+.dgroup.water{background:linear-gradient(90deg,#0F9D8F,#3CC3D0)}
+.dgroup.insect{background:linear-gradient(90deg,#E8574A,#F59E42)}
+.dcards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.dcard{display:grid;grid-template-columns:84px 1fr;gap:10px;background:#fff;border:2px solid #E3E8F2;border-radius:16px;padding:10px;break-inside:avoid}
+.dcard.air{border-color:#B5D8F7}.dcard.water{border-color:#A8E3DC}.dcard.insect{border-color:#F8C3BB}
+.dcard img{width:84px;height:96px;object-fit:contain;background:#F7FAF4;border-radius:10px}
+.dcard h4{margin:0 0 2px;font-size:18px}
+.dcard .chips{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 4px}
+.chip{display:inline-block;border-radius:999px;padding:0 8px;font:700 13px/1.6 'Mukta',sans-serif}
+.chip.v{background:#EDE7FF;color:#4B2E99}.chip.b{background:#E3F2FD;color:#0D4F8B}.chip.p{background:#FFF1D6;color:#8A5300}.chip.w{background:#FDE7EF;color:#8E1F4D}.chip.o{background:#EEF2F7;color:#3B4A63}
+.dcard p{margin:0;font-size:14.5px;line-height:1.45}
+.dcard p+p{margin-top:3px}
+
+/* people grid for spread lab */
+.ppl{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;max-width:380px;margin:8px auto}
+.ppl span{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:15px;background:#E8F5E9;transition:background .25s}
+.ppl span.i{background:#FFCDD2}.ppl span.r{background:#E3F2FD}.ppl span.v{background:#EDE7FF}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;font-size:14px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.sw{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.sw label{display:flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--cl);border-radius:999px;padding:3px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.sw input{accent-color:var(--c);width:18px;height:18px}
+.meter{height:16px;border-radius:999px;background:#EEF2F7;overflow:hidden}
+.meter i{display:block;height:100%;border-radius:999px;transition:width .35s,background .35s}
+.mrow{display:grid;grid-template-columns:90px 1fr 44px;gap:8px;align-items:center;margin:6px 0;font-weight:700;font-size:15px}
+.slid{display:grid;gap:4px;margin:6px 0}
+.slid label{display:flex;justify-content:space-between;font-weight:600;font-size:15.5px}
+#im-svg,#dg-svg{width:100%;max-width:440px;margin:0 auto;display:block}
+#aq-svg{width:100%;max-width:360px;margin:0 auto;display:block}
+.aqi-scale{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;font-size:12px;text-align:center;margin-top:6px}
+.aqi-scale div{padding:3px 0;border-radius:6px;color:#fff;font-weight:700}
+.wash{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8px 0}
+.wash div{border:2px solid var(--cl);border-radius:12px;padding:6px 4px;text-align:center;font-size:13.5px;line-height:1.25;background:#fff;color:#8A93A6;transition:all .25s}
+.wash div span{display:block;font-size:24px}
+.wash div.on{border-color:var(--c);background:var(--ct);color:var(--cd);font-weight:700;transform:scale(1.04)}
+.wash div.done{border-color:#7CCB98;color:#1D6B3C}
+.bigtime{font:800 44px 'Baloo 2',sans-serif;color:var(--cd);text-align:center;line-height:1}
+.sci-row{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:center;background:#fff;border:2px solid var(--cl);border-radius:16px;padding:12px;margin:14px 0}
+.sci-row img{width:110px;height:auto;border-radius:12px}
+.sci-row h4{margin:0 0 4px}
+.sci-row p{margin:0}
+.steps4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
+.steps4>div{background:#fff;border-radius:14px;padding:10px 12px;border-top:5px solid var(--c)}
+.steps4>div:nth-child(2){border-top-color:var(--cg)}
+.steps4>div:nth-child(3){border-top-color:#F59E0B}
+.steps4>div:nth-child(4){border-top-color:#2E9E5B}
+.steps4 h4{margin:0 0 2px}
+.steps4 p{margin:0;font-size:15.5px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.vs>div{border-radius:16px;padding:12px 14px;color:#fff}
+.vs>div h4{color:#fff;margin:0 0 4px}
+.vs>div b{color:#fff}
+.vs ul{margin:0}
+.vs .a{background:linear-gradient(135deg,#E8574A,#F59E42)}
+.vs .b2{background:linear-gradient(135deg,#7C5CD6,#3949AB)}
+.vs .s1{background:linear-gradient(135deg,#1E88E5,#26C6DA)}
+.vs .s2{background:linear-gradient(135deg,#D6407A,#F27BA8)}
+.pic-mid{display:flex;justify-content:center;margin-bottom:8px}
+.pic-mid img{width:120px;height:120px;object-fit:contain;background:#fff;border-radius:50%;border:5px solid var(--c);padding:6px}
+.tool svg text,.game svg text{font-family:'Mukta',sans-serif}
+.game{box-shadow:0 8px 0 -2px var(--gc,#E3B23C)}
+#arcade .game:nth-of-type(8n+1){--gc:#F59E0B;border-color:#9A4A05}
+#arcade .game:nth-of-type(8n+2){--gc:#7C5CD6;border-color:#4B2E99}
+#arcade .game:nth-of-type(8n+3){--gc:#2E9E5B;border-color:#1D6B3C}
+#arcade .game:nth-of-type(8n+4){--gc:#1E88E5;border-color:#0D4F8B}
+#arcade .game:nth-of-type(8n+5){--gc:#E8574A;border-color:#9C2A20}
+#arcade .game:nth-of-type(8n+6){--gc:#D6407A;border-color:#8E1F4D}
+#arcade .game:nth-of-type(8n+7){--gc:#0F9D8F;border-color:#0A5F57}
+#arcade .game:nth-of-type(8n+8){--gc:#3949AB;border-color:#222D7A}
+.labs-menu a{background:#fff!important}
+@media (max-width:760px){
+  main>section.th{padding:18px 12px 10px;border-radius:20px}
+  .th>.sec-head{margin:-18px -12px 16px;padding:12px;border-radius:18px 18px 0 0}
+  main>section.th::before{font-size:72px}
+  .tri,.dolist,.vs,.dcards{grid-template-columns:1fr}
+  .habits{grid-template-columns:repeat(3,1fr)}
+  .habits img{height:80px}
+  .wash{grid-template-columns:repeat(2,1fr)}
+  .steps4{grid-template-columns:1fr}
+  .sci-row{grid-template-columns:84px 1fr}
+  .sci-row img{width:84px}
+  .toc a span{font-size:13px}
+}
+@media print{
+  main>section.th{box-shadow:none;break-inside:auto}
+  main>section.th::before{display:none}
+  .ecg-hero path{animation:none;stroke-dashoffset:0}
+  .habits{grid-template-columns:repeat(5,1fr)!important}
+  .dcards,.tri,.dolist,.vs{grid-template-columns:repeat(2,1fr)!important}
+  .tri{grid-template-columns:repeat(3,1fr)!important}
+}
+@media (prefers-reduced-motion:reduce){.ecg-hero path{animation:none;stroke-dashoffset:0}}
+
+.ab-row{display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:12px;align-items:center;margin:8px 0}
+#ab-svg{width:100%;display:block}
+.ab-info{background:#fff;border:1.5px solid var(--cl);border-radius:12px;padding:8px 12px;font-size:16px;line-height:1.6}
+@media (max-width:480px){.ab-row{grid-template-columns:1fr}#ab-svg{max-width:220px;margin:0 auto}}
+.wb-row{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:12px;align-items:center;margin:8px 0}
+#wb-svg{width:100%;display:block}
+@media (max-width:480px){.wb-row{grid-template-columns:1fr}#wb-svg{max-width:230px;margin:0 auto}}
+@media print{.hero{background:#fff!important}.ecg-hero path{stroke:#E8574A}.hero h1 em{background:none;color:#E8574A}}
+</style>
+<style>
+/* class 10 chapter 9 light */
+.hero{background:radial-gradient(70% 90% at 92% 20%,rgba(255,210,94,.38) 0,transparent 60%),radial-gradient(80% 110% at 0% 100%,#1E88E5 0,transparent 55%),linear-gradient(135deg,#0B3C6B,#0E2148 60%,#2A1460)}
+.hero h1{font-size:clamp(34px,5.6vw,58px)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FFD25E,#FF8A5B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-art svg{width:100%;max-width:430px;display:block;margin:0 auto}
+.hray path{stroke-dasharray:14 8;animation:hflow 1.4s linear infinite}
+@keyframes hflow{to{stroke-dashoffset:-44}}
+@media (prefers-reduced-motion:reduce){.hray path{animation:none}}
+.cards3 .mini{background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 12px}
+.mini .em{font-size:28px;line-height:1}
+.mini h4{margin:4px 0 2px;font-size:18px}
+.mini p{margin:0;font-size:15.5px;line-height:1.45}
+.act{position:relative;background:linear-gradient(135deg,#FFFDF5,#FFF6E0);border:2px dashed #F59E0B;border-radius:18px;padding:14px 16px 12px;margin:18px 0}
+.act h4{margin:0 0 6px;font-size:19px;color:#7A3E00!important;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.act h4 span{background:linear-gradient(90deg,#F59E0B,#F97316);color:#fff;font:700 13.5px/1.6 'Mukta',sans-serif;border-radius:999px;padding:0 10px}
+.act ol,.act ul{margin-bottom:6px}
+.act p:last-child{margin-bottom:0}
+.warn{background:#FFEDEA;border-radius:10px;padding:6px 10px;color:#9C2A20;font-weight:600;font-size:15.5px}
+.legend2{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.legend2 li{background:#fff;border:1.5px solid var(--cl,#D5DDEB);border-radius:12px;padding:8px 12px;margin:0;font-size:16px;line-height:1.45}
+.rules{display:grid;gap:12px;margin:14px 0}
+.rule{margin:0;position:relative;background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 10px 10px 46px;display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
+.rule svg{width:100%;height:auto;display:block;background:#FBFCFF;border-radius:10px}
+.rule figcaption{grid-column:1/-1;font-size:16px;line-height:1.45}
+.rn{position:absolute;left:10px;top:10px;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--c,#0E2148),var(--cg,#2A4A86));color:#fff;font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.rdgrid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+.rdgrid .fig svg.rd,.cards2 .fig svg.rd{max-width:600px;margin:0 auto}
+.rdgrid .fig,.cards2 .fig{margin:0;position:relative}
+.fig .ctag{position:absolute;top:8px;left:8px;background:linear-gradient(90deg,var(--c,#0E2148),var(--cg,#2A4A86));color:#fff;font:700 13px/1.6 'Mukta',sans-serif;border-radius:999px;padding:0 9px;z-index:1}
+svg.rd{background:#FFFEFB;border-radius:10px}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0}
+.uses>div{background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 12px;line-height:1.35}
+.uses span{font-size:30px;display:block;line-height:1.1}
+.uses>div>b{display:block;font-size:16.5px;margin:2px 0}
+.uses p{margin:0;font-size:15px;color:var(--ink)}
+.solve-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:6px 0}
+.solve-row label{display:flex;align-items:center;gap:6px;font-weight:700}
+.solve-row input{width:92px;font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+.small{font-size:14.5px}
+.readout p{margin:0 0 4px}
+.readout .ok{color:#1D6B3C}.readout .bad{color:#9C2A20}
+.speedbars{display:grid;gap:6px;background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:14px;padding:10px 12px}
+.speedbars h4{margin:0 0 2px;font-size:16px}
+.sp-row{display:grid;grid-template-columns:86px 1fr 70px;gap:8px;align-items:center;font-size:14.5px;font-weight:600}
+.sp-row .meter i{background:linear-gradient(90deg,#D6407A,#F27BA8)}
+.mindmap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0;position:relative}
+.mm-core{grid-column:1/-1;justify-self:center;background:linear-gradient(135deg,#FFD25E,#FF8A5B);color:#0E2148;font:800 24px 'Baloo 2',sans-serif;border-radius:999px;padding:6px 28px;box-shadow:0 8px 20px -12px #9A4A05}
+.mm-b{border-radius:16px;padding:12px 14px;color:#fff}
+.mm-b h4{color:#fff!important;margin:0 0 4px}
+.mm-b ul{margin:0;padding-left:1.1em;font-size:15.5px}
+.mm-b.refl{background:linear-gradient(135deg,#1E88E5,#26C6DA)}
+.mm-b.refr{background:linear-gradient(135deg,#7C5CD6,#C054D6)}
+.mm-b.lens{background:linear-gradient(135deg,#E8574A,#F59E42)}
+.gq{font:700 18px 'Baloo 2',sans-serif;color:var(--navy);min-height:1.4em;margin:6px 0 8px}
+.opts.two{grid-template-columns:1fr 1fr}
+.game .opts{margin-bottom:6px}
+.stars-total{display:inline-block;background:var(--goldt);border:1.5px solid var(--gold);border-radius:999px;padding:0 10px;font-weight:700}
+#arcade .tool{border-color:#F59E0B}
+#pyq>.sec-head,#practice>.sec-head,#cbse>.sec-head,#quiz>.sec-head,#answers>.sec-head,#map>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#arcade>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#practice .qa summary::before,#answers .qa summary::before,#pyq .qa summary::before{background:var(--cl);color:var(--cd)}
+.pyq details.qa summary>span:last-child{flex:1 1 100%}
+.yr{white-space:normal}
+.pyq .qnum{flex:0 1 auto;min-width:0}
+.ans .fig{max-width:none}
+.ans .cards2 .fig{margin:0}
+#rf-svg svg,#sn-svg svg{max-width:480px;margin:0 auto;display:block}
+@media (max-width:760px){
+  .rdgrid{grid-template-columns:1fr}
+  .rule{padding:40px 8px 8px;grid-template-columns:1fr 1fr}
+  .mindmap{grid-template-columns:1fr}
+  .cards3{grid-template-columns:1fr}
+  .sp-row{grid-template-columns:70px 1fr 62px;font-size:13.5px}
+}
+@media print{
+  .rdgrid{grid-template-columns:1fr 1fr}
+  .rule{grid-template-columns:1fr 1fr}
+  .act{break-inside:avoid}
+  .rule,.uses>div,.mm-b{break-inside:avoid}
+  .fig svg.dg.rd{max-height:250px}
+  .hero{background:#fff!important}
+  .hero h1 em{-webkit-text-fill-color:#0E2148;color:#0E2148;background:none}
+  .hero-art svg{max-width:200px}
+  .hero-art svg rect,.hero-art{background:#0E2148;border-radius:14px}
+}
+.fig.narrow>svg.dg{max-width:500px;margin:0 auto}
+.cards2:has(svg.rd){grid-template-columns:1fr}
+.readout:empty{display:none}
+
+</style>
+<!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
+<style>
+.blindspot{display:flex;justify-content:space-between;align-items:center;max-width:340px;margin:10px auto;padding:22px 26px;background:#fff;border:2px solid #E2E8F0;border-radius:12px;font:800 30px/1 'Mukta',sans-serif;color:#0E2148}
+.bs-dot{width:22px;height:22px;border-radius:50%;background:#E53935;display:inline-block}
+.see-row{display:grid;grid-template-columns:180px 1fr;gap:14px;align-items:start;margin-top:10px}
+.see-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px;text-align:center}
+.see-card>span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+.see-txt{font:800 22px/1.25 'Baloo 2',sans-serif;color:#0E2148;transition:filter .25s;min-height:84px;display:grid;place-items:center}
+.see-txt small{font:600 13px 'Mukta',sans-serif}
+.see-txt.chart{font:800 20px/1.25 'Mukta',monospace;letter-spacing:4px}
+@media (max-width:600px){.see-row{grid-template-columns:1fr}}
+.spectrum-bar{display:grid;grid-template-columns:repeat(7,1fr);border-radius:12px;overflow:hidden;margin:10px 0 4px;box-shadow:0 6px 18px -10px rgba(0,0,0,.5)}
+.spectrum-bar span{color:#fff;text-align:center;font:800 18px/2.2 'Baloo 2',sans-serif}
+.center-txt{text-align:center;font-size:15px}
+#tw-c{width:100%;height:auto;display:block;border-radius:12px}
+.fig.narrow .dg{max-width:560px;margin:0 auto}
+.duo .fig{margin:8px 0}
+</style>
+
+<style>
+/* class 10 shared extras */
+.center-txt{text-align:center;font-size:15.5px}
+.fig.narrow .dg{max-width:560px;margin:0 auto}
+.duo .fig{margin:8px 0}
+.gnum{display:inline-block;background:#0E2148;color:#fff;border-radius:999px;padding:0 10px;font:700 13px/1.7 'Mukta',sans-serif;margin-right:6px;vertical-align:middle}
+.bignum{display:inline-block;font:800 34px/1.2 'Baloo 2',sans-serif;color:#0E2148;margin:4px 0}
+.gq{font-size:17px;text-align:center;min-height:30px}
+.gtime{font-weight:800;color:#9C2A20}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chips .chip{text-align:left;font:600 14.5px/1.4 'Mukta',sans-serif;cursor:pointer}
+.row-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0}
+.row-in label{display:flex;gap:6px;align-items:center;font-weight:700}
+.row-in input[type=number]{width:120px;font:700 16px 'Mukta',sans-serif;padding:6px 8px;border:2px solid #C9D6EC;border-radius:10px}
+.tool .seg{flex-wrap:wrap}
+.steps>li{margin-bottom:6px}
+.mk{white-space:nowrap}
+.formula + .formula{margin-top:8px}
+</style>
+<style>
+#ft-svg .dg,#vn-svg .dg{max-width:560px;margin:0 auto;display:block}
+#mt-svg .dg{max-width:340px;margin:0 auto;display:block}
+.opts .opt[data-p]{text-align:center}
+
+.eq-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700}
+.eq-row input[type=number]{width:80px}
+.gs-viz{overflow-x:auto;margin:10px 0;padding-bottom:4px}
+.gs-row{display:flex;gap:4px;margin:4px 0}
+.gs-cell{min-width:46px;flex:0 0 auto;text-align:center;padding:5px 6px;border-radius:8px;font:700 14px 'Mukta',sans-serif}
+.gs-cell.f{background:#DCEBFF;color:#1E4E8C}.gs-cell.b{background:#FFE6C7;color:#9A4F00}.gs-cell.s{background:#DFF5E6;color:#1F6B3A}
+.row-in input[type=text]{width:120px;font:700 16px 'Mukta',sans-serif;padding:6px 8px;border:2px solid #C9D6EC;border-radius:10px}
+</style>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<!-- SEO:START (made by tools/seo.mjs, do not edit by hand) -->
+<link rel="canonical" href="https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta property="og:url" content="https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MT Classes Motihari">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://www.mtclassesmotihari.com/assets/img/logo-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Coordinate Geometry | Class 10 Maths Chapter 7 Notes, Distance Formula, Section Formula and CBSE Questions | MT Classes Motihari">
+<meta name="twitter:description" content="Class 10 Maths (NCERT) Chapter 7, Coordinate Geometry: colourful CBSE board notes on the Cartesian plane, quadrants, the distance formula with proof, collinearity, isosceles and right triangles, square, rhombus, rectangle and parallelogram tests, the section formula, mid-point, ratio by the x-axis and y-axis, trisection points and fourth vertex of a parallelogram, a live distance lab, section-formula lab and shape detective, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","@id":"https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.html#notes","name":"Coordinate Geometry: Class 10 Maths notes","headline":"Coordinate Geometry | Class 10 Maths Chapter 7 Notes, Distance Formula, Section Formula and CBSE Questions | MT Classes Motihari","description":"Class 10 Maths (NCERT) Chapter 7, Coordinate Geometry: colourful CBSE board notes on the Cartesian plane, quadrants, the distance formula with proof, collinearity, isosceles and right triangles, square, rhombus, rectangle and parallelogram tests, the section formula, mid-point, ratio by the x-axis and y-axis, trisection points and fourth vertex of a parallelogram, a live distance lab, section-formula lab and shape detective, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.","url":"https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.html","learningResourceType":["Notes","Interactive resource","Practice questions"],"educationalLevel":"Class 10","educationalAlignment":{"@type":"AlignmentObject","alignmentType":"educationalSubject","educationalFramework":"CBSE / NCERT","targetName":"Maths, NCERT Mathematics"},"about":{"@type":"Thing","name":"Coordinate Geometry"},"teaches":"Coordinate Geometry","isBasedOn":{"@type":"Book","name":"NCERT Mathematics","publisher":{"@type":"Organization","name":"NCERT"}},"inLanguage":"en","isAccessibleForFree":true,"audience":{"@type":"EducationalAudience","educationalRole":"student"},"provider":{"@id":"https://www.mtclassesmotihari.com/#organization"},"publisher":{"@id":"https://www.mtclassesmotihari.com/#organization"},"encoding":{"@type":"MediaObject","contentUrl":"https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.pdf","encodingFormat":"application/pdf"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mtclassesmotihari.com/"},{"@type":"ListItem","position":2,"name":"Notes","item":"https://www.mtclassesmotihari.com/notes.html"},{"@type":"ListItem","position":3,"name":"Class 10 Maths: Coordinate Geometry","item":"https://www.mtclassesmotihari.com/notes/class10-maths-coordinate-geometry.html"}]}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1><em>Coordinate</em> Geometry</h1>
+<p class="sub">Class 10 Maths, Chapter 7 (NCERT, rationalised syllabus) · CBSE board exam notes</p>
+<p class="pitch">Two numbers fix any point: that is the magic of the <b>coordinate plane</b>, used by Google Maps, GPS and every video game. Learn the <b>distance formula</b> (Pythagoras in disguise), the <b>section formula</b> for a point dividing a line in a ratio, the <b>mid-point formula</b>, and how to prove a figure is a square, rhombus or parallelogram using only numbers. With a <b>live distance lab</b>, a <b>section-formula slider</b>, a <b>shape detective</b>, a <b>try-it activity for every topic</b>, a <b>3-game Coordinate Arcade</b>, CBSE board questions 2023–2026 with step marks and all NCERT answers.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#lab-dist">📏 Distance lab</a><a class="btn ghost" href="#lab-sec">➗ Section lab</a><a class="btn ghost" href="#lab-shape">🕵️ Shape detective</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#pyq">CBSE PYQs</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-art">
+<svg class="anim" viewBox="0 0 420 300" role="img" aria-label="Two points on a grid joined by a line, with a moving point dividing it" font-family="Mukta,sans-serif">
+<g stroke="#2A4A86" stroke-width="1"><path d="M40 20V280M100 20V280M160 20V280M220 20V280M280 20V280M340 20V280M20 40H400M20 100H400M20 160H400M20 220H400"/></g>
+<line x1="20" y1="250" x2="400" y2="250" stroke="#CBD6EE" stroke-width="2.5"/><line x1="40" y1="285" x2="40" y2="20" stroke="#CBD6EE" stroke-width="2.5"/>
+<line x1="80" y1="220" x2="340" y2="70" stroke="#9DD3FF" stroke-width="4"/>
+<line x1="80" y1="220" x2="340" y2="220" stroke="#FFB4AE" stroke-width="2.5" stroke-dasharray="7 6"/><line x1="340" y1="220" x2="340" y2="70" stroke="#FFB4AE" stroke-width="2.5" stroke-dasharray="7 6"/>
+<circle cx="80" cy="220" r="8" fill="#9DD3FF"/><circle cx="340" cy="70" r="8" fill="#9DD3FF"/>
+<circle r="9" fill="#FFD25E"><animate attributeName="cx" values="80;340;80" dur="5s" repeatCount="indefinite"/><animate attributeName="cy" values="220;70;220" dur="5s" repeatCount="indefinite"/></circle>
+<text x="60" y="245" font-size="15" font-weight="800" fill="#9DD3FF">A</text><text x="350" y="66" font-size="15" font-weight="800" fill="#9DD3FF">B</text>
+<text x="70" y="44" font-size="17" font-weight="800" fill="#FFD25E">d = √[(x₂−x₁)² + (y₂−y₁)²]</text>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a class="t-sky" href="#start"><span>7.1</span>The coordinate plane: a quick recap</a></li>
+<li><a class="t-leaf" href="#dist"><span>7.2</span>Distance formula</a></li>
+<li><a class="t-sun no-print" href="#lab-dist"><span>📏</span>Distance Lab</a></li>
+<li><a class="t-coral" href="#apply"><span>7.2.1</span>Using distance: collinear points, shapes, equidistant points</a></li>
+<li><a class="t-violet" href="#sec"><span>7.3</span>Section formula and mid-point</a></li>
+<li><a class="t-indigo no-print" href="#lab-sec"><span>➗</span>Section-formula Lab</a></li>
+<li><a class="t-rose" href="#ratio"><span>7.3.1</span>Finding the ratio; axes; trisection; parallelograms</a></li>
+<li><a class="t-sun no-print" href="#lab-shape"><span>🕵️</span>Shape Detective</a></li>
+<li><a class="t-navy" href="#map"><span>Map</span>Mind map, formulas, mistakes</a></li>
+<li><a class="t-sun no-print" href="#arcade"><span>🎮</span>Coordinate Arcade: 3 games</a></li>
+<li><a class="t-navy" href="#cbse"><span>CBSE</span>Exam pattern and marking</a></li>
+<li><a class="t-coral" href="#pyq"><span>PYQ</span>CBSE board questions 2023–2026</a></li>
+<li><a class="t-teal" href="#practice"><span>A–E</span>Section-wise practice</a></li>
+<li><a class="t-rose" href="#quiz"><span>Quiz</span>Test yourself (20 questions)</a></li>
+<li><a class="t-violet" href="#answers"><span>NCERT</span>All textbook questions answered</a></li>
+</ol>
+</nav>
+
+<div class="box key"><h4>📌 Chapter snapshot</h4><ul>
+<li><b>Distance formula:</b> PQ = √[(x₂ − x₁)² + (y₂ − y₁)²]. From the origin: OP = √(x² + y²).</li>
+<li><b>Section formula (internal, m : n):</b> P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n)).</li>
+<li><b>Mid-point:</b> ((x₁ + x₂)/2, (y₁ + y₂)/2). Ratio questions: take the ratio as <b>k : 1</b>.</li>
+<li><b>On the x-axis</b> y = 0; <b>on the y-axis</b> x = 0. Distance of (x, y) from the x-axis is |y|, from the y-axis |x|.</li>
+<li><b>Removed from syllabus:</b> area of a triangle formula (and collinearity by area).</li>
+<li><b>Most-asked in CBSE:</b> distance / mid-point MCQs, "ratio in which the x-axis (or y-axis) divides" (3 marks, asked in 2023, 2025, 2026), centre-radius problems giving two values (2 marks), and proving a figure type. Unit <b>Coordinate Geometry</b> carries <b>6 marks</b>.</li></ul></div>
+
+<section id="start" class="th t-sky pat-ring" data-emoji="📍">
+<div class="sec-head"><span class="sec-num">7.1</span><h2>The coordinate plane: a quick recap</h2></div>
+<p class="lead">Two perpendicular number lines, the <b>x-axis</b> and <b>y-axis</b>, meet at the <b>origin</b> O(0, 0). A point P(x, y) is x units along (the <span class="term">abscissa</span>) and y units up (the <span class="term">ordinate</span>).</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 460 380" role="img" aria-label="Points in the four quadrants and on the axes" font-family="Mukta,sans-serif"><rect width="460" height="380" rx="14" fill="#FBFDFF"/><line x1="26" y1="353.2" x2="26" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="66.8" y1="353.2" x2="66.8" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="107.6" y1="353.2" x2="107.6" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="148.4" y1="353.2" x2="148.4" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="189.2" y1="353.2" x2="189.2" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="230" y1="353.2" x2="230" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="270.8" y1="353.2" x2="270.8" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="311.6" y1="353.2" x2="311.6" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="352.4" y1="353.2" x2="352.4" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="393.2" y1="353.2" x2="393.2" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="434" y1="353.2" x2="434" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="353.2" x2="434" y2="353.2" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="312.4" x2="434" y2="312.4" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="271.6" x2="434" y2="271.6" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="230.8" x2="434" y2="230.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="190" x2="434" y2="190" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="149.2" x2="434" y2="149.2" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="108.4" x2="434" y2="108.4" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="67.6" x2="434" y2="67.6" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="26.8" x2="434" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><defs><marker id="ar0633537" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33415C"/></marker></defs><line x1="26" y1="190" x2="438" y2="190" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar0633537)"/><text x="430" y="182" font-size="13" fill="#33415C" text-anchor="end" font-weight="700">X</text><line x1="230" y1="353.2" x2="230" y2="22.8" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar0633537)"/><text x="238" y="38.8" font-size="13" fill="#33415C" text-anchor="start" font-weight="700">Y</text><text x="26" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">−5</text><text x="66.8" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">−4</text><text x="107.6" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">−3</text><text x="148.4" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">−2</text><text x="189.2" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">−1</text><text x="270.8" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">1</text><text x="311.6" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">2</text><text x="352.4" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">3</text><text x="393.2" y="206" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">4</text><text x="224" y="357.2" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">−4</text><text x="224" y="316.4" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">−3</text><text x="224" y="275.6" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">−2</text><text x="224" y="234.8" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">−1</text><text x="224" y="153.2" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">1</text><text x="224" y="112.4" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">2</text><text x="224" y="71.6" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">3</text><text x="224" y="205" font-size="12" fill="#5B6475" text-anchor="end" font-weight="700">O</text><clipPath id="clpar0633537"><rect x="26" y="26.80000000000001" width="408" height="326.4"/></clipPath><g clip-path="url(#clpar0633537)"></g><circle cx="352.4" cy="108.4" r="5" fill="#1E88E5" stroke="#fff" stroke-width="2"/><text x="361.4" y="98.4" font-size="13" fill="#1E88E5" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">P(3, 2) Q I</text><circle cx="107.6" cy="108.4" r="5" fill="#2E9E5B" stroke="#fff" stroke-width="2"/><text x="98.6" y="98.4" font-size="13" fill="#2E9E5B" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">Q(−3, 2) Q II</text><circle cx="148.4" cy="312.4" r="5" fill="#E53935" stroke="#fff" stroke-width="2"/><text x="139.4" y="332.4" font-size="13" fill="#E53935" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">R(−2, −3) Q III</text><circle cx="393.2" cy="271.6" r="5" fill="#7C5CD6" stroke="#fff" stroke-width="2"/><text x="393.2" y="291.6" font-size="13" fill="#7C5CD6" text-anchor="middle" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">S(4, −2) Q IV</text><circle cx="311.6" cy="190" r="5" fill="#F97316" stroke="#fff" stroke-width="2"/><text x="311.6" y="180" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">(2, 0)</text><circle cx="230" cy="271.6" r="5" fill="#F97316" stroke="#fff" stroke-width="2"/><text x="239" y="276.6" font-size="13" fill="#F97316" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">(0, −2)</text></svg><figcaption>Signs in the quadrants: I (+, +), II (−, +), III (−, −), IV (+, −). Points on the x-axis have y = 0; points on the y-axis have x = 0.</figcaption></figure>
+<div class="box think"><h4>🤔 Real life: coordinates everywhere</h4><p>A cinema seat "Row F, Seat 12", a chessboard square "e4", a city map grid "C-7" and GPS latitude–longitude all use two numbers to fix a position. Coordinate geometry turns geometry questions into simple arithmetic.</p></div>
+<div class="act"><h4><span>🧪 Try it now</span>Classroom coordinates</h4><ol><li>Make the front-left corner of your classroom the origin. Rows going back are the y-axis, desk columns going right are the x-axis.</li><li>Write your own coordinates, say (3, 4), and your best friend's, say (6, 8).</li><li>Measure the straight distance between you in "desk units". The distance formula gives √(9 + 16) = 5. Check with a tape!</li></ol></div>
+</section>
+
+<section id="dist" class="th t-leaf pat-wave" data-emoji="📏">
+<div class="sec-head"><span class="sec-num">7.2</span><h2>Distance formula</h2></div>
+<p class="lead">Join P(x₁, y₁) and Q(x₂, y₂). Draw a horizontal line through P and a vertical line through Q, meeting at T. Then ΔPTQ is right-angled at T with PT = x₂ − x₁ and QT = y₂ − y₁. By Pythagoras:</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 460 380" role="img" aria-label="Distance PQ is the hypotenuse of a right triangle with legs x2 minus x1 and y2 minus y1" font-family="Mukta,sans-serif"><rect width="460" height="380" rx="14" fill="#FBFDFF"/><line x1="45.5" y1="354" x2="45.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="86.5" y1="354" x2="86.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="127.5" y1="354" x2="127.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="168.5" y1="354" x2="168.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="209.5" y1="354" x2="209.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="250.5" y1="354" x2="250.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="291.5" y1="354" x2="291.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="332.5" y1="354" x2="332.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="373.5" y1="354" x2="373.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="414.5" y1="354" x2="414.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="354" x2="414.5" y2="354" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="313" x2="414.5" y2="313" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="272" x2="414.5" y2="272" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="231" x2="414.5" y2="231" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="190" x2="414.5" y2="190" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="149" x2="414.5" y2="149" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="108" x2="414.5" y2="108" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="67" x2="414.5" y2="67" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="45.5" y1="26" x2="414.5" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><defs><marker id="ar1262195" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33415C"/></marker></defs><line x1="45.5" y1="313" x2="418.5" y2="313" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar1262195)"/><text x="410.5" y="305" font-size="13" fill="#33415C" text-anchor="end" font-weight="700">X</text><line x1="86.5" y1="354" x2="86.5" y2="22" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar1262195)"/><text x="94.5" y="38" font-size="13" fill="#33415C" text-anchor="start" font-weight="700">Y</text><clipPath id="clpar1262195"><rect x="45.5" y="26" width="369" height="328"/></clipPath><g clip-path="url(#clpar1262195)"><line x1="127.5" y1="231" x2="373.5" y2="67" stroke="#E53935" stroke-width="3.5" stroke-linecap="round"/><line x1="127.5" y1="231" x2="373.5" y2="231" stroke="#1E88E5" stroke-width="2.5" stroke-dasharray="6 5" stroke-linecap="round"/><line x1="373.5" y1="231" x2="373.5" y2="67" stroke="#2E9E5B" stroke-width="2.5" stroke-dasharray="6 5" stroke-linecap="round"/></g><circle cx="127.5" cy="231" r="5" fill="#0E2148" stroke="#fff" stroke-width="2"/><text x="118.5" y="251" font-size="13" fill="#0E2148" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">P(x₁, y₁)</text><circle cx="373.5" cy="67" r="5" fill="#0E2148" stroke="#fff" stroke-width="2"/><text x="382.5" y="57" font-size="13" fill="#0E2148" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">Q(x₂, y₂)</text><circle cx="373.5" cy="231" r="4" fill="#5B6475" stroke="#fff" stroke-width="2"/><text x="382.5" y="251" font-size="13" fill="#5B6475" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">T(x₂, y₁)</text><text x="250.5" y="251" font-size="13" fill="#7C5CD6" text-anchor="middle" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">x₂ − x₁</text><text x="382.5" y="154" font-size="13" fill="#7C5CD6" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">y₂ − y₁</text><text x="225.1" y="130.8" font-size="13" fill="#7C5CD6" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">d = PQ</text></svg><figcaption>PQ² = PT² + QT² = (x₂ − x₁)² + (y₂ − y₁)².</figcaption></figure>
+<div class="formula big">PQ = √[(x₂ − x₁)² + (y₂ − y₁)²]</div>
+<div class="cards3">
+<div class="mini"><span class="em">🎯</span><h4>From the origin</h4><p>OP = √(x² + y²). Distance of (3, 4) from O is 5.</p></div>
+<div class="mini"><span class="em">↔️</span><h4>Same y</h4><p>(3, −5) and (x, −5): distance = |x − 3|. CBSE 2024: = 15 ⇒ x = 18 or −12.</p></div>
+<div class="mini"><span class="em">🔁</span><h4>Order doesn't matter</h4><p>(x₂ − x₁)² = (x₁ − x₂)², so subtract either way.</p></div></div>
+<div class="box calc"><h4>NCERT Ex 7.1 Q1: find the distances</h4><p>(i) (2, 3), (4, 1): √(4 + 4) = <b>2√2</b>. (ii) (−5, 7), (−1, 3): √(16 + 16) = <b>4√2</b>. (iii) (a, b), (−a, −b): √(4a² + 4b²) = <b>2√(a² + b²)</b>.</p></div>
+<div class="box calc"><h4>CBSE 2023: distance between (0, 2√5) and (−2√5, 0)</h4><p>√[(2√5)² + (2√5)²] = √(20 + 20) = √40 = <b>2√10</b>.</p></div>
+<div class="box alert"><h4>⚠️ Sign slips</h4><ul><li>x₂ − x₁ with negatives: 4 − (−2) = 6, not 2.</li><li>Square the whole difference: (−4)² = 16, not −16.</li><li>Do not take the square root of each term separately: √(9 + 16) = 5, not 3 + 4.</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Map distance</h4><ol><li>On a city map with a 1 km grid, mark your home at (1, 2) and school at (4, 6).</li><li>"As the crow flies" distance = √(9 + 16) = 5 km. Walking along the grid roads it is 3 + 4 = 7 km.</li><li>The straight line is always shorter: that is why helicopters and drones save time.</li></ol></div>
+</section>
+
+<section id="lab-dist" class="no-print th t-sun pat-ring" data-emoji="📏">
+<div class="sec-head"><span class="sec-num word">Lab 1</span><h2>Distance Lab</h2></div>
+<div class="tool" id="lab-ds"><h4>📏 Type two points: see the right triangle and the distance</h4><p class="hint">The lab draws PQ, the horizontal and vertical legs, and works out the distance step by step.</p>
+<div class="row-in"><label>P: x₁ <input type="number" id="ds-x1" value="1" step="any"></label><label>y₁ <input type="number" id="ds-y1" value="2" step="any"></label><label>Q: x₂ <input type="number" id="ds-x2" value="4" step="any"></label><label>y₂ <input type="number" id="ds-y2" value="6" step="any"></label></div>
+<div class="seg" id="ds-quick"><button type="button" data-v="1,2,4,6">3-4-5</button><button type="button" data-v="2,3,4,1">NCERT (2, 3), (4, 1)</button><button type="button" data-v="-5,7,-1,3">(−5, 7), (−1, 3)</button><button type="button" data-v="0,0,36,15">Towns A and B</button><button type="button" data-v="0,4.47,-4.47,0">CBSE 2023 (≈ 2√5)</button><button type="button" data-v="5,-6,3,2">CBSE 2024 median AD</button></div>
+<div class="tool-grid"><div id="ds-svg"></div><div class="readout" id="ds-out"></div></div></div>
+</section>
+
+<section id="apply" class="th t-coral pat-wave" data-emoji="🧩">
+<div class="sec-head"><span class="sec-num">7.2.1</span><h2>Using distance: collinear points, shapes and equidistant points</h2></div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>To show…</th><th>Check with distances</th></tr></thead><tbody>
+<tr><td>A, B, C are <b>collinear</b></td><td>the largest distance = sum of the other two (AB + BC = AC)</td></tr>
+<tr><td><b>Isosceles</b> / <b>equilateral</b> triangle</td><td>two sides equal / all three equal</td></tr>
+<tr><td><b>Right</b> triangle</td><td>(largest side)² = sum of squares of the other two</td></tr>
+<tr><td><b>Square</b></td><td>4 equal sides and equal diagonals</td></tr>
+<tr><td><b>Rhombus</b></td><td>4 equal sides, diagonals unequal</td></tr>
+<tr><td><b>Rectangle</b></td><td>opposite sides equal and diagonals equal</td></tr>
+<tr><td><b>Parallelogram</b></td><td>opposite sides equal (or diagonals bisect each other)</td></tr></tbody></table></div>
+<div class="box calc"><h4>NCERT Ex 7.1 Q5: Champa or Chameli?</h4><p>Students sit at A(3, 4), B(6, 7), C(9, 4), D(6, 1). AB = BC = CD = DA = √18 = 3√2 and diagonals AC = BD = 6. Four equal sides and equal diagonals: <b>ABCD is a square, so Champa is right</b>.</p></div>
+<div class="box calc"><h4>Equidistant point on an axis (NCERT Ex 7.1 Q7)</h4><p>Point on the x-axis equidistant from (2, −5) and (−2, 9): take (x, 0). (x − 2)² + 25 = (x + 2)² + 81 ⇒ −8x = 56 ⇒ <b>(−7, 0)</b>.</p></div>
+<div class="box calc"><h4>Centre and radius give two answers (CBSE 2025)</h4><p>Centre (2a, a − 7), circle through (11, −9), diameter 10√2 (radius 5√2): (11 − 2a)² + (−2 − a)² = 50 ⇒ 5a² − 40a + 75 = 0 ⇒ a² − 8a + 15 = 0 ⇒ <b>a = 3 or 5</b>.</p></div>
+<div class="box calc"><h4>Relation between x and y (NCERT Ex 7.1 Q10)</h4><p>(x, y) equidistant from (3, 6) and (−3, 4): (x − 3)² + (y − 6)² = (x + 3)² + (y − 4)² ⇒ −12x − 4y + 20 = 0 ⇒ <b>3x + y − 5 = 0</b>.</p></div>
+<div class="box trick"><h4>⚡ Shortcuts</h4><ul><li>Compare <b>squares</b> of distances (AB², BC²) to avoid roots until the end.</li><li>For "equidistant", square both sides at once: the x² and y² terms cancel, leaving a linear equation.</li><li>Collinear check: if √5 + √20 = √45, write it as √5 + 2√5 = 3√5 ✓.</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Find the treasure</h4><ol><li>A treasure is buried on the x-axis, equally far from two trees at (1, 3) and (5, 1).</li><li>Take (x, 0): (x − 1)² + 9 = (x − 5)² + 1 ⇒ 8x = 16 ⇒ x = 2.</li><li>Dig at (2, 0)! Check: distance to each tree is √10.</li></ol></div>
+</section>
+
+<section id="sec" class="th t-violet pat-ring" data-emoji="➗">
+<div class="sec-head"><span class="sec-num">7.3</span><h2>Section formula and mid-point formula</h2></div>
+<p class="lead">If P lies on AB and divides it <b>internally in the ratio m : n</b> (AP : PB = m : n), then P is found by "cross-multiplying" the ratio with the end points.</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 460 380" role="img" aria-label="Point P divides AB internally in the ratio m to n" font-family="Mukta,sans-serif"><rect width="460" height="380" rx="14" fill="#FBFDFF"/><line x1="26" y1="353.2" x2="26" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="66.8" y1="353.2" x2="66.8" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="107.6" y1="353.2" x2="107.6" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="148.4" y1="353.2" x2="148.4" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="189.2" y1="353.2" x2="189.2" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="230" y1="353.2" x2="230" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="270.8" y1="353.2" x2="270.8" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="311.6" y1="353.2" x2="311.6" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="352.4" y1="353.2" x2="352.4" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="393.2" y1="353.2" x2="393.2" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="434" y1="353.2" x2="434" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="353.2" x2="434" y2="353.2" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="312.4" x2="434" y2="312.4" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="271.6" x2="434" y2="271.6" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="230.8" x2="434" y2="230.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="190" x2="434" y2="190" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="149.2" x2="434" y2="149.2" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="108.4" x2="434" y2="108.4" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="67.6" x2="434" y2="67.6" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="26.8" x2="434" y2="26.8" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><defs><marker id="ar2502939" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33415C"/></marker></defs><line x1="26" y1="312.4" x2="438" y2="312.4" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar2502939)"/><text x="430" y="304.4" font-size="13" fill="#33415C" text-anchor="end" font-weight="700">X</text><line x1="66.8" y1="353.2" x2="66.8" y2="22.8" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar2502939)"/><text x="74.8" y="38.8" font-size="13" fill="#33415C" text-anchor="start" font-weight="700">Y</text><clipPath id="clpar2502939"><rect x="26" y="26.80000000000001" width="408" height="326.4"/></clipPath><g clip-path="url(#clpar2502939)"><line x1="107.6" y1="271.6" x2="393.2" y2="67.6" stroke="#0E2148" stroke-width="3" stroke-linecap="round"/></g><circle cx="107.6" cy="271.6" r="5" fill="#1E88E5" stroke="#fff" stroke-width="2"/><text x="98.6" y="291.6" font-size="13" fill="#1E88E5" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">A(x₁, y₁)</text><circle cx="393.2" cy="67.6" r="5" fill="#2E9E5B" stroke="#fff" stroke-width="2"/><text x="402.2" y="57.6" font-size="13" fill="#2E9E5B" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">B(x₂, y₂)</text><circle cx="221.84" cy="190" r="6" fill="#E53935" stroke="#fff" stroke-width="2"/><text x="212.84" y="180" font-size="13" fill="#E53935" text-anchor="end" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">P(x, y)</text><text x="173.72" y="250.8" font-size="13" fill="#7C5CD6" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">m</text><text x="328.76" y="140.64" font-size="13" fill="#7C5CD6" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">n</text></svg><figcaption>P divides AB internally: AP : PB = m : n. (Proof uses similar triangles: drop perpendiculars to the x-axis.)</figcaption></figure>
+<div class="formula big">P = ( (m x₂ + n x₁)/(m + n) , (m y₂ + n y₁)/(m + n) )</div>
+<div class="formula">Mid-point (m = n = 1): ( (x₁ + x₂)/2 , (y₁ + y₂)/2 )</div>
+<div class="box trick"><h4>⚡ Memory trick: "m goes with the far end"</h4><p>m is next to A in the ratio, but it multiplies the coordinates of <b>B</b> (the far end). Think of a see-saw: the bigger weight pulls P towards its side.</p></div>
+<div class="box calc"><h4>NCERT Ex 7.2 Q1: divide (−1, 7) and (4, −3) in 2 : 3</h4><p>x = (2 × 4 + 3 × (−1))/5 = 5/5 = 1, y = (2 × (−3) + 3 × 7)/5 = 15/5 = 3. P = <b>(1, 3)</b>.</p></div>
+<div class="box calc"><h4>Trisection points (NCERT Ex 7.2 Q2): (4, −1) and (−2, −3)</h4><p>Ratio 1 : 2: ((−2 + 8)/3, (−3 − 2)/3) = <b>(2, −5/3)</b>. Ratio 2 : 1: ((−4 + 4)/3, (−6 − 1)/3) = <b>(0, −7/3)</b>.</p></div>
+<div class="box calc"><h4>Other end of a diameter (CBSE 2024)</h4><p>Centre (2, 0) is the mid-point of the diameter; one end (6, 0). Other end (x, y): (6 + x)/2 = 2, (0 + y)/2 = 0 ⇒ <b>(−2, 0)</b>.</p></div>
+<div class="box think"><h4>🤔 Bonus: centroid</h4><p>The medians of a triangle meet at the centroid G, which divides each median in 2 : 1. Using the section formula on the median from A to the mid-point of BC gives G = ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3). Handy for checking answers.</p></div>
+<div class="act"><h4><span>🧪 Try it</span>Rangoli dots</h4><ol><li>Draw a line between dots at (0, 0) and (6, 9) on graph paper.</li><li>Mark the point dividing it in 1 : 2 using the formula: (6/3, 9/3) = (2, 3). Mark 2 : 1: (4, 6).</li><li>Measure: the three pieces are equal. You have trisected the line without a ruler!</li></ol></div>
+</section>
+
+<section id="lab-sec" class="no-print th t-indigo pat-wave" data-emoji="➗">
+<div class="sec-head"><span class="sec-num word">Lab 2</span><h2>Section-formula Lab</h2></div>
+<div class="tool" id="lab-sc"><h4>➗ Slide the ratio m : n and watch P move along AB</h4><p class="hint">Set A and B, then change m and n. The lab shows P with the full working. Try m = n for the mid-point.</p>
+<div class="row-in"><label>A: x₁ <input type="number" id="sc-x1" value="-1" step="any"></label><label>y₁ <input type="number" id="sc-y1" value="7" step="any"></label><label>B: x₂ <input type="number" id="sc-x2" value="4" step="any"></label><label>y₂ <input type="number" id="sc-y2" value="-3" step="any"></label></div>
+<div class="row-in"><label>m <input type="number" id="sc-m" value="2" step="1" min="0"></label><label>n <input type="number" id="sc-n" value="3" step="1" min="0"></label></div>
+<div class="seg" id="sc-quick"><button type="button" data-v="-1,7,4,-3,2,3">NCERT 2 : 3</button><button type="button" data-v="4,-1,-2,-3,1,2">Trisection 1 : 2</button><button type="button" data-v="-2,2,2,8,1,1">Mid-point</button><button type="button" data-v="5,-6,-1,-4,5,1">CBSE 2025: y-axis</button><button type="button" data-v="-6,5,-4,-1,5,1">CBSE 2026: x-axis</button><button type="button" data-v="-2,-2,2,-4,3,4">AP = 3/7 AB</button></div>
+<div class="tool-grid"><div id="sc-svg"></div><div class="readout" id="sc-out"></div></div></div>
+</section>
+
+<section id="ratio" class="th t-rose pat-ring" data-emoji="⚖️">
+<div class="sec-head"><span class="sec-num">7.3.1</span><h2>Finding the ratio; axes; trisection; parallelograms</h2></div>
+<p class="lead">When the <b>ratio is unknown</b>, take it as <b>k : 1</b>. Then P = ((kx₂ + x₁)/(k + 1), (ky₂ + y₁)/(k + 1)). Use the coordinate you know to find k.</p>
+<div class="box calc"><h4>Ratio by a given point (NCERT Ex 7.2 Q4)</h4><p>(−1, 6) divides (−3, 10) and (6, −8) in k : 1: (6k − 3)/(k + 1) = −1 ⇒ 7k = 2 ⇒ k = 2/7. Ratio <b>2 : 7</b>. (Check y: (−16 + 70)/9 = 6 ✓)</p></div>
+<div class="box calc"><h4>Division by the x-axis (CBSE 2026, 3 marks)</h4><p>The x-axis divides the join of (−6, 5) and (−4, −1). On the x-axis y = 0: (−k + 5)/(k + 1) = 0 ⇒ k = 5. Ratio <b>5 : 1</b>. <span class="mk">1½</span></p><p>x = (5(−4) + (−6))/6 = −26/6 = −13/3. Point <b>(−13/3, 0)</b>. <span class="mk">1½</span></p></div>
+<div class="box calc"><h4>Fourth vertex of a parallelogram (NCERT Ex 7.2 Q6)</h4><p>(1, 2), (4, y), (x, 6), (3, 5) taken in order. Diagonals bisect each other, so the mid-points of AC and BD coincide: ((1 + x)/2, 4) = (7/2, (y + 5)/2) ⇒ <b>x = 6, y = 3</b>.</p></div>
+<div class="box calc"><h4>Divide into four equal parts (NCERT Ex 7.2 Q9)</h4><p>A(−2, 2), B(2, 8). Mid-point Q = (0, 5); mid-point of AQ = (−1, 7/2); mid-point of QB = (1, 13/2). Points: <b>(−1, 7/2), (0, 5), (1, 13/2)</b>.</p></div>
+<div class="box calc"><h4>CBSE 2023: equilateral triangle</h4><p>Two vertices (−5, 3) and (5, 3), origin inside. The third vertex lies on the perpendicular bisector x = 0, at height √3/2 × side = 5√3 from y = 3. Since the origin is inside, it is below: <b>(0, 3 − 5√3)</b>.</p></div>
+<div class="box alert"><h4>⚠️ Watch out</h4><ul><li>A negative k means the point divides the segment <b>externally</b> (not in our syllabus): recheck your work.</li><li>For "divides by the y-axis" use x = 0; for "by the x-axis" use y = 0.</li><li>Write the final answer as a ratio <b>and</b> the point, if both are asked.</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Shadow of a stick on the axis</h4><ol><li>Draw A(2, 6) and B(8, −3) on graph paper and join them.</li><li>Where does AB cross the x-axis? (6 − 3k)/(k + 1) = 0 ⇒ k = 2: ratio 2 : 1, point ((16 + 2)/3, 0) = (6, 0).</li><li>Check on your drawing: the line crosses the x-axis at 6 ✓.</li></ol></div>
+</section>
+
+<section id="lab-shape" class="no-print th t-sun pat-wave" data-emoji="🕵️">
+<div class="sec-head"><span class="sec-num word">Lab 3</span><h2>Shape Detective</h2></div>
+<div class="tool" id="lab-sp4"><h4>🕵️ Enter four vertices in order: which quadrilateral is it?</h4><p class="hint">The detective computes all four sides and both diagonals, checks for collinear points, and names the figure: square, rhombus, rectangle, parallelogram or just a quadrilateral.</p>
+<div class="row-in"><label>A <input type="text" id="sp-A" value="3,4"></label><label>B <input type="text" id="sp-B" value="6,7"></label><label>C <input type="text" id="sp-C" value="9,4"></label><label>D <input type="text" id="sp-D" value="6,1"></label></div>
+<div class="seg" id="sp4-quick"><button type="button" data-v="3,4|6,7|9,4|6,1">Champa's square</button><button type="button" data-v="-1,-2|1,0|-1,2|-3,0">Ex 7.1 Q6(i)</button><button type="button" data-v="-3,5|3,1|0,3|-1,-4">Ex 7.1 Q6(ii)</button><button type="button" data-v="4,5|7,6|4,3|1,2">Ex 7.1 Q6(iii)</button><button type="button" data-v="3,0|4,5|-1,4|-2,-1">Rhombus Ex 7.2 Q10</button><button type="button" data-v="-1,-1|-1,6|3,6|3,-1">CBSE 2024 rectangle</button></div>
+<div class="tool-grid"><div id="sp4-svg"></div><div class="readout" id="sp4-out"></div></div></div>
+</section>
+
+<section id="map" class="t-navy">
+<div class="sec-head"><span class="sec-num word">Map</span><h2>Mind map, formulas and common mistakes</h2></div>
+<div class="mindmap">
+<div class="mm-core">COORDINATE GEOMETRY</div>
+<div class="mm-b refl"><h4>📍 Basics</h4><ul><li>Quadrants: (+,+) (−,+) (−,−) (+,−)</li><li>x-axis: y = 0; y-axis: x = 0</li><li>Distance from x-axis = |y|</li><li>Distance from y-axis = |x|</li></ul></div>
+<div class="mm-b lens"><h4>📏 Distance</h4><ul><li>√[(x₂−x₁)² + (y₂−y₁)²]</li><li>From O: √(x² + y²)</li><li>Collinear: AB + BC = AC</li><li>Shapes: sides + diagonals</li><li>Equidistant ⇒ squares equal</li></ul></div>
+<div class="mm-b refr"><h4>➗ Section</h4><ul><li>((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))</li><li>Mid-point: average</li><li>Unknown ratio: k : 1</li><li>Parallelogram: diagonals share mid-point</li></ul></div></div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Question says…</th><th>Do this</th></tr></thead><tbody><tr><td>"point on the x-axis"</td><td>take (x, 0)</td></tr><tr><td>"point on the y-axis"</td><td>take (0, y)</td></tr><tr><td>"in what ratio"</td><td>take k : 1, use the known coordinate</td></tr><tr><td>"centre is the mid-point of the diameter"</td><td>mid-point formula backwards</td></tr><tr><td>"vertices of a parallelogram in order"</td><td>mid-point of AC = mid-point of BD</td></tr><tr><td>"show that it is a square / rhombus"</td><td>4 sides and 2 diagonals by distance formula</td></tr></tbody></table></div>
+<div class="box alert"><h4>⚠️ Top 8 mistakes students make</h4><ol>
+<li>(−3)² written as −9.</li>
+<li>Using mx₁ + nx₂ instead of mx₂ + nx₁ in the section formula.</li>
+<li>For the x-axis taking x = 0 (it is y = 0 on the x-axis).</li>
+<li>Calling a figure a square after checking only the sides (a rhombus also has 4 equal sides).</li>
+<li>Forgetting the ± when solving (x − 3)² = 16.</li>
+<li>Rounding √ values early; keep surds like 3√2 till the end.</li>
+<li>Leaving the answer as k = 2/7 instead of the ratio 2 : 7.</li>
+<li>Using the area-of-triangle formula, which is no longer in the syllabus, to test collinearity.</li></ol></div>
+</section>
+
+<section id="arcade" class="no-print t-sun">
+<div class="sec-head"><span class="sec-num word">🎮</span><h2>Coordinate Arcade: 3 games</h2></div>
+<p class="lead">Play to revise. Every game gives ⭐ stars, saved on this phone. Collect all 15 to become a <b>Grid Master</b>. <span class="stars-total" id="ga-total"></span></p>
+<div class="tool game" id="g-dd"><h4>📏 Game 1: Distance Dash</h4><p class="hint">Find the distance between the two points. 12 rounds in 90 seconds. <span id="gd-t" class="gtime"></span></p>
+<p class="gq" id="gd-q"></p><div class="opts" id="gd-opts"></div><p class="readout" id="gd-out"></p><button type="button" class="tbtn solid" id="gd-start">Start</button></div>
+<div class="tool game" id="g-sp"><h4>➗ Game 2: Point Finder</h4><p class="hint">Find the point dividing AB in the given ratio (or the mid-point). 8 rounds.</p>
+<p class="gq" id="gp-q"></p><div class="opts" id="gp-opts"></div><p class="readout" id="gp-out"></p><button type="button" class="tbtn solid" id="gp-start">Start</button></div>
+<div class="tool game" id="g-ax"><h4>⚖️ Game 3: Axis Cutter</h4><p class="hint">In what ratio does the x-axis or y-axis divide the segment? 8 rounds.</p>
+<p class="gq" id="gx-q"></p><div class="opts" id="gx-opts"></div><p class="readout" id="gx-out"></p><button type="button" class="tbtn solid" id="gx-start">Start</button></div>
+</section>
+
+<section id="cbse" class="t-navy">
+<div class="sec-head"><span class="sec-num word">CBSE</span><h2>CBSE exam pattern and how marks are given</h2></div>
+<p>The CBSE Class 10 Mathematics (Standard, 041) paper is <b>80 marks, 3 hours, 38 questions</b>. Unit <b>Coordinate Geometry</b> carries <b>6 marks</b>: typically 2 MCQs, one 2-mark and one 3-mark question.</p>
+<h3>This chapter in recent CBSE papers (set 30/1/1)</h3>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Year</th><th>Where</th><th>What was asked</th></tr></thead><tbody>
+<tr><td><b>2026</b></td><td>Q8 (MCQ), Q23 (2), Q27 (3)</td><td>mid-point on the x-axis; centre (x − 7, 2x) and radius 5√2; ratio in which the x-axis divides a segment</td></tr>
+<tr><td><b>2025</b></td><td>Q3 (MCQ), Q23 (2), Q28 (3)</td><td>mid-point on the y-axis; centre (2a, a − 7) and diameter 10√2; ratio in which the y-axis divides a segment</td></tr>
+<tr><td><b>2024</b></td><td>Q6, Q11, Q17 (MCQ), Q26 (3, choice)</td><td>length of a median; x from a distance; other end of a diameter; ratio and y from a given point OR mid-points of a rectangle</td></tr>
+<tr><td><b>2023</b></td><td>Q4, Q13 (MCQ), Q19 (A–R), Q28 (3)</td><td>ratio by the x-axis; distance with surds; y-axis meets a line; third vertex of an equilateral triangle</td></tr></tbody></table></div>
+<div class="box key"><h4>✍️ How the CBSE marking scheme splits marks</h4><ul>
+<li><b>Ratio by an axis (3 marks):</b> 1 for the section formula with k : 1, 1 for k, 1 for the point.</li>
+<li><b>Centre–radius (2 marks):</b> 1 for the distance equation, 1 for both values.</li>
+<li><b>Shape proof (3 marks):</b> 1½ for the four sides, 1 for the diagonals, ½ for the conclusion.</li></ul></div>
+<div class="box trick"><h4>🏆 Answer-writing tips for full marks</h4><ol><li>Write "Let P(x, y) divide AB in k : 1" or "Let the point on the x-axis be (x, 0)".</li><li>Write the formula in symbols, then substitute.</li><li>Keep surds simplified: √72 = 6√2.</li><li>State the conclusion in words: "Hence ABCD is a square."</li></ol></div>
+</section>
+
+<section id="pyq" class="t-coral">
+<div class="sec-head"><span class="sec-num word">PYQ</span><h2>CBSE board questions (2023–2026)</h2></div>
+<p>Coordinate Geometry questions from CBSE Class 10 Maths Standard papers (set 30/1/1) with full solutions and step marks. Wording lightly shortened.</p>
+<div class="seg no-print" id="pyq-seg"><button type="button" class="on" data-y="all">All</button><button type="button" data-y="2026">2026</button><button type="button" data-y="2025">2025</button><button type="button" data-y="2024">2024</button><button type="button" data-y="2023">2023</button></div>
+<div class="pyq" data-y="2026">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q8 · 1 mark</span></span><span>The mid-point of the line segment joining (5, −4) and (6, 4) lies on (a) the x-axis (b) the y-axis (c) the origin (d) neither axis</span></summary><div class="ans"><p><b>(a) the x-axis.</b> Mid-point (11/2, 0).</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q23 · 2 marks</span></span><span>The centre of a circle is (x − 7, 2x) and it passes through (−9, 11). If its radius is 5√2, find the possible values of x.</span></summary><div class="ans"><p>(−9 − x + 7)² + (11 − 2x)² = 50 ⇒ (x + 2)² + (11 − 2x)² = 50 <span class="mk">1</span></p><p>5x² − 40x + 75 = 0 ⇒ x² − 8x + 15 = 0 ⇒ <b>x = 3 or 5</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q27 · 3 marks</span></span><span>Find the ratio in which the x-axis divides the line segment joining (−6, 5) and (−4, −1). Also find the point of intersection.</span></summary><div class="ans"><p>Let the ratio be k : 1. y-coordinate = (−k + 5)/(k + 1) = 0 <span class="mk">1</span> ⇒ k = 5: ratio <b>5 : 1</b>. <span class="mk">1</span></p><p>x = (5 × (−4) + 1 × (−6))/6 = −26/6 = −13/3. Point <b>(−13/3, 0)</b>. <span class="mk">1</span></p></div></details>
+</div>
+<div class="pyq" data-y="2025">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q3 · 1 mark</span></span><span>The mid-point of the line segment joining P(−4, 5) and Q(4, 6) lies on (a) the x-axis (b) the y-axis (c) the origin (d) neither axis</span></summary><div class="ans"><p><b>(b) the y-axis.</b> Mid-point (0, 11/2).</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q23 · 2 marks</span></span><span>The centre of a circle is (2a, a − 7). Find the values of a if the circle passes through (11, −9) and has diameter 10√2 units.</span></summary><div class="ans"><p>Radius 5√2: (11 − 2a)² + (−9 − a + 7)² = 50 <span class="mk">1</span></p><p>5a² − 40a + 75 = 0 ⇒ (a − 3)(a − 5) = 0 ⇒ <b>a = 3 or 5</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q28 · 3 marks</span></span><span>Find the ratio in which the y-axis divides the line segment joining (5, −6) and (−1, −4). Also find the point of intersection.</span></summary><div class="ans"><p>Ratio k : 1. x-coordinate = (−k + 5)/(k + 1) = 0 <span class="mk">1</span> ⇒ k = 5: ratio <b>5 : 1</b>. <span class="mk">1</span></p><p>y = (5 × (−4) + (−6))/6 = −26/6 = −13/3. Point <b>(0, −13/3)</b>. <span class="mk">1</span></p></div></details>
+</div>
+<div class="pyq" data-y="2024">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q6 · 1 mark</span></span><span>The length of the median AD of ΔABC with vertices A(5, −6), B(6, 4) and C(0, 0) is (a) √68 (b) 2√15 (c) √50 (d) √65</span></summary><div class="ans"><p><b>(a) √68.</b> D = mid-point of BC = (3, 2); AD = √(4 + 64).</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q11 · 1 mark</span></span><span>If the distance between the points (3, −5) and (x, −5) is 15 units, then the values of x are (a) 12, −18 (b) −12, 18 (c) 18, 5 (d) −9, −12</span></summary><div class="ans"><p><b>(b) −12, 18.</b> |x − 3| = 15.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q17 · 1 mark</span></span><span>The centre of a circle is (2, 0) and one end of a diameter is (6, 0). The other end is (a) (0, 0) (b) (4, 0) (c) (−2, 0) (d) (−6, 0)</span></summary><div class="ans"><p><b>(c) (−2, 0).</b> (6 + x)/2 = 2.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q26 (A) · 3 marks</span></span><span>Find the ratio in which the point (8/5, y) divides the line segment joining (1, 2) and (2, 3). Also find the value of y.</span></summary><div class="ans"><p>Ratio k : 1: (2k + 1)/(k + 1) = 8/5 <span class="mk">1</span> ⇒ 10k + 5 = 8k + 8 ⇒ k = 3/2: ratio <b>3 : 2</b>. <span class="mk">1</span></p><p>y = (3 × 3 + 2 × 2)/5 = <b>13/5</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q26 (B, OR) · 3 marks</span></span><span>ABCD is a rectangle with A(−1, −1), B(−1, 6), C(3, 6) and D(3, −1). P, Q, R, S are the mid-points of AB, BC, CD and DA. Show that the diagonals of PQRS bisect each other.</span></summary><div class="ans"><p>P(−1, 5/2), Q(1, 6), R(3, 5/2), S(1, −1). <span class="mk">1½</span></p><p>Mid-point of PR = (1, 5/2); mid-point of QS = (1, 5/2). <span class="mk">1</span></p><p>Same point ⇒ the diagonals <b>bisect each other</b> (PQRS is a parallelogram; in fact PQ = QR = RS = SP = √(65)/2, a rhombus). <span class="mk">½</span></p></div></details>
+</div>
+<div class="pyq" data-y="2023">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q4 · 1 mark</span></span><span>The ratio in which the x-axis divides the line segment joining A(3, 6) and B(−12, −3) is (a) 2 : 1 (b) 1 : 2 (c) −2 : 1 (d) 1 : −2</span></summary><div class="ans"><p><b>(a) 2 : 1.</b> (−3k + 6)/(k + 1) = 0 ⇒ k = 2.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q13 · 1 mark</span></span><span>The distance between the points (0, 2√5) and (−2√5, 0) is (a) 2√10 (b) 4√10 (c) 2√20 (d) 0</span></summary><div class="ans"><p><b>(a) 2√10.</b> √(20 + 20) = √40.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q19 · Assertion–Reason</span></span><span>A: The point P(0, 2) is the point of intersection of the y-axis and the line 3x + 2y = 4. R: The distance of the point P(0, 2) from the x-axis is 2 units.</span></summary><div class="ans"><p><b>(b).</b> Put x = 0: y = 2, so A is true. R is true too, but it does not explain A.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q28 · 3 marks</span></span><span>(−5, 3) and (5, 3) are two vertices of an equilateral triangle. Find the coordinates of the third vertex, given that the origin lies inside the triangle.</span></summary><div class="ans"><p>Let the third vertex be (x, y). Equal distances from (−5, 3) and (5, 3) ⇒ x = 0. <span class="mk">1</span></p><p>Side = 10: (0 − 5)² + (y − 3)² = 100 ⇒ (y − 3)² = 75 ⇒ y = 3 ± 5√3. <span class="mk">1</span></p><p>The origin is inside, so the vertex is below the x-axis: <b>(0, 3 − 5√3)</b>. <span class="mk">1</span></p></div></details>
+</div>
+<div class="box key"><h4>📈 Pattern spotted</h4><p>The <b>"ratio in which an axis divides" question came in 2023, 2025 and 2026</b>, and the <b>centre–radius with two answers</b> in 2025 and 2026 (almost the same numbers!). Mid-point MCQs every year. Master k : 1, the mid-point formula backwards, and distance-equation problems.</p></div>
+</section>
+
+<section id="practice" class="t-teal">
+<div class="sec-head"><span class="sec-num word">A–E</span><h2>CBSE section-wise practice</h2></div>
+<p>Questions in the exact CBSE format, from easy to board level. Try each one before opening the answer.</p>
+<h3 class="group-title">Section A: MCQs (1 mark each)</h3>
+<details class="qa"><summary><span class="qnum">A1</span><span>The distance of the point (−6, 8) from the origin is (a) 10 (b) 8 (c) 6 (d) 2√7</span></summary><div class="ans"><b>(a) 10.</b> √(36 + 64) = √100.</div></details>
+<details class="qa"><summary><span class="qnum">A2</span><span>The mid-point of the segment joining (−3, 5) and (5, −1) is (a) (1, 2) (b) (2, 1) (c) (4, −3) (d) (1, 3)</span></summary><div class="ans"><b>(a) (1, 2).</b> ((−3 + 5)/2, (5 − 1)/2).</div></details>
+<details class="qa"><summary><span class="qnum">A3</span><span>The point (−4, 0) lies on (a) the positive x-axis (b) the negative x-axis (c) the negative y-axis (d) quadrant II</span></summary><div class="ans"><b>(b).</b> y = 0 and x &lt; 0.</div></details>
+<details class="qa"><summary><span class="qnum">A4</span><span>If the distance between (2, −2) and (−1, x) is 5, one value of x is (a) 2 (b) −2 (c) 1 (d) −1</span></summary><div class="ans"><b>(a) 2.</b> 9 + (x + 2)² = 25 ⇒ x + 2 = ±4 ⇒ x = 2 or −6.</div></details>
+<details class="qa"><summary><span class="qnum">A5</span><span>The ratio in which the y-axis divides the segment joining (−4, −6) and (10, 12) is (a) 2 : 5 (b) 5 : 2 (c) 1 : 2 (d) 2 : 3</span></summary><div class="ans"><b>(a) 2 : 5.</b> (10k − 4)/(k + 1) = 0 ⇒ k = 2/5.</div></details>
+<details class="qa"><summary><span class="qnum">A6</span><span>The point on the x-axis equidistant from (−1, 0) and (5, 0) is (a) (2, 0) (b) (0, 2) (c) (3, 0) (d) (−3, 0)</span></summary><div class="ans"><b>(a) (2, 0).</b> It is the mid-point.</div></details>
+<details class="qa"><summary><span class="qnum">A7</span><span>A(−2, 1), B(1, 0) and C(4, 3) are three vertices of parallelogram ABCD. Then D is (a) (1, 4) (b) (2, 4) (c) (1, 3) (d) (4, 1)</span></summary><div class="ans"><b>(a) (1, 4).</b> Mid-point of AC = (1, 2) = mid-point of BD ⇒ D = (2 − 1, 4 − 0).</div></details>
+<details class="qa"><summary><span class="qnum">A8</span><span>The distance between (0, 5) and (−5, 0) is (a) 5 (b) 5√2 (c) 2√5 (d) 10</span></summary><div class="ans"><b>(b) 5√2.</b> √(25 + 25).</div></details>
+<h3 class="group-title">Section A: Assertion–Reason (1 mark each)</h3>
+<p class="muted">(a) Both A and R are true and R explains A. (b) Both true, R does not explain A. (c) A true, R false. (d) A false, R true.</p>
+<details class="qa"><summary><span class="qnum">AR1</span><span>A: The point (0, −7) lies on the y-axis. R: The x-coordinate of every point on the y-axis is zero.</span></summary><div class="ans"><b>(a).</b></div></details>
+<details class="qa"><summary><span class="qnum">AR2</span><span>A: If the mid-point of (3, 4) and (k, 7) is (x, y) and 2x + 2y + 1 = 0, then k = −15. R: The mid-point of (x₁, y₁) and (x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2).</span></summary><div class="ans"><b>(a).</b> 2x + 2y + 1 = (3 + k) + 11 + 1 = 0 ⇒ k = −15, using R.</div></details>
+<details class="qa"><summary><span class="qnum">AR3</span><span>A: The points (1, 1), (2, 2) and (3, 3) form a triangle. R: Three points are collinear if the sum of two of the distances between them equals the third.</span></summary><div class="ans"><b>(d).</b> √2 + √2 = 2√2, so the points are collinear: A is false.</div></details>
+<h3 class="group-title">Section B: 2 marks each</h3>
+<details class="qa"><summary><span class="qnum">B1</span><span>Find the point on the y-axis which is equidistant from (5, −2) and (−3, 2).</span></summary><div class="ans"><p>Let it be (0, y): 25 + (y + 2)² = 9 + (y − 2)² ⇒ 29 + 4y = 13 − 4y. <span class="mk">1</span></p><p>8y = −16 ⇒ <b>(0, −2)</b>. (Both distances are 5 ✓) <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B2</span><span>Find the ratio in which P(−4, 6) divides the segment joining A(−6, 10) and B(3, −8).</span></summary><div class="ans"><p>Take k : 1: (3k − 6)/(k + 1) = −4 ⇒ 7k = 2 ⇒ k = 2/7. <span class="mk">1</span></p><p>Ratio <b>2 : 7</b>. Check y: (−16/7 + 10)/(9/7) = 54/9 = 6 ✓ <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B3</span><span>A(4, −8), B(3, 6) and C(5, −4) are the vertices of ΔABC. D is the mid-point of BC. Find the length of the median AD.</span></summary><div class="ans"><p>D = ((3 + 5)/2, (6 − 4)/2) = (4, 1). <span class="mk">1</span></p><p>AD = √(0² + 9²) = <b>9 units</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B4</span><span>Show that (1, 7), (4, 2), (−1, −1) and (−4, 4) are the vertices of a square.</span></summary><div class="ans"><p>AB = √(9 + 25), BC = √(25 + 9), CD = √(9 + 25), DA = √(25 + 9): all = √34. <span class="mk">1</span></p><p>AC = √(4 + 64) = √68, BD = √(64 + 4) = √68: diagonals equal ⇒ <b>square</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B5</span><span>Find the values of x if the distance between (x, −1) and (3, 2) is 5.</span></summary><div class="ans"><p>(x − 3)² + 9 = 25 ⇒ (x − 3)² = 16. <span class="mk">1</span></p><p>x − 3 = ±4 ⇒ <b>x = 7 or x = −1</b>. <span class="mk">1</span></p></div></details>
+<h3 class="group-title">Section C: 3 marks each</h3>
+<details class="qa"><summary><span class="qnum">C1</span><span>Prove that A(2, −2), B(−2, 1) and C(5, 2) are the vertices of a right-angled triangle.</span></summary><div class="ans"><p>AB² = 16 + 9 = 25, AC² = 9 + 16 = 25, BC² = 49 + 1 = 50. <span class="mk">1½</span></p><p>AB² + AC² = 50 = BC² ⇒ by the converse of Pythagoras, ∠A = 90°. <span class="mk">1</span></p><p>It is a <b>right isosceles triangle</b>, right-angled at A. <span class="mk">½</span></p></div></details>
+<details class="qa"><summary><span class="qnum">C2</span><span>A(−2, 1), B(a, 0), C(4, b) and D(1, 2) are the vertices of parallelogram ABCD. Find a and b, and the lengths of its sides.</span></summary><div class="ans"><p>Diagonals bisect each other: (−2 + 4)/2 = (a + 1)/2 ⇒ <b>a = 1</b>; (1 + b)/2 = (0 + 2)/2 ⇒ <b>b = 1</b>. <span class="mk">1½</span></p><p>AB = √(9 + 1) = √10, BC = √(9 + 1) = √10, so all sides are <b>√10</b>. <span class="mk">1½</span></p><p class="muted">(Since all sides are equal and the diagonals 6 and 2 are not, it is actually a rhombus.)</p></div></details>
+<details class="qa"><summary><span class="qnum">C3</span><span>The point A(3, y) is equidistant from P(6, 5) and Q(0, −3). Find y and the distance PA.</span></summary><div class="ans"><p>9 + (y − 5)² = 9 + (y + 3)² <span class="mk">1</span></p><p>−10y + 25 = 6y + 9 ⇒ <b>y = 1</b>. <span class="mk">1</span></p><p>PA = √(9 + 16) = <b>5 units</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">C4</span><span>P and Q are the points of trisection of AB, where A(2, 1) and B(5, −8), with P nearer to A. If P lies on the line 2x − y + k = 0, find k.</span></summary><div class="ans"><p>AP : PB = 1 : 2 ⇒ P = ((5 + 4)/3, (−8 + 2)/3) = (3, −2). <span class="mk">2</span></p><p>2(3) − (−2) + k = 0 ⇒ <b>k = −8</b>. <span class="mk">1</span></p></div></details>
+<h3 class="group-title">Section D: 5 marks</h3>
+<details class="qa"><summary><span class="qnum">D1</span><span>Show that A(1, −2), B(3, 6), C(5, 10) and D(3, 2), taken in order, form a parallelogram. Is it a rectangle? Also find the point which divides AC in the ratio 1 : 3.</span></summary><div class="ans"><p>AB = √(4 + 64) = √68, CD = √(4 + 64) = √68; BC = √(4 + 16) = √20, DA = √(4 + 16) = √20. <span class="mk">2</span></p><p>Opposite sides are equal ⇒ <b>parallelogram</b>. (Mid-points of AC and BD are both (3, 4) ✓) <span class="mk">1</span></p><p>AC = √(16 + 144) = √160, BD = √(0 + 16) = 4. Diagonals are unequal ⇒ <b>not a rectangle</b>. <span class="mk">1</span></p><p>Point = ((1 × 5 + 3 × 1)/4, (1 × 10 + 3 × (−2))/4) = <b>(2, 1)</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">D2</span><span>The x-axis divides the segment joining A(2, −3) and B(5, 6) at P. Find the ratio, the point P, and verify the ratio using the distance formula. Does the y-axis cut the segment AB?</span></summary><div class="ans"><p>k : 1 with y = 0: (6k − 3)/(k + 1) = 0 ⇒ k = 1/2 ⇒ ratio <b>1 : 2</b>. <span class="mk">1½</span></p><p>P = ((1 × 5 + 2 × 2)/3, 0) = <b>(3, 0)</b>. <span class="mk">1</span></p><p>AP = √(1 + 9) = √10, PB = √(4 + 36) = 2√10 ⇒ AP : PB = 1 : 2 ✓ <span class="mk">1½</span></p><p>For the y-axis: (5k + 2)/(k + 1) = 0 ⇒ k = −2/5 &lt; 0. So the y-axis does <b>not</b> cut the segment AB (both points have x &gt; 0). <span class="mk">1</span></p></div></details>
+<h3 class="group-title">Section E: Case study (1 + 1 + 2)</h3>
+<details class="qa"><summary><span class="qnum">E1</span><span>On a village map (1 unit = 1 km), the school is at S(2, 3), the hospital at H(8, 11) and the market at M(5, 7). (i) How far is the hospital from the school? (ii) Is the market exactly halfway between them? (iii) A bus stop B lies on SH with SB : BH = 1 : 3. Find B and the distance SB. OR (iii) Find the point on the x-axis (the highway) equidistant from S and H.</span></summary><div class="ans">
+<p>(i) SH = √(36 + 64) = <b>10 km</b>. <span class="mk">1</span></p>
+<p>(ii) Mid-point of SH = ((2 + 8)/2, (3 + 11)/2) = (5, 7) = M: <b>yes</b>. <span class="mk">1</span></p>
+<p>(iii) B = ((8 + 6)/4, (11 + 9)/4) = <b>(3.5, 5)</b>. <span class="mk">1</span> SB = ¼ × 10 = <b>2.5 km</b>. <span class="mk">1</span></p>
+<p>OR (iii) (x − 2)² + 9 = (x − 8)² + 121 ⇒ −4x + 13 = −16x + 185 <span class="mk">1</span> ⇒ 12x = 172 ⇒ <b>(43/3, 0)</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">E2</span><span>A school garden has corners P(1, 1), Q(5, 1), R(5, 4) and S(1, 4) (in metres). (i) Find the length of the path PR. (ii) A fountain is placed where the two diagonal paths cross. Find its position. (iii) Show that PQRS is a rectangle and not a square. OR (iii) A tap T on PQ has PT : TQ = 1 : 3. Find T and the distance TR.</span></summary><div class="ans">
+<p>(i) PR = √(16 + 9) = <b>5 m</b>. <span class="mk">1</span></p>
+<p>(ii) Mid-point of PR = <b>(3, 2.5)</b> (diagonals bisect each other). <span class="mk">1</span></p>
+<p>(iii) PQ = RS = 4, QR = SP = 3 and PR = QS = 5. <span class="mk">1</span> Opposite sides and diagonals equal ⇒ rectangle; adjacent sides 4 ≠ 3 ⇒ <b>not a square</b>. <span class="mk">1</span></p>
+<p>OR (iii) T = ((1 × 5 + 3 × 1)/4, 1) = (2, 1). <span class="mk">1</span> TR = √(9 + 9) = <b>3√2 m</b>. <span class="mk">1</span></p></div></details>
+</section>
+
+<section id="quiz" class="t-rose">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p>Tap an answer. <span class="score">Score: 0 / 20</span></p>
+<div class="quiz">
+<div class="q"><p>1. Distance of (3, 4) from the origin is</p><div class="opts"><button type="button" class="opt">7</button><button type="button" class="opt">1</button><button type="button" class="opt">25</button><button type="button" class="opt" data-c>5</button></div></div>
+<div class="q"><p>2. The point (0, −3) lies</p><div class="opts"><button type="button" class="opt">in quadrant III</button><button type="button" class="opt">on the x-axis</button><button type="button" class="opt">in quadrant IV</button><button type="button" class="opt" data-c>on the y-axis</button></div></div>
+<div class="q"><p>3. Mid-point of (2, 6) and (4, −2) is</p><div class="opts"><button type="button" class="opt">(1, 4)</button><button type="button" class="opt">(6, 4)</button><button type="button" class="opt" data-c>(3, 2)</button><button type="button" class="opt">(3, 4)</button></div></div>
+<div class="q"><p>4. The abscissa of every point on the y-axis is</p><div class="opts"><button type="button" class="opt" data-c>0</button><button type="button" class="opt">−1</button><button type="button" class="opt">equal to its ordinate</button><button type="button" class="opt">1</button></div></div>
+<div class="q"><p>5. Distance between (4, 0) and (0, 3) is</p><div class="opts"><button type="button" class="opt">√7</button><button type="button" class="opt">1</button><button type="button" class="opt" data-c>5</button><button type="button" class="opt">7</button></div></div>
+<div class="q"><p>6. The point (−2, −5) lies in quadrant</p><div class="opts"><button type="button" class="opt">I</button><button type="button" class="opt">II</button><button type="button" class="opt" data-c>III</button><button type="button" class="opt">IV</button></div></div>
+<div class="q"><p>7. If P divides AB internally in m : n, the x-coordinate of P is</p><div class="opts"><button type="button" class="opt">(m x₁ + n x₂)/(m + n)</button><button type="button" class="opt" data-c>(m x₂ + n x₁)/(m + n)</button><button type="button" class="opt">(x₁ + x₂)/2</button><button type="button" class="opt">(m x₂ − n x₁)/(m − n)</button></div></div>
+<div class="q"><p>8. The y-axis divides the join of (−3, 1) and (6, 4) in the ratio</p><div class="opts"><button type="button" class="opt" data-c>1 : 2</button><button type="button" class="opt">3 : 1</button><button type="button" class="opt">2 : 1</button><button type="button" class="opt">1 : 1</button></div></div>
+<div class="q"><p>9. The diagonals of a parallelogram always</p><div class="opts"><button type="button" class="opt">are equal</button><button type="button" class="opt">meet on the x-axis</button><button type="button" class="opt">are perpendicular</button><button type="button" class="opt" data-c>bisect each other</button></div></div>
+<div class="q"><p>10. The points (1, 2), (2, 3) and (3, 4) are</p><div class="opts"><button type="button" class="opt" data-c>collinear</button><button type="button" class="opt">vertices of an isosceles triangle</button><button type="button" class="opt">vertices of a right triangle</button><button type="button" class="opt">vertices of an equilateral triangle</button></div></div>
+<div class="q"><p>11. Distance of (5, −12) from the origin is</p><div class="opts"><button type="button" class="opt">7</button><button type="button" class="opt" data-c>13</button><button type="button" class="opt">√119</button><button type="button" class="opt">17</button></div></div>
+<div class="q"><p>12. If (1, k) is the mid-point of (−1, 3) and (3, 5), then k =</p><div class="opts"><button type="button" class="opt">1</button><button type="button" class="opt">3</button><button type="button" class="opt" data-c>4</button><button type="button" class="opt">8</button></div></div>
+<div class="q"><p>13. Distance between (2, 3) and (2, −5) is</p><div class="opts"><button type="button" class="opt">√8</button><button type="button" class="opt">4</button><button type="button" class="opt" data-c>8</button><button type="button" class="opt">2</button></div></div>
+<div class="q"><p>14. All four sides equal and the diagonals equal: the figure is a</p><div class="opts"><button type="button" class="opt">kite</button><button type="button" class="opt" data-c>square</button><button type="button" class="opt">trapezium</button><button type="button" class="opt">rhombus only</button></div></div>
+<div class="q"><p>15. All four sides equal but the diagonals unequal: the figure is a</p><div class="opts"><button type="button" class="opt">trapezium</button><button type="button" class="opt" data-c>rhombus</button><button type="button" class="opt">rectangle</button><button type="button" class="opt">square</button></div></div>
+<div class="q"><p>16. Opposite sides equal, diagonals equal, adjacent sides unequal: the figure is a</p><div class="opts"><button type="button" class="opt">rhombus</button><button type="button" class="opt">square</button><button type="button" class="opt" data-c>rectangle</button><button type="button" class="opt">kite</button></div></div>
+<div class="q"><p>17. A general point on the x-axis is</p><div class="opts"><button type="button" class="opt">(0, 0) only</button><button type="button" class="opt">(x, x)</button><button type="button" class="opt">(0, y)</button><button type="button" class="opt" data-c>(x, 0)</button></div></div>
+<div class="q"><p>18. The mid-point of A(−1, 0) and B(1, 0) is</p><div class="opts"><button type="button" class="opt">(−1, 1)</button><button type="button" class="opt">(1, 0)</button><button type="button" class="opt" data-c>the origin</button><button type="button" class="opt">(0, 1)</button></div></div>
+<div class="q"><p>19. PQ = 10 with P(2, −3) and Q(10, y). One value of y is</p><div class="opts"><button type="button" class="opt">−3</button><button type="button" class="opt" data-c>3</button><button type="button" class="opt">9</button><button type="button" class="opt">6</button></div></div>
+<div class="q"><p>20. Taking the ratio as k : 1, a negative k means the point divides the segment</p><div class="opts"><button type="button" class="opt">at its mid-point</button><button type="button" class="opt" data-c>externally</button><button type="button" class="opt">internally</button><button type="button" class="opt">at an end point</button></div></div>
+</div>
+</section>
+
+<section id="answers" class="t-violet">
+<div class="sec-head"><span class="sec-num word">NCERT</span><h2>All textbook questions answered</h2></div>
+<h3 class="group-title">Exercise 7.1</h3>
+<details class="qa"><summary><span class="qnum">1</span><span>Find the distance between the following pairs of points: (i) (2, 3), (4, 1) (ii) (−5, 7), (−1, 3) (iii) (a, b), (−a, −b)</span></summary><div class="ans">(i) √(4 + 4) = <b>2√2</b> (ii) √(16 + 16) = <b>4√2</b> (iii) √(4a² + 4b²) = <b>2√(a² + b²)</b></div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Find the distance between the points (0, 0) and (36, 15). Can you now find the distance between the two towns A and B discussed in Section 7.2?</span></summary><div class="ans">√(1296 + 225) = √1521 = <b>39</b>. Yes: with A at (0, 0) and B at (36, 15), the towns are <b>39 km</b> apart.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Determine if the points (1, 5), (2, 3) and (−2, −11) are collinear.</span></summary><div class="ans">AB = √(1 + 4) = √5 ≈ 2.24, BC = √(16 + 196) = √212 ≈ 14.56, AC = √(9 + 256) = √265 ≈ 16.28. AB + BC ≈ 16.80 ≠ AC, and no other sum works either. <b>Not collinear.</b></div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Check whether (5, −2), (6, 4) and (7, −2) are the vertices of an isosceles triangle.</span></summary><div class="ans">AB = √(1 + 36) = √37, BC = √(1 + 36) = √37, AC = √(4 + 0) = 2. AB = BC, so <b>yes, isosceles</b>.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>In a classroom, 4 friends are seated at A(3, 4), B(6, 7), C(9, 4) and D(6, 1). Champa says ABCD is a square; Chameli disagrees. Who is correct?</span></summary><div class="ans">AB = BC = CD = DA = √(9 + 9) = 3√2, and diagonals AC = 6, BD = 6. All sides equal and diagonals equal ⇒ ABCD is a square. <b>Champa is correct.</b> (Try it in the Shape Detective lab.)</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>Name the type of quadrilateral formed, if any, by the points, and give reasons: (i) (−1, −2), (1, 0), (−1, 2), (−3, 0) (ii) (−3, 5), (3, 1), (0, 3), (−1, −4) (iii) (4, 5), (7, 6), (4, 3), (1, 2)</span></summary><div class="ans"><p>(i) All sides = √8 = 2√2, diagonals AC = 4, BD = 4 ⇒ <b>square</b>.</p><p>(ii) AB = √52 = 2√13, BC = √13, AC = √13. Since AC + CB = AB, the points A, C, B are collinear ⇒ <b>no quadrilateral</b>.</p><p>(iii) AB = √10, BC = √18, CD = √10, DA = √18, diagonals AC = 2, BD = √52. Opposite sides equal, diagonals unequal ⇒ <b>parallelogram</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Find the point on the x-axis which is equidistant from (2, −5) and (−2, 9).</span></summary><div class="ans">(x − 2)² + 25 = (x + 2)² + 81 ⇒ −4x + 29 = 4x + 85 ⇒ x = −7. Point <b>(−7, 0)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>Find the values of y for which the distance between P(2, −3) and Q(10, y) is 10 units.</span></summary><div class="ans">64 + (y + 3)² = 100 ⇒ y + 3 = ±6 ⇒ <b>y = 3 or y = −9</b>.</div></details>
+<details class="qa"><summary><span class="qnum">9</span><span>If Q(0, 1) is equidistant from P(5, −3) and R(x, 6), find the values of x. Also find the distances QR and PR.</span></summary><div class="ans">QP² = 25 + 16 = 41 = x² + 25 ⇒ <b>x = ±4</b>. QR = <b>√41</b>. For R(4, 6): PR = √(1 + 81) = <b>√82</b>; for R(−4, 6): PR = √(81 + 81) = <b>9√2</b>.</div></details>
+<details class="qa"><summary><span class="qnum">10</span><span>Find a relation between x and y such that the point (x, y) is equidistant from the points (3, 6) and (−3, 4).</span></summary><div class="ans">(x − 3)² + (y − 6)² = (x + 3)² + (y − 4)² ⇒ −6x − 12y + 45 = 6x − 8y + 25 ⇒ 12x + 4y = 20 ⇒ <b>3x + y − 5 = 0</b>.</div></details>
+<h3 class="group-title">Exercise 7.2</h3>
+<details class="qa"><summary><span class="qnum">1</span><span>Find the coordinates of the point which divides the join of (−1, 7) and (4, −3) in the ratio 2 : 3.</span></summary><div class="ans">((8 − 3)/5, (−6 + 21)/5) = <b>(1, 3)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Find the coordinates of the points of trisection of the line segment joining (4, −1) and (−2, −3).</span></summary><div class="ans">Ratio 1 : 2: <b>(2, −5/3)</b>. Ratio 2 : 1: <b>(0, −7/3)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>To conduct Sports Day, lines are drawn with chalk powder 1 m apart in a rectangular school ground, with 100 flower pots 1 m apart along AD. Niharika runs 1/4 of AD on the 2nd line and posts a green flag. Preet runs 1/5 of AD on the 8th line and posts a red flag. What is the distance between the flags? If Rashmi posts a blue flag exactly halfway between them, where is it?</span></summary><div class="ans">Green flag: (2, ¼ × 100) = (2, 25). Red flag: (8, ⅕ × 100) = (8, 20). Distance = √(36 + 25) = <b>√61 m</b>. Blue flag = mid-point = <b>(5, 22.5)</b>: on the 5th line, 22.5 m along.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Find the ratio in which the segment joining (−3, 10) and (6, −8) is divided by (−1, 6).</span></summary><div class="ans">(6k − 3)/(k + 1) = −1 ⇒ 7k = 2 ⇒ <b>2 : 7</b>.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Find the ratio in which the segment joining A(1, −5) and B(−4, 5) is divided by the x-axis. Also find the point of division.</span></summary><div class="ans">(5k − 5)/(k + 1) = 0 ⇒ k = 1: ratio <b>1 : 1</b>. Point = ((−4 + 1)/2, 0) = <b>(−3/2, 0)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>If (1, 2), (4, y), (x, 6) and (3, 5) are the vertices of a parallelogram taken in order, find x and y.</span></summary><div class="ans">Mid-points of the diagonals coincide: (1 + x)/2 = 7/2 and 4 = (y + 5)/2 ⇒ <b>x = 6, y = 3</b>.</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>Find the coordinates of A, where AB is a diameter of a circle whose centre is (2, −3) and B is (1, 4).</span></summary><div class="ans">(x + 1)/2 = 2 and (y + 4)/2 = −3 ⇒ <b>A(3, −10)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>If A and B are (−2, −2) and (2, −4), find P such that AP = (3/7) AB and P lies on AB.</span></summary><div class="ans">AP : PB = 3 : 4. P = ((6 − 8)/7, (−12 − 8)/7) = <b>(−2/7, −20/7)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">9</span><span>Find the coordinates of the points which divide the segment joining A(−2, 2) and B(2, 8) into four equal parts.</span></summary><div class="ans">Mid-point of AB = (0, 5); mid-points of the two halves = (−1, 7/2) and (1, 13/2). Points: <b>(−1, 7/2), (0, 5), (1, 13/2)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">10</span><span>Find the area of a rhombus whose vertices, taken in order, are (3, 0), (4, 5), (−1, 4) and (−2, −1). [Area = ½ × product of diagonals]</span></summary><div class="ans">AC = √(16 + 16) = 4√2, BD = √(36 + 36) = 6√2. Area = ½ × 4√2 × 6√2 = <b>24 square units</b>.</div></details>
+</section>
+</main>
+<footer><p><b>MT Classes, Motihari</b> · Class 10 Maths notes · Chapter 7: Coordinate Geometry</p><p>Based on the NCERT Mathematics textbook for Class 10 (rationalised syllabus). Figures, labs, games, practice questions and answers by MT Classes. CBSE board questions are lightly reworded. <a href="/notes.html">More notes</a></p></footer>
+
+<script>
+
+
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+})();
+
+
+</script>
+<script>
+/* MT Classes shared runtime for notes pages: helpers, PYQ year filter, practice reveal, star store */
+(function () {
+  function $(id) { return document.getElementById(id); }
+  function fmt(x, d) { d = d === undefined ? 2 : d; if (!isFinite(x)) return '∞'; var s = (+x).toFixed(d); if (s.indexOf('.') >= 0) s = s.replace(/0+$/, '').replace(/\.$/, ''); s = s === '-0' ? '0' : s; return s.replace('-', '−'); }
+  function segPick(seg, cb) { if (!seg) return; seg.querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { seg.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); }); cb(b); }); }); }
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function rint(a, b) { return a + Math.floor(Math.random() * (b - a + 1)); }
+  function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { var t = a % b; a = b; b = t; } return a; }
+  function frac(n, d) { if (d < 0) { n = -n; d = -d; } var g = gcd(n, d) || 1; n /= g; d /= g; return d === 1 ? fmt(n, 0) : fmt(n, 0) + '/' + d; }
+  function stars(key, max, totalId, title) {
+    var st = {};
+    try { st = JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch (e) { st = {}; }
+    function show() { var t = 0, mx = 0; for (var k in max) { mx += max[k]; t += st[k] || 0; } var el = $(totalId); if (el) el.textContent = '⭐ ' + t + ' / ' + mx + (t === mx ? ' · ' + title + '! 🏆' : ''); }
+    show();
+    return {
+      award: function (g, n) { n = Math.min(max[g], n); if ((st[g] || 0) >= n) return; st[g] = n; try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {} show(); },
+      forScore: function (got, total) { var f = got / total; return f === 1 ? 5 : f >= .85 ? 4 : f >= .7 ? 3 : f >= .5 ? 2 : got > 0 ? 1 : 0; }
+    };
+  }
+  // generic MCQ round runner used by games: qs = [{q, opts:[..], a:index, why}]
+  function mcqGame(o) {
+    var i = 0, got = 0, list = [], timer = null, left = 0;
+    function end(msg) { if (timer) clearInterval(timer); timer = null; $(o.q).innerHTML = msg; $(o.opts).innerHTML = ''; $(o.start).style.display = ''; $(o.start).textContent = 'Play again'; }
+    function next() {
+      if (i >= list.length) { var s = o.stars.forScore(got, list.length); o.stars.award(o.id, s); end('🏁 Score <b>' + got + ' / ' + list.length + '</b> · ' + '⭐'.repeat(s) + (s === 5 ? ' Perfect!' : '')); return; }
+      var it = list[i], ord = shuffle(it.opts.map(function (t, k) { return k; }));
+      $(o.q).innerHTML = '<span class="gnum">' + (i + 1) + '/' + list.length + '</span> ' + it.q;
+      $(o.opts).innerHTML = ord.map(function (k) { return '<button type="button" class="opt" data-k="' + k + '">' + it.opts[k] + '</button>'; }).join('');
+      $(o.opts).querySelectorAll('button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          if ($(o.opts).dataset.lock) return; $(o.opts).dataset.lock = 1;
+          var ok = +b.dataset.k === it.a; if (ok) got++;
+          b.classList.add(ok ? 'right' : 'wrong');
+          if (!ok) $(o.opts).querySelector('[data-k="' + it.a + '"]').classList.add('right');
+          $(o.out).innerHTML = (ok ? '✅ ' : '❌ ') + (it.why || '');
+          setTimeout(function () { delete $(o.opts).dataset.lock; i++; next(); }, ok ? 900 : 2200);
+        });
+      });
+    }
+    $(o.start).addEventListener('click', function () {
+      list = shuffle(o.bank()).slice(0, o.n || 10); i = 0; got = 0; $(o.out).innerHTML = ''; $(o.start).style.display = 'none';
+      if (o.time) { left = o.time; if (timer) clearInterval(timer); timer = setInterval(function () { left--; $(o.out).dataset.t = left; var t = $(o.timer); if (t) t.textContent = '⏱ ' + left + ' s'; if (left <= 0) { var s = o.stars.forScore(got, list.length); o.stars.award(o.id, s); end('⏰ Time up! Score <b>' + got + ' / ' + list.length + '</b> · ' + '⭐'.repeat(s)); } }, 1000); }
+      next();
+    });
+  }
+  window.MTC = { $: $, fmt: fmt, segPick: segPick, shuffle: shuffle, rint: rint, gcd: gcd, frac: frac, stars: stars, mcqGame: mcqGame };
+  // PYQ year filter
+  segPick($('pyq-seg'), function (b) { var y = b.dataset.y; document.querySelectorAll('.pyq').forEach(function (p) { p.style.display = (y === 'all' || p.dataset.y === y) ? '' : 'none'; }); });
+})();
+
+</script>
+<script>
+/* MSVG: SVG diagram generators for Class 10 Maths notes (works in Node at build time and in the browser for labs) */
+(function (root) {
+  var F = "font-family=\"Mukta,sans-serif\"";
+  var COL = { ink: '#0E2148', grid: '#E3E9F3', axis: '#33415C', blue: '#1E88E5', red: '#E53935', green: '#2E9E5B', violet: '#7C5CD6', orange: '#F97316', teal: '#0F9D8F', rose: '#D6407A', gold: '#F59E0B', muted: '#5B6475' };
+  function r2(x) { return Math.round(x * 100) / 100; }
+  function esc(s) { return String(s).replace(/&(?!#?\w+;)/g, '&amp;').replace(/</g, '&lt;'); }
+  function txt(x, y, t, o) {
+    o = o || {};
+    return '<text x="' + r2(x) + '" y="' + r2(y) + '" font-size="' + (o.s || 14) + '" fill="' + (o.c || COL.ink) + '" text-anchor="' + (o.a || 'start') + '"' + (o.w ? ' font-weight="' + o.w + '"' : ' font-weight="700"') + (o.i ? ' font-style="italic"' : '') + (o.halo ? ' paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round"' : '') + '>' + t + '</text>';
+  }
+  function open(W, H, aria, extra) { return '<svg class="dg' + (extra ? ' ' + extra : '') + '" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(aria || 'Diagram') + '" ' + F + '>'; }
+  function line(x1, y1, x2, y2, c, w, dash, extra) { return '<line x1="' + r2(x1) + '" y1="' + r2(y1) + '" x2="' + r2(x2) + '" y2="' + r2(y2) + '" stroke="' + (c || COL.ink) + '" stroke-width="' + (w || 2) + '"' + (dash ? ' stroke-dasharray="' + dash + '"' : '') + ' stroke-linecap="round"' + (extra || '') + '/>'; }
+  function dot(x, y, c, r) { return '<circle cx="' + r2(x) + '" cy="' + r2(y) + '" r="' + (r || 5) + '" fill="' + (c || COL.ink) + '" stroke="#fff" stroke-width="2"/>'; }
+  var arrowN = 0;
+  function arrowDef(c) { var id = 'ar' + (arrowN++) + Math.floor(Math.random() * 1e6); return { id: id, def: '<marker id="' + id + '" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="' + c + '"/></marker>' }; }
+
+  /* Coordinate plane.
+     o: {W,H,x:[min,max],y:[min,max],step, curves:[{f,c,w,label,lx,dash}], lines:[{p:[x1,y1],q:[x2,y2],c,label,ext}],
+         pts:[{x,y,l,c,pos:'ne'|'nw'|'se'|'sw'|'n'|'s'|'e'|'w'}], polys:[{pts:[[x,y]..],fill,c}], segs:[{p,q,c,dash,w}], aria, title, labels:true} */
+  function plane(o) {
+    var W = o.W || 520, H = o.H || 400, pad = o.pad || 26;
+    var x0 = o.x[0], x1 = o.x[1], y0 = o.y[0], y1 = o.y[1];
+    var sx = (W - 2 * pad) / (x1 - x0), sy = (H - 2 * pad) / (y1 - y0);
+    if (o.equal) { var s = Math.min(sx, sy); sx = sy = s; }
+    var ox = pad - x0 * sx, oy = H - pad + y0 * sy;
+    if (o.equal) { ox += ((W - 2 * pad) - (x1 - x0) * sx) / 2; oy -= ((H - 2 * pad) - (y1 - y0) * sy) / 2; }
+    function X(x) { return ox + x * sx; } function Y(y) { return oy - y * sy; }
+    var st = o.step || 1, out = open(W, H, o.aria, o.cls);
+    out += '<rect width="' + W + '" height="' + H + '" rx="14" fill="#FBFDFF"/>';
+    var g = '';
+    for (var gx = Math.ceil(x0 / st) * st; gx <= x1 + 1e-9; gx += st) g += line(X(gx), Y(y0), X(gx), Y(y1), COL.grid, 1);
+    var sty = o.ystep || st; for (var gy = Math.ceil(y0 / sty) * sty; gy <= y1 + 1e-9; gy += sty) g += line(X(x0), Y(gy), X(x1), Y(gy), COL.grid, 1);
+    out += g;
+    var A = arrowDef(COL.axis);
+    out += '<defs>' + A.def + '</defs>';
+    if (y0 <= 0 && y1 >= 0) out += line(X(x0), Y(0), X(x1) + 4, Y(0), COL.axis, 2, null, ' marker-end="url(#' + A.id + ')"') + txt(X(x1) - 4, Y(0) - 8, 'X', { a: 'end', c: COL.axis, s: 13 });
+    if (x0 <= 0 && x1 >= 0) out += line(X(0), Y(y0), X(0), Y(y1) - 4, COL.axis, 2, null, ' marker-end="url(#' + A.id + ')"') + txt(X(0) + 8, Y(y1) + 12, 'Y', { c: COL.axis, s: 13 });
+    if (o.labels !== false) {
+      var ls = o.lstep || st;
+      for (var lx = Math.ceil(x0 / ls) * ls; lx <= x1 - 1e-9; lx += ls) if (Math.abs(lx) > 1e-9) out += txt(X(lx), Y(0) + 16, fmtN(lx), { a: 'middle', s: 11, c: COL.muted, w: 600 });
+      var lsy = o.ylstep || ls; for (var ly = Math.ceil(y0 / lsy) * lsy; ly <= y1 - 1e-9; ly += lsy) if (Math.abs(ly) > 1e-9) out += txt(X(0) - 6, Y(ly) + 4, fmtN(ly), { a: 'end', s: 11, c: COL.muted, w: 600 });
+      if (x0 <= 0 && x1 >= 0 && y0 <= 0 && y1 >= 0) out += txt(X(0) - 6, Y(0) + 15, 'O', { a: 'end', s: 12, c: COL.muted });
+    }
+    out += '<clipPath id="clp' + A.id + '"><rect x="' + X(x0) + '" y="' + Y(y1) + '" width="' + (X(x1) - X(x0)) + '" height="' + (Y(y0) - Y(y1)) + '"/></clipPath><g clip-path="url(#clp' + A.id + ')">';
+    (o.polys || []).forEach(function (p) { out += '<polygon points="' + p.pts.map(function (q) { return r2(X(q[0])) + ',' + r2(Y(q[1])); }).join(' ') + '" fill="' + (p.fill || 'rgba(30,136,229,.15)') + '" stroke="' + (p.c || 'none') + '" stroke-width="2"/>'; });
+    (o.curves || []).forEach(function (cv) {
+      var d = '', n = 240, pen = false;
+      for (var i = 0; i <= n; i++) {
+        var x = x0 + (x1 - x0) * i / n, y = cv.f(x);
+        if (!isFinite(y) || y > y1 + (y1 - y0) || y < y0 - (y1 - y0)) { pen = false; continue; }
+        d += (pen ? 'L' : 'M') + r2(X(x)) + ' ' + r2(Y(y)); pen = true;
+      }
+      out += '<path d="' + d + '" fill="none" stroke="' + (cv.c || COL.blue) + '" stroke-width="' + (cv.w || 3) + '"' + (cv.dash ? ' stroke-dasharray="' + cv.dash + '"' : '') + ' stroke-linejoin="round"/>';
+    });
+    (o.lines || []).forEach(function (L) {
+      // infinite line through p and q, clipped by the box
+      var p = L.p, q = L.q, dx = q[0] - p[0], dy = q[1] - p[1], big = 1000;
+      out += line(X(p[0] - dx * big), Y(p[1] - dy * big), X(p[0] + dx * big), Y(p[1] + dy * big), L.c || COL.red, L.w || 3, L.dash);
+    });
+    (o.segs || []).forEach(function (S) { out += line(X(S.p[0]), Y(S.p[1]), X(S.q[0]), Y(S.q[1]), S.c || COL.ink, S.w || 2.5, S.dash); });
+    out += '</g>';
+    (o.curves || []).concat(o.lines || []).forEach(function (cv) {
+      if (!cv.label) return; var lx = cv.lx, ly = cv.ly;
+      if (lx === undefined) return;
+      if (ly === undefined) ly = cv.f(lx);
+      out += txt(X(lx), Y(ly), cv.label, { c: cv.c || COL.blue, s: cv.ls || 14, halo: true, a: cv.la || 'start' });
+    });
+    (o.pts || []).forEach(function (P) {
+      if (!P.nodot) out += dot(X(P.x), Y(P.y), P.c || COL.ink, P.r);
+      if (P.l) {
+        var pos = P.pos || 'ne', dx = pos.indexOf('e') >= 0 ? 9 : pos.indexOf('w') >= 0 ? -9 : 0, dy = pos.indexOf('n') >= 0 ? -10 : pos.indexOf('s') >= 0 ? 20 : 5;
+        out += txt(X(P.x) + dx, Y(P.y) + dy, P.l, { a: dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle', c: P.lc || P.c || COL.ink, s: P.s || 13, halo: true });
+      }
+    });
+    if (o.title) out += txt(W / 2, 18, o.title, { a: 'middle', s: 14, c: COL.ink });
+    out += (o.extra ? o.extra({ X: X, Y: Y }) : '') + '</svg>';
+    return out;
+  }
+  function fmtN(v) { var s = (Math.round(v * 100) / 100).toString(); return s.replace('-', '−'); }
+
+  /* angle arc at vertex V between directions to A and B (screen coords) */
+  function arc(V, A, B, r, c, label, lr) {
+    var a1 = Math.atan2(A[1] - V[1], A[0] - V[0]), a2 = Math.atan2(B[1] - V[1], B[0] - V[0]);
+    var d = a2 - a1; while (d <= -Math.PI) d += 2 * Math.PI; while (d > Math.PI) d -= 2 * Math.PI;
+    var sweep = d > 0 ? 1 : 0;
+    var p1 = [V[0] + r * Math.cos(a1), V[1] + r * Math.sin(a1)], p2 = [V[0] + r * Math.cos(a1 + d), V[1] + r * Math.sin(a1 + d)];
+    var s = '<path d="M' + r2(p1[0]) + ' ' + r2(p1[1]) + ' A' + r + ' ' + r + ' 0 0 ' + sweep + ' ' + r2(p2[0]) + ' ' + r2(p2[1]) + '" fill="none" stroke="' + (c || COL.orange) + '" stroke-width="2.5"/>';
+    if (label) { var m = a1 + d / 2, R = lr || r + 14; s += txt(V[0] + R * Math.cos(m), V[1] + R * Math.sin(m) + 5, label, { a: 'middle', c: c || COL.orange, s: 13 }); }
+    return s;
+  }
+  function rightMark(V, A, B, s) {
+    s = s || 12;
+    var ua = unit(V, A), ub = unit(V, B);
+    var p1 = [V[0] + ua[0] * s, V[1] + ua[1] * s], p3 = [V[0] + ub[0] * s, V[1] + ub[1] * s], p2 = [p1[0] + ub[0] * s, p1[1] + ub[1] * s];
+    return '<path d="M' + r2(p1[0]) + ' ' + r2(p1[1]) + ' L' + r2(p2[0]) + ' ' + r2(p2[1]) + ' L' + r2(p3[0]) + ' ' + r2(p3[1]) + '" fill="none" stroke="' + COL.ink + '" stroke-width="1.8"/>';
+  }
+  function unit(P, Q) { var dx = Q[0] - P[0], dy = Q[1] - P[1], L = Math.hypot(dx, dy) || 1; return [dx / L, dy / L]; }
+  function lerp(P, Q, t) { return [P[0] + (Q[0] - P[0]) * t, P[1] + (Q[1] - P[1]) * t]; }
+  /* label placed outside a polygon vertex */
+  function vlab(P, C, t, o) { var u = unit(C, P); return txt(P[0] + u[0] * 16, P[1] + u[1] * 16 + 5, t, Object.assign({ a: 'middle', s: 15 }, o || {})); }
+  /* side label: midpoint pushed away from centroid */
+  function slab(P, Q, C, t, o) { var M = lerp(P, Q, 0.5), u = unit(C, M); return txt(M[0] + u[0] * 15, M[1] + u[1] * 15 + 5, t, Object.assign({ a: 'middle', s: 13.5, c: COL.muted, halo: true }, o || {})); }
+  function ticks(P, Q, n, c) { var M = lerp(P, Q, 0.5), u = unit(P, Q), nx = -u[1], ny = u[0], s = ''; for (var i = 0; i < n; i++) { var o = (i - (n - 1) / 2) * 5; var cx = M[0] + u[0] * o, cy = M[1] + u[1] * o; s += line(cx - nx * 6, cy - ny * 6, cx + nx * 6, cy + ny * 6, c || COL.ink, 2); } return s; }
+  function poly(pts, fill, c, w) { return '<polygon points="' + pts.map(function (p) { return r2(p[0]) + ',' + r2(p[1]); }).join(' ') + '" fill="' + (fill || 'none') + '" stroke="' + (c || COL.ink) + '" stroke-width="' + (w || 2.5) + '" stroke-linejoin="round"/>'; }
+  function centroid(pts) { var x = 0, y = 0; pts.forEach(function (p) { x += p[0]; y += p[1]; }); return [x / pts.length, y / pts.length]; }
+
+  /* Heights and distances scene.
+     o: {W,H, h (px height of object), d (px horizontal), kind:'tower'|'tree'|'building'|'kite'|'pole', angle label, obs:'person'|'none', depression:true, labels:{h:'h', d:'x', hyp:''}, ang:'60°'} */
+  function scene(o) {
+    var W = o.W || 560, H = o.H || 320, g = H - 46, ox = o.ox || 90, h = o.h || 200, d = o.d || 320, eye = o.eye || 0;
+    var Tx = ox + d, top = g - h, s = open(W, H, o.aria || 'Heights and distances diagram', o.cls);
+    s += '<defs><linearGradient id="sky' + (o.id || '') + '" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#CFE8FF"/><stop offset="1" stop-color="#F4FAFF"/></linearGradient></defs>';
+    s += '<rect width="' + W + '" height="' + H + '" rx="14" fill="url(#sky' + (o.id || '') + ')"/>';
+    s += '<rect x="0" y="' + g + '" width="' + W + '" height="' + (H - g) + '" fill="#CFE9C4"/>' + line(0, g, W, g, '#6B8F4E', 2);
+    // object
+    var k = o.kind || 'tower';
+    if (k === 'tower') s += '<path d="M' + (Tx - 16) + ' ' + g + ' L' + (Tx - 7) + ' ' + top + ' L' + (Tx + 7) + ' ' + top + ' L' + (Tx + 16) + ' ' + g + 'Z" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/>' + line(Tx - 12, g - h * 0.33, Tx + 12, g - h * 0.33, '#546E7A', 1.5) + line(Tx - 10, g - h * 0.66, Tx + 10, g - h * 0.66, '#546E7A', 1.5) + '<circle cx="' + Tx + '" cy="' + (top - 6) + '" r="6" fill="#E53935"/>';
+    else if (k === 'building') s += '<rect x="' + (Tx - 30) + '" y="' + top + '" width="60" height="' + h + '" fill="#FFE0B2" stroke="#A1662F" stroke-width="2"/>' + (function () { var w = ''; for (var yy = top + 12; yy < g - 20; yy += 26) { w += '<rect x="' + (Tx - 20) + '" y="' + yy + '" width="14" height="14" fill="#90CAF9"/><rect x="' + (Tx + 6) + '" y="' + yy + '" width="14" height="14" fill="#90CAF9"/>'; } return w; })();
+    else if (k === 'tree') s += '<rect x="' + (Tx - 6) + '" y="' + (top + h * 0.35) + '" width="12" height="' + (h * 0.65) + '" fill="#8D6E63"/><ellipse cx="' + Tx + '" cy="' + (top + h * 0.25) + '" rx="' + (h * 0.22) + '" ry="' + (h * 0.27) + '" fill="#43A047"/>';
+    else if (k === 'pole') s += line(Tx, g, Tx, top, '#455A64', 6);
+    else if (k === 'lighthouse') s += '<path d="M' + (Tx - 18) + ' ' + g + ' L' + (Tx - 9) + ' ' + (top + 14) + ' L' + (Tx + 9) + ' ' + (top + 14) + ' L' + (Tx + 18) + ' ' + g + 'Z" fill="#fff" stroke="#B71C1C" stroke-width="2"/><rect x="' + (Tx - 10) + '" y="' + top + '" width="20" height="14" fill="#FFD54F" stroke="#B71C1C" stroke-width="2"/>' + line(Tx - 14, g - h * 0.3, Tx + 14, g - h * 0.3, '#E53935', 7) + line(Tx - 12, g - h * 0.6, Tx + 12, g - h * 0.6, '#E53935', 7);
+    else if (k === 'kite') s += '<path d="M' + Tx + ' ' + (top - 16) + ' l12 16 l-12 22 l-12 -22z" fill="#E53935" stroke="#7F0000" stroke-width="1.5"/><path d="M' + Tx + ' ' + (top + 22) + ' q6 12 -4 20 q-8 8 2 18" fill="none" stroke="#7F0000" stroke-width="1.5"/>';
+    // observer
+    var Ox = ox, Oy = g - eye;
+    if (o.obs !== 'none') s += '<g transform="translate(' + (ox - 12) + ' ' + (g - 40) + ')"><circle cx="0" cy="6" r="6" fill="#FFCC80" stroke="#6D4C41"/><path d="M0 12 V28 M0 16 L-7 24 M0 16 L7 22 M0 28 L-5 40 M0 28 L5 40" stroke="#37474F" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>';
+    // lines
+    var P = [Ox, g], T = [Tx, top], B = [Tx, g];
+    s += line(P[0], P[1], B[0], B[1], COL.ink, 2.5);
+    s += line(B[0], B[1], T[0], T[1], COL.blue, 3);
+    s += line(P[0], P[1], T[0], T[1], o.string ? '#7F0000' : COL.red, 2.5, o.string ? null : '7 5');
+    s += rightMark(B, P, T, 13);
+    s += arc(P, B, T, 46, COL.orange, o.ang || 'θ', 64);
+    if (o.depression) { s += line(T[0], T[1], T[0] - d * 0.7, T[1], COL.muted, 1.8, '4 4') + arc(T, [T[0] - 50, T[1]], P, 40, COL.violet, o.dep || 'θ', 58); }
+    var L = o.labels || {};
+    if (L.h) s += txt(Tx + 22, (g + top) / 2 + 5, L.h, { c: COL.blue, s: 15, halo: true });
+    if (L.d) s += txt((Ox + Tx) / 2, g + 22, L.d, { a: 'middle', s: 15, halo: true });
+    if (L.hyp) { var M = lerp(P, T, 0.5); s += txt(M[0] - 12, M[1] - 10, L.hyp, { a: 'end', c: COL.red, s: 14, halo: true }); }
+    s += txt(Ox - 6, g + 22, L.A || 'A', { a: 'end', s: 15 }) + txt(Tx + 8, g + 22, L.B || 'B', { s: 15 }) + txt(Tx + 12, top - 2, L.C || 'C', { s: 15 });
+    if (o.title) s += txt(W / 2, 22, o.title, { a: 'middle', s: 15 });
+    return s + (o.extra || '') + '</svg>';
+  }
+
+  var MSVG = { COL: COL, txt: txt, open: open, line: line, dot: dot, plane: plane, arc: arc, rightMark: rightMark, unit: unit, lerp: lerp, vlab: vlab, slab: slab, ticks: ticks, poly: poly, centroid: centroid, scene: scene, r2: r2, esc: esc, arrowDef: arrowDef, fmtN: fmtN };
+  if (typeof module !== 'undefined' && module.exports) module.exports = MSVG; else root.MSVG = MSVG;
+})(this);
+
+</script>
+<script>
+(function () {
+  var $ = MTC.$, fmt = MTC.fmt, segPick = MTC.segPick, rint = MTC.rint, frac = MTC.frac, gcd = MTC.gcd, C = MSVG.COL;
+  function val(id) { var v = parseFloat($(id).value); return isFinite(v) ? v : 0; }
+  function isInt(x) { return Math.abs(x - Math.round(x)) < 1e-9; }
+  function n(x) { return fmt(x, 3); }
+  function br(x) { return x < 0 ? '(' + n(x) + ')' : n(x); }
+  // √N in simplest surd form (N a whole number), else decimal
+  function surd(N) {
+    if (!isInt(N)) return '√' + n(N) + ' ≈ ' + fmt(Math.sqrt(N), 3);
+    N = Math.round(N); if (N === 0) return '0';
+    var out = 1, rest = N;
+    for (var k = 2; k * k <= rest; k++) while (rest % (k * k) === 0) { rest /= k * k; out *= k; }
+    if (rest === 1) return String(out);
+    return (out > 1 ? out : '') + '√' + rest;
+  }
+  function surdLong(N) { var s = surd(N); return isInt(N) && s.indexOf('√') >= 0 ? s + ' ≈ ' + fmt(Math.sqrt(N), 2) : s; }
+  function q(x, d) { return isInt(x) && isInt(d) ? frac(Math.round(x), Math.round(d)) : n(x / d); }
+  function nice(r) { var raw = r / 8, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 5 ? 5 : 10) * p; }
+  function frame(pts) {
+    var xs = pts.map(function (p) { return p[0]; }).concat([0]), ys = pts.map(function (p) { return p[1]; }).concat([0]);
+    var x0 = Math.min.apply(0, xs), x1 = Math.max.apply(0, xs), y0 = Math.min.apply(0, ys), y1 = Math.max.apply(0, ys);
+    var span = Math.max(x1 - x0, y1 - y0, 2), st = nice(span), pad = st;
+    return { x: [Math.floor((x0 - pad) / st) * st, Math.ceil((x1 + pad) / st) * st], y: [Math.floor((y0 - pad) / st) * st, Math.ceil((y1 + pad) / st) * st], step: st, lstep: st * (span / st > 10 ? 2 : 1) };
+  }
+  function pt(P) { return '(' + n(P[0]) + ', ' + n(P[1]) + ')'; }
+  function plane(F, o) { return MSVG.plane(Object.assign({ W: 420, H: 380, x: F.x, y: F.y, step: F.step, lstep: F.lstep, equal: true }, o)); }
+
+  // ---------- Lab 1: distance ----------
+  (function () {
+    if (!$('lab-ds')) return;
+    var ids = ['ds-x1', 'ds-y1', 'ds-x2', 'ds-y2'];
+    function run() {
+      var v = ids.map(val), P = [v[0], v[1]], Q = [v[2], v[3]], dx = Q[0] - P[0], dy = Q[1] - P[1], d2 = dx * dx + dy * dy, T = [Q[0], P[1]];
+      var F = frame([P, Q]);
+      $('ds-svg').innerHTML = plane(F, { segs: [{ p: P, q: T, c: C.blue, w: 2.5, dash: '6 5' }, { p: T, q: Q, c: C.green, w: 2.5, dash: '6 5' }, { p: P, q: Q, c: C.red, w: 3.5 }], pts: [{ x: P[0], y: P[1], l: 'P' + pt(P), c: C.ink, pos: 'sw' }, { x: Q[0], y: Q[1], l: 'Q' + pt(Q), c: C.ink, pos: 'ne' }], aria: 'Segment PQ with its horizontal and vertical legs' });
+      var o = '<p>x₂ − x₁ = ' + n(Q[0]) + ' − ' + br(P[0]) + ' = <b>' + n(dx) + '</b></p>';
+      o += '<p>y₂ − y₁ = ' + n(Q[1]) + ' − ' + br(P[1]) + ' = <b>' + n(dy) + '</b></p>';
+      o += '<p>PQ² = ' + br(dx) + '² + ' + br(dy) + '² = ' + n(dx * dx) + ' + ' + n(dy * dy) + ' = <b>' + n(d2) + '</b></p>';
+      o += '<p>PQ = √' + n(d2) + ' = <b>' + surdLong(d2) + '</b> units</p>';
+      if (dx === 0 || dy === 0) o += '<p class="muted">The points lie on a line parallel to an axis, so the distance is just |' + (dx === 0 ? 'y₂ − y₁' : 'x₂ − x₁') + '|.</p>';
+      $('ds-out').innerHTML = o;
+    }
+    ids.forEach(function (id) { $(id).addEventListener('input', run); });
+    segPick($('ds-quick'), function (b) { b.dataset.v.split(',').forEach(function (x, i) { $(ids[i]).value = x; }); run(); });
+    run();
+  })();
+
+  // ---------- Lab 2: section formula ----------
+  (function () {
+    if (!$('lab-sc')) return;
+    var ids = ['sc-x1', 'sc-y1', 'sc-x2', 'sc-y2', 'sc-m', 'sc-n'];
+    function run() {
+      var v = ids.map(val), A = [v[0], v[1]], B = [v[2], v[3]], m = v[4], k = v[5];
+      if (m < 0 || k < 0 || m + k === 0) { $('sc-out').innerHTML = 'Use m, n ≥ 0 and not both zero.'; $('sc-svg').innerHTML = ''; return; }
+      var xn = m * B[0] + k * A[0], yn = m * B[1] + k * A[1], s = m + k, P = [xn / s, yn / s], F = frame([A, B]);
+      $('sc-svg').innerHTML = plane(F, { segs: [{ p: A, q: P, c: C.blue, w: 4 }, { p: P, q: B, c: C.green, w: 4 }], pts: [{ x: A[0], y: A[1], l: 'A' + pt(A), c: C.blue, pos: 'sw' }, { x: B[0], y: B[1], l: 'B' + pt(B), c: C.green, pos: 'ne' }, { x: P[0], y: P[1], l: 'P', c: C.red, r: 7, pos: 'nw' }], aria: 'Point P dividing AB in the ratio m to n' });
+      var o = '<p>m : n = ' + n(m) + ' : ' + n(k) + (m === k ? ' (mid-point)' : '') + '</p>';
+      o += '<p>x = (m x₂ + n x₁)/(m + n) = (' + n(m) + ' × ' + br(B[0]) + ' + ' + n(k) + ' × ' + br(A[0]) + ')/' + n(s) + ' = ' + n(xn) + '/' + n(s) + ' = <b>' + q(xn, s) + '</b></p>';
+      o += '<p>y = (m y₂ + n y₁)/(m + n) = (' + n(m) + ' × ' + br(B[1]) + ' + ' + n(k) + ' × ' + br(A[1]) + ')/' + n(s) + ' = ' + n(yn) + '/' + n(s) + ' = <b>' + q(yn, s) + '</b></p>';
+      o += '<p>P = <b>(' + q(xn, s) + ', ' + q(yn, s) + ')</b></p>';
+      var AP = Math.hypot(P[0] - A[0], P[1] - A[1]), PB = Math.hypot(B[0] - P[0], B[1] - P[1]);
+      o += '<p class="muted">Check: AP ≈ ' + fmt(AP) + ', PB ≈ ' + fmt(PB) + (PB > 1e-9 ? ', AP/PB ≈ ' + fmt(AP / PB, 3) + ' = m/n ✓' : '') + '</p>';
+      if (Math.abs(P[1]) < 1e-9) o += '<p>P lies on the <b>x-axis</b>.</p>';
+      if (Math.abs(P[0]) < 1e-9) o += '<p>P lies on the <b>y-axis</b>.</p>';
+      $('sc-out').innerHTML = o;
+    }
+    ids.forEach(function (id) { $(id).addEventListener('input', run); });
+    segPick($('sc-quick'), function (b) { b.dataset.v.split(',').forEach(function (x, i) { $(ids[i]).value = x; }); run(); });
+    run();
+  })();
+
+  // ---------- Lab 3: shape detective ----------
+  (function () {
+    if (!$('lab-sp4')) return;
+    var ids = ['sp-A', 'sp-B', 'sp-C', 'sp-D'], L = ['A', 'B', 'C', 'D'];
+    function parse(s) { var p = s.replace(/[()\s]/g, '').replace(/−/g, '-').split(','); var x = parseFloat(p[0]), y = parseFloat(p[1]); return isFinite(x) && isFinite(y) ? [x, y] : null; }
+    function d2(P, Q) { return (P[0] - Q[0]) * (P[0] - Q[0]) + (P[1] - Q[1]) * (P[1] - Q[1]); }
+    function eq(a, b) { return Math.abs(a - b) < 1e-9 * Math.max(1, a, b); }
+    function cross(P, Q, R) { return (Q[0] - P[0]) * (R[1] - P[1]) - (Q[1] - P[1]) * (R[0] - P[0]); }
+    function run() {
+      var V = ids.map(function (id) { return parse($(id).value); });
+      if (V.some(function (p) { return !p; })) { $('sp4-out').innerHTML = 'Type each vertex as x,y (for example 3,4).'; $('sp4-svg').innerHTML = ''; return; }
+      var S = [d2(V[0], V[1]), d2(V[1], V[2]), d2(V[2], V[3]), d2(V[3], V[0])], D1 = d2(V[0], V[2]), D2 = d2(V[1], V[3]);
+      var names = ['AB', 'BC', 'CD', 'DA'];
+      var o = '<p>' + S.map(function (s, i) { return names[i] + ' = ' + surd(s); }).join(', ') + '</p><p>Diagonals: AC = ' + surd(D1) + ', BD = ' + surd(D2) + '</p>';
+      var col = null;
+      for (var i = 0; i < 4 && !col; i++) { var a = V[i], b = V[(i + 1) % 4], c = V[(i + 2) % 4]; if (Math.abs(cross(a, b, c)) < 1e-9) col = L[i] + ', ' + L[(i + 1) % 4] + ', ' + L[(i + 2) % 4]; }
+      var verdict, why;
+      if (col) { verdict = 'Not a quadrilateral'; why = 'Points ' + col + ' are collinear (the longest of the three distances equals the sum of the other two).'; }
+      else {
+        var mid = eq(V[0][0] + V[2][0], V[1][0] + V[3][0]) && eq(V[0][1] + V[2][1], V[1][1] + V[3][1]);
+        var allEq = eq(S[0], S[1]) && eq(S[1], S[2]) && eq(S[2], S[3]), oppEq = eq(S[0], S[2]) && eq(S[1], S[3]), dEq = eq(D1, D2);
+        if (mid && allEq && dEq) { verdict = 'Square'; why = 'All four sides equal and the diagonals are equal.'; }
+        else if (mid && allEq) { verdict = 'Rhombus'; why = 'All four sides equal, but the diagonals are not equal.'; }
+        else if (mid && dEq) { verdict = 'Rectangle'; why = 'Opposite sides equal and the diagonals are equal.'; }
+        else if (mid) { verdict = 'Parallelogram'; why = 'Opposite sides equal (the diagonals bisect each other), diagonals not equal, sides not all equal.'; }
+        else if (oppEq) { verdict = 'Crossed figure'; why = 'Opposite sides are equal but the diagonals do not bisect each other: check the order of the vertices.'; }
+        else { verdict = 'Just a quadrilateral'; why = 'Opposite sides are not equal.'; }
+        if (mid) o += '<p class="muted">Mid-point of AC = mid-point of BD = ' + pt([(V[0][0] + V[2][0]) / 2, (V[0][1] + V[2][1]) / 2]) + '.</p>';
+      }
+      o += '<p>Verdict: <b>' + verdict + '</b>. ' + why + '</p>';
+      $('sp4-out').innerHTML = o;
+      var F = frame(V), cl = col ? C.red : C.violet;
+      $('sp4-svg').innerHTML = plane(F, { polys: [{ pts: V, fill: col ? 'rgba(229,57,53,.08)' : 'rgba(124,92,214,.16)', c: cl }], segs: col ? [] : [{ p: V[0], q: V[2], c: C.muted, w: 1.5, dash: '5 5' }, { p: V[1], q: V[3], c: C.muted, w: 1.5, dash: '5 5' }], pts: V.map(function (p, i) { return { x: p[0], y: p[1], l: L[i], c: C.ink, pos: ['sw', 'nw', 'ne', 'se'][i] }; }), aria: 'The four entered vertices joined in order' });
+    }
+    ids.forEach(function (id) { $(id).addEventListener('input', run); });
+    segPick($('sp4-quick'), function (b) { b.dataset.v.split('|').forEach(function (x, i) { $(ids[i]).value = x; }); run(); });
+    run();
+  })();
+
+  // ================= games =================
+  var ST = MTC.stars('mt-coord10-stars', { dd: 5, sp: 5, ax: 5 }, 'ga-total', 'Grid Master');
+  function uniq(arr, ans, filler) { var u = arr.filter(function (v, k) { return arr.indexOf(v) === k; }); var t = 1; while (u.length < 4) { u.push(filler(t++)); u = u.filter(function (v, k) { return u.indexOf(v) === k; }); } return u.slice(0, 4); }
+  function P2(x, y) { return '(' + fmt(x) + ', ' + fmt(y) + ')'; }
+
+  MTC.mcqGame({ id: 'dd', q: 'gd-q', opts: 'gd-opts', out: 'gd-out', start: 'gd-start', timer: 'gd-t', time: 90, n: 12, stars: ST, bank: function () {
+    var tri = [[3, 4], [6, 8], [5, 12], [8, 15], [9, 12], [1, 1], [1, 2], [2, 2], [1, 3], [2, 4], [3, 3], [4, 4]], out = [];
+    for (var i = 0; i < 16; i++) {
+      var t = tri[rint(0, tri.length - 1)], a = t[0] * (rint(0, 1) ? 1 : -1), b = t[1] * (rint(0, 1) ? 1 : -1);
+      if (rint(0, 1)) { var s = a; a = b; b = s; }
+      var x1 = rint(-6, 6), y1 = rint(-6, 6), x2 = x1 + a, y2 = y1 + b, N = a * a + b * b;
+      var ans = surd(N), w = [surd(Math.abs(a) + Math.abs(b)), String(Math.abs(a) + Math.abs(b)), surd(N + 2 * Math.abs(a * b)), surd(Math.abs(a * a - b * b) || 1)];
+      out.push({ q: 'Distance between ' + P2(x1, y1) + ' and ' + P2(x2, y2) + '?', opts: uniq([ans].concat(w), ans, function (k) { return surd(N + k); }), a: 0, why: 'Δx = ' + fmt(a) + ', Δy = ' + fmt(b) + ' ⇒ d = √(' + (a * a) + ' + ' + (b * b) + ') = ' + ans });
+    }
+    return out;
+  } });
+
+  MTC.mcqGame({ id: 'sp', q: 'gp-q', opts: 'gp-opts', out: 'gp-out', start: 'gp-start', n: 8, stars: ST, bank: function () {
+    var out = [];
+    for (var i = 0; i < 12; i++) {
+      var m = rint(1, 3), k = rint(1, 3); if (i % 4 === 0) { m = 1; k = 1; }
+      var g = gcd(m, k); m /= g; k /= g;
+      var dx = rint(-3, 3) || 2, dy = rint(-3, 3) || -1, Px = rint(-4, 4), Py = rint(-4, 4);
+      var A = [Px - m * dx, Py - m * dy], B = [Px + k * dx, Py + k * dy], s = m + k;
+      var ans = P2(Px, Py), sw = '(' + frac(m * A[0] + k * B[0], s) + ', ' + frac(m * A[1] + k * B[1], s) + ')';
+      var mid = '(' + frac(A[0] + B[0], 2) + ', ' + frac(A[1] + B[1], 2) + ')', sub = '(' + frac(m * B[0] - k * A[0], s) + ', ' + frac(m * B[1] - k * A[1], s) + ')';
+      var qs = m === k ? 'Mid-point of A' + P2(A[0], A[1]) + ' and B' + P2(B[0], B[1]) + '?' : 'P divides A' + P2(A[0], A[1]) + ' and B' + P2(B[0], B[1]) + ' in ' + m + ' : ' + k + '. P = ?';
+      out.push({ q: qs, opts: uniq([ans, sw, mid, sub], ans, function (t) { return P2(Px + t, Py - t); }), a: 0, why: 'x = (' + m + '×' + fmt(B[0]) + ' + ' + k + '×' + fmt(A[0]) + ')/' + s + ', y = (' + m + '×' + fmt(B[1]) + ' + ' + k + '×' + fmt(A[1]) + ')/' + s + ' ⇒ ' + ans });
+    }
+    return out;
+  } });
+
+  MTC.mcqGame({ id: 'ax', q: 'gx-q', opts: 'gx-opts', out: 'gx-out', start: 'gx-start', n: 8, stars: ST, bank: function () {
+    var out = [];
+    for (var i = 0; i < 12; i++) {
+      var p = rint(1, 7), r = rint(1, 7), g = gcd(p, r), xAxis = i % 2 === 0;
+      var u1 = rint(-6, 6), u2 = rint(-6, 6), s1 = rint(0, 1) ? 1 : -1;
+      var A = xAxis ? [u1, s1 * p] : [s1 * p, u1], B = xAxis ? [u2, -s1 * r] : [-s1 * r, u2];
+      var ans = p / g + ' : ' + r / g, opts = [ans, r / g + ' : ' + p / g, '1 : 1', (p + r) / g + ' : ' + r / g];
+      out.push({ q: 'In what ratio does the ' + (xAxis ? 'x' : 'y') + '-axis divide A' + P2(A[0], A[1]) + ' and B' + P2(B[0], B[1]) + '?', opts: uniq(opts, ans, function (t) { return (p / g + t) + ' : ' + r / g; }), a: 0, why: 'On the ' + (xAxis ? 'x-axis y' : 'y-axis x') + ' = 0: k = ' + p + '/' + r + ', so the ratio is ' + ans + ' (distances of A and B from the axis).' });
+    }
+    return out;
+  } });
+})();
+
+</script>
+</body>
+</html>
