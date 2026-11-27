@@ -11,7 +11,8 @@ window.MT_NOTES = {
   books: [
     { cls: 10, subject: "Maths", book: "NCERT Mathematics", chapters: [
       { title: "Real Numbers", label: "Chapter 1: colourful CBSE notes with factor trees, HCF–LCM Venn machine, bells and runners lab, proof builder, an activity for every topic, 3 games, CBSE board questions 2023–2026 with step marks, A–E practice and all NCERT answers", file: "notes/class10-maths-real-numbers.pdf", page: "notes/class10-maths-real-numbers.html" },
-      "Polynomials", "Pair of Linear Equations in Two Variables", "Quadratic Equations",
+      { title: "Polynomials", label: "Chapter 2: colourful CBSE notes with 20+ graphs, live parabola lab, build-a-polynomial and cubic labs, an activity for every topic, 3 games, CBSE board questions 2023–2026 with step marks, A–E practice and all NCERT answers", file: "notes/class10-maths-polynomials.pdf", page: "notes/class10-maths-polynomials.html" },
+      "Pair of Linear Equations in Two Variables", "Quadratic Equations",
       "Arithmetic Progressions", "Triangles", "Coordinate Geometry", "Introduction to Trigonometry",
       "Some Applications of Trigonometry",
       { title: "Circles", label: "Chapter 10: CBSE exam notes with all NCERT figures, Tangent Explorer, 4 labs, 6 games, CBSE 2023–2026 questions with step marks, section-wise practice and all 17 NCERT answers", file: "notes/class10-maths-circles.pdf", page: "notes/class10-maths-circles.html" },
