@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Trigonometry | Class 10 Maths Chapter 8 Notes, Trig Table, Identities and CBSE Questions | MT Classes Motihari</title>
+<meta name="description" content="Class 10 Maths (NCERT) Chapter 8, Introduction to Trigonometry: colourful CBSE board notes on the six trigonometric ratios, finding all ratios from one, the values of 0°, 30°, 45°, 60° and 90° with a quick table trick, evaluating expressions, the identities sin²A + cos²A = 1, 1 + tan²A = sec²A and 1 + cot²A = cosec²A with 8 proof tricks, a ratio explorer, one-ratio solver and identity checker, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<meta property="og:title" content="Introduction to Trigonometry | Class 10 Maths Chapter 8 Notes, Trig Table, Identities and CBSE Questions | MT Classes Motihari">
+<meta property="og:description" content="Class 10 Maths (NCERT) Chapter 8, Introduction to Trigonometry: colourful CBSE board notes on the six trigonometric ratios, finding all ratios from one, the values of 0°, 30°, 45°, 60° and 90° with a quick table trick, evaluating expressions, the identities sin²A + cos²A = 1, 1 + tan²A = sec²A and 1 + cot²A = cosec²A with 8 proof tricks, a ratio explorer, one-ratio solver and identity checker, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;
+--red:#D9534F;--redd:#9E2F2C;--redt:#FDEDEC;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}
+sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+
+/* hero */
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff;overflow:hidden}
+.hero-in{max-width:1080px;margin:0 auto;padding:28px 22px 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif;color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.5px;margin:22px 0 6px}
+.hero .sub{color:#CBD6EE;font-size:19px;margin:0 0 16px}
+.hero .pitch{color:#fff;max-width:34ch;font-size:19px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+.hero-atom svg{width:100%;max-width:400px;display:block;margin:0 auto}
+
+/* layout */
+main{max-width:820px;margin:0 auto;padding:0 18px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:-26px 0 34px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:22px;margin-bottom:8px}
+.toc ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
+.toc a{display:flex;gap:10px;padding:5px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a span{color:var(--goldd);font-weight:700;min-width:2.4em}
+section{margin:0 0 46px;scroll-margin-top:14px}
+.sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.sec-num{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid var(--gold);display:grid;place-items:center;font:800 19px 'Baloo 2',sans-serif;color:var(--navy);position:relative;background:#fff}
+.sec-num::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);border:2px solid var(--navy);top:2px;right:2px}
+.sec-head h2{font-size:clamp(26px,4.4vw,34px);font-weight:800}
+h3{font-size:23px;margin:28px 0 8px}
+h4{font-size:19px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:1.25em}
+li{margin:3px 0}
+b,strong{color:var(--navy);font-weight:700}
+.term{color:var(--navy);font-weight:700;background:linear-gradient(transparent 62%,#FFE6A3 0)}
+.muted{color:var(--muted)}
+.lead{font-size:19.5px}
+
+/* callouts */
+.box{border-radius:14px;padding:14px 18px;margin:16px 0}
+.box>h4:first-child{margin-top:0;font-size:18px}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.key{background:var(--goldt);border-left:6px solid var(--gold)}
+.think{background:var(--bluet);border:1.5px solid #B9CBEA}
+.alert{background:var(--redt);border-left:6px solid var(--red)}
+.alert h4{color:var(--redd)}
+.trick{background:#fff;border:2px dashed var(--gold)}
+.wow{background:var(--navy);color:#E9EEF8}
+.wow h4,.wow b{color:var(--gold)}
+.formula{display:grid;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:14px;padding:16px 18px;margin:16px 0}
+.formula div{font:700 20px 'Baloo 2',sans-serif;color:var(--navy)}
+.formula small{display:block;font:400 15px 'Mukta',sans-serif;color:var(--muted)}
+
+/* figures */
+.fig{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:18px 0}
+.fig svg.dg{width:100%;height:auto;display:block}
+.dg text{font-family:'Mukta','Noto Sans',system-ui,sans-serif}
+.fig figcaption{font-size:15px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+.fig figcaption b{color:var(--navy)}
+.zoomable{cursor:zoom-in;position:relative}
+.zoom-hint{display:none}
+.overlay{position:fixed;inset:0;background:#F4F7FC;z-index:100;overflow:auto;-webkit-overflow-scrolling:touch}
+.overlay .ov-in{padding:58px 14px 24px;min-width:min-content}
+.overlay svg{display:block;margin:0 auto;height:auto}
+.overlay button{position:fixed;top:10px;right:12px;z-index:101;border:0;border-radius:999px;background:var(--navy);color:#fff;font:700 16px 'Mukta',sans-serif;padding:8px 16px;cursor:pointer}
+
+/* grids of small diagrams */
+.atom-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.atom-grid.four{grid-template-columns:repeat(4,1fr)}
+.atom-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:6px 4px 8px;text-align:center}
+.atom-card svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto}
+.atom-card figcaption{font-size:14px;line-height:1.3;display:flex;flex-direction:column;border:0;margin:2px 0 0;padding:0}
+.atom-card .cfg{font-weight:700;color:var(--goldd)}
+.val-grid,.iso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.val-card,.iso-card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.val-card h4{margin:0;color:var(--goldd)}
+.val-card svg,.iso-card svg{width:100%;height:auto;display:block}
+.val-card figcaption,.iso-card figcaption{font-size:14.5px;line-height:1.4;color:var(--ink);border:0;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dalton-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.dalton{margin:0;text-align:center}
+.dalton svg{width:62px;height:62px;display:block;margin:0 auto}
+.dalton figcaption{font-size:14px;border:0;margin:2px 0 0;padding:0}
+.tl-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:none}
+.tl-step{position:relative;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:15px;line-height:1.35;margin:0}
+.tl-step svg{width:96px;height:96px;margin:2px 0 4px}
+.tl-step .tl-yr{color:var(--goldd);font-weight:700;font-size:14px}
+.tl-num{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 14px/26px 'Baloo 2',sans-serif}
+.iso{display:inline-flex;align-items:center;font-weight:700}
+.iso-n{display:inline-flex;flex-direction:column;align-items:flex-end;font-size:.62em;line-height:1.05;margin-right:1px}
+.iso-n sup,.iso-n sub{line-height:1.05;vertical-align:baseline;position:static}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:9px 10px}
+td{padding:8px 10px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#F7F9FD}
+.tbl-c td,.tbl-c th{text-align:center}
+.compact td,.compact th{padding:6px 7px;font-size:15px}
+
+/* element tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0}
+.tile{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 8px;text-align:center;line-height:1.2}
+.tile b{display:block;font:800 26px 'Baloo 2',sans-serif;color:var(--navy)}
+.tile span{font-size:13.5px;color:var(--ink)}
+.tile i{display:block;font-size:12.5px;color:var(--goldd)}
+.tile.latin{border-color:var(--gold);background:var(--goldt)}
+
+/* scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sci{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+.sci .ini{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.sci h4{margin:0;font-size:18px}
+.sci p{margin:2px 0 0;font-size:15.5px;line-height:1.45}
+.sci .yr{color:var(--goldd);font-weight:700}
+
+/* Q&A */
+details.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+details.qa summary{cursor:pointer;padding:11px 0;font-weight:600;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";flex:none;width:24px;height:24px;border-radius:50%;background:var(--goldt);color:var(--goldd);font-weight:800;display:grid;place-items:center;margin-top:2px}
+details.qa[open] summary::before{content:"−"}
+details.qa .ans{padding:0 0 12px 34px}
+.qnum{color:var(--goldd);font-weight:800;flex:none}
+.group-title{font-size:21px;margin:26px 0 6px}
+
+/* quiz */
+.quiz{counter-reset:q}
+.q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.q p{font-weight:600;margin-bottom:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{font:500 16px 'Mukta',sans-serif;text-align:left;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.opt.right{background:#E7F6EC;border-color:var(--green);color:#185C34;font-weight:700}
+.opt.wrong{background:var(--redt);border-color:var(--red);color:var(--redd)}
+.why{display:none;margin:8px 0 0;font-size:15.5px;color:var(--muted)}
+.q.done .why{display:block}
+.score{font-weight:700;color:var(--navy)}
+
+footer{background:var(--navy);color:#CBD6EE;padding:28px 18px;text-align:center;font-size:15.5px}
+footer b{color:var(--gold)}
+footer a{color:#fff}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-in{grid-template-columns:1fr;padding:20px 18px 46px}
+  .hero-atom{order:-1;margin:-4px 0 -18px}
+  .hero-atom svg{max-width:220px}
+  .hero h1{margin-top:8px}
+  .toc ol{grid-template-columns:1fr}
+  .atom-grid{grid-template-columns:repeat(3,1fr)}
+  .atom-grid.four{grid-template-columns:repeat(2,1fr)}
+  .val-grid{grid-template-columns:1fr}
+  .val-card svg{max-width:320px;margin:0 auto}
+  .dalton-grid{grid-template-columns:repeat(4,1fr)}
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .sci-grid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .fig{padding:10px;margin-left:-8px;margin-right:-8px}
+  .zoomable .zoom-hint{display:block;font-size:13px;color:var(--navy2);font-weight:600;margin-top:6px}
+  table{font-size:15px}
+}
+@media (max-width:420px){.iso-card figcaption{font-size:13px}.iso-grid{gap:6px}.iso-card{padding:6px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .progress,.btns,.toc,.zoom-hint,.overlay,.no-print{display:none!important}
+  .hero{background:#fff;color:var(--navy);border-bottom:3px solid var(--gold)}
+  .hero h1,.hero .pitch,.hero .sub,.brand{color:var(--navy)!important}
+  .hero-atom svg{max-width:180px}
+  section{margin-bottom:18px}
+  .fig,.box,.q,details.qa,.sci,.tl-step,.atom-card,.card,.idea,.formula,tr{break-inside:avoid}
+  h2,h3,h4,.sec-head{break-after:avoid}
+  .hero-in{grid-template-columns:1fr 140px;padding:6px 0 10px}
+  .hero-atom{order:0;margin:0}
+  .hero h1{font-size:34pt;margin:8px 0 4px}
+  .hero .pitch{max-width:none}
+  main{padding:0}
+  .fig{padding:8px;margin:10px 0}
+  .fig svg.dg.narrow,.duo>svg{max-width:300px}
+  .fig svg.dg{max-height:330px}
+  .cards2 svg,.lith-grid svg{max-height:200px}
+  .atom-grid{grid-template-columns:repeat(6,1fr)}
+  .val-grid,.iso-grid{grid-template-columns:repeat(3,1fr)}
+  .tl-grid{grid-template-columns:repeat(6,1fr)}
+  .tl-step svg{width:70px;height:70px}
+  .sci-grid{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr 1fr}
+  .cards2.stack-m{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .opt[data-c]{background:#E7F6EC;border-color:var(--green);font-weight:700}
+  .why{display:block}
+  footer{background:#fff;color:var(--ink);border-top:2px solid var(--gold)}
+}
+
+/* phone-friendly figure layouts */
+.fig svg.dg.narrow{max-width:470px;margin:0 auto}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{margin:0;background:#FBFCFF;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font-size:15px;line-height:1.4;color:var(--ink);border:0;margin:8px 0 0;padding:0;display:flex;flex-direction:column;text-align:center}
+.card figcaption b{font-size:16px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+.duo>svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block}
+.legend{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.legend li{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:16.5px;line-height:1.45}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center;margin-top:1px}
+.pkey{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14.5px;margin-top:10px}
+.pkey span{display:inline-flex;align-items:center;gap:6px}
+.pkey i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.pk-p{background:var(--red);border:1.5px solid var(--redd)}.pk-n{background:#8D9AB3;border:1.5px solid #56647F}.pk-e{background:var(--gold);border:1.5px solid var(--navy)}
+.sizes{display:grid;gap:10px}
+.sizes div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.sizes div span{font-weight:600;color:var(--muted)}
+.sizes div b{font:800 28px 'Baloo 2',sans-serif;color:var(--navy)}
+.sizes div b.red{color:var(--redd)}
+.sizes p{margin:4px 0 0;font-size:16.5px}
+.lith-grid{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:10px;align-items:stretch}
+.nota{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:6px 4px}
+.nota p{margin:0;display:flex;flex-direction:column;font-size:15.5px;line-height:1.3}
+.nota p b{font-size:17px}
+.nota-l{display:grid;gap:34px;text-align:right}
+.nota-l .z b{color:var(--redd)}
+.nota-sym{display:flex;align-items:center;font-family:'Baloo 2',sans-serif;color:var(--navy)}
+.nota-sym .nn{display:flex;flex-direction:column;align-items:flex-end;font-weight:800;font-size:34px;line-height:1.15;margin-right:4px}
+.nota-sym .zz{color:var(--redd)}
+.nota-sym .ss{font-weight:800;font-size:96px;line-height:1}
+.calc p{font-size:17px}
+.calc .big{font:700 21px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.gold{color:var(--goldd)!important}
+.ideas{display:grid;gap:10px;margin:14px 0}
+.idea{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:10px 14px}
+.idea h4{margin:0 0 2px;font-size:18px}
+.idea h4 span{font:600 14.5px 'Mukta',sans-serif;color:var(--goldd);margin-left:6px}
+.idea p{margin:0;font-size:16.5px}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr;gap:12px}
+  .cards2.stack-m{grid-template-columns:1fr}
+  .cards2.stack-m svg{max-width:360px;margin:0 auto}
+  .lith-grid{grid-template-columns:1fr 1fr}
+  .lith-grid .big{grid-column:1/-1}
+  .lith-grid .big svg{max-width:260px;margin:0 auto}
+  .card figcaption{font-size:14px}
+  .nota{gap:8px}
+  .nota p{font-size:13.5px}.nota p b{font-size:14.5px}
+  .nota-sym .ss{font-size:72px}.nota-sym .nn{font-size:26px}
+  .nota-l{gap:22px}
+  .legend li{font-size:16px}
+}
+.sec-num.word{font-size:14px;letter-spacing:-.2px}
+th small{font-weight:400;opacity:.85;font-size:12px}
+@media (max-width:760px){
+  .opts{grid-template-columns:1fr 1fr}
+  .formula div{font-size:17px}
+  .nota{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nota-sym{order:-1}
+  .nota-l{display:flex;gap:18px;text-align:center}
+  .nota p{font-size:14.5px}.nota p b{font-size:15.5px}
+}
+
+
+/* photo/raster diagrams */
+.fig img{width:100%;height:auto;display:block;border-radius:8px}
+.fig.narrow img{max-width:520px;margin:0 auto}
+.fig.small img{max-width:380px;margin:0 auto}
+.fig.tiny img{max-width:260px;margin:0 auto}
+.overlay img{display:block;margin:0 auto;height:auto;max-width:none;background:#fff;border-radius:8px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0;align-items:stretch}
+.figrow .fig{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.figrow .fig figcaption{font-size:14px;text-align:center}
+.inl{display:inline-block;vertical-align:middle;max-height:1.9em;width:auto}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:40px;margin:10px 0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.proof{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy2);border-radius:12px;padding:12px 16px;margin:14px 0}
+.proof h4{margin-top:0}
+.proof .tbl-wrap{margin:8px 0}
+.chem{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.chem small{font:400 14px 'Mukta',sans-serif;color:var(--muted);white-space:normal;display:block}
+.back{display:inline-block;margin:14px 0 0;color:#CBD6EE;font-size:15px}
+.hero .back{color:#CBD6EE;text-decoration:none}
+@media (max-width:760px){.figrow{grid-template-columns:repeat(2,minmax(0,1fr))}.chem{font-size:15px}}
+@media print{.overlay{display:none}.fig img{max-height:330px;width:auto;max-width:100%;margin:0 auto}}
+.flow{list-style:none;padding:0;margin:16px auto;display:grid;justify-items:center;max-width:540px}
+.flow li{background:#fff;border:1.5px solid var(--navy2);border-radius:12px;padding:8px 14px;text-align:center;width:100%;margin:0;font-weight:600;line-height:1.4}
+.flow li:first-child{background:var(--goldt);border-color:var(--gold)}
+.flow li:last-child{background:var(--navy);border-color:var(--navy);color:#fff}
+.flow li+li{margin-top:28px;position:relative}
+.flow li+li::before{content:"↓";position:absolute;top:-27px;left:50%;transform:translateX(-50%);color:var(--goldd);font:800 22px/26px 'Baloo 2',sans-serif}
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.box.calc{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--gold)}
+.box.calc .fig{margin:10px 0}
+.cards2>.fig{margin:0}
+
+
+/* chapter 9 extras */
+.snap .tbl-wrap table{font-size:15.5px}
+.snap .box.calc{margin:0}
+.box.calc .big{margin:6px 0 0}
+.ans .fig{margin:6px 0 10px}
+.chem{white-space:normal}
+
+/* chapter 3 extras: hero picture, tools, flowcharts */
+.hero-pic img{width:100%;height:auto;max-width:440px;display:block;margin:0 auto;border-radius:18px;border:3px solid var(--gold);box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
+.tool{background:#fff;border:2px solid var(--navy);border-radius:16px;padding:14px 16px;margin:18px 0}
+.tool>h4:first-child{margin:0 0 4px;font-size:19px}
+.tool .hint{font-size:15px;color:var(--muted);margin:0 0 10px}
+.tool input[type=range]{display:block;width:100%;accent-color:#0E2148;margin:6px 0 2px}
+.tool label{font-weight:600;font-size:16px}
+.tool svg{width:100%;height:auto;display:block}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.seg button,.tbtn{font:600 15.5px 'Mukta',sans-serif;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);background:#FBFCFF;color:var(--ink);cursor:pointer}
+.seg button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tbtn.solid{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.readout{background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:8px 12px;font-weight:600;margin-top:10px}
+.readout b{font:800 19px 'Baloo 2',sans-serif}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+.row-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0}
+.row-in input[type=number]{width:110px;font:600 17px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+.bar{height:22px;border-radius:8px;background:#EEF2F9;overflow:hidden;margin:4px 0 8px}
+.bar i{display:block;height:100%;border-radius:8px}
+.tree{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.tree>div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.tree h4{margin:0 0 8px;text-align:center;background:var(--navy);color:#fff;border-radius:10px;padding:6px}
+.tree .lvl{border-left:3px solid var(--gold);padding-left:10px;margin:8px 0}
+.tree .lvl b{display:block}
+.tree .lvl span{font-size:15px;color:var(--muted)}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.cards3 .fig{margin:0;display:flex;flex-direction:column}
+.cards3 .fig figcaption{font-size:14.5px}
+.cards3 .fig p{font-size:15px;margin:6px 0 0;line-height:1.45}
+.who{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px;margin:0}
+.who .clue{font:700 19px 'Baloo 2',sans-serif;color:var(--navy);min-height:3em;margin:4px 0 10px}
+.who .opts{margin-bottom:8px}
+.yes{color:var(--green);font-weight:700}.no{color:var(--redd);font-weight:700}
+@media (max-width:760px){
+  .tool-grid,.tree{grid-template-columns:1fr}
+  .cards3{grid-template-columns:1fr 1fr}
+  .hero-pic{order:-1;margin:0 0 -8px}
+  .hero-pic img{max-width:340px}
+}
+@media print{.hero-pic{order:0!important;margin:0!important}.hero-pic img{max-width:200px}.fig img{max-height:240px!important}.cards3 .fig img,.cards2 .fig img{max-height:200px!important}.duo{grid-template-columns:1fr 1fr!important}.ideas{gap:6px}.cards3{grid-template-columns:repeat(3,1fr)}.tree{grid-template-columns:1fr 1fr}.hero-in{grid-template-columns:1fr 200px}}
+
+/* chapter 11 extras */
+.hero h1{font-size:clamp(36px,6vw,60px)}
+hr.soft{border:0;border-top:1px dashed var(--line);margin:14px 0}
+.bead-found{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bead-found span{display:inline-flex;gap:3px;padding:4px 7px;border:1.5px solid var(--line);border-radius:999px;background:#FBFCFF}
+.bead-found i{width:14px;height:14px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.25)}
+.sci-photo{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:start}
+.sci-photo img{width:110px;height:auto;border-radius:12px;border:2px solid var(--gold);background:#fff}
+.sci-photo p{margin:0}
+.ans .fig{background:#fff}
+.cards2>.idea,.cards3>.idea{margin:0}
+.tool input[type=date]{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+@media (max-width:760px){.sci-photo{grid-template-columns:84px 1fr}.sci-photo img{width:84px}.cards3{grid-template-columns:1fr}}
+@media print{.sci-photo img{width:80px}}
+.sec-num.long{font-size:15px;letter-spacing:-.3px}
+@media print{.cards3{grid-template-columns:repeat(3,1fr)!important}.cards3 .fig img,.cards2 .fig img{max-height:160px!important}}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
+.vl{background:linear-gradient(135deg,#0E2148,#3730A3 60%,#7C3AED);border-radius:22px;padding:18px;color:#fff;box-shadow:0 14px 34px -18px rgba(14,33,72,.6)}
+.vl-head{display:flex;align-items:center;gap:12px;margin:2px 4px 12px}
+.vl-head .play{flex:none;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.vl-head h2{color:#fff;font-size:clamp(22px,4vw,28px)}
+.vl-head p{margin:0;color:#CBD6EE;font-size:16px;line-height:1.3}
+.vl video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.vl-ch{display:flex;flex-wrap:wrap;gap:8px;margin:12px 2px 2px}
+.vl-ch button{border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:5px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.vl-ch button b{color:var(--gold);font-weight:700;margin-right:4px}
+.vl-ch button.on,.vl-ch button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.vl-ch button.on b,.vl-ch button:hover b{color:var(--navy)}
+.vl-foot{margin:10px 4px 0;font-size:15px;color:#CBD6EE}
+@media(max-width:600px){.vl{padding:12px;border-radius:18px}.vl-ch{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.vl-ch button{flex:none}}
+.vl-foot a{color:var(--gold)}
+</style>
+<style>
+.pyq .qnum{flex:none}
+.yr{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px/1.2 'Mukta',sans-serif;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.pyq details.qa summary{flex-wrap:wrap;row-gap:4px}
+.pyq{margin:6px 0}
+.score2{font-weight:700;color:var(--navy)}
+.stepper{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.stepper .st{border:1.5px solid var(--line);border-radius:12px;padding:6px;text-align:center;background:#FBFCFF;opacity:.55}
+.stepper .st.past{opacity:.85}
+.stepper .st.now{opacity:1;border-color:var(--gold);background:var(--goldt);box-shadow:0 0 0 2px var(--gold)}
+.stepper .em{display:block;font-size:24px;line-height:1.2}
+.stepper .nm{font-size:13.5px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 15.5px 'Mukta',sans-serif;padding:7px 14px;border-radius:12px;border:1.5px solid var(--navy2);background:#fff;color:var(--navy);cursor:pointer}
+.chip.ok{background:#E3F4EA;border-color:var(--green);color:#1F5A38}
+.chip.shake{animation:shk .35s}
+@keyframes shk{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+#who .opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fig.wide img{max-width:760px;margin:0 auto}
+@media (max-width:760px){.stepper{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.pyq{display:block!important}.yr{background:none;color:var(--navy);border:1px solid var(--navy)}}
+</style>
+<style>
+/* chapter 14 probability */
+#bag-svg{max-width:300px;margin:0 auto}
+#spin-svg{max-width:300px;margin:0 auto}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.12;font-size:.86em;margin:0 2px}
+.fr>span{display:block;padding:0 3px}
+.fr>span:first-child{border-bottom:1.6px solid currentColor}
+.formula .fr{font-size:.92em}
+.big .fr{font-size:.82em}
+.ebar{text-decoration:overline;text-decoration-thickness:2px}
+.quote{margin:0 0 16px;padding:12px 18px;border-left:5px solid var(--gold);background:#fff;border-radius:0 12px 12px 0;font-style:italic;color:var(--navy2)}
+.quote span{display:block;font-style:normal;color:var(--muted);font-size:15px;text-align:right}
+.sci-photo .fig img{width:110px}
+.snap{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.snap .big{font-size:18px}
+.tool select.sel{font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px;background:#fff;max-width:100%}
+.deck{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:4px;margin:6px 0 4px}
+.pc{background:#fff;border:1.5px solid #9AA6BD;border-radius:6px;aspect-ratio:5/7;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;color:#1D2433;transition:opacity .2s,transform .2s}
+.pc b{font:800 15px 'Baloo 2',sans-serif;color:inherit}
+.pc i{font-style:normal;font-size:17px}
+.pc.red{color:#C0392B}
+.pc.off{opacity:.18}
+.pc:not(.off){border-color:var(--gold);background:#FFFBEF}
+.pc.pick{transform:scale(1.18);box-shadow:0 0 0 3px #2A4A86;opacity:1;z-index:1;position:relative}
+.bag-ctl{display:flex;flex-wrap:wrap;gap:8px 16px;margin:4px 0 8px}
+.bag-c{display:flex;align-items:center;gap:6px}
+.bag-c i{width:16px;height:16px;border-radius:50%;display:inline-block}
+.bag-c span{min-width:3.4em;font-weight:600}
+.bag-c b{min-width:1.4em;text-align:center;font:800 18px 'Baloo 2',sans-serif}
+.bag-c .tbtn{padding:2px 12px;font-size:18px;line-height:1.2}
+.bag-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:600}
+.bag-row i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.dgrid{font-size:14.5px}
+.dgrid th,.dgrid td{text-align:center;padding:6px 4px}
+.dgrid th.g{background:#6B7280}
+.dgrid th.b{background:#2A4A86;width:44px}
+.dgrid th.corner{font-size:12px;font-weight:600;background:var(--navy);white-space:nowrap}
+.dgrid td{transition:background .2s;white-space:nowrap;border-left:1px solid var(--line)}
+.dgrid tr:nth-child(even) td{background:#fff}
+.dgrid td.on,.dgrid tr:nth-child(even) td.on{background:#FFE6A3;color:#6B4A00;font-weight:700}
+.numgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px;margin:8px 0}
+.numgrid span{text-align:center;font-size:13.5px;padding:3px 0;border-radius:6px;background:#F4F7FC;color:#5B6475}
+.numgrid span.on{background:var(--gold);color:var(--navy);font-weight:700}
+.row-in input[type=number]{width:80px}
+.coin3d{width:96px;height:96px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font:800 42px 'Baloo 2',sans-serif;color:var(--navy);background:radial-gradient(circle at 35% 35%,#FFE7A6,#E3B23C 60%,#8A6510);border:3px solid #8A6510;box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+.coin3d.tail{background:radial-gradient(circle at 35% 35%,#E9EEF8,#9AA6BD 60%,#56647F);border-color:#56647F}
+.coin3d.flip{animation:flip .6s}
+@keyframes flip{0%{transform:rotateY(0) translateY(0)}50%{transform:rotateY(540deg) translateY(-26px)}100%{transform:rotateY(1080deg) translateY(0)}}
+.big-formula div{font-size:22px}
+@media (max-width:760px){
+  .deck{gap:2px}
+  .pc{border-radius:4px;border-width:1px}
+  .pc b{font-size:11px}.pc i{font-size:12px}
+  .dgrid{font-size:12px}
+  .dgrid th,.dgrid td{padding:5px 2px}
+  .dgrid th.corner{font-size:10px;white-space:normal}
+  .numgrid span{font-size:12px}
+  .big-formula div{font-size:17px}
+  .sci-photo .fig img{width:84px}
+}
+@media (prefers-reduced-motion:reduce){.coin3d.flip{animation:none}}
+@media print{.dgrid td{font-size:10pt}}
+</style>
+<style>
+/* chapter 13 statistics */
+.hero .pitch b,.hero .pitch i{color:var(--gold)}
+p.calc.big{font:700 20px 'Baloo 2',sans-serif;color:var(--navy);background:var(--goldt);border:1.5px solid var(--gold);border-radius:12px;padding:10px 14px}
+.starbar .gmenu{display:none}
+.gmenu.out{display:flex;margin:0 0 14px}
+.gmenu.out a{color:var(--navy);border-color:var(--line);background:#fff}
+.tcap{font:700 15px 'Mukta',sans-serif;color:var(--goldd);margin:14px 0 -8px}
+details.qa summary>span:last-child{min-width:0;flex:1}
+.pyq details.qa summary>span:last-child{flex:1 1 100%}
+details.qa summary .tbl-wrap{margin:8px 0 2px;font-weight:400}
+tr.tot td{background:var(--goldt)!important;font-weight:700;color:var(--navy);border-top:2px solid var(--gold)}
+table.horiz th:first-child,table.horiz td:first-child{text-align:left;white-space:nowrap}
+table.horiz td,table.horiz th{white-space:nowrap}
+.cards3 .idea p{font-size:16px}
+.proof .formula{margin:8px 0 0}
+.stp{display:inline-flex;align-items:center;gap:6px}
+.stp b{min-width:1.8em;text-align:center}
+.tbtn.mini{padding:0 9px;font-size:16px;line-height:1.5}
+.mini-lab{font-size:13.5px;color:var(--muted);margin-left:6px}
+#mo-btns{gap:4px 8px}
+.row-in label{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.row-in input[type=number]{width:96px}
+/* arcade */
+.starbar{position:sticky;top:6px;z-index:5;background:var(--navy);color:#fff;border-radius:16px;padding:10px 14px;margin:0 0 16px;box-shadow:0 10px 24px -14px rgba(14,33,72,.7)}
+.starbar>div:first-child{font:700 18px 'Baloo 2',sans-serif}
+.starbar b{color:var(--gold);font-size:24px;display:inline-block}
+.starbar b.pop{animation:pop .5s}
+@keyframes pop{50%{transform:scale(1.6)}}
+.starbar .bar{background:#24407A;height:10px;margin:6px 0 8px}
+.badge{display:inline-block;margin-left:8px;background:var(--gold);color:var(--navy);border-radius:999px;padding:1px 10px;font:700 14px 'Mukta',sans-serif}
+.gmenu{display:flex;flex-wrap:wrap;gap:6px}
+.gmenu a{color:#fff;text-decoration:none;font-size:14px;border:1px solid #4D6BA8;border-radius:999px;padding:2px 10px}
+.game{background:#fff;border:2px solid var(--navy);border-radius:18px;padding:14px 16px;margin:18px 0;scroll-margin-top:110px;box-shadow:0 8px 0 -2px var(--gold)}
+.game>h3{margin:0 0 4px}
+.game .hint{font-size:15.5px;color:var(--muted);margin:0 0 8px}
+.game svg{width:100%;height:auto;display:block}
+.game .clue{font:700 18px 'Baloo 2',sans-serif;color:var(--navy);margin:4px 0 8px}
+.bignum{font:800 26px 'Baloo 2',sans-serif;min-width:1.6em;text-align:center;color:var(--redd)}
+#ss-svg.level{background:#E7F6EC;border-radius:12px}
+.game input[type=range]{width:100%;accent-color:#E3B23C}
+.opts.three{grid-template-columns:repeat(3,1fr)}
+.mem{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:6px 0 10px}
+.mcard{position:relative;min-height:86px;border-radius:12px;border:2px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;padding:6px;font:600 14px/1.25 'Mukta',sans-serif;transition:transform .25s}
+.mcard .face{display:none}
+.mcard .back{font:800 30px 'Baloo 2',sans-serif;color:var(--gold)}
+.mcard.up,.mcard.done{background:#fff;color:var(--ink);transform:rotateY(180deg) scaleX(-1)}
+.mcard.up .face,.mcard.done .face{display:block}
+.mcard.up .back,.mcard.done .back{display:none}
+.mcard .face.sym{font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.mcard.done{border-color:var(--green);background:#E7F6EC}
+.case{background:#FBF7EC;border:1.5px dashed var(--goldd);border-radius:12px;padding:10px 12px}
+.case-tag{display:inline-block;background:var(--navy);color:var(--gold);font:700 13px 'Mukta',sans-serif;border-radius:6px;padding:2px 8px;margin-bottom:6px}
+.speed-top{display:flex;gap:16px;align-items:center}
+.timer{width:58px;height:58px;border-radius:50%;border:4px solid var(--gold);display:grid;place-items:center;font:800 22px 'Baloo 2',sans-serif;color:var(--navy)}
+.timer.low{border-color:var(--red);color:var(--redd);animation:pop 1s infinite}
+.game.flash-ok{box-shadow:0 0 0 4px var(--green)}
+.game.flash-bad{box-shadow:0 0 0 4px var(--red)}
+.slots{display:flex;flex-wrap:wrap;gap:6px;min-height:46px;background:#F4F7FC;border-radius:12px;padding:8px;margin:6px 0 10px}
+.slot{min-width:34px;height:32px;border-bottom:3px solid #B9CBEA;display:grid;place-items:center;font:700 17px 'Baloo 2',sans-serif;color:var(--navy);padding:0 4px}
+.slot.ok{border-color:var(--green)}
+.chip:disabled{opacity:.35;cursor:default}
+input.rung{width:84px;font:600 16px 'Mukta',sans-serif;padding:3px 6px;border:1.5px solid var(--line);border-radius:8px;text-align:center}
+input.rung.good{border-color:var(--green);background:#E7F6EC}
+input.rung.bad{border-color:var(--red);background:var(--redt)}
+@media (max-width:760px){.mem{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.mcard{min-height:78px;font-size:12px;padding:4px}.mcard .face.sym{font-size:18px}.opts.three{grid-template-columns:repeat(3,1fr)}.starbar>div:first-child{font-size:16px}.game{padding:12px}}
+@media (max-width:420px){.mcard{font-size:11px}}
+@media print{.tcap{margin-top:8px}tr.tot td{background:#fff!important}}
+</style>
+<style>
+/* chapter 12 surface areas and volumes */
+.kit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.kcard{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:10px 12px;text-align:center}
+.kcard svg{width:100%;max-width:130px;height:auto;display:block;margin:0 auto}
+.kcard svg text{font-family:'Mukta',sans-serif;fill:#0E2148;font-weight:700}
+.kcard h4{margin:4px 0 2px}
+.kcard p{margin:0;font:600 16px/1.55 'Mukta',sans-serif;color:var(--navy)}
+.kcard small{font-weight:400;color:var(--muted);font-size:13.5px}
+.fig.tiny img{max-width:200px}
+.proof .duo{align-items:start}
+.proof .duo .fig{margin:0}
+#sb-svg,#hu-svg{max-width:360px;margin:0 auto;background:linear-gradient(#F4F8FD,#fff);border-radius:12px}
+#sb-svg .vis,#hu-svg .vis{fill:#FFD978;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .vis2,#hu-svg .vis2{fill:#E8A93A;stroke:#0E2148;stroke-width:1.6;stroke-dasharray:5 3}
+#sb-svg .hid,#hu-svg .hid{fill:rgba(217,83,79,.14);stroke:#D9534F;stroke-width:2.4;stroke-dasharray:7 5}
+#sb-svg .wat{fill:#5DB7F0;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .air{fill:#fff;stroke:#0E2148;stroke-width:2}
+#sb-svg .ol{fill:#F2F6FB;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .ol2{fill:none;stroke:#0E2148;stroke-width:2;stroke-linejoin:round}
+#sb-svg .olh{fill:none;stroke:#7C8AA5;stroke-width:1.5;stroke-dasharray:4 4}
+.dg .lab,svg .lab{font:600 13px 'Mukta',sans-serif;fill:#0E2148}
+.sb-grid{align-items:start}
+.sb-title{font-size:16px;margin:0 0 8px}
+.sb-mode{margin:10px 0 0;justify-content:center}
+.sb-out ul{margin:2px 0 8px}
+.sb-out p{margin:4px 0}
+.sb-out .sb-hid{color:var(--redd);font-weight:500;font-size:15.5px}
+.sb-out .sb-total{font:700 19px 'Baloo 2',sans-serif;color:var(--navy)}
+.sb-out .sb-total b{color:var(--goldd)}
+#sh-svg{max-width:320px;margin:0 auto}
+.melt-row{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:start}
+.melt-row>div>b{display:block;margin-bottom:4px}
+.melt-arrow{font:800 30px 'Baloo 2',sans-serif;color:var(--goldd);align-self:center}
+.mt-in{display:flex!important;align-items:center;gap:6px;margin:6px 0;font-size:15.5px}
+.mt-in input{width:90px;font:600 16px 'Mukta',sans-serif;padding:4px 8px;border:1.5px solid var(--line);border-radius:10px}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.ok{background:#E3F4EA!important;border-color:var(--green)!important;color:#1F5A38!important}
+.de-lines{flex-direction:column;align-items:stretch}
+.de-lines .chip{text-align:left}
+.mcard .face{font-size:13.5px}
+.cards3 .idea h4{font-size:17px}
+@media (max-width:760px){
+  .kit{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kcard p{font-size:15px}
+  .melt-row{grid-template-columns:1fr}
+  .proof .duo .fig img{max-height:240px;width:auto;max-width:100%;margin:0 auto}
+  .melt-arrow{transform:rotate(90deg);justify-self:center}
+}
+@media print{.kit{grid-template-columns:repeat(3,1fr)}.kcard,.proof{break-inside:avoid}.fig.tiny img{max-height:180px!important}}
+.flow li:last-child b{color:var(--gold)}
+
+/* chapter 11 areas related to circles */
+#ex-svg,#ck-svg,#gz-svg,#sl-svg,#dz-svg,#nm-svg,#gs-svg{max-width:320px;margin:0 auto}
+.kcard p .fr{font-size:.8em}
+.tbl-c .fr{font-size:.85em}
+.cards2 .flow{width:100%}
+.tool .mini-lab input{vertical-align:middle;margin-right:4px}
+#ex-mode,#gz-mode{justify-content:center}
+.sb-out ul{padding-left:1.1em}
+.yr{white-space:normal}
+.pyq .qnum{flex:0 1 auto;min-width:0}
+@media (max-width:760px){#nm-opts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<style>
+/* chapter 10 circles */
+#tx-svg{max-width:360px;margin:0 auto}
+#qd-svg,#ic-svg,#an-svg,#pa-svg,#ls-svg,#tc-svg{max-width:330px;margin:0 auto}
+#tx-mode{justify-content:center}
+#pb-done{margin:6px 0 10px}
+#pb-done li{font-size:16px}
+.chip:disabled{opacity:.55;cursor:default}
+.figrow .fig img{max-height:220px;width:auto;max-width:100%;margin:0 auto}
+@media (max-width:760px){#ls-opts{grid-template-columns:1fr}}
+@media print{.figrow{grid-template-columns:repeat(3,1fr)}}
+</style>
+<style>
+/* class 8 chapter 8 matter */
+.hero-pic img{border-radius:18px}
+.mk{display:inline-block;background:#E7F6EC;color:#185C34;border:1px solid #2E7D4F;border-radius:6px;font:700 12.5px/1.4 'Mukta',sans-serif;padding:0 6px;margin-left:4px;vertical-align:middle}
+#pv-svg,#el-svg,#fs-svg{max-width:360px;margin:0 auto}
+#mx-svg{max-width:260px;margin:0 auto}
+#mo-svg{max-width:420px;margin:0 auto 8px}
+#pv-svg text,#mo-svg text,#el-svg text,#fs-svg text,#mx-svg text{font-family:'Mukta',sans-serif}
+.jig{animation:jig 2.4s ease-in-out infinite}
+@keyframes jig{0%,100%{transform:translate(0,0)}25%{transform:translate(1.5px,-1px)}50%{transform:translate(-1px,1.5px)}75%{transform:translate(1px,1px)}}
+.bub{animation:bub 1.8s linear infinite}
+@keyframes bub{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-34px);opacity:0}}
+#pv-seg button,#mx-seg button{font-size:14.5px;padding:5px 11px}
+.fig.plain{margin:0}
+.duo>.fig{margin:0}
+.cards2>.fig{display:flex;flex-direction:column;justify-content:space-between}
+.mcard .face{font-size:13px}
+.qa .ans .fig{max-width:260px}
+.bank-intro{background:var(--bluet);border-radius:10px;padding:8px 12px;font-size:16px}
+.chip span{vertical-align:middle}
+@media (prefers-reduced-motion:reduce){.jig,.bub{animation:none}}
+@media (max-width:760px){.mem{grid-template-columns:repeat(4,minmax(0,1fr))}.mcard .face{font-size:11.5px}}
+@media print{.mk{border-color:#2E7D4F}#water .cards2 .fig img,#ironsulfur .cards2 .fig img{max-height:300px!important}}
+</style>
+<style>
+/* class 8 chapter 3 health: colourful section themes */
+.t-sun{--c:#F59E0B;--cg:#F97316;--cd:#9A4A05;--ct:#FFF4DC;--cl:#FBD38D}
+.t-violet{--c:#7C5CD6;--cg:#C054D6;--cd:#4B2E99;--ct:#F3EEFF;--cl:#D6C8F7}
+.t-leaf{--c:#2E9E5B;--cg:#8BC34A;--cd:#1D6B3C;--ct:#EAF8EE;--cl:#B7E2C4}
+.t-sky{--c:#1E88E5;--cg:#26C6DA;--cd:#0D4F8B;--ct:#E7F3FD;--cl:#B5D8F7}
+.t-coral{--c:#E8574A;--cg:#F59E42;--cd:#9C2A20;--ct:#FFEEEA;--cl:#F8C3BB}
+.t-rose{--c:#D6407A;--cg:#F27BA8;--cd:#8E1F4D;--ct:#FDEBF2;--cl:#F4BCD2}
+.t-teal{--c:#0F9D8F;--cg:#3CC3D0;--cd:#0A5F57;--ct:#E3F7F5;--cl:#A8E3DC}
+.t-indigo{--c:#3949AB;--cg:#8E24AA;--cd:#222D7A;--ct:#ECEEFB;--cl:#C3C9EF}
+.t-navy{--c:#0E2148;--cg:#2A4A86;--cd:#0E2148;--ct:#EEF3FB;--cl:#C9D6EC}
+
+/* hero */
+.hero{background:radial-gradient(90% 120% at 90% 10%,#20B39A 0,transparent 60%),radial-gradient(80% 110% at 0% 100%,#7C5CD6 0,transparent 55%),linear-gradient(135deg,#0B5E6B,#0E2148)}
+.hero h1{font-size:clamp(34px,5.6vw,58px)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FFD25E,#FF8A5B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ecg-hero{display:block;width:100%;max-width:440px;height:44px;margin:0 0 8px}
+.ecg-hero path{stroke-dasharray:900;stroke-dashoffset:900;animation:ecg 3.2s ease-in-out infinite}
+@keyframes ecg{0%{stroke-dashoffset:900}45%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+
+/* colourful contents */
+.toc ol{gap:6px 14px}
+.toc a{border:0;border-radius:12px;padding:6px 8px;background:var(--ct);align-items:center}
+.toc a span{background:linear-gradient(120deg,var(--c),var(--cg));color:#fff;border-radius:8px;padding:0 6px;font-size:14px;min-width:3.2em;text-align:center}
+.toc a:hover{outline:2px solid var(--cl)}
+
+/* themed section cards */
+main>section.th{position:relative;background:linear-gradient(180deg,var(--ct) 0,#fff 300px);border:2px solid var(--cl);border-radius:24px;padding:20px 16px 12px;box-shadow:0 14px 30px -24px var(--cd)}
+main>section.th::before{content:attr(data-emoji);position:absolute;right:10px;top:78px;font-size:96px;line-height:1;opacity:.09;pointer-events:none}
+.th>.sec-head{background:linear-gradient(115deg,var(--c),var(--cg));margin:-20px -16px 18px;padding:14px 16px;border-radius:22px 22px 0 0;position:relative;overflow:hidden}
+.th>.sec-head::after{content:"";position:absolute;right:-10px;top:-10px;bottom:-10px;width:45%;background-image:radial-gradient(rgba(255,255,255,.28) 2px,transparent 2.6px);background-size:14px 14px;pointer-events:none}
+.th.pat-wave>.sec-head::after{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.16) 0 8px,transparent 8px 18px)}
+.th.pat-ring>.sec-head::after{background-image:radial-gradient(circle at 80% 50%,rgba(255,255,255,.22) 0 22px,transparent 23px 34px,rgba(255,255,255,.14) 35px 44px,transparent 45px)}
+.th>.sec-head h2{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.12);position:relative;z-index:1}
+.th .sec-num{border-color:#fff;color:var(--cd);background:#fff;box-shadow:0 4px 0 rgba(0,0,0,.12);position:relative;z-index:1}
+.th .sec-num::after{background:var(--cg);border-color:#fff}
+.th h3{color:var(--cd);display:flex;gap:10px;align-items:stretch}
+.th h3::before{content:"";flex:none;width:6px;border-radius:3px;background:linear-gradient(var(--c),var(--cg))}
+.th h4{color:var(--cd)}
+.th b,.th strong{color:var(--cd)}
+.th .term{color:var(--cd);background:linear-gradient(transparent 60%,var(--cl) 0)}
+.th .box.key{background:#fff;border-left:6px solid var(--c);box-shadow:0 6px 18px -14px var(--cd)}
+.th .box.think{background:var(--ct);border:1.5px dashed var(--c)}
+.th .box.wow{background:linear-gradient(135deg,var(--cd),#0E2148);color:#F3F6FC}
+.th .box.wow b,.th .box.wow h4{color:#FFD25E}
+.th .tool{border:2px solid var(--c);border-top-width:7px;box-shadow:0 8px 0 -3px var(--cl)}
+.th .tool>h4{color:var(--cd)}
+.th .seg button.on{background:var(--cd);border-color:var(--cd)}
+.th .tbtn.solid{background:var(--c);border-color:var(--c);color:#fff}
+.th .readout{background:var(--ct);border-color:var(--c)}
+.th th{background:var(--cd)}
+.th .tbl-wrap{border-color:var(--cl)}
+.th tr:nth-child(even) td{background:var(--ct)}
+.th .fig{border-color:var(--cl)}
+.th .idea{border-left-color:var(--c)}
+.th input[type=range]{accent-color:var(--c)}
+
+/* themed bottom sections */
+#bank>.sec-head,#quiz>.sec-head,#answers>.sec-head,#exam>.sec-head,#map>.sec-head,#arcade>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#bank .qa summary::before,#answers .qa summary::before{background:var(--cl);color:var(--cd)}
+
+/* ECG divider */
+.ecg{height:34px;margin:-18px 0 22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 34'%3E%3Cpath d='M0 17h60l6-10 6 22 8-30 7 26 5-8h108' fill='none' stroke='%23E8574A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' opacity='.55'/%3E%3C/svg%3E") center/200px 34px repeat-x}
+
+/* aspects of health cards */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.tri>div{border-radius:16px;padding:12px;color:#fff;box-shadow:0 10px 20px -16px #000}
+.tri>div h4{color:#fff;margin:0 0 4px;font-size:19px}
+.tri>div p{margin:0;font-size:15.5px}
+.tri .ph{background:linear-gradient(135deg,#F59E0B,#F97316)}
+.tri .me{background:linear-gradient(135deg,#7C5CD6,#C054D6)}
+.tri .so{background:linear-gradient(135deg,#0F9D8F,#3CC3D0)}
+
+/* habits picture grid */
+.habits{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
+.habits figure{margin:0;background:#fff;border-radius:14px;padding:6px;text-align:center;border:2px solid var(--cl)}
+.habits img{width:100%;height:96px;object-fit:contain}
+.habits figcaption{font:700 14px/1.2 'Mukta',sans-serif;color:var(--cd);margin-top:4px}
+.dolist{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.dolist>div{border-radius:14px;padding:10px 14px}
+.dolist .do{background:#E7F6EC;border:2px solid #7CCB98}
+.dolist .dont{background:#FFEDEA;border:2px solid #F3A79D}
+.dolist h4{margin:0 0 4px}
+.dolist .do h4{color:#1D6B3C}.dolist .dont h4{color:#9C2A20}
+.dolist ul{margin:0}
+
+/* disease cards */
+.dgroup{display:flex;align-items:center;gap:8px;margin:18px 0 8px;font:800 18px 'Baloo 2',sans-serif;color:#fff;padding:6px 14px;border-radius:999px;width:fit-content}
+.dgroup.air{background:linear-gradient(90deg,#1E88E5,#26C6DA)}
+.dgroup.water{background:linear-gradient(90deg,#0F9D8F,#3CC3D0)}
+.dgroup.insect{background:linear-gradient(90deg,#E8574A,#F59E42)}
+.dcards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.dcard{display:grid;grid-template-columns:84px 1fr;gap:10px;background:#fff;border:2px solid #E3E8F2;border-radius:16px;padding:10px;break-inside:avoid}
+.dcard.air{border-color:#B5D8F7}.dcard.water{border-color:#A8E3DC}.dcard.insect{border-color:#F8C3BB}
+.dcard img{width:84px;height:96px;object-fit:contain;background:#F7FAF4;border-radius:10px}
+.dcard h4{margin:0 0 2px;font-size:18px}
+.dcard .chips{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 4px}
+.chip{display:inline-block;border-radius:999px;padding:0 8px;font:700 13px/1.6 'Mukta',sans-serif}
+.chip.v{background:#EDE7FF;color:#4B2E99}.chip.b{background:#E3F2FD;color:#0D4F8B}.chip.p{background:#FFF1D6;color:#8A5300}.chip.w{background:#FDE7EF;color:#8E1F4D}.chip.o{background:#EEF2F7;color:#3B4A63}
+.dcard p{margin:0;font-size:14.5px;line-height:1.45}
+.dcard p+p{margin-top:3px}
+
+/* people grid for spread lab */
+.ppl{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;max-width:380px;margin:8px auto}
+.ppl span{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:15px;background:#E8F5E9;transition:background .25s}
+.ppl span.i{background:#FFCDD2}.ppl span.r{background:#E3F2FD}.ppl span.v{background:#EDE7FF}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;font-size:14px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.sw{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.sw label{display:flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--cl);border-radius:999px;padding:3px 12px;font:600 15px 'Mukta',sans-serif;cursor:pointer}
+.sw input{accent-color:var(--c);width:18px;height:18px}
+.meter{height:16px;border-radius:999px;background:#EEF2F7;overflow:hidden}
+.meter i{display:block;height:100%;border-radius:999px;transition:width .35s,background .35s}
+.mrow{display:grid;grid-template-columns:90px 1fr 44px;gap:8px;align-items:center;margin:6px 0;font-weight:700;font-size:15px}
+.slid{display:grid;gap:4px;margin:6px 0}
+.slid label{display:flex;justify-content:space-between;font-weight:600;font-size:15.5px}
+#im-svg,#dg-svg{width:100%;max-width:440px;margin:0 auto;display:block}
+#aq-svg{width:100%;max-width:360px;margin:0 auto;display:block}
+.aqi-scale{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;font-size:12px;text-align:center;margin-top:6px}
+.aqi-scale div{padding:3px 0;border-radius:6px;color:#fff;font-weight:700}
+.wash{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8px 0}
+.wash div{border:2px solid var(--cl);border-radius:12px;padding:6px 4px;text-align:center;font-size:13.5px;line-height:1.25;background:#fff;color:#8A93A6;transition:all .25s}
+.wash div span{display:block;font-size:24px}
+.wash div.on{border-color:var(--c);background:var(--ct);color:var(--cd);font-weight:700;transform:scale(1.04)}
+.wash div.done{border-color:#7CCB98;color:#1D6B3C}
+.bigtime{font:800 44px 'Baloo 2',sans-serif;color:var(--cd);text-align:center;line-height:1}
+.sci-row{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:center;background:#fff;border:2px solid var(--cl);border-radius:16px;padding:12px;margin:14px 0}
+.sci-row img{width:110px;height:auto;border-radius:12px}
+.sci-row h4{margin:0 0 4px}
+.sci-row p{margin:0}
+.steps4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
+.steps4>div{background:#fff;border-radius:14px;padding:10px 12px;border-top:5px solid var(--c)}
+.steps4>div:nth-child(2){border-top-color:var(--cg)}
+.steps4>div:nth-child(3){border-top-color:#F59E0B}
+.steps4>div:nth-child(4){border-top-color:#2E9E5B}
+.steps4 h4{margin:0 0 2px}
+.steps4 p{margin:0;font-size:15.5px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.vs>div{border-radius:16px;padding:12px 14px;color:#fff}
+.vs>div h4{color:#fff;margin:0 0 4px}
+.vs>div b{color:#fff}
+.vs ul{margin:0}
+.vs .a{background:linear-gradient(135deg,#E8574A,#F59E42)}
+.vs .b2{background:linear-gradient(135deg,#7C5CD6,#3949AB)}
+.vs .s1{background:linear-gradient(135deg,#1E88E5,#26C6DA)}
+.vs .s2{background:linear-gradient(135deg,#D6407A,#F27BA8)}
+.pic-mid{display:flex;justify-content:center;margin-bottom:8px}
+.pic-mid img{width:120px;height:120px;object-fit:contain;background:#fff;border-radius:50%;border:5px solid var(--c);padding:6px}
+.tool svg text,.game svg text{font-family:'Mukta',sans-serif}
+.game{box-shadow:0 8px 0 -2px var(--gc,#E3B23C)}
+#arcade .game:nth-of-type(8n+1){--gc:#F59E0B;border-color:#9A4A05}
+#arcade .game:nth-of-type(8n+2){--gc:#7C5CD6;border-color:#4B2E99}
+#arcade .game:nth-of-type(8n+3){--gc:#2E9E5B;border-color:#1D6B3C}
+#arcade .game:nth-of-type(8n+4){--gc:#1E88E5;border-color:#0D4F8B}
+#arcade .game:nth-of-type(8n+5){--gc:#E8574A;border-color:#9C2A20}
+#arcade .game:nth-of-type(8n+6){--gc:#D6407A;border-color:#8E1F4D}
+#arcade .game:nth-of-type(8n+7){--gc:#0F9D8F;border-color:#0A5F57}
+#arcade .game:nth-of-type(8n+8){--gc:#3949AB;border-color:#222D7A}
+.labs-menu a{background:#fff!important}
+@media (max-width:760px){
+  main>section.th{padding:18px 12px 10px;border-radius:20px}
+  .th>.sec-head{margin:-18px -12px 16px;padding:12px;border-radius:18px 18px 0 0}
+  main>section.th::before{font-size:72px}
+  .tri,.dolist,.vs,.dcards{grid-template-columns:1fr}
+  .habits{grid-template-columns:repeat(3,1fr)}
+  .habits img{height:80px}
+  .wash{grid-template-columns:repeat(2,1fr)}
+  .steps4{grid-template-columns:1fr}
+  .sci-row{grid-template-columns:84px 1fr}
+  .sci-row img{width:84px}
+  .toc a span{font-size:13px}
+}
+@media print{
+  main>section.th{box-shadow:none;break-inside:auto}
+  main>section.th::before{display:none}
+  .ecg-hero path{animation:none;stroke-dashoffset:0}
+  .habits{grid-template-columns:repeat(5,1fr)!important}
+  .dcards,.tri,.dolist,.vs{grid-template-columns:repeat(2,1fr)!important}
+  .tri{grid-template-columns:repeat(3,1fr)!important}
+}
+@media (prefers-reduced-motion:reduce){.ecg-hero path{animation:none;stroke-dashoffset:0}}
+
+.ab-row{display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:12px;align-items:center;margin:8px 0}
+#ab-svg{width:100%;display:block}
+.ab-info{background:#fff;border:1.5px solid var(--cl);border-radius:12px;padding:8px 12px;font-size:16px;line-height:1.6}
+@media (max-width:480px){.ab-row{grid-template-columns:1fr}#ab-svg{max-width:220px;margin:0 auto}}
+.wb-row{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:12px;align-items:center;margin:8px 0}
+#wb-svg{width:100%;display:block}
+@media (max-width:480px){.wb-row{grid-template-columns:1fr}#wb-svg{max-width:230px;margin:0 auto}}
+@media print{.hero{background:#fff!important}.ecg-hero path{stroke:#E8574A}.hero h1 em{background:none;color:#E8574A}}
+</style>
+<style>
+/* class 10 chapter 9 light */
+.hero{background:radial-gradient(70% 90% at 92% 20%,rgba(255,210,94,.38) 0,transparent 60%),radial-gradient(80% 110% at 0% 100%,#1E88E5 0,transparent 55%),linear-gradient(135deg,#0B3C6B,#0E2148 60%,#2A1460)}
+.hero h1{font-size:clamp(34px,5.6vw,58px)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FFD25E,#FF8A5B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-art svg{width:100%;max-width:430px;display:block;margin:0 auto}
+.hray path{stroke-dasharray:14 8;animation:hflow 1.4s linear infinite}
+@keyframes hflow{to{stroke-dashoffset:-44}}
+@media (prefers-reduced-motion:reduce){.hray path{animation:none}}
+.cards3 .mini{background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 12px}
+.mini .em{font-size:28px;line-height:1}
+.mini h4{margin:4px 0 2px;font-size:18px}
+.mini p{margin:0;font-size:15.5px;line-height:1.45}
+.act{position:relative;background:linear-gradient(135deg,#FFFDF5,#FFF6E0);border:2px dashed #F59E0B;border-radius:18px;padding:14px 16px 12px;margin:18px 0}
+.act h4{margin:0 0 6px;font-size:19px;color:#7A3E00!important;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.act h4 span{background:linear-gradient(90deg,#F59E0B,#F97316);color:#fff;font:700 13.5px/1.6 'Mukta',sans-serif;border-radius:999px;padding:0 10px}
+.act ol,.act ul{margin-bottom:6px}
+.act p:last-child{margin-bottom:0}
+.warn{background:#FFEDEA;border-radius:10px;padding:6px 10px;color:#9C2A20;font-weight:600;font-size:15.5px}
+.legend2{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.legend2 li{background:#fff;border:1.5px solid var(--cl,#D5DDEB);border-radius:12px;padding:8px 12px;margin:0;font-size:16px;line-height:1.45}
+.rules{display:grid;gap:12px;margin:14px 0}
+.rule{margin:0;position:relative;background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 10px 10px 46px;display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
+.rule svg{width:100%;height:auto;display:block;background:#FBFCFF;border-radius:10px}
+.rule figcaption{grid-column:1/-1;font-size:16px;line-height:1.45}
+.rn{position:absolute;left:10px;top:10px;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--c,#0E2148),var(--cg,#2A4A86));color:#fff;font:800 15px/28px 'Baloo 2',sans-serif;text-align:center}
+.rdgrid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+.rdgrid .fig svg.rd,.cards2 .fig svg.rd{max-width:600px;margin:0 auto}
+.rdgrid .fig,.cards2 .fig{margin:0;position:relative}
+.fig .ctag{position:absolute;top:8px;left:8px;background:linear-gradient(90deg,var(--c,#0E2148),var(--cg,#2A4A86));color:#fff;font:700 13px/1.6 'Mukta',sans-serif;border-radius:999px;padding:0 9px;z-index:1}
+svg.rd{background:#FFFEFB;border-radius:10px}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0}
+.uses>div{background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:16px;padding:10px 12px;line-height:1.35}
+.uses span{font-size:30px;display:block;line-height:1.1}
+.uses>div>b{display:block;font-size:16.5px;margin:2px 0}
+.uses p{margin:0;font-size:15px;color:var(--ink)}
+.solve-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:6px 0}
+.solve-row label{display:flex;align-items:center;gap:6px;font-weight:700}
+.solve-row input{width:92px;font:600 16px 'Mukta',sans-serif;padding:5px 8px;border:1.5px solid var(--line);border-radius:10px}
+.small{font-size:14.5px}
+.readout p{margin:0 0 4px}
+.readout .ok{color:#1D6B3C}.readout .bad{color:#9C2A20}
+.speedbars{display:grid;gap:6px;background:#fff;border:2px solid var(--cl,#D5DDEB);border-radius:14px;padding:10px 12px}
+.speedbars h4{margin:0 0 2px;font-size:16px}
+.sp-row{display:grid;grid-template-columns:86px 1fr 70px;gap:8px;align-items:center;font-size:14.5px;font-weight:600}
+.sp-row .meter i{background:linear-gradient(90deg,#D6407A,#F27BA8)}
+.mindmap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0;position:relative}
+.mm-core{grid-column:1/-1;justify-self:center;background:linear-gradient(135deg,#FFD25E,#FF8A5B);color:#0E2148;font:800 24px 'Baloo 2',sans-serif;border-radius:999px;padding:6px 28px;box-shadow:0 8px 20px -12px #9A4A05}
+.mm-b{border-radius:16px;padding:12px 14px;color:#fff}
+.mm-b h4{color:#fff!important;margin:0 0 4px}
+.mm-b ul{margin:0;padding-left:1.1em;font-size:15.5px}
+.mm-b.refl{background:linear-gradient(135deg,#1E88E5,#26C6DA)}
+.mm-b.refr{background:linear-gradient(135deg,#7C5CD6,#C054D6)}
+.mm-b.lens{background:linear-gradient(135deg,#E8574A,#F59E42)}
+.gq{font:700 18px 'Baloo 2',sans-serif;color:var(--navy);min-height:1.4em;margin:6px 0 8px}
+.opts.two{grid-template-columns:1fr 1fr}
+.game .opts{margin-bottom:6px}
+.stars-total{display:inline-block;background:var(--goldt);border:1.5px solid var(--gold);border-radius:999px;padding:0 10px;font-weight:700}
+#arcade .tool{border-color:#F59E0B}
+#pyq>.sec-head,#practice>.sec-head,#cbse>.sec-head,#quiz>.sec-head,#answers>.sec-head,#map>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#arcade>.sec-head{border-radius:18px;padding:10px 14px;background:var(--ct)}
+#practice .qa summary::before,#answers .qa summary::before,#pyq .qa summary::before{background:var(--cl);color:var(--cd)}
+.pyq details.qa summary>span:last-child{flex:1 1 100%}
+.yr{white-space:normal}
+.pyq .qnum{flex:0 1 auto;min-width:0}
+.ans .fig{max-width:none}
+.ans .cards2 .fig{margin:0}
+#rf-svg svg,#sn-svg svg{max-width:480px;margin:0 auto;display:block}
+@media (max-width:760px){
+  .rdgrid{grid-template-columns:1fr}
+  .rule{padding:40px 8px 8px;grid-template-columns:1fr 1fr}
+  .mindmap{grid-template-columns:1fr}
+  .cards3{grid-template-columns:1fr}
+  .sp-row{grid-template-columns:70px 1fr 62px;font-size:13.5px}
+}
+@media print{
+  .rdgrid{grid-template-columns:1fr 1fr}
+  .rule{grid-template-columns:1fr 1fr}
+  .act{break-inside:avoid}
+  .rule,.uses>div,.mm-b{break-inside:avoid}
+  .fig svg.dg.rd{max-height:250px}
+  .hero{background:#fff!important}
+  .hero h1 em{-webkit-text-fill-color:#0E2148;color:#0E2148;background:none}
+  .hero-art svg{max-width:200px}
+  .hero-art svg rect,.hero-art{background:#0E2148;border-radius:14px}
+}
+.fig.narrow>svg.dg{max-width:500px;margin:0 auto}
+.cards2:has(svg.rd){grid-template-columns:1fr}
+.readout:empty{display:none}
+
+</style>
+<!-- Vercel Web Analytics: counts visitors (see Vercel dashboard > Analytics) -->
+<style>
+.blindspot{display:flex;justify-content:space-between;align-items:center;max-width:340px;margin:10px auto;padding:22px 26px;background:#fff;border:2px solid #E2E8F0;border-radius:12px;font:800 30px/1 'Mukta',sans-serif;color:#0E2148}
+.bs-dot{width:22px;height:22px;border-radius:50%;background:#E53935;display:inline-block}
+.see-row{display:grid;grid-template-columns:180px 1fr;gap:14px;align-items:start;margin-top:10px}
+.see-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px;text-align:center}
+.see-card>span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+.see-txt{font:800 22px/1.25 'Baloo 2',sans-serif;color:#0E2148;transition:filter .25s;min-height:84px;display:grid;place-items:center}
+.see-txt small{font:600 13px 'Mukta',sans-serif}
+.see-txt.chart{font:800 20px/1.25 'Mukta',monospace;letter-spacing:4px}
+@media (max-width:600px){.see-row{grid-template-columns:1fr}}
+.spectrum-bar{display:grid;grid-template-columns:repeat(7,1fr);border-radius:12px;overflow:hidden;margin:10px 0 4px;box-shadow:0 6px 18px -10px rgba(0,0,0,.5)}
+.spectrum-bar span{color:#fff;text-align:center;font:800 18px/2.2 'Baloo 2',sans-serif}
+.center-txt{text-align:center;font-size:15px}
+#tw-c{width:100%;height:auto;display:block;border-radius:12px}
+.fig.narrow .dg{max-width:560px;margin:0 auto}
+.duo .fig{margin:8px 0}
+</style>
+
+<style>
+/* class 10 shared extras */
+.center-txt{text-align:center;font-size:15.5px}
+.fig.narrow .dg{max-width:560px;margin:0 auto}
+.duo .fig{margin:8px 0}
+.gnum{display:inline-block;background:#0E2148;color:#fff;border-radius:999px;padding:0 10px;font:700 13px/1.7 'Mukta',sans-serif;margin-right:6px;vertical-align:middle}
+.bignum{display:inline-block;font:800 34px/1.2 'Baloo 2',sans-serif;color:#0E2148;margin:4px 0}
+.gq{font-size:17px;text-align:center;min-height:30px}
+.gtime{font-weight:800;color:#9C2A20}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chips .chip{text-align:left;font:600 14.5px/1.4 'Mukta',sans-serif;cursor:pointer}
+.row-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0}
+.row-in label{display:flex;gap:6px;align-items:center;font-weight:700}
+.row-in input[type=number]{width:120px;font:700 16px 'Mukta',sans-serif;padding:6px 8px;border:2px solid #C9D6EC;border-radius:10px}
+.tool .seg{flex-wrap:wrap}
+.steps>li{margin-bottom:6px}
+.mk{white-space:nowrap}
+.formula + .formula{margin-top:8px}
+</style>
+<style>
+#ft-svg .dg,#vn-svg .dg{max-width:560px;margin:0 auto;display:block}
+#mt-svg .dg{max-width:340px;margin:0 auto;display:block}
+.opts .opt[data-p]{text-align:center}
+
+.eq-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:700}
+.eq-row input[type=number]{width:80px}
+.gs-viz{overflow-x:auto;margin:10px 0;padding-bottom:4px}
+.gs-row{display:flex;gap:4px;margin:4px 0}
+.gs-cell{min-width:46px;flex:0 0 auto;text-align:center;padding:5px 6px;border-radius:8px;font:700 14px 'Mukta',sans-serif}
+.gs-cell.f{background:#DCEBFF;color:#1E4E8C}.gs-cell.b{background:#FFE6C7;color:#9A4F00}.gs-cell.s{background:#DFF5E6;color:#1F6B3A}
+.row-in input[type=text]{width:120px;font:700 16px 'Mukta',sans-serif;padding:6px 8px;border:2px solid #C9D6EC;border-radius:10px}
+.row-in select.sel{max-width:calc(100vw - 110px)}
+</style>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<!-- SEO:START (made by tools/seo.mjs, do not edit by hand) -->
+<link rel="canonical" href="https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta property="og:url" content="https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MT Classes Motihari">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://www.mtclassesmotihari.com/assets/img/logo-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introduction to Trigonometry | Class 10 Maths Chapter 8 Notes, Trig Table, Identities and CBSE Questions | MT Classes Motihari">
+<meta name="twitter:description" content="Class 10 Maths (NCERT) Chapter 8, Introduction to Trigonometry: colourful CBSE board notes on the six trigonometric ratios, finding all ratios from one, the values of 0°, 30°, 45°, 60° and 90° with a quick table trick, evaluating expressions, the identities sin²A + cos²A = 1, 1 + tan²A = sec²A and 1 + cot²A = cosec²A with 8 proof tricks, a ratio explorer, one-ratio solver and identity checker, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","@id":"https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.html#notes","name":"Introduction to Trigonometry: Class 10 Maths notes","headline":"Introduction to Trigonometry | Class 10 Maths Chapter 8 Notes, Trig Table, Identities and CBSE Questions | MT Classes Motihari","description":"Class 10 Maths (NCERT) Chapter 8, Introduction to Trigonometry: colourful CBSE board notes on the six trigonometric ratios, finding all ratios from one, the values of 0°, 30°, 45°, 60° and 90° with a quick table trick, evaluating expressions, the identities sin²A + cos²A = 1, 1 + tan²A = sec²A and 1 + cot²A = cosec²A with 8 proof tricks, a ratio explorer, one-ratio solver and identity checker, 3 games, CBSE board questions 2023–2026 with step marks, section-wise practice, a quiz and all NCERT answers.","url":"https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.html","learningResourceType":["Notes","Interactive resource","Practice questions"],"educationalLevel":"Class 10","educationalAlignment":{"@type":"AlignmentObject","alignmentType":"educationalSubject","educationalFramework":"CBSE / NCERT","targetName":"Maths, NCERT Mathematics"},"about":{"@type":"Thing","name":"Introduction to Trigonometry"},"teaches":"Introduction to Trigonometry","isBasedOn":{"@type":"Book","name":"NCERT Mathematics","publisher":{"@type":"Organization","name":"NCERT"}},"inLanguage":"en","isAccessibleForFree":true,"audience":{"@type":"EducationalAudience","educationalRole":"student"},"provider":{"@id":"https://www.mtclassesmotihari.com/#organization"},"publisher":{"@id":"https://www.mtclassesmotihari.com/#organization"},"encoding":{"@type":"MediaObject","contentUrl":"https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.pdf","encodingFormat":"application/pdf"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mtclassesmotihari.com/"},{"@type":"ListItem","position":2,"name":"Notes","item":"https://www.mtclassesmotihari.com/notes.html"},{"@type":"ListItem","position":3,"name":"Class 10 Maths: Introduction to Trigonometry","item":"https://www.mtclassesmotihari.com/notes/class10-maths-introduction-to-trigonometry.html"}]}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero"><div class="hero-in"><div>
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<h1>Introduction to <em>Trigonometry</em></h1>
+<p class="sub">Class 10 Maths, Chapter 8 (NCERT, rationalised syllabus) · CBSE board exam notes</p>
+<p class="pitch">Trigonometry means <b>"measuring triangles"</b>. With just one angle and one side you can find the height of a tower, the length of a ladder or the slope of a ramp. Learn the <b>six trigonometric ratios</b>, the <b>magic table of 0°, 30°, 45°, 60°, 90°</b>, and the <b>three identities</b> that crack every "prove that" question. With a <b>live ratio explorer</b>, a <b>one-ratio solver</b>, an <b>identity checker</b>, a <b>try-it activity for every topic</b>, a <b>3-game Trig Arcade</b>, CBSE board questions 2023–2026 with step marks and all NCERT answers.</p>
+<div class="btns"><a class="btn solid" href="#start">Start reading</a><a class="btn ghost" href="#lab-ratio">📐 Ratio explorer</a><a class="btn ghost" href="#lab-given">🧮 One-ratio solver</a><a class="btn ghost" href="#lab-ident">✅ Identity checker</a><a class="btn ghost" href="#arcade">🎮 Games</a><a class="btn ghost" href="#pyq">CBSE PYQs</a><button class="btn ghost" type="button" data-print>Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html">← All notes</a>
+</div><div class="hero-art">
+<svg class="anim" viewBox="0 0 420 300" role="img" aria-label="A right triangle whose angle grows and shrinks, with sin, cos and tan written beside it" font-family="Mukta,sans-serif">
+<g stroke="#2A4A86" stroke-width="1"><path d="M40 20V280M100 20V280M160 20V280M220 20V280M280 20V280M340 20V280M20 40H400M20 100H400M20 160H400M20 220H400"/></g>
+<line x1="40" y1="250" x2="330" y2="250" stroke="#9DD3FF" stroke-width="5"/>
+<line x1="330" y1="250" x2="330" y2="80" stroke="#FFB4AE" stroke-width="5"><animate attributeName="y2" values="190;60;190" dur="5s" repeatCount="indefinite"/></line>
+<line x1="40" y1="250" x2="330" y2="80" stroke="#B8F0C8" stroke-width="5"><animate attributeName="y2" values="190;60;190" dur="5s" repeatCount="indefinite"/></line>
+<path d="M314 250V234H330" fill="none" stroke="#CBD6EE" stroke-width="2"/>
+<path d="M95 250A55 55 0 0 0 88 224" fill="none" stroke="#FFD25E" stroke-width="3"/><text x="104" y="240" font-size="17" font-weight="800" fill="#FFD25E">θ</text>
+<text x="40" y="44" font-size="18" font-weight="800" fill="#FFB4AE">sin θ = opp/hyp</text>
+<text x="40" y="70" font-size="18" font-weight="800" fill="#9DD3FF">cos θ = adj/hyp</text>
+<text x="40" y="96" font-size="18" font-weight="800" fill="#FFD25E">tan θ = opp/adj</text>
+<text x="200" y="280" font-size="15" font-weight="800" fill="#CBD6EE">sin²θ + cos²θ = 1</text>
+</svg></div></div></header>
+<main>
+<nav class="toc" aria-label="Chapter contents">
+<h2>In this chapter</h2>
+<ol>
+<li><a class="t-sky" href="#start"><span>8.1</span>What is trigonometry?</a></li>
+<li><a class="t-leaf" href="#ratios"><span>8.2</span>The six trigonometric ratios</a></li>
+<li><a class="t-sun no-print" href="#lab-ratio"><span>📐</span>Ratio Explorer</a></li>
+<li><a class="t-coral" href="#given"><span>8.2.1</span>Given one ratio, find all the others</a></li>
+<li><a class="t-indigo no-print" href="#lab-given"><span>🧮</span>One-ratio Solver</a></li>
+<li><a class="t-violet" href="#special"><span>8.3</span>Ratios of 0°, 30°, 45°, 60° and 90°</a></li>
+<li><a class="t-rose" href="#evaluate"><span>8.3.1</span>Evaluating expressions and finding angles</a></li>
+<li><a class="t-teal" href="#ident"><span>8.4</span>Trigonometric identities</a></li>
+<li><a class="t-coral" href="#prove"><span>8.4.1</span>How to prove identities: 8 tricks</a></li>
+<li><a class="t-sun no-print" href="#lab-ident"><span>✅</span>Identity Checker</a></li>
+<li><a class="t-navy" href="#map"><span>Map</span>Mind map, formulas, mistakes</a></li>
+<li><a class="t-sun no-print" href="#arcade"><span>🎮</span>Trig Arcade: 3 games</a></li>
+<li><a class="t-navy" href="#cbse"><span>CBSE</span>Exam pattern and marking</a></li>
+<li><a class="t-coral" href="#pyq"><span>PYQ</span>CBSE board questions 2023–2026</a></li>
+<li><a class="t-teal" href="#practice"><span>A–E</span>Section-wise practice</a></li>
+<li><a class="t-rose" href="#quiz"><span>Quiz</span>Test yourself (20 questions)</a></li>
+<li><a class="t-violet" href="#answers"><span>NCERT</span>All textbook questions answered</a></li>
+</ol>
+</nav>
+
+<div class="box key"><h4>📌 Chapter snapshot</h4><ul>
+<li><b>Ratios (right angle at B, angle A):</b> sin A = opp/hyp, cos A = adj/hyp, tan A = opp/adj; cosec, sec, cot are their reciprocals.</li>
+<li><b>tan A = sin A / cos A</b> and <b>cot A = cos A / sin A</b>.</li>
+<li><b>Value table:</b> sin 0°, 30°, 45°, 60°, 90° = √0/2, √1/2, √2/2, √3/2, √4/2 = 0, ½, 1/√2, √3/2, 1. Cos is the same list backwards.</li>
+<li><b>Identities:</b> sin²A + cos²A = 1, 1 + tan²A = sec²A, 1 + cot²A = cosec²A.</li>
+<li><b>Removed from syllabus:</b> trigonometric ratios of complementary angles (sin(90° − A) = cos A type questions).</li>
+<li><b>Most-asked in CBSE:</b> a "prove that" identity (3 marks, every year), "given tan θ (or cot θ), find…" (2 marks), table-value evaluation (2 marks) and quick MCQs. Unit <b>Trigonometry</b> (Ch 8 + Ch 9) carries <b>12 marks</b>.</li></ul></div>
+
+<section id="start" class="th t-sky pat-ring" data-emoji="📐">
+<div class="sec-head"><span class="sec-num">8.1</span><h2>What is trigonometry?</h2></div>
+<p class="lead"><span class="term">Trigonometry</span> comes from Greek: <i>tri</i> (three) + <i>gon</i> (sides) + <i>metron</i> (measure). It studies the relation between the <b>angles and sides of a right triangle</b>. In Class 10 we use only <b>acute angles</b> (0° to 90°).</p>
+<div class="cards3">
+<div class="mini"><span class="em">🗼</span><h4>Heights</h4><p>Find the height of the Qutub Minar from the ground, without climbing it, using one angle and one distance.</p></div>
+<div class="mini"><span class="em">🪜</span><h4>Ladders and ramps</h4><p>A wheelchair ramp must not be steeper than about 5°. Engineers check this with tan.</p></div>
+<div class="mini"><span class="em">🛰️</span><h4>Navigation</h4><p>Ships, aeroplanes and GPS use trigonometry to fix positions and distances.</p></div></div>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 420 280" role="img" aria-label="A ladder leaning against a wall makes a right triangle with the ground" font-family="Mukta,sans-serif"><rect x="330" y="20" width="40" height="230" fill="#E8D9C5" stroke="#8B6F47" stroke-width="2"/><line x1="20" y1="250" x2="400" y2="250" stroke="#5B6475" stroke-width="3" stroke-linecap="round"/><line x1="125.44" y1="224.89" x2="143.44" y2="232.89" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="149.89" y1="203.78" x2="167.89" y2="211.78" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="174.33" y1="182.67" x2="192.33" y2="190.67" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="198.78" y1="161.56" x2="216.78" y2="169.56" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="223.22" y1="140.44" x2="241.22" y2="148.44" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="247.67" y1="119.33" x2="265.67" y2="127.33" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="272.11" y1="98.22" x2="290.11" y2="106.22" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="296.56" y1="77.11" x2="314.56" y2="85.11" stroke="#F97316" stroke-width="3" stroke-linecap="round"/><line x1="110" y1="250" x2="330" y2="60" stroke="#B45309" stroke-width="6" stroke-linecap="round"/><path d="M317 250 L317 237 L330 237" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M150 250 A40 40 0 0 0 140.27 223.86" fill="none" stroke="#7C5CD6" stroke-width="2.5"/><text x="164.36" y="234.78" font-size="13" fill="#7C5CD6" text-anchor="middle" font-weight="700">θ</text><text x="220" y="272" font-size="14" fill="#1E88E5" text-anchor="middle" font-weight="700">foot to wall = L cos θ</text><text x="320" y="150" font-size="14" fill="#E53935" text-anchor="end" font-weight="700">height = L sin θ</text><text x="200" y="140" font-size="15" fill="#B45309" text-anchor="end" font-weight="700">ladder L</text></svg><figcaption>A ladder against a wall makes a right triangle. If you know the ladder's length L and its angle θ with the ground, trigonometry gives the height it reaches and how far its foot is from the wall.</figcaption></figure>
+<div class="box think"><h4>🤔 History corner</h4><p>Indian mathematicians <b>Aryabhata</b> (476 CE) and later Bhaskara used <i>jya</i> (half-chord) tables. <i>Jya</i> became <i>jiba</i> in Arabic, then <i>sinus</i> in Latin, and finally <b>sine</b>. So "sin" has Indian roots!</p></div>
+<div class="act"><h4><span>🧪 Try it</span>Your shadow clock</h4><ol><li>Stand in the sun at 9 am, 12 noon and 4 pm. Ask a friend to measure your shadow.</li><li>Divide your height by the shadow length each time. This number is tan of the sun's angle.</li><li>At noon the number is biggest: the sun is highest. You have just used trigonometry!</li></ol></div>
+</section>
+
+<section id="ratios" class="th t-leaf pat-wave" data-emoji="🔺">
+<div class="sec-head"><span class="sec-num">8.2</span><h2>The six trigonometric ratios</h2></div>
+<p class="lead">In ΔABC, right-angled at B, look at the acute angle A. The side facing A is the <b>opposite</b> side (BC), the side next to A is the <b>adjacent</b> side (AB), and the longest side, facing the right angle, is the <b>hypotenuse</b> (AC).</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 460 300" role="img" aria-label="Right triangle ABC, right-angled at B, with angle A marked; opposite side BC, adjacent side AB, hypotenuse AC" font-family="Mukta,sans-serif"><polygon points="60,250 380,250 380,50" fill="rgba(30,136,229,.08)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><line x1="60" y1="250" x2="380" y2="250" stroke="#1E88E5" stroke-width="5" stroke-linecap="round"/><line x1="380" y1="250" x2="380" y2="50" stroke="#E53935" stroke-width="5" stroke-linecap="round"/><line x1="60" y1="250" x2="380" y2="50" stroke="#2E9E5B" stroke-width="5" stroke-linecap="round"/><path d="M364 250 L364 234 L380 234" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M106 250 A46 46 0 0 0 99.01 225.62" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="127.29" y="235.7" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">θ = A</text><text x="44.73" y="259.77" font-size="15" fill="#0E2148" text-anchor="middle" font-weight="700">A</text><text x="393.57" y="263.48" font-size="15" fill="#0E2148" text-anchor="middle" font-weight="700">B</text><text x="390" y="42.51" font-size="15" fill="#0E2148" text-anchor="middle" font-weight="700">C</text><text x="220" y="280" font-size="15" fill="#1E88E5" text-anchor="middle" font-weight="700">Adjacent side (base) AB</text><text x="392" y="155" font-size="15" fill="#E53935" text-anchor="start" font-weight="700">Opposite</text><text x="392" y="175" font-size="15" fill="#E53935" text-anchor="start" font-weight="700">side BC</text><text x="196" y="132" font-size="15" fill="#2E9E5B" text-anchor="middle" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">Hypotenuse AC</text></svg><figcaption>Names of the sides depend on the angle you look from. For angle C, BC becomes adjacent and AB becomes opposite.</figcaption></figure>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Ratio</th><th>Definition</th><th>In ΔABC</th><th>Reciprocal of</th></tr></thead><tbody>
+<tr><td><b>sin A</b></td><td>opposite / hypotenuse</td><td>BC/AC</td><td>cosec A</td></tr>
+<tr><td><b>cos A</b></td><td>adjacent / hypotenuse</td><td>AB/AC</td><td>sec A</td></tr>
+<tr><td><b>tan A</b></td><td>opposite / adjacent</td><td>BC/AB</td><td>cot A</td></tr>
+<tr><td><b>cosec A</b></td><td>hypotenuse / opposite</td><td>AC/BC</td><td>sin A</td></tr>
+<tr><td><b>sec A</b></td><td>hypotenuse / adjacent</td><td>AC/AB</td><td>cos A</td></tr>
+<tr><td><b>cot A</b></td><td>adjacent / opposite</td><td>AB/BC</td><td>tan A</td></tr></tbody></table></div>
+<div class="formula big">tan A = sin A / cos A &nbsp;·&nbsp; cot A = cos A / sin A</div>
+<div class="box trick"><h4>⚡ Memory trick: "Pandit Badri Prasad Har Har Bole"</h4><p><b>P</b>/<b>H</b> = sin, <b>B</b>/<b>H</b> = cos, <b>P</b>/<b>B</b> = tan (P = perpendicular, B = base, H = hypotenuse). Read the first letters: <b>P B P</b> on top, <b>H H B</b> below. Then flip each one for cosec, sec, cot.</p></div>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 520 250" role="img" aria-label="Two right triangles with the same angle A have the same ratio of opposite side to hypotenuse" font-family="Mukta,sans-serif"><polygon points="30,220 150,220 150,130" fill="rgba(30,136,229,.12)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><path d="M139 220 L139 209 L150 209" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M60 220 A30 30 0 0 0 54 202" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="71.74" y="211.09" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">A</text><text x="90" y="242" font-size="14" fill="#1E88E5" text-anchor="middle" font-weight="700">4</text><text x="158" y="180" font-size="14" fill="#E53935" text-anchor="start" font-weight="700">3</text><text x="78" y="169" font-size="14" fill="#2E9E5B" text-anchor="end" font-weight="700">5</text><polygon points="220,220 460,220 460,40" fill="rgba(46,158,91,.12)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><path d="M449 220 L449 209 L460 209" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M250 220 A30 30 0 0 0 244 202" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="261.74" y="211.09" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">A</text><text x="340" y="242" font-size="14" fill="#1E88E5" text-anchor="middle" font-weight="700">8</text><text x="468" y="135" font-size="14" fill="#E53935" text-anchor="start" font-weight="700">6</text><text x="328" y="124" font-size="14" fill="#2E9E5B" text-anchor="end" font-weight="700">10</text><text x="80" y="40" font-size="15" fill="#7C5CD6" text-anchor="middle" font-weight="700">sin A = 3/5</text><text x="330" y="30" font-size="15" fill="#7C5CD6" text-anchor="middle" font-weight="700">sin A = 6/10 = 3/5</text></svg><figcaption>Why sin A depends only on A: two right triangles with the same angle A are similar (AA), so the ratio of their sides is the same, whatever the size.</figcaption></figure>
+<div class="box alert"><h4>⚠️ Watch out</h4><ul><li>"sin A" is one symbol. It is not sin × A, and "sin" alone means nothing.</li><li>(sin A)² is written <b>sin²A</b>, not sin A².</li><li>sin A and cos A are always ≤ 1 (hypotenuse is the longest side). sec A, cosec A are always ≥ 1. tan A can be any positive number.</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Same angle, any size</h4><ol><li>Draw an angle of 35° with a protractor. Drop perpendiculars from three points on one arm at different distances.</li><li>Measure the opposite side and the hypotenuse of each triangle.</li><li>Divide opposite by hypotenuse. All three give about 0.57: that is sin 35°!</li></ol></div>
+</section>
+
+<section id="lab-ratio" class="no-print th t-sun pat-ring" data-emoji="📐">
+<div class="sec-head"><span class="sec-num word">Lab 1</span><h2>Ratio Explorer</h2></div>
+<div class="tool" id="lab-tr"><h4>📐 Slide the angle: watch all six ratios change</h4><p class="hint">Change θ and the size of the triangle. The ratios depend only on θ, not on the size. At 0°, 30°, 45°, 60° and 90° the lab shows the exact values from the table.</p>
+<label for="tr-th">θ = <b id="tr-thv">30</b>°</label><input type="range" id="tr-th" min="0" max="90" step="1" value="30">
+<label for="tr-h">Hypotenuse = <b id="tr-hv">10</b> cm</label><input type="range" id="tr-h" min="2" max="20" step="1" value="10">
+<div class="seg" id="tr-quick"><button type="button" data-v="0">0°</button><button type="button" data-v="30">30°</button><button type="button" data-v="45">45°</button><button type="button" data-v="60">60°</button><button type="button" data-v="90">90°</button><button type="button" data-v="37">37° (3-4-5)</button></div>
+<div class="tool-grid"><div id="tr-svg"></div><div class="readout" id="tr-out"></div></div></div>
+</section>
+
+<section id="given" class="th t-coral pat-ring" data-emoji="🧮">
+<div class="sec-head"><span class="sec-num">8.2.1</span><h2>Given one ratio, find all the others</h2></div>
+<p class="lead">The most common 2-mark question. Follow <b>three steps</b>: (1) draw a right triangle and write the given ratio as sides, using k; (2) find the third side by <b>Pythagoras</b>; (3) read off any ratio.</p>
+<div class="box calc"><h4>NCERT Ex 8.1 Q3: sin A = 3/4. Find cos A and tan A.</h4><p>Opposite = 3k, hypotenuse = 4k ⇒ adjacent = √(16k² − 9k²) = √7 k.</p><p>cos A = <b>√7/4</b>, tan A = <b>3/√7</b>.</p></div>
+<div class="box calc"><h4>NCERT Ex 8.1 Q4: 15 cot A = 8. Find sin A and sec A.</h4><p>cot A = 8/15: adjacent 8k, opposite 15k ⇒ hypotenuse = √(64 + 225) k = 17k.</p><p>sin A = <b>15/17</b>, sec A = <b>17/8</b>.</p></div>
+<div class="box calc"><h4>CBSE 2026: tan θ = 24/7. Find sin θ + cos θ.</h4><p>Opposite 24k, adjacent 7k ⇒ hypotenuse √(576 + 49) k = 25k. <span class="mk">1</span></p><p>sin θ + cos θ = 24/25 + 7/25 = <b>31/25</b>. <span class="mk">1</span></p></div>
+<div class="box calc"><h4>NCERT Ex 8.1 Q10: PR + QR = 25 cm, PQ = 5 cm (right angle at Q). Find sin P, cos P, tan P.</h4><p>PR² − QR² = PQ² = 25 ⇒ (PR − QR)(PR + QR) = 25 ⇒ PR − QR = 1. So PR = 13, QR = 12.</p><p>sin P = QR/PR = <b>12/13</b>, cos P = <b>5/13</b>, tan P = <b>12/5</b>.</p></div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Common triples</th><th>Use when you see…</th></tr></thead><tbody><tr><td>3, 4, 5</td><td>3/5, 4/5, 3/4, 5/3 …</td></tr><tr><td>5, 12, 13</td><td>5/13, 12/13, 13/12 …</td></tr><tr><td>8, 15, 17</td><td>8/17, 15/17, 8/15 …</td></tr><tr><td>7, 24, 25</td><td>7/25, 24/25, 24/7 …</td></tr><tr><td>20, 21, 29</td><td>20/29, 21/29 …</td></tr></tbody></table></div>
+<div class="box alert"><h4>⚠️ Watch out</h4><ul><li>Always write the sides as 3k and 4k (or say "let the sides be 3 and 4 units"); examiners give the first mark for this step.</li><li>sin A = 4/3 is impossible: opposite can never be longer than the hypotenuse (NCERT Ex 8.1 Q11(v)).</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Ramp check</h4><ol><li>A ramp rises 1 m over a horizontal distance of 12 m. Its slope is tan θ = 1/12.</li><li>Hypotenuse = √(1 + 144) = √145 ≈ 12.04 m, so sin θ ≈ 0.083.</li><li>Look at a ramp at your school or a station and estimate its tan θ from steps or tiles.</li></ol></div>
+</section>
+
+<section id="lab-given" class="no-print th t-indigo pat-wave" data-emoji="🧮">
+<div class="sec-head"><span class="sec-num word">Lab 2</span><h2>One-ratio Solver</h2></div>
+<div class="tool" id="lab-gv"><h4>🧮 Pick one ratio and its value: get all six, with working</h4><p class="hint">Choose the ratio and type its value as p/q. The solver draws the triangle, finds the third side by Pythagoras and lists every ratio as a fraction.</p>
+<div class="row-in"><label>Ratio <select id="gv-f" class="sel"><option>sin</option><option>cos</option><option selected>tan</option><option>cot</option><option>sec</option><option>cosec</option></select></label><label>p <input type="number" id="gv-p" value="24" step="any" min="0"></label><label>q <input type="number" id="gv-q" value="7" step="any" min="0"></label></div>
+<div class="seg" id="gv-quick"><button type="button" data-v="tan,24,7">CBSE 2026: tan = 24/7</button><button type="button" data-v="sin,3,4">Ex 8.1 Q3: sin = 3/4</button><button type="button" data-v="cot,8,15">Ex 8.1 Q4: cot = 8/15</button><button type="button" data-v="sec,13,12">Ex 8.1 Q5: sec = 13/12</button><button type="button" data-v="cot,7,8">cot = 7/8</button><button type="button" data-v="cos,1,2">cos = 1/2</button></div>
+<div class="tool-grid"><div id="gv-svg"></div><div class="readout" id="gv-out"></div></div></div>
+</section>
+
+<section id="special" class="th t-violet pat-ring" data-emoji="⭐">
+<div class="sec-head"><span class="sec-num">8.3</span><h2>Ratios of 0°, 30°, 45°, 60° and 90°</h2></div>
+<p class="lead">These five angles appear in almost every board paper. Their values come from two famous triangles: <b>half a square</b> (45°) and <b>half an equilateral triangle</b> (30° and 60°).</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 560 280" role="img" aria-label="Isosceles right triangle with sides a, a, a root 2; half of an equilateral triangle with sides a, a root 3, 2a" font-family="Mukta,sans-serif"><polygon points="30,240 230,240 230,40" fill="rgba(245,158,11,.14)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><path d="M217 240 L217 227 L230 227" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M68 240 A38 38 0 0 0 56.87 213.13" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="83.59" y="222.8" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">45°</text><path d="M203.13 66.87 A38 38 0 0 0 230 78" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="208.57" y="96.74" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">45°</text><text x="130" y="264" font-size="16" fill="#1E88E5" text-anchor="middle" font-weight="700">a</text><text x="242" y="145" font-size="16" fill="#E53935" text-anchor="start" font-weight="700">a</text><text x="115" y="130" font-size="16" fill="#2E9E5B" text-anchor="end" font-weight="700">a√2</text><text x="130" y="22" font-size="14" fill="#5B6475" text-anchor="middle" font-weight="700">Half a square</text><polygon points="420,50 320,223 520,223" fill="rgba(124,92,214,.08)" stroke="#5B6475" stroke-width="2.5" stroke-linejoin="round"/><polygon points="420,50 320,223 420,223" fill="rgba(124,92,214,.18)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><line x1="420" y1="50" x2="420" y2="223" stroke="#0E2148" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/><path d="M408 223 L408 211 L420 211" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M354 223 A34 34 0 0 0 337.02 193.56" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="365.04" y="202.01" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">60°</text><path d="M399.98 84.63 A40 40 0 0 0 420 90" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="404.97" y="111.02" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">30°</text><text x="370" y="244" font-size="16" fill="#1E88E5" text-anchor="middle" font-weight="700">a</text><text x="426" y="150" font-size="16" fill="#E53935" text-anchor="start" font-weight="700">a√3</text><text x="358" y="130" font-size="16" fill="#2E9E5B" text-anchor="end" font-weight="700">2a</text><text x="470" y="140" font-size="14" fill="#5B6475" text-anchor="start" font-weight="700">2a</text><text x="420" y="22" font-size="14" fill="#5B6475" text-anchor="middle" font-weight="700">Half an equilateral triangle</text><text x="420" y="270" font-size="13" fill="#5B6475" text-anchor="middle" font-weight="700">P, Q, S: 30°–60°–90°</text></svg><figcaption>Left: AB = BC = a ⇒ AC = a√2, so sin 45° = cos 45° = 1/√2, tan 45° = 1. Right: side 2a, altitude a√3, so sin 30° = a/2a = ½, cos 30° = √3/2, sin 60° = √3/2, cos 60° = ½.</figcaption></figure>
+<div class="tbl-wrap"><table class="compact trig-tbl"><thead><tr><th>∠A</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr></thead><tbody>
+<tr><td><b>sin A</b></td><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr>
+<tr><td><b>cos A</b></td><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr>
+<tr><td><b>tan A</b></td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>not defined</td></tr>
+<tr><td><b>cosec A</b></td><td>not defined</td><td>2</td><td>√2</td><td>2/√3</td><td>1</td></tr>
+<tr><td><b>sec A</b></td><td>1</td><td>2/√3</td><td>√2</td><td>2</td><td>not defined</td></tr>
+<tr><td><b>cot A</b></td><td>not defined</td><td>√3</td><td>1</td><td>1/√3</td><td>0</td></tr></tbody></table></div>
+<div class="box trick"><h4>⚡ Make the table in 30 seconds</h4><ol><li>Write 0, 1, 2, 3, 4 under 0°, 30°, 45°, 60°, 90°.</li><li>Divide each by 4 and take the square root: √0, √(1/4), √(2/4), √(3/4), √1 = <b>0, ½, 1/√2, √3/2, 1</b>. That is the <b>sin</b> row.</li><li>Write the sin row backwards: that is the <b>cos</b> row.</li><li>tan = sin ÷ cos. Then flip sin, cos, tan for cosec, sec, cot.</li></ol></div>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 460 300" role="img" aria-label="Graphs of sin theta rising from 0 to 1 and cos theta falling from 1 to 0 between 0 and 90 degrees" font-family="Mukta,sans-serif"><rect width="460" height="300" rx="14" fill="#FBFDFF"/><line x1="26" y1="274" x2="26" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="71.33" y1="274" x2="71.33" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="116.67" y1="274" x2="116.67" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="162" y1="274" x2="162" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="207.33" y1="274" x2="207.33" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="252.67" y1="274" x2="252.67" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="298" y1="274" x2="298" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="343.33" y1="274" x2="343.33" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="388.67" y1="274" x2="388.67" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="434" y1="274" x2="434" y2="26" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="274" x2="434" y2="274" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="217.64" x2="434" y2="217.64" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="161.27" x2="434" y2="161.27" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="104.91" x2="434" y2="104.91" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><line x1="26" y1="48.55" x2="434" y2="48.55" stroke="#E3E9F3" stroke-width="1" stroke-linecap="round"/><defs><marker id="ar0590917" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33415C"/></marker></defs><line x1="26" y1="274" x2="438" y2="274" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar0590917)"/><text x="430" y="266" font-size="13" fill="#33415C" text-anchor="end" font-weight="700">X</text><line x1="26" y1="274" x2="26" y2="22" stroke="#33415C" stroke-width="2" stroke-linecap="round" marker-end="url(#ar0590917)"/><text x="34" y="38" font-size="13" fill="#33415C" text-anchor="start" font-weight="700">Y</text><text x="162" y="290" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">30</text><text x="298" y="290" font-size="11" fill="#5B6475" text-anchor="middle" font-weight="600">60</text><text x="20" y="165.27" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">0.5</text><text x="20" y="52.55" font-size="11" fill="#5B6475" text-anchor="end" font-weight="600">1</text><text x="20" y="289" font-size="12" fill="#5B6475" text-anchor="end" font-weight="700">O</text><clipPath id="clpar0590917"><rect x="26" y="26" width="408" height="248"/></clipPath><g clip-path="url(#clpar0590917)"><path d="M26 274L27.7 272.52L29.4 271.05L31.1 269.57L32.8 268.1L34.5 266.62L36.2 265.15L37.9 263.67L39.6 262.2L41.3 260.73L43 259.25L44.7 257.78L46.4 256.31L48.1 254.84L49.8 253.37L51.5 251.9L53.2 250.43L54.9 248.97L56.6 247.5L58.3 246.04L60 244.57L61.7 243.11L63.4 241.65L65.1 240.19L66.8 238.73L68.5 237.27L70.2 235.82L71.9 234.37L73.6 232.91L75.3 231.46L77 230.02L78.7 228.57L80.4 227.13L82.1 225.68L83.8 224.24L85.5 222.8L87.2 221.37L88.9 219.93L90.6 218.5L92.3 217.07L94 215.65L95.7 214.22L97.4 212.8L99.1 211.38L100.8 209.97L102.5 208.55L104.2 207.14L105.9 205.74L107.6 204.33L109.3 202.93L111 201.53L112.7 200.13L114.4 198.74L116.1 197.35L117.8 195.97L119.5 194.58L121.2 193.2L122.9 191.83L124.6 190.46L126.3 189.09L128 187.72L129.7 186.36L131.4 185L133.1 183.65L134.8 182.3L136.5 180.95L138.2 179.61L139.9 178.27L141.6 176.94L143.3 175.61L145 174.28L146.7 172.96L148.4 171.65L150.1 170.33L151.8 169.03L153.5 167.72L155.2 166.42L156.9 165.13L158.6 163.84L160.3 162.55L162 161.27L163.7 160L165.4 158.73L167.1 157.46L168.8 156.2L170.5 154.94L172.2 153.69L173.9 152.45L175.6 151.21L177.3 149.97L179 148.74L180.7 147.52L182.4 146.3L184.1 145.09L185.8 143.88L187.5 142.68L189.2 141.48L190.9 140.29L192.6 139.1L194.3 137.93L196 136.75L197.7 135.58L199.4 134.42L201.1 133.27L202.8 132.12L204.5 130.97L206.2 129.84L207.9 128.7L209.6 127.58L211.3 126.46L213 125.35L214.7 124.24L216.4 123.14L218.1 122.05L219.8 120.96L221.5 119.88L223.2 118.81L224.9 117.74L226.6 116.68L228.3 115.63L230 114.58L231.7 113.54L233.4 112.51L235.1 111.48L236.8 110.46L238.5 109.45L240.2 108.44L241.9 107.45L243.6 106.45L245.3 105.47L247 104.49L248.7 103.53L250.4 102.56L252.1 101.61L253.8 100.66L255.5 99.72L257.2 98.79L258.9 97.86L260.6 96.95L262.3 96.04L264 95.13L265.7 94.24L267.4 93.35L269.1 92.47L270.8 91.6L272.5 90.74L274.2 89.88L275.9 89.04L277.6 88.2L279.3 87.37L281 86.54L282.7 85.73L284.4 84.92L286.1 84.12L287.8 83.33L289.5 82.54L291.2 81.77L292.9 81L294.6 80.24L296.3 79.49L298 78.75L299.7 78.02L301.4 77.29L303.1 76.58L304.8 75.87L306.5 75.17L308.2 74.48L309.9 73.79L311.6 73.12L313.3 72.45L315 71.8L316.7 71.15L318.4 70.51L320.1 69.88L321.8 69.25L323.5 68.64L325.2 68.04L326.9 67.44L328.6 66.85L330.3 66.28L332 65.71L333.7 65.15L335.4 64.6L337.1 64.05L338.8 63.52L340.5 63L342.2 62.48L343.9 61.97L345.6 61.48L347.3 60.99L349 60.51L350.7 60.04L352.4 59.58L354.1 59.13L355.8 58.69L357.5 58.25L359.2 57.83L360.9 57.42L362.6 57.01L364.3 56.61L366 56.23L367.7 55.85L369.4 55.48L371.1 55.12L372.8 54.77L374.5 54.44L376.2 54.1L377.9 53.78L379.6 53.47L381.3 53.17L383 52.88L384.7 52.59L386.4 52.32L388.1 52.06L389.8 51.8L391.5 51.56L393.2 51.32L394.9 51.1L396.6 50.88L398.3 50.67L400 50.47L401.7 50.29L403.4 50.11L405.1 49.94L406.8 49.78L408.5 49.63L410.2 49.49L411.9 49.36L413.6 49.24L415.3 49.13L417 49.03L418.7 48.94L420.4 48.85L422.1 48.78L423.8 48.72L425.5 48.67L427.2 48.62L428.9 48.59L430.6 48.56L432.3 48.55L434 48.55" fill="none" stroke="#1E88E5" stroke-width="3" stroke-linejoin="round"/><path d="M26 48.55L27.7 48.55L29.4 48.56L31.1 48.59L32.8 48.62L34.5 48.67L36.2 48.72L37.9 48.78L39.6 48.85L41.3 48.94L43 49.03L44.7 49.13L46.4 49.24L48.1 49.36L49.8 49.49L51.5 49.63L53.2 49.78L54.9 49.94L56.6 50.11L58.3 50.29L60 50.47L61.7 50.67L63.4 50.88L65.1 51.1L66.8 51.32L68.5 51.56L70.2 51.8L71.9 52.06L73.6 52.32L75.3 52.59L77 52.88L78.7 53.17L80.4 53.47L82.1 53.78L83.8 54.1L85.5 54.44L87.2 54.77L88.9 55.12L90.6 55.48L92.3 55.85L94 56.23L95.7 56.61L97.4 57.01L99.1 57.42L100.8 57.83L102.5 58.25L104.2 58.69L105.9 59.13L107.6 59.58L109.3 60.04L111 60.51L112.7 60.99L114.4 61.48L116.1 61.97L117.8 62.48L119.5 63L121.2 63.52L122.9 64.05L124.6 64.6L126.3 65.15L128 65.71L129.7 66.28L131.4 66.85L133.1 67.44L134.8 68.04L136.5 68.64L138.2 69.25L139.9 69.88L141.6 70.51L143.3 71.15L145 71.8L146.7 72.45L148.4 73.12L150.1 73.79L151.8 74.48L153.5 75.17L155.2 75.87L156.9 76.58L158.6 77.29L160.3 78.02L162 78.75L163.7 79.49L165.4 80.24L167.1 81L168.8 81.77L170.5 82.54L172.2 83.33L173.9 84.12L175.6 84.92L177.3 85.73L179 86.54L180.7 87.37L182.4 88.2L184.1 89.04L185.8 89.88L187.5 90.74L189.2 91.6L190.9 92.47L192.6 93.35L194.3 94.24L196 95.13L197.7 96.04L199.4 96.95L201.1 97.86L202.8 98.79L204.5 99.72L206.2 100.66L207.9 101.61L209.6 102.56L211.3 103.53L213 104.49L214.7 105.47L216.4 106.45L218.1 107.45L219.8 108.44L221.5 109.45L223.2 110.46L224.9 111.48L226.6 112.51L228.3 113.54L230 114.58L231.7 115.63L233.4 116.68L235.1 117.74L236.8 118.81L238.5 119.88L240.2 120.96L241.9 122.05L243.6 123.14L245.3 124.24L247 125.35L248.7 126.46L250.4 127.58L252.1 128.7L253.8 129.84L255.5 130.97L257.2 132.12L258.9 133.27L260.6 134.42L262.3 135.58L264 136.75L265.7 137.93L267.4 139.1L269.1 140.29L270.8 141.48L272.5 142.68L274.2 143.88L275.9 145.09L277.6 146.3L279.3 147.52L281 148.74L282.7 149.97L284.4 151.21L286.1 152.45L287.8 153.69L289.5 154.94L291.2 156.2L292.9 157.46L294.6 158.73L296.3 160L298 161.27L299.7 162.55L301.4 163.84L303.1 165.13L304.8 166.42L306.5 167.72L308.2 169.03L309.9 170.33L311.6 171.65L313.3 172.96L315 174.28L316.7 175.61L318.4 176.94L320.1 178.27L321.8 179.61L323.5 180.95L325.2 182.3L326.9 183.65L328.6 185L330.3 186.36L332 187.72L333.7 189.09L335.4 190.46L337.1 191.83L338.8 193.2L340.5 194.58L342.2 195.97L343.9 197.35L345.6 198.74L347.3 200.13L349 201.53L350.7 202.93L352.4 204.33L354.1 205.74L355.8 207.14L357.5 208.55L359.2 209.97L360.9 211.38L362.6 212.8L364.3 214.22L366 215.65L367.7 217.07L369.4 218.5L371.1 219.93L372.8 221.37L374.5 222.8L376.2 224.24L377.9 225.68L379.6 227.13L381.3 228.57L383 230.02L384.7 231.46L386.4 232.91L388.1 234.37L389.8 235.82L391.5 237.27L393.2 238.73L394.9 240.19L396.6 241.65L398.3 243.11L400 244.57L401.7 246.04L403.4 247.5L405.1 248.97L406.8 250.43L408.5 251.9L410.2 253.37L411.9 254.84L413.6 256.31L415.3 257.78L417 259.25L418.7 260.73L420.4 262.2L422.1 263.67L423.8 265.15L425.5 266.62L427.2 268.1L428.9 269.57L430.6 271.05L432.3 272.52L434 274" fill="none" stroke="#E53935" stroke-width="3" stroke-linejoin="round"/></g><text x="343.33" y="62.14" font-size="14" fill="#1E88E5" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">sin θ</text><text x="352.4" y="204.33" font-size="14" fill="#E53935" text-anchor="start" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">cos θ</text><circle cx="230" cy="114.58" r="5" fill="#7C5CD6" stroke="#fff" stroke-width="2"/><text x="230" y="104.58" font-size="13" fill="#7C5CD6" text-anchor="middle" font-weight="700" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">45°: equal</text></svg><figcaption>As θ goes from 0° to 90°, sin θ rises from 0 to 1 and cos θ falls from 1 to 0. They are equal at 45°. tan θ rises from 0 without limit (not defined at 90°).</figcaption></figure>
+<div class="box think"><h4>🤔 Why is tan 90° not defined?</h4><p>As A gets close to 90°, the adjacent side AB shrinks towards 0 while the opposite side stays big. tan A = BC/AB becomes huge. At exactly 90° we would divide by 0, which is not allowed. Similarly cosec 0° and cot 0° are not defined.</p></div>
+<div class="act"><h4><span>🧪 Try it</span>Fold a 45° triangle</h4><ol><li>Take a square sheet of paper of side 10 cm and fold it along a diagonal.</li><li>Measure the diagonal: about 14.1 cm = 10√2 cm.</li><li>So sin 45° = 10/14.1 ≈ 0.707 = 1/√2 ✓. Now fold an equilateral triangle in half and check sin 30° = ½.</li></ol></div>
+</section>
+
+<section id="evaluate" class="th t-rose pat-wave" data-emoji="🎯">
+<div class="sec-head"><span class="sec-num">8.3.1</span><h2>Evaluating expressions and finding angles</h2></div>
+<p class="lead">Substitute the values from the table, simplify fractions, and <b>rationalise</b> the denominator if needed. To find an angle, make the ratio equal to a table value.</p>
+<div class="box calc"><h4>NCERT Ex 8.2 Q1(i): sin 60° cos 30° + sin 30° cos 60°</h4><p>= (√3/2)(√3/2) + (½)(½) = 3/4 + 1/4 = <b>1</b>.</p></div>
+<div class="box calc"><h4>CBSE 2024: 2√2 cos 45° sin 30° + 2√3 cos 30°</h4><p>= 2√2 × (1/√2) × ½ + 2√3 × (√3/2) <span class="mk">1</span> = 1 + 3 = <b>4</b>. <span class="mk">1</span></p></div>
+<div class="box calc"><h4>NCERT Ex 8.2 Q1(v): (5cos²60° + 4sec²30° − tan²45°)/(sin²30° + cos²30°)</h4><p>Numerator = 5(¼) + 4(4/3) − 1 = 5/4 + 16/3 − 1 = (15 + 64 − 12)/12 = 67/12. Denominator = 1.</p><p>Answer <b>67/12</b>.</p></div>
+<div class="box calc"><h4>Finding angles: NCERT Ex 8.2 Q3</h4><p>tan(A + B) = √3 and tan(A − B) = 1/√3, with 0° &lt; A + B ≤ 90° and A &gt; B.</p><p>A + B = 60°, A − B = 30° ⇒ <b>A = 45°, B = 15°</b>.</p></div>
+<div class="box calc"><h4>CBSE 2025: 7 + 4 sin θ = 9. Find θ.</h4><p>4 sin θ = 2 ⇒ sin θ = ½ ⇒ <b>θ = 30°</b>.</p></div>
+<div class="box calc"><h4>CBSE 2024: If cos(α + β) = 0, find cos((α + β)/2).</h4><p>cos(α + β) = 0 = cos 90° ⇒ α + β = 90° ⇒ cos 45° = <b>1/√2</b>.</p></div>
+<div class="box alert"><h4>⚠️ Watch out</h4><ul><li>sin(A + B) ≠ sin A + sin B. Check: sin(30° + 60°) = 1, but sin 30° + sin 60° = (1 + √3)/2.</li><li>sin 2A ≠ 2 sin A (true only for A = 0°).</li><li>cos²30° means (cos 30°)² = 3/4, not cos(900°).</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Calculator detective</h4><ol><li>Put your calculator in DEG mode. Find sin 30°, cos 60°, tan 45°. Do they match the table?</li><li>Find sin 1°, sin 10°, sin 50°, sin 89°. Notice sin keeps increasing.</li><li>Now find cos for the same angles: cos keeps decreasing. (NCERT Ex 8.2 Q4(ii), (iii))</li></ol></div>
+</section>
+
+<section id="ident" class="th t-teal pat-ring" data-emoji="🔑">
+<div class="sec-head"><span class="sec-num">8.4</span><h2>Trigonometric identities</h2></div>
+<p class="lead">An <span class="term">identity</span> is an equation that is true for <b>every</b> value of the angle (where both sides are defined). In ΔABC right-angled at B, Pythagoras says AB² + BC² = AC². Divide by AC², AB² or BC²:</p>
+<figure class="fig zoomable"><svg class="dg" viewBox="0 0 420 270" role="img" aria-label="Right triangle with hypotenuse 1, base cos A and height sin A, so sin squared plus cos squared equals 1" font-family="Mukta,sans-serif"><polygon points="60,230 330,230 330,60" fill="rgba(46,158,91,.1)" stroke="#0E2148" stroke-width="2.5" stroke-linejoin="round"/><path d="M316 230 L316 216 L330 216" fill="none" stroke="#0E2148" stroke-width="1.8"/><path d="M104 230 A44 44 0 0 0 97.23 206.56" fill="none" stroke="#F97316" stroke-width="2.5"/><text x="119.57" y="217.81" font-size="13" fill="#F97316" text-anchor="middle" font-weight="700">A</text><text x="195" y="255" font-size="16" fill="#1E88E5" text-anchor="middle" font-weight="700">cos A</text><text x="342" y="150" font-size="16" fill="#E53935" text-anchor="start" font-weight="700">sin A</text><text x="185" y="132" font-size="18" fill="#2E9E5B" text-anchor="end" font-weight="700">1</text><text x="210" y="26" font-size="17" fill="#7C5CD6" text-anchor="middle" font-weight="700">sin²A + cos²A = 1²</text></svg><figcaption>With hypotenuse 1, the base is cos A and the height is sin A. Pythagoras gives sin²A + cos²A = 1 at once.</figcaption></figure>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Divide AB² + BC² = AC² by</th><th>Identity</th><th>Valid for</th><th>Useful forms</th></tr></thead><tbody>
+<tr><td>AC²</td><td><b>cos²A + sin²A = 1</b></td><td>0° ≤ A ≤ 90°</td><td>sin²A = 1 − cos²A, cos²A = 1 − sin²A</td></tr>
+<tr><td>AB²</td><td><b>1 + tan²A = sec²A</b></td><td>0° ≤ A &lt; 90°</td><td>sec²A − tan²A = 1 ⇒ (sec A − tan A)(sec A + tan A) = 1</td></tr>
+<tr><td>BC²</td><td><b>cot²A + 1 = cosec²A</b></td><td>0° &lt; A ≤ 90°</td><td>cosec²A − cot²A = 1 ⇒ (cosec A − cot A)(cosec A + cot A) = 1</td></tr></tbody></table></div>
+<div class="box calc"><h4>CBSE 2024 MCQ: sec θ − tan θ = m. Find sec θ + tan θ.</h4><p>(sec θ − tan θ)(sec θ + tan θ) = sec²θ − tan²θ = 1 ⇒ sec θ + tan θ = <b>1/m</b>.</p></div>
+<div class="box calc"><h4>NCERT Ex 8.3 Q1: write sin A, sec A, tan A in terms of cot A</h4><p>cosec²A = 1 + cot²A ⇒ <b>sin A = 1/√(1 + cot²A)</b>. tan A = <b>1/cot A</b>. sec²A = 1 + tan²A = (cot²A + 1)/cot²A ⇒ <b>sec A = √(1 + cot²A)/cot A</b>.</p></div>
+<div class="box calc"><h4>CBSE 2026: x = h + a cos θ, y = k + b sin θ. Prove ((x − h)/a)² + ((y − k)/b)² = 1.</h4><p>(x − h)/a = cos θ and (y − k)/b = sin θ. <span class="mk">1</span></p><p>LHS = cos²θ + sin²θ = <b>1</b> = RHS. <span class="mk">2</span></p></div>
+<div class="act"><h4><span>🧪 Try it</span>Check the identity with numbers</h4><ol><li>Pick θ = 30°: sin²30° + cos²30° = ¼ + ¾ = 1 ✓.</li><li>Pick θ = 60°: 1 + tan²60° = 1 + 3 = 4, sec²60° = 2² = 4 ✓.</li><li>Pick any angle on your calculator, like 23°, and test all three. They always work!</li></ol></div>
+</section>
+
+<section id="prove" class="th t-coral pat-wave" data-emoji="🧩">
+<div class="sec-head"><span class="sec-num">8.4.1</span><h2>How to prove identities: 8 tricks</h2></div>
+<p class="lead">A 3-mark "prove that" comes in <b>every</b> CBSE paper. Start from the more complicated side and work towards the other side. Never move terms across the "=" sign.</p>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>#</th><th>Trick</th><th>When to use</th></tr></thead><tbody>
+<tr><td>1</td><td>Convert everything to <b>sin and cos</b></td><td>When you are stuck: it always works</td></tr>
+<tr><td>2</td><td>Take the <b>LCM</b> of fractions</td><td>Two fractions added or subtracted</td></tr>
+<tr><td>3</td><td>Use (a + b)(a − b) = a² − b²</td><td>(1 + sin)(1 − sin) = cos², (sec − tan)(sec + tan) = 1</td></tr>
+<tr><td>4</td><td>Multiply by the <b>conjugate</b></td><td>Square roots like √((1 + sin)/(1 − sin))</td></tr>
+<tr><td>5</td><td>Replace 1 by sec² − tan² (or cosec² − cot²)</td><td>Expressions like (tan + sec − 1)/(tan − sec + 1)</td></tr>
+<tr><td>6</td><td>Use a³ − b³ = (a − b)(a² + ab + b²)</td><td>Cubes of tan, cot, sin, cos</td></tr>
+<tr><td>7</td><td>Expand squares</td><td>(sin A + cosec A)² + (cos A + sec A)²</td></tr>
+<tr><td>8</td><td>Work on <b>both sides</b> separately</td><td>When both sides look complicated: reduce each to the same expression</td></tr></tbody></table></div>
+<div class="box calc"><h4>CBSE 2024 and 2025 (3 marks): prove tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ</h4><p>Write t = tan θ: LHS = t/(1 − 1/t) + (1/t)/(1 − t) = t²/(t − 1) − 1/(t(t − 1)) <span class="mk">1</span></p><p>= (t³ − 1)/(t(t − 1)) = (t − 1)(t² + t + 1)/(t(t − 1)) = (t² + t + 1)/t = t + 1 + 1/t <span class="mk">1</span></p><p>= 1 + (sin²θ + cos²θ)/(sin θ cos θ) = 1 + 1/(sin θ cos θ) = <b>1 + sec θ cosec θ</b>. <span class="mk">1</span></p></div>
+<div class="box calc"><h4>CBSE 2023 (3 marks): prove (tan θ + sec θ − 1)/(tan θ − sec θ + 1) = (1 + sin θ)/cos θ</h4><p>Numerator: replace 1 by sec²θ − tan²θ: tan θ + sec θ − (sec θ + tan θ)(sec θ − tan θ) = (sec θ + tan θ)(1 − sec θ + tan θ). <span class="mk">1½</span></p><p>The bracket (1 − sec θ + tan θ) is the denominator, so LHS = sec θ + tan θ <span class="mk">1</span> = 1/cos θ + sin θ/cos θ = <b>(1 + sin θ)/cos θ</b>. <span class="mk">½</span></p></div>
+<div class="box calc"><h4>NCERT Ex 8.3 Q4(vi): prove √((1 + sin A)/(1 − sin A)) = sec A + tan A</h4><p>Multiply inside by (1 + sin A)/(1 + sin A): √((1 + sin A)²/(1 − sin²A)) = (1 + sin A)/cos A = <b>sec A + tan A</b>.</p></div>
+<div class="box alert"><h4>⚠️ Common proof mistakes</h4><ul><li>Cross-multiplying both sides at the start: this assumes what you have to prove. Work on one side.</li><li>Writing √(a² + b²) = a + b. It is wrong.</li><li>Cancelling terms in a sum: (sin A + cos A)/sin A is not cos A.</li><li>Not writing "= RHS. Hence proved." at the end. Examiners like a clear finish.</li></ul></div>
+<div class="act"><h4><span>🧪 Try it</span>Proof race</h4><ol><li>With a friend, both prove (1 + tan²A)/(1 + cot²A) = tan²A: one using identities, one by converting to sin and cos.</li><li>Compare the number of lines. Which way was faster?</li><li>Then check your answer at θ = 30° in the Identity Checker below.</li></ol></div>
+</section>
+
+<section id="lab-ident" class="no-print th t-sun pat-ring" data-emoji="✅">
+<div class="sec-head"><span class="sec-num word">Lab 3</span><h2>Identity Checker</h2></div>
+<div class="tool" id="lab-id"><h4>✅ Is it really an identity? Test it at every angle</h4><p class="hint">Pick an identity. The checker plots LHS (blue) and RHS (red dashed) from 1° to 89°. If the curves sit on top of each other, it is an identity. Slide θ to compare the values, and read the proof steps. One "fake" identity is included: can you spot it?</p>
+<div class="row-in"><label>Identity <select id="id-pick" class="sel"></select></label></div>
+<label for="id-th">θ = <b id="id-thv">30</b>°</label><input type="range" id="id-th" min="1" max="89" step="1" value="30">
+<div class="tool-grid"><div id="id-svg"></div><div class="readout" id="id-out"></div></div></div>
+</section>
+
+<section id="map" class="t-navy">
+<div class="sec-head"><span class="sec-num word">Map</span><h2>Mind map, formulas and common mistakes</h2></div>
+<div class="mindmap">
+<div class="mm-core">INTRODUCTION TO TRIGONOMETRY</div>
+<div class="mm-b refl"><h4>🔺 Ratios</h4><ul><li>sin = P/H, cos = B/H, tan = P/B</li><li>cosec = 1/sin, sec = 1/cos, cot = 1/tan</li><li>tan = sin/cos</li><li>Depend only on the angle</li></ul></div>
+<div class="mm-b lens"><h4>⭐ Table</h4><ul><li>sin: 0, ½, 1/√2, √3/2, 1</li><li>cos: the same backwards</li><li>tan: 0, 1/√3, 1, √3, —</li><li>tan 90°, cot 0° not defined</li></ul></div>
+<div class="mm-b refr"><h4>🔑 Identities</h4><ul><li>sin² + cos² = 1</li><li>1 + tan² = sec²</li><li>1 + cot² = cosec²</li><li>Prove: one side → other side</li></ul></div></div>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Question says…</th><th>Do this</th></tr></thead><tbody><tr><td>"If tan θ = p/q, find…"</td><td>draw the triangle, sides pk and qk, Pythagoras for the third side</td></tr><tr><td>"Evaluate" with 30°, 45°, 60°</td><td>substitute table values, simplify, rationalise</td></tr><tr><td>"Find θ" or "find A and B"</td><td>make each ratio equal to a table value</td></tr><tr><td>"sec θ − tan θ = m"</td><td>use (sec − tan)(sec + tan) = 1</td></tr><tr><td>"Prove that"</td><td>start from the harder side; convert to sin, cos if stuck</td></tr><tr><td>"Express in terms of …"</td><td>use the identity linking the two ratios</td></tr></tbody></table></div>
+<div class="box alert"><h4>⚠️ Top 8 mistakes students make</h4><ol>
+<li>Mixing up opposite and adjacent: always look from the given angle.</li>
+<li>Writing sin(A + B) = sin A + sin B.</li>
+<li>Thinking sin²A means sin(A²).</li>
+<li>Using cos 60° = √3/2 (it is ½). Make the table every time.</li>
+<li>Writing tan 90° = ∞ or 0 instead of "not defined".</li>
+<li>Cross-multiplying in a "prove that" question.</li>
+<li>Not rationalising answers like 1/(2 + √3).</li>
+<li>Using sin(90° − A) = cos A: complementary angles are no longer in the syllabus, so such questions are not asked.</li></ol></div>
+</section>
+
+<section id="arcade" class="no-print t-sun">
+<div class="sec-head"><span class="sec-num word">🎮</span><h2>Trig Arcade: 3 games</h2></div>
+<p class="lead">Play to revise. Every game gives ⭐ stars, saved on this phone. Collect all 15 to become a <b>Trig Wizard</b>. <span class="stars-total" id="ga-total"></span></p>
+<div class="tool game" id="g-tt"><h4>⭐ Game 1: Table Tap</h4><p class="hint">Tap the value of the ratio. 12 rounds in 90 seconds. <span id="gt-t" class="gtime"></span></p>
+<p class="gq" id="gt-q"></p><div class="opts" id="gt-opts"></div><p class="readout" id="gt-out"></p><button type="button" class="tbtn solid" id="gt-start">Start</button></div>
+<div class="tool game" id="g-rb"><h4>🧮 Game 2: Ratio Builder</h4><p class="hint">One ratio is given. Find the asked ratio. 8 rounds.</p>
+<p class="gq" id="gr-q"></p><div class="opts" id="gr-opts"></div><p class="readout" id="gr-out"></p><button type="button" class="tbtn solid" id="gr-start">Start</button></div>
+<div class="tool game" id="g-id"><h4>🔑 Game 3: Identity Snap</h4><p class="hint">Simplify the expression in your head. 8 rounds.</p>
+<p class="gq" id="gi-q"></p><div class="opts" id="gi-opts"></div><p class="readout" id="gi-out"></p><button type="button" class="tbtn solid" id="gi-start">Start</button></div>
+</section>
+
+<section id="cbse" class="t-navy">
+<div class="sec-head"><span class="sec-num word">CBSE</span><h2>CBSE exam pattern and how marks are given</h2></div>
+<p>The CBSE Class 10 Mathematics (Standard, 041) paper is <b>80 marks, 3 hours, 38 questions</b>. Unit <b>Trigonometry</b> (Introduction to Trigonometry + Some Applications) carries <b>12 marks</b>. From this chapter expect about 2 MCQs, one 2-mark question and one 3-mark proof.</p>
+<h3>This chapter in recent CBSE papers (set 30/1/1)</h3>
+<div class="tbl-wrap"><table class="compact"><thead><tr><th>Year</th><th>Where</th><th>What was asked</th></tr></thead><tbody>
+<tr><td><b>2026</b></td><td>Q9, Q10 (MCQ), Q24 (2), Q28 (3)</td><td>cos from sin; value from cos A = ½; sin θ + cos θ from tan θ OR cot θ expression; x = h + a cos θ type OR tan A/(1 + sec A) − tan A/(1 − sec A)</td></tr>
+<tr><td><b>2025</b></td><td>Q4 (MCQ), Q21 (2), Q27 (3)</td><td>θ from 7 + 4 sin θ = 9; x + 2y from a table-value equation OR evaluate; tan/(1 − cot) + cot/(1 − tan) OR (s + c)/(s − c) + (s − c)/(s + c)</td></tr>
+<tr><td><b>2024</b></td><td>Q7, Q12 (MCQ), Q23 (2), Q28 (3)</td><td>sec θ + tan θ from sec θ − tan θ; cos((α + β)/2); evaluate OR verify sin(A + B); tan/(1 − cot) + cot/(1 − tan)</td></tr>
+<tr><td><b>2023</b></td><td>Q6 (MCQ), Q23 (2), Q30 (3)</td><td>expression from 2 tan A = 3; cosec α + cosec β; (tan + sec − 1)/(tan − sec + 1)</td></tr></tbody></table></div>
+<div class="box key"><h4>✍️ How the CBSE marking scheme splits marks</h4><ul>
+<li><b>"Given one ratio" (2 marks):</b> 1 for the third side (Pythagoras), 1 for the final value.</li>
+<li><b>Evaluate (2 marks):</b> 1 for correct substitution of table values, 1 for the answer.</li>
+<li><b>Prove that (3 marks):</b> 1 for the first correct conversion (to sin, cos or LCM), 1 for the main step (identity or factorisation), 1 for reaching the RHS.</li></ul></div>
+<div class="box trick"><h4>🏆 Answer-writing tips for full marks</h4><ol><li>Write "LHS =" and work only on that side; finish with "= RHS. Hence proved."</li><li>Name the identity you use, for example "(using sec²θ − tan²θ = 1)".</li><li>In "given one ratio" questions, draw the small triangle with the sides marked.</li><li>Write values as fractions, not decimals: √3/2, not 0.866.</li></ol></div>
+</section>
+
+<section id="pyq" class="t-coral">
+<div class="sec-head"><span class="sec-num word">PYQ</span><h2>CBSE board questions (2023–2026)</h2></div>
+<p>Introduction to Trigonometry questions from CBSE Class 10 Maths Standard papers (set 30/1/1) with full solutions and step marks. Wording lightly shortened; MCQ options are not repeated.</p>
+<div class="seg no-print" id="pyq-seg"><button type="button" class="on" data-y="all">All</button><button type="button" data-y="2026">2026</button><button type="button" data-y="2025">2025</button><button type="button" data-y="2024">2024</button><button type="button" data-y="2023">2023</button></div>
+<div class="pyq" data-y="2026">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q9 · 1 mark</span></span><span>If sin θ = a/b, then cos θ is equal to</span></summary><div class="ans"><p>Opposite a, hypotenuse b ⇒ adjacent √(b² − a²). So cos θ = <b>√(b² − a²)/b</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q10 · 1 mark</span></span><span>If cos A = 1/2, then the value of sin²A + 2cos²A is</span></summary><div class="ans"><p>A = 60°: sin²A = 3/4, cos²A = 1/4 ⇒ 3/4 + 2/4 = <b>5/4</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q24 (A) · 2 marks</span></span><span>If tan θ = 24/7, find the value of sin θ + cos θ.</span></summary><div class="ans"><p>Hypotenuse = √(24² + 7²) = 25 (sides 24k, 7k, 25k). <span class="mk">1</span></p><p>sin θ + cos θ = 24/25 + 7/25 = <b>31/25</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q24 (B, OR) · 2 marks</span></span><span>If cot θ = 7/8, evaluate (1 + sin θ)(1 − sin θ) / ((1 + cos θ)(1 − cos θ)).</span></summary><div class="ans"><p>= (1 − sin²θ)/(1 − cos²θ) = cos²θ/sin²θ = cot²θ <span class="mk">1</span></p><p>= (7/8)² = <b>49/64</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q28 (A) · 3 marks</span></span><span>If x = h + a cos θ and y = k + b sin θ, prove that ((x − h)/a)² + ((y − k)/b)² = 1.</span></summary><div class="ans"><p>x − h = a cos θ ⇒ (x − h)/a = cos θ; y − k = b sin θ ⇒ (y − k)/b = sin θ. <span class="mk">1½</span></p><p>LHS = cos²θ + sin²θ <span class="mk">1</span> = 1 = RHS. Hence proved. <span class="mk">½</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2026 · 30/1/1 · Q28 (B, OR) · 3 marks</span></span><span>Prove that tan A/(1 + sec A) − tan A/(1 − sec A) = 2 cosec A.</span></summary><div class="ans"><p>LHS = tan A [(1 − sec A) − (1 + sec A)]/(1 − sec²A) = tan A (−2 sec A)/(1 − sec²A) <span class="mk">1</span></p><p>1 − sec²A = −tan²A ⇒ LHS = 2 sec A/tan A <span class="mk">1</span></p><p>= 2 (1/cos A)(cos A/sin A) = 2/sin A = <b>2 cosec A</b>. <span class="mk">1</span></p></div></details>
+</div>
+<div class="pyq" data-y="2025">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q4 · 1 mark</span></span><span>If 7 + 4 sin θ = 9, then the value of θ is</span></summary><div class="ans"><p>sin θ = 1/2 ⇒ <b>θ = 30°</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q21 (A) · 2 marks</span></span><span>If x cos 60° + y cos 0° + sin 30° − cot 45° = 5, find the value of x + 2y.</span></summary><div class="ans"><p>x(½) + y(1) + ½ − 1 = 5 <span class="mk">1</span></p><p>Multiply by 2: x + 2y + 1 − 2 = 10 ⇒ <b>x + 2y = 11</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q21 (B, OR) · 2 marks</span></span><span>Evaluate tan²60°/(sin²60° + cos²30°).</span></summary><div class="ans"><p>= 3/(3/4 + 3/4) <span class="mk">1</span> = 3/(3/2) = <b>2</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q27 (A) · 3 marks</span></span><span>Prove that tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ.</span></summary><div class="ans"><p>In terms of sin and cos: LHS = sin²θ/(cos θ(sin θ − cos θ)) − cos²θ/(sin θ(sin θ − cos θ)) <span class="mk">1</span></p><p>= (sin³θ − cos³θ)/(sin θ cos θ (sin θ − cos θ)) = (sin²θ + sin θ cos θ + cos²θ)/(sin θ cos θ) <span class="mk">1</span></p><p>= (1 + sin θ cos θ)/(sin θ cos θ) = 1/(sin θ cos θ) + 1 = <b>1 + sec θ cosec θ</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2025 · 30/1/1 · Q27 (B, OR) · 3 marks</span></span><span>Prove that (sin θ + cos θ)/(sin θ − cos θ) + (sin θ − cos θ)/(sin θ + cos θ) = 2/(2 sin²θ − 1).</span></summary><div class="ans"><p>LHS = [(sin θ + cos θ)² + (sin θ − cos θ)²]/(sin²θ − cos²θ) <span class="mk">1</span></p><p>Numerator = 2(sin²θ + cos²θ) = 2. Denominator = sin²θ − (1 − sin²θ) = 2 sin²θ − 1. <span class="mk">1½</span></p><p>LHS = <b>2/(2 sin²θ − 1)</b> = RHS. <span class="mk">½</span></p></div></details>
+</div>
+<div class="pyq" data-y="2024">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q7 · 1 mark</span></span><span>If sec θ − tan θ = m, then the value of sec θ + tan θ is</span></summary><div class="ans"><p>(sec θ − tan θ)(sec θ + tan θ) = sec²θ − tan²θ = 1 ⇒ <b>1/m</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q12 · 1 mark</span></span><span>If cos(α + β) = 0, then the value of cos((α + β)/2) is equal to</span></summary><div class="ans"><p>α + β = 90° ⇒ cos 45° = <b>1/√2</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q23 (A) · 2 marks</span></span><span>Evaluate 2√2 cos 45° sin 30° + 2√3 cos 30°.</span></summary><div class="ans"><p>= 2√2 (1/√2)(½) + 2√3 (√3/2) <span class="mk">1</span> = 1 + 3 = <b>4</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q23 (B, OR) · 2 marks</span></span><span>If A = 60° and B = 30°, verify that sin(A + B) = sin A cos B + cos A sin B.</span></summary><div class="ans"><p>LHS = sin 90° = 1. <span class="mk">½</span></p><p>RHS = (√3/2)(√3/2) + (½)(½) = 3/4 + 1/4 = 1 <span class="mk">1</span>. LHS = RHS, verified. <span class="mk">½</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2024 · 30/1/1 · Q28 · 3 marks</span></span><span>Prove that tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ.</span></summary><div class="ans"><p>Solved in <a href="#prove">section 8.4.1</a> (same question repeated in 2025): t²/(t − 1) − 1/(t(t − 1)) <span class="mk">1</span> = (t³ − 1)/(t(t − 1)) = t + 1 + 1/t <span class="mk">1</span> = 1 + 1/(sin θ cos θ) = <b>1 + sec θ cosec θ</b>. <span class="mk">1</span></p></div></details>
+</div>
+<div class="pyq" data-y="2023">
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q6 · 1 mark</span></span><span>If 2 tan A = 3, then the value of (4 sin A + 3 cos A)/(4 sin A − 3 cos A) is</span></summary><div class="ans"><p>Divide by cos A: (4 tan A + 3)/(4 tan A − 3) = (6 + 3)/(6 − 3) = <b>3</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q23 · 2 marks</span></span><span>If sin α = 1/√2 and cot β = √3, find the value of cosec α + cosec β.</span></summary><div class="ans"><p>α = 45°, β = 30°. <span class="mk">1</span></p><p>cosec 45° + cosec 30° = <b>√2 + 2</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum"><span class="yr">CBSE 2023 · 30/1/1 · Q30 · 3 marks</span></span><span>Prove that (tan θ + sec θ − 1)/(tan θ − sec θ + 1) = (1 + sin θ)/cos θ.</span></summary><div class="ans"><p>In the numerator replace 1 by sec²θ − tan²θ: (sec θ + tan θ) − (sec θ + tan θ)(sec θ − tan θ) = (sec θ + tan θ)(1 − sec θ + tan θ). <span class="mk">1½</span></p><p>Cancel (tan θ − sec θ + 1): LHS = sec θ + tan θ <span class="mk">1</span> = <b>(1 + sin θ)/cos θ</b>. <span class="mk">½</span></p></div></details>
+</div>
+<div class="box key"><h4>📈 Pattern spotted</h4><p>The identity <b>tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ came in both 2024 and 2025</b>. A <b>"given tan or cot, find…"</b> 2-marker came in 2026, and a <b>table-value evaluation</b> in 2024 and 2025. Learn all 10 proofs of NCERT Ex 8.3 Q4: CBSE keeps reusing them.</p></div>
+</section>
+
+<section id="practice" class="t-teal">
+<div class="sec-head"><span class="sec-num word">A–E</span><h2>CBSE section-wise practice</h2></div>
+<p>Questions in the exact CBSE format, from easy to board level. Try each one before opening the answer.</p>
+<h3 class="group-title">Section A: MCQs (1 mark each)</h3>
+<details class="qa"><summary><span class="qnum">A1</span><span>If sin A = 3/5, then cos A = (a) 4/5 (b) 3/4 (c) 5/4 (d) 5/3</span></summary><div class="ans"><b>(a) 4/5.</b> Sides 3, 4, 5.</div></details>
+<details class="qa"><summary><span class="qnum">A2</span><span>tan 30° × tan 60° = (a) 1 (b) √3 (c) 1/√3 (d) 0</span></summary><div class="ans"><b>(a) 1.</b> (1/√3)(√3).</div></details>
+<details class="qa"><summary><span class="qnum">A3</span><span>sin²60° − cos²60° = (a) 1/2 (b) 1 (c) 0 (d) √3/2</span></summary><div class="ans"><b>(a) 1/2.</b> 3/4 − 1/4.</div></details>
+<details class="qa"><summary><span class="qnum">A4</span><span>If cosec θ = √10, then sec θ = (a) √10/3 (b) 3/√10 (c) 3 (d) 1/3</span></summary><div class="ans"><b>(a) √10/3.</b> Opposite 1, hypotenuse √10 ⇒ adjacent 3.</div></details>
+<details class="qa"><summary><span class="qnum">A5</span><span>Which of these is not defined? (a) tan 0° (b) cot 90° (c) sec 90° (d) cos 90°</span></summary><div class="ans"><b>(c) sec 90°.</b> 1/cos 90° = 1/0.</div></details>
+<details class="qa"><summary><span class="qnum">A6</span><span>If sin θ = cos θ (θ acute), then 2 tan θ + cos²θ = (a) 5/2 (b) 3 (c) 3/2 (d) 2</span></summary><div class="ans"><b>(a) 5/2.</b> θ = 45°: 2 + ½.</div></details>
+<details class="qa"><summary><span class="qnum">A7</span><span>(sec²θ − 1)(cosec²θ − 1) = (a) 1 (b) 0 (c) −1 (d) 2</span></summary><div class="ans"><b>(a) 1.</b> tan²θ × cot²θ.</div></details>
+<details class="qa"><summary><span class="qnum">A8</span><span>If tan A = √3 (A acute), then sin A cos A = (a) √3/4 (b) 1/2 (c) √3/2 (d) 1/4</span></summary><div class="ans"><b>(a) √3/4.</b> A = 60°: (√3/2)(½).</div></details>
+<h3 class="group-title">Section A: Assertion–Reason (1 mark each)</h3>
+<p class="muted">(a) Both A and R are true and R explains A. (b) Both true, R does not explain A. (c) A true, R false. (d) A false, R true.</p>
+<details class="qa"><summary><span class="qnum">AR1</span><span>A: sin θ = 5/4 for some acute angle θ. R: For an acute angle, sin θ is never greater than 1.</span></summary><div class="ans"><b>(d).</b></div></details>
+<details class="qa"><summary><span class="qnum">AR2</span><span>A: sec²θ − tan²θ = 1 for every acute angle θ. R: 1 + tan²θ = sec²θ.</span></summary><div class="ans"><b>(a).</b></div></details>
+<details class="qa"><summary><span class="qnum">AR3</span><span>A: cos 0° = 1 and cos 90° = 0. R: cos θ decreases as θ increases from 0° to 90°.</span></summary><div class="ans"><b>(b).</b> Both true, but A comes from the table values, not from R.</div></details>
+<h3 class="group-title">Section B: 2 marks each</h3>
+<details class="qa"><summary><span class="qnum">B1</span><span>If sin A = 12/13, find cos A and tan A.</span></summary><div class="ans"><p>Opposite 12k, hypotenuse 13k ⇒ adjacent = √(169 − 144) k = 5k. <span class="mk">1</span></p><p>cos A = <b>5/13</b>, tan A = <b>12/5</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B2</span><span>Evaluate 4/cot²30° + 1/sin²60° − cos²45°.</span></summary><div class="ans"><p>= 4/3 + 1/(3/4) − 1/2 = 4/3 + 4/3 − 1/2 <span class="mk">1</span></p><p>= 8/3 − 1/2 = <b>13/6</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B3</span><span>If sin(A − B) = 1/2 and cos(A + B) = 1/2, with 0° &lt; A + B ≤ 90° and A &gt; B, find A and B.</span></summary><div class="ans"><p>A − B = 30° and A + B = 60°. <span class="mk">1</span></p><p>Adding: <b>A = 45°, B = 15°</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B4</span><span>Prove that (1 + cot²A)(1 − cos A)(1 + cos A) = 1.</span></summary><div class="ans"><p>LHS = cosec²A × (1 − cos²A) = cosec²A × sin²A <span class="mk">1</span></p><p>= (1/sin²A) × sin²A = <b>1</b> = RHS. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">B5</span><span>If √3 tan θ = 1 (θ acute), find sin²θ − cos²θ.</span></summary><div class="ans"><p>tan θ = 1/√3 ⇒ θ = 30°. <span class="mk">1</span></p><p>1/4 − 3/4 = <b>−1/2</b>. <span class="mk">1</span></p></div></details>
+<h3 class="group-title">Section C: 3 marks each</h3>
+<details class="qa"><summary><span class="qnum">C1</span><span>Prove that (sin A − cos A + 1)/(sin A + cos A − 1) = 1/(sec A − tan A).</span></summary><div class="ans"><p>Divide numerator and denominator by cos A: LHS = (tan A + sec A − 1)/(tan A − sec A + 1). <span class="mk">1</span></p><p>Replace 1 in the numerator by sec²A − tan²A: numerator = (sec A + tan A)(1 − sec A + tan A), so LHS = sec A + tan A. <span class="mk">1</span></p><p>sec A + tan A = (sec²A − tan²A)/(sec A − tan A) = <b>1/(sec A − tan A)</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">C2</span><span>Prove that sec A (1 − sin A)(sec A + tan A) = 1.</span></summary><div class="ans"><p>sec A + tan A = (1 + sin A)/cos A. <span class="mk">1</span></p><p>LHS = (1/cos A)(1 − sin A)(1 + sin A)/cos A = (1 − sin²A)/cos²A <span class="mk">1</span></p><p>= cos²A/cos²A = <b>1</b>. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">C3</span><span>If tan θ + sin θ = m and tan θ − sin θ = n, show that m² − n² = 4√(mn).</span></summary><div class="ans"><p>m² − n² = (m + n)(m − n) = (2 tan θ)(2 sin θ) = 4 tan θ sin θ. <span class="mk">1</span></p><p>mn = tan²θ − sin²θ = sin²θ(1/cos²θ − 1) = sin²θ × tan²θ. <span class="mk">1</span></p><p>4√(mn) = 4 tan θ sin θ = m² − n². Hence proved. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">C4</span><span>Prove that (cot A − cos A)/(cot A + cos A) = (cosec A − 1)/(cosec A + 1).</span></summary><div class="ans"><p>cot A = cos A/sin A. Take cos A common: LHS = cos A(1/sin A − 1)/(cos A(1/sin A + 1)) <span class="mk">2</span></p><p>= <b>(cosec A − 1)/(cosec A + 1)</b>. <span class="mk">1</span></p></div></details>
+<h3 class="group-title">Section D: 5 marks</h3>
+<details class="qa"><summary><span class="qnum">D1</span><span>If sec θ + tan θ = p, prove that sin θ = (p² − 1)/(p² + 1). Hence find sin θ when p = 2.</span></summary><div class="ans"><p>(sec θ + tan θ)(sec θ − tan θ) = 1 ⇒ sec θ − tan θ = 1/p. <span class="mk">1</span></p><p>Adding and subtracting: sec θ = (p² + 1)/(2p), tan θ = (p² − 1)/(2p). <span class="mk">2</span></p><p>sin θ = tan θ/sec θ = <b>(p² − 1)/(p² + 1)</b>. <span class="mk">1</span></p><p>p = 2: sin θ = 3/5. <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">D2</span><span>Prove that (1 + 1/tan²A)(1 + 1/cot²A) = 1/(sin²A − sin⁴A). Verify the result for A = 30°.</span></summary><div class="ans"><p>LHS = (1 + cot²A)(1 + tan²A) = cosec²A sec²A = 1/(sin²A cos²A). <span class="mk">2</span></p><p>RHS = 1/(sin²A(1 − sin²A)) = 1/(sin²A cos²A). LHS = RHS. <span class="mk">1</span></p><p>A = 30°: LHS = (1 + 3)(1 + 1/3) = 16/3. RHS = 1/(1/4 − 1/16) = 16/3 ✓ <span class="mk">2</span></p></div></details>
+<h3 class="group-title">Section E: Case study (1 + 1 + 2)</h3>
+<details class="qa"><summary><span class="qnum">E1</span><span>A painter places a 13 m ladder against a wall. The foot of the ladder is 5 m from the wall. Let θ be the angle the ladder makes with the ground. (i) How high up the wall does the ladder reach? (ii) Find sin θ. (iii) Find tan θ + cot θ. OR (iii) Verify that sin²θ + cos²θ = 1 for this ladder.</span></summary><div class="ans">
+<p>(i) √(169 − 25) = <b>12 m</b>. <span class="mk">1</span></p>
+<p>(ii) sin θ = <b>12/13</b>. <span class="mk">1</span></p>
+<p>(iii) tan θ = 12/5, cot θ = 5/12 <span class="mk">1</span> ⇒ sum = (144 + 25)/60 = <b>169/60</b>. <span class="mk">1</span></p>
+<p>OR (iii) sin θ = 12/13, cos θ = 5/13 <span class="mk">1</span> ⇒ 144/169 + 25/169 = 169/169 = <b>1</b> ✓ <span class="mk">1</span></p></div></details>
+<details class="qa"><summary><span class="qnum">E2</span><span>A school builds a 4 m long wheelchair ramp at 30° to the ground. (i) Find the height of the ramp's top. (ii) Find the horizontal distance covered by the ramp. (iii) If the same height is reached with a ramp at 45°, how long is that ramp, and how much shorter is it? OR (iii) A safer ramp rises 1 m over 12 m horizontally. Find sec of its angle.</span></summary><div class="ans">
+<p>(i) h = 4 sin 30° = <b>2 m</b>. <span class="mk">1</span></p>
+<p>(ii) 4 cos 30° = 4 × √3/2 = <b>2√3 m ≈ 3.46 m</b>. <span class="mk">1</span></p>
+<p>(iii) L = 2/sin 45° = <b>2√2 m ≈ 2.83 m</b> <span class="mk">1</span>; shorter by 4 − 2√2 ≈ <b>1.17 m</b> (but steeper, so harder to climb). <span class="mk">1</span></p>
+<p>OR (iii) Hypotenuse = √(1 + 144) = √145 <span class="mk">1</span> ⇒ sec θ = <b>√145/12</b>. <span class="mk">1</span></p></div></details>
+</section>
+
+<section id="quiz" class="t-rose">
+<div class="sec-head"><span class="sec-num word">Quiz</span><h2>Test yourself</h2></div>
+<p>Tap an answer. <span class="score">Score: 0 / 20</span></p>
+<div class="quiz">
+<div class="q"><p>1. sin A is defined as</p><div class="opts"><button type="button" class="opt">hypotenuse/opposite</button><button type="button" class="opt">adjacent/hypotenuse</button><button type="button" class="opt" data-c>opposite/hypotenuse</button><button type="button" class="opt">opposite/adjacent</button></div></div>
+<div class="q"><p>2. sec A is the reciprocal of</p><div class="opts"><button type="button" class="opt">cot A</button><button type="button" class="opt" data-c>cos A</button><button type="button" class="opt">sin A</button><button type="button" class="opt">tan A</button></div></div>
+<div class="q"><p>3. sin 30° =</p><div class="opts"><button type="button" class="opt" data-c>1/2</button><button type="button" class="opt">1/√2</button><button type="button" class="opt">1</button><button type="button" class="opt">√3/2</button></div></div>
+<div class="q"><p>4. cos 60° =</p><div class="opts"><button type="button" class="opt">1/√3</button><button type="button" class="opt">0</button><button type="button" class="opt">√3/2</button><button type="button" class="opt" data-c>1/2</button></div></div>
+<div class="q"><p>5. tan 45° =</p><div class="opts"><button type="button" class="opt" data-c>1</button><button type="button" class="opt">√3</button><button type="button" class="opt">1/√2</button><button type="button" class="opt">0</button></div></div>
+<div class="q"><p>6. Which is not defined?</p><div class="opts"><button type="button" class="opt">cos 0°</button><button type="button" class="opt" data-c>tan 90°</button><button type="button" class="opt">cot 90°</button><button type="button" class="opt">sin 90°</button></div></div>
+<div class="q"><p>7. sin²A + cos²A =</p><div class="opts"><button type="button" class="opt">2</button><button type="button" class="opt" data-c>1</button><button type="button" class="opt">0</button><button type="button" class="opt">tan²A</button></div></div>
+<div class="q"><p>8. sec²A − tan²A =</p><div class="opts"><button type="button" class="opt" data-c>1</button><button type="button" class="opt">−1</button><button type="button" class="opt">0</button><button type="button" class="opt">sec A</button></div></div>
+<div class="q"><p>9. If tan A = 3/4, then sin A =</p><div class="opts"><button type="button" class="opt">4/5</button><button type="button" class="opt">3/4</button><button type="button" class="opt">5/3</button><button type="button" class="opt" data-c>3/5</button></div></div>
+<div class="q"><p>10. cosec²A − cot²A =</p><div class="opts"><button type="button" class="opt">cosec A</button><button type="button" class="opt">0</button><button type="button" class="opt">−1</button><button type="button" class="opt" data-c>1</button></div></div>
+<div class="q"><p>11. The value of sin A can never be</p><div class="opts"><button type="button" class="opt">equal to 1</button><button type="button" class="opt" data-c>more than 1</button><button type="button" class="opt">equal to ½</button><button type="button" class="opt">less than 1</button></div></div>
+<div class="q"><p>12. tan A equals</p><div class="opts"><button type="button" class="opt">1/sin A</button><button type="button" class="opt">sin A × cos A</button><button type="button" class="opt">cos A / sin A</button><button type="button" class="opt" data-c>sin A / cos A</button></div></div>
+<div class="q"><p>13. As A increases from 0° to 90°, cos A</p><div class="opts"><button type="button" class="opt">increases from 0 to 1</button><button type="button" class="opt">stays the same</button><button type="button" class="opt" data-c>decreases from 1 to 0</button><button type="button" class="opt">goes up then down</button></div></div>
+<div class="q"><p>14. 2 sin 30° cos 30° equals</p><div class="opts"><button type="button" class="opt">tan 60°</button><button type="button" class="opt">cos 60°</button><button type="button" class="opt">1</button><button type="button" class="opt" data-c>sin 60°</button></div></div>
+<div class="q"><p>15. If sec θ − tan θ = 1/3, then sec θ + tan θ =</p><div class="opts"><button type="button" class="opt">1/3</button><button type="button" class="opt">2/3</button><button type="button" class="opt">1</button><button type="button" class="opt" data-c>3</button></div></div>
+<div class="q"><p>16. cot 30° =</p><div class="opts"><button type="button" class="opt">1/√3</button><button type="button" class="opt">1</button><button type="button" class="opt" data-c>√3</button><button type="button" class="opt">2</button></div></div>
+<div class="q"><p>17. (1 + tan²A)/(1 + cot²A) =</p><div class="opts"><button type="button" class="opt">1</button><button type="button" class="opt" data-c>tan²A</button><button type="button" class="opt">sec²A</button><button type="button" class="opt">cot²A</button></div></div>
+<div class="q"><p>18. In ΔABC right-angled at B, the hypotenuse is</p><div class="opts"><button type="button" class="opt" data-c>AC</button><button type="button" class="opt">it depends on ∠A</button><button type="button" class="opt">AB</button><button type="button" class="opt">BC</button></div></div>
+<div class="q"><p>19. If sin θ = 1, then θ =</p><div class="opts"><button type="button" class="opt">60°</button><button type="button" class="opt">45°</button><button type="button" class="opt">0°</button><button type="button" class="opt" data-c>90°</button></div></div>
+<div class="q"><p>20. (1 + sin A)(1 − sin A) =</p><div class="opts"><button type="button" class="opt" data-c>cos²A</button><button type="button" class="opt">1</button><button type="button" class="opt">tan²A</button><button type="button" class="opt">sin²A</button></div></div>
+</div>
+</section>
+
+<section id="answers" class="t-violet">
+<div class="sec-head"><span class="sec-num word">NCERT</span><h2>All textbook questions answered</h2></div>
+<h3 class="group-title">Exercise 8.1</h3>
+<details class="qa"><summary><span class="qnum">1</span><span>In ΔABC, right-angled at B, AB = 24 cm, BC = 7 cm. Determine: (i) sin A, cos A (ii) sin C, cos C</span></summary><div class="ans">AC = √(576 + 49) = 25 cm. (i) sin A = <b>7/25</b>, cos A = <b>24/25</b>. (ii) sin C = <b>24/25</b>, cos C = <b>7/25</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>In the given figure (ΔPQR right-angled at Q, PQ = 12 cm, PR = 13 cm), find tan P − cot R.</span></summary><div class="ans">QR = √(169 − 144) = 5 cm. tan P = QR/PQ = 5/12, cot R = QR/PQ = 5/12. tan P − cot R = <b>0</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>If sin A = 3/4, calculate cos A and tan A.</span></summary><div class="ans">Adjacent = √(16 − 9) = √7. cos A = <b>√7/4</b>, tan A = <b>3/√7</b>.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Given 15 cot A = 8, find sin A and sec A.</span></summary><div class="ans">cot A = 8/15 ⇒ hypotenuse = 17. sin A = <b>15/17</b>, sec A = <b>17/8</b>.</div></details>
+<details class="qa"><summary><span class="qnum">5</span><span>Given sec θ = 13/12, calculate all other trigonometric ratios.</span></summary><div class="ans">Adjacent 12, hypotenuse 13 ⇒ opposite 5. sin θ = <b>5/13</b>, cos θ = <b>12/13</b>, tan θ = <b>5/12</b>, cot θ = <b>12/5</b>, cosec θ = <b>13/5</b>.</div></details>
+<details class="qa"><summary><span class="qnum">6</span><span>If ∠A and ∠B are acute angles such that cos A = cos B, show that ∠A = ∠B.</span></summary><div class="ans">Take ΔABC right-angled at C. cos A = AC/AB and cos B = BC/AB. cos A = cos B ⇒ AC = BC ⇒ angles opposite equal sides are equal ⇒ <b>∠A = ∠B</b>.</div></details>
+<details class="qa"><summary><span class="qnum">7</span><span>If cot θ = 7/8, evaluate: (i) (1 + sin θ)(1 − sin θ)/((1 + cos θ)(1 − cos θ)) (ii) cot²θ</span></summary><div class="ans">(i) = (1 − sin²θ)/(1 − cos²θ) = cos²θ/sin²θ = cot²θ = <b>49/64</b>. (ii) <b>49/64</b>.</div></details>
+<details class="qa"><summary><span class="qnum">8</span><span>If 3 cot A = 4, check whether (1 − tan²A)/(1 + tan²A) = cos²A − sin²A or not.</span></summary><div class="ans">tan A = 3/4, sides 3, 4, 5. LHS = (1 − 9/16)/(1 + 9/16) = 7/25. RHS = 16/25 − 9/25 = 7/25. <b>Yes, equal.</b></div></details>
+<details class="qa"><summary><span class="qnum">9</span><span>In ΔABC, right-angled at B, if tan A = 1/√3, find the value of: (i) sin A cos C + cos A sin C (ii) cos A cos C − sin A sin C</span></summary><div class="ans">A = 30°, C = 60°. (i) (½)(½) + (√3/2)(√3/2) = <b>1</b>. (ii) (√3/2)(½) − (½)(√3/2) = <b>0</b>.</div></details>
+<details class="qa"><summary><span class="qnum">10</span><span>In ΔPQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine sin P, cos P and tan P.</span></summary><div class="ans">PR² − QR² = 25 ⇒ (PR − QR) × 25 = 25 ⇒ PR − QR = 1 ⇒ PR = 13, QR = 12. sin P = <b>12/13</b>, cos P = <b>5/13</b>, tan P = <b>12/5</b>.</div></details>
+<details class="qa"><summary><span class="qnum">11</span><span>State true or false and justify: (i) tan A is always less than 1. (ii) sec A = 12/5 for some value of A. (iii) cos A is the abbreviation used for the cosecant of A. (iv) cot A is the product of cot and A. (v) sin θ = 4/3 for some angle θ.</span></summary><div class="ans">(i) <b>False</b>: tan 60° = √3 &gt; 1. (ii) <b>True</b>: hypotenuse 12, adjacent 5 is possible (sec A ≥ 1). (iii) <b>False</b>: cos is cosine; cosecant is cosec. (iv) <b>False</b>: cot A is one symbol. (v) <b>False</b>: sin θ ≤ 1 because the hypotenuse is the longest side.</div></details>
+<h3 class="group-title">Exercise 8.2</h3>
+<details class="qa"><summary><span class="qnum">1</span><span>Evaluate: (i) sin 60° cos 30° + sin 30° cos 60° (ii) 2tan²45° + cos²30° − sin²60° (iii) cos 45°/(sec 30° + cosec 30°) (iv) (sin 30° + tan 45° − cosec 60°)/(sec 30° + cos 60° + cot 45°) (v) (5cos²60° + 4sec²30° − tan²45°)/(sin²30° + cos²30°)</span></summary><div class="ans"><p>(i) 3/4 + 1/4 = <b>1</b>. (ii) 2 + 3/4 − 3/4 = <b>2</b>.</p><p>(iii) (1/√2)/(2/√3 + 2) = √3/(2√2(1 + √3)) = √3(√3 − 1)/(4√2) = <b>(3√2 − √6)/8</b>.</p><p>(iv) (3/2 − 2/√3)/(3/2 + 2/√3) = (3√3 − 4)/(3√3 + 4) = (3√3 − 4)²/(27 − 16) = <b>(43 − 24√3)/11</b>.</p><p>(v) (5/4 + 16/3 − 1)/1 = <b>67/12</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Choose the correct option: (i) 2tan 30°/(1 + tan²30°) = (A) sin 60° (B) cos 60° (C) tan 60° (D) sin 30°. (ii) (1 − tan²45°)/(1 + tan²45°) = (A) tan 90° (B) 1 (C) sin 45° (D) 0. (iii) sin 2A = 2 sin A is true when A = (A) 0° (B) 30° (C) 45° (D) 60°. (iv) 2tan 30°/(1 − tan²30°) = (A) cos 60° (B) sin 60° (C) tan 60° (D) sin 30°.</span></summary><div class="ans">(i) (2/√3)/(4/3) = √3/2: <b>(A)</b>. (ii) 0/2 = 0: <b>(D)</b>. (iii) <b>(A) 0°</b>. (iv) (2/√3)/(2/3) = √3: <b>(C)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>If tan(A + B) = √3 and tan(A − B) = 1/√3; 0° &lt; A + B ≤ 90°; A &gt; B, find A and B.</span></summary><div class="ans">A + B = 60°, A − B = 30° ⇒ <b>A = 45°, B = 15°</b>.</div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>True or false? (i) sin(A + B) = sin A + sin B. (ii) The value of sin θ increases as θ increases. (iii) The value of cos θ increases as θ increases. (iv) sin θ = cos θ for all values of θ. (v) cot A is not defined for A = 0°.</span></summary><div class="ans">(i) <b>False</b> (A = 60°, B = 30°: 1 ≠ (√3 + 1)/2). (ii) <b>True</b> (0 to 1 for 0° to 90°). (iii) <b>False</b> (it decreases). (iv) <b>False</b> (only at 45°). (v) <b>True</b> (cot 0° = cos 0°/sin 0° = 1/0).</div></details>
+<h3 class="group-title">Exercise 8.3</h3>
+<details class="qa"><summary><span class="qnum">1</span><span>Express the trigonometric ratios sin A, sec A and tan A in terms of cot A.</span></summary><div class="ans">sin A = <b>1/√(1 + cot²A)</b>; tan A = <b>1/cot A</b>; sec A = <b>√(1 + cot²A)/cot A</b>.</div></details>
+<details class="qa"><summary><span class="qnum">2</span><span>Write all the other trigonometric ratios of ∠A in terms of sec A.</span></summary><div class="ans">cos A = <b>1/sec A</b>; tan A = <b>√(sec²A − 1)</b>; sin A = tan A × cos A = <b>√(sec²A − 1)/sec A</b>; cot A = <b>1/√(sec²A − 1)</b>; cosec A = <b>sec A/√(sec²A − 1)</b>.</div></details>
+<details class="qa"><summary><span class="qnum">3</span><span>Choose the correct option: (i) 9sec²A − 9tan²A = (A) 1 (B) 9 (C) 8 (D) 0. (ii) (1 + tan θ + sec θ)(1 + cot θ − cosec θ) = (A) 0 (B) 1 (C) 2 (D) −1. (iii) (sec A + tan A)(1 − sin A) = (A) sec A (B) sin A (C) cosec A (D) cos A. (iv) (1 + tan²A)/(1 + cot²A) = (A) sec²A (B) −1 (C) cot²A (D) tan²A.</span></summary><div class="ans"><p>(i) 9(sec²A − tan²A) = 9: <b>(B)</b>.</p><p>(ii) In sin, cos: ((cos θ + sin θ + 1)/cos θ)((sin θ + cos θ − 1)/sin θ) = ((sin θ + cos θ)² − 1)/(sin θ cos θ) = 2 sin θ cos θ/(sin θ cos θ) = 2: <b>(C)</b>.</p><p>(iii) ((1 + sin A)/cos A)(1 − sin A) = cos²A/cos A = cos A: <b>(D)</b>.</p><p>(iv) sec²A/cosec²A = sin²A/cos²A = tan²A: <b>(D)</b>.</p></div></details>
+<details class="qa"><summary><span class="qnum">4</span><span>Prove the following identities (i) to (x), where the angles involved are acute angles for which the expressions are defined.</span></summary><div class="ans">
+<p><b>(i) (cosec θ − cot θ)² = (1 − cos θ)/(1 + cos θ).</b> LHS = ((1 − cos θ)/sin θ)² = (1 − cos θ)²/(1 − cos²θ) = (1 − cos θ)²/((1 − cos θ)(1 + cos θ)) = RHS.</p>
+<p><b>(ii) cos A/(1 + sin A) + (1 + sin A)/cos A = 2 sec A.</b> LHS = (cos²A + 1 + 2 sin A + sin²A)/(cos A(1 + sin A)) = 2(1 + sin A)/(cos A(1 + sin A)) = 2/cos A = RHS.</p>
+<p><b>(iii) tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ.</b> See <a href="#prove">section 8.4.1</a>: LHS = (t³ − 1)/(t(t − 1)) = t + 1 + 1/t = 1 + 1/(sin θ cos θ) = RHS.</p>
+<p><b>(iv) (1 + sec A)/sec A = sin²A/(1 − cos A).</b> LHS = cos A + 1. RHS = (1 − cos²A)/(1 − cos A) = 1 + cos A. Equal.</p>
+<p><b>(v) (cos A − sin A + 1)/(cos A + sin A − 1) = cosec A + cot A</b> (using cosec²A = 1 + cot²A). Divide by sin A: (cot A − 1 + cosec A)/(cot A + 1 − cosec A). Replace 1 in the numerator by cosec²A − cot²A: numerator = (cosec A + cot A)(1 − cosec A + cot A). The bracket equals the denominator, so LHS = cosec A + cot A.</p>
+<p><b>(vi) √((1 + sin A)/(1 − sin A)) = sec A + tan A.</b> Multiply inside by (1 + sin A)/(1 + sin A): √((1 + sin A)²/cos²A) = (1 + sin A)/cos A = sec A + tan A.</p>
+<p><b>(vii) (sin θ − 2sin³θ)/(2cos³θ − cos θ) = tan θ.</b> LHS = sin θ(1 − 2sin²θ)/(cos θ(2cos²θ − 1)). Since 1 − 2sin²θ = 1 − 2(1 − cos²θ) = 2cos²θ − 1, LHS = sin θ/cos θ = tan θ.</p>
+<p><b>(viii) (sin A + cosec A)² + (cos A + sec A)² = 7 + tan²A + cot²A.</b> LHS = sin²A + cosec²A + 2 + cos²A + sec²A + 2 = 5 + (1 + cot²A) + (1 + tan²A) = 7 + tan²A + cot²A.</p>
+<p><b>(ix) (cosec A − sin A)(sec A − cos A) = 1/(tan A + cot A).</b> LHS = ((1 − sin²A)/sin A)((1 − cos²A)/cos A) = (cos²A/sin A)(sin²A/cos A) = sin A cos A. RHS = 1/((sin²A + cos²A)/(sin A cos A)) = sin A cos A. Equal.</p>
+<p><b>(x) (1 + tan²A)/(1 + cot²A) = ((1 − tan A)/(1 − cot A))² = tan²A.</b> First: sec²A/cosec²A = tan²A. Second: (1 − tan A)/(1 − 1/tan A) = tan A(1 − tan A)/(tan A − 1) = −tan A, whose square is tan²A.</p></div></details>
+</section>
+</main>
+<footer><p><b>MT Classes, Motihari</b> · Class 10 Maths notes · Chapter 8: Introduction to Trigonometry</p><p>Based on the NCERT Mathematics textbook for Class 10 (rationalised syllabus). Figures, labs, games, practice questions and answers by MT Classes. CBSE board questions are lightly reworded. <a href="/notes.html">More notes</a></p></footer>
+
+<script>
+
+
+(function () {
+  // reading progress bar
+  var bar = document.querySelector('.progress');
+  function prog() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, { passive: true }); prog();
+
+  // pause the hero animation for people who prefer less motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg.anim').forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+
+  // tap a diagram to see it full size
+  document.querySelectorAll('.zoomable').forEach(function (fig) {
+    fig.setAttribute('tabindex', '0');
+    fig.setAttribute('role', 'button');
+    fig.setAttribute('aria-label', 'Open this diagram full size');
+    function open() {
+      var src = fig.querySelector('svg, img'); if (!src) return;
+      var ov = document.createElement('div'); ov.className = 'overlay';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var inner = document.createElement('div'); inner.className = 'ov-in';
+      var clone = src.cloneNode(true), w;
+      if (src.tagName.toLowerCase() === 'img') {
+        var nat = src.naturalWidth || +src.getAttribute('width') || 800;
+        w = Math.max(Math.min(nat, 1000), Math.min(window.innerWidth - 28, nat * 1.3));
+        clone.removeAttribute('loading');
+      } else {
+        var vb = (src.getAttribute('viewBox') || '0 0 760 400').split(/\s+/);
+        w = Math.max(+vb[2] * 1.05, Math.min(window.innerWidth - 28, +vb[2] * 1.6));
+      }
+      clone.style.width = w + 'px';
+      inner.appendChild(clone); ov.appendChild(close); ov.appendChild(inner);
+      document.body.appendChild(ov); document.body.style.overflow = 'hidden'; close.focus();
+      function shut() { ov.remove(); document.body.style.overflow = ''; fig.focus(); document.removeEventListener('keydown', esc); }
+      function esc(e) { if (e.key === 'Escape') shut(); }
+      close.addEventListener('click', shut);
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target === inner) shut(); });
+      document.addEventListener('keydown', esc);
+    }
+    fig.addEventListener('click', open);
+    fig.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+
+  // quick quiz
+  var total = document.querySelectorAll('.q').length, got = 0, done = 0;
+  var scoreEl = document.querySelector('.score');
+  document.querySelectorAll('.q').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        q.classList.add('done'); done++;
+        var right = q.querySelector('.opt[data-c]');
+        right.classList.add('right');
+        if (b === right) { got++; } else { b.classList.add('wrong'); }
+        if (scoreEl) scoreEl.textContent = 'Score: ' + got + ' / ' + total + (done === total ? (got === total ? '. Perfect!' : '. Read the notes again for the ones you missed.') : '');
+      });
+    });
+  });
+
+  // print or save as PDF: open all answers first
+  function openAll() { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+  window.addEventListener('beforeprint', openAll);
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { openAll(); window.print(); });
+  });
+})();
+
+
+</script>
+<script>
+/* MT Classes shared runtime for notes pages: helpers, PYQ year filter, practice reveal, star store */
+(function () {
+  function $(id) { return document.getElementById(id); }
+  function fmt(x, d) { d = d === undefined ? 2 : d; if (!isFinite(x)) return '∞'; var s = (+x).toFixed(d); if (s.indexOf('.') >= 0) s = s.replace(/0+$/, '').replace(/\.$/, ''); s = s === '-0' ? '0' : s; return s.replace('-', '−'); }
+  function segPick(seg, cb) { if (!seg) return; seg.querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { seg.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); }); cb(b); }); }); }
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function rint(a, b) { return a + Math.floor(Math.random() * (b - a + 1)); }
+  function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { var t = a % b; a = b; b = t; } return a; }
+  function frac(n, d) { if (d < 0) { n = -n; d = -d; } var g = gcd(n, d) || 1; n /= g; d /= g; return d === 1 ? fmt(n, 0) : fmt(n, 0) + '/' + d; }
+  function stars(key, max, totalId, title) {
+    var st = {};
+    try { st = JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch (e) { st = {}; }
+    function show() { var t = 0, mx = 0; for (var k in max) { mx += max[k]; t += st[k] || 0; } var el = $(totalId); if (el) el.textContent = '⭐ ' + t + ' / ' + mx + (t === mx ? ' · ' + title + '! 🏆' : ''); }
+    show();
+    return {
+      award: function (g, n) { n = Math.min(max[g], n); if ((st[g] || 0) >= n) return; st[g] = n; try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {} show(); },
+      forScore: function (got, total) { var f = got / total; return f === 1 ? 5 : f >= .85 ? 4 : f >= .7 ? 3 : f >= .5 ? 2 : got > 0 ? 1 : 0; }
+    };
+  }
+  // generic MCQ round runner used by games: qs = [{q, opts:[..], a:index, why}]
+  function mcqGame(o) {
+    var i = 0, got = 0, list = [], timer = null, left = 0;
+    function end(msg) { if (timer) clearInterval(timer); timer = null; $(o.q).innerHTML = msg; $(o.opts).innerHTML = ''; $(o.start).style.display = ''; $(o.start).textContent = 'Play again'; }
+    function next() {
+      if (i >= list.length) { var s = o.stars.forScore(got, list.length); o.stars.award(o.id, s); end('🏁 Score <b>' + got + ' / ' + list.length + '</b> · ' + '⭐'.repeat(s) + (s === 5 ? ' Perfect!' : '')); return; }
+      var it = list[i], ord = shuffle(it.opts.map(function (t, k) { return k; }));
+      $(o.q).innerHTML = '<span class="gnum">' + (i + 1) + '/' + list.length + '</span> ' + it.q;
+      $(o.opts).innerHTML = ord.map(function (k) { return '<button type="button" class="opt" data-k="' + k + '">' + it.opts[k] + '</button>'; }).join('');
+      $(o.opts).querySelectorAll('button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          if ($(o.opts).dataset.lock) return; $(o.opts).dataset.lock = 1;
+          var ok = +b.dataset.k === it.a; if (ok) got++;
+          b.classList.add(ok ? 'right' : 'wrong');
+          if (!ok) $(o.opts).querySelector('[data-k="' + it.a + '"]').classList.add('right');
+          $(o.out).innerHTML = (ok ? '✅ ' : '❌ ') + (it.why || '');
+          setTimeout(function () { delete $(o.opts).dataset.lock; i++; next(); }, ok ? 900 : 2200);
+        });
+      });
+    }
+    $(o.start).addEventListener('click', function () {
+      list = shuffle(o.bank()).slice(0, o.n || 10); i = 0; got = 0; $(o.out).innerHTML = ''; $(o.start).style.display = 'none';
+      if (o.time) { left = o.time; if (timer) clearInterval(timer); timer = setInterval(function () { left--; $(o.out).dataset.t = left; var t = $(o.timer); if (t) t.textContent = '⏱ ' + left + ' s'; if (left <= 0) { var s = o.stars.forScore(got, list.length); o.stars.award(o.id, s); end('⏰ Time up! Score <b>' + got + ' / ' + list.length + '</b> · ' + '⭐'.repeat(s)); } }, 1000); }
+      next();
+    });
+  }
+  window.MTC = { $: $, fmt: fmt, segPick: segPick, shuffle: shuffle, rint: rint, gcd: gcd, frac: frac, stars: stars, mcqGame: mcqGame };
+  // PYQ year filter
+  segPick($('pyq-seg'), function (b) { var y = b.dataset.y; document.querySelectorAll('.pyq').forEach(function (p) { p.style.display = (y === 'all' || p.dataset.y === y) ? '' : 'none'; }); });
+})();
+
+</script>
+<script>
+/* MSVG: SVG diagram generators for Class 10 Maths notes (works in Node at build time and in the browser for labs) */
+(function (root) {
+  var F = "font-family=\"Mukta,sans-serif\"";
+  var COL = { ink: '#0E2148', grid: '#E3E9F3', axis: '#33415C', blue: '#1E88E5', red: '#E53935', green: '#2E9E5B', violet: '#7C5CD6', orange: '#F97316', teal: '#0F9D8F', rose: '#D6407A', gold: '#F59E0B', muted: '#5B6475' };
+  function r2(x) { return Math.round(x * 100) / 100; }
+  function esc(s) { return String(s).replace(/&(?!#?\w+;)/g, '&amp;').replace(/</g, '&lt;'); }
+  function txt(x, y, t, o) {
+    o = o || {};
+    return '<text x="' + r2(x) + '" y="' + r2(y) + '" font-size="' + (o.s || 14) + '" fill="' + (o.c || COL.ink) + '" text-anchor="' + (o.a || 'start') + '"' + (o.w ? ' font-weight="' + o.w + '"' : ' font-weight="700"') + (o.i ? ' font-style="italic"' : '') + (o.halo ? ' paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round"' : '') + '>' + t + '</text>';
+  }
+  function open(W, H, aria, extra) { return '<svg class="dg' + (extra ? ' ' + extra : '') + '" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(aria || 'Diagram') + '" ' + F + '>'; }
+  function line(x1, y1, x2, y2, c, w, dash, extra) { return '<line x1="' + r2(x1) + '" y1="' + r2(y1) + '" x2="' + r2(x2) + '" y2="' + r2(y2) + '" stroke="' + (c || COL.ink) + '" stroke-width="' + (w || 2) + '"' + (dash ? ' stroke-dasharray="' + dash + '"' : '') + ' stroke-linecap="round"' + (extra || '') + '/>'; }
+  function dot(x, y, c, r) { return '<circle cx="' + r2(x) + '" cy="' + r2(y) + '" r="' + (r || 5) + '" fill="' + (c || COL.ink) + '" stroke="#fff" stroke-width="2"/>'; }
+  var arrowN = 0;
+  function arrowDef(c) { var id = 'ar' + (arrowN++) + Math.floor(Math.random() * 1e6); return { id: id, def: '<marker id="' + id + '" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="' + c + '"/></marker>' }; }
+
+  /* Coordinate plane.
+     o: {W,H,x:[min,max],y:[min,max],step, curves:[{f,c,w,label,lx,dash}], lines:[{p:[x1,y1],q:[x2,y2],c,label,ext}],
+         pts:[{x,y,l,c,pos:'ne'|'nw'|'se'|'sw'|'n'|'s'|'e'|'w'}], polys:[{pts:[[x,y]..],fill,c}], segs:[{p,q,c,dash,w}], aria, title, labels:true} */
+  function plane(o) {
+    var W = o.W || 520, H = o.H || 400, pad = o.pad || 26;
+    var x0 = o.x[0], x1 = o.x[1], y0 = o.y[0], y1 = o.y[1];
+    var sx = (W - 2 * pad) / (x1 - x0), sy = (H - 2 * pad) / (y1 - y0);
+    if (o.equal) { var s = Math.min(sx, sy); sx = sy = s; }
+    var ox = pad - x0 * sx, oy = H - pad + y0 * sy;
+    if (o.equal) { ox += ((W - 2 * pad) - (x1 - x0) * sx) / 2; oy -= ((H - 2 * pad) - (y1 - y0) * sy) / 2; }
+    function X(x) { return ox + x * sx; } function Y(y) { return oy - y * sy; }
+    var st = o.step || 1, out = open(W, H, o.aria, o.cls);
+    out += '<rect width="' + W + '" height="' + H + '" rx="14" fill="#FBFDFF"/>';
+    var g = '';
+    for (var gx = Math.ceil(x0 / st) * st; gx <= x1 + 1e-9; gx += st) g += line(X(gx), Y(y0), X(gx), Y(y1), COL.grid, 1);
+    var sty = o.ystep || st; for (var gy = Math.ceil(y0 / sty) * sty; gy <= y1 + 1e-9; gy += sty) g += line(X(x0), Y(gy), X(x1), Y(gy), COL.grid, 1);
+    out += g;
+    var A = arrowDef(COL.axis);
+    out += '<defs>' + A.def + '</defs>';
+    if (y0 <= 0 && y1 >= 0) out += line(X(x0), Y(0), X(x1) + 4, Y(0), COL.axis, 2, null, ' marker-end="url(#' + A.id + ')"') + txt(X(x1) - 4, Y(0) - 8, 'X', { a: 'end', c: COL.axis, s: 13 });
+    if (x0 <= 0 && x1 >= 0) out += line(X(0), Y(y0), X(0), Y(y1) - 4, COL.axis, 2, null, ' marker-end="url(#' + A.id + ')"') + txt(X(0) + 8, Y(y1) + 12, 'Y', { c: COL.axis, s: 13 });
+    if (o.labels !== false) {
+      var ls = o.lstep || st;
+      for (var lx = Math.ceil(x0 / ls) * ls; lx <= x1 - 1e-9; lx += ls) if (Math.abs(lx) > 1e-9) out += txt(X(lx), Y(0) + 16, fmtN(lx), { a: 'middle', s: 11, c: COL.muted, w: 600 });
+      var lsy = o.ylstep || ls; for (var ly = Math.ceil(y0 / lsy) * lsy; ly <= y1 - 1e-9; ly += lsy) if (Math.abs(ly) > 1e-9) out += txt(X(0) - 6, Y(ly) + 4, fmtN(ly), { a: 'end', s: 11, c: COL.muted, w: 600 });
+      if (x0 <= 0 && x1 >= 0 && y0 <= 0 && y1 >= 0) out += txt(X(0) - 6, Y(0) + 15, 'O', { a: 'end', s: 12, c: COL.muted });
+    }
+    out += '<clipPath id="clp' + A.id + '"><rect x="' + X(x0) + '" y="' + Y(y1) + '" width="' + (X(x1) - X(x0)) + '" height="' + (Y(y0) - Y(y1)) + '"/></clipPath><g clip-path="url(#clp' + A.id + ')">';
+    (o.polys || []).forEach(function (p) { out += '<polygon points="' + p.pts.map(function (q) { return r2(X(q[0])) + ',' + r2(Y(q[1])); }).join(' ') + '" fill="' + (p.fill || 'rgba(30,136,229,.15)') + '" stroke="' + (p.c || 'none') + '" stroke-width="2"/>'; });
+    (o.curves || []).forEach(function (cv) {
+      var d = '', n = 240, pen = false;
+      for (var i = 0; i <= n; i++) {
+        var x = x0 + (x1 - x0) * i / n, y = cv.f(x);
+        if (!isFinite(y) || y > y1 + (y1 - y0) || y < y0 - (y1 - y0)) { pen = false; continue; }
+        d += (pen ? 'L' : 'M') + r2(X(x)) + ' ' + r2(Y(y)); pen = true;
+      }
+      out += '<path d="' + d + '" fill="none" stroke="' + (cv.c || COL.blue) + '" stroke-width="' + (cv.w || 3) + '"' + (cv.dash ? ' stroke-dasharray="' + cv.dash + '"' : '') + ' stroke-linejoin="round"/>';
+    });
+    (o.lines || []).forEach(function (L) {
+      // infinite line through p and q, clipped by the box
+      var p = L.p, q = L.q, dx = q[0] - p[0], dy = q[1] - p[1], big = 1000;
+      out += line(X(p[0] - dx * big), Y(p[1] - dy * big), X(p[0] + dx * big), Y(p[1] + dy * big), L.c || COL.red, L.w || 3, L.dash);
+    });
+    (o.segs || []).forEach(function (S) { out += line(X(S.p[0]), Y(S.p[1]), X(S.q[0]), Y(S.q[1]), S.c || COL.ink, S.w || 2.5, S.dash); });
+    out += '</g>';
+    (o.curves || []).concat(o.lines || []).forEach(function (cv) {
+      if (!cv.label) return; var lx = cv.lx, ly = cv.ly;
+      if (lx === undefined) return;
+      if (ly === undefined) ly = cv.f(lx);
+      out += txt(X(lx), Y(ly), cv.label, { c: cv.c || COL.blue, s: cv.ls || 14, halo: true, a: cv.la || 'start' });
+    });
+    (o.pts || []).forEach(function (P) {
+      if (!P.nodot) out += dot(X(P.x), Y(P.y), P.c || COL.ink, P.r);
+      if (P.l) {
+        var pos = P.pos || 'ne', dx = pos.indexOf('e') >= 0 ? 9 : pos.indexOf('w') >= 0 ? -9 : 0, dy = pos.indexOf('n') >= 0 ? -10 : pos.indexOf('s') >= 0 ? 20 : 5;
+        out += txt(X(P.x) + dx, Y(P.y) + dy, P.l, { a: dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle', c: P.lc || P.c || COL.ink, s: P.s || 13, halo: true });
+      }
+    });
+    if (o.title) out += txt(W / 2, 18, o.title, { a: 'middle', s: 14, c: COL.ink });
+    out += (o.extra ? o.extra({ X: X, Y: Y }) : '') + '</svg>';
+    return out;
+  }
+  function fmtN(v) { var s = (Math.round(v * 100) / 100).toString(); return s.replace('-', '−'); }
+
+  /* angle arc at vertex V between directions to A and B (screen coords) */
+  function arc(V, A, B, r, c, label, lr) {
+    var a1 = Math.atan2(A[1] - V[1], A[0] - V[0]), a2 = Math.atan2(B[1] - V[1], B[0] - V[0]);
+    var d = a2 - a1; while (d <= -Math.PI) d += 2 * Math.PI; while (d > Math.PI) d -= 2 * Math.PI;
+    var sweep = d > 0 ? 1 : 0;
+    var p1 = [V[0] + r * Math.cos(a1), V[1] + r * Math.sin(a1)], p2 = [V[0] + r * Math.cos(a1 + d), V[1] + r * Math.sin(a1 + d)];
+    var s = '<path d="M' + r2(p1[0]) + ' ' + r2(p1[1]) + ' A' + r + ' ' + r + ' 0 0 ' + sweep + ' ' + r2(p2[0]) + ' ' + r2(p2[1]) + '" fill="none" stroke="' + (c || COL.orange) + '" stroke-width="2.5"/>';
+    if (label) { var m = a1 + d / 2, R = lr || r + 14; s += txt(V[0] + R * Math.cos(m), V[1] + R * Math.sin(m) + 5, label, { a: 'middle', c: c || COL.orange, s: 13 }); }
+    return s;
+  }
+  function rightMark(V, A, B, s) {
+    s = s || 12;
+    var ua = unit(V, A), ub = unit(V, B);
+    var p1 = [V[0] + ua[0] * s, V[1] + ua[1] * s], p3 = [V[0] + ub[0] * s, V[1] + ub[1] * s], p2 = [p1[0] + ub[0] * s, p1[1] + ub[1] * s];
+    return '<path d="M' + r2(p1[0]) + ' ' + r2(p1[1]) + ' L' + r2(p2[0]) + ' ' + r2(p2[1]) + ' L' + r2(p3[0]) + ' ' + r2(p3[1]) + '" fill="none" stroke="' + COL.ink + '" stroke-width="1.8"/>';
+  }
+  function unit(P, Q) { var dx = Q[0] - P[0], dy = Q[1] - P[1], L = Math.hypot(dx, dy) || 1; return [dx / L, dy / L]; }
+  function lerp(P, Q, t) { return [P[0] + (Q[0] - P[0]) * t, P[1] + (Q[1] - P[1]) * t]; }
+  /* label placed outside a polygon vertex */
+  function vlab(P, C, t, o) { var u = unit(C, P); return txt(P[0] + u[0] * 16, P[1] + u[1] * 16 + 5, t, Object.assign({ a: 'middle', s: 15 }, o || {})); }
+  /* side label: midpoint pushed away from centroid */
+  function slab(P, Q, C, t, o) { var M = lerp(P, Q, 0.5), u = unit(C, M); return txt(M[0] + u[0] * 15, M[1] + u[1] * 15 + 5, t, Object.assign({ a: 'middle', s: 13.5, c: COL.muted, halo: true }, o || {})); }
+  function ticks(P, Q, n, c) { var M = lerp(P, Q, 0.5), u = unit(P, Q), nx = -u[1], ny = u[0], s = ''; for (var i = 0; i < n; i++) { var o = (i - (n - 1) / 2) * 5; var cx = M[0] + u[0] * o, cy = M[1] + u[1] * o; s += line(cx - nx * 6, cy - ny * 6, cx + nx * 6, cy + ny * 6, c || COL.ink, 2); } return s; }
+  function poly(pts, fill, c, w) { return '<polygon points="' + pts.map(function (p) { return r2(p[0]) + ',' + r2(p[1]); }).join(' ') + '" fill="' + (fill || 'none') + '" stroke="' + (c || COL.ink) + '" stroke-width="' + (w || 2.5) + '" stroke-linejoin="round"/>'; }
+  function centroid(pts) { var x = 0, y = 0; pts.forEach(function (p) { x += p[0]; y += p[1]; }); return [x / pts.length, y / pts.length]; }
+
+  /* Heights and distances scene.
+     o: {W,H, h (px height of object), d (px horizontal), kind:'tower'|'tree'|'building'|'kite'|'pole', angle label, obs:'person'|'none', depression:true, labels:{h:'h', d:'x', hyp:''}, ang:'60°'} */
+  function scene(o) {
+    var W = o.W || 560, H = o.H || 320, g = H - 46, ox = o.ox || 90, h = o.h || 200, d = o.d || 320, eye = o.eye || 0;
+    var Tx = ox + d, top = g - h, s = open(W, H, o.aria || 'Heights and distances diagram', o.cls);
+    s += '<defs><linearGradient id="sky' + (o.id || '') + '" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#CFE8FF"/><stop offset="1" stop-color="#F4FAFF"/></linearGradient></defs>';
+    s += '<rect width="' + W + '" height="' + H + '" rx="14" fill="url(#sky' + (o.id || '') + ')"/>';
+    s += '<rect x="0" y="' + g + '" width="' + W + '" height="' + (H - g) + '" fill="#CFE9C4"/>' + line(0, g, W, g, '#6B8F4E', 2);
+    // object
+    var k = o.kind || 'tower';
+    if (k === 'tower') s += '<path d="M' + (Tx - 16) + ' ' + g + ' L' + (Tx - 7) + ' ' + top + ' L' + (Tx + 7) + ' ' + top + ' L' + (Tx + 16) + ' ' + g + 'Z" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/>' + line(Tx - 12, g - h * 0.33, Tx + 12, g - h * 0.33, '#546E7A', 1.5) + line(Tx - 10, g - h * 0.66, Tx + 10, g - h * 0.66, '#546E7A', 1.5) + '<circle cx="' + Tx + '" cy="' + (top - 6) + '" r="6" fill="#E53935"/>';
+    else if (k === 'building') s += '<rect x="' + (Tx - 30) + '" y="' + top + '" width="60" height="' + h + '" fill="#FFE0B2" stroke="#A1662F" stroke-width="2"/>' + (function () { var w = ''; for (var yy = top + 12; yy < g - 20; yy += 26) { w += '<rect x="' + (Tx - 20) + '" y="' + yy + '" width="14" height="14" fill="#90CAF9"/><rect x="' + (Tx + 6) + '" y="' + yy + '" width="14" height="14" fill="#90CAF9"/>'; } return w; })();
+    else if (k === 'tree') s += '<rect x="' + (Tx - 6) + '" y="' + (top + h * 0.35) + '" width="12" height="' + (h * 0.65) + '" fill="#8D6E63"/><ellipse cx="' + Tx + '" cy="' + (top + h * 0.25) + '" rx="' + (h * 0.22) + '" ry="' + (h * 0.27) + '" fill="#43A047"/>';
+    else if (k === 'pole') s += line(Tx, g, Tx, top, '#455A64', 6);
+    else if (k === 'lighthouse') s += '<path d="M' + (Tx - 18) + ' ' + g + ' L' + (Tx - 9) + ' ' + (top + 14) + ' L' + (Tx + 9) + ' ' + (top + 14) + ' L' + (Tx + 18) + ' ' + g + 'Z" fill="#fff" stroke="#B71C1C" stroke-width="2"/><rect x="' + (Tx - 10) + '" y="' + top + '" width="20" height="14" fill="#FFD54F" stroke="#B71C1C" stroke-width="2"/>' + line(Tx - 14, g - h * 0.3, Tx + 14, g - h * 0.3, '#E53935', 7) + line(Tx - 12, g - h * 0.6, Tx + 12, g - h * 0.6, '#E53935', 7);
+    else if (k === 'kite') s += '<path d="M' + Tx + ' ' + (top - 16) + ' l12 16 l-12 22 l-12 -22z" fill="#E53935" stroke="#7F0000" stroke-width="1.5"/><path d="M' + Tx + ' ' + (top + 22) + ' q6 12 -4 20 q-8 8 2 18" fill="none" stroke="#7F0000" stroke-width="1.5"/>';
+    // observer
+    var Ox = ox, Oy = g - eye;
+    if (o.obs !== 'none') s += '<g transform="translate(' + (ox - 12) + ' ' + (g - 40) + ')"><circle cx="0" cy="6" r="6" fill="#FFCC80" stroke="#6D4C41"/><path d="M0 12 V28 M0 16 L-7 24 M0 16 L7 22 M0 28 L-5 40 M0 28 L5 40" stroke="#37474F" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>';
+    // lines
+    var P = [Ox, g], T = [Tx, top], B = [Tx, g];
+    s += line(P[0], P[1], B[0], B[1], COL.ink, 2.5);
+    s += line(B[0], B[1], T[0], T[1], COL.blue, 3);
+    s += line(P[0], P[1], T[0], T[1], o.string ? '#7F0000' : COL.red, 2.5, o.string ? null : '7 5');
+    s += rightMark(B, P, T, 13);
+    s += arc(P, B, T, 46, COL.orange, o.ang || 'θ', 64);
+    if (o.depression) { s += line(T[0], T[1], T[0] - d * 0.7, T[1], COL.muted, 1.8, '4 4') + arc(T, [T[0] - 50, T[1]], P, 40, COL.violet, o.dep || 'θ', 58); }
+    var L = o.labels || {};
+    if (L.h) s += txt(Tx + 22, (g + top) / 2 + 5, L.h, { c: COL.blue, s: 15, halo: true });
+    if (L.d) s += txt((Ox + Tx) / 2, g + 22, L.d, { a: 'middle', s: 15, halo: true });
+    if (L.hyp) { var M = lerp(P, T, 0.5); s += txt(M[0] - 12, M[1] - 10, L.hyp, { a: 'end', c: COL.red, s: 14, halo: true }); }
+    s += txt(Ox - 6, g + 22, L.A || 'A', { a: 'end', s: 15 }) + txt(Tx + 8, g + 22, L.B || 'B', { s: 15 }) + txt(Tx + 12, top - 2, L.C || 'C', { s: 15 });
+    if (o.title) s += txt(W / 2, 22, o.title, { a: 'middle', s: 15 });
+    return s + (o.extra || '') + '</svg>';
+  }
+
+  var MSVG = { COL: COL, txt: txt, open: open, line: line, dot: dot, plane: plane, arc: arc, rightMark: rightMark, unit: unit, lerp: lerp, vlab: vlab, slab: slab, ticks: ticks, poly: poly, centroid: centroid, scene: scene, r2: r2, esc: esc, arrowDef: arrowDef, fmtN: fmtN };
+  if (typeof module !== 'undefined' && module.exports) module.exports = MSVG; else root.MSVG = MSVG;
+})(this);
+
+</script>
+<script>
+(function () {
+  var $ = MTC.$, fmt = MTC.fmt, segPick = MTC.segPick, rint = MTC.rint, frac = MTC.frac, C = MSVG.COL;
+  var R = Math.PI / 180;
+  function val(id) { var v = parseFloat($(id).value); return isFinite(v) ? v : 0; }
+  function isInt(x) { return Math.abs(x - Math.round(x)) < 1e-9; }
+  var EX = { // exact values at special angles
+    0: { sin: '0', cos: '1', tan: '0', cosec: 'not defined', sec: '1', cot: 'not defined' },
+    30: { sin: '1/2', cos: '√3/2', tan: '1/√3', cosec: '2', sec: '2/√3', cot: '√3' },
+    45: { sin: '1/√2', cos: '1/√2', tan: '1', cosec: '√2', sec: '√2', cot: '1' },
+    60: { sin: '√3/2', cos: '1/2', tan: '√3', cosec: '2/√3', sec: '2', cot: '1/√3' },
+    90: { sin: '1', cos: '0', tan: 'not defined', cosec: '1', sec: 'not defined', cot: '0' }
+  };
+  function tri(A, B, Cc, opp, adj, hyp, th) {
+    var G = MSVG.centroid([A, B, Cc]);
+    var o = MSVG.poly([A, B, Cc], 'rgba(30,136,229,.08)', C.ink) + MSVG.line(A[0], A[1], B[0], B[1], C.blue, 5) + MSVG.line(B[0], B[1], Cc[0], Cc[1], C.red, 5) + MSVG.line(A[0], A[1], Cc[0], Cc[1], C.green, 5);
+    if (B[1] - Cc[1] > 14 && B[0] - A[0] > 14) o += MSVG.rightMark(B, A, Cc, 12);
+    if (B[1] - Cc[1] > 4) o += MSVG.arc(A, B, Cc, 36, C.orange, th, 54);
+    o += MSVG.vlab(A, G, 'A') + MSVG.vlab(B, G, 'B') + MSVG.vlab(Cc, G, 'C');
+    o += MSVG.txt((A[0] + B[0]) / 2, B[1] + 24, adj, { a: 'middle', c: C.blue, s: 14 }) + MSVG.txt(B[0] + 10, (B[1] + Cc[1]) / 2 + 5, opp, { c: C.red, s: 14 }) + MSVG.txt((A[0] + Cc[0]) / 2 - 10, (A[1] + Cc[1]) / 2 - 8, hyp, { a: 'end', c: C.green, s: 14, halo: true });
+    return o;
+  }
+
+  // ---------- Lab 1: ratio explorer ----------
+  (function () {
+    if (!$('lab-tr')) return;
+    function run() {
+      var t = val('tr-th'), h = val('tr-h'); $('tr-thv').textContent = t; $('tr-hv').textContent = h;
+      var s = Math.sin(t * R), c = Math.cos(t * R), opp = h * s, adj = h * c, sc = 260 / 20 * (h / 20 * 0.6 + 0.4) * 20 / h;
+      var Lpx = 300 * (0.45 + 0.55 * h / 20), A = [40, 270], B = [40 + Lpx * c, 270], Cc = [40 + Lpx * c, 270 - Lpx * s];
+      if (Cc[1] < 20) { var k = 250 / (270 - Cc[1]); Lpx *= k; B = [40 + Lpx * c, 270]; Cc = [40 + Lpx * c, 270 - Lpx * s]; }
+      $('tr-svg').innerHTML = MSVG.open(420, 310, 'Right triangle with angle theta') + tri(A, B, Cc, 'opp ' + fmt(opp), 'adj ' + fmt(adj), 'hyp ' + fmt(h), t + '°') + '</svg>';
+      var ex = EX[t], rows = [['sin', s, 'opp/hyp'], ['cos', c, 'adj/hyp'], ['tan', s / c, 'opp/adj'], ['cosec', 1 / s, 'hyp/opp'], ['sec', 1 / c, 'hyp/adj'], ['cot', c / s, 'adj/opp']];
+      var o = '<table class="compact"><tbody>' + rows.map(function (r) {
+        var big = !isFinite(r[1]) || Math.abs(r[1]) > 1e6;
+        var v = ex ? ex[r[0]] : (big ? 'not defined' : fmt(r[1], 4));
+        return '<tr><td><b>' + r[0] + ' ' + t + '°</b></td><td>' + r[2] + '</td><td><b>' + v + '</b>' + (ex && !big && v.indexOf('√') >= 0 ? ' ≈ ' + fmt(r[1], 3) : '') + '</td></tr>';
+      }).join('') + '</tbody></table>';
+      o += '<p>Check: sin² + cos² = ' + fmt(s * s, 3) + ' + ' + fmt(c * c, 3) + ' = <b>1</b> ✓</p>';
+      o += '<p class="muted">Change the hypotenuse: the sides change, the ratios do not.' + (t === 37 ? ' At 37° the sides are almost in the ratio 3 : 4 : 5 (sin ≈ 0.6, cos ≈ 0.8).' : '') + '</p>';
+      $('tr-out').innerHTML = o;
+    }
+    ['tr-th', 'tr-h'].forEach(function (id) { $(id).addEventListener('input', run); });
+    segPick($('tr-quick'), function (b) { $('tr-th').value = b.dataset.v; run(); });
+    run();
+  })();
+
+  // ---------- Lab 2: one-ratio solver ----------
+  (function () {
+    if (!$('lab-gv')) return;
+    function surdSq(N) { // √N simplified, N integer
+      if (!isInt(N)) return fmt(Math.sqrt(N), 3);
+      N = Math.round(N); var out = 1, rest = N;
+      for (var k = 2; k * k <= rest; k++) while (rest % (k * k) === 0) { rest /= k * k; out *= k; }
+      return rest === 1 ? String(out) : (out > 1 ? out : '') + '√' + rest;
+    }
+    function fr(a, b) { // a, b are strings of side lengths; simplify integer ratios
+      if (b === '1') return a;
+      var x = parseFloat(a.replace('√', '')), y = parseFloat(b.replace('√', ''));
+      if (a.indexOf('√') < 0 && b.indexOf('√') < 0 && isInt(x) && isInt(y)) return frac(Math.round(x), Math.round(y));
+      return a + '/' + b;
+    }
+    function run() {
+      var f = $('gv-f').value, p = val('gv-p'), q = val('gv-q');
+      var out = $('gv-out');
+      if (p <= 0 || q <= 0) { out.innerHTML = 'Use positive numbers p and q.'; $('gv-svg').innerHTML = ''; return; }
+      var r = p / q, O, Aj, H, sideKnown;
+      // assign two known sides: opposite, adjacent, hypotenuse
+      if ((f === 'sin' || f === 'cos') && r >= 1 || (f === 'sec' || f === 'cosec') && r <= 1) { out.innerHTML = '<p><b>Impossible.</b> ' + f + ' A = ' + fmt(p) + '/' + fmt(q) + ' would make a side longer than the hypotenuse' + (r === 1 ? ' (only possible for 0° or 90°, which do not give a triangle)' : '') + '. sin and cos must be less than 1; sec and cosec must be more than 1.</p>'; $('gv-svg').innerHTML = ''; return; }
+      var ints = isInt(p) && isInt(q), sq = function (x) { return x * x; };
+      var o = '<p>Let the sides be in terms of k.</p>';
+      var opp, adj, hyp, oS, aS, hS;
+      if (f === 'sin' || f === 'cosec') { opp = f === 'sin' ? p : q; hyp = f === 'sin' ? q : p; adj = Math.sqrt(sq(hyp) - sq(opp)); oS = fmt(opp); hS = fmt(hyp); aS = ints ? surdSq(sq(hyp) - sq(opp)) : fmt(adj, 3); o += '<p>opposite = ' + oS + 'k, hypotenuse = ' + hS + 'k ⇒ adjacent = √(' + fmt(sq(hyp)) + ' − ' + fmt(sq(opp)) + ') k = <b>' + aS + 'k</b></p>'; }
+      else if (f === 'cos' || f === 'sec') { adj = f === 'cos' ? p : q; hyp = f === 'cos' ? q : p; opp = Math.sqrt(sq(hyp) - sq(adj)); aS = fmt(adj); hS = fmt(hyp); oS = ints ? surdSq(sq(hyp) - sq(adj)) : fmt(opp, 3); o += '<p>adjacent = ' + aS + 'k, hypotenuse = ' + hS + 'k ⇒ opposite = √(' + fmt(sq(hyp)) + ' − ' + fmt(sq(adj)) + ') k = <b>' + oS + 'k</b></p>'; }
+      else { opp = f === 'tan' ? p : q; adj = f === 'tan' ? q : p; hyp = Math.sqrt(sq(opp) + sq(adj)); oS = fmt(opp); aS = fmt(adj); hS = ints ? surdSq(sq(opp) + sq(adj)) : fmt(hyp, 3); o += '<p>opposite = ' + oS + 'k, adjacent = ' + aS + 'k ⇒ hypotenuse = √(' + fmt(sq(opp)) + ' + ' + fmt(sq(adj)) + ') k = <b>' + hS + 'k</b></p>'; }
+      var list = [['sin A', fr(oS, hS)], ['cos A', fr(aS, hS)], ['tan A', fr(oS, aS)], ['cosec A', fr(hS, oS)], ['sec A', fr(hS, aS)], ['cot A', fr(aS, oS)]];
+      o += '<p>' + list.map(function (x) { return x[0] + ' = <b>' + x[1] + '</b>'; }).join(', ') + '</p>';
+      o += '<p class="muted">Angle A ≈ ' + fmt(Math.atan2(opp, adj) / R, 1) + '°. Check: sin²A + cos²A = ' + fmt(sq(opp / hyp) + sq(adj / hyp), 4) + ' ✓</p>';
+      out.innerHTML = o;
+      var m = Math.max(opp, adj), sc = Math.min(300 / adj, 220 / opp), A = [40, 260], B = [40 + adj * sc, 260], Cc = [40 + adj * sc, 260 - opp * sc];
+      $('gv-svg').innerHTML = MSVG.open(420, 300, 'Right triangle for the given ratio') + tri(A, B, Cc, oS + 'k', aS + 'k', hS + 'k', 'A') + '</svg>';
+    }
+    ['gv-f', 'gv-p', 'gv-q'].forEach(function (id) { $(id).addEventListener('input', run); $(id).addEventListener('change', run); });
+    segPick($('gv-quick'), function (b) { var v = b.dataset.v.split(','); $('gv-f').value = v[0]; $('gv-p').value = v[1]; $('gv-q').value = v[2]; run(); });
+    run();
+  })();
+
+  // ---------- Lab 3: identity checker ----------
+  (function () {
+    if (!$('lab-id')) return;
+    var s = Math.sin, c = Math.cos, t = Math.tan;
+    var L = [
+      { n: 'sin²θ + cos²θ = 1', l: function (x) { return s(x) * s(x) + c(x) * c(x); }, r: function () { return 1; }, p: 'Pythagoras AB² + BC² = AC², divided by AC².' },
+      { n: '1 + tan²θ = sec²θ', l: function (x) { return 1 + t(x) * t(x); }, r: function (x) { return 1 / (c(x) * c(x)); }, p: 'Divide sin²θ + cos²θ = 1 by cos²θ.' },
+      { n: '1 + cot²θ = cosec²θ', l: function (x) { return 1 + 1 / (t(x) * t(x)); }, r: function (x) { return 1 / (s(x) * s(x)); }, p: 'Divide sin²θ + cos²θ = 1 by sin²θ.' },
+      { n: '(cosec θ − cot θ)² = (1 − cos θ)/(1 + cos θ)', l: function (x) { var v = 1 / s(x) - c(x) / s(x); return v * v; }, r: function (x) { return (1 - c(x)) / (1 + c(x)); }, p: 'LHS = (1 − cos θ)²/sin²θ = (1 − cos θ)²/((1 − cos θ)(1 + cos θ)) = RHS.' },
+      { n: 'cos θ/(1 + sin θ) + (1 + sin θ)/cos θ = 2 sec θ', l: function (x) { return c(x) / (1 + s(x)) + (1 + s(x)) / c(x); }, r: function (x) { return 2 / c(x); }, p: 'LCM: (cos²θ + 1 + 2 sin θ + sin²θ)/(cos θ(1 + sin θ)) = 2(1 + sin θ)/(cos θ(1 + sin θ)) = 2 sec θ.' },
+      { n: 'tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ', l: function (x) { return t(x) / (1 - 1 / t(x)) + (1 / t(x)) / (1 - t(x)); }, r: function (x) { return 1 + 1 / (c(x) * s(x)); }, p: 'With t = tan θ: (t³ − 1)/(t(t − 1)) = (t² + t + 1)/t = t + 1 + 1/t = 1 + 1/(sin θ cos θ). (Not defined at 45°.)' },
+      { n: '√((1 + sin θ)/(1 − sin θ)) = sec θ + tan θ', l: function (x) { return Math.sqrt((1 + s(x)) / (1 - s(x))); }, r: function (x) { return 1 / c(x) + t(x); }, p: 'Multiply inside by (1 + sin θ): √((1 + sin θ)²/cos²θ) = (1 + sin θ)/cos θ.' },
+      { n: '(sin θ + cosec θ)² + (cos θ + sec θ)² = 7 + tan²θ + cot²θ', l: function (x) { var a = s(x) + 1 / s(x), b = c(x) + 1 / c(x); return a * a + b * b; }, r: function (x) { return 7 + t(x) * t(x) + 1 / (t(x) * t(x)); }, p: 'Expand: 1 + 4 + cosec²θ + sec²θ = 5 + (1 + cot²θ) + (1 + tan²θ).' },
+      { n: '(cosec θ − sin θ)(sec θ − cos θ) = 1/(tan θ + cot θ)', l: function (x) { return (1 / s(x) - s(x)) * (1 / c(x) - c(x)); }, r: function (x) { return 1 / (t(x) + 1 / t(x)); }, p: 'Both sides reduce to sin θ cos θ.' },
+      { n: '(tan θ + sec θ − 1)/(tan θ − sec θ + 1) = (1 + sin θ)/cos θ', l: function (x) { return (t(x) + 1 / c(x) - 1) / (t(x) - 1 / c(x) + 1); }, r: function (x) { return (1 + s(x)) / c(x); }, p: 'Replace 1 in the numerator by sec²θ − tan²θ, factorise, cancel: sec θ + tan θ.' },
+      { n: 'tan θ/(1 + sec θ) − tan θ/(1 − sec θ) = 2 cosec θ', l: function (x) { return t(x) / (1 + 1 / c(x)) - t(x) / (1 - 1 / c(x)); }, r: function (x) { return 2 / s(x); }, p: 'LCM gives −2 tan θ sec θ/(1 − sec²θ) = 2 sec θ/tan θ = 2/sin θ.' },
+      { n: '(sin θ + cos θ)/(sin θ − cos θ) + (sin θ − cos θ)/(sin θ + cos θ) = 2/(2sin²θ − 1)', l: function (x) { return (s(x) + c(x)) / (s(x) - c(x)) + (s(x) - c(x)) / (s(x) + c(x)); }, r: function (x) { return 2 / (2 * s(x) * s(x) - 1); }, p: 'LCM: 2(sin²θ + cos²θ)/(sin²θ − cos²θ) = 2/(2 sin²θ − 1). (Not defined at 45°.)' },
+      { n: '(sin θ + cos θ)² = 1   (fake?)', l: function (x) { var v = s(x) + c(x); return v * v; }, r: function () { return 1; }, p: 'Not an identity! (sin θ + cos θ)² = 1 + 2 sin θ cos θ, which is 1 only when sin θ cos θ = 0. Watch the curves separate.' }
+    ];
+    $('id-pick').innerHTML = L.map(function (x, i) { return '<option value="' + i + '">' + x.n + '</option>'; }).join('');
+    function run() {
+      var I = L[+$('id-pick').value], th = val('id-th'); $('id-thv').textContent = th;
+      var pts = [], mx = 0, mn = 0;
+      for (var d = 1; d <= 89; d++) { var a = I.l(d * R), b = I.r(d * R); if (isFinite(a) && Math.abs(a) < 12) { mx = Math.max(mx, a); mn = Math.min(mn, a); } if (isFinite(b) && Math.abs(b) < 12) { mx = Math.max(mx, b); mn = Math.min(mn, b); } }
+      var top = Math.min(12, Math.ceil(mx + 0.5)), bot = Math.max(-12, Math.floor(mn));
+      var ys = top - bot > 8 ? 2 : 1;
+      function clip(fn) { return function (x) { var v = fn(x * R); return isFinite(v) && v <= top + 1 && v >= bot - 1 ? v : NaN; }; }
+      var vl = I.l(th * R), vr = I.r(th * R);
+      $('id-svg').innerHTML = MSVG.plane({ W: 420, H: 340, x: [0, 90], y: [bot, top], step: 10, lstep: 30, ystep: ys, ylstep: ys, curves: [{ f: clip(I.l), c: C.blue }, { f: clip(I.r), c: C.red, dash: '8 6' }], pts: isFinite(vl) && vl <= top && vl >= bot ? [{ x: th, y: vl, c: C.orange, r: 6 }] : [], aria: 'Graphs of the left and right sides of the identity' });
+      var ok = Math.abs(vl - vr) < 1e-9 * Math.max(1, Math.abs(vl));
+      var o = '<p><b>' + I.n.replace('   (fake?)', '') + '</b></p>';
+      o += '<p>At θ = ' + th + '°: LHS = ' + (isFinite(vl) ? fmt(vl, 5) : 'not defined') + ', RHS = ' + (isFinite(vr) ? fmt(vr, 5) : 'not defined') + (isFinite(vl) && isFinite(vr) ? (ok ? ' ✓ equal' : ' ✗ not equal') : '') + '</p>';
+      o += '<p>Proof idea: ' + I.p + '</p>';
+      $('id-out').innerHTML = o;
+    }
+    $('id-pick').addEventListener('change', run); $('id-th').addEventListener('input', run);
+    run();
+  })();
+
+  // ================= games =================
+  var ST = MTC.stars('mt-trig10-stars', { tt: 5, rb: 5, is: 5 }, 'ga-total', 'Trig Wizard');
+  var POOL = ['0', '1/2', '1/√2', '√3/2', '1', '1/√3', '√3', '2', '√2', '2/√3', 'not defined'];
+
+  MTC.mcqGame({ id: 'tt', q: 'gt-q', opts: 'gt-opts', out: 'gt-out', start: 'gt-start', timer: 'gt-t', time: 90, n: 12, stars: ST, bank: function () {
+    var out = [], fs = ['sin', 'cos', 'tan', 'cosec', 'sec', 'cot'], an = [0, 30, 45, 60, 90];
+    for (var i = 0; i < 18; i++) {
+      var f = fs[i < 9 ? rint(0, 2) : rint(0, 5)], a = an[rint(0, 4)], ans = EX[a][f];
+      var w = MTC.shuffle(POOL.filter(function (v) { return v !== ans; })).slice(0, 3);
+      out.push({ q: f + ' ' + a + '° = ?', opts: [ans].concat(w), a: 0, why: f + ' ' + a + '° = ' + ans });
+    }
+    return out;
+  } });
+
+  MTC.mcqGame({ id: 'rb', q: 'gr-q', opts: 'gr-opts', out: 'gr-out', start: 'gr-start', n: 8, stars: ST, bank: function () {
+    var T = [[3, 4, 5], [5, 12, 13], [8, 15, 17], [7, 24, 25], [20, 21, 29], [9, 40, 41]], out = [];
+    var name = { sin: [0, 2], cos: [1, 2], tan: [0, 1], cosec: [2, 0], sec: [2, 1], cot: [1, 0] }, fs = Object.keys(name);
+    for (var i = 0; i < 12; i++) {
+      var tr = T[rint(0, T.length - 1)], sw = rint(0, 1), S = sw ? [tr[1], tr[0], tr[2]] : tr; // S = [opp, adj, hyp]
+      var g = fs[rint(0, 5)], k; do { k = fs[rint(0, 5)]; } while (k === g);
+      var gv = S[name[g][0]] + '/' + S[name[g][1]], ans = S[name[k][0]] + '/' + S[name[k][1]];
+      var cands = fs.filter(function (x) { return x !== k; }).map(function (x) { return S[name[x][0]] + '/' + S[name[x][1]]; }).filter(function (v) { return v !== ans; });
+      cands = cands.filter(function (v, j) { return cands.indexOf(v) === j; });
+      out.push({ q: 'If ' + g + ' A = ' + gv + ', then ' + k + ' A = ?', opts: [ans].concat(MTC.shuffle(cands).slice(0, 3)), a: 0, why: 'Sides: opposite ' + S[0] + ', adjacent ' + S[1] + ', hypotenuse ' + S[2] + ' ⇒ ' + k + ' A = ' + ans });
+    }
+    return out;
+  } });
+
+  MTC.mcqGame({ id: 'is', q: 'gi-q', opts: 'gi-opts', out: 'gi-out', start: 'gi-start', n: 8, stars: ST, bank: function () {
+    var opt = ['1', '0', 'sin²θ', 'cos²θ', 'tan²θ', 'cot²θ', 'sec²θ', 'cosec²θ', 'tan θ', 'cos θ', '2'];
+    var Q = [['sec²θ − tan²θ', '1'], ['cosec²θ − cot²θ', '1'], ['1 − sin²θ', 'cos²θ'], ['1 − cos²θ', 'sin²θ'], ['1 + tan²θ', 'sec²θ'], ['1 + cot²θ', 'cosec²θ'], ['sin θ / cos θ', 'tan θ'], ['(1 + sin θ)(1 − sin θ)', 'cos²θ'], ['(sec θ − 1)(sec θ + 1)', 'tan²θ'], ['sin θ × cot θ', 'cos θ'], ['tan θ × cot θ', '1'], ['sec²θ − 1', 'tan²θ'], ['(1 + tan²θ)/(1 + cot²θ)', 'tan²θ'], ['cos²θ(1 + tan²θ)', '1'], ['sin²θ + cos²θ + 1', '2'], ['cosec²θ(1 − cos²θ)', '1']];
+    return Q.map(function (r) { return { q: r[0] + ' = ?', opts: [r[1]].concat(MTC.shuffle(opt.filter(function (v) { return v !== r[1]; })).slice(0, 3)), a: 0, why: r[0] + ' = ' + r[1] }; });
+  } });
+})();
+
+</script>
+</body>
+</html>
