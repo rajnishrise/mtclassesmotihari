@@ -34,7 +34,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--card);border-botto
 .hero h1 span{color:var(--gold)}.hero p.lead{font-size:1.1rem;color:#d5def5;max-width:540px}
 .hero .hi{font-size:1.15rem;color:var(--gold2);font-weight:600;margin-bottom:8px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.4)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:5px 12px;border-radius:99px;font-size:.85rem;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:5px 12px;border-radius:99px;font-size:.85rem;font-weight:600}a.chip{text-decoration:none;transition:background .2s,border-color .2s,transform .2s}a.chip:hover,a.chip:focus-visible{background:rgba(255,255,255,.24);border-color:var(--gold);transform:translateY(-1px)}a.chip::after{content:" →";opacity:.7}
 .art{position:relative;min-height:330px}
 .art .glass{position:absolute;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:16px 18px;box-shadow:0 20px 40px rgba(0,0,0,.25);animation:float 6s ease-in-out infinite}
 .art .g1{left:4%;top:6%;width:68%}.art .g2{right:0;top:44%;width:58%;animation-delay:-2s}.art .g3{left:10%;bottom:0;width:50%;animation-delay:-4s}
