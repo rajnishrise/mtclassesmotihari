@@ -25,12 +25,13 @@
   }
   document.addEventListener("click", (e) => {
     const c = e.target.closest("[data-c]"), s = e.target.closest("[data-s]"), r = e.target.closest("[data-read]");
-    if (c) { cls = +c.dataset.c; draw(); } if (s) { sub = s.dataset.s; draw(); }
+    if (c) { cls = +c.dataset.c; draw(); try { history.replaceState(null, "", "#class-" + cls); } catch (err) {} } if (s) { sub = s.dataset.s; draw(); }
     if (r) { const t = r.dataset.read;
       MT.modal(`<div class="reader"><span class="tag gold">Quick revision</span><h2 style="margin-top:8px">${esc(t)}</h2>${N.quick[t]}
         <div class="cta no-print"><button class="btn" id="print-btn">🖨 Print</button><button class="btn ghost" data-close>Close</button></div></div>`);
       $("#print-btn").onclick = () => { try { window.print(); } catch (err) { MT.toast("Printing is not available here"); } }; }
   });
   $("#search").addEventListener("input", (e) => { term = e.target.value.trim().toLowerCase(); draw(); });
+  window.addEventListener("hashchange", () => { const m = location.hash.match(/class-(\d+)/); if (m && +m[1] !== cls) { cls = +m[1]; draw(); } });
   draw();
 })();
