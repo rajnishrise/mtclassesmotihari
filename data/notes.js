@@ -3,6 +3,7 @@
      { title: "Real Numbers", file: "notes/class10-maths-real-numbers.pdf" }   (file in /notes folder)
      { title: "Real Numbers", file: "https://drive.google.com/..." }           (Google Drive link)
    Optional page: an HTML notes page in /notes; Read notes opens it instead of the PDF reader.
+   Optional solutions: a step-by-step NCERT solutions page in /notes (adds an NCERT Solutions button).
    Optional label: a line under the title, e.g. which part of the chapter the PDF covers.
    PDFs in /notes open in the site's own reader (viewer.html); Drive links open in a new tab.
    quick: short revision notes that open on the site itself (key = exact chapter title).
@@ -36,17 +37,17 @@ window.MT_NOTES = {
     // Class 9 has NEW NCERT books from 2026-27 (Ganita Manjari, Exploration).
     // Only topic names are listed here — replace with your chapter list.
     { cls: 9, subject: "Maths", book: "NCERT Ganita Manjari", chapters: [ "Number Systems",
-      { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf", page: "notes/class9-maths-circles.html" },
-      { title: "Measuring Space: Perimeter and Area", label: "Chapter 6: notes, textbook diagrams and all exercise solutions", file: "notes/class9-maths-perimeter-and-area.pdf", page: "notes/class9-maths-perimeter-and-area.html" },
-      { title: "The Mathematics of Maybe: Probability", label: "Chapter 7: notes, coin and dice lab, tree diagrams and all solutions", file: "notes/class9-maths-probability.pdf", page: "notes/class9-maths-probability.html" },
-      { title: "Predicting What Comes Next: Sequences and Progressions", label: "Chapter 8: notes, AP and GP explorer, fractal zoomer and all solutions", file: "notes/class9-maths-sequences-and-progressions.pdf", page: "notes/class9-maths-sequences-and-progressions.html" } ] },
+      { title: "Circles", label: "Complete guide: notes, all 12 theorem proofs and solutions", file: "notes/class9-maths-circles.pdf", page: "notes/class9-maths-circles.html", solutions: "notes/class9-maths-circles-ncert-solutions.html" },
+      { title: "Measuring Space: Perimeter and Area", label: "Chapter 6: notes, textbook diagrams and all exercise solutions", file: "notes/class9-maths-perimeter-and-area.pdf", page: "notes/class9-maths-perimeter-and-area.html", solutions: "notes/class9-maths-perimeter-and-area-ncert-solutions.html" },
+      { title: "The Mathematics of Maybe: Probability", label: "Chapter 7: notes, coin and dice lab, tree diagrams and all solutions", file: "notes/class9-maths-probability.pdf", page: "notes/class9-maths-probability.html", solutions: "notes/class9-maths-probability-ncert-solutions.html" },
+      { title: "Predicting What Comes Next: Sequences and Progressions", label: "Chapter 8: notes, AP and GP explorer, fractal zoomer and all solutions", file: "notes/class9-maths-sequences-and-progressions.pdf", page: "notes/class9-maths-sequences-and-progressions.html", solutions: "notes/class9-maths-sequences-and-progressions-ncert-solutions.html" } ] },
     { cls: 9, subject: "Science", book: "NCERT Exploration", chapters: [
-      { title: "Tissues in Action", label: "Chapter 3: notes, textbook diagrams, joint and tree-ring tools, all NCERT answers", file: "notes/class9-science-tissues-in-action.pdf", page: "notes/class9-science-tissues-in-action.html" },
+      { title: "Tissues in Action", label: "Chapter 3: notes, textbook diagrams, joint and tree-ring tools, all NCERT answers", file: "notes/class9-science-tissues-in-action.pdf", page: "notes/class9-science-tissues-in-action.html", solutions: "notes/class9-science-tissues-in-action-ncert-solutions.html" },
       "Motion",
-      { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html" },
-      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html" },
-      { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html" },
-      { title: "Reproduction: How Life Continues", label: "Chapter 11: notes, textbook diagrams, meiosis bead lab, cycle and pollen tools, all NCERT answers", file: "notes/class9-science-reproduction-how-life-continues.pdf", page: "notes/class9-science-reproduction-how-life-continues.html" } ] },
+      { title: "Simple Machines", label: "Work, Energy and Simple Machines (Section 7.6)", file: "notes/class9-science-simple-machines.pdf", page: "notes/class9-science-simple-machines.html", solutions: "notes/class9-science-simple-machines-ncert-solutions.html" },
+      { title: "Journey Inside the Atom", label: "Chapter 8: notes, diagrams and all NCERT answers", file: "notes/class9-science-journey-inside-the-atom.pdf", page: "notes/class9-science-journey-inside-the-atom.html", solutions: "notes/class9-science-journey-inside-the-atom-ncert-solutions.html" },
+      { title: "Atomic Foundations of Matter", label: "Chapter 9: notes, textbook diagrams and all NCERT answers", file: "notes/class9-science-atomic-foundations-of-matter.pdf", page: "notes/class9-science-atomic-foundations-of-matter.html", solutions: "notes/class9-science-atomic-foundations-of-matter-ncert-solutions.html" },
+      { title: "Reproduction: How Life Continues", label: "Chapter 11: notes, textbook diagrams, meiosis bead lab, cycle and pollen tools, all NCERT answers", file: "notes/class9-science-reproduction-how-life-continues.pdf", page: "notes/class9-science-reproduction-how-life-continues.html", solutions: "notes/class9-science-reproduction-how-life-continues-ncert-solutions.html" } ] },
     { cls: 8, subject: "Maths", book: "NCERT Ganita Prakash (Part 1 & 2)", chapters: [
       "A Square and a Cube", "Power Play", "A Story of Numbers", "Quadrilaterals", "Number Play",
       "We Distribute, Yet Things Multiply", "Proportional Reasoning – 1", "Fractions in Disguise",

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sequences and Progressions Class 9 NCERT Solutions, Step by Step | MT Classes Motihari</title>
+<meta name="description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 8 Predicting What Comes Next: Exploring Sequences and Progressions. Step-by-step solutions of Exercise Sets 8.1, 8.2, 8.3 and all end-of-chapter exercises: explicit and recursive rules, nth term and sum of an AP, geometric progressions.">
+<meta property="og:title" content="Sequences and Progressions Class 9 NCERT Solutions, Step by Step | MT Classes Motihari">
+<meta property="og:description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 8 Predicting What Comes Next: Exploring Sequences and Progressions. Step-by-step solutions of Exercise Sets 8.1, 8.2, 8.3 and all end-of-chapter exercises: explicit and recursive rules, nth term and sum of an AP, geometric progressions.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F;--greent:#E7F5EC;--violet:#5B3FA8;--violett:#F0EBFB}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff}
+.hero-in{max-width:880px;margin:0 auto;padding:24px 20px 54px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 16px 'Baloo 2',sans-serif;color:var(--gold)}
+.kick{margin:22px 0 0;color:var(--gold);font-weight:700;letter-spacing:.3px}
+.hero h1{color:#fff;font-size:clamp(32px,6vw,54px);font-weight:800;margin:4px 0 8px}
+.hero .sub{color:#CBD6EE;margin:0 0 18px;max-width:60ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}.btn.ghost{background:transparent;color:#fff}
+.back{display:inline-block;margin-top:16px;color:#CBD6EE}
+button:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+main{max-width:880px;margin:0 auto;padding:0 16px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:-30px 0 30px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:21px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{padding:6px 12px;border-radius:999px;background:var(--bluet);color:var(--navy);text-decoration:none;font-weight:600;font-size:16px}
+.chips a small{background:var(--navy);color:#fff;border-radius:999px;padding:0 7px;margin-left:4px;font-size:12px}
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:14px}
+.meter{flex:1 1 200px;height:10px;background:var(--bluet);border-radius:99px;overflow:hidden}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,#3FA56B,#E3B23C);transition:width .3s}
+.score p{margin:0;font-weight:600;color:var(--green)}
+.how{margin-top:10px;font-size:16px;color:var(--muted);background:var(--goldt);border-radius:12px;padding:8px 12px}
+.ex{margin:0 0 34px;scroll-margin-top:10px}
+.exh{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:3px solid var(--gold);padding-bottom:6px;margin-bottom:12px}
+.exh h2{font-size:26px}.exh span{color:var(--muted);font-weight:600;white-space:nowrap}
+.exn{color:var(--muted);margin:0 0 12px}
+.q{background:#fff;border:1px solid var(--line);border-left:5px solid var(--navy2);border-radius:14px;padding:14px 16px;margin:0 0 14px;scroll-margin-top:12px}
+.q.solved{border-left-color:#3FA56B}
+.qh{display:flex;gap:12px;align-items:flex-start}
+.qn{flex:none;min-width:36px;height:36px;padding:0 6px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.qt{flex:1;font-weight:600}
+.tick{flex:none;width:36px;height:36px;border-radius:50%;border:2px solid var(--line);background:#fff;color:#B8C2D6;font-size:18px;font-weight:800;cursor:pointer}
+.tick.on{background:#3FA56B;border-color:#3FA56B;color:#fff}
+.fig{margin:12px 0 4px;text-align:center}.fig img{max-width:100%;max-height:340px;height:auto;border-radius:10px;border:1px solid var(--line);cursor:zoom-in;background:#fff}
+.fig figcaption{font-size:14px;color:var(--muted)}
+.gvs{display:grid;gap:6px;margin:12px 0 2px}
+.gv{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline;background:var(--bluet);border-radius:10px;padding:6px 10px;font-size:16.5px}
+.gv b{color:var(--navy);min-width:92px;font-family:'Baloo 2',sans-serif}
+.gv>span:not(:last-child)::after{content:" ·";color:var(--muted)}
+.gv.fd{background:var(--goldt)}.gv.fd b{color:var(--goldd)}
+.gv.ky{background:var(--violett)}.gv.ky b{color:var(--violet)}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.b{border:2px solid var(--navy2);background:#fff;color:var(--navy2);border-radius:999px;padding:5px 14px;font:700 15.5px 'Mukta',sans-serif;cursor:pointer}
+.b.step{background:var(--navy2);color:#fff}.b.reset{border-color:var(--line);color:var(--muted);padding:3px 12px;font-size:14px}
+.sol{display:none}.q.open .sol{display:block}
+.steps{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.steps li.hide{display:none}
+.st{display:flex;gap:10px;align-items:flex-start;animation:pop .25s ease}
+.sn{flex:none;font:700 13px 'Mukta',sans-serif;background:var(--gold);color:var(--navy);border-radius:999px;padding:2px 9px;margin-top:3px;white-space:nowrap}
+.st div{flex:1;min-width:0;overflow-x:auto}
+.pt{font:800 18px 'Baloo 2',sans-serif;color:var(--navy2);border-top:1px dashed var(--line);padding-top:6px;margin-top:2px}
+.fa{overflow-x:auto;background:var(--greent);border:2px solid #9FD3B3;border-radius:12px;padding:8px 12px;font-weight:600;animation:pop .25s ease}
+.fa span{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:0 10px;margin-right:8px;font-size:14px}
+.tip{margin:10px 0 0;background:var(--goldt);border-radius:10px;padding:8px 12px;font-size:16.5px}.tip.hide{display:none}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.15;font-size:.92em;margin:0 2px}
+.fr>span:first-child{border-bottom:1.5px solid currentColor;padding:0 3px}.fr>span:last-child{padding:0 3px}
+table.t{border-collapse:collapse;margin:6px 0;font-size:16px}table.t td,table.t th{border:1px solid var(--line);padding:3px 9px;text-align:center}table.t th{background:var(--bluet)}
+@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.foot{color:var(--muted);font-size:15px;text-align:center;margin-top:30px}
+.zoom{position:fixed;inset:0;background:rgba(8,21,48,.88);display:grid;place-items:center;z-index:60;padding:16px;cursor:zoom-out}.zoom[hidden]{display:none}.zoom img{max-width:100%;max-height:100%;background:#fff;border-radius:8px}
+@media(max-width:600px){body{font-size:17px}.q{padding:12px}.gv b{min-width:0;width:100%}.hero-in{padding-bottom:48px}}
+@media print{.no-print,.progress,.tick{display:none!important}.hero{background:none;color:#000}.hero h1,.kick{color:#000!important}.hero .sub{color:#333}.toc{box-shadow:none;margin-top:0}.sol{display:block!important}.steps li.hide,.tip.hide{display:block!important}.st.hide{display:flex!important}.q{break-inside:avoid;border-left-width:3px}body{background:#fff;font-size:14px}.fig img{max-height:230px}}</style>
+<!-- SEO:START (made by tools/seo.mjs, do not edit by hand) -->
+<link rel="canonical" href="https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions-ncert-solutions.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta property="og:url" content="https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions-ncert-solutions.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MT Classes Motihari">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://www.mtclassesmotihari.com/assets/img/logo-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sequences and Progressions Class 9 NCERT Solutions, Step by Step | MT Classes Motihari">
+<meta name="twitter:description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 8 Predicting What Comes Next: Exploring Sequences and Progressions. Step-by-step solutions of Exercise Sets 8.1, 8.2, 8.3 and all end-of-chapter exercises: explicit and recursive rules, nth term and sum of an AP, geometric progressions.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","@id":"https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions-ncert-solutions.html#solutions","name":"Predicting What Comes Next: Sequences and Progressions: Class 9 Maths NCERT solutions","headline":"Sequences and Progressions Class 9 NCERT Solutions, Step by Step | MT Classes Motihari","description":"Class 9 Maths (NCERT Ganita Manjari) Chapter 8 Predicting What Comes Next: Exploring Sequences and Progressions. Step-by-step solutions of Exercise Sets 8.1, 8.2, 8.3 and all end-of-chapter exercises: explicit and recursive rules, nth term and sum of an AP, geometric progressions.","url":"https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions-ncert-solutions.html","learningResourceType":["Solutions","Worked examples","Practice questions"],"educationalLevel":"Class 9","educationalAlignment":{"@type":"AlignmentObject","alignmentType":"educationalSubject","educationalFramework":"CBSE / NCERT","targetName":"Maths, NCERT Ganita Manjari"},"about":{"@type":"Thing","name":"Predicting What Comes Next: Sequences and Progressions"},"teaches":"Predicting What Comes Next: Sequences and Progressions","isBasedOn":{"@type":"Book","name":"NCERT Ganita Manjari","publisher":{"@type":"Organization","name":"NCERT"}},"inLanguage":"en","isAccessibleForFree":true,"audience":{"@type":"EducationalAudience","educationalRole":"student"},"provider":{"@id":"https://www.mtclassesmotihari.com/#organization"},"publisher":{"@id":"https://www.mtclassesmotihari.com/#organization"},"isPartOf":{"@id":"https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions.html#notes"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mtclassesmotihari.com/"},{"@type":"ListItem","position":2,"name":"Notes","item":"https://www.mtclassesmotihari.com/notes.html"},{"@type":"ListItem","position":3,"name":"Class 9 Maths: Predicting What Comes Next: Sequences and Progressions","item":"https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions.html"},{"@type":"ListItem","position":4,"name":"NCERT Solutions","item":"https://www.mtclassesmotihari.com/notes/class9-maths-sequences-and-progressions-ncert-solutions.html"}]}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="progress" id="bar"></div>
+<header class="hero"><div class="hero-in">
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<p class="kick">NCERT Solutions · Class 9 Maths · Chapter 8</p>
+<h1>Predicting What Comes Next: Sequences and Progressions</h1>
+<p class="sub">Every textbook question solved step by step (NCERT Ganita Manjari, 2026-27). Try the question first, then open one step at a time.</p>
+<div class="btns no-print"><a class="btn solid" href="class9-maths-sequences-and-progressions.html">📘 Read the chapter notes</a><button class="btn ghost" type="button" id="openall">Open all solutions</button><button class="btn ghost" type="button" id="print">Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html#class-9">← All Class 9 notes</a>
+</div></header>
+<main>
+<nav class="toc"><h2>Exercises in this chapter</h2><div class="chips"><a href="#ex1">Exercise Set 8.1 <small>6</small></a><a href="#ex2">Exercise Set 8.2 <small>7</small></a><a href="#ex3">Exercise Set 8.3 <small>7</small></a><a href="#end">End-of-Chapter Exercises <small>15</small></a></div>
+<div class="score no-print"><div class="meter"><span id="meter"></span></div><p id="score">You have solved 0 of 35 questions.</p><button type="button" class="b reset" id="reset">Reset ticks</button></div>
+<div class="how"><b>How to use:</b> read the <b>Given</b> and <b>To find</b>, try it in your copy, then press <b>Step by step ▶</b> to check one step at a time. Tap <b>✓</b> when you have solved it.</div>
+</nav>
+<section id="ex1" class="ex"><div class="exh"><h2>Exercise Set 8.1</h2><span>6 questions</span></div>
+<article class="q" id="ex1-1" data-ex="ex1">
+<div class="qh"><span class="qn">1</span><div class="qt">Find the first five terms of the sequences: (i) t<sub>n</sub> = 3n − 4 (ii) t<sub>n</sub> = 2 − 5n (iii) t<sub>n</sub> = n² − 2n + 3.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Put n = 1, 2, 3, 4, 5 in the rule</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="pt">(i) t<sub>n</sub> = 3n − 4</li><li class="st"><span class="sn">Step 1</span><div>t<sub>1</sub> = 3 − 4 = −1, t<sub>2</sub> = 6 − 4 = 2, t<sub>3</sub> = 9 − 4 = 5, t<sub>4</sub> = 12 − 4 = 8, t<sub>5</sub> = 15 − 4 = 11</div></li><li class="fa"><span>Answer</span><b>−1, 2, 5, 8, 11</b></li><li class="pt">(ii) t<sub>n</sub> = 2 − 5n</li><li class="st"><span class="sn">Step 1</span><div>t<sub>1</sub> = 2 − 5 = −3, t<sub>2</sub> = 2 − 10 = −8, t<sub>3</sub> = −13, t<sub>4</sub> = −18, t<sub>5</sub> = −23</div></li><li class="fa"><span>Answer</span><b>−3, −8, −13, −18, −23</b></li><li class="pt">(iii) t<sub>n</sub> = n² − 2n + 3</li><li class="st"><span class="sn">Step 1</span><div>t<sub>1</sub> = 1 − 2 + 3 = 2, t<sub>2</sub> = 4 − 4 + 3 = 3, t<sub>3</sub> = 9 − 6 + 3 = 6, t<sub>4</sub> = 16 − 8 + 3 = 11, t<sub>5</sub> = 25 − 10 + 3 = 18</div></li><li class="fa"><span>Answer</span><b>2, 3, 6, 11, 18</b></li></ol></div>
+</article>
+<article class="q" id="ex1-2" data-ex="ex1">
+<div class="qh"><span class="qn">2</span><div class="qt">Find the 10th and 15th terms of the sequence t<sub>n</sub> = 5n − 3.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>10</sub> = 5 × 10 − 3 = 50 − 3 = 47</div></li><li class="st"><span class="sn">Step 2</span><div>t<sub>15</sub> = 5 × 15 − 3 = 75 − 3 = 72</div></li><li class="fa"><span>Answer</span>t<sub>10</sub> = <b>47</b>, t<sub>15</sub> = <b>72</b></li></ol></div>
+</article>
+<article class="q" id="ex1-3" data-ex="ex1">
+<div class="qh"><span class="qn">3</span><div class="qt">Are 97 and 172 terms of the sequence t<sub>n</sub> = 5n − 3?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>A number is a term only if n comes out as a natural number</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>For 97: 5n − 3 = 97 ⟹ 5n = 100 ⟹ n = 20 (a natural number)</div></li><li class="st"><span class="sn">Step 2</span><div>For 172: 5n − 3 = 172 ⟹ 5n = 175 ⟹ n = 35 (a natural number)</div></li><li class="fa"><span>Answer</span><b>Yes</b>: 97 is the 20th term and 172 is the 35th term</li></ol></div>
+</article>
+<article class="q" id="ex1-4" data-ex="ex1">
+<div class="qh"><span class="qn">4</span><div class="qt">Which term of the sequence t<sub>n</sub> = 5n − 3 is 607?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>5n − 3 = 607</div></li><li class="st"><span class="sn">Step 2</span><div>5n = 610 ⟹ n = 122</div></li><li class="fa"><span>Answer</span>607 is the <b>122nd term</b></li></ol></div>
+</article>
+<article class="q" id="ex1-5" data-ex="ex1">
+<div class="qh"><span class="qn">5</span><div class="qt">A sequence has t<sub>1</sub> = −5 and t<sub>n+1</sub> = t<sub>n</sub> + 3. Find the first five terms. Is 52 a term?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>1</sub> = −5, t<sub>2</sub> = −5 + 3 = −2, t<sub>3</sub> = 1, t<sub>4</sub> = 4, t<sub>5</sub> = 7</div></li><li class="st"><span class="sn">Step 2</span><div>Each term adds 3, so the explicit rule is t<sub>n</sub> = −5 + 3(n − 1) = 3n − 8</div></li><li class="st"><span class="sn">Step 3</span><div>3n − 8 = 52 ⟹ 3n = 60 ⟹ n = 20</div></li><li class="fa"><span>Answer</span>Terms: <b>−5, −2, 1, 4, 7</b>; <b>yes</b>, 52 is the 20th term</li></ol></div>
+</article>
+<article class="q" id="ex1-6" data-ex="ex1">
+<div class="qh"><span class="qn">6</span><div class="qt">T<sub>1</sub> = 1, T<sub>2</sub> = 2, T<sub>3</sub> = 4 and T<sub>n</sub> = T<sub>n−1</sub> + T<sub>n−2</sub> + T<sub>n−3</sub>. Find T<sub>4</sub> to T<sub>8</sub>.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 6 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Each term = sum of the three terms before it</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>T<sub>4</sub> = 4 + 2 + 1 = 7</div></li><li class="st"><span class="sn">Step 2</span><div>T<sub>5</sub> = 7 + 4 + 2 = 13</div></li><li class="st"><span class="sn">Step 3</span><div>T<sub>6</sub> = 13 + 7 + 4 = 24</div></li><li class="st"><span class="sn">Step 4</span><div>T<sub>7</sub> = 24 + 13 + 7 = 44</div></li><li class="st"><span class="sn">Step 5</span><div>T<sub>8</sub> = 44 + 24 + 13 = 81</div></li><li class="fa"><span>Answer</span><b>7, 13, 24, 44, 81</b></li></ol></div>
+</article></section>
+<section id="ex2" class="ex"><div class="exh"><h2>Exercise Set 8.2</h2><span>7 questions</span></div>
+<article class="q" id="ex2-1" data-ex="ex2">
+<div class="qh"><span class="qn">1</span><div class="qt">Find the 10th and 26th terms of the AP 3, 8, 13, 18, …</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 3, d = 8 − 3 = 5</span></div><div class="gv ky"><b>Formula / idea</b><span>t<sub>n</sub> = a + (n − 1)d</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>10</sub> = 3 + 9 × 5 = 3 + 45 = 48</div></li><li class="st"><span class="sn">Step 2</span><div>t<sub>26</sub> = 3 + 25 × 5 = 3 + 125 = 128</div></li><li class="fa"><span>Answer</span>t<sub>10</sub> = <b>48</b>, t<sub>26</sub> = <b>128</b></li></ol></div>
+</article>
+<article class="q" id="ex2-2" data-ex="ex2">
+<div class="qh"><span class="qn">2</span><div class="qt">Which term of the AP 21, 18, 15, … is −81? Is 0 a term of this AP?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 21, d = −3</span></div><div class="gv ky"><b>Formula / idea</b><span>t<sub>n</sub> = a + (n − 1)d</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>n</sub> = 21 + (n − 1)(−3) = 24 − 3n</div></li><li class="st"><span class="sn">Step 2</span><div>24 − 3n = −81 ⟹ 3n = 105 ⟹ n = 35</div></li><li class="st"><span class="sn">Step 3</span><div>24 − 3n = 0 ⟹ n = 8, a natural number</div></li><li class="fa"><span>Answer</span>−81 is the <b>35th term</b>; <b>yes</b>, 0 is the <b>8th term</b> (21, 18, 15, 12, 9, 6, 3, 0)</li></ol></div>
+</article>
+<article class="q" id="ex2-3" data-ex="ex2">
+<div class="qh"><span class="qn">3</span><div class="qt">Find the nth term of the AP 11, 8, 5, 2, … and write its recursive rule.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 11, d = −3</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>n</sub> = 11 + (n − 1)(−3) = 14 − 3n</div></li><li class="st"><span class="sn">Step 2</span><div>Recursive: start at 11 and subtract 3 each time</div></li><li class="fa"><span>Answer</span>t<sub>n</sub> = <b>14 − 3n</b>; recursive: <b>t<sub>1</sub> = 11, t<sub>n</sub> = t<sub>n−1</sub> − 3</b> (n ≥ 2)</li></ol></div>
+</article>
+<article class="q" id="ex2-4" data-ex="ex2">
+<div class="qh"><span class="qn">4</span><div class="qt">An AP has 50 terms. Its 3rd term is 12 and its last term is 106. Find the 29th term.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>t<sub>3</sub> = 12, t<sub>50</sub> = 106</span></div><div class="gv fd"><b>To find</b><span>t<sub>29</sub></span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>a + 2d = 12 … (1) and a + 49d = 106 … (2)</div></li><li class="st"><span class="sn">Step 2</span><div>(2) − (1): 47d = 94 ⟹ d = 2</div></li><li class="st"><span class="sn">Step 3</span><div>From (1): a = 12 − 4 = 8</div></li><li class="st"><span class="sn">Step 4</span><div>t<sub>29</sub> = 8 + 28 × 2 = 64</div></li><li class="fa"><span>Answer</span>t<sub>29</sub> = <b>64</b></li></ol></div>
+</article>
+<article class="q" id="ex2-5" data-ex="ex2">
+<div class="qh"><span class="qn">5</span><div class="qt">How many 2-digit numbers are divisible by 3? Find their sum.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>They are 12, 15, 18, …, 99: an AP with a = 12, d = 3, last term 99</div></li><li class="st"><span class="sn">Step 2</span><div>12 + (n − 1) × 3 = 99 ⟹ (n − 1) × 3 = 87 ⟹ n = 30</div></li><li class="st"><span class="sn">Step 3</span><div>Sum = <span class="fr"><span>n</span><span>2</span></span>(first + last) = <span class="fr"><span>30</span><span>2</span></span> × (12 + 99) = 15 × 111 = 1665</div></li><li class="fa"><span>Answer</span><b>30 numbers</b>, sum = <b>1665</b></li></ol></div>
+</article>
+<article class="q" id="ex2-6" data-ex="ex2">
+<div class="qh"><span class="qn">6</span><div class="qt">Harish's salary starts at ₹5,00,000 a year and increases by ₹20,000 each year. In which year will it reach ₹7,00,000?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 6 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 5,00,000, d = 20,000, t<sub>n</sub> = 7,00,000</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>5,00,000 + (n − 1) × 20,000 = 7,00,000</div></li><li class="st"><span class="sn">Step 2</span><div>(n − 1) × 20,000 = 2,00,000 ⟹ n − 1 = 10 ⟹ n = 11</div></li><li class="fa"><span>Answer</span>In his <b>11th year</b> (after 10 increments)</li></ol></div>
+</article>
+<article class="q" id="ex2-7" data-ex="ex2">
+<div class="qh"><span class="qn">7</span><div class="qt">Marbles are arranged in rows of 1, 2, 3, …, 25. How many marbles are there in all?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 7 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>1 + 2 + … + n = <span class="fr"><span>n(n + 1)</span><span>2</span></span></span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>S<sub>25</sub> = <span class="fr"><span>25 × 26</span><span>2</span></span> = 25 × 13 = 325</div></li><li class="fa"><span>Answer</span><b>325 marbles</b></li></ol></div>
+</article></section>
+<section id="ex3" class="ex"><div class="exh"><h2>Exercise Set 8.3</h2><span>7 questions</span></div>
+<article class="q" id="ex3-1" data-ex="ex3">
+<div class="qh"><span class="qn">1</span><div class="qt">A GP has common ratio 2 and its 8th term is 192. Find its 12th term.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>r = 2, t<sub>8</sub> = 192</span></div><div class="gv ky"><b>Formula / idea</b><span>Going one term ahead multiplies by r</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>From t<sub>8</sub> to t<sub>12</sub> we multiply by r four times: t<sub>12</sub> = t<sub>8</sub> × r⁴</div></li><li class="st"><span class="sn">Step 2</span><div>t<sub>12</sub> = 192 × 2⁴ = 192 × 16 = 3072</div></li><li class="fa"><span>Answer</span>t<sub>12</sub> = <b>3072</b></li></ol></div>
+</article>
+<article class="q" id="ex3-2" data-ex="ex3">
+<div class="qh"><span class="qn">2</span><div class="qt">Find the 10th and nth terms of the GP 5, 25, 125, …</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 5, r = 25 ÷ 5 = 5</span></div><div class="gv ky"><b>Formula / idea</b><span>t<sub>n</sub> = a r<sup>n−1</sup></span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>n</sub> = 5 × 5<sup>n−1</sup> = 5<sup>n</sup></div></li><li class="st"><span class="sn">Step 2</span><div>t<sub>10</sub> = 5<sup>10</sup> = 97,65,625</div></li><li class="fa"><span>Answer</span>t<sub>n</sub> = <b>5<sup>n</sup></b>, t<sub>10</sub> = <b>97,65,625</b></li></ol></div>
+</article>
+<article class="q" id="ex3-3" data-ex="ex3">
+<div class="qh"><span class="qn">3*</span><div class="qt">t<sub>1</sub> = 2 and t<sub>n+1</sub> = 3t<sub>n</sub> − 2. Which term is 730?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>2</sub> = 3 × 2 − 2 = 4, t<sub>3</sub> = 10, t<sub>4</sub> = 28, t<sub>5</sub> = 82, t<sub>6</sub> = 244, t<sub>7</sub> = 3 × 244 − 2 = 730</div></li><li class="st"><span class="sn">Step 2</span><div>Pattern: each term is one more than a power of 3 (2 = 3⁰ + 1, 4 = 3¹ + 1, 10 = 3² + 1 …), so t<sub>n</sub> = 3<sup>n−1</sup> + 1</div></li><li class="st"><span class="sn">Step 3</span><div>730 = 729 + 1 = 3⁶ + 1, so n − 1 = 6</div></li><li class="fa"><span>Answer</span>730 is the <b>7th term</b></li></ol></div>
+</article>
+<article class="q" id="ex3-4" data-ex="ex3">
+<div class="qh"><span class="qn">4</span><div class="qt">Which term of the GP 2, 6, 18, … is 4374? Give its explicit and recursive formulas.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 2, r = 3</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>n</sub> = 2 × 3<sup>n−1</sup></div></li><li class="st"><span class="sn">Step 2</span><div>2 × 3<sup>n−1</sup> = 4374 ⟹ 3<sup>n−1</sup> = 2187 = 3⁷</div></li><li class="st"><span class="sn">Step 3</span><div>n − 1 = 7 ⟹ n = 8</div></li><li class="fa"><span>Answer</span>4374 is the <b>8th term</b>; explicit <b>t<sub>n</sub> = 2 × 3<sup>n−1</sup></b>; recursive <b>t<sub>1</sub> = 2, t<sub>n</sub> = 3t<sub>n−1</sub></b></li></ol></div>
+</article>
+<article class="q" id="ex3-5" data-ex="ex3">
+<div class="qh"><span class="qn">5</span><div class="qt">A ball is dropped from 80 m. Each time it bounces back to 60% of the height it fell. (i) What height does it reach after the 5th bounce? (ii) What total vertical distance has it travelled when it hits the ground for the 6th time?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>First fall 80 m, r = 0.6</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="pt">(i)</li><li class="st"><span class="sn">Step 1</span><div>Bounce heights: 80 × 0.6 = 48, then 28.8, 17.28, 10.368, 6.2208 m</div></li><li class="st"><span class="sn">Step 2</span><div>After the 5th bounce: 80 × 0.6⁵ = 6.2208 m</div></li><li class="fa"><span>Answer</span>≈ <b>6.22 m</b></li><li class="pt">(ii)</li><li class="st"><span class="sn">Step 1</span><div>First fall = 80 m</div></li><li class="st"><span class="sn">Step 2</span><div>Before the 6th hit, the ball goes up and comes down after each of 5 bounces: 2 × (48 + 28.8 + 17.28 + 10.368 + 6.2208) = 2 × 110.6688 = 221.3376 m</div></li><li class="st"><span class="sn">Step 3</span><div>Total = 80 + 221.3376 = 301.3376 m</div></li><li class="fa"><span>Answer</span>≈ <b>301.34 m</b></li></ol></div>
+</article>
+<article class="q" id="ex3-6" data-ex="ex3">
+<div class="qh"><span class="qn">6</span><div class="qt">Which term of the GP 2, 2√2, 4, … is 128?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 6 as solved">✓</button></div>
+<div class="gvs"><div class="gv"><b>Given</b><span>a = 2, r = √2</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>n</sub> = 2(√2)<sup>n−1</sup> = 128 ⟹ (√2)<sup>n−1</sup> = 64</div></li><li class="st"><span class="sn">Step 2</span><div>64 = 2⁶ = (√2)<sup>12</sup></div></li><li class="st"><span class="sn">Step 3</span><div>n − 1 = 12 ⟹ n = 13</div></li><li class="fa"><span>Answer</span>128 is the <b>13th term</b></li></ol></div>
+</article>
+<article class="q" id="ex3-7" data-ex="ex3">
+<div class="qh"><span class="qn">7</span><div class="qt">The Sierpiński square carpet (Fig. 8.12): (i) count the red squares at stages 0 to 3 (ii) stages 4 and 5 (iii) give explicit and recursive rules (iv) find the red area at each stage.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 7 as solved">✓</button></div>
+<figure class="fig"><img src="img/sequences/carpet.webp" alt="Fig. 8.12: stages 0 to 3 of the carpet" loading="lazy" decoding="async"><figcaption>Fig. 8.12: stages 0 to 3 of the carpet</figcaption></figure><div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Each square is cut into 9 and the middle one is removed: every red square becomes 8 squares, and the area is multiplied by <span class="fr"><span>8</span><span>9</span></span></span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>(i) Stages 0 to 3: 1, 8, 64, 512</div></li><li class="st"><span class="sn">Step 2</span><div>(ii) Stage 4: 8⁴ = 4096; stage 5: 8⁵ = 32768</div></li><li class="st"><span class="sn">Step 3</span><div>(iii) Explicit: t<sub>n</sub> = 8<sup>n</sup>; recursive: t<sub>0</sub> = 1, t<sub>n</sub> = 8 t<sub>n−1</sub></div></li><li class="st"><span class="sn">Step 4</span><div>(iv) Area: 1, <span class="fr"><span>8</span><span>9</span></span>, <span class="fr"><span>64</span><span>81</span></span>, <span class="fr"><span>512</span><span>729</span></span>, <span class="fr"><span>4096</span><span>6561</span></span>, <span class="fr"><span>32768</span><span>59049</span></span>; s<sub>n</sub> = (<span class="fr"><span>8</span><span>9</span></span>)<sup>n</sup>, s<sub>0</sub> = 1, s<sub>n</sub> = <span class="fr"><span>8</span><span>9</span></span> s<sub>n−1</sub></div></li><li class="fa"><span>Answer</span>Squares form a <b>GP with r = 8</b>, area a <b>GP with r = 8/9</b>, which slowly gets closer to 0</li></ol></div>
+</article></section>
+<section id="end" class="ex"><div class="exh"><h2>End-of-Chapter Exercises</h2><span>15 questions</span></div><p class="exn">Questions marked * are challenge problems.</p>
+<article class="q" id="end-1" data-ex="end">
+<div class="qh"><span class="qn">1</span><div class="qt">Find the 31st term of an AP whose 11th term is 38 and 16th term is 73.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>a + 10d = 38 … (1), a + 15d = 73 … (2)</div></li><li class="st"><span class="sn">Step 2</span><div>(2) − (1): 5d = 35 ⟹ d = 7</div></li><li class="st"><span class="sn">Step 3</span><div>a = 38 − 70 = −32</div></li><li class="st"><span class="sn">Step 4</span><div>t<sub>31</sub> = −32 + 30 × 7 = −32 + 210 = 178</div></li><li class="fa"><span>Answer</span>t<sub>31</sub> = <b>178</b></li></ol></div>
+</article>
+<article class="q" id="end-2" data-ex="end">
+<div class="qh"><span class="qn">2</span><div class="qt">Find the AP whose 3rd term is 16 and whose 7th term exceeds the 5th term by 12.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>t<sub>7</sub> − t<sub>5</sub> = (a + 6d) − (a + 4d) = 2d = 12 ⟹ d = 6</div></li><li class="st"><span class="sn">Step 2</span><div>a + 2d = 16 ⟹ a = 4</div></li><li class="fa"><span>Answer</span>The AP is <b>4, 10, 16, 22, 28, …</b></li></ol></div>
+</article>
+<article class="q" id="end-3" data-ex="end">
+<div class="qh"><span class="qn">3*</span><div class="qt">How many three-digit numbers are divisible by 7?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Smallest: 105 (7 × 15); largest: 994 (7 × 142)</div></li><li class="st"><span class="sn">Step 2</span><div>AP with a = 105, d = 7: 105 + (n − 1) × 7 = 994</div></li><li class="st"><span class="sn">Step 3</span><div>(n − 1) × 7 = 889 ⟹ n − 1 = 127 ⟹ n = 128</div></li><li class="fa"><span>Answer</span><b>128 numbers</b></li></ol></div>
+</article>
+<article class="q" id="end-4" data-ex="end">
+<div class="qh"><span class="qn">4*</span><div class="qt">How many multiples of 4 lie between 10 and 250?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>First: 12, last: 248, d = 4</div></li><li class="st"><span class="sn">Step 2</span><div>12 + (n − 1) × 4 = 248 ⟹ (n − 1) × 4 = 236 ⟹ n − 1 = 59 ⟹ n = 60</div></li><li class="fa"><span>Answer</span><b>60 multiples</b></li></ol></div>
+</article>
+<article class="q" id="end-5" data-ex="end">
+<div class="qh"><span class="qn">5*</span><div class="qt">Find a GP in which the sum of the first two terms is −4 and the 5th term is 4 times the 3rd term.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>ar⁴ = 4ar² ⟹ r² = 4 ⟹ r = 2 or r = −2</div></li><li class="st"><span class="sn">Step 2</span><div>a + ar = −4</div></li><li class="st"><span class="sn">Step 3</span><div>If r = 2: 3a = −4, a = −<span class="fr"><span>4</span><span>3</span></span>: GP −<span class="fr"><span>4</span><span>3</span></span>, −<span class="fr"><span>8</span><span>3</span></span>, −<span class="fr"><span>16</span><span>3</span></span>, …</div></li><li class="st"><span class="sn">Step 4</span><div>If r = −2: −a = −4, a = 4: GP 4, −8, 16, −32, …</div></li><li class="fa"><span>Answer</span><b>−4/3, −8/3, −16/3, …</b> or <b>4, −8, 16, −32, …</b></li></ol></div>
+</article>
+<article class="q" id="end-6" data-ex="end">
+<div class="qh"><span class="qn">6*</span><div class="qt">Find all ways of writing 100 as a sum of two or more consecutive natural numbers.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 6* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>If k numbers start at m: sum = <span class="fr"><span>k(2m + k − 1)</span><span>2</span></span> = 100, so k(2m + k − 1) = 200</div></li><li class="st"><span class="sn">Step 2</span><div>Try factors k of 200 (k ≥ 2) and check that m is a natural number</div></li><li class="st"><span class="sn">Step 3</span><div>k = 5: 2m + 4 = 40 ⟹ m = 18 → 18 + 19 + 20 + 21 + 22</div></li><li class="st"><span class="sn">Step 4</span><div>k = 8: 2m + 7 = 25 ⟹ m = 9 → 9 + 10 + … + 16</div></li><li class="st"><span class="sn">Step 5</span><div>Other k (2, 4, 10, 20, 25, 40, …) do not give a natural number m</div></li><li class="fa"><span>Answer</span><b>Two ways</b>: 18 + 19 + 20 + 21 + 22 and 9 + 10 + 11 + 12 + 13 + 14 + 15 + 16</li></ol></div>
+</article>
+<article class="q" id="end-7" data-ex="end">
+<div class="qh"><span class="qn">7*</span><div class="qt">There are 30 bacteria and they double every hour. How many are there after 2 hours, 4 hours and n hours?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 7* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>GP with a = 30, r = 2: 30, 60, 120, 240, 480, …</div></li><li class="st"><span class="sn">Step 2</span><div>After n hours: 30 × 2<sup>n</sup></div></li><li class="fa"><span>Answer</span>2 hours: <b>120</b>; 4 hours: <b>480</b>; n hours: <b>30 × 2<sup>n</sup></b></li></ol></div>
+</article>
+<article class="q" id="end-8" data-ex="end">
+<div class="qh"><span class="qn">8*</span><div class="qt">In an AP, t<sub>4</sub> + t<sub>8</sub> = 24 and t<sub>6</sub> + t<sub>10</sub> = 44. Find the first three terms.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 8* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>(a + 3d) + (a + 7d) = 2a + 10d = 24 … (1)</div></li><li class="st"><span class="sn">Step 2</span><div>(a + 5d) + (a + 9d) = 2a + 14d = 44 … (2)</div></li><li class="st"><span class="sn">Step 3</span><div>(2) − (1): 4d = 20 ⟹ d = 5; 2a = 24 − 50 = −26 ⟹ a = −13</div></li><li class="fa"><span>Answer</span>First three terms: <b>−13, −8, −3</b></li></ol></div>
+</article>
+<article class="q" id="end-9" data-ex="end">
+<div class="qh"><span class="qn">9*</span><div class="qt">Find the smallest n for which 1 + 2 + … + n is greater than 1000.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 9* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>We need <span class="fr"><span>n(n + 1)</span><span>2</span></span> > 1000, that is n(n + 1) > 2000</div></li><li class="st"><span class="sn">Step 2</span><div>n = 44: 44 × 45 = 1980 (sum 990, too small)</div></li><li class="st"><span class="sn">Step 3</span><div>n = 45: 45 × 46 = 2070 (sum 1035)</div></li><li class="fa"><span>Answer</span><b>n = 45</b></li></ol></div>
+</article>
+<article class="q" id="end-10" data-ex="end">
+<div class="qh"><span class="qn">10*</span><div class="qt">Which term of the GP 2, 8, 32, … is 131072? Give the explicit and recursive formulas.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 10* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>a = 2, r = 4: t<sub>n</sub> = 2 × 4<sup>n−1</sup></div></li><li class="st"><span class="sn">Step 2</span><div>2 × 4<sup>n−1</sup> = 131072 ⟹ 4<sup>n−1</sup> = 65536 = 4⁸</div></li><li class="st"><span class="sn">Step 3</span><div>n − 1 = 8 ⟹ n = 9</div></li><li class="fa"><span>Answer</span><b>9th term</b>; explicit <b>t<sub>n</sub> = 2 × 4<sup>n−1</sup></b>; recursive <b>t<sub>1</sub> = 2, t<sub>n</sub> = 4t<sub>n−1</sub></b></li></ol></div>
+</article>
+<article class="q" id="end-11" data-ex="end">
+<div class="qh"><span class="qn">11*</span><div class="qt">The first three terms of a GP add up to <span class="fr"><span>13</span><span>12</span></span> and their product is −1. Find r and the terms.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 11* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Take the terms as <span class="fr"><span>a</span><span>r</span></span>, a, ar. Product = a³ = −1 ⟹ a = −1</div></li><li class="st"><span class="sn">Step 2</span><div>Sum: −<span class="fr"><span>1</span><span>r</span></span> − 1 − r = <span class="fr"><span>13</span><span>12</span></span> ⟹ r + <span class="fr"><span>1</span><span>r</span></span> = −<span class="fr"><span>25</span><span>12</span></span></div></li><li class="st"><span class="sn">Step 3</span><div>12r² + 25r + 12 = 0 ⟹ (4r + 3)(3r + 4) = 0 ⟹ r = −<span class="fr"><span>3</span><span>4</span></span> or −<span class="fr"><span>4</span><span>3</span></span></div></li><li class="fa"><span>Answer</span>r = −¾: terms <b><span class="fr"><span>4</span><span>3</span></span>, −1, <span class="fr"><span>3</span><span>4</span></span></b>; r = −<span class="fr"><span>4</span><span>3</span></span> gives the same numbers in reverse</li></ol></div>
+</article>
+<article class="q" id="end-12" data-ex="end">
+<div class="qh"><span class="qn">12*</span><div class="qt">The 4th, 10th and 16th terms of a GP are x, y and z. Prove that x, y, z are in GP.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 12* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>x = ar³, y = ar⁹, z = ar<sup>15</sup></div></li><li class="st"><span class="sn">Step 2</span><div><span class="fr"><span>y</span><span>x</span></span> = r⁶ and <span class="fr"><span>z</span><span>y</span></span> = r⁶</div></li><li class="fa"><span>Answer</span>The ratios are equal, so <b>x, y, z are in GP</b> (y² = xz). Proved.</li></ol></div>
+</article>
+<article class="q" id="end-13" data-ex="end">
+<div class="qh"><span class="qn">13*</span><div class="qt">Three numbers in GP add up to 26 and the sum of their squares is 364. Find them.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 13* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Terms a, ar, ar². a(1 + r + r²) = 26 … (1); a²(1 + r² + r⁴) = 364 … (2)</div></li><li class="st"><span class="sn">Step 2</span><div>Use 1 + r² + r⁴ = (1 + r + r²)(1 − r + r²). Divide (2) by (1): a(1 − r + r²) = 14 … (3)</div></li><li class="st"><span class="sn">Step 3</span><div>(1) − (3): 2ar = 12 ⟹ ar = 6. (1) + (3): 2a(1 + r²) = 40 ⟹ a + ar² = 20</div></li><li class="st"><span class="sn">Step 4</span><div>6/r + 6r = 20 ⟹ 3r² − 10r + 3 = 0 ⟹ r = 3 or <span class="fr"><span>1</span><span>3</span></span></div></li><li class="st"><span class="sn">Step 5</span><div>r = 3 gives a = 2: 2, 6, 18. Check: 2 + 6 + 18 = 26 and 4 + 36 + 324 = 364 ✔</div></li><li class="fa"><span>Answer</span>The numbers are <b>2, 6, 18</b> (or 18, 6, 2)</li></ol></div>
+</article>
+<article class="q" id="end-14" data-ex="end">
+<div class="qh"><span class="qn">14*</span><div class="qt">P<sub>1</sub> = 1, P<sub>2</sub> = 2 and P<sub>n</sub> = P<sub>1</sub> + P<sub>2</sub> + … + P<sub>n−1</sub> + 1. Find P<sub>1</sub> to P<sub>8</sub> and simpler formulas.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 14* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>P<sub>3</sub> = 1 + 2 + 1 = 4, P<sub>4</sub> = 1 + 2 + 4 + 1 = 8, … giving 1, 2, 4, 8, 16, 32, 64, 128</div></li><li class="st"><span class="sn">Step 2</span><div>P<sub>n</sub> = (P<sub>1</sub> + … + P<sub>n−2</sub> + 1) + P<sub>n−1</sub> = P<sub>n−1</sub> + P<sub>n−1</sub> = 2P<sub>n−1</sub></div></li><li class="fa"><span>Answer</span><b>1, 2, 4, 8, 16, 32, 64, 128</b>; P<sub>n</sub> = 2P<sub>n−1</sub>, <b>P<sub>n</sub> = 2<sup>n−1</sup></b></li></ol></div>
+</article>
+<article class="q" id="end-15" data-ex="end">
+<div class="qh"><span class="qn">15*</span><div class="qt">W<sub>1</sub> = 1, W<sub>2</sub> = 2 and W<sub>n</sub> = W<sub>1</sub> + … + W<sub>n−2</sub> + 2. Find W<sub>1</sub> to W<sub>8</sub>.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 15* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>W<sub>3</sub> = 1 + 2 = 3, W<sub>4</sub> = 1 + 2 + 2 = 5, W<sub>5</sub> = 1 + 2 + 3 + 2 = 8</div></li><li class="st"><span class="sn">Step 2</span><div>Subtracting consecutive rules gives W<sub>n</sub> − W<sub>n−1</sub> = W<sub>n−2</sub>, so each term = sum of the previous two</div></li><li class="fa"><span>Answer</span><b>1, 2, 3, 5, 8, 13, 21, 34</b>: the Virahānka–Fibonacci sequence</li></ol></div>
+</article></section>
+<p class="foot">Made by MT Classes, S.K. Nagar, Motihari for Class 9 CBSE students. Questions are from the NCERT Ganita Manjari textbook; solutions are written by MT Classes. <a href="class9-maths-sequences-and-progressions.html">Back to the chapter notes</a> · <a href="/notes.html#class-9">All notes</a></p>
+</main>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script>
+(function(){
+  var KEY="mt-sol9-maths-sequences-and-progressions", TOTAL=35;
+  var done={}; try{done=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
+  function score(){var n=0;for(var k in done)if(done[k])n++;document.getElementById('score').textContent='You have solved '+n+' of '+TOTAL+' questions.'+(n===TOTAL?' Shabash! 🎉':'');document.getElementById('meter').style.width=(100*n/TOTAL)+'%';}
+  document.querySelectorAll('.q').forEach(function(q){
+    var steps=[].slice.call(q.querySelectorAll('.steps > li')), sol=q.querySelector('.sol'), show=q.querySelector('.show'), step=q.querySelector('.step'), tick=q.querySelector('.tick'), shown=0;
+    function setTick(){var on=!!done[q.id];tick.classList.toggle('on',on);tick.setAttribute('aria-pressed',on);q.classList.toggle('solved',on);}
+    setTick();
+    tick.addEventListener('click',function(){done[q.id]=!done[q.id];save();setTick();score();});
+    function upd(){steps.forEach(function(li,i){li.classList.toggle('hide',i>=shown)});q.classList.toggle('open',shown>0);
+      var tips=q.querySelectorAll('.tip');tips.forEach(function(t){t.classList.toggle('hide',shown<steps.length)});
+      step.textContent=shown>=steps.length?'Start again ↺':(shown?'Next step ▶ ('+shown+'/'+steps.length+')':'Step by step ▶');
+      show.textContent=shown>=steps.length?'Hide solution':'Show full solution';}
+    show.addEventListener('click',function(){shown=shown>=steps.length?0:steps.length;upd();});
+    step.addEventListener('click',function(){if(shown>=steps.length){shown=0;}shown++;while(shown<steps.length&&steps[shown-1].classList.contains('pt'))shown++;upd();var li=steps[shown-1];if(li&&li.getBoundingClientRect().bottom>innerHeight)li.scrollIntoView({block:'nearest',behavior:'smooth'});});
+    q._all=function(on){shown=on?steps.length:0;upd();};
+    upd();
+  });
+  score();
+  var all=false;document.getElementById('openall').addEventListener('click',function(){all=!all;document.querySelectorAll('.q').forEach(function(q){q._all(all)});this.textContent=all?'Close all solutions':'Open all solutions';});
+  document.getElementById('reset').addEventListener('click',function(){done={};save();document.querySelectorAll('.tick').forEach(function(t){t.classList.remove('on');t.setAttribute('aria-pressed','false');t.closest('.q').classList.remove('solved')});score();});
+  document.getElementById('print').addEventListener('click',function(){document.querySelectorAll('.q').forEach(function(q){q._all(true)});setTimeout(function(){print()},300);});
+  addEventListener('beforeprint',function(){document.querySelectorAll('.q').forEach(function(q){q._all(true)})});
+  var z=document.getElementById('zoom');document.querySelectorAll('.fig img').forEach(function(im){im.addEventListener('click',function(){z.querySelector('img').src=im.src;z.hidden=false;})});z.addEventListener('click',function(){z.hidden=true});
+  addEventListener('keydown',function(e){if(e.key==='Escape')z.hidden=true});
+  var bar=document.getElementById('bar');addEventListener('scroll',function(){var h=document.documentElement;bar.style.width=(100*h.scrollTop/(h.scrollHeight-h.clientHeight||1))+'%'},{passive:true});
+  if(location.hash){var t=document.querySelector(location.hash);if(t&&t.classList.contains('q'))t._all(true);}
+})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

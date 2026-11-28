@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circles Class 9 NCERT Solutions, Step by Step | MT Classes Motihari</title>
+<meta name="description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 5 Circles. Step-by-step solutions of every Think and Reflect, Exercise Set 5.1 to 5.6 and all 26 end-of-chapter exercises: chords, perpendicular from the centre, equal chords, angles subtended by arcs and cyclic quadrilaterals, with proofs written statement by statement.">
+<meta property="og:title" content="Circles Class 9 NCERT Solutions, Step by Step | MT Classes Motihari">
+<meta property="og:description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 5 Circles. Step-by-step solutions of every Think and Reflect, Exercise Set 5.1 to 5.6 and all 26 end-of-chapter exercises: chords, perpendicular from the centre, equal chords, angles subtended by arcs and cyclic quadrilaterals, with proofs written statement by statement.">
+<meta name="theme-color" content="#0E2148">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--navy:#0E2148;--navy2:#2A4A86;--gold:#E3B23C;--goldd:#8A6510;--goldt:#FFF5DA;--bluet:#EAF0FA;--ink:#1D2433;--muted:#5B6475;--line:#D5DDEB;--page:#F4F7FC;--green:#2E7D4F;--greent:#E7F5EC;--violet:#5B3FA8;--violett:#F0EBFB}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 18px/1.65 'Mukta','Noto Sans','Segoe UI',system-ui,sans-serif}
+h1,h2,h3{font-family:'Baloo 2','Mukta',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0}
+a{color:var(--navy2)}sup,sub{line-height:0}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--gold);z-index:50}
+.hero{background:radial-gradient(120% 140% at 85% 20%,#1D3D7A 0,var(--navy) 55%,#081530 100%);color:#fff}
+.hero-in{max-width:880px;margin:0 auto;padding:24px 20px 54px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:#E9EEF8;text-decoration:none}
+.brand .mono{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 16px 'Baloo 2',sans-serif;color:var(--gold)}
+.kick{margin:22px 0 0;color:var(--gold);font-weight:700;letter-spacing:.3px}
+.hero h1{color:#fff;font-size:clamp(32px,6vw,54px);font-weight:800;margin:4px 0 8px}
+.hero .sub{color:#CBD6EE;margin:0 0 18px;max-width:60ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font:700 16px 'Mukta',sans-serif;text-decoration:none;cursor:pointer;border:2px solid var(--gold)}
+.btn.solid{background:var(--gold);color:var(--navy)}.btn.ghost{background:transparent;color:#fff}
+.back{display:inline-block;margin-top:16px;color:#CBD6EE}
+button:focus-visible,a:focus-visible{outline:3px solid #7FB2FF;outline-offset:2px}
+main{max-width:880px;margin:0 auto;padding:0 16px 40px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:-30px 0 30px;position:relative;box-shadow:0 10px 30px -18px rgba(14,33,72,.45)}
+.toc h2{font-size:21px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{padding:6px 12px;border-radius:999px;background:var(--bluet);color:var(--navy);text-decoration:none;font-weight:600;font-size:16px}
+.chips a small{background:var(--navy);color:#fff;border-radius:999px;padding:0 7px;margin-left:4px;font-size:12px}
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:14px}
+.meter{flex:1 1 200px;height:10px;background:var(--bluet);border-radius:99px;overflow:hidden}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,#3FA56B,#E3B23C);transition:width .3s}
+.score p{margin:0;font-weight:600;color:var(--green)}
+.how{margin-top:10px;font-size:16px;color:var(--muted);background:var(--goldt);border-radius:12px;padding:8px 12px}
+.ex{margin:0 0 34px;scroll-margin-top:10px}
+.exh{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:3px solid var(--gold);padding-bottom:6px;margin-bottom:12px}
+.exh h2{font-size:26px}.exh span{color:var(--muted);font-weight:600;white-space:nowrap}
+.exn{color:var(--muted);margin:0 0 12px}
+.q{background:#fff;border:1px solid var(--line);border-left:5px solid var(--navy2);border-radius:14px;padding:14px 16px;margin:0 0 14px;scroll-margin-top:12px}
+.q.solved{border-left-color:#3FA56B}
+.qh{display:flex;gap:12px;align-items:flex-start}
+.qn{flex:none;min-width:36px;height:36px;padding:0 6px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;font:800 17px 'Baloo 2',sans-serif}
+.qt{flex:1;font-weight:600}
+.tick{flex:none;width:36px;height:36px;border-radius:50%;border:2px solid var(--line);background:#fff;color:#B8C2D6;font-size:18px;font-weight:800;cursor:pointer}
+.tick.on{background:#3FA56B;border-color:#3FA56B;color:#fff}
+.fig{margin:12px 0 4px;text-align:center}.fig img{max-width:100%;max-height:340px;height:auto;border-radius:10px;border:1px solid var(--line);cursor:zoom-in;background:#fff}
+.fig figcaption{font-size:14px;color:var(--muted)}
+.gvs{display:grid;gap:6px;margin:12px 0 2px}
+.gv{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline;background:var(--bluet);border-radius:10px;padding:6px 10px;font-size:16.5px}
+.gv b{color:var(--navy);min-width:92px;font-family:'Baloo 2',sans-serif}
+.gv>span:not(:last-child)::after{content:" ·";color:var(--muted)}
+.gv.fd{background:var(--goldt)}.gv.fd b{color:var(--goldd)}
+.gv.ky{background:var(--violett)}.gv.ky b{color:var(--violet)}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.b{border:2px solid var(--navy2);background:#fff;color:var(--navy2);border-radius:999px;padding:5px 14px;font:700 15.5px 'Mukta',sans-serif;cursor:pointer}
+.b.step{background:var(--navy2);color:#fff}.b.reset{border-color:var(--line);color:var(--muted);padding:3px 12px;font-size:14px}
+.sol{display:none}.q.open .sol{display:block}
+.steps{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.steps li.hide{display:none}
+.st{display:flex;gap:10px;align-items:flex-start;animation:pop .25s ease}
+.sn{flex:none;font:700 13px 'Mukta',sans-serif;background:var(--gold);color:var(--navy);border-radius:999px;padding:2px 9px;margin-top:3px;white-space:nowrap}
+.st div{flex:1;min-width:0;overflow-x:auto}
+.pt{font:800 18px 'Baloo 2',sans-serif;color:var(--navy2);border-top:1px dashed var(--line);padding-top:6px;margin-top:2px}
+.fa{overflow-x:auto;background:var(--greent);border:2px solid #9FD3B3;border-radius:12px;padding:8px 12px;font-weight:600;animation:pop .25s ease}
+.fa span{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:0 10px;margin-right:8px;font-size:14px}
+.tip{margin:10px 0 0;background:var(--goldt);border-radius:10px;padding:8px 12px;font-size:16.5px}.tip.hide{display:none}
+.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.15;font-size:.92em;margin:0 2px}
+.fr>span:first-child{border-bottom:1.5px solid currentColor;padding:0 3px}.fr>span:last-child{padding:0 3px}
+table.t{border-collapse:collapse;margin:6px 0;font-size:16px}table.t td,table.t th{border:1px solid var(--line);padding:3px 9px;text-align:center}table.t th{background:var(--bluet)}
+@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.foot{color:var(--muted);font-size:15px;text-align:center;margin-top:30px}
+.zoom{position:fixed;inset:0;background:rgba(8,21,48,.88);display:grid;place-items:center;z-index:60;padding:16px;cursor:zoom-out}.zoom[hidden]{display:none}.zoom img{max-width:100%;max-height:100%;background:#fff;border-radius:8px}
+@media(max-width:600px){body{font-size:17px}.q{padding:12px}.gv b{min-width:0;width:100%}.hero-in{padding-bottom:48px}}
+@media print{.no-print,.progress,.tick{display:none!important}.hero{background:none;color:#000}.hero h1,.kick{color:#000!important}.hero .sub{color:#333}.toc{box-shadow:none;margin-top:0}.sol{display:block!important}.steps li.hide,.tip.hide{display:block!important}.st.hide{display:flex!important}.q{break-inside:avoid;border-left-width:3px}body{background:#fff;font-size:14px}.fig img{max-height:230px}}</style>
+<!-- SEO:START (made by tools/seo.mjs, do not edit by hand) -->
+<link rel="canonical" href="https://www.mtclassesmotihari.com/notes/class9-maths-circles-ncert-solutions.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta property="og:url" content="https://www.mtclassesmotihari.com/notes/class9-maths-circles-ncert-solutions.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MT Classes Motihari">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://www.mtclassesmotihari.com/assets/img/logo-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Circles Class 9 NCERT Solutions, Step by Step | MT Classes Motihari">
+<meta name="twitter:description" content="Class 9 Maths (NCERT Ganita Manjari) Chapter 5 Circles. Step-by-step solutions of every Think and Reflect, Exercise Set 5.1 to 5.6 and all 26 end-of-chapter exercises: chords, perpendicular from the centre, equal chords, angles subtended by arcs and cyclic quadrilaterals, with proofs written statement by statement.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","@id":"https://www.mtclassesmotihari.com/notes/class9-maths-circles-ncert-solutions.html#solutions","name":"Circles: Class 9 Maths NCERT solutions","headline":"Circles Class 9 NCERT Solutions, Step by Step | MT Classes Motihari","description":"Class 9 Maths (NCERT Ganita Manjari) Chapter 5 Circles. Step-by-step solutions of every Think and Reflect, Exercise Set 5.1 to 5.6 and all 26 end-of-chapter exercises: chords, perpendicular from the centre, equal chords, angles subtended by arcs and cyclic quadrilaterals, with proofs written statement by statement.","url":"https://www.mtclassesmotihari.com/notes/class9-maths-circles-ncert-solutions.html","learningResourceType":["Solutions","Worked examples","Practice questions"],"educationalLevel":"Class 9","educationalAlignment":{"@type":"AlignmentObject","alignmentType":"educationalSubject","educationalFramework":"CBSE / NCERT","targetName":"Maths, NCERT Ganita Manjari"},"about":{"@type":"Thing","name":"Circles"},"teaches":"Circles","isBasedOn":{"@type":"Book","name":"NCERT Ganita Manjari","publisher":{"@type":"Organization","name":"NCERT"}},"inLanguage":"en","isAccessibleForFree":true,"audience":{"@type":"EducationalAudience","educationalRole":"student"},"provider":{"@id":"https://www.mtclassesmotihari.com/#organization"},"publisher":{"@id":"https://www.mtclassesmotihari.com/#organization"},"isPartOf":{"@id":"https://www.mtclassesmotihari.com/notes/class9-maths-circles.html#notes"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mtclassesmotihari.com/"},{"@type":"ListItem","position":2,"name":"Notes","item":"https://www.mtclassesmotihari.com/notes.html"},{"@type":"ListItem","position":3,"name":"Class 9 Maths: Circles","item":"https://www.mtclassesmotihari.com/notes/class9-maths-circles.html"},{"@type":"ListItem","position":4,"name":"NCERT Solutions","item":"https://www.mtclassesmotihari.com/notes/class9-maths-circles-ncert-solutions.html"}]}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="progress" id="bar"></div>
+<header class="hero"><div class="hero-in">
+<a class="brand" href="/"><span class="mono">MT</span>MT Classes, Motihari</a>
+<p class="kick">NCERT Solutions · Class 9 Maths · Chapter 5</p>
+<h1>Circles</h1>
+<p class="sub">Every textbook question solved step by step (NCERT Ganita Manjari, 2026-27). Try the question first, then open one step at a time.</p>
+<div class="btns no-print"><a class="btn solid" href="class9-maths-circles.html">📘 Read the chapter notes</a><button class="btn ghost" type="button" id="openall">Open all solutions</button><button class="btn ghost" type="button" id="print">Print or save as PDF</button></div>
+<a class="back no-print" href="/notes.html#class-9">← All Class 9 notes</a>
+</div></header>
+<main>
+<nav class="toc"><h2>Exercises in this chapter</h2><div class="chips"><a href="#tr94">Think and Reflect (page 94) <small>3</small></a><a href="#tr95">Think and Reflect (page 95) <small>5</small></a><a href="#ex51">Exercise Set 5.1 <small>4</small></a><a href="#tdi98">Think, Draw and Infer (page 98) <small>2</small></a><a href="#ex52">Exercise Set 5.2 <small>2</small></a><a href="#ex53">Exercise Set 5.3 <small>3</small></a><a href="#ex54">Exercise Set 5.4 <small>3</small></a><a href="#ex55">Exercise Set 5.5 <small>3</small></a><a href="#ex56">Exercise Set 5.6 <small>3</small></a><a href="#eoc">End-of-Chapter Exercises <small>26</small></a></div>
+<div class="score no-print"><div class="meter"><span id="meter"></span></div><p id="score">You have solved 0 of 54 questions.</p><button type="button" class="b reset" id="reset">Reset ticks</button></div>
+<div class="how"><b>How to use:</b> read the <b>Given</b> and <b>To find</b>, try it in your copy, then press <b>Step by step ▶</b> to check one step at a time. Tap <b>✓</b> when you have solved it.</div>
+</nav>
+<section id="tr94" class="ex"><div class="exh"><h2>Think and Reflect (page 94)</h2><span>3 questions</span></div>
+<article class="q" id="tr94-1" data-ex="tr94">
+<div class="qh"><span class="qn">1</span><div class="qt">Find the rotational and reflection symmetries of a square, a regular pentagon and a regular hexagon.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>A regular n-gon has rotational symmetry of order n and n lines of symmetry</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Square: looks the same after turns of 90°, 180°, 270°, 360°, so rotational order 4; 4 lines of symmetry (2 diagonals + 2 lines joining midpoints of opposite sides)</div></li><li class="st"><span class="sn">Step 2</span><div>Regular pentagon: turns of 72°, 144°, 216°, 288°, 360°, so order 5; 5 lines of symmetry</div></li><li class="st"><span class="sn">Step 3</span><div>Regular hexagon: turns of 60°, 120°, …, 360°, so order 6; 6 lines of symmetry</div></li><li class="fa"><span>Answer</span>Square <b>4 and 4</b>, pentagon <b>5 and 5</b>, hexagon <b>6 and 6</b>. A circle has infinitely many of each.</li></ol></div>
+</article>
+<article class="q" id="tr94-2" data-ex="tr94">
+<div class="qh"><span class="qn">2</span><div class="qt">What are the longest and the smallest chords of a circle of radius 5 units?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Chord length = 2√(r² − d²), where d is its distance from the centre</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>The length is greatest when d = 0, that is when the chord passes through the centre: 2 × 5 = 10 units</div></li><li class="st"><span class="sn">Step 2</span><div>As the chord moves away from the centre, its length keeps getting smaller and comes as close to 0 as we like, but a chord of length 0 is only a point</div></li><li class="fa"><span>Answer</span>Longest chord = <b>diameter = 10 units</b>; there is <b>no smallest chord</b></li></ol></div>
+</article>
+<article class="q" id="tr94-3" data-ex="tr94">
+<div class="qh"><span class="qn">3</span><div class="qt">What is the locus of points equidistant from two given points A and B?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Let M be the midpoint of AB and P any point on the perpendicular bisector of AB</div></li><li class="st"><span class="sn">Step 2</span><div>In △PMA and △PMB: AM = BM, ∠PMA = ∠PMB = 90°, PM common, so △PMA ≅ △PMB (SAS) and PA = PB</div></li><li class="st"><span class="sn">Step 3</span><div>Conversely, any point P with PA = PB makes △PAB isosceles, and the line from P to M is perpendicular to AB, so P is on the perpendicular bisector</div></li><li class="fa"><span>Answer</span>The locus is the <b>perpendicular bisector of AB</b></li></ol></div>
+</article></section>
+<section id="tr95" class="ex"><div class="exh"><h2>Think and Reflect (page 95)</h2><span>5 questions</span></div>
+<article class="q" id="tr95-1" data-ex="tr95">
+<div class="qh"><span class="qn">1</span><div class="qt">How many circles pass through two given points on a plane?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>The centre must be equidistant from A and B, so it lies on the perpendicular bisector of AB</div></li><li class="st"><span class="sn">Step 2</span><div>Every point of this line can be a centre, and a line has infinitely many points</div></li><li class="fa"><span>Answer</span><b>Infinitely many</b> circles</li></ol></div>
+</article>
+<article class="q" id="tr95-2" data-ex="tr95">
+<div class="qh"><span class="qn">2</span><div class="qt">Can circles of all possible radii pass through A and B? What are the smallest and largest radii?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>The smallest circle has AB as a diameter, so its radius = ½ AB. Any other circle has AB as a shorter chord, so a bigger radius</div></li><li class="st"><span class="sn">Step 2</span><div>As the centre moves far along the perpendicular bisector, the radius grows without limit</div></li><li class="fa"><span>Answer</span>Only radii <b>≥ ½ AB</b>; smallest = <b>½ AB</b>; <b>no largest</b></li></ol></div>
+</article>
+<article class="q" id="tr95-3" data-ex="tr95">
+<div class="qh"><span class="qn">3</span><div class="qt">As the centre moves away from AB along the perpendicular bisector, do the radii increase or decrease?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>If the centre O is x units from M (midpoint of AB), then radius OA = √(x² + (½AB)²)</div></li><li class="st"><span class="sn">Step 2</span><div>This grows as x grows</div></li><li class="fa"><span>Answer</span>The radii <b>increase</b></li></ol></div>
+</article>
+<article class="q" id="tr95-4" data-ex="tr95">
+<div class="qh"><span class="qn">4</span><div class="qt">Does the circle look more curved or less curved as its radius increases?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>A larger radius gives a flatter arc near A and B</div></li><li class="fa"><span>Answer</span><b>Less curved</b> (like the horizon of the Earth, which looks almost straight)</li></ol></div>
+</article>
+<article class="q" id="tr95-5" data-ex="tr95">
+<div class="qh"><span class="qn">5</span><div class="qt">How many squares have A and B on their boundary? How many have A and B as corners?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>On the boundary: A and B can lie anywhere on the sides of squares of many sizes and turns: infinitely many</div></li><li class="st"><span class="sn">Step 2</span><div>As corners: AB can be a side (2 squares, one on each side of AB) or a diagonal (1 square)</div></li><li class="fa"><span>Answer</span><b>Infinitely many</b> on the boundary; <b>exactly 3</b> with A and B as corners</li></ol></div>
+</article></section>
+<section id="ex51" class="ex"><div class="exh"><h2>Exercise Set 5.1</h2><span>4 questions</span></div>
+<article class="q" id="ex51-1" data-ex="ex51">
+<div class="qh"><span class="qn">1</span><div class="qt">Draw △ABC with AB = 5 cm, ∠A = 70°, ∠B = 60°. Draw its circumcircle. Is the centre inside or outside the triangle?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p16-030.webp" alt="All angles acute: O is inside" loading="lazy" decoding="async"><figcaption>All angles acute: O is inside</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠C = 180° − (70° + 60°) = 50°</div></li><li class="st"><span class="sn">Step 2</span><div>Construction: draw AB = 5 cm; draw rays at 70° from A and 60° from B to meet at C</div></li><li class="st"><span class="sn">Step 3</span><div>Draw the perpendicular bisectors of any two sides; they meet at O. With centre O and radius OA draw the circle</div></li><li class="st"><span class="sn">Step 4</span><div>All three angles (70°, 60°, 50°) are less than 90°, so the triangle is acute</div></li><li class="fa"><span>Answer</span>The circumcentre lies <b>inside</b> the triangle</li></ol></div>
+</article>
+<article class="q" id="ex51-2" data-ex="ex51">
+<div class="qh"><span class="qn">2</span><div class="qt">Draw △ABC with AB = 5 cm, ∠A = 100°, AC = 4 cm. Draw its circumcircle. Is the centre inside or outside?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p16-032.webp" alt="∠A is obtuse: O is outside" loading="lazy" decoding="async"><figcaption>∠A is obtuse: O is outside</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Draw AB = 5 cm, an angle of 100° at A and mark AC = 4 cm. Join BC</div></li><li class="st"><span class="sn">Step 2</span><div>Draw the perpendicular bisectors of AB and AC; they meet at O. Draw the circle with radius OA</div></li><li class="st"><span class="sn">Step 3</span><div>∠A = 100° > 90°, so the triangle is obtuse-angled</div></li><li class="fa"><span>Answer</span>The circumcentre lies <b>outside</b>, beyond side BC (opposite the obtuse angle)</li></ol></div>
+</article>
+<article class="q" id="ex51-3" data-ex="ex51">
+<div class="qh"><span class="qn">3</span><div class="qt">Draw △ABC with AB = 6 cm, BC = 7 cm, CA = 7 cm. Find its circumcentre O and measure OA, OB and OC.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p17-034.webp" alt="OA = OB = OC (radii)" loading="lazy" decoding="async"><figcaption>OA = OB = OC (radii)</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Construct the triangle, then the perpendicular bisectors of two sides; they meet at O</div></li><li class="st"><span class="sn">Step 2</span><div>OA, OB, OC are all radii of the circumcircle, so they must be equal</div></li><li class="st"><span class="sn">Step 3</span><div>Check by calculation: height from C = √(7² − 3²) = √40 = 2√10, area = ½ × 6 × 2√10 = 6√10 cm²</div></li><li class="st"><span class="sn">Step 4</span><div>R = <span class="fr"><span>abc</span><span>4 × area</span></span> = <span class="fr"><span>6 × 7 × 7</span><span>24√10</span></span> = <span class="fr"><span>294</span><span>75.9</span></span> ≈ 3.87 cm</div></li><li class="fa"><span>Answer</span><b>OA = OB = OC ≈ 3.9 cm</b>; O lies inside (the triangle is acute)</li></ol></div>
+</article>
+<article class="q" id="ex51-4" data-ex="ex51">
+<div class="qh"><span class="qn">4</span><div class="qt">What is the least possible radius of a circle passing through two points A and B?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p17-036.webp" alt="Smallest circle: AB is a diameter" loading="lazy" decoding="async"><figcaption>Smallest circle: AB is a diameter</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>For any circle through A and B, AB is a chord</div></li><li class="st"><span class="sn">Step 2</span><div>A chord is never longer than a diameter: AB ≤ 2r, so r ≥ ½ AB</div></li><li class="st"><span class="sn">Step 3</span><div>r = ½ AB happens when AB itself is a diameter</div></li><li class="fa"><span>Answer</span>Least radius = <b>½ AB</b></li></ol></div>
+</article></section>
+<section id="tdi98" class="ex"><div class="exh"><h2>Think, Draw and Infer (page 98)</h2><span>2 questions</span></div>
+<article class="q" id="tdi98-1" data-ex="tdi98">
+<div class="qh"><span class="qn">1</span><div class="qt">A, B, C lie on a line. Is there a point P with PA = PB = PC? Can a circle pass through three collinear points? Can a line cut a circle in three points?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p17-038.webp" alt="Both bisectors are perpendicular to the same line" loading="lazy" decoding="async"><figcaption>Both bisectors are perpendicular to the same line</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>PA = PB means P is on the perpendicular bisector of AB; PB = PC means P is on the perpendicular bisector of BC</div></li><li class="st"><span class="sn">Step 2</span><div>Both bisectors are perpendicular to the same line ABC, so they are parallel and never meet</div></li><li class="st"><span class="sn">Step 3</span><div>So no such P exists, and no circle (which needs such a centre) can pass through three collinear points</div></li><li class="st"><span class="sn">Step 4</span><div>If a line met a circle in three points, those three collinear points would be on a circle, which is impossible</div></li><li class="fa"><span>Answer</span><b>No</b> such point; <b>no</b> circle through three collinear points; a line meets a circle in <b>at most 2 points</b></li></ol></div>
+</article>
+<article class="q" id="tdi98-2" data-ex="tdi98">
+<div class="qh"><span class="qn">2</span><div class="qt">Can other triangles congruent to △ABC have the same circumcircle?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Rotate △ABC about the centre O by any angle: the circle maps onto itself and the new triangle is congruent with all vertices on the circle</div></li><li class="st"><span class="sn">Step 2</span><div>Reflecting in any diameter also works</div></li><li class="fa"><span>Answer</span><b>Yes, infinitely many</b></li></ol></div>
+</article></section>
+<section id="ex52" class="ex"><div class="exh"><h2>Exercise Set 5.2</h2><span>2 questions</span></div>
+<article class="q" id="ex52-1" data-ex="ex52">
+<div class="qh"><span class="qn">1</span><div class="qt">Show that the triangle formed by a chord and the centre of a circle is isosceles.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p18-040.webp" alt="CA = CB = r" loading="lazy" decoding="async"><figcaption>CA = CB = r</figcaption></figure><div class="gvs"><div class="gv"><b>Given</b><span>Chord AB, centre C</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>CA and CB are radii of the same circle, so CA = CB</div></li><li class="st"><span class="sn">Step 2</span><div>A triangle with two equal sides is isosceles</div></li><li class="fa"><span>Answer</span><b>△CAB is isosceles</b> (and ∠CAB = ∠CBA). Proved.</li></ol></div>
+</article>
+<article class="q" id="ex52-2" data-ex="ex52">
+<div class="qh"><span class="qn">2</span><div class="qt">Show that two such isosceles triangles on equal chords are congruent.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p18-042.webp" alt="Equal chords give congruent triangles" loading="lazy" decoding="async"><figcaption>Equal chords give congruent triangles</figcaption></figure><div class="gvs"><div class="gv"><b>Given</b><span>Chords AB = DE, centre C</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>CA = CD (radii)</div></li><li class="st"><span class="sn">Step 2</span><div>CB = CE (radii)</div></li><li class="st"><span class="sn">Step 3</span><div>AB = DE (given)</div></li><li class="st"><span class="sn">Step 4</span><div>So △CAB ≅ △CDE by SSS</div></li><li class="fa"><span>Answer</span><b>△CAB ≅ △CDE</b> (this is why equal chords subtend equal angles at the centre)</li></ol></div>
+</article></section>
+<section id="ex53" class="ex"><div class="exh"><h2>Exercise Set 5.3</h2><span>3 questions</span></div>
+<article class="q" id="ex53-1" data-ex="ex53">
+<div class="qh"><span class="qn">1</span><div class="qt">Why is the converse of Theorem 4 true: the perpendicular from the centre to a chord bisects it?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p19-044.webp" alt="CM ⊥ AB" loading="lazy" decoding="async"><figcaption>CM ⊥ AB</figcaption></figure><div class="gvs"><div class="gv"><b>Given</b><span>CM ⊥ AB, C the centre</span></div><div class="gv fd"><b>To find</b><span>Prove AM = BM</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠CMA = ∠CMB = 90° (given)</div></li><li class="st"><span class="sn">Step 2</span><div>CA = CB (radii; these are the hypotenuses)</div></li><li class="st"><span class="sn">Step 3</span><div>CM = CM (common)</div></li><li class="st"><span class="sn">Step 4</span><div>△CMA ≅ △CMB (RHS), so AM = BM (CPCT)</div></li><li class="fa"><span>Answer</span><b>The perpendicular from the centre bisects the chord</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="ex53-2" data-ex="ex53">
+<div class="qh"><span class="qn">2</span><div class="qt">An isosceles △ABC with AB = AC is inscribed in a circle. Show that the altitude from A to BC passes through the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p19-046.webp" alt="The altitude AM passes through O" loading="lazy" decoding="async"><figcaption>The altitude AM passes through O</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>AB = AC, so A is equidistant from B and C, so A lies on the perpendicular bisector of BC</div></li><li class="st"><span class="sn">Step 2</span><div>OB = OC (radii), so the centre O also lies on the perpendicular bisector of BC</div></li><li class="st"><span class="sn">Step 3</span><div>In an isosceles triangle, the altitude from A is the perpendicular bisector of BC</div></li><li class="fa"><span>Answer</span>The altitude from A <b>passes through the centre O</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="ex53-3" data-ex="ex53">
+<div class="qh"><span class="qn">3</span><div class="qt">Two parallel chords of lengths 6 cm and 8 cm lie on opposite sides of the centre of a circle of radius 5 cm. Find the distance between their midpoints.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p20-048.webp" alt="Opposite sides: add the distances" loading="lazy" decoding="async"><figcaption>Opposite sides: add the distances</figcaption></figure><div class="gvs"><div class="gv"><b>Given</b><span>r = 5 cm, chords 6 cm and 8 cm, opposite sides</span></div><div class="gv ky"><b>Formula / idea</b><span>Distance from centre d = √(r² − (half chord)²)</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>6 cm chord: half = 3, d₁ = √(25 − 9) = √16 = 4 cm</div></li><li class="st"><span class="sn">Step 2</span><div>8 cm chord: half = 4, d₂ = √(25 − 16) = √9 = 3 cm</div></li><li class="st"><span class="sn">Step 3</span><div>Opposite sides of the centre, so add: 4 + 3 = 7 cm</div></li><li class="fa"><span>Answer</span>Distance between midpoints = <b>7 cm</b> (it would be 1 cm if they were on the same side)</li></ol></div>
+</article></section>
+<section id="ex54" class="ex"><div class="exh"><h2>Exercise Set 5.4</h2><span>3 questions</span></div>
+<article class="q" id="ex54-1" data-ex="ex54">
+<div class="qh"><span class="qn">1</span><div class="qt">Use the Baudhāyana–Pythagoras theorem to show why Theorem 6 (equal chords are equidistant from the centre) must be true.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>A chord of length L at distance d from the centre: the perpendicular bisects it, giving a right triangle with legs d and <span class="fr"><span>L</span><span>2</span></span> and hypotenuse r</div></li><li class="st"><span class="sn">Step 2</span><div>d² + (<span class="fr"><span>L</span><span>2</span></span>)² = r², so d = √(r² − <span class="fr"><span>L²</span><span>4</span></span>)</div></li><li class="st"><span class="sn">Step 3</span><div>d depends only on r and L, so equal chords in the same circle have equal d</div></li><li class="fa"><span>Answer</span><b>Equal chords are equidistant from the centre</b></li></ol></div>
+</article>
+<article class="q" id="ex54-2" data-ex="ex54">
+<div class="qh"><span class="qn">2</span><div class="qt">In Fig. 5.15, CE ⊥ AB, CH ⊥ GF and CE = CH. Show that AB = GF.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p21-052.webp" alt="CE = CH" loading="lazy" decoding="async"><figcaption>CE = CH</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠CEA = ∠CHF = 90° (given)</div></li><li class="st"><span class="sn">Step 2</span><div>CA = CF (radii, the hypotenuses) and CE = CH (given)</div></li><li class="st"><span class="sn">Step 3</span><div>△CEA ≅ △CHF (RHS), so AE = FH (CPCT)</div></li><li class="st"><span class="sn">Step 4</span><div>The perpendicular from the centre bisects a chord: AB = 2AE and GF = 2FH</div></li><li class="fa"><span>Answer</span><b>AB = GF</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="ex54-3" data-ex="ex54">
+<div class="qh"><span class="qn">3</span><div class="qt">Solve the previous question using the Baudhāyana–Pythagoras theorem.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>In right △CEA: AE² = CA² − CE². In right △CHF: FH² = CF² − CH²</div></li><li class="st"><span class="sn">Step 2</span><div>CA = CF (radii) and CE = CH (given), so AE² = FH², AE = FH</div></li><li class="st"><span class="sn">Step 3</span><div>AB = 2AE = 2FH = GF</div></li><li class="fa"><span>Answer</span><b>AB = GF</b>. Proved.</li></ol></div>
+</article></section>
+<section id="ex55" class="ex"><div class="exh"><h2>Exercise Set 5.5</h2><span>3 questions</span></div>
+<article class="q" id="ex55-1" data-ex="ex55">
+<div class="qh"><span class="qn">1</span><div class="qt">The radius of a circle is 7 cm and a chord is 6 cm from the centre. Find the length of the chord.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p21-054.webp" alt="Figure for question 1" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv"><b>Given</b><span>r = 7 cm, d = 6 cm</span></div><div class="gv ky"><b>Formula / idea</b><span>Chord = 2√(r² − d²)</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Half chord = √(7² − 6²) = √(49 − 36) = √13</div></li><li class="st"><span class="sn">Step 2</span><div>Chord = 2√13</div></li><li class="fa"><span>Answer</span>Chord = 2√13 ≈ <b>7.2 cm</b></li></ol></div>
+</article>
+<article class="q" id="ex55-2" data-ex="ex55">
+<div class="qh"><span class="qn">2</span><div class="qt">Explain why the length of a chord at distance d from the centre is 2√(r² − d²).</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Let OM ⊥ AB with OM = d. By Theorem 5, M is the midpoint of AB, so AM = ½AB</div></li><li class="st"><span class="sn">Step 2</span><div>△OMA is right-angled at M with hypotenuse OA = r</div></li><li class="st"><span class="sn">Step 3</span><div>AM² = r² − d², so AM = √(r² − d²)</div></li><li class="fa"><span>Answer</span><b>AB = 2AM = 2√(r² − d²)</b></li></ol></div>
+</article>
+<article class="q" id="ex55-3" data-ex="ex55">
+<div class="qh"><span class="qn">3*</span><div class="qt">If chord AB is twice as far from the centre as chord CD, can we say CD = 2AB?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Chord length involves a square root, so it is not proportional to the distance</div></li><li class="st"><span class="sn">Step 2</span><div>Counter-example: r = 5 cm, CD at 1.5 cm, AB at 3 cm. CD = 2√(25 − 2.25) ≈ 9.54 cm, AB = 2√(25 − 9) = 8 cm</div></li><li class="st"><span class="sn">Step 3</span><div>CD ÷ AB ≈ 1.19, not 2</div></li><li class="fa"><span>Answer</span><b>No.</b> We can only say <b>CD > AB</b> (the chord nearer the centre is longer)</li></ol></div>
+</article></section>
+<section id="ex56" class="ex"><div class="exh"><h2>Exercise Set 5.6</h2><span>3 questions</span></div>
+<article class="q" id="ex56-1" data-ex="ex56">
+<div class="qh"><span class="qn">1</span><div class="qt">The central angle ∠AOB = 60° in a circle of radius 12 cm. Find the chord AB.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p22-056.webp" alt="△OAB is equilateral" loading="lazy" decoding="async"><figcaption>△OAB is equilateral</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>OA = OB = 12 cm (radii), so △OAB is isosceles</div></li><li class="st"><span class="sn">Step 2</span><div>Base angles = (180° − 60°) ÷ 2 = 60° each, so all angles are 60°: equilateral</div></li><li class="fa"><span>Answer</span>AB = <b>12 cm</b></li></ol></div>
+</article>
+<article class="q" id="ex56-2" data-ex="ex56">
+<div class="qh"><span class="qn">2</span><div class="qt">A and B are on a circle with centre O. (i) Can ∠AXB and ∠AYB differ if X and Y are on the same side of AB? (ii) Do equal angles mean X and Y are on the same side? (iii) If so, does the circle through A, B, X pass through Y?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="pt">(i)</li><li class="st"><span class="sn">Step 1</span><div>X and Y on the same side lie on the same arc; by Theorem 9 they give the same angle</div></li><li class="fa"><span>Answer</span><b>No</b>, the angles are equal</li><li class="pt">(ii)</li><li class="st"><span class="sn">Step 1</span><div>If X and Y were on opposite sides, AXBY would be cyclic and ∠AXB + ∠AYB = 180°, so equal angles would mean both are 90° (AB a diameter)</div></li><li class="fa"><span>Answer</span><b>Yes</b>, except in that special case</li><li class="pt">(iii)</li><li class="st"><span class="sn">Step 1</span><div>Equal angles on the same side make A, B, X, Y concyclic (Theorem 10), and only one circle passes through A, B, X</div></li><li class="fa"><span>Answer</span><b>Yes</b>, it passes through Y</li></ol></div>
+</article>
+<article class="q" id="ex56-3" data-ex="ex56">
+<div class="qh"><span class="qn">3</span><div class="qt">Find x in Fig. 5.26, where the angle at D is 100°.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p22-058.webp" alt="Fig. 5.26" loading="lazy" decoding="async"><figcaption>Fig. 5.26</figcaption></figure><div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Opposite angles of a cyclic quadrilateral add up to 180°</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠B + ∠D = 180°, so x + 100° = 180°</div></li><li class="fa"><span>Answer</span>x = <b>80°</b></li></ol></div>
+</article></section>
+<section id="eoc" class="ex"><div class="exh"><h2>End-of-Chapter Exercises</h2><span>26 questions</span></div><p class="exn">Questions marked * are the harder ones.</p>
+<article class="q" id="eoc-1" data-ex="eoc">
+<div class="qh"><span class="qn">1</span><div class="qt">A chord is 5 cm from the centre of a circle of radius 13 cm. Find the length of the chord.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 1 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p23-060.webp" alt="Figure for question 1" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv"><b>Given</b><span>r = 13 cm, d = 5 cm</span></div><div class="gv ky"><b>Formula / idea</b><span>Half chord = √(r² − d²)</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Half chord = √(13² − 5²) = √(169 − 25) = √144 = 12 cm</div></li><li class="st"><span class="sn">Step 2</span><div>Chord = 2 × 12 = 24 cm</div></li><li class="fa"><span>Answer</span>Chord = <b>24 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-2" data-ex="eoc">
+<div class="qh"><span class="qn">2</span><div class="qt">An arc subtends 70° at the centre. What angle does it subtend at a point on the remaining part of the circle?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 2 as solved">✓</button></div>
+<div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Angle at the centre = 2 × angle at the circumference (Theorem 9)</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Angle at the circle = 70° ÷ 2</div></li><li class="fa"><span>Answer</span><b>35°</b></li></ol></div>
+</article>
+<article class="q" id="eoc-3" data-ex="eoc">
+<div class="qh"><span class="qn">3</span><div class="qt">The diameter of a circle is 26 cm and a chord is 24 cm long. Find the distance of the chord from the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 3 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p23-062.webp" alt="Figure for question 3" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>r = 26 ÷ 2 = 13 cm; half chord = 12 cm</div></li><li class="st"><span class="sn">Step 2</span><div>d = √(13² − 12²) = √(169 − 144) = √25 = 5</div></li><li class="fa"><span>Answer</span>Distance = <b>5 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-4" data-ex="eoc">
+<div class="qh"><span class="qn">4</span><div class="qt">The radius of a circle is 15 cm and a chord is 9 cm from the centre. Find the length of the chord.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 4 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p24-064.webp" alt="Figure for question 4" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Half chord = √(15² − 9²) = √(225 − 81) = √144 = 12 cm</div></li><li class="st"><span class="sn">Step 2</span><div>Chord = 2 × 12 = 24 cm</div></li><li class="fa"><span>Answer</span>Chord = <b>24 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-5" data-ex="eoc">
+<div class="qh"><span class="qn">5</span><div class="qt">Prove that the perpendicular bisector of a chord passes through the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 5 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p24-066.webp" alt="Figure for question 5" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Let AB be a chord of a circle with centre O. OA = OB (radii)</div></li><li class="st"><span class="sn">Step 2</span><div>So O is equidistant from A and B</div></li><li class="st"><span class="sn">Step 3</span><div>All points equidistant from A and B lie on the perpendicular bisector of AB</div></li><li class="fa"><span>Answer</span><b>O lies on the perpendicular bisector of AB</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-6" data-ex="eoc">
+<div class="qh"><span class="qn">6</span><div class="qt">AB is a diameter and C is a point on the circle. Find ∠ACB.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 6 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p24-068.webp" alt="Figure for question 6" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>The diameter AB subtends a straight angle ∠AOB = 180° at the centre</div></li><li class="st"><span class="sn">Step 2</span><div>By Theorem 9, the angle at C = 180° ÷ 2</div></li><li class="fa"><span>Answer</span><b>∠ACB = 90°</b> (angle in a semicircle)</li></ol></div>
+</article>
+<article class="q" id="eoc-7" data-ex="eoc">
+<div class="qh"><span class="qn">7</span><div class="qt">ABCD is a cyclic quadrilateral. If ∠A = 75°, find ∠C. If ∠B = 110°, find ∠D.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 7 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p25-070.webp" alt="Figure for question 7" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Opposite angles of a cyclic quadrilateral are supplementary</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠C = 180° − 75° = 105°</div></li><li class="st"><span class="sn">Step 2</span><div>∠D = 180° − 110° = 70°</div></li><li class="fa"><span>Answer</span><b>∠C = 105°, ∠D = 70°</b></li></ol></div>
+</article>
+<article class="q" id="eoc-8" data-ex="eoc">
+<div class="qh"><span class="qn">8</span><div class="qt">PQRS is cyclic with ∠P = (2x + 10)° and ∠R = (3x − 20)°. Find x, ∠P and ∠R.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 8 as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠P + ∠R = 180° (opposite angles)</div></li><li class="st"><span class="sn">Step 2</span><div>(2x + 10) + (3x − 20) = 180 ⟹ 5x − 10 = 180 ⟹ 5x = 190 ⟹ x = 38</div></li><li class="st"><span class="sn">Step 3</span><div>∠P = 2 × 38 + 10 = 86°, ∠R = 3 × 38 − 20 = 94°</div></li><li class="fa"><span>Answer</span><b>x = 38, ∠P = 86°, ∠R = 94°</b> (check: 86 + 94 = 180 ✔)</li></ol></div>
+</article>
+<article class="q" id="eoc-9" data-ex="eoc">
+<div class="qh"><span class="qn">9</span><div class="qt">A chord of length 16 cm is 6 cm from the centre. Find the radius.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 9 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p25-072.webp" alt="Figure for question 9" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Half chord = 8 cm</div></li><li class="st"><span class="sn">Step 2</span><div>r² = 6² + 8² = 36 + 64 = 100</div></li><li class="fa"><span>Answer</span>r = <b>10 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-10" data-ex="eoc">
+<div class="qh"><span class="qn">10</span><div class="qt">A cyclic quadrilateral has sides 5, 5, 12 and 12 units. Find its area.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 10 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p26-074.webp" alt="Figure for question 10" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv ky"><b>Formula / idea</b><span>Brahmagupta: Area = √((s − a)(s − b)(s − c)(s − d))</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>s = (5 + 5 + 12 + 12) ÷ 2 = 17</div></li><li class="st"><span class="sn">Step 2</span><div>Area = √(12 × 12 × 5 × 5) = 12 × 5 = 60</div></li><li class="st"><span class="sn">Step 3</span><div>Check: it is a cyclic kite, so it splits into two right triangles with legs 5 and 12: 2 × 30 = 60 ✔</div></li><li class="fa"><span>Answer</span>Area = <b>60 square units</b></li></ol></div>
+</article>
+<article class="q" id="eoc-11" data-ex="eoc">
+<div class="qh"><span class="qn">11*</span><div class="qt">How can we tell whether the circumcentre of a cyclic quadrilateral lies inside it, without drawing the circle?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 11* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p26-076.webp" alt="Figure for question 11*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Look at the angle each side subtends at the opposite vertices</div></li><li class="st"><span class="sn">Step 2</span><div>If every such angle is acute, every arc cut off by a side is less than a semicircle, so the centre is inside</div></li><li class="st"><span class="sn">Step 3</span><div>If one is a right angle, that side is a diameter and the centre is on it; if one is obtuse, the centre is outside, beyond that side</div></li><li class="fa"><span>Answer</span><b>All angles acute → inside; one right → on a side; one obtuse → outside</b></li></ol></div>
+</article>
+<article class="q" id="eoc-12" data-ex="eoc">
+<div class="qh"><span class="qn">12*</span><div class="qt">Two equal chords intersect. Show that the segments of one are equal to the corresponding segments of the other.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 12* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p27-078.webp" alt="Figure for question 12*" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv"><b>Given</b><span>Equal chords AB and CD meet at P; M, N their midpoints; O the centre</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>OM ⊥ AB and ON ⊥ CD (line from centre to midpoint)</div></li><li class="st"><span class="sn">Step 2</span><div>OM = ON (equal chords are equidistant from the centre)</div></li><li class="st"><span class="sn">Step 3</span><div>In △OMP and △ONP: ∠M = ∠N = 90°, OP common, OM = ON ⟹ △OMP ≅ △ONP (RHS) ⟹ MP = NP</div></li><li class="st"><span class="sn">Step 4</span><div>AM = ½AB = ½CD = CN, so AP = AM + MP = CN + NP = CP</div></li><li class="st"><span class="sn">Step 5</span><div>BP = AB − AP = CD − CP = DP</div></li><li class="fa"><span>Answer</span><b>AP = CP and BP = DP</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-13" data-ex="eoc">
+<div class="qh"><span class="qn">13*</span><div class="qt">Draw a circle in which a chord of length 6 cm is 3 cm from the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 13* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p27-080.webp" alt="Figure for question 13*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Radius = √(3² + 3²) = √18 = 3√2 ≈ 4.24 cm</div></li><li class="st"><span class="sn">Step 2</span><div>Draw AB = 6 cm and its perpendicular bisector meeting AB at M</div></li><li class="st"><span class="sn">Step 3</span><div>Mark O on it with OM = 3 cm</div></li><li class="st"><span class="sn">Step 4</span><div>With centre O and radius OA draw the circle</div></li><li class="fa"><span>Answer</span>Circle of radius <b>3√2 ≈ 4.24 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-14" data-ex="eoc">
+<div class="qh"><span class="qn">14*</span><div class="qt">Show that a rectangle is the only parallelogram that can be inscribed in a circle.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 14* as solved">✓</button></div>
+
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Let parallelogram ABCD be inscribed in a circle</div></li><li class="st"><span class="sn">Step 2</span><div>∠A = ∠C (opposite angles of a parallelogram)</div></li><li class="st"><span class="sn">Step 3</span><div>∠A + ∠C = 180° (opposite angles of a cyclic quadrilateral)</div></li><li class="st"><span class="sn">Step 4</span><div>2∠A = 180° ⟹ ∠A = 90° = ∠C; similarly ∠B = ∠D = 90°</div></li><li class="fa"><span>Answer</span>All angles are 90°, so <b>ABCD is a rectangle</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-15" data-ex="eoc">
+<div class="qh"><span class="qn">15*</span><div class="qt">If a rectangle is inscribed in a circle, show that its diagonals meet at the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 15* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p28-082.webp" alt="Figure for question 15*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠ABC = 90°, so diagonal AC subtends a right angle at B on the circle; hence AC is a diameter</div></li><li class="st"><span class="sn">Step 2</span><div>Similarly ∠BAD = 90°, so BD is a diameter</div></li><li class="st"><span class="sn">Step 3</span><div>Every diameter passes through the centre</div></li><li class="fa"><span>Answer</span><b>The diagonals meet at the centre</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-16" data-ex="eoc">
+<div class="qh"><span class="qn">16*</span><div class="qt">What shape is formed by the midpoints of all chords of a fixed length?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 16* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p28-084.webp" alt="Figure for question 16*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Every chord of length L is at the same distance d = √(r² − <span class="fr"><span>L²</span><span>4</span></span>) from the centre</div></li><li class="st"><span class="sn">Step 2</span><div>Its midpoint is the foot of the perpendicular from O, so every midpoint is at distance d from O</div></li><li class="fa"><span>Answer</span>A <b>circle with the same centre</b>, radius d</li></ol></div>
+</article>
+<article class="q" id="eoc-17" data-ex="eoc">
+<div class="qh"><span class="qn">17*</span><div class="qt">Chords AB and AC are equal. Explain why the centre lies on the bisector of ∠BAC.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 17* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p29-086.webp" alt="Figure for question 17*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>In △OAB and △OAC: OB = OC (radii), AB = AC (given), OA common</div></li><li class="st"><span class="sn">Step 2</span><div>△OAB ≅ △OAC (SSS), so ∠OAB = ∠OAC</div></li><li class="fa"><span>Answer</span><b>AO bisects ∠BAC</b>, so O lies on the bisector. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-18" data-ex="eoc">
+<div class="qh"><span class="qn">18</span><div class="qt">Two parallel chords of lengths 10 cm and 24 cm are on the same side of the centre and 7 cm apart. Find the radius.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 18 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p29-088.webp" alt="Figure for question 18" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Half chords 5 and 12. d₁ = √(r² − 25), d₂ = √(r² − 144). Same side: d₁ − d₂ = 7 … (1)</div></li><li class="st"><span class="sn">Step 2</span><div>d₁² − d₂² = (r² − 25) − (r² − 144) = 119</div></li><li class="st"><span class="sn">Step 3</span><div>(d₁ − d₂)(d₁ + d₂) = 119 ⟹ 7(d₁ + d₂) = 119 ⟹ d₁ + d₂ = 17 … (2)</div></li><li class="st"><span class="sn">Step 4</span><div>Adding: 2d₁ = 24 ⟹ d₁ = 12, d₂ = 5</div></li><li class="st"><span class="sn">Step 5</span><div>r² = 12² + 5² = 169</div></li><li class="fa"><span>Answer</span>r = <b>13 cm</b></li></ol></div>
+</article>
+<article class="q" id="eoc-19" data-ex="eoc">
+<div class="qh"><span class="qn">19*</span><div class="qt">A regular hexagon is inscribed in a circle of radius r. Find its side and the distance of each side from the centre.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 19* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p30-090.webp" alt="Figure for question 19*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠AOB = 360° ÷ 6 = 60°, and OA = OB = r, so △OAB is equilateral: AB = r</div></li><li class="st"><span class="sn">Step 2</span><div>Distance = √(r² − (<span class="fr"><span>r</span><span>2</span></span>)²) = √(<span class="fr"><span>3r²</span><span>4</span></span>) = <span class="fr"><span>√3</span><span>2</span></span> r</div></li><li class="fa"><span>Answer</span>Side = <b>r</b>; distance from centre = <b>(√3/2) r ≈ 0.87 r</b></li></ol></div>
+</article>
+<article class="q" id="eoc-20" data-ex="eoc">
+<div class="qh"><span class="qn">20</span><div class="qt">Quadrilateral MNOP is inscribed in a circle with MN a diameter. What can you say about ∠MOP and ∠MNP?</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 20 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p30-092.webp" alt="Figure for question 20" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Both angles stand on chord MP, and O and N are on the same arc, so they are angles in the same segment</div></li><li class="st"><span class="sn">Step 2</span><div>Also MN is a diameter, so ∠MON = ∠MPN = 90°</div></li><li class="fa"><span>Answer</span><b>∠MOP = ∠MNP</b> (and ∠MON = ∠MPN = 90°)</li></ol></div>
+</article>
+<article class="q" id="eoc-21" data-ex="eoc">
+<div class="qh"><span class="qn">21</span><div class="qt">Show that an exterior angle of a cyclic quadrilateral equals the interior opposite angle.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 21 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p31-094.webp" alt="Figure for question 21" loading="lazy" decoding="async"></figure><div class="gvs"><div class="gv"><b>Given</b><span>ABCD cyclic, CD produced to E</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>∠CDE + ∠ADC = 180° (linear pair)</div></li><li class="st"><span class="sn">Step 2</span><div>∠ABC + ∠ADC = 180° (opposite angles of cyclic quadrilateral)</div></li><li class="st"><span class="sn">Step 3</span><div>So ∠CDE + ∠ADC = ∠ABC + ∠ADC</div></li><li class="fa"><span>Answer</span><b>∠CDE = ∠ABC</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-22" data-ex="eoc">
+<div class="qh"><span class="qn">22*</span><div class="qt">Justify: “No chord of a circle is longer than its diameter.”</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 22* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p31-096.webp" alt="Figure for question 22*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>A chord at distance d has length 2√(r² − d²) ≤ 2√(r²) = 2r, since d² ≥ 0</div></li><li class="st"><span class="sn">Step 2</span><div>Or: for chord AB, join OA, OB. If O is not on AB, AB < OA + OB = 2r (triangle inequality)</div></li><li class="fa"><span>Answer</span><b>Every chord ≤ 2r</b>, with equality only for a diameter</li></ol></div>
+</article>
+<article class="q" id="eoc-23" data-ex="eoc">
+<div class="qh"><span class="qn">23*</span><div class="qt">A is a point inside a circle with centre O. Show that the shortest chord through A is perpendicular to OA.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 23* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p31-098.webp" alt="Figure for question 23*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>A chord through A at distance d from O has length 2√(r² − d²), smallest when d is largest</div></li><li class="st"><span class="sn">Step 2</span><div>If M is the foot of the perpendicular from O, then OM ≤ OA (OA is the hypotenuse of △OMA)</div></li><li class="st"><span class="sn">Step 3</span><div>So d is largest (d = OA) when M = A, that is when the chord ⊥ OA</div></li><li class="fa"><span>Answer</span><b>Shortest chord ⊥ OA</b>, length 2√(r² − OA²)</li></ol></div>
+</article>
+<article class="q" id="eoc-24" data-ex="eoc">
+<div class="qh"><span class="qn">24</span><div class="qt">Use Fig. 5.30 to justify that the angle in a semicircle is 90°.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 24 as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p32-100.webp" alt="Fig. 5.30" loading="lazy" decoding="async"><figcaption>Fig. 5.30</figcaption></figure><div class="gvs"><div class="gv"><b>Given</b><span>BC a diameter, O the centre, A on the circle; join OA</span></div></div>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>OA = OB, so ∠OAB = ∠OBA = a</div></li><li class="st"><span class="sn">Step 2</span><div>OA = OC, so ∠OAC = ∠OCA = b</div></li><li class="st"><span class="sn">Step 3</span><div>In △ABC: (a + b) + a + b = 180°</div></li><li class="st"><span class="sn">Step 4</span><div>2(a + b) = 180° ⟹ a + b = 90°</div></li><li class="fa"><span>Answer</span><b>∠BAC = a + b = 90°</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-25" data-ex="eoc">
+<div class="qh"><span class="qn">25*</span><div class="qt">Chords CC′ and DD′ are perpendicular to a diameter AB. Prove that MM′ (joining the midpoints of CD and C′D′) is perpendicular to AB.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 25* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p32-102.webp" alt="Figure for question 25*" loading="lazy" decoding="async"></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>AB passes through O and CC′ ⊥ AB, so AB bisects CC′ at right angles: C and C′ are mirror images in AB</div></li><li class="st"><span class="sn">Step 2</span><div>In the same way D and D′ are mirror images in AB</div></li><li class="st"><span class="sn">Step 3</span><div>Reflection keeps midpoints, so M′ is the mirror image of M</div></li><li class="st"><span class="sn">Step 4</span><div>The segment joining a point to its mirror image is perpendicular to the mirror line</div></li><li class="fa"><span>Answer</span><b>MM′ ⊥ AB</b>. Proved.</li></ol></div>
+</article>
+<article class="q" id="eoc-26" data-ex="eoc">
+<div class="qh"><span class="qn">26*</span><div class="qt">Use Fig. 5.31 to justify that the opposite angles of a cyclic quadrilateral add up to 180°.</div><button class="tick" type="button" aria-pressed="false" title="Mark as solved" aria-label="Mark question 26* as solved">✓</button></div>
+<figure class="fig"><img src="img/circles/p33-104.webp" alt="Fig. 5.31" loading="lazy" decoding="async"><figcaption>Fig. 5.31</figcaption></figure>
+<div class="ctl no-print"><button type="button" class="b show">Show full solution</button><button type="button" class="b step">Step by step ▶</button></div>
+<div class="sol"><ol class="steps"><li class="st"><span class="sn">Step 1</span><div>Join O to A, B, C, D: four isosceles triangles (two sides are radii)</div></li><li class="st"><span class="sn">Step 2</span><div>Base angles: p in △OAB, q in △OBC, u in △OCD, v in △ODA</div></li><li class="st"><span class="sn">Step 3</span><div>∠A = p + v, ∠B = p + q, ∠C = q + u, ∠D = u + v</div></li><li class="st"><span class="sn">Step 4</span><div>Sum = 2(p + q + u + v) = 360° ⟹ p + q + u + v = 180°</div></li><li class="st"><span class="sn">Step 5</span><div>∠A + ∠C = p + q + u + v = 180° and ∠B + ∠D = 180°</div></li><li class="fa"><span>Answer</span><b>Opposite angles are supplementary</b>. Proved.</li></ol></div>
+</article></section>
+<p class="foot">Made by MT Classes, S.K. Nagar, Motihari for Class 9 CBSE students. Questions are from the NCERT Ganita Manjari textbook; solutions are written by MT Classes. <a href="class9-maths-circles.html">Back to the chapter notes</a> · <a href="/notes.html#class-9">All notes</a></p>
+</main>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script>
+(function(){
+  var KEY="mt-sol9-maths-circles", TOTAL=54;
+  var done={}; try{done=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
+  function score(){var n=0;for(var k in done)if(done[k])n++;document.getElementById('score').textContent='You have solved '+n+' of '+TOTAL+' questions.'+(n===TOTAL?' Shabash! 🎉':'');document.getElementById('meter').style.width=(100*n/TOTAL)+'%';}
+  document.querySelectorAll('.q').forEach(function(q){
+    var steps=[].slice.call(q.querySelectorAll('.steps > li')), sol=q.querySelector('.sol'), show=q.querySelector('.show'), step=q.querySelector('.step'), tick=q.querySelector('.tick'), shown=0;
+    function setTick(){var on=!!done[q.id];tick.classList.toggle('on',on);tick.setAttribute('aria-pressed',on);q.classList.toggle('solved',on);}
+    setTick();
+    tick.addEventListener('click',function(){done[q.id]=!done[q.id];save();setTick();score();});
+    function upd(){steps.forEach(function(li,i){li.classList.toggle('hide',i>=shown)});q.classList.toggle('open',shown>0);
+      var tips=q.querySelectorAll('.tip');tips.forEach(function(t){t.classList.toggle('hide',shown<steps.length)});
+      step.textContent=shown>=steps.length?'Start again ↺':(shown?'Next step ▶ ('+shown+'/'+steps.length+')':'Step by step ▶');
+      show.textContent=shown>=steps.length?'Hide solution':'Show full solution';}
+    show.addEventListener('click',function(){shown=shown>=steps.length?0:steps.length;upd();});
+    step.addEventListener('click',function(){if(shown>=steps.length){shown=0;}shown++;while(shown<steps.length&&steps[shown-1].classList.contains('pt'))shown++;upd();var li=steps[shown-1];if(li&&li.getBoundingClientRect().bottom>innerHeight)li.scrollIntoView({block:'nearest',behavior:'smooth'});});
+    q._all=function(on){shown=on?steps.length:0;upd();};
+    upd();
+  });
+  score();
+  var all=false;document.getElementById('openall').addEventListener('click',function(){all=!all;document.querySelectorAll('.q').forEach(function(q){q._all(all)});this.textContent=all?'Close all solutions':'Open all solutions';});
+  document.getElementById('reset').addEventListener('click',function(){done={};save();document.querySelectorAll('.tick').forEach(function(t){t.classList.remove('on');t.setAttribute('aria-pressed','false');t.closest('.q').classList.remove('solved')});score();});
+  document.getElementById('print').addEventListener('click',function(){document.querySelectorAll('.q').forEach(function(q){q._all(true)});setTimeout(function(){print()},300);});
+  addEventListener('beforeprint',function(){document.querySelectorAll('.q').forEach(function(q){q._all(true)})});
+  var z=document.getElementById('zoom');document.querySelectorAll('.fig img').forEach(function(im){im.addEventListener('click',function(){z.querySelector('img').src=im.src;z.hidden=false;})});z.addEventListener('click',function(){z.hidden=true});
+  addEventListener('keydown',function(e){if(e.key==='Escape')z.hidden=true});
+  var bar=document.getElementById('bar');addEventListener('scroll',function(){var h=document.documentElement;bar.style.width=(100*h.scrollTop/(h.scrollHeight-h.clientHeight||1))+'%'},{passive:true});
+  if(location.hash){var t=document.querySelector(location.hash);if(t&&t.classList.contains('q'))t._all(true);}
+})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
