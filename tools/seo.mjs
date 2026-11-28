@@ -198,6 +198,19 @@ for (const ch of chapters) {
   write(ch.page, inject(html, headBlock({ p: ch.page, title, desc, type: "article", graph })));
 }
 
+// Step-by-step NCERT solutions pages (solutions: on a chapter in data/notes.js)
+const solPages = chapters.filter((ch) => ch.solutions);
+for (const ch of solPages) {
+  let html = read(ch.solutions);
+  const title = pageTitle(html), desc = pageDesc(html);
+  html = ensureOg(html, title, desc);
+  const graph = [
+    { ...learningResource(ch), "@id": url(ch.solutions) + "#solutions", name: `${ch.title}: Class ${ch.cls} ${ch.subject} NCERT solutions`, headline: title, description: desc, url: url(ch.solutions), learningResourceType: ["Solutions", "Worked examples", "Practice questions"], dateModified: gitDate(ch.solutions) || undefined, encoding: undefined, isPartOf: { "@id": url(ch.page) + "#notes" } },
+    breadcrumb([["Home", "index.html"], ["Notes", "notes.html"], [`Class ${ch.cls} ${ch.subject}: ${ch.title}`, ch.page], ["NCERT Solutions", ch.solutions]])
+  ];
+  write(ch.solutions, inject(html, headBlock({ p: ch.solutions, title, desc, type: "article", graph })));
+}
+
 // ---- plain HTML copies of lists that the page scripts draw, so crawlers and AI bots
 //      that don't run JavaScript still see them. The scripts replace them on load. ----
 const prerender = (p, id, inner) => {
@@ -211,7 +224,7 @@ prerender("notes.html", "notes-root", NOTES.books.map((b) => `<h2 style="margin-
   b.chapters.map((ch, i) => {
     const t = typeof ch === "string" ? ch : ch.title;
     const link = ch.page || (ch.file && /^https?:/i.test(ch.file) ? ch.file : "");
-    const pdf = ch.file && !/^https?:/i.test(ch.file) ? ` <a class="btn sm ghost" href="${esc(ch.file)}">PDF</a>` : "";
+    const pdf = (ch.file && !/^https?:/i.test(ch.file) ? ` <a class="btn sm ghost" href="${esc(ch.file)}">PDF</a>` : "") + (ch.solutions ? ` <a class="btn sm ghost" href="${esc(ch.solutions)}">NCERT Solutions</a>` : "");
     return `<div class="note"><span class="n">${i + 1}</span><span class="t">${link ? `<a href="${esc(link)}">${esc(t)}</a>` : esc(t)}${ch.label ? `<small>${esc(ch.label)}</small>` : ""}</span><span class="act">${pdf}</span></div>`;
   }).join("")).join(""));
 prerender("videos.html", "videos", VIDEOS.map((v) => {
@@ -220,7 +233,7 @@ prerender("videos.html", "videos", VIDEOS.map((v) => {
 }).join(""));
 
 // ---- sitemap.xml ----
-const indexable = PAGES.filter((p) => !p.noindex).map((p) => p.p).concat(chapters.map((c) => c.page));
+const indexable = PAGES.filter((p) => !p.noindex).map((p) => p.p).concat(chapters.map((c) => c.page), solPages.map((c) => c.solutions));
 const prio = (p) => (p === "index.html" ? "1.0" : p.startsWith("notes/") ? "0.8" : p === "notes.html" || p === "videos.html" ? "0.9" : "0.6");
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -262,11 +275,11 @@ write("llms.txt", `# MT Classes Motihari
 
 ${Object.keys(byClass).sort((a, b) => b - a).map((cls) => `## Class ${cls} notes
 
-${byClass[cls].map((ch) => `- [${ch.subject}: ${ch.title}](${url(ch.page)}): ${noteMeta(ch).desc || ch.label || ""}`).join("\n")}
+${byClass[cls].map((ch) => `- [${ch.subject}: ${ch.title}](${url(ch.page)}): ${noteMeta(ch).desc || ch.label || ""}` + (ch.solutions ? `\n- [${ch.subject}: ${ch.title}, NCERT solutions step by step](${url(ch.solutions)}): ${pageDesc(read(ch.solutions))}` : "")).join("\n")}
 `).join("\n")}
 ## FAQ
 
 ${CONTENT.faqs.map((f) => `- **${f.q}** ${f.a}`).join("\n")}
 `);
 
-console.log(`SEO updated: ${PAGES.length} site pages, ${chapters.length} notes pages, ${siteVideos.length} videos, ${indexable.length} URLs in sitemap.xml`);
+console.log(`SEO updated: ${PAGES.length} site pages, ${chapters.length} notes pages, ${siteVideos.length} videos, ${solPages.length} solutions pages, ${indexable.length} URLs in sitemap.xml`);
